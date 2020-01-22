@@ -1,0 +1,31 @@
+{
+  "name": "languish",
+  "version": "0.0.1",
+  "description": "plot programming language statistics",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -f favicon.*.ico main.*.css* src.*.js* && parcel build src/index.html --experimental-scope-hoisting --no-source-maps --out-dir . --public-url ./ && inline-source ./index.html",
+    "start": "parcel src/index.html --out-dir dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-scripts": "tsc --project scripts --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjpalmer/languish.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tjpalmer/languish/issues"
+  },
+  "homepage": "https://github.com/tjpalmer/languish#readme",
+  "devDependencies": {
+    "inline-source-cli": "^2.0.0",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {},
+  "browserslist": [
+    "> 5%"
+  ]
+}
