@@ -1,3 +1,5 @@
+@import 'chartist/dist/chartist.css';
+
 .content {
   border: 1px solid red;
   bottom: 0;
@@ -29,3 +31,5 @@
   border: 1px solid gray;
   flex: 0 0 auto;
 }
+
+@import './charts.css';

@@ -20,11 +20,14 @@
   },
   "homepage": "https://github.com/tjpalmer/languish#readme",
   "devDependencies": {
+    "@types/chartist": "^0.9.47",
     "inline-source-cli": "^2.0.0",
     "parcel-bundler": "^1.12.4",
     "typescript": "^3.7.5"
   },
-  "dependencies": {},
+  "dependencies": {
+    "chartist": "^0.11.4"
+  },
   "browserslist": [
     "> 5%"
   ]

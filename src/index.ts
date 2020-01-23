@@ -1,3 +1,5 @@
+import {Line} from 'chartist';
+
 addEventListener('load', main);
 
 async function main() {
@@ -6,7 +8,6 @@ async function main() {
     pulls: 'gh-pull-request.json',
     pushes: 'gh-push-event.json',
     stars: 'gh-star-event.json',
-    licenses: 'github-licenses.json',
   };
   let data = Object.assign(
     {},
@@ -16,5 +17,14 @@ async function main() {
       let content = await (await fetch(`./src/data/${file}`)).json();
       return {key: content};
     })),
+  );
+  let plot = document.querySelector('.plot');
+  new Line(
+    '.plot', {
+      labels: [2016, 2017, 2018, 2019],
+      series: [[100, 120, 180, 200]],
+    }, {
+      fullWidth: true,
+    }
   );
 }
