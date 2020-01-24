@@ -26,6 +26,8 @@ export class Figure {
   svg: SVGElement;
 
   updateViewBox() {
+    // TODO Instead base view box on screen space and use separate internal
+    // TODO transform.
     let {x, y} = this.min;
     this.svg.setAttribute(
       'viewBox', [x, y, this.max.x - x, this.max.y - y].join(' '),

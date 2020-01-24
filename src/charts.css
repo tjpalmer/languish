@@ -1,7 +1,0 @@
-@import 'chartist/dist/chartist.css';
-
-.ct-label.ct-horizontal.ct-end {
-  display: block;
-  text-align: center;
-  transform: translate(-50%, 0);
-}

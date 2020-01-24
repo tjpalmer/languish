@@ -1,5 +1,6 @@
+import {Chart} from 'chart.js';
 // import {Line} from 'chartist';
-import {Figure} from './figure';
+// import {Figure} from './figure';
 
 addEventListener('load', main);
 
@@ -19,15 +20,51 @@ async function main() {
       return {key: content};
     })),
   );
-  let figure = new Figure(document.querySelector('.plot'));
-  figure.plot({x: [0, 1], y: [0, 1]});
-  // let plot = document.querySelector('.plot');
-  // new Line(
-  //   '.plot', {
-  //     labels: [2016, 2017, 2018, 2019],
-  //     series: [[100, 120, 180, 200]],
-  //   }, {
-  //     fullWidth: true,
-  //   }
-  // );
+  let plot = document.querySelector('.plot');
+  let canvas = plot.querySelector('canvas');
+  let context = canvas.getContext('2d');
+  let chart = new Chart(context, {
+    data: {
+      datasets: [
+        {
+          borderColor: 'blue',
+          cubicInterpolationMode: 'monotone',
+          data: [{x: 0, y: 10}, {x: 1, y: 2}, {x: 2, y: 5}, {x: 3, y: 12}, {x: 2.5, y: 7}],
+          fill: false,
+          label: 'Something',
+        }, {
+          borderColor: 'red',
+          cubicInterpolationMode: 'monotone',
+          data: [{x: 0, y: 5}, {x: 1, y: 9}, {x: 2, y: 6}, {x: 3, y: 12}, {x: 2.5, y: 3}],
+          fill: false,
+          label: 'Other',
+        }
+      ],
+      labels: [2015, 2016, 2017, 2018, 2019],
+    },
+    options: {
+      animation: {
+        duration: 0,
+      },
+      legend: {
+        display: false,
+      },
+      maintainAspectRatio: false,
+      responsive: true,
+      scales: {
+        xAxes: [{
+          // type: 'linear',
+        }],
+      },
+    },
+    type: 'line',
+  });
+  window.addEventListener('resize', () => {
+    let devicePixelRatio = window.devicePixelRatio || 1;
+    canvas.width = plot.clientWidth * devicePixelRatio;
+    canvas.height = plot.clientHeight * devicePixelRatio;
+    canvas.style.width = '100%';
+    canvas.style.height = '100%';
+    chart.render();
+  });
 }
