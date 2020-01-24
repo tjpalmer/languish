@@ -1,4 +1,5 @@
-import {Line} from 'chartist';
+// import {Line} from 'chartist';
+import {Figure} from './figure';
 
 addEventListener('load', main);
 
@@ -18,13 +19,15 @@ async function main() {
       return {key: content};
     })),
   );
-  let plot = document.querySelector('.plot');
-  new Line(
-    '.plot', {
-      labels: [2016, 2017, 2018, 2019],
-      series: [[100, 120, 180, 200]],
-    }, {
-      fullWidth: true,
-    }
-  );
+  let figure = new Figure(document.querySelector('.plot'));
+  figure.plot({x: [0, 1], y: [0, 1]});
+  // let plot = document.querySelector('.plot');
+  // new Line(
+  //   '.plot', {
+  //     labels: [2016, 2017, 2018, 2019],
+  //     series: [[100, 120, 180, 200]],
+  //   }, {
+  //     fullWidth: true,
+  //   }
+  // );
 }

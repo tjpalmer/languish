@@ -1,4 +1,4 @@
-@import 'chartist/dist/chartist.css';
+/* @import './charts.css'; */
 
 .content {
   border: 1px solid red;
@@ -31,5 +31,3 @@
   border: 1px solid gray;
   flex: 0 0 auto;
 }
-
-@import './charts.css';
