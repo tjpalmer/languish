@@ -4,7 +4,7 @@
   "description": "plot programming language statistics",
   "main": "index.js",
   "scripts": {
-    "build": "rm -f favicon.*.ico src.*.css* src.*.js* && parcel build src/index.html --experimental-scope-hoisting --no-source-maps --out-dir . --public-url ./ && inline-source ./index.html ./index.html",
+    "build": "rm -f favicon.*.ico src.*.css src.*.js *.*.png && parcel build src/index.html --experimental-scope-hoisting --no-source-maps --out-dir . --public-url ./ && inline-source ./index.html ./index.html",
     "start": "parcel src/index.html --out-dir dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch-scripts": "tsc --project scripts --watch"
