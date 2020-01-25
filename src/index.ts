@@ -60,11 +60,7 @@ async function main() {
     type: 'line',
   });
   window.addEventListener('resize', () => {
-    let devicePixelRatio = window.devicePixelRatio || 1;
-    canvas.width = plot.clientWidth * devicePixelRatio;
-    canvas.height = plot.clientHeight * devicePixelRatio;
     canvas.style.width = '100%';
     canvas.style.height = '100%';
-    chart.render();
   });
 }
