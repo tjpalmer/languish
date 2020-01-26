@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -f favicon.*.ico src.*.css src.*.js *.*.png && parcel build src/index.html --experimental-scope-hoisting --no-source-maps --out-dir . --public-url ./ && inline-source ./index.html ./index.html",
+    "merge": "node scripts/bin/merge.js > data.json",
     "start": "parcel src/index.html --out-dir dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch-scripts": "tsc --project scripts --watch"
@@ -21,6 +22,7 @@
   "homepage": "https://github.com/tjpalmer/languish#readme",
   "devDependencies": {
     "@types/chart.js": "^2.9.11",
+    "@types/node": "^13.5.0",
     "inline-source-cli": "^2.0.0",
     "parcel-bundler": "^1.12.4",
     "typescript": "^3.7.5"
