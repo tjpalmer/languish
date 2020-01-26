@@ -51,6 +51,10 @@ h2 {
   position: relative;
 }
 
+.plot canvas {
+  position: absolute;
+}
+
 .legend {
   /* border: 1px solid gray; */
   flex: 0 0 auto;

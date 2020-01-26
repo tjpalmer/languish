@@ -69,10 +69,6 @@ function initPlot() {
     },
     type: 'line',
   });
-  window.addEventListener('resize', () => {
-    canvas.style.width = '100%';
-    canvas.style.height = '100%';
-  });
 }
 
 async function loadData() {
