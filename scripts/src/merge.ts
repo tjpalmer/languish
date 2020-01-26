@@ -23,12 +23,11 @@ function main() {
     }));
     if (table.length) {
       table = merge({a: table, b: convertedItems, on: mergeKeys});
-      console.log(JSON.stringify(table, undefined, 2));
-      break;
     } else {
       table = convertedItems;
     }
   }
+  console.log(JSON.stringify(table, undefined, 2));
 }
 
 interface Count {
@@ -48,8 +47,6 @@ export interface MergeOptions<A, B> {
 export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
   let {a, b, on} = options;
   if (!a.length || !b.length) return [];
-  let keysA = new Set(Object.keys(a[0]));
-  let keysB = new Set(Object.keys(b[0]));
   let compares = on.map(key => {
     let value = a[0][key];
     if (typeof value == 'string') {
@@ -79,26 +76,44 @@ export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
     }
     return 0;
   };
-  a = a.concat().sort(compareKeys);
-  b = b.concat().sort(compareKeys);
+  let combo = (a as (A | B)[]).concat(b).sort(compareKeys);
+  let keysA = new Set(Object.keys(a[0]));
+  let keysB = new Set(Object.keys(b[0]));
   let extrasA = [...keysA].filter(key => !keysB.has(key));
-  let extrasB = ([...keysB].filter(key => !keysA.has(key));
-  console.error(a.slice(0, 10));
-  console.error(extrasA);
-  console.error(extrasB);
-  let indexA = 0;
-  let indexB = 0;
-  while (indexA < a.length || indexB < b.length) {
-    let itemA = a[indexA];
-    let itemB = b[indexB];
-    let comparison = compareKeys(itemA, itemB);
-    if (comparison <= 0) {
-      indexA += 1;
+  let extrasB = [...keysB].filter(key => !keysA.has(key));
+  let extras = extrasA.concat(extrasB).sort() as (keyof (A | B))[];
+  let allKeys = on.concat(extras) as (keyof (A & B))[];
+  console.error(combo.slice(0, 10));
+  console.error(extras);
+  let build = (item: A | B) => {
+    let result = {} as A & B;
+    for (let key of allKeys) {
+      result[key] = item[key as keyof (A | B)] as any;
+    }
+    return result;
+  };
+  let results = [] as (A & B)[];
+  let prev = build(combo[0]);
+  let equals = 0, count = 0;
+  for (let item of combo.slice(1)) {
+    count += 1;
+    let comparison = compareKeys(prev, item);
+    if (comparison) {
+      results.push(prev);
+      prev = build(item);
     } else {
-      indexB += 1;
+      for (let key of extras) {
+        let value = (item as A & B)[key];
+        if (value != null) {
+          prev[key] = value;
+        }
+      }
+      equals += 1;
     }
   }
-  return []
+  console.error(`${equals}/${count}`);
+  results.push(prev);
+  return results;
 }
 
 main()
