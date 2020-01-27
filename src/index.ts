@@ -1,6 +1,7 @@
 import {Chart} from 'chart.js';
-import {merge} from './table';
+//~ import {merge} from './table';
 // import {Figure} from './figure';
+import data from './data/data.json';
 
 let files = {
   issues: 'gh-issue-event.json',
@@ -22,10 +23,11 @@ type CountString = {[P in keyof Count]: string} & {count: string};
 type Counts = Count & Record<keyof typeof files, number>;
 
 async function main() {
-  let data = await loadData();
-  let on = ['name', 'year', 'quarter'] as unknown as [keyof Count][];
-  let arrays = Object.keys(data).map(key => data[key]) as Count[][];
-  let merged = arrays.reduce((a, b) => merge({a, b, on})) as Counts[];
+  //~ let data = await loadData();
+  //~ let on = ['name', 'year', 'quarter'] as unknown as [keyof Count][];
+  //~ let arrays = Object.keys(data).map(key => data[key]) as Count[][];
+  //~ let merged = arrays.reduce((a, b) => merge({a, b, on})) as Counts[];
+  console.log(data.slice(0, 10));
   initPlot();
 }
 

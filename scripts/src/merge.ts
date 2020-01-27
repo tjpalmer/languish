@@ -83,8 +83,8 @@ export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
   let extrasB = [...keysB].filter(key => !keysA.has(key));
   let extras = extrasA.concat(extrasB).sort() as (keyof (A | B))[];
   let allKeys = on.concat(extras) as (keyof (A & B))[];
-  console.error(combo.slice(0, 10));
-  console.error(extras);
+  //~ console.error(combo.slice(0, 10));
+  //~ console.error(extras);
   let build = (item: A | B) => {
     let result = {} as A & B;
     for (let key of allKeys) {

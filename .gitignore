@@ -2,4 +2,5 @@
 /dev/
 /node_modules/
 /scripts/bin/
+/src/data/data.json
 *.swp
