@@ -11,7 +11,7 @@ let files = {
 function main() {
   let dir = './src/data';
   let mergeKeys = ['name', 'year', 'quarter'] as (keyof Count)[];
-  let table = [] as Count[];
+  let entries = [] as Count[];
   for (let key of Object.keys(files) as (keyof typeof files)[]) {
     let kidFull = join(dir, files[key]);
     let items = JSON.parse(readFileSync(kidFull).toString()) as CountString[];
@@ -21,12 +21,14 @@ function main() {
       quarter: Number(item.quarter),
       year: Number(item.year),
     }));
-    if (table.length) {
-      table = merge({a: table, b: convertedItems, on: mergeKeys});
+    if (entries.length) {
+      entries = merge({a: entries, b: convertedItems, on: mergeKeys});
     } else {
-      table = convertedItems;
+      entries = convertedItems;
     }
   }
+  // Convert to CSV-ish format and write.
+  let table = tablify(entries);
   console.log(JSON.stringify(table, undefined, 2));
 }
 
@@ -45,6 +47,7 @@ export interface MergeOptions<A, B> {
 }
 
 export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
+  // Extract data and prep compares.
   let {a, b, on} = options;
   if (!a.length || !b.length) return [];
   let compares = on.map(key => {
@@ -76,6 +79,7 @@ export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
     }
     return 0;
   };
+  // Cat arrays and prep merge.
   let combo = (a as (A | B)[]).concat(b).sort(compareKeys);
   let keysA = new Set(Object.keys(a[0]));
   let keysB = new Set(Object.keys(b[0]));
@@ -92,6 +96,7 @@ export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
     }
     return result;
   };
+  // Merge arrays.
   let results = [] as (A & B)[];
   let prev = build(combo[0]);
   let equals = 0, count = 0;
@@ -111,9 +116,22 @@ export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
       equals += 1;
     }
   }
-  console.error(`${equals}/${count}`);
+  // Include the last one and done.
   results.push(prev);
+  console.error(`${equals}/${count}`);
   return results;
 }
 
+interface Table<Item> {
+  keys: (keyof Item)[];
+  rows: Item[keyof Item][][];
+}
+
+function tablify<Item>(items: Item[]): Table<Item> {
+  let keys = Object.keys(items[0]) as (keyof Item)[];
+  let rows = items.map(item => keys.map(key => item[key]));
+  return {keys, rows};
+}
+
+// Run main.
 main()

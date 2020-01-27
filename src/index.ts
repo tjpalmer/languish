@@ -1,7 +1,7 @@
 import {Chart} from 'chart.js';
 //~ import {merge} from './table';
 // import {Figure} from './figure';
-import data from './data/data.json';
+import * as data from './data/data.json';
 
 let files = {
   issues: 'gh-issue-event.json',
@@ -27,14 +27,15 @@ async function main() {
   //~ let on = ['name', 'year', 'quarter'] as unknown as [keyof Count][];
   //~ let arrays = Object.keys(data).map(key => data[key]) as Count[][];
   //~ let merged = arrays.reduce((a, b) => merge({a, b, on})) as Counts[];
-  console.log(data.slice(0, 10));
+  console.log(data.keys);
+  console.log(data.rows.slice(0, 10));
   initPlot();
 }
 
 function initPlot() {
-  let plot = document.querySelector('.plot');
-  let canvas = plot.querySelector('canvas');
-  let context = canvas.getContext('2d');
+  let plot = document.querySelector('.plot')!;
+  let canvas = plot.querySelector('canvas')!;
+  let context = canvas.getContext('2d')!;
   let chart = new Chart(context, {
     data: {
       datasets: [
