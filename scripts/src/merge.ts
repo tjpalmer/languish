@@ -10,17 +10,16 @@ let files = {
 
 function main() {
   let dir = './src/data';
-  let mergeKeys = ['name', 'year', 'quarter'] as (keyof Count)[];
+  let mergeKeys = ['name', 'date'] as (keyof Count)[];
   let entries = [] as Count[];
   for (let key of Object.keys(files) as (keyof typeof files)[]) {
     let kidFull = join(dir, files[key]);
     let items = JSON.parse(readFileSync(kidFull).toString()) as CountString[];
     let convertedItems = items.map(item => ({
       name: item.name,
+      date: `${item.year}Q${item.quarter}`,
       [key]: Number(item.count),
-      quarter: Number(item.quarter),
-      year: Number(item.year),
-    }));
+    } as Count));
     if (entries.length) {
       entries = merge({a: entries, b: convertedItems, on: mergeKeys});
     } else {
@@ -34,11 +33,15 @@ function main() {
 
 interface Count {
   name: string;
-  quarter: number;
-  year: number;
+  date: string;
 }
 
-type CountString = {[P in keyof Count]: string} & {count: string};
+interface CountString {
+  name: string;
+  year: string;
+  quarter: string;
+  count: string;
+}
 
 export interface MergeOptions<A, B> {
   a: A[];

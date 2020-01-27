@@ -1,6 +1,4 @@
 import {Chart} from 'chart.js';
-//~ import {merge} from './table';
-// import {Figure} from './figure';
 import * as data from './data/data.json';
 
 let files = {
@@ -23,10 +21,6 @@ type CountString = {[P in keyof Count]: string} & {count: string};
 type Counts = Count & Record<keyof typeof files, number>;
 
 async function main() {
-  //~ let data = await loadData();
-  //~ let on = ['name', 'year', 'quarter'] as unknown as [keyof Count][];
-  //~ let arrays = Object.keys(data).map(key => data[key]) as Count[][];
-  //~ let merged = arrays.reduce((a, b) => merge({a, b, on})) as Counts[];
   console.log(data.keys);
   console.log(data.rows.slice(0, 10));
   initPlot();
@@ -72,23 +66,4 @@ function initPlot() {
     },
     type: 'line',
   });
-}
-
-async function loadData() {
-  return Object.assign(
-    {},
-    ...await Promise.all(Object.keys(files).map(async key => {
-      let file = files[key];
-      console.log(key, file);
-      let items =
-        await (await fetch(`./src/data/${file}`)).json() as CountString[];
-      let convertedItems = items.map(item => ({
-        name: item.name,
-        [key]: Number(item.count),
-        quarter: Number(item.quarter),
-        year: Number(item.year),
-      }));
-      return {[key]: convertedItems};
-    })),
-  ) as Record<keyof typeof files, Count[]>;
 }
