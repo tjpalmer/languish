@@ -12,8 +12,11 @@ addEventListener('load', main);
 
 interface Count {
   name: string;
-  quarter: number;
-  year: number;
+  date: string;
+  issues: number;
+  pulls: number;
+  pushes: number;
+  stars: number;
 }
 
 type CountString = {[P in keyof Count]: string} & {count: string};
@@ -21,8 +24,8 @@ type CountString = {[P in keyof Count]: string} & {count: string};
 type Counts = Count & Record<keyof typeof files, number>;
 
 async function main() {
-  console.log(data.keys);
-  console.log(data.rows.slice(0, 10));
+  console.log(data.items.keys);
+  console.log(data.sums);
   initPlot();
 }
 

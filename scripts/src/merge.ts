@@ -11,29 +11,41 @@ let files = {
 function main() {
   let dir = './src/data';
   let mergeKeys = ['name', 'date'] as (keyof Count)[];
-  let entries = [] as Count[];
+  let items = [] as Count[];
   for (let key of Object.keys(files) as (keyof typeof files)[]) {
     let kidFull = join(dir, files[key]);
-    let items = JSON.parse(readFileSync(kidFull).toString()) as CountString[];
-    let convertedItems = items.map(item => ({
+    let rawItems =
+      JSON.parse(readFileSync(kidFull).toString()) as CountString[];
+    let convertedItems = rawItems.map(item => ({
       name: item.name,
       date: `${item.year}Q${item.quarter}`,
       [key]: Number(item.count),
-    } as Count));
-    if (entries.length) {
-      entries = merge({a: entries, b: convertedItems, on: mergeKeys});
+    } as unknown as Count));
+    if (items.length) {
+      items = merge({a: items, b: convertedItems, on: mergeKeys});
     } else {
-      entries = convertedItems;
+      items = convertedItems;
     }
   }
   // Convert to CSV-ish format and write.
-  let table = tablify(entries);
-  console.log(JSON.stringify(table, undefined, 2));
+  // TODO Totals by quarter. Fraction for langs.
+  let sums = sumGrouped({
+    by: 'date', items, outs: Object.keys(files) as (keyof typeof files)[],
+  });
+  let tabled = {
+    items: tablify(items),
+    sums: tablify(sums),
+  };
+  console.log(JSON.stringify(tabled, undefined, 2));
 }
 
 interface Count {
   name: string;
   date: string;
+  issues: number;
+  pulls: number;
+  pushes: number;
+  stars: number;
 }
 
 interface CountString {
@@ -95,7 +107,7 @@ export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
   let build = (item: A | B) => {
     let result = {} as A & B;
     for (let key of allKeys) {
-      result[key] = item[key as keyof (A | B)] as any;
+      result[key] = item[key as keyof (A | B)] || 0 as any;
     }
     return result;
   };
@@ -123,6 +135,56 @@ export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
   results.push(prev);
   console.error(`${equals}/${count}`);
   return results;
+}
+
+interface GroupOptions<Item, By extends keyof Item, Out extends keyof Item> {
+  items: Item[];
+  by: By;
+  outs: Out[];
+}
+
+// TODO Typing here is a disaster. See if there are ways to fix it all.
+function sumGrouped<Item, By extends keyof Item, Out extends keyof Item>(
+  options: GroupOptions<Item, By, Out>,
+): {[Key in By | Out]: Item[Key]}[] {
+  let {items, by, outs} = options;
+  type Sums = {[Key in By | Out]: Item[Key]};
+  // Sum things up.
+  let keyedSums = {} as {[ByKey: string]: Sums};
+  for (let item of items) {
+    // TODO How to assert at type level that item[by] is string and
+    // TODO item[out] is number?
+    let key = item[by] as unknown as string;
+    let keyedSum = keyedSums[key];
+    if (!keyedSum) {
+      keyedSum = {[by]: key} as unknown as Sums;
+      for (let out of outs) {
+        keyedSum[out as keyof Sums] = 0 as any;
+      }
+      // console.error(key, keyedSum);
+      keyedSums[key] = keyedSum;
+    }
+    for (let out of outs) {
+      (keyedSum[out as keyof Sums] as unknown as number) +=
+        // Treat missing values as 0.
+        item[out] as unknown as number;
+    }
+  }
+  // Sort array of sums.
+  let sums = Object.keys(keyedSums).map(key => keyedSums[key]).sort((a, b) => {
+    return ((a as any)[by] as string).localeCompare((b as any)[by]);
+  });
+  // // Normalize.
+  // let normed = items.map(item => {
+  //   item = Object.assign({}, item);
+  //   let itemSums = keyedSums[item[by] as unknown as string];
+  //   for (let out of outs) {
+  //     (item[out] as unknown as number) /= itemSums[out] as unknown as number;
+  //   }
+  //   return item;
+  // });
+  // Done.
+  return sums;
 }
 
 interface Table<Item> {
