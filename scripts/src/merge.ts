@@ -8,6 +8,11 @@ let files = {
   stars: 'gh-star-event.json',
 };
 
+let canonicalNames = {
+  'Matlab': 'MATLAB',
+  'Nimrod': 'Nim',
+} as {[name: string]: string};
+
 function main() {
   let dir = './src/data';
   let mergeKeys = ['name', 'date'] as (keyof Count)[];
@@ -17,7 +22,7 @@ function main() {
     let rawItems =
       JSON.parse(readFileSync(kidFull).toString()) as CountString[];
     let convertedItems = rawItems.map(item => ({
-      name: item.name,
+      name: canonicalNames[item.name] || item.name,
       date: `${item.year}Q${item.quarter}`,
       [key]: Number(item.count),
     } as unknown as Count));
@@ -119,13 +124,23 @@ export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
     count += 1;
     let comparison = compareKeys(prev, item);
     if (comparison) {
+      // It's new, so just push it on.
       results.push(prev);
       prev = build(item);
     } else {
+      // It was already there, so expand on it.
       for (let key of extras) {
         let value = (item as A & B)[key];
         if (value != null) {
-          prev[key] = value;
+          let prev_value = prev[key];
+          if (typeof prev_value == 'number') {
+            // Increment existing numbers, because we end up with duplicates,
+            // because of different language names in the same quarter.
+            (prev[key] as unknown as number) =
+              prev_value + (value as unknown as number);
+          } else {
+            prev[key] = value;
+          }
         }
       }
       equals += 1;
