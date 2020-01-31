@@ -1,4 +1,4 @@
-import { Chart } from 'chart.js';
+import {Chart, ChartDataSets} from 'chart.js';
 
 export interface Metrics {
   issues: number;
@@ -41,34 +41,32 @@ export class App {
     this.state = {
       data: state.data,
       names: state.names || [],
-      x: state.x || 'date', y: state.y || 'stars',
+      x: state.x || 'date',
+      y: state.y || 'stars',
     };
     console.log(this.state);
     let plot = document.querySelector('.plot')!;
     let canvas = plot.querySelector('canvas')!;
     let context = canvas.getContext('2d')!;
+    let extract = (name: string, borderColor: string) => {
+      return {
+        borderColor,
+        cubicInterpolationMode: 'monotone',
+        data: this.state.data.entries[name].map(entry => {
+          // Remember [{x, y}, ...] for 2D.
+          return entry[this.state.y] /
+            this.state.data.sums[entry.date][this.state.y];
+        }),
+        fill: false,
+        label: name,
+      } as ChartDataSets;
+    };
     this.chart = new Chart(context, {
       data: {
         datasets: [
-          {
-            borderColor: 'blue',
-            cubicInterpolationMode: 'monotone',
-            data: this.state.data.entries['JavaScript'].map(entry => {
-              return entry.stars;
-            }),
-            // data: [{ x: 0, y: 10 }, { x: 1, y: 2 }, { x: 2, y: 5 }, { x: 3, y: 12 }, { x: 2.5, y: 7 }],
-            fill: false,
-            label: 'Something',
-          }, {
-            borderColor: 'red',
-            cubicInterpolationMode: 'monotone',
-            data: this.state.data.entries['TypeScript'].map(entry => {
-              return entry.stars;
-            }),
-            // data: [{ x: 0, y: 5 }, { x: 1, y: 9 }, { x: 2, y: 6 }, { x: 3, y: 12 }, { x: 2.5, y: 3 }],
-            fill: false,
-            label: 'Other',
-          }
+          extract('JavaScript', 'red'),
+          extract('Go', 'orange'),
+          extract('TypeScript', 'blue'),
         ],
         labels: datesToLabels(this.state.data.dates),
       },
