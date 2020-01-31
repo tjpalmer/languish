@@ -54,7 +54,7 @@ export class App {
         cubicInterpolationMode: 'monotone',
         data: this.state.data.entries[name].map(entry => {
           // Remember [{x, y}, ...] for 2D.
-          return entry[this.state.y] /
+          return 100 * entry[this.state.y] /
             this.state.data.sums[entry.date][this.state.y];
         }),
         fill: false,
@@ -68,7 +68,7 @@ export class App {
           extract('Go', 'orange'),
           extract('TypeScript', 'blue'),
         ],
-        labels: datesToLabels(this.state.data.dates),
+        labels: this.state.data.dates,
       },
       options: {
         animation: {
@@ -81,6 +81,11 @@ export class App {
         responsive: true,
         scales: {
           xAxes: [{
+            ticks: {
+              callback: date => {
+                return date.includes('Q1') ? date.replace('Q1', '') : '';
+              },
+            }
             // type: 'linear',
           }],
         },
@@ -90,10 +95,4 @@ export class App {
   }
   chart: Chart;
   state: State;
-}
-
-function datesToLabels(dates: string[]): string[] {
-  return dates.map(date => {
-    return date.includes('Q1') ? date.replace('Q1', '') : '';
-  });
 }
