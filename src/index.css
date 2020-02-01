@@ -25,7 +25,7 @@ body {
 }
 
 .github {
-  filter: invert();
+  filter: invert(1);
   height: 3vh;
   padding: 1vh;
   width: 3vh;
