@@ -22,13 +22,15 @@
   "homepage": "https://github.com/tjpalmer/languish#readme",
   "devDependencies": {
     "@types/chart.js": "^2.9.11",
+    "@types/murmurhash-js": "^1.0.3",
     "@types/node": "^13.5.0",
     "inline-source-cli": "^2.0.0",
     "parcel-bundler": "^1.12.4",
     "typescript": "^3.7.5"
   },
   "dependencies": {
-    "chart.js": "^2.9.3"
+    "chart.js": "^2.9.3",
+    "murmurhash-js": "^1.0.0"
   },
   "browserslist": [
     "> 5%"

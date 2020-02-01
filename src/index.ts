@@ -1,5 +1,6 @@
 import * as tables from './data/data.json';
 import {App, DateMetrics, Entry, Keyed} from './app';
+import {murmur3} from 'murmurhash-js';
 
 addEventListener('load', main);
 
@@ -25,26 +26,7 @@ function main() {
 
 function chooseColor(name: string) {
   // Include extra so short names don't always have small values.
-  return cyrb(name);
-}
-
-function cyrb(text: string, seed = 0) {
-  // From SO from Java hash algorithm.
-  let hash = 0;
-  for (let i = 0; i < text.length; i += 1) {
-    let c = text.charCodeAt(i);
-    hash = (((hash << 5) - hash) + c) | 0;
-  }
-  return hash;
-  // Start cyrb53
-  //~ let h1 = 0xdeadbeef ^ seed;
-  //~ let h2 = 0x41c6ce57 ^ seed;
-  //~ for (let i = 0; i < text.length; i += 1) {
-    //~ let c = text.charCodeAt(i);
-    //~ h1 = Math.imul(h1 ^ c, 2654435761);
-    //~ h2 = Math.imul(h2 ^ c, 1597334677);
-  //~ }
-  //~ h1 = Math.imul(h1 ^ h2
+  return murmur3(name, 0);
 }
 
 function keepFirst<Item>(keyed: Keyed<Item[]>): Keyed<Item> {
