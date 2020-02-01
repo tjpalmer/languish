@@ -15,11 +15,22 @@ export interface Entry extends DateMetrics {
   name: string;
 }
 
+export interface Metric {
+  name: string;
+  value: number;
+}
+
 export type Keyed<Item> = {
   [key: string]: Item;
 };
 
+export interface Color {
+  hue: number;
+  saturation: number;
+}
+
 export interface Data {
+  colors: {[name: string]: Color};
   dates: string[];
   entries: Keyed<Entry[]>;
   sums: Keyed<DateMetrics>;
@@ -37,6 +48,7 @@ export interface AppOptions extends Partial<State> {
 }
 
 export class App {
+
   constructor(state: AppOptions) {
     this.state = {
       data: state.data,
@@ -44,30 +56,48 @@ export class App {
       x: state.x || 'date',
       y: state.y || 'stars',
     };
+    this.counts = this.findLatestCounts();
+    this.actives = this.counts.slice(0, 10);
     console.log(this.state);
+    this.chart = this.makeChart();
+    this.makeLegend();
+  }
+
+  private actives: Metric[];
+
+  private chart: Chart;
+
+  private counts: Metric[];
+
+  private state: State;
+
+  private findLatestCounts() {
+    let date = this.latestDate();
+    let key = this.state.y;
+    let {entries} = this.state.data;
+    let counts = Object.entries(entries).map(([name, langEntries]) => {
+      let last = langEntries.slice(-1)[0];
+      // Default to 0 if absent.
+      let value = last.date == date ? last[key] : 0;
+      return {name, value} as Metric;
+    });
+    // Sort descending.
+    return counts.sort((a, b) => b.value - a.value);
+  }
+
+  private latestDate() {
+    return this.state.data.dates.slice(-1)[0];
+  }
+
+  private makeChart() {
     let plot = document.querySelector('.plot')!;
     let canvas = plot.querySelector('canvas')!;
     let context = canvas.getContext('2d')!;
-    let extract = (name: string, borderColor: string) => {
-      return {
-        borderColor,
-        cubicInterpolationMode: 'monotone',
-        data: this.state.data.entries[name].map(entry => {
-          // Remember [{x, y}, ...] for 2D.
-          return 100 * entry[this.state.y] /
-            this.state.data.sums[entry.date][this.state.y];
-        }),
-        fill: false,
-        label: name,
-      } as ChartDataSets;
-    };
-    this.chart = new Chart(context, {
+    let chart = new Chart(context, {
       data: {
-        datasets: [
-          extract('JavaScript', 'red'),
-          extract('Go', 'orange'),
-          extract('TypeScript', 'blue'),
-        ],
+        datasets: this.actives.map(({name}) => {
+          return this.makeDataset(name);
+        }),
         labels: this.state.data.dates,
       },
       options: {
@@ -92,7 +122,45 @@ export class App {
       },
       type: 'line',
     });
+    return chart;
   }
-  chart: Chart;
-  state: State;
+
+  private makeDataset(name: string) {
+    return {
+      borderColor: formatColor(this.state.data.colors[name]),
+      cubicInterpolationMode: 'monotone',
+      data: this.state.data.entries[name].map(entry => {
+        // Remember [{x, y}, ...] for 2D.
+        return 100 * entry[this.state.y] /
+          this.state.data.sums[entry.date][this.state.y];
+      }),
+      fill: false,
+      label: name,
+    } as ChartDataSets;
+  }
+
+  private makeLegend() {
+    let box = document.querySelector('.legend')!;
+    let {colors} = this.state.data;
+    box.innerHTML = '';
+    let table = document.createElement('table');
+    for (let count of this.counts.slice(0, 10)) {
+      let {name} = count;
+      let row = document.createElement('tr');
+      let marker = document.createElement('td');
+      marker.style.background = formatColor(colors[name]);
+      marker.style.width = '1em';
+      row.appendChild(marker);
+      let label = document.createElement('td');
+      label.innerText = name;
+      row.appendChild(label);
+      table.appendChild(row);
+    }
+    box.appendChild(table);
+  }
+
+}
+
+function formatColor(color: Color) {
+  return `hsl(${color.hue}, ${color.saturation}%, 70%)`;
 }
