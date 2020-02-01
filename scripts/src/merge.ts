@@ -8,35 +8,57 @@ let files = {
   stars: 'gh-star-event.json',
 };
 
+let canonicalNames = {
+  'Matlab': 'MATLAB',
+  'Nimrod': 'Nim',
+} as {[name: string]: string};
+
 function main() {
   let dir = './src/data';
-  let mergeKeys = ['name', 'year', 'quarter'] as (keyof Count)[];
-  let table = [] as Count[];
+  let mergeKeys = ['name', 'date'] as (keyof Count)[];
+  let items = [] as Count[];
   for (let key of Object.keys(files) as (keyof typeof files)[]) {
     let kidFull = join(dir, files[key]);
-    let items = JSON.parse(readFileSync(kidFull).toString()) as CountString[];
-    let convertedItems = items.map(item => ({
-      name: item.name,
+    let rawItems =
+      JSON.parse(readFileSync(kidFull).toString()) as CountString[];
+    let convertedItems = rawItems.map(item => ({
+      name: canonicalNames[item.name] || item.name,
+      date: `${item.year}Q${item.quarter}`,
       [key]: Number(item.count),
-      quarter: Number(item.quarter),
-      year: Number(item.year),
-    }));
-    if (table.length) {
-      table = merge({a: table, b: convertedItems, on: mergeKeys});
+    } as unknown as Count));
+    if (items.length) {
+      items = merge({a: items, b: convertedItems, on: mergeKeys});
     } else {
-      table = convertedItems;
+      items = convertedItems;
     }
   }
-  console.log(JSON.stringify(table, undefined, 2));
+  // Convert to CSV-ish format and write.
+  // TODO Totals by quarter. Fraction for langs.
+  let sums = sumGrouped({
+    by: 'date', items, outs: Object.keys(files) as (keyof typeof files)[],
+  });
+  let tabled = {
+    items: tablify(items),
+    sums: tablify(sums),
+  };
+  console.log(JSON.stringify(tabled, undefined, 2));
 }
 
 interface Count {
   name: string;
-  quarter: number;
-  year: number;
+  date: string;
+  issues: number;
+  pulls: number;
+  pushes: number;
+  stars: number;
 }
 
-type CountString = {[P in keyof Count]: string} & {count: string};
+interface CountString {
+  name: string;
+  year: string;
+  quarter: string;
+  count: string;
+}
 
 export interface MergeOptions<A, B> {
   a: A[];
@@ -45,6 +67,7 @@ export interface MergeOptions<A, B> {
 }
 
 export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
+  // Extract data and prep compares.
   let {a, b, on} = options;
   if (!a.length || !b.length) return [];
   let compares = on.map(key => {
@@ -76,6 +99,7 @@ export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
     }
     return 0;
   };
+  // Cat arrays and prep merge.
   let combo = (a as (A | B)[]).concat(b).sort(compareKeys);
   let keysA = new Set(Object.keys(a[0]));
   let keysB = new Set(Object.keys(b[0]));
@@ -88,10 +112,11 @@ export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
   let build = (item: A | B) => {
     let result = {} as A & B;
     for (let key of allKeys) {
-      result[key] = item[key as keyof (A | B)] as any;
+      result[key] = item[key as keyof (A | B)] || 0 as any;
     }
     return result;
   };
+  // Merge arrays.
   let results = [] as (A & B)[];
   let prev = build(combo[0]);
   let equals = 0, count = 0;
@@ -99,21 +124,94 @@ export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
     count += 1;
     let comparison = compareKeys(prev, item);
     if (comparison) {
+      // It's new, so just push it on.
       results.push(prev);
       prev = build(item);
     } else {
+      // It was already there, so expand on it.
       for (let key of extras) {
         let value = (item as A & B)[key];
         if (value != null) {
-          prev[key] = value;
+          let prev_value = prev[key];
+          if (typeof prev_value == 'number') {
+            // Increment existing numbers, because we end up with duplicates,
+            // because of different language names in the same quarter.
+            (prev[key] as unknown as number) =
+              prev_value + (value as unknown as number);
+          } else {
+            prev[key] = value;
+          }
         }
       }
       equals += 1;
     }
   }
-  console.error(`${equals}/${count}`);
+  // Include the last one and done.
   results.push(prev);
+  console.error(`${equals}/${count}`);
   return results;
 }
 
+interface GroupOptions<Item, By extends keyof Item, Out extends keyof Item> {
+  items: Item[];
+  by: By;
+  outs: Out[];
+}
+
+// TODO Typing here is a disaster. See if there are ways to fix it all.
+function sumGrouped<Item, By extends keyof Item, Out extends keyof Item>(
+  options: GroupOptions<Item, By, Out>,
+): {[Key in By | Out]: Item[Key]}[] {
+  let {items, by, outs} = options;
+  type Sums = {[Key in By | Out]: Item[Key]};
+  // Sum things up.
+  let keyedSums = {} as {[ByKey: string]: Sums};
+  for (let item of items) {
+    // TODO How to assert at type level that item[by] is string and
+    // TODO item[out] is number?
+    let key = item[by] as unknown as string;
+    let keyedSum = keyedSums[key];
+    if (!keyedSum) {
+      keyedSum = {[by]: key} as unknown as Sums;
+      for (let out of outs) {
+        keyedSum[out as keyof Sums] = 0 as any;
+      }
+      // console.error(key, keyedSum);
+      keyedSums[key] = keyedSum;
+    }
+    for (let out of outs) {
+      (keyedSum[out as keyof Sums] as unknown as number) +=
+        // Treat missing values as 0.
+        item[out] as unknown as number;
+    }
+  }
+  // Sort array of sums.
+  let sums = Object.keys(keyedSums).map(key => keyedSums[key]).sort((a, b) => {
+    return ((a as any)[by] as string).localeCompare((b as any)[by]);
+  });
+  // // Normalize.
+  // let normed = items.map(item => {
+  //   item = Object.assign({}, item);
+  //   let itemSums = keyedSums[item[by] as unknown as string];
+  //   for (let out of outs) {
+  //     (item[out] as unknown as number) /= itemSums[out] as unknown as number;
+  //   }
+  //   return item;
+  // });
+  // Done.
+  return sums;
+}
+
+interface Table<Item> {
+  keys: (keyof Item)[];
+  rows: Item[keyof Item][][];
+}
+
+function tablify<Item>(items: Item[]): Table<Item> {
+  let keys = Object.keys(items[0]) as (keyof Item)[];
+  let rows = items.map(item => keys.map(key => item[key]));
+  return {keys, rows};
+}
+
+// Run main.
 main()

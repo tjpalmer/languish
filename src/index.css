@@ -1,3 +1,7 @@
+a {
+  color: #99a;
+}
+
 body {
   font-family: sans-serif;
   font-size: 20px;
@@ -21,6 +25,7 @@ body {
 }
 
 .github {
+  filter: invert();
   height: 3vh;
   padding: 1vh;
   width: 3vh;
@@ -43,6 +48,11 @@ h2 {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
+}
+
+html {
+  background: #333;
+  color: white;
 }
 
 .plot {

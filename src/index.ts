@@ -1,93 +1,60 @@
-import {Chart} from 'chart.js';
-//~ import {merge} from './table';
-// import {Figure} from './figure';
-import data from './data/data.json';
-
-let files = {
-  issues: 'gh-issue-event.json',
-  pulls: 'gh-pull-request.json',
-  pushes: 'gh-push-event.json',
-  stars: 'gh-star-event.json',
-};
+import * as tables from './data/data.json';
+import {App, DateMetrics, Entry, Keyed} from './app';
 
 addEventListener('load', main);
 
-interface Count {
-  name: string;
-  quarter: number;
-  year: number;
+function main() {
+  let sums = keepFirst(keyOn({
+    key: 'date', items: tableToItems(tables.sums as any) as DateMetrics[],
+  }));
+  let data = {
+    dates: Object.keys(sums).sort(),
+    entries: keyOn({
+      key: 'name', items: tableToItems(tables.items as any) as Entry[],
+    }),
+    sums,
+  };
+  new App({data});
 }
 
-type CountString = {[P in keyof Count]: string} & {count: string};
-
-type Counts = Count & Record<keyof typeof files, number>;
-
-async function main() {
-  //~ let data = await loadData();
-  //~ let on = ['name', 'year', 'quarter'] as unknown as [keyof Count][];
-  //~ let arrays = Object.keys(data).map(key => data[key]) as Count[][];
-  //~ let merged = arrays.reduce((a, b) => merge({a, b, on})) as Counts[];
-  console.log(data.slice(0, 10));
-  initPlot();
+function keepFirst<Item>(keyed: Keyed<Item[]>): Keyed<Item> {
+  return Object.assign({}, ...Object.keys(keyed).map(key => {
+    return {[key]: keyed[key][0]};
+  }));
 }
 
-function initPlot() {
-  let plot = document.querySelector('.plot');
-  let canvas = plot.querySelector('canvas');
-  let context = canvas.getContext('2d');
-  let chart = new Chart(context, {
-    data: {
-      datasets: [
-        {
-          borderColor: 'blue',
-          cubicInterpolationMode: 'monotone',
-          data: [{x: 0, y: 10}, {x: 1, y: 2}, {x: 2, y: 5}, {x: 3, y: 12}, {x: 2.5, y: 7}],
-          fill: false,
-          label: 'Something',
-        }, {
-          borderColor: 'red',
-          cubicInterpolationMode: 'monotone',
-          data: [{x: 0, y: 5}, {x: 1, y: 9}, {x: 2, y: 6}, {x: 3, y: 12}, {x: 2.5, y: 3}],
-          fill: false,
-          label: 'Other',
-        }
-      ],
-      labels: [2015, 2016, 2017, 2018, 2019],
-    },
-    options: {
-      animation: {
-        duration: 0,
-      },
-      legend: {
-        display: false,
-      },
-      maintainAspectRatio: false,
-      responsive: true,
-      scales: {
-        xAxes: [{
-          // type: 'linear',
-        }],
-      },
-    },
-    type: 'line',
-  });
+interface KeyOnArgs<Key extends keyof Item, Item> {
+  key: Key;
+  items: Item[];
 }
 
-async function loadData() {
-  return Object.assign(
-    {},
-    ...await Promise.all(Object.keys(files).map(async key => {
-      let file = files[key];
-      console.log(key, file);
-      let items =
-        await (await fetch(`./src/data/${file}`)).json() as CountString[];
-      let convertedItems = items.map(item => ({
-        name: item.name,
-        [key]: Number(item.count),
-        quarter: Number(item.quarter),
-        year: Number(item.year),
-      }));
-      return {[key]: convertedItems};
-    })),
-  ) as Record<keyof typeof files, Count[]>;
+function keyOn<Key extends keyof Item, Item>(
+  args: KeyOnArgs<Key, Item>,
+): Keyed<Item[]> {
+  let {key, items} = args;
+  let result = {} as Keyed<Item[]>;
+  for (let item of items) {
+    let keyVal = item[key] as unknown as string;
+    let list = result[keyVal];
+    if (!list) {
+      result[keyVal] = list = [];
+    }
+    list.push(item);
+  }
+  return result;
+}
+
+interface Table<Key extends keyof Item, Item> {
+  keys: Key[];
+  rows: Item[Key][][];
+}
+
+function tableToItems<Item, Key extends keyof Item>(
+  table: Table<Key, Item>,
+): Item[] {
+  let {keys, rows} = table;
+  let items = rows.map(row => Object.assign({}, ...keys.map((key, index) => {
+    return {[key]: row[index]};
+  }))) as Item[];
+  return items;
 }
