@@ -24,11 +24,20 @@ function main() {
   new App({data});
 }
 
+export interface Color {
+  hue: number;
+  saturation: number;
+}
+
 function chooseColor(name: string) {
-  let hash = murmur3(name, 64);
+  let hash = murmur3(name, 95);
   let hue = 360 * ((hash >> 16) & 0xFFFF) / 0xFFFF;
   let saturation = 100 * (0.3 + 0.7 * (hash & 0xFFFF) / 0xFFFF);
-  return {hue, saturation};
+  return formatColor({hue, saturation});
+}
+
+function formatColor(color: Color) {
+  return `hsl(${color.hue}, ${color.saturation}%, 70%)`;
 }
 
 function keepFirst<Item>(keyed: Keyed<Item[]>): Keyed<Item> {

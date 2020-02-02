@@ -24,13 +24,8 @@ export type Keyed<Item> = {
   [key: string]: Item;
 };
 
-export interface Color {
-  hue: number;
-  saturation: number;
-}
-
 export interface Data {
-  colors: {[name: string]: Color};
+  colors: {[name: string]: string};
   dates: string[];
   entries: Keyed<Entry[]>;
   sums: Keyed<DateMetrics>;
@@ -58,12 +53,15 @@ export class App {
     };
     this.counts = this.findLatestCounts();
     this.actives = this.counts.slice(0, 10);
+    this.activeNames = new Set(this.actives.map(active => active.name));
     console.log(this.state);
     this.chart = this.makeChart();
     this.makeLegend();
   }
 
   private actives: Metric[];
+
+  private activeNames: Set<string>;
 
   private chart: Chart;
 
@@ -127,7 +125,7 @@ export class App {
 
   private makeDataset(name: string) {
     return {
-      borderColor: formatColor(this.state.data.colors[name]),
+      borderColor: this.state.data.colors[name],
       cubicInterpolationMode: 'monotone',
       data: this.state.data.entries[name].map(entry => {
         // Remember [{x, y}, ...] for 2D.
@@ -148,9 +146,15 @@ export class App {
       let {name} = count;
       let row = document.createElement('tr');
       let marker = document.createElement('td');
+      let color = colors[name];
+      if (this.activeNames.has(name)) {
+        marker.classList.add('active');
+        marker.style.background = color;
+      } else {
+        // marker.style.color = color;
+      }
       marker.classList.add('marker');
       marker.innerText = String(index + 1);
-      marker.style.background = formatColor(colors[name]);
       marker.style.minWidth = '1em';
       row.appendChild(marker);
       let label = document.createElement('td');
@@ -162,8 +166,4 @@ export class App {
     box.appendChild(table);
   }
 
-}
-
-function formatColor(color: Color) {
-  return `hsl(${color.hue}, ${color.saturation}%, 70%)`;
 }
