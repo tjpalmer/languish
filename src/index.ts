@@ -1,5 +1,5 @@
 import * as tables from './data/data.json';
-import {App, Color, DateMetrics, Entry, Keyed} from './app';
+import {App, DateMetrics, Entry, Keyed} from './app';
 import {murmur3} from 'murmurhash-js';
 
 addEventListener('load', main);
@@ -14,7 +14,7 @@ function main() {
   });
   let colors = Object.assign({}, ...Object.keys(entries).map(name => {
     return {[name]: chooseColor(name)};
-  })) as {[name: string]: Color};
+  })) as {[name: string]: string};
   let data = {
     colors,
     dates: Object.keys(sums).sort(),

@@ -79,10 +79,25 @@ input {
   position: relative;
 }
 
+.listBox td {
+  cursor: default;
+}
+
 .listScroll {
+  height: 100%;
   overflow-y: auto;
   position: absolute;
-  height: 100%;
+  scrollbar-color: white #444;
+  scrollbar-width: thin;
+}
+
+.listScroll::-webkit-scrollbar {
+  background: #444;
+  width: 0.4vw;
+}
+
+.listScroll::-webkit-scrollbar-thumb {
+  background: white;
 }
 
 .marker {
@@ -113,4 +128,21 @@ input {
 
 .spread {
   flex: 1 1 auto;
+}
+
+.yAxis {
+  align-items: center;
+  cursor: default;
+  display: flex;
+  padding-left: 1vh;
+  position: relative;
+  width: 1em;
+}
+
+.yLabel {
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  position: absolute;
+  top: 50%;
+  white-space: nowrap;
 }

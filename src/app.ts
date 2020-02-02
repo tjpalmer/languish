@@ -7,6 +7,13 @@ export interface Metrics {
   stars: number;
 }
 
+let labels = {
+  issues: 'Issues',
+  pulls: 'Pull Requests',
+  pushes: 'Pushes',
+  stars: 'Stars',
+};
+
 export interface DateMetrics extends Metrics {
   date: string;
 }
@@ -52,14 +59,13 @@ export class App {
       y: state.y || 'stars',
     };
     this.counts = this.findLatestCounts();
-    this.actives = this.counts.slice(0, 10);
-    this.activeNames = new Set(this.actives.map(active => active.name));
+    let actives = this.counts.slice(0, 10);
+    this.activeNames = new Set(actives.map(active => active.name));
     console.log(this.state);
     this.chart = this.makeChart();
     this.makeLegend();
+    document.querySelector('.yLabel')!.textContent = labels[this.state.y];
   }
-
-  private actives: Metric[];
 
   private activeNames: Set<string>;
 
@@ -93,9 +99,8 @@ export class App {
     let context = canvas.getContext('2d')!;
     let chart = new Chart(context, {
       data: {
-        datasets: this.actives.map(({name}) => {
-          return this.makeDataset(name);
-        }),
+        // The order doesn't really matter here.
+        datasets: [...this.activeNames].map(name => this.makeDataset(name)),
         labels: this.state.data.dates,
       },
       options: {
@@ -113,9 +118,24 @@ export class App {
               callback: date => {
                 return date.includes('Q1') ? date.replace('Q1', '') : '';
               },
+              fontColor: 'white',
             }
             // type: 'linear',
           }],
+          yAxes: [{
+            // scaleLabel: {display: true, labelString: 'Stars'},
+            ticks: {
+              callback: value => `${value}%`,
+              fontColor: 'white',
+            },
+          }],
+        },
+        tooltips: {
+          callbacks: {
+            label: (item, data) =>
+              `${data.datasets![item.datasetIndex!].label}: ` +
+              `${Number(item.value).toFixed(2)}%`,
+          },
         },
       },
       type: 'line',
@@ -145,20 +165,20 @@ export class App {
     this.counts.forEach((count, index) => {
       let {name} = count;
       let row = document.createElement('tr');
+      // Marker.
       let marker = document.createElement('td');
       let color = colors[name];
       if (this.activeNames.has(name)) {
         marker.classList.add('active');
         marker.style.background = color;
-      } else {
-        // marker.style.color = color;
       }
       marker.classList.add('marker');
-      marker.innerText = String(index + 1);
+      marker.textContent = String(index + 1);
       marker.style.minWidth = '1em';
       row.appendChild(marker);
+      // Label.
       let label = document.createElement('td');
-      label.innerText = name;
+      label.textContent = name;
       label.style.paddingLeft = '0.2em';
       row.appendChild(label);
       table.appendChild(row);
