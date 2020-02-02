@@ -140,22 +140,25 @@ export class App {
   }
 
   private makeLegend() {
-    let box = document.querySelector('.legend')!;
+    let box = document.querySelector('.listBox')!;
     let {colors} = this.state.data;
     box.innerHTML = '';
     let table = document.createElement('table');
-    for (let count of this.counts.slice(0, 10)) {
+    this.counts.forEach((count, index) => {
       let {name} = count;
       let row = document.createElement('tr');
       let marker = document.createElement('td');
+      marker.classList.add('marker');
+      marker.innerText = String(index + 1);
       marker.style.background = formatColor(colors[name]);
-      marker.style.width = '1em';
+      marker.style.minWidth = '1em';
       row.appendChild(marker);
       let label = document.createElement('td');
       label.innerText = name;
+      label.style.paddingLeft = '0.2em';
       row.appendChild(label);
       table.appendChild(row);
-    }
+    });
     box.appendChild(table);
   }
 

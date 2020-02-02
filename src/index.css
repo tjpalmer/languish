@@ -54,12 +54,40 @@ html {
   color: white;
 }
 
+input {
+  background: none;
+  border: 1px solid white;
+  border-radius: 0.2em;
+  color: white;
+  font-size: inherit;
+  padding: 0.2em;
+}
+
 .legend {
+  display: flex;
   flex: 0 0 auto;
-  /* height: 200px; */
-  overflow-y: auto;
-  padding: 0 1em;
+  flex-direction: column;
+  height: 100%;
+  min-width: 12em;
+  margin: 0 1em;
   position: relative;
+}
+
+.list {
+  flex: 1 1 auto;
+  padding-top: 1em;
+  position: relative;
+}
+
+.listScroll {
+  overflow-y: auto;
+  position: absolute;
+  height: 100%;
+}
+
+.marker {
+  color: #333;
+  text-align: center;
 }
 
 .plot {
@@ -69,6 +97,14 @@ html {
 
 .plot canvas {
   position: absolute;
+}
+
+.query {
+  flex: 0 0 auto;
+}
+
+.query input {
+  width: 12em;
 }
 
 .spread {
