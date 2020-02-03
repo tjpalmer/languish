@@ -63,6 +63,14 @@ input {
   padding: 0.2em;
 }
 
+.interactive {
+  cursor: default;
+}
+
+.interactive:hover {
+  background: #555;
+}
+
 .legend {
   display: flex;
   flex: 0 0 auto;
@@ -109,12 +117,19 @@ input {
 }
 
 .plot {
+  display: flex;
   flex: 1 1 auto;
+  flex-direction: column;
   position: relative;
 }
 
-.plot canvas {
+.plotBox canvas {
   position: absolute;
+}
+
+.plotBox {
+  flex: 1 1 auto;
+  position: relative;
 }
 
 .query {
@@ -130,18 +145,52 @@ input {
   flex: 1 1 auto;
 }
 
+.tools {
+  align-items: center;
+  display: flex;
+}
+
+.tools > * {
+  border: 2px solid white;
+  border-radius: 0.2em;
+  flex: 1 1 auto;
+  margin: 0 0.5vh 1vh;
+  padding: 0.5vh;
+  text-align: center;
+}
+
+.xAxis {
+  padding-bottom: 0.1vh;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.xLabel {
+  display: inline-block;
+  border: 2px solid transparent;
+}
+
+.xLabel, .yLabel {
+  padding: 0.1vh 0.5vh;
+}
+
+.xLabel:hover, .yLabel:hover {
+  border: 2px solid white;
+  border-radius: 0.2em;
+}
+
 .yAxis {
   align-items: center;
-  cursor: default;
   display: flex;
   padding-left: 1vh;
   position: relative;
-  width: 1em;
+  width: 1.2em;
 }
 
 .yLabel {
+  cursor: default;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(-90deg);
+  transform: translate(-50%, -50%) translate(0, -1.2em) rotate(-90deg);
   position: absolute;
   top: 50%;
   white-space: nowrap;

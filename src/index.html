@@ -28,19 +28,28 @@
             <img
               class="github"
               src="GitHub-Mark-120px-plus.png"
-              title="Project on GitHub"
+              title="Languish project on GitHub, including source information"
             />
           </a>
         </div>
       </div>
       <div class="display">
-        <div class="yAxis"><div class="yLabel"></div></div>
-        <div class="plot"><canvas></canvas></div>
+        <div class="yAxis"><div class="yLabel interactive"></div></div>
+        <div class="plot">
+          <div class="plotBox">
+            <canvas></canvas>
+          </div>
+          <div class="xAxis"><div class="xLabel interactive"></div></div>
+        </div>
         <div class="legend">
           <div class="list">
             <div class="listScroll">
               <div class="listBox"></div>
             </div>
+          </div>
+          <div class="tools">
+            <div class="clear interactive">Clear</div>
+            <div class="total interactive">Total</div>
           </div>
           <div class="query"><input/></div>
         </div>

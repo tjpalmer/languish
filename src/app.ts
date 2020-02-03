@@ -8,6 +8,7 @@ export interface Metrics {
 }
 
 let labels = {
+  date: 'Date',
   issues: 'Issues',
   pulls: 'Pull Requests',
   pushes: 'Pushes',
@@ -64,6 +65,7 @@ export class App {
     console.log(this.state);
     this.chart = this.makeChart();
     this.makeLegend();
+    document.querySelector('.xLabel')!.textContent = labels[this.state.x];
     document.querySelector('.yLabel')!.textContent = labels[this.state.y];
   }
 
@@ -94,6 +96,8 @@ export class App {
   }
 
   private makeChart() {
+    // TODO For Metrics Mean, mean after norm.
+    // TODO For Metrics Mean total, first norm by max for metric total, then mean.
     let plot = document.querySelector('.plot')!;
     let canvas = plot.querySelector('canvas')!;
     let context = canvas.getContext('2d')!;
@@ -106,6 +110,9 @@ export class App {
       options: {
         animation: {
           duration: 0,
+        },
+        hover: {
+          mode: 'dataset',
         },
         legend: {
           display: false,
@@ -131,11 +138,19 @@ export class App {
           }],
         },
         tooltips: {
+          // I can't figure out how to remove the white border, but black here
+          // softens it some.
           callbacks: {
             label: (item, data) =>
               `${data.datasets![item.datasetIndex!].label}: ` +
               `${Number(item.value).toFixed(2)}%`,
+            labelColor: (item, chart) => {
+              let color = chart.data.datasets![item.datasetIndex!].borderColor;
+              return {borderColor: 'black', backgroundColor: color};
+            },
           },
+          mode: 'x',
+          position: 'nearest',
         },
       },
       type: 'line',
@@ -144,8 +159,9 @@ export class App {
   }
 
   private makeDataset(name: string) {
+    let borderColor = this.state.data.colors[name];
     return {
-      borderColor: this.state.data.colors[name],
+      borderColor,
       cubicInterpolationMode: 'monotone',
       data: this.state.data.entries[name].map(entry => {
         // Remember [{x, y}, ...] for 2D.
@@ -153,6 +169,9 @@ export class App {
           this.state.data.sums[entry.date][this.state.y];
       }),
       fill: false,
+      hoverBorderColor: borderColor,
+      hoverBorderWidth: 6,
+      // pointHoverBorderColor: 'red',
       label: name,
     } as ChartDataSets;
   }
@@ -162,13 +181,15 @@ export class App {
     let {colors} = this.state.data;
     box.innerHTML = '';
     let table = document.createElement('table');
+    let actives = new Set(this.activeNames);
     this.counts.forEach((count, index) => {
       let {name} = count;
       let row = document.createElement('tr');
+      row.classList.add('interactive');
       // Marker.
       let marker = document.createElement('td');
       let color = colors[name];
-      if (this.activeNames.has(name)) {
+      if (actives.has(name)) {
         marker.classList.add('active');
         marker.style.background = color;
       }
@@ -182,6 +203,7 @@ export class App {
       label.style.paddingLeft = '0.2em';
       row.appendChild(label);
       table.appendChild(row);
+      // TODO Put in +/- amount for those who've changed rank.
     });
     box.appendChild(table);
   }

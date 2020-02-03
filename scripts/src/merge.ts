@@ -13,6 +13,10 @@ let canonicalNames = {
   'Nimrod': 'Nim',
 } as {[name: string]: string};
 
+// TODO New script to calculate colors and find a seed to maximize the minimum
+// TODO distance between any top 10 (or 20?) languages.
+// TODO This script should be rerun at any data quarterly update.
+
 function main() {
   let dir = './src/data';
   let mergeKeys = ['name', 'date'] as (keyof Count)[];
