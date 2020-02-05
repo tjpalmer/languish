@@ -69,6 +69,7 @@ input {
 
 .interactive:hover {
   background: #555;
+  filter: brightness(110%);
 }
 
 .legend {
@@ -85,6 +86,10 @@ input {
   flex: 1 1 auto;
   margin-bottom: 1vh;
   position: relative;
+}
+
+.listBox table {
+  border-spacing: 0 2px;
 }
 
 .listBox td {
@@ -160,6 +165,7 @@ input {
 }
 
 .xAxis {
+  display: none;
   padding-bottom: 0.1vh;
   flex: 0 0 auto;
   text-align: center;

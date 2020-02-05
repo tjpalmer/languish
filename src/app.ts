@@ -1,4 +1,4 @@
-import {Chart, ChartDataSets} from 'chart.js';
+import {Chart, ChartColor, ChartDataSets} from 'chart.js';
 
 export interface Metrics {
   issues: number;
@@ -62,20 +62,30 @@ export class App {
     this.counts = this.findLatestCounts();
     let actives = this.counts.slice(0, 10);
     this.activeNames = new Set(actives.map(active => active.name));
-    console.log(this.state);
     this.chart = this.makeChart();
     this.makeLegend();
     document.querySelector('.xLabel')!.textContent = labels[this.state.x];
     document.querySelector('.yLabel')!.textContent = labels[this.state.y];
+    document.querySelector('.clear')!.addEventListener('click', () => {
+      this.clearActives();
+    });
   }
 
   private activeNames: Set<string>;
 
   private chart: Chart;
 
-  private counts: Metric[];
+  private clearActives() {
+    this.activeNames.clear();
+    this.chart.data.datasets = [];
+    this.chart.update();
+    for (let marker of document.querySelectorAll('.listBox .marker')! as Iterable<HTMLElement>) {
+      marker.classList.remove('active');
+      marker.style.background = '';
+    }
+  }
 
-  private state: State;
+  private counts: Metric[];
 
   private findLatestCounts() {
     let date = this.latestDate();
@@ -103,8 +113,7 @@ export class App {
     let context = canvas.getContext('2d')!;
     let chart = new Chart(context, {
       data: {
-        // The order doesn't really matter here.
-        datasets: [...this.activeNames].map(name => this.makeDataset(name)),
+        datasets: this.makeDatasets(),
         labels: this.state.data.dates,
       },
       options: {
@@ -145,11 +154,12 @@ export class App {
               `${data.datasets![item.datasetIndex!].label}: ` +
               `${Number(item.value).toFixed(2)}%`,
             labelColor: (item, chart) => {
-              let color = chart.data.datasets![item.datasetIndex!].borderColor;
+              let dataset = chart.data.datasets![item.datasetIndex!];
+              let color = dataset.borderColor as ChartColor;
               return {borderColor: 'black', backgroundColor: color};
             },
           },
-          mode: 'x',
+          // mode: 'x',  // Would need to highlight current and refine.
           position: 'nearest',
         },
       },
@@ -171,9 +181,13 @@ export class App {
       fill: false,
       hoverBorderColor: borderColor,
       hoverBorderWidth: 6,
-      // pointHoverBorderColor: 'red',
       label: name,
     } as ChartDataSets;
+  }
+
+  private makeDatasets() {
+    // The order doesn't really matter here.
+    return [...this.activeNames].map(name => this.makeDataset(name));
   }
 
   private makeLegend() {
@@ -181,15 +195,15 @@ export class App {
     let {colors} = this.state.data;
     box.innerHTML = '';
     let table = document.createElement('table');
-    let actives = new Set(this.activeNames);
     this.counts.forEach((count, index) => {
       let {name} = count;
       let row = document.createElement('tr');
       row.classList.add('interactive');
+      row.addEventListener('click', event => this.toggle({name, row}));
       // Marker.
       let marker = document.createElement('td');
       let color = colors[name];
-      if (actives.has(name)) {
+      if (this.activeNames.has(name)) {
         marker.classList.add('active');
         marker.style.background = color;
       }
@@ -199,6 +213,7 @@ export class App {
       row.appendChild(marker);
       // Label.
       let label = document.createElement('td');
+      label.classList.add('label');
       label.textContent = name;
       label.style.paddingLeft = '0.2em';
       row.appendChild(label);
@@ -206,6 +221,25 @@ export class App {
       // TODO Put in +/- amount for those who've changed rank.
     });
     box.appendChild(table);
+  }
+
+  private state: State;
+
+  toggle(info: {name: string, row: HTMLElement}) {
+    let {name, row} = info;
+    let marker = row.querySelector('.marker') as HTMLElement;
+    let label = row.querySelector('.label') as HTMLElement;
+    if (this.activeNames.has(name)) {
+      this.activeNames.delete(name);
+      marker.classList.remove('active');
+      marker.style.background = '';
+    } else {
+      this.activeNames.add(name);
+      marker.classList.add('active');
+      marker.style.background = this.state.data.colors[name];
+    }
+    this.chart.data.datasets = this.makeDatasets();
+    this.chart.update();
   }
 
 }

@@ -8,6 +8,8 @@ function main() {
   let sums = keepFirst(keyOn({
     key: 'date', items: tableToItems(tables.sums as any) as DateMetrics[],
   }));
+  let dates = Object.keys(sums).sort();
+  // TODO Expand each to an entry for each date.
   let entries = keyOn({
     key: 'name',
     items: tableToItems(tables.items as any) as Entry[],
@@ -15,12 +17,7 @@ function main() {
   let colors = Object.assign({}, ...Object.keys(entries).map(name => {
     return {[name]: chooseColor(name)};
   })) as {[name: string]: string};
-  let data = {
-    colors,
-    dates: Object.keys(sums).sort(),
-    entries,
-    sums,
-  };
+  let data = {colors, dates, entries, sums};
   new App({data});
 }
 
