@@ -1,5 +1,5 @@
 import * as tables from './data/data.json';
-import {App, DateMetrics, Entry, Keyed} from './app';
+import {App, Data, DateMetrics, Entry, Keyed} from './app';
 import {murmur3} from 'murmurhash-js';
 
 addEventListener('load', main);
@@ -9,7 +9,6 @@ function main() {
     key: 'date', items: tableToItems(tables.sums as any) as DateMetrics[],
   }));
   let dates = Object.keys(sums).sort();
-  // TODO Expand each to an entry for each date.
   let entries = keyOn({
     key: 'name',
     items: tableToItems(tables.items as any) as Entry[],
@@ -18,6 +17,10 @@ function main() {
     return {[name]: chooseColor(name)};
   })) as {[name: string]: string};
   let data = {colors, dates, entries, sums};
+  // Fill in missing data here.
+  // The idea is that this code is smaller than the compressed repeated zeros
+  // would be in the preprocessed data -- and not too expensive to compute.
+  fillDates(data);
   new App({data});
 }
 
@@ -62,6 +65,45 @@ function keyOn<Key extends keyof Item, Item>(
     list.push(item);
   }
   return result;
+}
+
+function fillDates({dates, entries}: Data) {
+  for (let [name, points] of Object.entries(entries)) {
+    if (points.length != dates.length) {
+      // We have the extra points to fill in.
+      let result = [];
+      let p = 0;
+      for (let date of dates) {
+        let point: Entry = points[p];
+        if (!point || point.date > date) {
+          // Missing, so fill in zeros.
+          point = Object.assign({}, ...Object.entries(points[0]).map(
+            ([key, value]) => {
+              if (key == 'date') {
+                return {date};
+              } else {
+                return {[key]: typeof value == 'number' ? 0 : value};
+              }
+            },
+          ));
+          point.date = date;
+        } else {
+          // Already have a point for this date.
+          if (point.date != date) {
+            // No details, so these can coallesce in the console.
+            // I only had these show up under a bug before, but I'd like to
+            // leave this around just in case.
+            console.warn('unrepresented date');
+          }
+          p += 1;
+        }
+        // Whether the old point or new, we have something to add in.
+        result.push(point);
+      }
+      // Replace the entries with the full list.
+      entries[name] = result;
+    }
+  }
 }
 
 interface Table<Key extends keyof Item, Item> {
