@@ -78,7 +78,7 @@ input {
   flex-direction: column;
   height: 100%;
   min-width: 12em;
-  margin: 0 2vh;
+  margin-left: 2vh;
   position: relative;
 }
 
@@ -101,12 +101,10 @@ input {
   overflow-y: auto;
   position: absolute;
   scrollbar-color: white #444;
-  scrollbar-width: thin;
 }
 
 .listScroll::-webkit-scrollbar {
   background: #444;
-  width: 0.4vw;
 }
 
 .listScroll::-webkit-scrollbar-thumb {
@@ -138,12 +136,13 @@ input {
 }
 
 .query {
+  display: flex;
   flex: 0 0 auto;
   margin-bottom: 1vh;
 }
 
 .query input {
-  width: 12em;
+  margin: 0 0.5vh;
 }
 
 .spread {

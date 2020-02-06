@@ -118,9 +118,10 @@ export class App {
       },
       options: {
         animation: {
-          duration: 0,
+          duration: 300,
         },
         hover: {
+          animationDuration: 200,
           mode: 'dataset',
         },
         legend: {
@@ -143,6 +144,7 @@ export class App {
             ticks: {
               callback: value => `${value}%`,
               fontColor: 'white',
+              suggestedMin: 0,
             },
           }],
         },
@@ -181,7 +183,9 @@ export class App {
       fill: false,
       hoverBorderColor: borderColor,
       hoverBorderWidth: 6,
+      pointHoverBackgroundColor: borderColor,
       label: name,
+      pointBackgroundColor: borderColor,
     } as ChartDataSets;
   }
 
@@ -229,16 +233,19 @@ export class App {
     let {name, row} = info;
     let marker = row.querySelector('.marker') as HTMLElement;
     let label = row.querySelector('.label') as HTMLElement;
+    let datasets = this.chart.data.datasets!;
     if (this.activeNames.has(name)) {
       this.activeNames.delete(name);
       marker.classList.remove('active');
       marker.style.background = '';
+      this.chart.data.datasets =
+        datasets.filter(dataset => dataset.label != name);
     } else {
       this.activeNames.add(name);
       marker.classList.add('active');
       marker.style.background = this.state.data.colors[name];
+      datasets.push(this.makeDataset(name));
     }
-    this.chart.data.datasets = this.makeDatasets();
     this.chart.update();
   }
 
