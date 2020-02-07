@@ -17,6 +17,9 @@ function main() {
     return {[name]: chooseColor(name)};
   })) as {[name: string]: string};
   let data = {colors, dates, entries, sums};
+  // Normalize and mean in advance.
+  normalize(data);
+  putMean(data);
   // Fill in missing data here.
   // The idea is that this code is smaller than the compressed repeated zeros
   // would be in the preprocessed data -- and not too expensive to compute.
@@ -102,6 +105,34 @@ function fillDates({dates, entries}: Data) {
       }
       // Replace the entries with the full list.
       entries[name] = result;
+    }
+  }
+}
+
+function normalize({entries, sums}: Data) {
+  let keys =
+    Object.keys(Object.values(sums)[0]).filter(key => key != 'date') as
+    (keyof DateMetrics)[];
+  for (let points of Object.values(entries)) {
+    for (let point of points) {
+      let sum = sums[point.date];
+      for (let key of keys) {
+        (point[key] as number) =
+          100 * (point[key] as number) / (sum[key] as number);
+      }
+    }
+  }
+}
+
+function putMean({entries, sums}: Data) {
+  let keys =
+    Object.keys(Object.values(sums)[0]).filter(key => key != 'date') as
+    (keyof DateMetrics)[];
+  for (let points of Object.values(entries)) {
+    for (let point of points) {
+      let sum =
+        (keys.map(key => point[key]) as number[]).reduce((x, y) => x + y, 0);
+      point.mean = sum / keys.length;
     }
   }
 }

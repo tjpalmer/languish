@@ -1,5 +1,6 @@
 a {
   color: #99a;
+  text-decoration: none;
 }
 
 body {
@@ -142,6 +143,7 @@ input {
 }
 
 .query input {
+  flex: 1 1 auto;
   margin: 0 0.5vh;
 }
 

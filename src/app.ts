@@ -1,15 +1,20 @@
 import {Chart, ChartColor, ChartDataSets} from 'chart.js';
 
-export interface Metrics {
+export interface CoreMetrics {
   issues: number;
   pulls: number;
   pushes: number;
   stars: number;
 }
 
+export interface Metrics extends CoreMetrics {
+  mean: number;
+}
+
 let labels = {
   date: 'Date',
   issues: 'Issues',
+  mean: 'Mean Score',
   pulls: 'Pull Requests',
   pushes: 'Pushes',
   stars: 'Stars',
@@ -57,7 +62,7 @@ export class App {
       data: state.data,
       names: state.names || [],
       x: state.x || 'date',
-      y: state.y || 'stars',
+      y: state.y || 'mean',
     };
     this.counts = this.findLatestCounts();
     let actives = this.counts.slice(0, 10);
@@ -177,8 +182,7 @@ export class App {
       cubicInterpolationMode: 'monotone',
       data: this.state.data.entries[name].map(entry => {
         // Remember [{x, y}, ...] for 2D.
-        return 100 * entry[this.state.y] /
-          this.state.data.sums[entry.date][this.state.y];
+        return entry[this.state.y];
       }),
       fill: false,
       hoverBorderColor: borderColor,
