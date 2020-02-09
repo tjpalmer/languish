@@ -1,6 +1,7 @@
 /.cache/
 /dev/
 /node_modules/
+/notes/
 /scripts/bin/
 /src/data/data.json
 *.swp

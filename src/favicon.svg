@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <g>
+    <rect
+      style="fill:#333;stroke:#ca4;stroke-width:32"
+      x="16" y="16" rx="32" ry="32" width="224" height="224"
+    />
+    <path
+      style="fill:none;stroke:#ca4;stroke-linejoin:round;stroke-width:32"
+      d="M 16 224 L 85 128 L 170 192 L 240 32"
+    />
+  </g>
+</svg>
