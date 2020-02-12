@@ -48,7 +48,14 @@ h2 {
   font-style: italic;
 }
 
+h3 {
+  font-size: 1em;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
 .header {
+  /* Make this wrap! */
   align-items: center;
   display: flex;
   flex: 0 0 auto;
@@ -72,7 +79,7 @@ input {
   cursor: default;
 }
 
-.interactive:hover {
+.interactive:hover, .yMetricsList .active {
   background: #555;
   filter: brightness(110%);
 }
@@ -201,8 +208,31 @@ input {
 .yLabel {
   cursor: default;
   left: 50%;
-  transform: translate(-50%, -50%) translate(0, -1.2em) rotate(-90deg);
+  transform: translate(-50%, -50%) translateY(-1.2em) rotate(-90deg);
   position: absolute;
   top: 50%;
   white-space: nowrap;
+}
+
+.yMetricsList {
+  cursor: default;
+  margin: 0;
+}
+
+.yOptions {
+  display: none;
+  padding: 1em;
+  padding-right: 0.5em;
+  position: relative;
+}
+
+.yOptionsBox {
+  padding-left: 0.5em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%)  translateY(-2em);
+}
+
+.yOptionsBox li {
+  padding: 0 0.2em;
 }

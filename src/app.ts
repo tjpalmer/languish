@@ -69,8 +69,18 @@ export class App {
     this.activeNames = new Set(actives.map(active => active.name));
     this.chart = this.makeChart();
     this.makeLegend();
+    this.makeOptions();
     document.querySelector('.xLabel')!.textContent = labels[this.state.x];
-    document.querySelector('.yLabel')!.textContent = labels[this.state.y];
+    let yLabel = document.querySelector('.yLabel')!;
+    yLabel.textContent = labels[this.state.y];
+    yLabel.addEventListener('click', () => {
+      let yOptions = document.querySelector('.yOptions') as HTMLElement;
+      if (yOptions.style.display) {
+        yOptions.style.display = '';
+      } else {
+        yOptions.style.display = 'block';
+      }
+    })
     document.querySelector('.clear')!.addEventListener('click', () => {
       this.clearActives();
     });
@@ -97,12 +107,11 @@ export class App {
     let key = this.state.y;
     let {entries} = this.state.data;
     let counts = Object.entries(entries).map(([name, langEntries]) => {
-      let last = langEntries.slice(-1)[0];
-      // Default to 0 if absent.
-      let value = last.date == date ? last[key] : 0;
+      let value = langEntries.slice(-1)[0][key];
       return {name, value} as Metric;
     });
     // Sort descending.
+    // TODO Sort by sequence newest to oldest dates, current metric then mean.
     return counts.sort((a, b) => b.value - a.value);
   }
 
@@ -111,7 +120,6 @@ export class App {
   }
 
   private makeChart() {
-    // TODO For Metrics Mean, mean after norm.
     // TODO For Metrics Mean total, first norm by max for metric total, then mean.
     let plot = document.querySelector('.plot')!;
     let canvas = plot.querySelector('canvas')!;
@@ -180,10 +188,7 @@ export class App {
     return {
       borderColor,
       cubicInterpolationMode: 'monotone',
-      data: this.state.data.entries[name].map(entry => {
-        // Remember [{x, y}, ...] for 2D.
-        return entry[this.state.y];
-      }),
+      data: this.makeEntryData(name),
       fill: false,
       hoverBorderColor: borderColor,
       hoverBorderWidth: 6,
@@ -196,6 +201,13 @@ export class App {
   private makeDatasets() {
     // The order doesn't really matter here.
     return [...this.activeNames].map(name => this.makeDataset(name));
+  }
+
+  private makeEntryData(name: string) {
+    return this.state.data.entries[name].map(entry => {
+      // Remember [{x, y}, ...] for 2D.
+      return entry[this.state.y];
+    });
   }
 
   private makeLegend() {
@@ -231,6 +243,43 @@ export class App {
     box.appendChild(table);
   }
 
+  makeOptions() {
+    let list = document.querySelector('.yMetricsList')!;
+    list.innerHTML = '';
+    let keyLabels = Object.entries(labels).sort((a, b) => {
+      return a[1].localeCompare(b[1]);
+    }) as [keyof DateMetrics, string][];
+    keyLabels.map(([key, label]) => {
+      if (key != 'date') {
+        let option = document.createElement('li');
+        option.addEventListener('click', () => this.setY(key));
+        option.classList.add('interactive');
+        option.classList.add(key);
+        if (key == this.state.y) {
+          option.classList.add('active');
+        }
+        option.textContent = label;
+        list.appendChild(option);
+      }
+    });
+  }
+
+  setY(key: keyof Metrics) {
+    if (this.state.y != key) {
+      let list = document.querySelector('.yMetricsList')!;
+      this.state.y = key;
+      this.updateData();
+      document.querySelector('.yLabel')!.textContent = labels[this.state.y];
+      for (let option of list.querySelectorAll('.interactive')) {
+        if (option.classList.contains(key)) {
+          option.classList.add('active');
+        } else {
+          option.classList.remove('active');
+        }
+      }
+    }
+  }
+
   private state: State;
 
   toggle(info: {name: string, row: HTMLElement}) {
@@ -249,6 +298,16 @@ export class App {
       marker.classList.add('active');
       marker.style.background = this.state.data.colors[name];
       datasets.push(this.makeDataset(name));
+    }
+    this.chart.update();
+  }
+
+  updateData() {
+    this.counts = this.findLatestCounts();
+    this.makeLegend();
+    for (let dataset of this.chart.data.datasets!) {
+      let newData = this.makeEntryData(dataset.label!);
+      dataset.data!.splice(0, dataset.data!.length, ...newData);
     }
     this.chart.update();
   }
