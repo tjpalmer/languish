@@ -29,7 +29,6 @@ body {
 }
 
 .github {
-  filter: invert(1);
   height: 3vh;
   padding: 1vh 2vh;
   width: 3vh;
@@ -92,6 +91,18 @@ input {
   min-width: 12em;
   margin-left: 2vh;
   position: relative;
+}
+
+.link {
+  color: white;
+  display: inline-block;
+}
+
+.link svg {
+  display: inline-block;
+  height: 3vh;
+  padding: 1vh;
+  width: 3vh;
 }
 
 .list {
@@ -227,7 +238,6 @@ input {
 }
 
 .yOptionsBox {
-  padding-left: 0.5em;
   position: relative;
   top: 50%;
   transform: translateY(-50%)  translateY(-2em);

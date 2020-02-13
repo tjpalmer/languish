@@ -47,6 +47,7 @@ export interface Data {
 export interface State {
   data: Data;
   names: string[];
+  trimmed: boolean;
   x: keyof DateMetrics;
   y: keyof Metrics;
 }
@@ -61,6 +62,7 @@ export class App {
     this.state = {
       data: state.data,
       names: state.names || [],
+      trimmed: false,
       x: state.x || 'date',
       y: state.y || 'mean',
     };
@@ -83,6 +85,12 @@ export class App {
     })
     document.querySelector('.clear')!.addEventListener('click', () => {
       this.clearActives();
+    });
+    document.querySelector('.reset')!.addEventListener('click', () => {
+      // this.resetActives();
+    });
+    document.querySelector('.trim')!.addEventListener('click', () => {
+      this.toggleTrimmed();
     });
   }
 
@@ -162,6 +170,7 @@ export class App {
           }],
         },
         tooltips: {
+          bodyFontSize: 18,
           // I can't figure out how to remove the white border, but black here
           // softens it some.
           callbacks: {
@@ -176,6 +185,8 @@ export class App {
           },
           // mode: 'x',  // Would need to highlight current and refine.
           position: 'nearest',
+          titleFontSize: 18,
+          titleFontStyle: 'normal',
         },
       },
       type: 'line',
@@ -300,6 +311,14 @@ export class App {
       datasets.push(this.makeDataset(name));
     }
     this.chart.update();
+  }
+
+  toggleTrimmed() {
+    if (this.state.trimmed) {
+      // Untrim.
+    } else {
+      // Trim.
+    }
   }
 
   updateData() {

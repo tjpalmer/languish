@@ -9,8 +9,10 @@ let files = {
 };
 
 let canonicalNames = {
+  'FORTRAN': 'Fortran',
   'Matlab': 'MATLAB',
   'Nimrod': 'Nim',
+  'VimL': 'Vim script',
 } as {[name: string]: string};
 
 // TODO New script to calculate colors and find a seed to maximize the minimum
