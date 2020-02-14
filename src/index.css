@@ -12,6 +12,13 @@ body {
   font-size: 1.5em;
 }
 
+.change {
+  color: #ddd;
+  font-size: 60%;
+  padding-right: 0.2vh;
+  text-align: right;
+}
+
 .content {
   bottom: 0;
   display: flex;
@@ -91,6 +98,10 @@ input {
   min-width: 12em;
   margin-left: 2vh;
   position: relative;
+}
+
+.legend table {
+  width: 100%;
 }
 
 .link {

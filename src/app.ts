@@ -66,11 +66,11 @@ export class App {
       x: state.x || 'date',
       y: state.y || 'mean',
     };
-    this.counts = this.findLatestCounts();
-    let actives = this.counts.slice(0, 10);
+    let ranks = this.findLatestRanks();
+    let actives = ranks.slice(0, 10);
     this.activeNames = new Set(actives.map(active => active.name));
     this.chart = this.makeChart();
-    this.makeLegend();
+    this.makeLegend(ranks);
     this.makeOptions();
     document.querySelector('.xLabel')!.textContent = labels[this.state.x];
     let yLabel = document.querySelector('.yLabel')!;
@@ -108,19 +108,19 @@ export class App {
     }
   }
 
-  private counts: Metric[];
-
-  private findLatestCounts() {
+  private findLatestRanks(offset = -1) {
     let date = this.latestDate();
     let key = this.state.y;
     let {entries} = this.state.data;
     let counts = Object.entries(entries).map(([name, langEntries]) => {
-      let value = langEntries.slice(-1)[0][key];
+      let value = langEntries.slice(offset)[0][key];
       return {name, value} as Metric;
     });
     // Sort descending.
     // TODO Sort by sequence newest to oldest dates, current metric then mean.
-    return counts.sort((a, b) => b.value - a.value);
+    counts.sort((a, b) => b.value - a.value);
+    countsToRanks(counts);
+    return counts;
   }
 
   private latestDate() {
@@ -221,13 +221,18 @@ export class App {
     });
   }
 
-  private makeLegend() {
+  private makeLegend(namedRanks: Metric[]) {
     let box = document.querySelector('.listBox')!;
     let {colors} = this.state.data;
     box.innerHTML = '';
     let table = document.createElement('table');
-    this.counts.forEach((count, index) => {
-      let {name} = count;
+    let oldRanksRaw = this.findLatestRanks(-5);
+    let worstRank = Math.min(
+      oldRanksRaw.slice(-1)[0].value,
+      namedRanks.slice(-1)[0].value);
+    let oldRanks = metricArrayToObject(oldRanksRaw);
+    namedRanks.forEach(namedRank => {
+      let {name, value: rank} = namedRank;
       let row = document.createElement('tr');
       row.classList.add('interactive');
       row.addEventListener('click', event => this.toggle({name, row}));
@@ -239,7 +244,7 @@ export class App {
         marker.style.background = color;
       }
       marker.classList.add('marker');
-      marker.textContent = String(index + 1);
+      marker.textContent = String(rank + 1);
       marker.style.minWidth = '1em';
       row.appendChild(marker);
       // Label.
@@ -248,8 +253,20 @@ export class App {
       label.textContent = name;
       label.style.paddingLeft = '0.2em';
       row.appendChild(label);
+      // Rank change.
+      let change = document.createElement('td');
+      change.classList.add('change');
+      let oldRank = oldRanks[name];
+      let changeValue =
+        Math.min(oldRank, worstRank) - Math.min(rank, worstRank);
+      if (changeValue) {
+        let prefix = changeValue > 0 ? '+' : '';
+        change.textContent = `${prefix}${changeValue}`;
+        change.title = 'Change in rank vs 1 year earlier';
+      }
+      row.appendChild(change);
+      // Row done.
       table.appendChild(row);
-      // TODO Put in +/- amount for those who've changed rank.
     });
     box.appendChild(table);
   }
@@ -322,8 +339,8 @@ export class App {
   }
 
   updateData() {
-    this.counts = this.findLatestCounts();
-    this.makeLegend();
+    let counts = this.findLatestRanks();
+    this.makeLegend(counts);
     for (let dataset of this.chart.data.datasets!) {
       let newData = this.makeEntryData(dataset.label!);
       dataset.data!.splice(0, dataset.data!.length, ...newData);
@@ -331,4 +348,28 @@ export class App {
     this.chart.update();
   }
 
+}
+
+function countsToRanks(counts: Metric[]) {
+  let lastCount = NaN;
+  let lastRank = 0;
+  counts.forEach((count, rank) => {
+    if (count.value == lastCount) {
+      // Track ties.
+      rank = lastRank;
+    }
+    // Remember new last.
+    lastCount = count.value;
+    lastRank = rank;
+    // Update.
+    count.value = rank;
+  });
+}
+
+function metricArrayToObject(pairs: Metric[]) {
+  let result = {} as {[name: string]: number};
+  for (let pair of pairs) {
+    result[pair.name] = pair.value;
+  }
+  return result;
 }
