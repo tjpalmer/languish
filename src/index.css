@@ -15,8 +15,9 @@ body {
 .change {
   color: #ddd;
   font-size: 60%;
-  padding-right: 0.2vh;
+  padding: 0 0.2vh;
   text-align: right;
+  width: 1em;
 }
 
 .content {
@@ -95,7 +96,7 @@ input {
   flex: 0 0 auto;
   flex-direction: column;
   height: 100%;
-  min-width: 12em;
+  width: 12em;
   margin-left: 2vh;
   position: relative;
 }
@@ -122,6 +123,11 @@ input {
   position: relative;
 }
 
+.listBox .label {
+  padding: 0 0.2em;
+  width: 9em;
+}
+
 .listBox table {
   border-spacing: 0 2px;
 }
@@ -146,6 +152,7 @@ input {
 }
 
 .marker {
+  width: 2em;
   text-align: center;
 }
 
@@ -176,8 +183,8 @@ input {
 }
 
 .query input {
-  flex: 1 1 auto;
   margin: 0 0.5vh;
+  width: 100%;
 }
 
 .spread {
@@ -196,6 +203,11 @@ input {
   margin: 0 0.5vh 1vh;
   padding: 0.5vh;
   text-align: center;
+}
+
+.trim.checked {
+  background: white;
+  color: #333;
 }
 
 .xAxis {

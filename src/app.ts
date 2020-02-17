@@ -102,7 +102,9 @@ export class App {
     this.activeNames.clear();
     this.chart.data.datasets = [];
     this.chart.update();
-    for (let marker of document.querySelectorAll('.listBox .marker')! as Iterable<HTMLElement>) {
+    let markers =
+      document.querySelectorAll('.listBox .marker') as Iterable<HTMLElement>;
+    for (let marker of markers) {
       marker.classList.remove('active');
       marker.style.background = '';
     }
@@ -245,13 +247,11 @@ export class App {
       }
       marker.classList.add('marker');
       marker.textContent = String(rank + 1);
-      marker.style.minWidth = '1em';
       row.appendChild(marker);
       // Label.
       let label = document.createElement('td');
       label.classList.add('label');
       label.textContent = name;
-      label.style.paddingLeft = '0.2em';
       row.appendChild(label);
       // Rank change.
       let change = document.createElement('td');
@@ -331,10 +331,26 @@ export class App {
   }
 
   toggleTrimmed() {
+    let trim = document.querySelector('.trim')!;
+    let rows =
+      document.querySelectorAll('.listBox tr') as Iterable<HTMLElement>;
     if (this.state.trimmed) {
       // Untrim.
-    } else {
+      for (let row of rows) {
+        row.style.display = '';
+      }
+      trim.classList.remove('checked');
+      this.state.trimmed = false;
+   } else {
       // Trim.
+      for (let row of rows) {
+        let marker = row.querySelector('.marker')!;
+        if (!marker.classList.contains('active')) {
+          row.style.display = 'none';
+        }
+      }
+      trim.classList.add('checked');
+      this.state.trimmed = true;
     }
   }
 
