@@ -12,14 +12,6 @@ body {
   font-size: 1.5em;
 }
 
-.change {
-  color: #ddd;
-  font-size: 60%;
-  padding: 0 0.2vh;
-  text-align: right;
-  width: 1em;
-}
-
 .content {
   bottom: 0;
   display: flex;
@@ -101,10 +93,6 @@ input {
   position: relative;
 }
 
-.legend table {
-  width: 100%;
-}
-
 .link {
   color: white;
   display: inline-block;
@@ -123,17 +111,44 @@ input {
   position: relative;
 }
 
+.listBox .change {
+  color: #ddd;
+  flex: 0 0 auto;
+  font-size: 60%;
+  padding-right: 0.2vh;
+  text-align: right;
+}
+
 .listBox .label {
+  flex: 1 1 auto;
   padding: 0 0.2em;
-  width: 9em;
+}
+
+.listBox .marker {
+  flex: 0 0 auto;
+  text-align: center;
+  width: 2em;
+}
+
+.listBox .marker.active {
+  color: #333;
 }
 
 .listBox table {
   border-spacing: 0 2px;
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
 }
 
 .listBox td {
   cursor: default;
+}
+
+.listBox tr {
+  align-items: center;
+  display: flex;
+  margin-bottom: 2px;
 }
 
 .listScroll {
@@ -141,6 +156,7 @@ input {
   overflow-y: auto;
   position: absolute;
   scrollbar-color: white #444;
+  width: 100%;
 }
 
 .listScroll::-webkit-scrollbar {
@@ -149,15 +165,6 @@ input {
 
 .listScroll::-webkit-scrollbar-thumb {
   background: white;
-}
-
-.marker {
-  width: 2em;
-  text-align: center;
-}
-
-.marker.active {
-  color: #333;
 }
 
 .plot {
