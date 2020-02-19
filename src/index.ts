@@ -1,5 +1,5 @@
 import * as tables from './data/data.json';
-import {App, Data, DateMetrics, Entry, Keyed} from './app';
+import {App, AppOptions, Data, DateMetrics, Entry, Keyed, labels} from './app';
 import {murmur3} from 'murmurhash-js';
 
 addEventListener('load', main);
@@ -24,7 +24,7 @@ function main() {
   // The idea is that this code is smaller than the compressed repeated zeros
   // would be in the preprocessed data -- and not too expensive to compute.
   fillDates(data);
-  new App({data});
+  new App({data, ...parseArgs(entries)});
 }
 
 export interface Color {
@@ -33,6 +33,7 @@ export interface Color {
 }
 
 function chooseColor(name: string) {
+  // Use a handpicked seed that looks nice enough for the current top 10.
   let hash = murmur3(name, 95);
   let hue = 360 * ((hash >> 16) & 0xFFFF) / 0xFFFF;
   let saturation = 100 * (0.3 + 0.7 * (hash & 0xFFFF) / 0xFFFF);
@@ -47,6 +48,34 @@ function keepFirst<Item>(keyed: Keyed<Item[]>): Keyed<Item> {
   return Object.assign({}, ...Object.keys(keyed).map(key => {
     return {[key]: keyed[key][0]};
   }));
+}
+
+function parseArgs(entries: Keyed<Entry[]>) {
+  let result = {} as AppOptions;
+  let args = new URLSearchParams(window.location.hash.slice(1));
+  // Get names.
+  let namesText = args.get('names');
+  if (namesText && namesText.length) {
+    let names = namesText.split(',');
+    // Map from lowercase to canonical.
+    let nameMap = {} as {[lowerName: string]: string};
+    for (let canonicalName in entries) {
+      nameMap[canonicalName.toLowerCase()] = canonicalName;
+    }
+    names = names.map(name => nameMap[name.toLowerCase()]);
+    names = names.filter(name => name && name.length);
+    // Store them.
+    if (names.length) {
+      result.activeNames = new Set(names);
+    }
+  }
+  // Get y.
+  let y = args.get('y');
+  if (y && Object.keys(labels).includes(y)) {
+    // Technically, 'date' can slip through, but eh.
+    result.y = y as typeof result.y;
+  }
+  return result;
 }
 
 interface KeyOnArgs<Key extends keyof Item, Item> {

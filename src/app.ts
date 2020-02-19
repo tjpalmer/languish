@@ -11,14 +11,14 @@ export interface Metrics extends CoreMetrics {
   mean: number;
 }
 
-let labels = {
+export const labels = Object.freeze({
   date: 'Date',
   issues: 'Issues',
   mean: 'Mean Score',
   pulls: 'Pull Requests',
   pushes: 'Pushes',
   stars: 'Stars',
-};
+});
 
 export interface DateMetrics extends Metrics {
   date: string;
@@ -45,8 +45,9 @@ export interface Data {
 }
 
 export interface State {
+  activeNames: Set<string>;
   data: Data;
-  names: string[];
+  originalActiveNames: Set<string>,
   trimmed: boolean;
   x: keyof DateMetrics;
   y: keyof Metrics;
@@ -60,21 +61,28 @@ export class App {
 
   constructor(state: AppOptions) {
     this.state = {
+      activeNames: new Set(state.activeNames || []),
       data: state.data,
-      names: state.names || [],
-      trimmed: false,
+      originalActiveNames: new Set(),
+      trimmed: state.trimmed || false,
       x: state.x || 'date',
       y: state.y || 'mean',
     };
+    // Rank them, including to determine default active names.
     let ranks = this.findLatestRanks();
     let actives = ranks.slice(0, 10);
-    this.activeNames = new Set(actives.map(active => active.name));
+    if (!this.state.activeNames.size) {
+      this.state.activeNames = new Set(actives.map(active => active.name));
+    }
+    this.state.originalActiveNames = new Set(this.state.activeNames);
+    // Render.
     this.chart = this.makeChart();
     this.makeLegend(ranks);
     this.makeOptions();
     document.querySelector('.xLabel')!.textContent = labels[this.state.x];
     let yLabel = document.querySelector('.yLabel')!;
     yLabel.textContent = labels[this.state.y];
+    // Wire events.
     yLabel.addEventListener('click', () => {
       let yOptions = document.querySelector('.yOptions') as HTMLElement;
       if (yOptions.style.display) {
@@ -87,7 +95,7 @@ export class App {
       this.clearActives();
     });
     document.querySelector('.reset')!.addEventListener('click', () => {
-      // this.resetActives();
+      this.resetActives();
     });
     document.querySelector('.trim')!.addEventListener('click', () => {
       this.toggleTrimmed();
@@ -116,13 +124,15 @@ export class App {
     query.addEventListener('keyup', () => this.updateQuery());
   }
 
-  // TODO Put these into state.
-  private activeNames: Set<string>;
+  private activateMarker(marker: HTMLElement, name: string) {
+    marker.classList.add('active');
+    marker.style.background = this.state.data.colors[name];
+  }
 
   private chart: Chart;
 
   private clearActives() {
-    this.activeNames.clear();
+    this.state.activeNames.clear();
     this.chart.data.datasets = [];
     this.chart.update();
     let markers =
@@ -131,6 +141,12 @@ export class App {
       marker.classList.remove('active');
       marker.style.background = '';
     }
+    this.updateLink();
+  }
+
+  private deactivateMarker(marker: HTMLElement) {
+    marker.classList.remove('active');
+    marker.style.background = '';
   }
 
   private findLatestRanks(offset = -1) {
@@ -236,7 +252,7 @@ export class App {
 
   private makeDatasets() {
     // The order doesn't really matter here.
-    return [...this.activeNames].map(name => this.makeDataset(name));
+    return [...this.state.activeNames].map(name => this.makeDataset(name));
   }
 
   private makeEntryData(name: string) {
@@ -264,7 +280,7 @@ export class App {
       // Marker.
       let marker = document.createElement('td');
       let color = colors[name];
-      if (this.activeNames.has(name)) {
+      if (this.state.activeNames.has(name)) {
         marker.classList.add('active');
         marker.style.background = color;
       }
@@ -291,7 +307,15 @@ export class App {
       // Row done.
       table.appendChild(row);
     });
+    // Add it in.
     box.appendChild(table);
+    // Hack filters.
+    if (this.state.trimmed) {
+      this.state.trimmed = !this.state.trimmed;
+      this.toggleTrimmed();
+    } else {
+      this.updateQuery();
+    }
   }
 
   makeOptions() {
@@ -315,6 +339,44 @@ export class App {
     });
   }
 
+  queryRows() {
+    return document.querySelectorAll('.listBox tr') as Iterable<HTMLElement>;
+  }
+
+  resetActives() {
+    // TODO Factor out something callable from clearActives and toggle?
+    // TODO At the moment, those are both more efficient (?) than this.
+    // Set new to original.
+    this.state.activeNames = new Set(this.state.originalActiveNames);
+    let {activeNames} = this.state;
+    // Keep matching datasets in hopes to avoid them animating,
+    let datasets = this.chart.data.datasets!.filter(
+      dataset => activeNames.has(dataset.label!),
+    );
+    // Figure out what new ones to add, and add them.
+    let extras = new Set(activeNames);
+    for (let dataset of datasets) {
+      extras.delete(dataset.label!);
+    }
+    for (let extra of extras) {
+      datasets.push(this.makeDataset(extra));
+    }
+    this.chart.data.datasets = datasets;
+    // Update markers.
+    for (let row of this.queryRows()) {
+      let name = row.querySelector('.label')!.textContent!.trim();
+      let marker = row.querySelector('.marker') as HTMLElement;
+      if (activeNames.has(name)) {
+        this.activateMarker(marker, name);
+      } else {
+        this.deactivateMarker(marker);
+      }
+    }
+    // Update chart and link.
+    this.chart.update();
+    this.updateLink();
+  }
+
   setY(key: keyof Metrics) {
     if (this.state.y != key) {
       let list = document.querySelector('.yMetricsList')!;
@@ -328,6 +390,7 @@ export class App {
           option.classList.remove('active');
         }
       }
+      this.updateLink();
     }
   }
 
@@ -336,21 +399,20 @@ export class App {
   toggle(info: {name: string, row: HTMLElement}) {
     let {name, row} = info;
     let marker = row.querySelector('.marker') as HTMLElement;
-    let label = row.querySelector('.label') as HTMLElement;
     let datasets = this.chart.data.datasets!;
-    if (this.activeNames.has(name)) {
-      this.activeNames.delete(name);
-      marker.classList.remove('active');
-      marker.style.background = '';
+    let {activeNames} = this.state;
+    if (activeNames.has(name)) {
+      activeNames.delete(name);
+      this.deactivateMarker(marker);
       this.chart.data.datasets =
         datasets.filter(dataset => dataset.label != name);
     } else {
-      this.activeNames.add(name);
-      marker.classList.add('active');
-      marker.style.background = this.state.data.colors[name];
+      activeNames.add(name);
+      this.activateMarker(marker, name);
       datasets.push(this.makeDataset(name));
     }
     this.chart.update();
+    this.updateLink();
   }
 
   toggleTrimmed() {
@@ -359,8 +421,7 @@ export class App {
     query.value = '';
     // Handle trim.
     let trim = document.querySelector('.trim')!;
-    let rows =
-      document.querySelectorAll('.listBox tr') as Iterable<HTMLElement>;
+    let rows = this.queryRows();
     if (this.state.trimmed) {
       // Untrim.
       for (let row of rows) {
@@ -387,6 +448,21 @@ export class App {
       dataset.data!.splice(0, dataset.data!.length, ...newData);
     }
     this.chart.update();
+  }
+
+  updateLink() {
+    // Change the link.
+    let params = new URLSearchParams();
+    let names = [...this.state.activeNames].map(name => name.toLowerCase());
+    params.append('y', this.state.y);
+    params.append('names', names.join());
+    let link = document.querySelector('.link') as HTMLAnchorElement;
+    link.href = `#${params}`;
+    // But hide it in the url.
+    // I don't want to force back and forth through history, but I also don't
+    // want to have a lying address bar.
+    let plainUri = window.location.href.replace(window.location.hash, '');
+    window.history.replaceState(undefined, '', plainUri);
   }
 
   updateQuery() {
