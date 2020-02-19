@@ -12,6 +12,8 @@ let canonicalNames = {
   'FORTRAN': 'Fortran',
   'Matlab': 'MATLAB',
   'Nimrod': 'Nim',
+  'Perl6': 'Raku',
+  'Perl 6': 'Raku',
   'VimL': 'Vim script',
 } as {[name: string]: string};
 

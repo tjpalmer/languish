@@ -153,6 +153,8 @@ input {
 
 .listScroll {
   height: 100%;
+  /* I've seen an old Firefox that needs hidden here to avoid horiz scroll. */
+  overflow-x: hidden;
   overflow-y: auto;
   position: absolute;
   scrollbar-color: white #444;

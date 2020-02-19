@@ -92,8 +92,31 @@ export class App {
     document.querySelector('.trim')!.addEventListener('click', () => {
       this.toggleTrimmed();
     });
+    // Search takeover of keyboard.
+    let query = document.querySelector('.query input') as HTMLInputElement;
+    // query.addEventListener('change', () => this.updateQuery());
+    window.addEventListener('keydown', event => {
+      if (event.target === document.body) {
+        // Nix '/' search on Firefox.
+        event.stopPropagation();
+      }
+    });
+    window.addEventListener('keypress', event => {
+      if (event.target !== query) {
+        let {key} = event;
+        query.value = key == ' ' ? '' : key;
+        event.stopPropagation();
+        // Timeout needed to avoid double-insert in Chrome.
+        window.setTimeout(() => {
+          query.focus();
+        }, 0);
+      }
+      this.updateQuery();
+    });
+    query.addEventListener('keyup', () => this.updateQuery());
   }
 
+  // TODO Put these into state.
   private activeNames: Set<string>;
 
   private chart: Chart;
@@ -331,6 +354,10 @@ export class App {
   }
 
   toggleTrimmed() {
+    // Unquery.
+    let query = document.querySelector('.query input') as HTMLInputElement;
+    query.value = '';
+    // Handle trim.
     let trim = document.querySelector('.trim')!;
     let rows =
       document.querySelectorAll('.listBox tr') as Iterable<HTMLElement>;
@@ -345,9 +372,7 @@ export class App {
       // Trim.
       for (let row of rows) {
         let marker = row.querySelector('.marker')!;
-        if (!marker.classList.contains('active')) {
-          row.style.display = 'none';
-        }
+        row.style.display = marker.classList.contains('active') ? '' : 'none';
       }
       trim.classList.add('checked');
       this.state.trimmed = true;
@@ -362,6 +387,21 @@ export class App {
       dataset.data!.splice(0, dataset.data!.length, ...newData);
     }
     this.chart.update();
+  }
+
+  updateQuery() {
+    // Untrim.
+    this.state.trimmed = false;
+    document.querySelector('.trim')!.classList.remove('checked');
+    // Run query.
+    let query = document.querySelector('.query input') as HTMLInputElement;
+    let text = query.value.trim();
+    let rows =
+      document.querySelectorAll('.listBox tr') as Iterable<HTMLElement>;
+    for (let row of rows) {
+      let name = row.querySelector('.label')!.textContent!.trim().toLowerCase();
+      row.style.display = name.includes(text) ? '' : 'none';
+    }
   }
 
 }
