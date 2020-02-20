@@ -1,3 +1,5 @@
+@import './icomoon.css';
+
 a {
   color: #aab;
   text-decoration: none;
@@ -65,6 +67,29 @@ html {
   color: white;
 }
 
+.icolink {
+  color: white;
+  font-size: 120%;
+  padding: 1vh;
+  text-decoration: none !important;
+}
+
+.info {
+  background: #555;
+  border-bottom: 1px solid #555;
+  border-left: 3px solid #555;
+  border-radius: 0 0 0 0.2em;
+  color: white;
+  display: none;
+  padding-top: 5px;
+  position: absolute;
+  right: 0;
+}
+
+.info .icolink {
+  padding: 5px;
+}
+
 input {
   background: none;
   border: 1px solid white;
@@ -111,6 +136,10 @@ input {
   position: relative;
 }
 
+.listBox {
+  padding-bottom: 2em;
+}
+
 .listBox .change {
   color: #ddd;
   flex: 0 0 auto;
@@ -149,6 +178,15 @@ input {
   align-items: center;
   display: flex;
   margin-bottom: 2px;
+  position: relative;
+}
+
+.listBox tr:hover {
+  z-index: 1;
+}
+
+.listBox tr:hover .info {
+  display: block;
 }
 
 .listScroll {

@@ -67,6 +67,7 @@ function parseArgs(entries: Keyed<Entry[]>) {
     // Store them.
     if (names.length) {
       result.activeNames = new Set(names);
+      result.trimmed = true;
     }
   }
   // Get y.

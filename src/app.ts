@@ -82,6 +82,7 @@ export class App {
     document.querySelector('.xLabel')!.textContent = labels[this.state.x];
     let yLabel = document.querySelector('.yLabel')!;
     yLabel.textContent = labels[this.state.y];
+    this.updateLink();
     // Wire events.
     yLabel.addEventListener('click', () => {
       let yOptions = document.querySelector('.yOptions') as HTMLElement;
@@ -262,6 +263,50 @@ export class App {
     });
   }
 
+  private makeInfo(name: string) {
+    let info = document.createElement('div');
+    info.classList.add('info');
+    function makeLink(name: string, title: string, href: string) {
+      let link = document.createElement('a');
+      link.classList.add('icolink');
+      link.href = href;
+      link.title = title;
+      let icon = document.createElement('span');
+      icon.classList.add(`icon-${name}`);
+      link.appendChild(icon);
+      return link;
+    }
+    // Encode things.
+    let nameLower = name.toLowerCase();
+    let nameChanges = {
+      'raku': 'perl 6'
+    } as {[name: string]: string};
+    let nameChanged = nameChanges[nameLower] || nameLower;
+    let defaultTopic = nameChanged.replace(/ /g, '-');
+    let topics = {
+      'c++': 'cpp',
+      'c#': 'csharp',
+      'f#': 'fsharp',
+      'objective-c++': 'objective-cpp',
+      'perl 6': 'perl6',
+      'visual basic .net': 'visual-basic-net',
+    } as {[name: string]: string};
+    let topic = topics[nameChanged] || encodeURIComponent(defaultTopic);
+    let nameEncoded = encodeURIComponent(nameChanged);
+    // Make links.
+    info.appendChild(makeLink(
+      'github',
+      'GitHub Topic',
+      `https://github.com/topics/${topic}?l=${nameEncoded}`,
+    ));
+    info.appendChild(makeLink(
+      'trending-up',
+      'GitHub Trending',
+      `https://github.com/trending/${nameEncoded}?since=daily`,
+    ));
+    return info;
+  }
+
   private makeLegend(namedRanks: Metric[]) {
     let box = document.querySelector('.listBox')!;
     let {colors} = this.state.data;
@@ -276,6 +321,7 @@ export class App {
       let {name, value: rank} = namedRank;
       let row = document.createElement('tr');
       row.classList.add('interactive');
+      row.dataset.name = name;
       row.addEventListener('click', event => this.toggle({name, row}));
       // Marker.
       let marker = document.createElement('td');
@@ -291,6 +337,7 @@ export class App {
       let label = document.createElement('td');
       label.classList.add('label');
       label.textContent = name;
+      label.appendChild(this.makeInfo(name));
       row.appendChild(label);
       // Rank change.
       let change = document.createElement('td');
@@ -364,7 +411,7 @@ export class App {
     this.chart.data.datasets = datasets;
     // Update markers.
     for (let row of this.queryRows()) {
-      let name = row.querySelector('.label')!.textContent!.trim();
+      let name = row.dataset.name!;
       let marker = row.querySelector('.marker') as HTMLElement;
       if (activeNames.has(name)) {
         this.activateMarker(marker, name);
