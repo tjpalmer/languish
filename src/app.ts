@@ -170,6 +170,18 @@ export class App {
     return counts;
   }
 
+  private highlight(name: string, value: boolean) {
+    if (!this.state.activeNames.has(name)) {
+      return;
+    }
+    let {chart} = this;
+    let dataset = chart.data.datasets!.find(dataset => dataset.label == name)!;
+    // More remote than point hover, so make it even wider than standard hover.
+    // More noticeable that way.
+    dataset.borderWidth = value ? 9 : 3;
+    chart.update();
+  }
+
   private latestDate() {
     return this.state.data.dates.slice(-1)[0];
   }
@@ -295,6 +307,7 @@ export class App {
       'f*': 'fstar',
       'objective-c++': 'objective-cpp',
       'perl 6': 'perl6',
+      "ren'py": 'renpy',
       'visual basic .net': 'visual-basic-net',
     } as {[name: string]: string};
     let topic = topics[nameChanged] || encodeURIComponent(defaultTopic);
@@ -329,6 +342,8 @@ export class App {
       row.classList.add('interactive');
       row.dataset.name = name;
       row.addEventListener('click', event => this.toggle({name, row}));
+      row.addEventListener('mouseover', () => this.highlight(name, true));
+      row.addEventListener('mouseout', () => this.highlight(name, false));
       // Marker.
       let marker = document.createElement('td');
       let color = colors[name];
