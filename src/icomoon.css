@@ -27,6 +27,15 @@
 .icon-link-2:before {
   content: "\e901";
 }
+.icon-wikipedia-w:before {
+  content: "\e905";
+}
+.icon-close:before {
+  content: "\e903";
+}
+.icon-search:before {
+  content: "\e904";
+}
 .icon-github:before {
   content: "\e902";
 }

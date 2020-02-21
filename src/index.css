@@ -90,15 +90,6 @@ html {
   padding: 5px;
 }
 
-input {
-  background: none;
-  border: 1px solid white;
-  border-radius: 0.2em;
-  color: white;
-  font-size: inherit;
-  padding: 0.2em;
-}
-
 .interactive {
   cursor: default;
 }
@@ -224,14 +215,27 @@ input {
 }
 
 .query {
+  border: 1px solid white;
+  border-radius: 0.2em;
   display: flex;
   flex: 0 0 auto;
-  margin-bottom: 1vh;
+  align-items: center;
+  margin: 0 0.2em 1vh;
 }
 
 .query input {
+  background: none;
+  border: none;
+  color: white;
+  font-size: inherit;
   margin: 0 0.5vh;
+  outline: none;
+  padding: 0.2em;
   width: 100%;
+}
+
+.queryClear {
+  padding-left: 0.2em;
 }
 
 .spread {

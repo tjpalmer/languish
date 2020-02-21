@@ -103,6 +103,11 @@ export class App {
     });
     // Search takeover of keyboard.
     let query = document.querySelector('.query input') as HTMLInputElement;
+    let queryClear = document.querySelector('.queryClear')!;
+    queryClear.addEventListener('click', () => {
+      query.value = '';
+      this.updateQuery();
+    });
     // query.addEventListener('change', () => this.updateQuery());
     window.addEventListener('keydown', event => {
       if (event.target === document.body) {
@@ -287,6 +292,7 @@ export class App {
       'c++': 'cpp',
       'c#': 'csharp',
       'f#': 'fsharp',
+      'f*': 'fstar',
       'objective-c++': 'objective-cpp',
       'perl 6': 'perl6',
       'visual basic .net': 'visual-basic-net',
@@ -518,12 +524,21 @@ export class App {
     document.querySelector('.trim')!.classList.remove('checked');
     // Run query.
     let query = document.querySelector('.query input') as HTMLInputElement;
-    let text = query.value.trim();
+    let text = query.value.trim().toLowerCase();
     let rows =
       document.querySelectorAll('.listBox tr') as Iterable<HTMLElement>;
     for (let row of rows) {
       let name = row.querySelector('.label')!.textContent!.trim().toLowerCase();
       row.style.display = name.includes(text) ? '' : 'none';
+    }
+    // Update query clear.
+    let queryClear = document.querySelector('.queryClear')!;
+    if (text) {
+      queryClear.classList.add('icon-close');
+      queryClear.classList.remove('icon-search');
+    } else {
+      queryClear.classList.remove('icon-close');
+      queryClear.classList.add('icon-search');
     }
   }
 
