@@ -47,6 +47,7 @@ export interface Data {
 export interface State {
   activeNames: Set<string>;
   data: Data;
+  loaded: boolean;
   originalActiveNames: Set<string>,
   trimmed: boolean;
   trimmedNames: Set<string>,
@@ -64,6 +65,7 @@ export class App {
     this.state = {
       activeNames: new Set(options.activeNames || []),
       data: options.data,
+      loaded: false,
       originalActiveNames: new Set(),
       trimmed: options.trimmed || false,
       trimmedNames: new Set(),
@@ -112,15 +114,33 @@ export class App {
     });
     // query.addEventListener('change', () => this.updateQuery());
     window.addEventListener('keydown', event => {
+      let clearQuery = () => {
+        query.value = '';
+        event.preventDefault();
+        this.updateQuery();
+        query.focus();
+      }
+      if (event.key == 'Escape') {
+        clearQuery();
+      }
       if (event.target === document.body) {
-        // Nix '/' search on Firefox.
+        // Nix '/' search.
         event.stopPropagation();
+        // And handle custom as wanted.
+        switch (event.key) {
+          case 'Backspace':
+          case 'Delete':
+          case 'Escape': {
+            clearQuery();
+            break;
+          }
+        }
       }
     });
     window.addEventListener('keypress', event => {
       if (event.target !== query) {
-        let {key} = event;
-        query.value = key == ' ' ? '' : key;
+        query.value = event.key;
+        event.preventDefault();
         event.stopPropagation();
         // Timeout needed to avoid double-insert in Chrome.
         window.setTimeout(() => {
@@ -130,6 +150,8 @@ export class App {
       this.updateQuery();
     });
     query.addEventListener('keyup', () => this.updateQuery());
+    // Done now.
+    this.state.loaded = true;
   }
 
   private activateMarker(marker: HTMLElement, name: string) {
@@ -445,10 +467,12 @@ export class App {
     // Update other portions.
     this.chart.update();
     this.updateLink();
+    // Always reset trimmed names on reset.
+    this.state.trimmedNames.clear();
+    // And retrim if trimming.
     if (this.state.trimmed) {
       // Hack toggle.
       this.state.trimmed = false;
-      this.state.trimmedNames.clear();
       this.toggleTrimmed();
     }
   }
@@ -495,6 +519,7 @@ export class App {
     // Unquery.
     let query = document.querySelector('.query input') as HTMLInputElement;
     query.value = '';
+    this.updateQuery();
     // Handle trim.
     let trim = document.querySelector('.trim')!;
     let rows = this.queryRows();
@@ -540,11 +565,13 @@ export class App {
     params.append('names', names.join());
     let link = document.querySelector('.link') as HTMLAnchorElement;
     link.href = `#${params}`;
-    // But hide it in the url.
+    // But hide it in the url, if we've finished initial construction.
     // I don't want to force back and forth through history, but I also don't
     // want to have a lying address bar.
-    let plainUri = window.location.href.replace(window.location.hash, '');
-    window.history.replaceState(undefined, '', plainUri);
+    if (this.state.loaded) {
+      let plainUri = window.location.href.replace(window.location.hash, '');
+      window.history.replaceState(undefined, '', plainUri);
+    }
   }
 
   updateQuery() {
@@ -553,12 +580,13 @@ export class App {
     document.querySelector('.trim')!.classList.remove('checked');
     // Run query.
     let query = document.querySelector('.query input') as HTMLInputElement;
-    let text = query.value.trim().toLowerCase();
+    let text = query.value.toLowerCase();
     let rows =
       document.querySelectorAll('.listBox tr') as Iterable<HTMLElement>;
     for (let row of rows) {
       let name = row.querySelector('.label')!.textContent!.trim().toLowerCase();
-      row.style.display = name.includes(text) ? '' : 'none';
+      // Surround with spaces so we can easily mark ends.
+      row.style.display = ` ${name} `.includes(text) ? '' : 'none';
     }
     // Update query clear.
     let queryClear = document.querySelector('.queryClear')!;

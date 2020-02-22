@@ -3,8 +3,9 @@
 ## Links
 
 - [Languish live site](https://tjpalmer.github.io/languish/)
+  - Try it out!
 - [Context Free video channel](https://www.youtube.com/channel/UCS4FAVeYW_IaZqAbqhlvxlA), for which this tool was originally designed
-  - Subscribe if you like programming languages!
+  - *Subscribe if you like programming languages!*
 - [GitHut 2.0](https://madnight.github.io/githut/), where the current data comes from
   - Thanks much for the great work there!
   - Some of the data is handled differently here
@@ -19,6 +20,7 @@
 - Provide access to all languages in the dataset
 - Link to GitHub topics and trending repos by language
 - Permalink to Languish configured selections and metric
+- Only 130 KB (including data) and 5 HTTP requests
 - *Limitation:* Works on my phone, but not carefully tailored for mobile
 
 
