@@ -108,16 +108,11 @@ export class App {
     // Search takeover of keyboard.
     let query = document.querySelector('.query input') as HTMLInputElement;
     let queryClear = document.querySelector('.queryClear')!;
-    queryClear.addEventListener('click', () => {
-      query.value = '';
-      this.updateQuery();
-    });
-    // query.addEventListener('change', () => this.updateQuery());
+    queryClear.addEventListener('click', () => this.clearQuery());
     window.addEventListener('keydown', event => {
       let clearQuery = () => {
-        query.value = '';
         event.preventDefault();
-        this.updateQuery();
+        this.clearQuery();
         query.focus();
       }
       if (event.key == 'Escape') {
@@ -172,6 +167,12 @@ export class App {
       marker.style.background = '';
     }
     this.updateLink();
+  }
+
+  private clearQuery(retainTrim = false) {
+    let query = document.querySelector('.query input') as HTMLInputElement;
+    query.value = '';
+    this.updateQuery(retainTrim);
   }
 
   private deactivateMarker(marker: HTMLElement) {
@@ -466,6 +467,7 @@ export class App {
     }
     // Update other portions.
     this.chart.update();
+    this.clearQuery(true);
     this.updateLink();
     // Always reset trimmed names on reset.
     this.state.trimmedNames.clear();
@@ -516,6 +518,7 @@ export class App {
   }
 
   toggleTrimmed() {
+    let wasTrim = this.state.trimmed;
     // Unquery.
     let query = document.querySelector('.query input') as HTMLInputElement;
     query.value = '';
@@ -524,7 +527,7 @@ export class App {
     let trim = document.querySelector('.trim')!;
     let rows = this.queryRows();
     let {activeNames, trimmedNames} = this.state;
-    if (this.state.trimmed) {
+    if (wasTrim) {
       // Untrim.
       for (let row of rows) {
         row.style.display = '';
@@ -574,10 +577,12 @@ export class App {
     }
   }
 
-  updateQuery() {
-    // Untrim.
-    this.state.trimmed = false;
-    document.querySelector('.trim')!.classList.remove('checked');
+  updateQuery(retainTrim = false) {
+    if (!retainTrim) {
+      // Untrim.
+      this.state.trimmed = false;
+      document.querySelector('.trim')!.classList.remove('checked');
+    }
     // Run query.
     let query = document.querySelector('.query input') as HTMLInputElement;
     let text = query.value.toLowerCase();
