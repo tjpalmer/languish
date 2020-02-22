@@ -49,6 +49,7 @@ export interface State {
   data: Data;
   originalActiveNames: Set<string>,
   trimmed: boolean;
+  trimmedNames: Set<string>,
   x: keyof DateMetrics;
   y: keyof Metrics;
 }
@@ -59,14 +60,15 @@ export interface AppOptions extends Partial<State> {
 
 export class App {
 
-  constructor(state: AppOptions) {
+  constructor(options: AppOptions) {
     this.state = {
-      activeNames: new Set(state.activeNames || []),
-      data: state.data,
+      activeNames: new Set(options.activeNames || []),
+      data: options.data,
       originalActiveNames: new Set(),
-      trimmed: state.trimmed || false,
-      x: state.x || 'date',
-      y: state.y || 'mean',
+      trimmed: options.trimmed || false,
+      trimmedNames: new Set(),
+      x: options.x || 'date',
+      y: options.y || 'mean',
     };
     // Rank them, including to determine default active names.
     let ranks = this.findLatestRanks();
@@ -440,9 +442,14 @@ export class App {
         this.deactivateMarker(marker);
       }
     }
-    // Update chart and link.
+    // Update other portions.
     this.chart.update();
     this.updateLink();
+    if (this.state.trimmed) {
+      // Hack toggle.
+      this.state.trimmed = false;
+      this.toggleTrimmed();
+    }
   }
 
   setY(key: keyof Metrics) {
@@ -490,6 +497,7 @@ export class App {
     // Handle trim.
     let trim = document.querySelector('.trim')!;
     let rows = this.queryRows();
+    let {activeNames, trimmedNames} = this.state;
     if (this.state.trimmed) {
       // Untrim.
       for (let row of rows) {
@@ -497,14 +505,19 @@ export class App {
       }
       trim.classList.remove('checked');
       this.state.trimmed = false;
+      this.state.trimmedNames.clear();
    } else {
       // Trim.
+      if (!trimmedNames.size) {
+        trimmedNames = activeNames;
+      }
       for (let row of rows) {
-        let marker = row.querySelector('.marker')!;
-        row.style.display = marker.classList.contains('active') ? '' : 'none';
+        row.style.display = trimmedNames.has(row.dataset.name!) ? '' : 'none';
       }
       trim.classList.add('checked');
       this.state.trimmed = true;
+      // Update it can the set is new from active names.
+      this.state.trimmedNames = new Set(trimmedNames);
     }
   }
 
