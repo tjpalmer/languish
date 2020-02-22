@@ -448,6 +448,7 @@ export class App {
     if (this.state.trimmed) {
       // Hack toggle.
       this.state.trimmed = false;
+      this.state.trimmedNames.clear();
       this.toggleTrimmed();
     }
   }
