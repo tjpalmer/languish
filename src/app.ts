@@ -335,9 +335,15 @@ export class App {
       "ren'py": 'renpy',
       'visual basic .net': 'visual-basic-net',
     } as {[name: string]: string};
-    let topic = topics[nameChanged] || encodeURIComponent(defaultTopic);
+    let topic = encodeURIComponent(topics[nameChanged] || defaultTopic);
     let nameEncoded = encodeURIComponent(nameChanged);
+    let searchEncoded = encodeURIComponent(`${nameLower} language`);
     // Make links.
+    info.appendChild(makeLink(
+      'google',
+      'Google Search',
+      `https://www.google.com/search?q=${searchEncoded}`,
+    ));
     info.appendChild(makeLink(
       'github',
       'GitHub Topic',

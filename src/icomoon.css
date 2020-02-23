@@ -27,6 +27,9 @@
 .icon-link-2:before {
   content: "\e901";
 }
+.icon-google:before {
+  content: "\e906";
+}
 .icon-wikipedia-w:before {
   content: "\e905";
 }
