@@ -299,6 +299,15 @@ html {
   white-space: nowrap;
 }
 
+.yLabelArrow {
+  bottom: 0.1em;
+  position: relative;
+}
+
+.yLabelArrow:before {
+  content: "\2BC6";
+}
+
 .yMetricsList {
   cursor: default;
   margin: 0;
@@ -319,4 +328,16 @@ html {
 
 .yOptionsBox li {
   padding: 0 0.2em;
+}
+
+.yOptionsExpanded .yLabelArrow {
+  bottom: -0.1em;
+}
+
+.yOptionsExpanded .yLabelArrow:before {
+  content: "\2BC5";
+}
+
+.yOptionsExpanded .yOptions {
+  display: initial;
 }

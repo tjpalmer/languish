@@ -84,18 +84,14 @@ export class App {
     this.makeLegend(ranks);
     this.makeOptions();
     document.querySelector('.xLabel')!.textContent = labels[this.state.x];
-    let yLabel = document.querySelector('.yLabel')!;
+    let yLabel = document.querySelector('.yLabelText')!;
     yLabel.textContent = labels[this.state.y];
     this.updateLink();
     // Wire events.
     yLabel.addEventListener('click', () => {
-      let yOptions = document.querySelector('.yOptions') as HTMLElement;
-      if (yOptions.style.display) {
-        yOptions.style.display = '';
-      } else {
-        yOptions.style.display = 'block';
-      }
-    })
+      let display = document.querySelector('.display') as HTMLElement;
+      display.classList.toggle('yOptionsExpanded');
+    });
     document.querySelector('.clear')!.addEventListener('click', () => {
       this.clearActives();
     });
@@ -490,7 +486,7 @@ export class App {
       let list = document.querySelector('.yMetricsList')!;
       this.state.y = key;
       this.updateData();
-      document.querySelector('.yLabel')!.textContent = labels[this.state.y];
+      document.querySelector('.yLabelText')!.textContent = labels[this.state.y];
       for (let option of list.querySelectorAll('.interactive')) {
         if (option.classList.contains(key)) {
           option.classList.add('active');
