@@ -299,13 +299,8 @@ html {
   white-space: nowrap;
 }
 
-.yLabelArrow {
-  bottom: 0.1em;
-  position: relative;
-}
-
 .yLabelArrow:before {
-  content: "\2BC6";
+  content: "\25BC";
 }
 
 .yMetricsList {
@@ -330,12 +325,8 @@ html {
   padding: 0 0.2em;
 }
 
-.yOptionsExpanded .yLabelArrow {
-  bottom: -0.1em;
-}
-
 .yOptionsExpanded .yLabelArrow:before {
-  content: "\2BC5";
+  content: "\25B2";
 }
 
 .yOptionsExpanded .yOptions {
