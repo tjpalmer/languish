@@ -88,7 +88,7 @@ export class App {
     yLabel.textContent = labels[this.state.y];
     this.updateLink();
     // Wire events.
-    yLabel.addEventListener('click', () => {
+    document.querySelector('.yLabel')!.addEventListener('click', () => {
       let display = document.querySelector('.display') as HTMLElement;
       display.classList.toggle('yOptionsExpanded');
     });
