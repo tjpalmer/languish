@@ -42,6 +42,10 @@ h1 {
   margin: 2vh;
 }
 
+h1 a {
+  color: white;
+}
+
 h2 {
   display: inline-block;
   font-weight: normal;
