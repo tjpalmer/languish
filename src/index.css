@@ -30,16 +30,16 @@ body {
   position: relative;
 }
 
-.github {
-  height: 3vh;
-  padding: 1vh 2vh;
-  width: 3vh;
+.github-corner svg {
+  height: 12vh;
+  width: 12vh;
 }
 
 h1 {
   font-size: 4vh;
   font-weight: bold;
   margin: 2vh;
+  margin-left: 13vh;
 }
 
 h1 a {
