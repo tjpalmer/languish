@@ -4,9 +4,11 @@
   "description": "plot programming language statistics",
   "main": "index.js",
   "scripts": {
-    "build": "rm -f favicon.*.ico src.*.css src.*.js *.*.png *.*.woff && parcel build src/index.html --experimental-scope-hoisting --no-source-maps --out-dir . --public-url ./ && inline-source ./index.html ./index.html",
+    "build": "npm run build-merge && rm -f favicon.*.ico src.*.css src.*.js *.*.png *.*.woff && parcel build src/index.html --experimental-scope-hoisting --no-source-maps --out-dir . --public-url ./ && inline-source ./index.html ./index.html",
+    "build-merge": "tsc --project scripts && npm run merge",
+    "link": "mkdir -p dev && ln -fs ../src dev",
     "merge": "node scripts/bin/merge.js > src/data/data.json",
-    "start": "parcel src/index.html --out-dir dev",
+    "start": "npm run build-merge && npm run link && parcel src/index.html --out-dir dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch-scripts": "tsc --project scripts --watch"
   },
