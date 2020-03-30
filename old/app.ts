@@ -1,4 +1,4 @@
-import {Chart, ChartColor, ChartDataSets} from 'chart.js';
+import { Chart, ChartColor, ChartDataSets } from "chart.js";
 
 export interface CoreMetrics {
   issues: number;
@@ -12,12 +12,12 @@ export interface Metrics extends CoreMetrics {
 }
 
 export const labels = Object.freeze({
-  date: 'Date',
-  issues: 'Issues',
-  mean: 'Mean Score',
-  pulls: 'Pull Requests',
-  pushes: 'Pushes',
-  stars: 'Stars',
+  date: "Date",
+  issues: "Issues",
+  mean: "Mean Score",
+  pulls: "Pull Requests",
+  pushes: "Pushes",
+  stars: "Stars"
 });
 
 export interface DateMetrics extends Metrics {
@@ -38,7 +38,7 @@ export type Keyed<Item> = {
 };
 
 export interface Data {
-  colors: {[name: string]: string};
+  colors: { [name: string]: string };
   dates: string[];
   entries: Keyed<Entry[]>;
   sums: Keyed<DateMetrics>;
@@ -48,9 +48,9 @@ export interface State {
   activeNames: Set<string>;
   data: Data;
   loaded: boolean;
-  originalActiveNames: Set<string>,
+  originalActiveNames: Set<string>;
   trimmed: boolean;
-  trimmedNames: Set<string>,
+  trimmedNames: Set<string>;
   x: keyof DateMetrics;
   y: keyof Metrics;
 }
@@ -60,7 +60,6 @@ export interface AppOptions extends Partial<State> {
 }
 
 export class App {
-
   constructor(options: AppOptions) {
     this.state = {
       activeNames: new Set(options.activeNames || []),
@@ -69,8 +68,8 @@ export class App {
       originalActiveNames: new Set(),
       trimmed: options.trimmed || false,
       trimmedNames: new Set(),
-      x: options.x || 'date',
-      y: options.y || 'mean',
+      x: options.x || "date",
+      y: options.y || "mean"
     };
     // Rank them, including to determine default active names.
     let ranks = this.findLatestRanks();
@@ -83,35 +82,35 @@ export class App {
     this.chart = this.makeChart();
     this.makeLegend(ranks);
     this.makeOptions();
-    document.querySelector('.xLabel')!.textContent = labels[this.state.x];
-    let yLabel = document.querySelector('.yLabelText')!;
+    document.querySelector(".xLabel")!.textContent = labels[this.state.x];
+    let yLabel = document.querySelector(".yLabelText")!;
     yLabel.textContent = labels[this.state.y];
     this.updateLink();
     // Wire events.
-    document.querySelector('.yLabel')!.addEventListener('click', () => {
-      let display = document.querySelector('.display') as HTMLElement;
-      display.classList.toggle('yOptionsExpanded');
+    document.querySelector(".yLabel")!.addEventListener("click", () => {
+      let display = document.querySelector(".display") as HTMLElement;
+      display.classList.toggle("yOptionsExpanded");
     });
-    document.querySelector('.clear')!.addEventListener('click', () => {
+    document.querySelector(".clear")!.addEventListener("click", () => {
       this.clearActives();
     });
-    document.querySelector('.reset')!.addEventListener('click', () => {
+    document.querySelector(".reset")!.addEventListener("click", () => {
       this.resetActives();
     });
-    document.querySelector('.trim')!.addEventListener('click', () => {
+    document.querySelector(".trim")!.addEventListener("click", () => {
       this.toggleTrimmed();
     });
     // Search takeover of keyboard.
-    let query = document.querySelector('.query input') as HTMLInputElement;
-    let queryClear = document.querySelector('.queryClear')!;
-    queryClear.addEventListener('click', () => this.clearQuery());
-    window.addEventListener('keydown', event => {
+    let query = document.querySelector(".query input") as HTMLInputElement;
+    let queryClear = document.querySelector(".queryClear")!;
+    queryClear.addEventListener("click", () => this.clearQuery());
+    window.addEventListener("keydown", event => {
       let clearQuery = () => {
         event.preventDefault();
         this.clearQuery();
         query.focus();
-      }
-      if (event.key == 'Escape') {
+      };
+      if (event.key == "Escape") {
         clearQuery();
       }
       if (event.target === document.body) {
@@ -119,16 +118,16 @@ export class App {
         event.stopPropagation();
         // And handle custom as wanted.
         switch (event.key) {
-          case 'Backspace':
-          case 'Delete':
-          case 'Escape': {
+          case "Backspace":
+          case "Delete":
+          case "Escape": {
             clearQuery();
             break;
           }
         }
       }
     });
-    window.addEventListener('keypress', event => {
+    window.addEventListener("keypress", event => {
       if (event.target !== query) {
         query.value = event.key;
         event.preventDefault();
@@ -140,13 +139,13 @@ export class App {
       }
       this.updateQuery();
     });
-    query.addEventListener('keyup', () => this.updateQuery());
+    query.addEventListener("keyup", () => this.updateQuery());
     // Done now.
     this.state.loaded = true;
   }
 
   private activateMarker(marker: HTMLElement, name: string) {
-    marker.classList.add('active');
+    marker.classList.add("active");
     marker.style.background = this.state.data.colors[name];
   }
 
@@ -156,33 +155,34 @@ export class App {
     this.state.activeNames.clear();
     this.chart.data.datasets = [];
     this.chart.update();
-    let markers =
-      document.querySelectorAll('.listBox .marker') as Iterable<HTMLElement>;
+    let markers = document.querySelectorAll(".listBox .marker") as Iterable<
+      HTMLElement
+    >;
     for (let marker of markers) {
-      marker.classList.remove('active');
-      marker.style.background = '';
+      marker.classList.remove("active");
+      marker.style.background = "";
     }
     this.updateLink();
   }
 
   private clearQuery(retainTrim = false) {
-    let query = document.querySelector('.query input') as HTMLInputElement;
-    query.value = '';
+    let query = document.querySelector(".query input") as HTMLInputElement;
+    query.value = "";
     this.updateQuery(retainTrim);
   }
 
   private deactivateMarker(marker: HTMLElement) {
-    marker.classList.remove('active');
-    marker.style.background = '';
+    marker.classList.remove("active");
+    marker.style.background = "";
   }
 
   private findLatestRanks(offset = -1) {
     let date = this.latestDate();
     let key = this.state.y;
-    let {entries} = this.state.data;
+    let { entries } = this.state.data;
     let counts = Object.entries(entries).map(([name, langEntries]) => {
       let value = langEntries.slice(offset)[0][key];
-      return {name, value} as Metric;
+      return { name, value } as Metric;
     });
     // Sort descending.
     // TODO Sort by sequence newest to oldest dates, current metric then mean.
@@ -195,7 +195,7 @@ export class App {
     if (!this.state.activeNames.has(name)) {
       return;
     }
-    let {chart} = this;
+    let { chart } = this;
     let dataset = chart.data.datasets!.find(dataset => dataset.label == name)!;
     // More remote than point hover, so make it even wider than standard hover.
     // More noticeable that way.
@@ -209,45 +209,49 @@ export class App {
 
   private makeChart() {
     // TODO For Metrics Mean total, first norm by max for metric total, then mean.
-    let plot = document.querySelector('.plot')!;
-    let canvas = plot.querySelector('canvas')!;
-    let context = canvas.getContext('2d')!;
+    let plot = document.querySelector(".plot")!;
+    let canvas = plot.querySelector("canvas")!;
+    let context = canvas.getContext("2d")!;
     let chart = new Chart(context, {
       data: {
         datasets: this.makeDatasets(),
-        labels: this.state.data.dates,
+        labels: this.state.data.dates
       },
       options: {
         animation: {
-          duration: 300,
+          duration: 300
         },
         hover: {
           animationDuration: 200,
-          mode: 'dataset',
+          mode: "dataset"
         },
         legend: {
-          display: false,
+          display: false
         },
         maintainAspectRatio: false,
         responsive: true,
         scales: {
-          xAxes: [{
-            ticks: {
-              callback: date => {
-                return date.includes('Q1') ? date.replace('Q1', '') : '';
-              },
-              fontColor: 'white',
+          xAxes: [
+            {
+              ticks: {
+                callback: date => {
+                  return date.includes("Q1") ? date.replace("Q1", "") : "";
+                },
+                fontColor: "white"
+              }
+              // type: 'linear',
             }
-            // type: 'linear',
-          }],
-          yAxes: [{
-            // scaleLabel: {display: true, labelString: 'Stars'},
-            ticks: {
-              callback: value => `${value}%`,
-              fontColor: 'white',
-              suggestedMin: 0,
-            },
-          }],
+          ],
+          yAxes: [
+            {
+              // scaleLabel: {display: true, labelString: 'Stars'},
+              ticks: {
+                callback: value => `${value}%`,
+                fontColor: "white",
+                suggestedMin: 0
+              }
+            }
+          ]
         },
         tooltips: {
           bodyFontSize: 18,
@@ -260,16 +264,16 @@ export class App {
             labelColor: (item, chart) => {
               let dataset = chart.data.datasets![item.datasetIndex!];
               let color = dataset.borderColor as ChartColor;
-              return {borderColor: 'black', backgroundColor: color};
-            },
+              return { borderColor: "black", backgroundColor: color };
+            }
           },
           // mode: 'x',  // Would need to highlight current and refine.
-          position: 'nearest',
+          position: "nearest",
           titleFontSize: 18,
-          titleFontStyle: 'normal',
-        },
+          titleFontStyle: "normal"
+        }
       },
-      type: 'line',
+      type: "line"
     });
     return chart;
   }
@@ -278,14 +282,14 @@ export class App {
     let borderColor = this.state.data.colors[name];
     return {
       borderColor,
-      cubicInterpolationMode: 'monotone',
+      cubicInterpolationMode: "monotone",
       data: this.makeEntryData(name),
       fill: false,
       hoverBorderColor: borderColor,
       hoverBorderWidth: 6,
       pointHoverBackgroundColor: borderColor,
       label: name,
-      pointBackgroundColor: borderColor,
+      pointBackgroundColor: borderColor
     } as ChartDataSets;
   }
 
@@ -302,14 +306,14 @@ export class App {
   }
 
   private makeInfo(name: string) {
-    let info = document.createElement('div');
-    info.classList.add('info');
+    let info = document.createElement("div");
+    info.classList.add("info");
     function makeLink(name: string, title: string, href: string) {
-      let link = document.createElement('a');
-      link.classList.add('icolink');
+      let link = document.createElement("a");
+      link.classList.add("icolink");
       link.href = href;
       link.title = title;
-      let icon = document.createElement('span');
+      let icon = document.createElement("span");
       icon.classList.add(`icon-${name}`);
       link.appendChild(icon);
       return link;
@@ -317,86 +321,93 @@ export class App {
     // Encode things.
     let nameLower = name.toLowerCase();
     let nameChanges = {
-      'raku': 'perl 6'
-    } as {[name: string]: string};
+      raku: "perl 6"
+    } as { [name: string]: string };
     let nameChanged = nameChanges[nameLower] || nameLower;
-    let defaultTopic = nameChanged.replace(/ /g, '-');
+    let defaultTopic = nameChanged.replace(/ /g, "-");
     let topics = {
-      'c++': 'cpp',
-      'c#': 'csharp',
-      'f#': 'fsharp',
-      'f*': 'fstar',
-      'objective-c++': 'objective-cpp',
-      'perl 6': 'perl6',
-      "ren'py": 'renpy',
-      'visual basic .net': 'visual-basic-net',
-    } as {[name: string]: string};
+      "c++": "cpp",
+      "c#": "csharp",
+      "f#": "fsharp",
+      "f*": "fstar",
+      "objective-c++": "objective-cpp",
+      "perl 6": "perl6",
+      "ren'py": "renpy",
+      "visual basic .net": "visual-basic-net"
+    } as { [name: string]: string };
     let topic = encodeURIComponent(topics[nameChanged] || defaultTopic);
     let nameEncoded = encodeURIComponent(nameChanged);
     let searchEncoded = encodeURIComponent(`${nameLower} language`);
     // Make links.
-    info.appendChild(makeLink(
-      'google',
-      'Google Search',
-      `https://www.google.com/search?q=${searchEncoded}`,
-    ));
-    info.appendChild(makeLink(
-      'github',
-      'GitHub Topic',
-      `https://github.com/topics/${topic}?l=${nameEncoded}`,
-    ));
-    info.appendChild(makeLink(
-      'trending-up',
-      'GitHub Trending',
-      `https://github.com/trending/${nameEncoded}?since=daily`,
-    ));
+    info.appendChild(
+      makeLink(
+        "google",
+        "Google Search",
+        `https://www.google.com/search?q=${searchEncoded}`
+      )
+    );
+    info.appendChild(
+      makeLink(
+        "github",
+        "GitHub Topic",
+        `https://github.com/topics/${topic}?l=${nameEncoded}`
+      )
+    );
+    info.appendChild(
+      makeLink(
+        "trending-up",
+        "GitHub Trending",
+        `https://github.com/trending/${nameEncoded}?since=daily`
+      )
+    );
     return info;
   }
 
   private makeLegend(namedRanks: Metric[]) {
-    let box = document.querySelector('.listBox')!;
-    let {colors} = this.state.data;
-    box.innerHTML = '';
-    let table = document.createElement('table');
+    let box = document.querySelector(".listBox")!;
+    let { colors } = this.state.data;
+    box.innerHTML = "";
+    let table = document.createElement("table");
     let oldRanksRaw = this.findLatestRanks(-5);
     let worstRank = Math.min(
       oldRanksRaw.slice(-1)[0].value,
-      namedRanks.slice(-1)[0].value);
+      namedRanks.slice(-1)[0].value
+    );
     let oldRanks = metricArrayToObject(oldRanksRaw);
     namedRanks.forEach(namedRank => {
-      let {name, value: rank} = namedRank;
-      let row = document.createElement('tr');
-      row.classList.add('interactive');
+      let { name, value: rank } = namedRank;
+      let row = document.createElement("tr");
+      row.classList.add("interactive");
       row.dataset.name = name;
-      row.addEventListener('click', event => this.toggle({name, row}));
-      row.addEventListener('mouseover', () => this.highlight(name, true));
-      row.addEventListener('mouseout', () => this.highlight(name, false));
+      row.addEventListener("click", event => this.toggle({ name, row }));
+      row.addEventListener("mouseover", () => this.highlight(name, true));
+      row.addEventListener("mouseout", () => this.highlight(name, false));
       // Marker.
-      let marker = document.createElement('td');
+      let marker = document.createElement("td");
       let color = colors[name];
       if (this.state.activeNames.has(name)) {
-        marker.classList.add('active');
+        marker.classList.add("active");
         marker.style.background = color;
       }
-      marker.classList.add('marker');
+      marker.classList.add("marker");
       marker.textContent = String(rank + 1);
       row.appendChild(marker);
       // Label.
-      let label = document.createElement('td');
-      label.classList.add('label');
+      let label = document.createElement("td");
+      label.classList.add("label");
       label.textContent = name;
       label.appendChild(this.makeInfo(name));
       row.appendChild(label);
       // Rank change.
-      let change = document.createElement('td');
-      change.classList.add('change');
+      let change = document.createElement("td");
+      change.classList.add("change");
       let oldRank = oldRanks[name];
       let changeValue =
         Math.min(oldRank, worstRank) - Math.min(rank, worstRank);
       if (changeValue) {
-        let prefix = changeValue > 0 ? '+' : '';
+        let prefix = changeValue > 0 ? "+" : "";
         change.textContent = `${prefix}${changeValue}`;
-        change.title = 'Change in rank vs 1 year earlier';
+        change.title = "Change in rank vs 1 year earlier";
       }
       row.appendChild(change);
       // Row done.
@@ -414,19 +425,19 @@ export class App {
   }
 
   makeOptions() {
-    let list = document.querySelector('.yMetricsList')!;
-    list.innerHTML = '';
+    let list = document.querySelector(".yMetricsList")!;
+    list.innerHTML = "";
     let keyLabels = Object.entries(labels).sort((a, b) => {
       return a[1].localeCompare(b[1]);
     }) as [keyof DateMetrics, string][];
     keyLabels.map(([key, label]) => {
-      if (key != 'date') {
-        let option = document.createElement('li');
-        option.addEventListener('click', () => this.setY(key));
-        option.classList.add('interactive');
+      if (key != "date") {
+        let option = document.createElement("li");
+        option.addEventListener("click", () => this.setY(key));
+        option.classList.add("interactive");
         option.classList.add(key);
         if (key == this.state.y) {
-          option.classList.add('active');
+          option.classList.add("active");
         }
         option.textContent = label;
         list.appendChild(option);
@@ -435,7 +446,7 @@ export class App {
   }
 
   queryRows() {
-    return document.querySelectorAll('.listBox tr') as Iterable<HTMLElement>;
+    return document.querySelectorAll(".listBox tr") as Iterable<HTMLElement>;
   }
 
   resetActives() {
@@ -443,10 +454,10 @@ export class App {
     // TODO At the moment, those are both more efficient (?) than this.
     // Set new to original.
     this.state.activeNames = new Set(this.state.originalActiveNames);
-    let {activeNames} = this.state;
+    let { activeNames } = this.state;
     // Keep matching datasets in hopes to avoid them animating,
-    let datasets = this.chart.data.datasets!.filter(
-      dataset => activeNames.has(dataset.label!),
+    let datasets = this.chart.data.datasets!.filter(dataset =>
+      activeNames.has(dataset.label!)
     );
     // Figure out what new ones to add, and add them.
     let extras = new Set(activeNames);
@@ -460,7 +471,7 @@ export class App {
     // Update markers.
     for (let row of this.queryRows()) {
       let name = row.dataset.name!;
-      let marker = row.querySelector('.marker') as HTMLElement;
+      let marker = row.querySelector(".marker") as HTMLElement;
       if (activeNames.has(name)) {
         this.activateMarker(marker, name);
       } else {
@@ -483,15 +494,15 @@ export class App {
 
   setY(key: keyof Metrics) {
     if (this.state.y != key) {
-      let list = document.querySelector('.yMetricsList')!;
+      let list = document.querySelector(".yMetricsList")!;
       this.state.y = key;
       this.updateData();
-      document.querySelector('.yLabelText')!.textContent = labels[this.state.y];
-      for (let option of list.querySelectorAll('.interactive')) {
+      document.querySelector(".yLabelText")!.textContent = labels[this.state.y];
+      for (let option of list.querySelectorAll(".interactive")) {
         if (option.classList.contains(key)) {
-          option.classList.add('active');
+          option.classList.add("active");
         } else {
-          option.classList.remove('active');
+          option.classList.remove("active");
         }
       }
       this.updateLink();
@@ -500,16 +511,17 @@ export class App {
 
   private state: State;
 
-  toggle(info: {name: string, row: HTMLElement}) {
-    let {name, row} = info;
-    let marker = row.querySelector('.marker') as HTMLElement;
+  toggle(info: { name: string; row: HTMLElement }) {
+    let { name, row } = info;
+    let marker = row.querySelector(".marker") as HTMLElement;
     let datasets = this.chart.data.datasets!;
-    let {activeNames} = this.state;
+    let { activeNames } = this.state;
     if (activeNames.has(name)) {
       activeNames.delete(name);
       this.deactivateMarker(marker);
-      this.chart.data.datasets =
-        datasets.filter(dataset => dataset.label != name);
+      this.chart.data.datasets = datasets.filter(
+        dataset => dataset.label != name
+      );
     } else {
       activeNames.add(name);
       this.activateMarker(marker, name);
@@ -522,30 +534,30 @@ export class App {
   toggleTrimmed() {
     let wasTrim = this.state.trimmed;
     // Unquery.
-    let query = document.querySelector('.query input') as HTMLInputElement;
-    query.value = '';
+    let query = document.querySelector(".query input") as HTMLInputElement;
+    query.value = "";
     this.updateQuery();
     // Handle trim.
-    let trim = document.querySelector('.trim')!;
+    let trim = document.querySelector(".trim")!;
     let rows = this.queryRows();
-    let {activeNames, trimmedNames} = this.state;
+    let { activeNames, trimmedNames } = this.state;
     if (wasTrim) {
       // Untrim.
       for (let row of rows) {
-        row.style.display = '';
+        row.style.display = "";
       }
-      trim.classList.remove('checked');
+      trim.classList.remove("checked");
       this.state.trimmed = false;
       this.state.trimmedNames.clear();
-   } else {
+    } else {
       // Trim.
       if (!trimmedNames.size) {
         trimmedNames = activeNames;
       }
       for (let row of rows) {
-        row.style.display = trimmedNames.has(row.dataset.name!) ? '' : 'none';
+        row.style.display = trimmedNames.has(row.dataset.name!) ? "" : "none";
       }
-      trim.classList.add('checked');
+      trim.classList.add("checked");
       this.state.trimmed = true;
       // Update it can the set is new from active names.
       this.state.trimmedNames = new Set(trimmedNames);
@@ -566,16 +578,16 @@ export class App {
     // Change the link.
     let params = new URLSearchParams();
     let names = [...this.state.activeNames].map(name => name.toLowerCase());
-    params.append('y', this.state.y);
-    params.append('names', names.join());
-    let link = document.querySelector('.link') as HTMLAnchorElement;
+    params.append("y", this.state.y);
+    params.append("names", names.join());
+    let link = document.querySelector(".link") as HTMLAnchorElement;
     link.href = `#${params}`;
     // But hide it in the url, if we've finished initial construction.
     // I don't want to force back and forth through history, but I also don't
     // want to have a lying address bar.
     if (this.state.loaded) {
-      let plainUri = window.location.href.replace(window.location.hash, '');
-      window.history.replaceState(undefined, '', plainUri);
+      let plainUri = window.location.href.replace(window.location.hash, "");
+      window.history.replaceState(undefined, "", plainUri);
     }
   }
 
@@ -583,29 +595,32 @@ export class App {
     if (!retainTrim) {
       // Untrim.
       this.state.trimmed = false;
-      document.querySelector('.trim')!.classList.remove('checked');
+      document.querySelector(".trim")!.classList.remove("checked");
     }
     // Run query.
-    let query = document.querySelector('.query input') as HTMLInputElement;
+    let query = document.querySelector(".query input") as HTMLInputElement;
     let text = query.value.toLowerCase();
-    let rows =
-      document.querySelectorAll('.listBox tr') as Iterable<HTMLElement>;
+    let rows = document.querySelectorAll(".listBox tr") as Iterable<
+      HTMLElement
+    >;
     for (let row of rows) {
-      let name = row.querySelector('.label')!.textContent!.trim().toLowerCase();
+      let name = row
+        .querySelector(".label")!
+        .textContent!.trim()
+        .toLowerCase();
       // Surround with spaces so we can easily mark ends.
-      row.style.display = ` ${name} `.includes(text) ? '' : 'none';
+      row.style.display = ` ${name} `.includes(text) ? "" : "none";
     }
     // Update query clear.
-    let queryClear = document.querySelector('.queryClear')!;
+    let queryClear = document.querySelector(".queryClear")!;
     if (text) {
-      queryClear.classList.add('icon-close');
-      queryClear.classList.remove('icon-search');
+      queryClear.classList.add("icon-close");
+      queryClear.classList.remove("icon-search");
     } else {
-      queryClear.classList.remove('icon-close');
-      queryClear.classList.add('icon-search');
+      queryClear.classList.remove("icon-close");
+      queryClear.classList.add("icon-search");
     }
   }
-
 }
 
 function countsToRanks(counts: Metric[]) {
@@ -625,7 +640,7 @@ function countsToRanks(counts: Metric[]) {
 }
 
 function metricArrayToObject(pairs: Metric[]) {
-  let result = {} as {[name: string]: number};
+  let result = {} as { [name: string]: number };
   for (let pair of pairs) {
     result[pair.name] = pair.value;
   }

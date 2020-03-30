@@ -1,22 +1,36 @@
-import * as tables from './data/data.json';
-import {App, AppOptions, Data, DateMetrics, Entry, Keyed, labels} from './app';
-import {murmur3} from 'murmurhash-js';
+import { murmur3 } from "murmurhash-js";
+import {
+  App,
+  AppOptions,
+  Data,
+  DateMetrics,
+  Entry,
+  Keyed,
+  labels
+} from "./app";
+import * as tables from "./data/data.json";
 
-addEventListener('load', main);
+addEventListener("load", main);
 
 function main() {
-  let sums = keepFirst(keyOn({
-    key: 'date', items: tableToItems(tables.sums as any) as DateMetrics[],
-  }));
+  let sums = keepFirst(
+    keyOn({
+      key: "date",
+      items: tableToItems(tables.sums as any) as DateMetrics[]
+    })
+  );
   let dates = Object.keys(sums).sort();
   let entries = keyOn({
-    key: 'name',
-    items: tableToItems(tables.items as any) as Entry[],
+    key: "name",
+    items: tableToItems(tables.items as any) as Entry[]
   });
-  let colors = Object.assign({}, ...Object.keys(entries).map(name => {
-    return {[name]: chooseColor(name)};
-  })) as {[name: string]: string};
-  let data = {colors, dates, entries, sums};
+  let colors = Object.assign(
+    {},
+    ...Object.keys(entries).map(name => {
+      return { [name]: chooseColor(name) };
+    })
+  ) as { [name: string]: string };
+  let data = { colors, dates, entries, sums };
   // Normalize and mean in advance.
   normalize(data);
   putMean(data);
@@ -24,7 +38,7 @@ function main() {
   // The idea is that this code is smaller than the compressed repeated zeros
   // would be in the preprocessed data -- and not too expensive to compute.
   fillDates(data);
-  new App({data, ...parseArgs(entries)});
+  new App({ data, ...parseArgs(entries) });
 }
 
 export interface Color {
@@ -35,9 +49,9 @@ export interface Color {
 function chooseColor(name: string) {
   // Use a handpicked seed that looks nice enough for the current top 10.
   let hash = murmur3(name, 95);
-  let hue = 360 * ((hash >> 16) & 0xFFFF) / 0xFFFF;
-  let saturation = 100 * (0.3 + 0.7 * (hash & 0xFFFF) / 0xFFFF);
-  return formatColor({hue, saturation});
+  let hue = (360 * ((hash >> 16) & 0xffff)) / 0xffff;
+  let saturation = 100 * (0.3 + (0.7 * (hash & 0xffff)) / 0xffff);
+  return formatColor({ hue, saturation });
 }
 
 function formatColor(color: Color) {
@@ -45,20 +59,23 @@ function formatColor(color: Color) {
 }
 
 function keepFirst<Item>(keyed: Keyed<Item[]>): Keyed<Item> {
-  return Object.assign({}, ...Object.keys(keyed).map(key => {
-    return {[key]: keyed[key][0]};
-  }));
+  return Object.assign(
+    {},
+    ...Object.keys(keyed).map(key => {
+      return { [key]: keyed[key][0] };
+    })
+  );
 }
 
 function parseArgs(entries: Keyed<Entry[]>) {
   let result = {} as AppOptions;
   let args = new URLSearchParams(window.location.hash.slice(1));
   // Get names.
-  let namesText = args.get('names');
+  let namesText = args.get("names");
   if (namesText && namesText.length) {
-    let names = namesText.split(',');
+    let names = namesText.split(",");
     // Map from lowercase to canonical.
-    let nameMap = {} as {[lowerName: string]: string};
+    let nameMap = {} as { [lowerName: string]: string };
     for (let canonicalName in entries) {
       nameMap[canonicalName.toLowerCase()] = canonicalName;
     }
@@ -71,7 +88,7 @@ function parseArgs(entries: Keyed<Entry[]>) {
     }
   }
   // Get y.
-  let y = args.get('y');
+  let y = args.get("y");
   if (y && Object.keys(labels).includes(y)) {
     // Technically, 'date' can slip through, but eh.
     result.y = y as typeof result.y;
@@ -85,12 +102,12 @@ interface KeyOnArgs<Key extends keyof Item, Item> {
 }
 
 function keyOn<Key extends keyof Item, Item>(
-  args: KeyOnArgs<Key, Item>,
+  args: KeyOnArgs<Key, Item>
 ): Keyed<Item[]> {
-  let {key, items} = args;
+  let { key, items } = args;
   let result = {} as Keyed<Item[]>;
   for (let item of items) {
-    let keyVal = item[key] as unknown as string;
+    let keyVal = (item[key] as unknown) as string;
     let list = result[keyVal];
     if (!list) {
       result[keyVal] = list = [];
@@ -100,7 +117,7 @@ function keyOn<Key extends keyof Item, Item>(
   return result;
 }
 
-function fillDates({dates, entries}: Data) {
+function fillDates({ dates, entries }: Data) {
   for (let [name, points] of Object.entries(entries)) {
     if (points.length != dates.length) {
       // We have the extra points to fill in.
@@ -110,15 +127,16 @@ function fillDates({dates, entries}: Data) {
         let point: Entry = points[p];
         if (!point || point.date > date) {
           // Missing, so fill in zeros.
-          point = Object.assign({}, ...Object.entries(points[0]).map(
-            ([key, value]) => {
-              if (key == 'date') {
-                return {date};
+          point = Object.assign(
+            {},
+            ...Object.entries(points[0]).map(([key, value]) => {
+              if (key == "date") {
+                return { date };
               } else {
-                return {[key]: typeof value == 'number' ? 0 : value};
+                return { [key]: typeof value == "number" ? 0 : value };
               }
-            },
-          ));
+            })
+          );
           point.date = date;
         } else {
           // Already have a point for this date.
@@ -126,7 +144,7 @@ function fillDates({dates, entries}: Data) {
             // No details, so these can coallesce in the console.
             // I only had these show up under a bug before, but I'd like to
             // leave this around just in case.
-            console.warn('unrepresented date');
+            console.warn("unrepresented date");
           }
           p += 1;
         }
@@ -139,29 +157,31 @@ function fillDates({dates, entries}: Data) {
   }
 }
 
-function normalize({entries, sums}: Data) {
-  let keys =
-    Object.keys(Object.values(sums)[0]).filter(key => key != 'date') as
-    (keyof DateMetrics)[];
+function normalize({ entries, sums }: Data) {
+  let keys = Object.keys(Object.values(sums)[0]).filter(
+    key => key != "date"
+  ) as (keyof DateMetrics)[];
   for (let points of Object.values(entries)) {
     for (let point of points) {
       let sum = sums[point.date];
       for (let key of keys) {
         (point[key] as number) =
-          100 * (point[key] as number) / (sum[key] as number);
+          (100 * (point[key] as number)) / (sum[key] as number);
       }
     }
   }
 }
 
-function putMean({entries, sums}: Data) {
-  let keys =
-    Object.keys(Object.values(sums)[0]).filter(key => key != 'date') as
-    (keyof DateMetrics)[];
+function putMean({ entries, sums }: Data) {
+  let keys = Object.keys(Object.values(sums)[0]).filter(
+    key => key != "date"
+  ) as (keyof DateMetrics)[];
   for (let points of Object.values(entries)) {
     for (let point of points) {
-      let sum =
-        (keys.map(key => point[key]) as number[]).reduce((x, y) => x + y, 0);
+      let sum = (keys.map(key => point[key]) as number[]).reduce(
+        (x, y) => x + y,
+        0
+      );
       point.mean = sum / keys.length;
     }
   }
@@ -173,11 +193,16 @@ interface Table<Key extends keyof Item, Item> {
 }
 
 function tableToItems<Item, Key extends keyof Item>(
-  table: Table<Key, Item>,
+  table: Table<Key, Item>
 ): Item[] {
-  let {keys, rows} = table;
-  let items = rows.map(row => Object.assign({}, ...keys.map((key, index) => {
-    return {[key]: row[index]};
-  }))) as Item[];
+  let { keys, rows } = table;
+  let items = rows.map(row =>
+    Object.assign(
+      {},
+      ...keys.map((key, index) => {
+        return { [key]: row[index] };
+      })
+    )
+  ) as Item[];
   return items;
 }
