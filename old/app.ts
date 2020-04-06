@@ -17,7 +17,7 @@ export const labels = Object.freeze({
   mean: "Mean Score",
   pulls: "Pull Requests",
   pushes: "Pushes",
-  stars: "Stars"
+  stars: "Stars",
 });
 
 export interface DateMetrics extends Metrics {
@@ -69,13 +69,13 @@ export class App {
       trimmed: options.trimmed || false,
       trimmedNames: new Set(),
       x: options.x || "date",
-      y: options.y || "mean"
+      y: options.y || "mean",
     };
     // Rank them, including to determine default active names.
     let ranks = this.findLatestRanks();
     let actives = ranks.slice(0, 10);
     if (!this.state.activeNames.size) {
-      this.state.activeNames = new Set(actives.map(active => active.name));
+      this.state.activeNames = new Set(actives.map((active) => active.name));
     }
     this.state.originalActiveNames = new Set(this.state.activeNames);
     // Render.
@@ -104,7 +104,7 @@ export class App {
     let query = document.querySelector(".query input") as HTMLInputElement;
     let queryClear = document.querySelector(".queryClear")!;
     queryClear.addEventListener("click", () => this.clearQuery());
-    window.addEventListener("keydown", event => {
+    window.addEventListener("keydown", (event) => {
       let clearQuery = () => {
         event.preventDefault();
         this.clearQuery();
@@ -127,7 +127,7 @@ export class App {
         }
       }
     });
-    window.addEventListener("keypress", event => {
+    window.addEventListener("keypress", (event) => {
       if (event.target !== query) {
         query.value = event.key;
         event.preventDefault();
@@ -196,7 +196,9 @@ export class App {
       return;
     }
     let { chart } = this;
-    let dataset = chart.data.datasets!.find(dataset => dataset.label == name)!;
+    let dataset = chart.data.datasets!.find(
+      (dataset) => dataset.label == name
+    )!;
     // More remote than point hover, so make it even wider than standard hover.
     // More noticeable that way.
     dataset.borderWidth = value ? 9 : 3;
@@ -215,18 +217,18 @@ export class App {
     let chart = new Chart(context, {
       data: {
         datasets: this.makeDatasets(),
-        labels: this.state.data.dates
+        labels: this.state.data.dates,
       },
       options: {
         animation: {
-          duration: 300
+          duration: 300,
         },
         hover: {
           animationDuration: 200,
-          mode: "dataset"
+          mode: "dataset",
         },
         legend: {
-          display: false
+          display: false,
         },
         maintainAspectRatio: false,
         responsive: true,
@@ -234,24 +236,24 @@ export class App {
           xAxes: [
             {
               ticks: {
-                callback: date => {
+                callback: (date) => {
                   return date.includes("Q1") ? date.replace("Q1", "") : "";
                 },
-                fontColor: "white"
-              }
+                fontColor: "white",
+              },
               // type: 'linear',
-            }
+            },
           ],
           yAxes: [
             {
               // scaleLabel: {display: true, labelString: 'Stars'},
               ticks: {
-                callback: value => `${value}%`,
+                callback: (value) => `${value}%`,
                 fontColor: "white",
-                suggestedMin: 0
-              }
-            }
-          ]
+                suggestedMin: 0,
+              },
+            },
+          ],
         },
         tooltips: {
           bodyFontSize: 18,
@@ -265,15 +267,15 @@ export class App {
               let dataset = chart.data.datasets![item.datasetIndex!];
               let color = dataset.borderColor as ChartColor;
               return { borderColor: "black", backgroundColor: color };
-            }
+            },
           },
           // mode: 'x',  // Would need to highlight current and refine.
           position: "nearest",
           titleFontSize: 18,
-          titleFontStyle: "normal"
-        }
+          titleFontStyle: "normal",
+        },
       },
-      type: "line"
+      type: "line",
     });
     return chart;
   }
@@ -289,78 +291,20 @@ export class App {
       hoverBorderWidth: 6,
       pointHoverBackgroundColor: borderColor,
       label: name,
-      pointBackgroundColor: borderColor
+      pointBackgroundColor: borderColor,
     } as ChartDataSets;
   }
 
   private makeDatasets() {
     // The order doesn't really matter here.
-    return [...this.state.activeNames].map(name => this.makeDataset(name));
+    return [...this.state.activeNames].map((name) => this.makeDataset(name));
   }
 
   private makeEntryData(name: string) {
-    return this.state.data.entries[name].map(entry => {
+    return this.state.data.entries[name].map((entry) => {
       // Remember [{x, y}, ...] for 2D.
       return entry[this.state.y];
     });
-  }
-
-  private makeInfo(name: string) {
-    let info = document.createElement("div");
-    info.classList.add("info");
-    function makeLink(name: string, title: string, href: string) {
-      let link = document.createElement("a");
-      link.classList.add("icolink");
-      link.href = href;
-      link.title = title;
-      let icon = document.createElement("span");
-      icon.classList.add(`icon-${name}`);
-      link.appendChild(icon);
-      return link;
-    }
-    // Encode things.
-    let nameLower = name.toLowerCase();
-    let nameChanges = {
-      raku: "perl 6"
-    } as { [name: string]: string };
-    let nameChanged = nameChanges[nameLower] || nameLower;
-    let defaultTopic = nameChanged.replace(/ /g, "-");
-    let topics = {
-      "c++": "cpp",
-      "c#": "csharp",
-      "f#": "fsharp",
-      "f*": "fstar",
-      "objective-c++": "objective-cpp",
-      "perl 6": "perl6",
-      "ren'py": "renpy",
-      "visual basic .net": "visual-basic-net"
-    } as { [name: string]: string };
-    let topic = encodeURIComponent(topics[nameChanged] || defaultTopic);
-    let nameEncoded = encodeURIComponent(nameChanged);
-    let searchEncoded = encodeURIComponent(`${nameLower} language`);
-    // Make links.
-    info.appendChild(
-      makeLink(
-        "google",
-        "Google Search",
-        `https://www.google.com/search?q=${searchEncoded}`
-      )
-    );
-    info.appendChild(
-      makeLink(
-        "github",
-        "GitHub Topic",
-        `https://github.com/topics/${topic}?l=${nameEncoded}`
-      )
-    );
-    info.appendChild(
-      makeLink(
-        "trending-up",
-        "GitHub Trending",
-        `https://github.com/trending/${nameEncoded}?since=daily`
-      )
-    );
-    return info;
   }
 
   private makeLegend(namedRanks: Metric[]) {
@@ -374,12 +318,12 @@ export class App {
       namedRanks.slice(-1)[0].value
     );
     let oldRanks = metricArrayToObject(oldRanksRaw);
-    namedRanks.forEach(namedRank => {
+    namedRanks.forEach((namedRank) => {
       let { name, value: rank } = namedRank;
       let row = document.createElement("tr");
       row.classList.add("interactive");
       row.dataset.name = name;
-      row.addEventListener("click", event => this.toggle({ name, row }));
+      row.addEventListener("click", (event) => this.toggle({ name, row }));
       row.addEventListener("mouseover", () => this.highlight(name, true));
       row.addEventListener("mouseout", () => this.highlight(name, false));
       // Marker.
@@ -456,7 +400,7 @@ export class App {
     this.state.activeNames = new Set(this.state.originalActiveNames);
     let { activeNames } = this.state;
     // Keep matching datasets in hopes to avoid them animating,
-    let datasets = this.chart.data.datasets!.filter(dataset =>
+    let datasets = this.chart.data.datasets!.filter((dataset) =>
       activeNames.has(dataset.label!)
     );
     // Figure out what new ones to add, and add them.
@@ -520,7 +464,7 @@ export class App {
       activeNames.delete(name);
       this.deactivateMarker(marker);
       this.chart.data.datasets = datasets.filter(
-        dataset => dataset.label != name
+        (dataset) => dataset.label != name
       );
     } else {
       activeNames.add(name);
@@ -577,7 +521,7 @@ export class App {
   updateLink() {
     // Change the link.
     let params = new URLSearchParams();
-    let names = [...this.state.activeNames].map(name => name.toLowerCase());
+    let names = [...this.state.activeNames].map((name) => name.toLowerCase());
     params.append("y", this.state.y);
     params.append("names", names.join());
     let link = document.querySelector(".link") as HTMLAnchorElement;
@@ -604,10 +548,7 @@ export class App {
       HTMLElement
     >;
     for (let row of rows) {
-      let name = row
-        .querySelector(".label")!
-        .textContent!.trim()
-        .toLowerCase();
+      let name = row.querySelector(".label")!.textContent!.trim().toLowerCase();
       // Surround with spaces so we can easily mark ends.
       row.style.display = ` ${name} `.includes(text) ? "" : "none";
     }

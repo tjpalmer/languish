@@ -6,7 +6,8 @@ import { GlobalContext } from "context";
 import { clx } from "helpers";
 import React, { useContext } from "react";
 
-function App() {
+
+const App = () => {
   const global = useContext(GlobalContext);
 
   return (
@@ -24,6 +25,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
