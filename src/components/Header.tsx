@@ -47,7 +47,7 @@ const Header = () => (
         Programming Language Trends
       </div>
       <div>
-        ... for more,
+        ... for more,{" "}
         <a
           href="https://www.youtube.com/channel/UCS4FAVeYW_IaZqAbqhlvxlA"
           title="Context Free - YouTube channel about programming languages"

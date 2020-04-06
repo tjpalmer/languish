@@ -177,7 +177,6 @@ export class App {
   }
 
   private findLatestRanks(offset = -1) {
-    let date = this.latestDate();
     let key = this.state.y;
     let { entries } = this.state.data;
     let counts = Object.entries(entries).map(([name, langEntries]) => {
@@ -203,10 +202,6 @@ export class App {
     // More noticeable that way.
     dataset.borderWidth = value ? 9 : 3;
     chart.update();
-  }
-
-  private latestDate() {
-    return this.state.data.dates.slice(-1)[0];
   }
 
   private makeChart() {
@@ -551,15 +546,6 @@ export class App {
       let name = row.querySelector(".label")!.textContent!.trim().toLowerCase();
       // Surround with spaces so we can easily mark ends.
       row.style.display = ` ${name} `.includes(text) ? "" : "none";
-    }
-    // Update query clear.
-    let queryClear = document.querySelector(".queryClear")!;
-    if (text) {
-      queryClear.classList.add("icon-close");
-      queryClear.classList.remove("icon-search");
-    } else {
-      queryClear.classList.remove("icon-close");
-      queryClear.classList.add("icon-search");
     }
   }
 }

@@ -41,7 +41,13 @@ const LangList = () => {
         </div>
       </div>
       <label className="query">
-        <span className="queryClear icon-search"></span>
+        <span
+          className={clx(
+            "queryClear",
+            global.searchTerm ? "icon-close" : "icon-search"
+          )}
+          onClick={() => global.updateSearchTerm("")}
+        ></span>
         <input
           title="Filter by name"
           value={global.searchTerm}
