@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import "styles/Header.css";
 
 const Header = () => (
   <div className="header">
@@ -20,7 +20,7 @@ const Header = () => (
             top: 0,
             border: 0,
             left: 0,
-            transform: "scale(-1, 1)"
+            transform: "scale(-1, 1)",
           }}
           aria-hidden="true"
         >
@@ -40,7 +40,7 @@ const Header = () => (
       </a>
     </div>
     <h1>
-      <a href="">Languish</a>
+      <a href=".">Languish</a>
     </h1>
     <h2>
       <div title="Current data from public GitHub projects">
