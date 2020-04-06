@@ -1,16 +1,23 @@
 import { GlobalContext } from "context";
+import { colors } from "parsedData";
 import React, { useContext } from "react";
 
 interface LangItemProps {
   rank: number;
   name: string;
   diff: number;
+  selected?: boolean;
 }
 
-const LangItem: React.FC<LangItemProps> = ({ diff, name, rank }) => {
+const LangItem: React.FC<LangItemProps> = ({ diff, name, rank, selected }) => {
   return (
     <tr className="interactive" data-name="GLSL">
-      <td className="marker">{rank}</td>
+      <td
+        className={"marker" + (selected ? " active" : "")}
+        style={selected ? { backgroundColor: colors[name] } : undefined}
+      >
+        {rank}
+      </td>
       <td className="label">
         {name}
         <div className="info">
@@ -54,8 +61,8 @@ const LangList = () => {
         <div className="listScroll">
           <div className="listBox">
             <table>
-              <LangItem diff={-12} name={"JavaScript"} rank={123} />
-              <LangItem diff={-0} name={"Rust"} rank={113} />
+              <LangItem diff={-12} name={"JavaScript"} rank={123} selected />
+              <LangItem diff={-0} name={"Python"} rank={113} selected />
               <LangItem diff={0} name={"WEb"} rank={13} />
               <LangItem diff={22} name={"asda"} rank={1} />
             </table>
@@ -77,7 +84,7 @@ const LangList = () => {
         </div>
         <div
           className={"trim interactive" + (global.isTrimmed ? " checked" : "")}
-          onClick={() => global.toggleIsTrimmed()}
+          onClick={global.toggleIsTrimmed}
           title="Toggle showing selected vs all languages"
         >
           Trim

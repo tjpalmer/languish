@@ -1,21 +1,53 @@
-import React from "react";
+import { GlobalContext } from "context";
+import { Metrics } from "parsedData";
+import React, { useContext } from "react";
 
-const Metric = ({}) => (
-  <>
-    <div className="yAxis">
-      <div className="yLabel interactive" title="Change y axis options">
-        <span className="yLabelArrow"></span>
-        <span className="yLabelText"></span>
-        <span className="yLabelArrow"></span>
+const Metric = () => {
+  const global = useContext(GlobalContext);
+
+  // map of available metrics to human readable strings
+  const items: { [k in keyof Metrics]: string } = {
+    issues: "Issues",
+    mean: "Mean Score",
+    pulls: "Pull Requests",
+    pushes: "Pushes",
+    stars: "Stars",
+  };
+
+  return (
+    <>
+      <div className="yAxis">
+        <div
+          className="yLabel interactive"
+          title="Change y axis options"
+          onClick={global.toggleMetricsAreExpanded}
+        >
+          <span className="yLabelArrow"></span>
+          <span className="yLabelText">{items[global.metric]}</span>
+          <span className="yLabelArrow"></span>
+        </div>
       </div>
-    </div>
-    <div className="yOptions">
-      <div className="yOptionsBox">
-        <h3>Metric</h3>
-        <ul className="yMetricsList"></ul>
+      <div className="yOptions">
+        <div className="yOptionsBox">
+          <h3>Metric</h3>
+          <ul className="yMetricsList">
+            {Object.entries(items).map(([real, display]) => (
+              <li
+                onClick={() => global.changeMetric(real as any)}
+                className={
+                  "interactive " +
+                  real +
+                  (global.metric === real ? " active" : "")
+                }
+              >
+                {display}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
-  </>
-);
+    </>
+  );
+};
 
 export default Metric;

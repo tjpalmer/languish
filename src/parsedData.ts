@@ -9,7 +9,7 @@ interface CoreMetrics {
   stars: number;
 }
 
-interface Metrics extends CoreMetrics {
+export interface Metrics extends CoreMetrics {
   mean: number;
 }
 
