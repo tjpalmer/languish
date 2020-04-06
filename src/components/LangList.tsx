@@ -25,7 +25,8 @@ const LangList = () => {
           Reset
         </div>
         <div
-          className="trim interactive"
+          className={"trim interactive" + (global.isTrimmed ? " checked" : "")}
+          onClick={() => global.toggleIsTrimmed()}
           title="Toggle showing selected vs all languages"
         >
           Trim
