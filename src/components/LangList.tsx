@@ -1,4 +1,5 @@
 import { GlobalContext } from "context";
+import { clx } from "helpers";
 import { colors } from "parsedData";
 import React, { useContext } from "react";
 
@@ -13,7 +14,7 @@ const LangItem: React.FC<LangItemProps> = ({ diff, name, rank, selected }) => {
   return (
     <tr className="interactive" data-name="GLSL">
       <td
-        className={"marker" + (selected ? " active" : "")}
+        className={clx("marker", selected && "active")}
         style={selected ? { backgroundColor: colors[name] } : undefined}
       >
         {rank}
@@ -83,7 +84,7 @@ const LangList = () => {
           Reset
         </div>
         <div
-          className={"trim interactive" + (global.isTrimmed ? " checked" : "")}
+          className={clx("trim interactive", global.isTrimmed && "checked")}
           onClick={global.toggleIsTrimmed}
           title="Toggle showing selected vs all languages"
         >

@@ -3,6 +3,7 @@ import LangList from "components/LangList";
 import Metric from "components/Metric";
 import Plot from "components/Plot";
 import { GlobalContext } from "context";
+import { clx } from "helpers";
 import React, { useContext } from "react";
 
 function App() {
@@ -12,9 +13,10 @@ function App() {
     <div className="content">
       <Header />
       <div
-        className={
-          "display" + (global.metricsAreExpanded ? " yOptionsExpanded" : "")
-        }
+        className={clx(
+          "display",
+          global.metricsAreExpanded && "yOptionsExpanded"
+        )}
       >
         <Metric />
         <Plot />

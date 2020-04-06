@@ -1,4 +1,5 @@
 import { GlobalContext } from "context";
+import { clx } from "helpers";
 import { Metrics } from "parsedData";
 import React, { useContext } from "react";
 
@@ -34,11 +35,11 @@ const Metric = () => {
             {Object.entries(items).map(([real, display]) => (
               <li
                 onClick={() => global.changeMetric(real as any)}
-                className={
-                  "interactive " +
-                  real +
-                  (global.metric === real ? " active" : "")
-                }
+                className={clx(
+                  "interactive",
+                  real,
+                  global.metric === real && "active"
+                )}
               >
                 {display}
               </li>
