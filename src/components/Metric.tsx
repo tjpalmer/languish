@@ -1,5 +1,5 @@
 import { GlobalContext } from "context";
-import { clx } from "helpers";
+import { clx, objectEntries } from "helpers";
 import { Metrics } from "parsedData";
 import React, { useContext } from "react";
 
@@ -32,9 +32,9 @@ const Metric = () => {
         <div className="yOptionsBox">
           <h3>Metric</h3>
           <ul className="yMetricsList">
-            {Object.entries(items).map(([real, display]) => (
+            {objectEntries(items).map(([real, display]) => (
               <li
-                onClick={() => global.changeMetric(real as any)}
+                onClick={() => global.changeMetric(real)}
                 className={clx(
                   "interactive",
                   real,

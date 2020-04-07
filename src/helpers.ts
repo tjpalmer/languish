@@ -5,3 +5,10 @@ export function clx(
 ): string {
   return args.filter((e) => e).join(" ");
 }
+
+// type-safe Object.entries
+// should be used only on objects you know the keys wont be polluted
+// https://github.com/microsoft/TypeScript/issues/21826#issuecomment-479851685
+export const objectEntries = Object.entries as <T>(
+  o: T
+) => [Extract<keyof T, string>, T[keyof T]][];
