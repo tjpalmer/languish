@@ -1,6 +1,6 @@
 import React from "react";
 
-const Plot = ({}) => (
+const Plot = () => (
   <div className="plot">
     <div className="plotBox">
       <canvas></canvas>

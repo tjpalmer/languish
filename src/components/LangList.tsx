@@ -1,10 +1,20 @@
 import { GlobalContext } from "context";
 import { clx } from "helpers";
-import React, { useContext } from "react";
+import React, { useContext, useMemo } from "react";
 import LangItem from "./LangItem";
 
 const LangList = () => {
   const global = useContext(GlobalContext);
+
+  const langsToRender = useMemo(() => {
+    if (global.trimmed) {
+      return global.langList.filter((lang) =>
+        global.selectedLangs.has(lang.name)
+      );
+    }
+
+    return global.langList;
+  }, [global.trimmed, global.selectedLangs, global.langList]);
 
   return (
     <div className="legend">
@@ -12,16 +22,13 @@ const LangList = () => {
         <div className="listScroll">
           <div className="listBox">
             <table>
-              {global.langList.map(
-                (lang) =>
-                  (global.trimmed && !global.selectedLangs.has(lang.name)) || (
-                    <LangItem
-                      {...lang}
-                      onClick={() => global.toggleSelected(lang.name)}
-                      selected={global.selectedLangs.has(lang.name)}
-                    />
-                  )
-              )}
+              {langsToRender.map((lang) => (
+                <LangItem
+                  {...lang}
+                  onClick={() => global.toggleSelected(lang.name)}
+                  selected={global.selectedLangs.has(lang.name)}
+                />
+              ))}
             </table>
           </div>
         </div>
@@ -29,12 +36,14 @@ const LangList = () => {
       <div className="tools">
         <div
           className="clear interactive"
+          onClick={global.emptyList}
           title="Clear all language selections"
         >
           Empty
         </div>
         <div
           className="reset interactive"
+          onClick={global.resetList}
           title="Reset to originally selected languages"
         >
           Reset

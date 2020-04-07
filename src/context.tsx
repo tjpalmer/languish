@@ -39,8 +39,6 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
       this.constructList();
       queueMicrotask(() => this.resetList());
     });
-
-    console.log(this.state.langList);
   }
 
   updateSearchTerm = (searchTerm: string) => this.setState({ searchTerm });
@@ -55,18 +53,23 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
       metricsAreExpanded: !prevState.metricsAreExpanded,
     }));
 
-  emptyList = () => {};
+  emptyList = () =>
+    this.setState((prevState) => {
+      prevState.selectedLangs.clear();
+      return prevState;
+    });
 
-  resetList = () => {
-    // mark top 10 as selected
-    const selectedLangs = new Set<string>();
+  resetList = () =>
+    this.setState((prevState) => {
+      // mark top 10 as selected
+      prevState.selectedLangs.clear();
 
-    for (let i = 0; i < 10; i++) {
-      selectedLangs.add(this.state.langList[i].name);
-    }
+      for (let i = 0; i < 10; i++) {
+        prevState.selectedLangs.add(this.state.langList[i].name);
+      }
 
-    this.setState({ selectedLangs });
-  };
+      return prevState;
+    });
 
   changeMetric = (metric: keyof Metrics) =>
     this.setState({ metric }, this.constructList);
