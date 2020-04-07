@@ -7,14 +7,25 @@ const LangList = () => {
   const global = useContext(GlobalContext);
 
   const langsToRender = useMemo(() => {
+    const lowerCaseSearchTerm = global.searchTerm.toLocaleLowerCase();
+
     if (global.trimmed) {
-      return global.langList.filter((lang) =>
-        global.selectedLangs.has(lang.name)
+      return global.langList.filter(
+        (lang) =>
+          global.selectedLangs.has(lang.name) &&
+          lang.name.toLocaleLowerCase().includes(lowerCaseSearchTerm)
       );
     }
 
-    return global.langList;
-  }, [global.trimmed, global.selectedLangs, global.langList]);
+    return global.langList.filter((lang) =>
+      lang.name.toLocaleLowerCase().includes(lowerCaseSearchTerm)
+    );
+  }, [
+    global.trimmed,
+    global.selectedLangs,
+    global.langList,
+    global.searchTerm,
+  ]);
 
   return (
     <div className="legend">
