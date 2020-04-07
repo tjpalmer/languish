@@ -102,35 +102,49 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
   );
 
   private constructList() {
-    const counts = objectEntries(entries)
-      .map(([name, stats]) => ({
-        name,
-        value: stats[stats.length - 1][this.state.metric],
-      }))
-      .sort((a, b) => b.value - a.value);
+    const getRanks = (offset = 1) => {
+      const counts = objectEntries(entries)
+        .map(([name, stats]) => ({
+          name,
+          value: stats.slice(-offset)[0][this.state.metric],
+        }))
+        .sort((a, b) => b.value - a.value);
 
-    let currRank: number;
-    const langList = counts.map((ele, i) => {
-      let rank: number;
+      let currRank: number;
+      const ranks = counts.map(({ name, value }, i) => {
+        let rank: number;
 
-      // edge case for first element
-      // if theres a tie, dont increment the rank
-      if (i === 0) {
-        rank = 1;
-      } else if (counts[i - 1].value === ele.value) {
-        rank = currRank;
-      } else {
-        rank = currRank + 1;
-      }
-      currRank = rank;
+        // edge case for first element
+        // if theres a tie, dont increment the rank
+        if (i === 0) {
+          rank = 1;
+        } else if (counts[i - 1].value === value) {
+          rank = currRank;
+        } else {
+          rank = currRank + 1;
+        }
+        currRank = rank;
 
-      return {
-        name: ele.name,
-        rank,
-        color: colors[ele.name],
-        diff: -1,
-      };
-    });
+        return {
+          name,
+          rank,
+        };
+      });
+
+      return ranks;
+    };
+
+    const currentRanks = getRanks();
+    const previousRanksMap: { [k: string]: number } = getRanks(5).reduce(
+      (prev, curr) => ({ ...prev, [curr.name]: curr.rank }),
+      {}
+    );
+
+    const langList = currentRanks.map((ele) => ({
+      ...ele,
+      color: colors[ele.name],
+      diff: previousRanksMap[ele.name] - ele.rank,
+    }));
 
     this.setState({ langList });
   }

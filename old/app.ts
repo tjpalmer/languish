@@ -81,7 +81,6 @@ export class App {
     // Render.
     this.chart = this.makeChart();
     this.makeLegend(ranks);
-    this.makeOptions();
     document.querySelector(".xLabel")!.textContent = labels[this.state.x];
     let yLabel = document.querySelector(".yLabelText")!;
     yLabel.textContent = labels[this.state.y];
@@ -144,11 +143,6 @@ export class App {
     this.state.loaded = true;
   }
 
-  private activateMarker(marker: HTMLElement, name: string) {
-    marker.classList.add("active");
-    marker.style.background = this.state.data.colors[name];
-  }
-
   private chart: Chart;
 
   private clearActives() {
@@ -169,11 +163,6 @@ export class App {
     let query = document.querySelector(".query input") as HTMLInputElement;
     query.value = "";
     this.updateQuery(retainTrim);
-  }
-
-  private deactivateMarker(marker: HTMLElement) {
-    marker.classList.remove("active");
-    marker.style.background = "";
   }
 
   private findLatestRanks(offset = -1) {
@@ -316,38 +305,13 @@ export class App {
     namedRanks.forEach((namedRank) => {
       let { name, value: rank } = namedRank;
       let row = document.createElement("tr");
-      row.classList.add("interactive");
-      row.dataset.name = name;
       row.addEventListener("click", (event) => this.toggle({ name, row }));
       row.addEventListener("mouseover", () => this.highlight(name, true));
       row.addEventListener("mouseout", () => this.highlight(name, false));
-      // Marker.
-      let marker = document.createElement("td");
-      let color = colors[name];
-      if (this.state.activeNames.has(name)) {
-        marker.classList.add("active");
-        marker.style.background = color;
-      }
-      marker.classList.add("marker");
-      marker.textContent = String(rank + 1);
-      row.appendChild(marker);
-      // Label.
-      let label = document.createElement("td");
-      label.classList.add("label");
-      label.textContent = name;
-      row.appendChild(label);
       // Rank change.
-      let change = document.createElement("td");
-      change.classList.add("change");
       let oldRank = oldRanks[name];
       let changeValue =
         Math.min(oldRank, worstRank) - Math.min(rank, worstRank);
-      if (changeValue) {
-        let prefix = changeValue > 0 ? "+" : "";
-        change.textContent = `${prefix}${changeValue}`;
-        change.title = "Change in rank vs 1 year earlier";
-      }
-      row.appendChild(change);
       // Row done.
       table.appendChild(row);
     });
@@ -360,27 +324,6 @@ export class App {
     } else {
       this.updateQuery();
     }
-  }
-
-  makeOptions() {
-    let list = document.querySelector(".yMetricsList")!;
-    list.innerHTML = "";
-    let keyLabels = Object.entries(labels).sort((a, b) => {
-      return a[1].localeCompare(b[1]);
-    }) as [keyof DateMetrics, string][];
-    keyLabels.map(([key, label]) => {
-      if (key != "date") {
-        let option = document.createElement("li");
-        option.addEventListener("click", () => this.setY(key));
-        option.classList.add("interactive");
-        option.classList.add(key);
-        if (key == this.state.y) {
-          option.classList.add("active");
-        }
-        option.textContent = label;
-        list.appendChild(option);
-      }
-    });
   }
 
   queryRows() {
@@ -406,16 +349,6 @@ export class App {
       datasets.push(this.makeDataset(extra));
     }
     this.chart.data.datasets = datasets;
-    // Update markers.
-    for (let row of this.queryRows()) {
-      let name = row.dataset.name!;
-      let marker = row.querySelector(".marker") as HTMLElement;
-      if (activeNames.has(name)) {
-        this.activateMarker(marker, name);
-      } else {
-        this.deactivateMarker(marker);
-      }
-    }
     // Update other portions.
     this.chart.update();
     this.clearQuery(true);
@@ -432,17 +365,7 @@ export class App {
 
   setY(key: keyof Metrics) {
     if (this.state.y != key) {
-      let list = document.querySelector(".yMetricsList")!;
-      this.state.y = key;
       this.updateData();
-      document.querySelector(".yLabelText")!.textContent = labels[this.state.y];
-      for (let option of list.querySelectorAll(".interactive")) {
-        if (option.classList.contains(key)) {
-          option.classList.add("active");
-        } else {
-          option.classList.remove("active");
-        }
-      }
       this.updateLink();
     }
   }
@@ -450,19 +373,14 @@ export class App {
   private state: State;
 
   toggle(info: { name: string; row: HTMLElement }) {
-    let { name, row } = info;
-    let marker = row.querySelector(".marker") as HTMLElement;
+    let { name } = info;
     let datasets = this.chart.data.datasets!;
     let { activeNames } = this.state;
     if (activeNames.has(name)) {
-      activeNames.delete(name);
-      this.deactivateMarker(marker);
       this.chart.data.datasets = datasets.filter(
         (dataset) => dataset.label != name
       );
     } else {
-      activeNames.add(name);
-      this.activateMarker(marker, name);
       datasets.push(this.makeDataset(name));
     }
     this.chart.update();
@@ -480,13 +398,6 @@ export class App {
     let rows = this.queryRows();
     let { activeNames, trimmedNames } = this.state;
     if (wasTrim) {
-      // Untrim.
-      for (let row of rows) {
-        row.style.display = "";
-      }
-      trim.classList.remove("checked");
-      this.state.trimmed = false;
-      this.state.trimmedNames.clear();
     } else {
       // Trim.
       if (!trimmedNames.size) {

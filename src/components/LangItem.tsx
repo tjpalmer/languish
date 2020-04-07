@@ -81,7 +81,7 @@ const LangItem: React.FC<LangItemProps> = ({
       </td>
       <td className="change" title="Change in rank vs 1 year earlier">
         {diff > 0 && "+"}
-        {diff}
+        {diff !== 0 && diff}
       </td>
     </tr>
   );
