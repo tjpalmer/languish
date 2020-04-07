@@ -17,6 +17,7 @@ const LangList = () => {
                   (global.trimmed && !global.selectedLangs.has(lang.name)) || (
                     <LangItem
                       {...lang}
+                      onClick={() => global.toggleSelected(lang.name)}
                       selected={global.selectedLangs.has(lang.name)}
                     />
                   )

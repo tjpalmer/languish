@@ -8,7 +8,7 @@ const defaultState = {
   trimmed: false,
   metricsAreExpanded: false,
   metric: "mean" as keyof Metrics,
-  langList: [] as Omit<LangItemProps, "selected">[],
+  langList: [] as Omit<LangItemProps, "selected" | "onClick">[],
   selectedLangs: new Set<string>(),
 };
 
@@ -20,6 +20,7 @@ const noopFuncs = {
   emptyList() {},
   resetList() {},
   changeMetric(metric: keyof Metrics) {},
+  toggleSelected(name: string) {},
 };
 
 export const GlobalContext = React.createContext({
@@ -66,6 +67,16 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
 
   changeMetric = (metric: keyof Metrics) => this.setState({ metric });
 
+  toggleSelected = (name: string) =>
+    this.setState((prevState) => {
+      if (prevState.selectedLangs.has(name)) {
+        prevState.selectedLangs.delete(name);
+      } else {
+        prevState.selectedLangs.add(name);
+      }
+      return { selectedLangs: prevState.selectedLangs };
+    });
+
   render = () => (
     <GlobalContext.Provider
       value={{
@@ -76,6 +87,7 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
         emptyList: this.emptyList,
         resetList: this.resetList,
         changeMetric: this.changeMetric,
+        toggleSelected: this.toggleSelected,
       }}
     >
       {this.props.children}

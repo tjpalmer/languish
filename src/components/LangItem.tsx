@@ -21,6 +21,7 @@ export interface LangItemProps {
   color: string;
   name: string;
   diff: number;
+  onClick: () => void;
   selected?: boolean;
 }
 
@@ -28,6 +29,7 @@ const LangItem: React.FC<LangItemProps> = ({
   diff,
   name,
   rank,
+  onClick,
   selected,
   color,
 }) => {
@@ -36,7 +38,7 @@ const LangItem: React.FC<LangItemProps> = ({
   const customTopic = customTopics[customName] || customName.replace(/ /g, "-");
 
   return (
-    <tr className="interactive" data-name={name}>
+    <tr className="interactive" data-name={name} onClick={onClick}>
       <td
         className={clx("marker", selected && "active")}
         style={selected ? { backgroundColor: color } : undefined}
