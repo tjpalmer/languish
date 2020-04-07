@@ -1,5 +1,4 @@
 import { clx } from "helpers";
-import { colors } from "parsedData";
 import React from "react";
 
 const customNames: { [key: string]: string } = {
@@ -17,14 +16,21 @@ const customTopics: { [key: string]: string } = {
   "visual basic .net": "visual-basic-net",
 };
 
-interface LangItemProps {
+export interface LangItemProps {
   rank: number;
+  color: string;
   name: string;
   diff: number;
   selected?: boolean;
 }
 
-const LangItem: React.FC<LangItemProps> = ({ diff, name, rank, selected }) => {
+const LangItem: React.FC<LangItemProps> = ({
+  diff,
+  name,
+  rank,
+  selected,
+  color,
+}) => {
   const lowerCaseName = name.toLowerCase();
   const customName = customNames[lowerCaseName] || lowerCaseName;
   const customTopic = customTopics[customName] || customName.replace(/ /g, "-");
@@ -33,7 +39,7 @@ const LangItem: React.FC<LangItemProps> = ({ diff, name, rank, selected }) => {
     <tr className="interactive" data-name={name}>
       <td
         className={clx("marker", selected && "active")}
-        style={selected ? { backgroundColor: colors[name] } : undefined}
+        style={selected ? { backgroundColor: color } : undefined}
       >
         {rank}
       </td>

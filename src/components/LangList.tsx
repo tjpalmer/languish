@@ -12,9 +12,15 @@ const LangList = () => {
         <div className="listScroll">
           <div className="listBox">
             <table>
-              <LangItem diff={-12} name={"JavaScript"} rank={123} selected />
-              <LangItem diff={-0} name={"Python"} rank={113} selected />
-              <LangItem diff={0} name={"raku"} rank={13} />
+              {global.langList.map(
+                (lang) =>
+                  (global.trimmed && !global.selectedLangs.has(lang.name)) || (
+                    <LangItem
+                      {...lang}
+                      selected={global.selectedLangs.has(lang.name)}
+                    />
+                  )
+              )}
             </table>
           </div>
         </div>
@@ -33,8 +39,8 @@ const LangList = () => {
           Reset
         </div>
         <div
-          className={clx("trim interactive", global.isTrimmed && "checked")}
-          onClick={global.toggleIsTrimmed}
+          className={clx("trim interactive", global.trimmed && "checked")}
+          onClick={global.toggleTrimmed}
           title="Toggle showing selected vs all languages"
         >
           Trim

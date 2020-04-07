@@ -335,7 +335,6 @@ export class App {
       let label = document.createElement("td");
       label.classList.add("label");
       label.textContent = name;
-      label.appendChild(this.makeInfo(name));
       row.appendChild(label);
       // Rank change.
       let change = document.createElement("td");
