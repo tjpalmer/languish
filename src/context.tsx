@@ -35,7 +35,10 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
     super(props);
 
     // queuing because using setState in a constructor is forbidden
-    queueMicrotask(() => this.constructList());
+    queueMicrotask(() => {
+      this.constructList();
+      queueMicrotask(() => this.resetList());
+    });
 
     console.log(this.state.langList);
   }
@@ -56,16 +59,17 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
 
   resetList = () => {
     // mark top 10 as selected
-    const selected = new Set<string>();
+    const selectedLangs = new Set<string>();
 
     for (let i = 0; i < 10; i++) {
-      selected.add(this.state.langList[i].name);
+      selectedLangs.add(this.state.langList[i].name);
     }
 
-    this.setState({ selectedLangs: selected });
+    this.setState({ selectedLangs });
   };
 
-  changeMetric = (metric: keyof Metrics) => this.setState({ metric });
+  changeMetric = (metric: keyof Metrics) =>
+    this.setState({ metric }, this.constructList);
 
   toggleSelected = (name: string) =>
     this.setState((prevState) => {
@@ -103,7 +107,7 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
       .sort((a, b) => b.value - a.value);
 
     let currRank: number;
-    this.state.langList = counts.map((ele, i) => {
+    const langList = counts.map((ele, i) => {
       let rank: number;
 
       // edge case for first element
@@ -125,6 +129,6 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
       };
     });
 
-    this.resetList();
+    this.setState({ langList });
   }
 }
