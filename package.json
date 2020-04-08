@@ -2,6 +2,7 @@
   "name": "languish",
   "version": "0.0.1",
   "description": "plot programming language statistics",
+  "homepage": "https://tjpalmer.github.io/languish",
   "scripts": {
     "start": "npm run build-merge && cra-preact start",
     "build": "npm run build-merge && cra-preact build",
@@ -24,8 +25,6 @@
     "@types/react": "^16.9.25",
     "@types/react-dom": "^16.9.5",
     "cra-preact": "^0.4.0",
-    "inline-source-cli": "^2.0.0",
-    "parcel-bundler": "^1.12.4",
     "react-scripts": "3.4.1",
     "typescript": "^3.8.3"
   },

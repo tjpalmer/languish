@@ -17,9 +17,6 @@ jobs:
         with:
           node-version: 12.x
 
-      - name: Install ts-node and typescript
-        run: npm i -g ts-node typescript
-
       - name: Install dependencies
         run: npm i
 
