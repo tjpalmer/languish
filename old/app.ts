@@ -1,5 +1,3 @@
-import { Chart, ChartColor, ChartDataSets } from "chart.js";
-
 export interface CoreMetrics {
   issues: number;
   pulls: number;
@@ -79,12 +77,10 @@ export class App {
     }
     this.state.originalActiveNames = new Set(this.state.activeNames);
     // Render.
-    this.chart = this.makeChart();
     this.makeLegend(ranks);
     document.querySelector(".xLabel")!.textContent = labels[this.state.x];
     let yLabel = document.querySelector(".yLabelText")!;
     yLabel.textContent = labels[this.state.y];
-    this.updateLink();
     // Wire events.
     document.querySelector(".yLabel")!.addEventListener("click", () => {
       let display = document.querySelector(".display") as HTMLElement;
@@ -143,12 +139,8 @@ export class App {
     this.state.loaded = true;
   }
 
-  private chart: Chart;
-
   private clearActives() {
     this.state.activeNames.clear();
-    this.chart.data.datasets = [];
-    this.chart.update();
     let markers = document.querySelectorAll(".listBox .marker") as Iterable<
       HTMLElement
     >;
@@ -156,7 +148,6 @@ export class App {
       marker.classList.remove("active");
       marker.style.background = "";
     }
-    this.updateLink();
   }
 
   private clearQuery(retainTrim = false) {
@@ -193,97 +184,6 @@ export class App {
     chart.update();
   }
 
-  private makeChart() {
-    // TODO For Metrics Mean total, first norm by max for metric total, then mean.
-    let plot = document.querySelector(".plot")!;
-    let canvas = plot.querySelector("canvas")!;
-    let context = canvas.getContext("2d")!;
-    let chart = new Chart(context, {
-      data: {
-        datasets: this.makeDatasets(),
-        labels: this.state.data.dates,
-      },
-      options: {
-        animation: {
-          duration: 300,
-        },
-        hover: {
-          animationDuration: 200,
-          mode: "dataset",
-        },
-        legend: {
-          display: false,
-        },
-        maintainAspectRatio: false,
-        responsive: true,
-        scales: {
-          xAxes: [
-            {
-              ticks: {
-                callback: (date) => {
-                  return date.includes("Q1") ? date.replace("Q1", "") : "";
-                },
-                fontColor: "white",
-              },
-              // type: 'linear',
-            },
-          ],
-          yAxes: [
-            {
-              // scaleLabel: {display: true, labelString: 'Stars'},
-              ticks: {
-                callback: (value) => `${value}%`,
-                fontColor: "white",
-                suggestedMin: 0,
-              },
-            },
-          ],
-        },
-        tooltips: {
-          bodyFontSize: 18,
-          // I can't figure out how to remove the white border, but black here
-          // softens it some.
-          callbacks: {
-            label: (item, data) =>
-              `${data.datasets![item.datasetIndex!].label}: ` +
-              `${Number(item.value).toFixed(2)}%`,
-            labelColor: (item, chart) => {
-              let dataset = chart.data.datasets![item.datasetIndex!];
-              let color = dataset.borderColor as ChartColor;
-              return { borderColor: "black", backgroundColor: color };
-            },
-          },
-          // mode: 'x',  // Would need to highlight current and refine.
-          position: "nearest",
-          titleFontSize: 18,
-          titleFontStyle: "normal",
-        },
-      },
-      type: "line",
-    });
-    return chart;
-  }
-
-  private makeDataset(name: string) {
-    let borderColor = this.state.data.colors[name];
-    return {
-      borderColor,
-      cubicInterpolationMode: "monotone",
-      data: this.makeEntryData(name),
-      fill: false,
-      hoverBorderColor: borderColor,
-      hoverBorderWidth: 6,
-      pointHoverBackgroundColor: borderColor,
-      label: name,
-      pointBackgroundColor: borderColor,
-    } as ChartDataSets;
-  }
-
-  private makeDatasets() {
-    // The order doesn't really matter here.
-    return [...this.state.activeNames].map((name) => this.makeDataset(name));
-  }
-
   private makeEntryData(name: string) {
     return this.state.data.entries[name].map((entry) => {
       // Remember [{x, y}, ...] for 2D.
@@ -305,7 +205,6 @@ export class App {
     namedRanks.forEach((namedRank) => {
       let { name, value: rank } = namedRank;
       let row = document.createElement("tr");
-      row.addEventListener("click", (event) => this.toggle({ name, row }));
       row.addEventListener("mouseover", () => this.highlight(name, true));
       row.addEventListener("mouseout", () => this.highlight(name, false));
       // Rank change.
@@ -336,23 +235,8 @@ export class App {
     // Set new to original.
     this.state.activeNames = new Set(this.state.originalActiveNames);
     let { activeNames } = this.state;
-    // Keep matching datasets in hopes to avoid them animating,
-    let datasets = this.chart.data.datasets!.filter((dataset) =>
-      activeNames.has(dataset.label!)
-    );
-    // Figure out what new ones to add, and add them.
-    let extras = new Set(activeNames);
-    for (let dataset of datasets) {
-      extras.delete(dataset.label!);
-    }
-    for (let extra of extras) {
-      datasets.push(this.makeDataset(extra));
-    }
-    this.chart.data.datasets = datasets;
     // Update other portions.
-    this.chart.update();
     this.clearQuery(true);
-    this.updateLink();
     // Always reset trimmed names on reset.
     this.state.trimmedNames.clear();
     // And retrim if trimming.
@@ -366,26 +250,10 @@ export class App {
   setY(key: keyof Metrics) {
     if (this.state.y != key) {
       this.updateData();
-      this.updateLink();
     }
   }
 
   private state: State;
-
-  toggle(info: { name: string; row: HTMLElement }) {
-    let { name } = info;
-    let datasets = this.chart.data.datasets!;
-    let { activeNames } = this.state;
-    if (activeNames.has(name)) {
-      this.chart.data.datasets = datasets.filter(
-        (dataset) => dataset.label != name
-      );
-    } else {
-      datasets.push(this.makeDataset(name));
-    }
-    this.chart.update();
-    this.updateLink();
-  }
 
   toggleTrimmed() {
     let wasTrim = this.state.trimmed;
@@ -419,24 +287,6 @@ export class App {
     for (let dataset of this.chart.data.datasets!) {
       let newData = this.makeEntryData(dataset.label!);
       dataset.data!.splice(0, dataset.data!.length, ...newData);
-    }
-    this.chart.update();
-  }
-
-  updateLink() {
-    // Change the link.
-    let params = new URLSearchParams();
-    let names = [...this.state.activeNames].map((name) => name.toLowerCase());
-    params.append("y", this.state.y);
-    params.append("names", names.join());
-    let link = document.querySelector(".link") as HTMLAnchorElement;
-    link.href = `#${params}`;
-    // But hide it in the url, if we've finished initial construction.
-    // I don't want to force back and forth through history, but I also don't
-    // want to have a lying address bar.
-    if (this.state.loaded) {
-      let plainUri = window.location.href.replace(window.location.hash, "");
-      window.history.replaceState(undefined, "", plainUri);
     }
   }
 
