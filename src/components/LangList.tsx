@@ -1,14 +1,16 @@
 import { useGlobal } from "context";
 import { clx } from "helpers";
-import React, { useMemo } from "react";
+import React, { useLayoutEffect, useMemo, useRef } from "react";
 import LangItem from "./LangItem";
 
 const LangList = () => {
   const global = useGlobal();
+  const inputRef = useRef<HTMLInputElement | null>(null);
 
   const langsToRender = useMemo(() => {
     const lowerCaseSearchTerm = global.searchTerm.toLocaleLowerCase();
 
+    // if trimmed filter out the non-selected langs + those that do not match the query
     if (global.trimmed) {
       return global.langList.filter(
         (lang) =>
@@ -17,6 +19,7 @@ const LangList = () => {
       );
     }
 
+    // filter out those do not match the query
     return global.langList.filter((lang) =>
       lang.name.toLocaleLowerCase().includes(lowerCaseSearchTerm)
     );
@@ -26,6 +29,23 @@ const LangList = () => {
     global.langList,
     global.searchTerm,
   ]);
+
+  // window wide event for query input
+  useLayoutEffect(() => {
+    const handleType = (event: KeyboardEvent) => {
+      // skip event if we are already focused on input
+      if (event.target === inputRef.current) return;
+
+      event.preventDefault();
+      event.stopPropagation();
+      global.updateSearchTerm(inputRef.current?.value + event.key);
+      inputRef.current?.focus();
+    };
+
+    window.addEventListener("keypress", handleType);
+
+    return () => window.removeEventListener("keypress", handleType);
+  }, []);
 
   return (
     <div className="legend">
@@ -76,6 +96,7 @@ const LangList = () => {
           onClick={() => global.updateSearchTerm("")}
         ></span>
         <input
+          ref={inputRef}
           title="Filter by name"
           value={global.searchTerm}
           onChange={(e) => global.updateSearchTerm(e.target.value)}

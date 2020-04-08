@@ -111,19 +111,6 @@ export class App {
         }
       }
     });
-    window.addEventListener("keypress", (event) => {
-      if (event.target !== query) {
-        query.value = event.key;
-        event.preventDefault();
-        event.stopPropagation();
-        // Timeout needed to avoid double-insert in Chrome.
-        window.setTimeout(() => {
-          query.focus();
-        }, 0);
-      }
-      this.updateQuery();
-    });
-    query.addEventListener("keyup", () => this.updateQuery());
     // Done now.
     this.state.loaded = true;
   }
@@ -187,12 +174,6 @@ export class App {
     });
     // Add it in.
     box.appendChild(table);
-    // Hack filters.
-    if (this.state.trimmed) {
-      this.state.trimmed = !this.state.trimmed;
-    } else {
-      this.updateQuery();
-    }
   }
 
   queryRows() {
@@ -213,25 +194,6 @@ export class App {
     for (let dataset of this.chart.data.datasets!) {
       let newData = this.makeEntryData(dataset.label!);
       dataset.data!.splice(0, dataset.data!.length, ...newData);
-    }
-  }
-
-  updateQuery(retainTrim = false) {
-    if (!retainTrim) {
-      // Untrim.
-      this.state.trimmed = false;
-      document.querySelector(".trim")!.classList.remove("checked");
-    }
-    // Run query.
-    let query = document.querySelector(".query input") as HTMLInputElement;
-    let text = query.value.toLowerCase();
-    let rows = document.querySelectorAll(".listBox tr") as Iterable<
-      HTMLElement
-    >;
-    for (let row of rows) {
-      let name = row.querySelector(".label")!.textContent!.trim().toLowerCase();
-      // Surround with spaces so we can easily mark ends.
-      row.style.display = ` ${name} `.includes(text) ? "" : "none";
     }
   }
 }
