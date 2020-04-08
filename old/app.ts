@@ -69,15 +69,8 @@ export class App {
       x: options.x || "date",
       y: options.y || "mean",
     };
-    // Rank them, including to determine default active names.
-    let ranks = this.findLatestRanks();
-    let actives = ranks.slice(0, 10);
-    if (!this.state.activeNames.size) {
-      this.state.activeNames = new Set(actives.map((active) => active.name));
-    }
     this.state.originalActiveNames = new Set(this.state.activeNames);
     // Render.
-    this.makeLegend(ranks);
     document.querySelector(".xLabel")!.textContent = labels[this.state.x];
     let yLabel = document.querySelector(".yLabelText")!;
     yLabel.textContent = labels[this.state.y];
@@ -115,20 +108,6 @@ export class App {
     this.state.loaded = true;
   }
 
-  private findLatestRanks(offset = -1) {
-    let key = this.state.y;
-    let { entries } = this.state.data;
-    let counts = Object.entries(entries).map(([name, langEntries]) => {
-      let value = langEntries.slice(offset)[0][key];
-      return { name, value } as Metric;
-    });
-    // Sort descending.
-    // TODO Sort by sequence newest to oldest dates, current metric then mean.
-    counts.sort((a, b) => b.value - a.value);
-    countsToRanks(counts);
-    return counts;
-  }
-
   private highlight(name: string, value: boolean) {
     if (!this.state.activeNames.has(name)) {
       return;
@@ -151,73 +130,24 @@ export class App {
   }
 
   private makeLegend(namedRanks: Metric[]) {
-    let box = document.querySelector(".listBox")!;
-    box.innerHTML = "";
-    let table = document.createElement("table");
-    let oldRanksRaw = this.findLatestRanks(-5);
-    let worstRank = Math.min(
-      oldRanksRaw.slice(-1)[0].value,
-      namedRanks.slice(-1)[0].value
-    );
-    let oldRanks = metricArrayToObject(oldRanksRaw);
     namedRanks.forEach((namedRank) => {
-      let { name, value: rank } = namedRank;
+      let { name } = namedRank;
       let row = document.createElement("tr");
       row.addEventListener("mouseover", () => this.highlight(name, true));
       row.addEventListener("mouseout", () => this.highlight(name, false));
-      // Rank change.
-      let oldRank = oldRanks[name];
-      let changeValue =
-        Math.min(oldRank, worstRank) - Math.min(rank, worstRank);
-      // Row done.
-      table.appendChild(row);
     });
-    // Add it in.
-    box.appendChild(table);
   }
 
   queryRows() {
     return document.querySelectorAll(".listBox tr") as Iterable<HTMLElement>;
   }
 
-  setY(key: keyof Metrics) {
-    if (this.state.y != key) {
-      this.updateData();
-    }
-  }
-
   private state: State;
 
   updateData() {
-    let counts = this.findLatestRanks();
-    this.makeLegend(counts);
     for (let dataset of this.chart.data.datasets!) {
       let newData = this.makeEntryData(dataset.label!);
       dataset.data!.splice(0, dataset.data!.length, ...newData);
     }
   }
-}
-
-function countsToRanks(counts: Metric[]) {
-  let lastCount = NaN;
-  let lastRank = 0;
-  counts.forEach((count, rank) => {
-    if (count.value == lastCount) {
-      // Track ties.
-      rank = lastRank;
-    }
-    // Remember new last.
-    lastCount = count.value;
-    lastRank = rank;
-    // Update.
-    count.value = rank;
-  });
-}
-
-function metricArrayToObject(pairs: Metric[]) {
-  let result = {} as { [name: string]: number };
-  for (let pair of pairs) {
-    result[pair.name] = pair.value;
-  }
-  return result;
 }

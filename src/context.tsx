@@ -140,15 +140,23 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
     };
 
     const currentRanks = getRanks();
-    const previousRanksMap: { [k: string]: number } = getRanks(5).reduce(
+    const oldRanks = getRanks(5);
+    const oldRanksMap: { [k: string]: number } = oldRanks.reduce(
       (prev, curr) => ({ ...prev, [curr.name]: curr.rank }),
       {}
+    );
+
+    const worstRank = Math.min(
+      oldRanks[oldRanks.length - 1].rank,
+      currentRanks[currentRanks.length - 1].rank
     );
 
     const langList = currentRanks.map((ele) => ({
       ...ele,
       color: colors[ele.name],
-      diff: previousRanksMap[ele.name] - ele.rank,
+      diff:
+        Math.min(oldRanksMap[ele.name], worstRank) -
+        Math.min(ele.rank, worstRank),
     }));
 
     this.setState({ langList });
