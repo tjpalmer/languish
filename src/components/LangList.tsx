@@ -33,18 +33,34 @@ const LangList = () => {
   // window wide event for query input
   useLayoutEffect(() => {
     const handleType = (event: KeyboardEvent) => {
-      // skip event if we are already focused on input
-      if (event.target === inputRef.current) return;
+      // already focused on the input
+      if (event.target === inputRef.current) {
+        if (event.key === "Escape") {
+          global.updateSearchTerm("");
+        }
+      } else {
+        event.preventDefault();
+        event.stopPropagation();
+        switch (event.key) {
+          case "Backspace":
+          case "Delete":
+          case "Escape":
+            global.updateSearchTerm("");
+            break;
+          default:
+            // add the entered character if its alphanumeric, the rest will be handled by the input
+            if (/^[a-z0-9]$/i.test(event.key)) {
+              global.updateSearchTerm(event.key);
+            }
+        }
 
-      event.preventDefault();
-      event.stopPropagation();
-      global.updateSearchTerm(inputRef.current?.value + event.key);
-      inputRef.current?.focus();
+        inputRef.current?.focus();
+      }
     };
 
-    window.addEventListener("keypress", handleType);
+    window.addEventListener("keydown", handleType);
 
-    return () => window.removeEventListener("keypress", handleType);
+    return () => window.removeEventListener("keydown", handleType);
   }, [global]);
 
   return (
