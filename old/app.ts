@@ -86,23 +86,12 @@ export class App {
       let display = document.querySelector(".display") as HTMLElement;
       display.classList.toggle("yOptionsExpanded");
     });
-    document.querySelector(".clear")!.addEventListener("click", () => {
-      this.clearActives();
-    });
-    document.querySelector(".reset")!.addEventListener("click", () => {
-      this.resetActives();
-    });
-    document.querySelector(".trim")!.addEventListener("click", () => {
-      this.toggleTrimmed();
-    });
     // Search takeover of keyboard.
     let query = document.querySelector(".query input") as HTMLInputElement;
     let queryClear = document.querySelector(".queryClear")!;
-    queryClear.addEventListener("click", () => this.clearQuery());
     window.addEventListener("keydown", (event) => {
       let clearQuery = () => {
         event.preventDefault();
-        this.clearQuery();
         query.focus();
       };
       if (event.key == "Escape") {
@@ -137,23 +126,6 @@ export class App {
     query.addEventListener("keyup", () => this.updateQuery());
     // Done now.
     this.state.loaded = true;
-  }
-
-  private clearActives() {
-    this.state.activeNames.clear();
-    let markers = document.querySelectorAll(".listBox .marker") as Iterable<
-      HTMLElement
-    >;
-    for (let marker of markers) {
-      marker.classList.remove("active");
-      marker.style.background = "";
-    }
-  }
-
-  private clearQuery(retainTrim = false) {
-    let query = document.querySelector(".query input") as HTMLInputElement;
-    query.value = "";
-    this.updateQuery(retainTrim);
   }
 
   private findLatestRanks(offset = -1) {
@@ -219,7 +191,6 @@ export class App {
     // Hack filters.
     if (this.state.trimmed) {
       this.state.trimmed = !this.state.trimmed;
-      this.toggleTrimmed();
     } else {
       this.updateQuery();
     }
@@ -229,24 +200,6 @@ export class App {
     return document.querySelectorAll(".listBox tr") as Iterable<HTMLElement>;
   }
 
-  resetActives() {
-    // TODO Factor out something callable from clearActives and toggle?
-    // TODO At the moment, those are both more efficient (?) than this.
-    // Set new to original.
-    this.state.activeNames = new Set(this.state.originalActiveNames);
-    let { activeNames } = this.state;
-    // Update other portions.
-    this.clearQuery(true);
-    // Always reset trimmed names on reset.
-    this.state.trimmedNames.clear();
-    // And retrim if trimming.
-    if (this.state.trimmed) {
-      // Hack toggle.
-      this.state.trimmed = false;
-      this.toggleTrimmed();
-    }
-  }
-
   setY(key: keyof Metrics) {
     if (this.state.y != key) {
       this.updateData();
@@ -254,32 +207,6 @@ export class App {
   }
 
   private state: State;
-
-  toggleTrimmed() {
-    let wasTrim = this.state.trimmed;
-    // Unquery.
-    let query = document.querySelector(".query input") as HTMLInputElement;
-    query.value = "";
-    this.updateQuery();
-    // Handle trim.
-    let trim = document.querySelector(".trim")!;
-    let rows = this.queryRows();
-    let { activeNames, trimmedNames } = this.state;
-    if (wasTrim) {
-    } else {
-      // Trim.
-      if (!trimmedNames.size) {
-        trimmedNames = activeNames;
-      }
-      for (let row of rows) {
-        row.style.display = trimmedNames.has(row.dataset.name!) ? "" : "none";
-      }
-      trim.classList.add("checked");
-      this.state.trimmed = true;
-      // Update it can the set is new from active names.
-      this.state.trimmedNames = new Set(trimmedNames);
-    }
-  }
 
   updateData() {
     let counts = this.findLatestRanks();

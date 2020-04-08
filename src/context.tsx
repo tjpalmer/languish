@@ -34,10 +34,13 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
   constructor(props: {}) {
     super(props);
 
-    // queuing because using setState in a constructor is forbidden
+    // queuing because setState is asynchronous and each call depends on the previous one
     queueMicrotask(() => {
       this.constructList();
-      queueMicrotask(() => this.resetList());
+      queueMicrotask(() => {
+        this.resetList();
+        queueMicrotask(() => this.loadUrlParams());
+      });
     });
   }
 
@@ -147,5 +150,35 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
     }));
 
     this.setState({ langList });
+  }
+
+  private loadUrlParams() {
+    // do it only if theres any hash in uri
+    if (!window.location.hash) return;
+
+    const params = new URLSearchParams(window.location.hash.slice(1));
+
+    // set the url's metric only if it exists
+    const metric = params.get("y");
+    if (metric) {
+      this.changeMetric(metric as keyof Metrics);
+    }
+
+    // set the names if they exist
+    const names = new Set(params.get("names")?.split(","));
+    if (names.size !== 0) {
+      this.emptyList();
+      // the search has to be done because the url stores the lower case version but the state requires the original name
+      for (const lang of this.state.langList) {
+        if (names.has(lang.name.toLocaleLowerCase())) {
+          this.toggleSelected(lang.name);
+        }
+      }
+    }
+
+    // clean up the hash after done loading
+    window.location.hash = "";
+
+    this.setState({ trimmed: true });
   }
 }
