@@ -4,10 +4,7 @@ import Metric from "components/Metric";
 import Plot from "components/Plot";
 import { useGlobal } from "context";
 import { clx } from "helpers";
-import * as data from "parsedData";
 import React from "react";
-
-console.log({ ...data });
 
 const App = () => {
   const global = useGlobal();

@@ -22,7 +22,7 @@ let canonicalNames = {
 // TODO This script should be rerun at any data quarterly update.
 
 function main() {
-  let dir = "./src/data";
+  let dir = "./scripts/data";
   let mergeKeys = ["name", "date"] as (keyof Count)[];
   let items = [] as Count[];
   for (let key of Object.keys(files) as (keyof typeof files)[]) {

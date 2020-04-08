@@ -3,11 +3,10 @@
   "version": "0.0.1",
   "description": "plot programming language statistics",
   "scripts": {
-    "start": "cra-preact start",
-    "build": "cra-preact build",
+    "start": "npm run build-merge && cra-preact start",
+    "build": "npm run build-merge && cra-preact build",
     "build-merge": "tsc --project scripts && npm run merge",
-    "merge": "node scripts/bin/merge.js > src/data/data.json",
-    "test": "echo \"Error: no test specified\" && exit 1 test"
+    "merge": "node scripts/bin/merge.js > src/data.json"
   },
   "repository": {
     "type": "git",
@@ -26,8 +25,8 @@
     "@types/react-dom": "^16.9.5",
     "cra-preact": "^0.4.0",
     "inline-source-cli": "^2.0.0",
-    "react-scripts": "3.4.1",
     "parcel-bundler": "^1.12.4",
+    "react-scripts": "3.4.1",
     "typescript": "^3.8.3"
   },
   "dependencies": {
