@@ -1,7 +1,7 @@
 import { LangItemProps } from "components/LangItem";
 import { objectEntries } from "helpers";
 import { colors, entries, Metrics } from "parsedData";
-import React from "react";
+import React, { useContext } from "react";
 
 const defaultState = {
   searchTerm: "",
@@ -27,6 +27,8 @@ export const GlobalContext = React.createContext({
   ...defaultState,
   ...noopFuncs,
 });
+
+export const useGlobal = () => useContext(GlobalContext);
 
 export class GlobalProvider extends React.Component<{}, typeof defaultState> {
   state = defaultState;

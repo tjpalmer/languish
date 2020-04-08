@@ -2,15 +2,15 @@ import Header from "components/Header";
 import LangList from "components/LangList";
 import Metric from "components/Metric";
 import Plot from "components/Plot";
-import { GlobalContext } from "context";
+import { useGlobal } from "context";
 import { clx } from "helpers";
 import * as data from "parsedData";
-import React, { useContext } from "react";
+import React from "react";
 
 console.log({ ...data });
 
 const App = () => {
-  const global = useContext(GlobalContext);
+  const global = useGlobal();
 
   return (
     <div className="content">

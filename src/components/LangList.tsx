@@ -1,10 +1,10 @@
-import { GlobalContext } from "context";
+import { useGlobal } from "context";
 import { clx } from "helpers";
-import React, { useContext, useMemo } from "react";
+import React, { useMemo } from "react";
 import LangItem from "./LangItem";
 
 const LangList = () => {
-  const global = useContext(GlobalContext);
+  const global = useGlobal();
 
   const langsToRender = useMemo(() => {
     const lowerCaseSearchTerm = global.searchTerm.toLocaleLowerCase();

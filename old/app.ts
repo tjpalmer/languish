@@ -165,7 +165,6 @@ export class App {
 
   private makeLegend(namedRanks: Metric[]) {
     let box = document.querySelector(".listBox")!;
-    let { colors } = this.state.data;
     box.innerHTML = "";
     let table = document.createElement("table");
     let oldRanksRaw = this.findLatestRanks(-5);

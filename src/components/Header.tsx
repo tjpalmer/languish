@@ -1,9 +1,9 @@
-import { GlobalContext } from "context";
-import React, { useContext, useState } from "react";
+import { useGlobal } from "context";
+import React, { useState } from "react";
 import "styles/Header.css";
 
 const Header = () => {
-  const global = useContext(GlobalContext);
+  const global = useGlobal();
   const [showMessage, setShowMessage] = useState(false);
 
   const copyLink = () => {

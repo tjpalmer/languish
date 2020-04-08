@@ -1,10 +1,10 @@
-import { GlobalContext } from "context";
+import { useGlobal } from "context";
 import { clx, objectEntries } from "helpers";
 import { Metrics } from "parsedData";
-import React, { useContext } from "react";
+import React from "react";
 
 const Metric = () => {
-  const global = useContext(GlobalContext);
+  const global = useGlobal();
 
   // map of available metrics to human readable strings
   const items: { [k in keyof Metrics]: string } = {

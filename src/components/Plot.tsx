@@ -1,7 +1,7 @@
 import { Chart, ChartColor, ChartDataSets } from "chart.js";
-import { GlobalContext } from "context";
+import { useGlobal } from "context";
 import { colors, dates, entries, Metrics } from "parsedData";
-import React, { useContext, useEffect, useLayoutEffect, useRef } from "react";
+import React, { useEffect, useLayoutEffect, useRef } from "react";
 
 function makeDataset(name: string, metric: keyof Metrics): ChartDataSets {
   const borderColor = colors[name];
@@ -20,7 +20,7 @@ function makeDataset(name: string, metric: keyof Metrics): ChartDataSets {
 }
 
 const Plot = () => {
-  const global = useContext(GlobalContext);
+  const global = useGlobal();
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const chart = useRef<Chart | undefined>();
 
