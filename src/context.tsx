@@ -8,8 +8,12 @@ const defaultState = {
   trimmed: false,
   metricsAreExpanded: false,
   metric: "mean" as keyof Metrics,
-  langList: [] as Omit<LangItemProps, "selected" | "onClick">[],
+  langList: [] as Omit<
+    LangItemProps,
+    "selected" | "onClick" | "onMouseOver" | "onMouseOut"
+  >[],
   selectedLangs: new Set<string>(),
+  highlighed: undefined as string | undefined,
 };
 
 // react context isnt very type-friendly, need to declare noops
@@ -21,6 +25,7 @@ const noopFuncs = {
   resetList() {},
   changeMetric(metric: keyof Metrics) {},
   toggleSelected(name: string) {},
+  setHighlighted(name?: string) {},
 };
 
 export const GlobalContext = React.createContext({
@@ -89,6 +94,9 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
       return { selectedLangs: prevState.selectedLangs };
     });
 
+  // if nothing is passed, remove highlight
+  setHighlighted = (name?: string) => this.setState({ highlighed: name });
+
   render = () => (
     <GlobalContext.Provider
       value={{
@@ -100,6 +108,7 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
         resetList: this.resetList,
         changeMetric: this.changeMetric,
         toggleSelected: this.toggleSelected,
+        setHighlighted: this.setHighlighted,
       }}
     >
       {this.props.children}

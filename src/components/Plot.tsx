@@ -104,7 +104,7 @@ const Plot = () => {
   // react to changed in the global state
   useEffect(
     () => {
-      if (!chart.current || !chart.current.data.datasets) return;
+      if (!chart.current?.data.datasets) return;
       // set of currently rendered sets
       const available = new Set<string>();
 
@@ -126,6 +126,17 @@ const Plot = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [global.metric, global.selectedLangs.size]
   );
+
+  // update highlighted element
+  useEffect(() => {
+    if (!chart.current?.data.datasets) return;
+
+    for (const lang of chart.current.data.datasets) {
+      lang.borderWidth = lang.label === global.highlighed ? 9 : 3;
+    }
+
+    chart.current.update();
+  }, [global.highlighed]);
 
   return (
     <div className="plot">

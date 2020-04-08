@@ -45,7 +45,7 @@ const LangList = () => {
     window.addEventListener("keypress", handleType);
 
     return () => window.removeEventListener("keypress", handleType);
-  }, []);
+  }, [global]);
 
   return (
     <div className="legend">
@@ -56,7 +56,9 @@ const LangList = () => {
               {langsToRender.map((lang) => (
                 <LangItem
                   {...lang}
-                  onClick={() => global.toggleSelected(lang.name)}
+                  onClick={global.toggleSelected}
+                  onMouseOver={global.setHighlighted}
+                  onMouseOut={global.setHighlighted}
                   selected={global.selectedLangs.has(lang.name)}
                 />
               ))}

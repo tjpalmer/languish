@@ -108,33 +108,10 @@ export class App {
     this.state.loaded = true;
   }
 
-  private highlight(name: string, value: boolean) {
-    if (!this.state.activeNames.has(name)) {
-      return;
-    }
-    let { chart } = this;
-    let dataset = chart.data.datasets!.find(
-      (dataset) => dataset.label == name
-    )!;
-    // More remote than point hover, so make it even wider than standard hover.
-    // More noticeable that way.
-    dataset.borderWidth = value ? 9 : 3;
-    chart.update();
-  }
-
   private makeEntryData(name: string) {
     return this.state.data.entries[name].map((entry) => {
       // Remember [{x, y}, ...] for 2D.
       return entry[this.state.y];
-    });
-  }
-
-  private makeLegend(namedRanks: Metric[]) {
-    namedRanks.forEach((namedRank) => {
-      let { name } = namedRank;
-      let row = document.createElement("tr");
-      row.addEventListener("mouseover", () => this.highlight(name, true));
-      row.addEventListener("mouseout", () => this.highlight(name, false));
     });
   }
 
