@@ -1,9 +1,10 @@
-name: CD
+name: CI
 
 on:
   push:
     branches:
       - preact-rewrite
+  pull_request:
 
 jobs:
   build:
@@ -24,6 +25,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
+        if: github.event_name == 'push'
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
