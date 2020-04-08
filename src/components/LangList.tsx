@@ -8,20 +8,20 @@ const LangList = () => {
   const inputRef = useRef<HTMLInputElement | null>(null);
 
   const langsToRender = useMemo(() => {
-    const lowerCaseSearchTerm = global.searchTerm.toLocaleLowerCase();
+    const lowerCaseSearchTerm = global.searchTerm.toLowerCase();
 
     // if trimmed filter out the non-selected langs + those that do not match the query
     if (global.trimmed) {
       return global.langList.filter(
         (lang) =>
           global.selectedLangs.has(lang.name) &&
-          lang.name.toLocaleLowerCase().includes(lowerCaseSearchTerm)
+          lang.name.toLowerCase().includes(lowerCaseSearchTerm)
       );
     }
 
     // filter out those do not match the query
     return global.langList.filter((lang) =>
-      lang.name.toLocaleLowerCase().includes(lowerCaseSearchTerm)
+      lang.name.toLowerCase().includes(lowerCaseSearchTerm)
     );
   }, [
     global.trimmed,

@@ -189,7 +189,7 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
       this.emptyList();
       // the search has to be done because the url stores the lower case version but the state requires the original name
       for (const lang of this.state.langList) {
-        if (names.has(lang.name.toLocaleLowerCase())) {
+        if (names.has(lang.name.toLowerCase())) {
           this.toggleSelected(lang.name);
         }
       }
