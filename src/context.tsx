@@ -51,10 +51,11 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
     });
   }
 
-  updateSearchTerm = (searchTerm: string) => this.setState({
-    searchTerm,
-    trimmed: false,
-  });
+  updateSearchTerm = (searchTerm: string) =>
+    this.setState({
+      searchTerm,
+      trimmed: false,
+    });
 
   toggleTrimmed = () =>
     this.setState((prevState) => ({

@@ -7,6 +7,7 @@
     "start": "npm run build-merge && cra-preact start",
     "build": "npm run build-merge && cra-preact build",
     "build-merge": "tsc --project scripts && npm run merge",
+    "format": "prettier --write src/ scripts/src/",
     "merge": "node scripts/bin/merge.js > src/data.json"
   },
   "repository": {
@@ -25,6 +26,7 @@
     "@types/react": "^16.9.25",
     "@types/react-dom": "^16.9.5",
     "cra-preact": "^0.4.0",
+    "prettier": "^2.0.4",
     "react-scripts": "3.4.1",
     "typescript": "^3.8.3"
   },
