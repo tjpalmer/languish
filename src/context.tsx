@@ -51,10 +51,14 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
     });
   }
 
-  updateSearchTerm = (searchTerm: string) => this.setState({ searchTerm });
+  updateSearchTerm = (searchTerm: string) => this.setState({
+    searchTerm,
+    trimmed: false,
+  });
 
   toggleTrimmed = () =>
     this.setState((prevState) => ({
+      searchTerm: "",
       trimmed: !prevState.trimmed,
     }));
 
@@ -78,7 +82,10 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
         prevState.selectedLangs.add(this.state.langList[i].name);
       }
 
-      return prevState;
+      return {
+        ...prevState,
+        searchTerm: "",
+      };
     });
 
   changeMetric = (metric: keyof Metrics) =>
