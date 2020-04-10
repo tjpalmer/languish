@@ -72,6 +72,7 @@ const LangList = () => {
               {langsToRender.map((lang) => (
                 <LangItem
                   {...lang}
+                  key={lang.name}
                   onClick={global.toggleSelected}
                   onMouseOver={global.setHighlighted}
                   onMouseOut={global.setHighlighted}
