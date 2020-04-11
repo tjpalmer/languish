@@ -23,8 +23,8 @@ const Metric = () => {
           title="Change y axis options"
           onClick={global.toggleMetricsAreExpanded}
         >
-          <span className="yLabelArrow"></span>
-          <span className="yLabelText">{items[global.metric]}</span>
+          <span className="yLabelArrow"></span>{" "}
+          <span className="yLabelText">{items[global.metric]}</span>{" "}
           <span className="yLabelArrow"></span>
         </div>
       </div>
