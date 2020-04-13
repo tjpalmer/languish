@@ -5,3 +5,5 @@
 /scripts/bin/
 /src/data/data.json
 *.swp
+/build
+src/data.json

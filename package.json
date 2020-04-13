@@ -2,14 +2,13 @@
   "name": "languish",
   "version": "0.0.1",
   "description": "plot programming language statistics",
-  "main": "index.js",
+  "homepage": "https://tjpalmer.github.io/languish",
   "scripts": {
-    "build": "npm run build-merge && rm -rf docs && parcel build src/index.html --experimental-scope-hoisting --no-source-maps --out-dir docs --public-url ./ && inline-source ./docs/index.html ./docs/index.html",
+    "start": "npm run build-merge && cra-preact start",
+    "build": "npm run build-merge && cra-preact build",
     "build-merge": "tsc --project scripts && npm run merge",
-    "merge": "node scripts/bin/merge.js > src/data/data.json",
-    "start": "npm run build-merge && parcel src/index.html --out-dir dev",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-scripts": "tsc --project scripts --watch"
+    "format": "prettier --write src/ scripts/src/",
+    "merge": "node scripts/bin/merge.js > src/data.json"
   },
   "repository": {
     "type": "git",
@@ -20,20 +19,27 @@
   "bugs": {
     "url": "https://github.com/tjpalmer/languish/issues"
   },
-  "homepage": "https://github.com/tjpalmer/languish#readme",
   "devDependencies": {
     "@types/chart.js": "^2.9.16",
     "@types/murmurhash-js": "^1.0.3",
     "@types/node": "^13.9.2",
-    "inline-source-cli": "^2.0.0",
-    "parcel-bundler": "^1.12.4",
+    "@types/react": "^16.9.25",
+    "@types/react-dom": "^16.9.5",
+    "cra-preact": "^0.4.0",
+    "prettier": "^2.0.4",
+    "react-scripts": "3.4.1",
     "typescript": "^3.8.3"
   },
   "dependencies": {
     "chart.js": "^2.9.3",
-    "murmurhash-js": "^1.0.0"
+    "murmurhash-js": "^1.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "browserslist": [
     "> 5%"
-  ]
+  ],
+  "eslintConfig": {
+    "extends": "react-app"
+  }
 }

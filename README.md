@@ -20,7 +20,7 @@
 - Provide access to all languages in the dataset
 - Link to GitHub topics and trending repos by language
 - Permalink to Languish configured selections and metric
-- Only 130 KB (including data) and 5 HTTP requests
+- Only 140 KB (including data) and 6 HTTP requests
 - *Limitation:* Works on my phone, but not carefully tailored for mobile
 
 

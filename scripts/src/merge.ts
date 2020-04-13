@@ -1,41 +1,45 @@
-import {readdirSync, readFileSync} from 'fs';
-import {join} from 'path';
+import { readFileSync } from "fs";
+import { join } from "path";
 
 let files = {
-  issues: 'gh-issue-event.json',
-  pulls: 'gh-pull-request.json',
-  pushes: 'gh-push-event.json',
-  stars: 'gh-star-event.json',
+  issues: "gh-issue-event.json",
+  pulls: "gh-pull-request.json",
+  pushes: "gh-push-event.json",
+  stars: "gh-star-event.json",
 };
 
 let canonicalNames = {
-  'FORTRAN': 'Fortran',
-  'Matlab': 'MATLAB',
-  'Nimrod': 'Nim',
-  'Perl6': 'Raku',
-  'Perl 6': 'Raku',
-  'VimL': 'Vim script',
-} as {[name: string]: string};
+  FORTRAN: "Fortran",
+  Matlab: "MATLAB",
+  Nimrod: "Nim",
+  Perl6: "Raku",
+  "Perl 6": "Raku",
+  VimL: "Vim script",
+} as { [name: string]: string };
 
 // TODO New script to calculate colors and find a seed to maximize the minimum
 // TODO distance between any top 10 (or 20?) languages.
 // TODO This script should be rerun at any data quarterly update.
 
 function main() {
-  let dir = './src/data';
-  let mergeKeys = ['name', 'date'] as (keyof Count)[];
+  let dir = "./scripts/data";
+  let mergeKeys = ["name", "date"] as (keyof Count)[];
   let items = [] as Count[];
   for (let key of Object.keys(files) as (keyof typeof files)[]) {
     let kidFull = join(dir, files[key]);
-    let rawItems =
-      JSON.parse(readFileSync(kidFull).toString()) as CountString[];
-    let convertedItems = rawItems.map(item => ({
-      name: canonicalNames[item.name] || item.name,
-      date: `${item.year}Q${item.quarter}`,
-      [key]: Number(item.count),
-    } as unknown as Count));
+    let rawItems = JSON.parse(
+      readFileSync(kidFull).toString()
+    ) as CountString[];
+    let convertedItems = rawItems.map(
+      (item) =>
+        (({
+          name: canonicalNames[item.name] || item.name,
+          date: `${item.year}Q${item.quarter}`,
+          [key]: Number(item.count),
+        } as unknown) as Count)
+    );
     if (items.length) {
-      items = merge({a: items, b: convertedItems, on: mergeKeys});
+      items = merge({ a: items, b: convertedItems, on: mergeKeys });
     } else {
       items = convertedItems;
     }
@@ -43,13 +47,15 @@ function main() {
   // Convert to CSV-ish format and write.
   // TODO Totals by quarter. Fraction for langs.
   let sums = sumGrouped({
-    by: 'date', items, outs: Object.keys(files) as (keyof typeof files)[],
+    by: "date",
+    items,
+    outs: Object.keys(files) as (keyof typeof files)[],
   });
   let tabled = {
     items: tablify(items),
     sums: tablify(sums),
   };
-  console.log(JSON.stringify(tabled, undefined, 2));
+  console.log(JSON.stringify(tabled));
 }
 
 interface Count {
@@ -76,20 +82,20 @@ export interface MergeOptions<A, B> {
 
 export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
   // Extract data and prep compares.
-  let {a, b, on} = options;
+  let { a, b, on } = options;
   if (!a.length || !b.length) return [];
-  let compares = on.map(key => {
+  let compares = on.map((key) => {
     let value = a[0][key];
-    if (typeof value == 'string') {
+    if (typeof value == "string") {
       return (x: A | B, y: A | B) =>
-        (x[key] as unknown as string).localeCompare(
-          y[key] as unknown as string,
+        ((x[key] as unknown) as string).localeCompare(
+          (y[key] as unknown) as string
         );
     } else {
       return (x: A | B, y: A | B) =>
-        (x[key] as unknown as number) - (y[key] as unknown as number);
+        ((x[key] as unknown) as number) - ((y[key] as unknown) as number);
     }
-  })
+  });
   let compareKeys = (x: A | B, y: A | B) => {
     if (!(x && y)) {
       if (x) {
@@ -111,8 +117,8 @@ export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
   let combo = (a as (A | B)[]).concat(b).sort(compareKeys);
   let keysA = new Set(Object.keys(a[0]));
   let keysB = new Set(Object.keys(b[0]));
-  let extrasA = [...keysA].filter(key => !keysB.has(key));
-  let extrasB = [...keysB].filter(key => !keysA.has(key));
+  let extrasA = [...keysA].filter((key) => !keysB.has(key));
+  let extrasB = [...keysB].filter((key) => !keysA.has(key));
   let extras = extrasA.concat(extrasB).sort() as (keyof (A | B))[];
   let allKeys = on.concat(extras) as (keyof (A & B))[];
   //~ console.error(combo.slice(0, 10));
@@ -120,14 +126,15 @@ export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
   let build = (item: A | B) => {
     let result = {} as A & B;
     for (let key of allKeys) {
-      result[key] = item[key as keyof (A | B)] || 0 as any;
+      result[key] = item[key as keyof (A | B)] || (0 as any);
     }
     return result;
   };
   // Merge arrays.
   let results = [] as (A & B)[];
   let prev = build(combo[0]);
-  let equals = 0, count = 0;
+  let equals = 0,
+    count = 0;
   for (let item of combo.slice(1)) {
     count += 1;
     let comparison = compareKeys(prev, item);
@@ -141,11 +148,11 @@ export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
         let value = (item as A & B)[key];
         if (value != null) {
           let prev_value = prev[key];
-          if (typeof prev_value == 'number') {
+          if (typeof prev_value == "number") {
             // Increment existing numbers, because we end up with duplicates,
             // because of different language names in the same quarter.
-            (prev[key] as unknown as number) =
-              prev_value + (value as unknown as number);
+            ((prev[key] as unknown) as number) =
+              prev_value + ((value as unknown) as number);
           } else {
             prev[key] = value;
           }
@@ -168,19 +175,19 @@ interface GroupOptions<Item, By extends keyof Item, Out extends keyof Item> {
 
 // TODO Typing here is a disaster. See if there are ways to fix it all.
 function sumGrouped<Item, By extends keyof Item, Out extends keyof Item>(
-  options: GroupOptions<Item, By, Out>,
-): {[Key in By | Out]: Item[Key]}[] {
-  let {items, by, outs} = options;
-  type Sums = {[Key in By | Out]: Item[Key]};
+  options: GroupOptions<Item, By, Out>
+): { [Key in By | Out]: Item[Key] }[] {
+  let { items, by, outs } = options;
+  type Sums = { [Key in By | Out]: Item[Key] };
   // Sum things up.
-  let keyedSums = {} as {[ByKey: string]: Sums};
+  let keyedSums = {} as { [ByKey: string]: Sums };
   for (let item of items) {
     // TODO How to assert at type level that item[by] is string and
     // TODO item[out] is number?
-    let key = item[by] as unknown as string;
+    let key = (item[by] as unknown) as string;
     let keyedSum = keyedSums[key];
     if (!keyedSum) {
-      keyedSum = {[by]: key} as unknown as Sums;
+      keyedSum = ({ [by]: key } as unknown) as Sums;
       for (let out of outs) {
         keyedSum[out as keyof Sums] = 0 as any;
       }
@@ -188,15 +195,17 @@ function sumGrouped<Item, By extends keyof Item, Out extends keyof Item>(
       keyedSums[key] = keyedSum;
     }
     for (let out of outs) {
-      (keyedSum[out as keyof Sums] as unknown as number) +=
+      ((keyedSum[out as keyof Sums] as unknown) as number) +=
         // Treat missing values as 0.
-        item[out] as unknown as number;
+        (item[out] as unknown) as number;
     }
   }
   // Sort array of sums.
-  let sums = Object.keys(keyedSums).map(key => keyedSums[key]).sort((a, b) => {
-    return ((a as any)[by] as string).localeCompare((b as any)[by]);
-  });
+  let sums = Object.keys(keyedSums)
+    .map((key) => keyedSums[key])
+    .sort((a, b) => {
+      return ((a as any)[by] as string).localeCompare((b as any)[by]);
+    });
   // // Normalize.
   // let normed = items.map(item => {
   //   item = Object.assign({}, item);
@@ -217,9 +226,9 @@ interface Table<Item> {
 
 function tablify<Item>(items: Item[]): Table<Item> {
   let keys = Object.keys(items[0]) as (keyof Item)[];
-  let rows = items.map(item => keys.map(key => item[key]));
-  return {keys, rows};
+  let rows = items.map((item) => keys.map((key) => item[key]));
+  return { keys, rows };
 }
 
 // Run main.
-main()
+main();

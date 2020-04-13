@@ -1,4 +1,4 @@
-@import './icomoon.css';
+@import "./icomoon.css";
 
 a {
   color: #aab;
@@ -98,7 +98,8 @@ html {
   cursor: default;
 }
 
-.interactive:hover, .yMetricsList .active {
+.interactive:hover,
+.yMetricsList .active {
   background: #555;
   filter: brightness(110%);
 }
@@ -277,11 +278,13 @@ html {
   border: 2px solid transparent;
 }
 
-.xLabel, .yLabel {
+.xLabel,
+.yLabel {
   padding: 0.1vh 0.5vh;
 }
 
-.xLabel:hover, .yLabel:hover {
+.xLabel:hover,
+.yLabel:hover {
   border: 2px solid white;
   border-radius: 0.2em;
 }
@@ -322,7 +325,7 @@ html {
 .yOptionsBox {
   position: relative;
   top: 50%;
-  transform: translateY(-50%)  translateY(-2em);
+  transform: translateY(-50%) translateY(-2em);
 }
 
 .yOptionsBox li {
