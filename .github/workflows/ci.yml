@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - preact-rewrite
+      - publish
   pull_request:
 
 jobs:
@@ -29,6 +29,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BASE_BRANCH: preact-rewrite
+          BASE_BRANCH: publish
           BRANCH: gh-pages
           FOLDER: build
