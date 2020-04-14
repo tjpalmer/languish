@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/languish/static/css/main.2e3812a9.chunk.css",
+    "main.js": "/languish/static/js/main.a403bf58.chunk.js",
+    "main.js.map": "/languish/static/js/main.a403bf58.chunk.js.map",
+    "runtime-main.js": "/languish/static/js/runtime-main.a36d2b72.js",
+    "runtime-main.js.map": "/languish/static/js/runtime-main.a36d2b72.js.map",
+    "static/js/2.e60daa8b.chunk.js": "/languish/static/js/2.e60daa8b.chunk.js",
+    "static/js/2.e60daa8b.chunk.js.map": "/languish/static/js/2.e60daa8b.chunk.js.map",
+    "index.html": "/languish/index.html",
+    "precache-manifest.5bc8333733a3ee76d00261a36617a16d.js": "/languish/precache-manifest.5bc8333733a3ee76d00261a36617a16d.js",
+    "service-worker.js": "/languish/service-worker.js",
+    "static/css/main.2e3812a9.chunk.css.map": "/languish/static/css/main.2e3812a9.chunk.css.map",
+    "static/js/2.e60daa8b.chunk.js.LICENSE.txt": "/languish/static/js/2.e60daa8b.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/languish/static/media/icomoon.5abbb71a.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a36d2b72.js",
+    "static/js/2.e60daa8b.chunk.js",
+    "static/css/main.2e3812a9.chunk.css",
+    "static/js/main.a403bf58.chunk.js"
+  ]
+}
