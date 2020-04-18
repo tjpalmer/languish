@@ -11,7 +11,7 @@ const Header = () => {
     const names = [...global.selectedLangs].map((name) => name.toLowerCase());
     params.append("y", global.metric);
     if (global.scale !== "linear") {
-      params.append("yScale", global.scale);
+      params.append("yscale", global.scale);
     }
     params.append("names", names.join(","));
 

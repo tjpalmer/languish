@@ -197,7 +197,7 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
     if (metric) {
       this.changeMetric(metric as keyof Metrics);
     }
-    const scale = params.get("yScale");
+    const scale = params.get("yscale");
     if (scale) {
       this.changeScale(scale as Scale);
     }
