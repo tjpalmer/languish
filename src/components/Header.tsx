@@ -40,9 +40,9 @@ const Header = () => {
             width="80"
             height="80"
             viewBox="0 0 250 250"
+            fill="#fff"
+            color="#333"
             style={{
-              fill: "#fff",
-              color: "#333",
               position: "absolute",
               top: 0,
               border: 0,
