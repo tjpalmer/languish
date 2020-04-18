@@ -99,7 +99,7 @@ html {
 }
 
 .interactive:hover,
-.yMetricsList .active {
+.yOptions .active {
   background: #555;
   filter: brightness(110%);
 }
@@ -310,11 +310,6 @@ html {
   content: "\25BC";
 }
 
-.yMetricsList {
-  cursor: default;
-  margin: 0;
-}
-
 .yOptions {
   display: none;
   padding: 1em;
@@ -330,6 +325,11 @@ html {
 
 .yOptionsBox li {
   padding: 0 0.2em;
+}
+
+.yOptionsBox ul {
+  cursor: default;
+  margin: 0;
 }
 
 .yOptionsExpanded .yLabelArrow:before {

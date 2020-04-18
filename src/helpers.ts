@@ -12,3 +12,8 @@ export function clx(
 export const objectEntries = Object.entries as <T>(
   o: T
 ) => [Extract<keyof T, string>, T[keyof T]][];
+
+export function trimTrailingFloat(x: number): string {
+  // Hack to prevent rounding error issues.
+  return Number.parseFloat(x.toPrecision(12)).toString();
+}

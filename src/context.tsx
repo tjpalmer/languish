@@ -3,11 +3,14 @@ import { objectEntries } from "helpers";
 import { colors, entries, Metrics } from "parsedData";
 import React, { useContext } from "react";
 
+export type Scale = "linear" | "log";
+
 const defaultState = {
   searchTerm: "",
   trimmed: false,
   metricsAreExpanded: false,
   metric: "mean" as keyof Metrics,
+  scale: "linear" as Scale,
   langList: [] as Omit<
     LangItemProps,
     "selected" | "onClick" | "onMouseOver" | "onMouseOut"
@@ -24,6 +27,7 @@ const noopFuncs = {
   emptyList() {},
   resetList() {},
   changeMetric(metric: keyof Metrics) {},
+  changeScale(scale: Scale) {},
   toggleSelected(name: string) {},
   setHighlighted(name?: string) {},
 };
@@ -92,6 +96,8 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
   changeMetric = (metric: keyof Metrics) =>
     this.setState({ metric }, this.constructList);
 
+  changeScale = (scale: Scale) => this.setState({ scale });
+
   toggleSelected = (name: string) =>
     this.setState((prevState) => {
       if (prevState.selectedLangs.has(name)) {
@@ -115,6 +121,7 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
         emptyList: this.emptyList,
         resetList: this.resetList,
         changeMetric: this.changeMetric,
+        changeScale: this.changeScale,
         toggleSelected: this.toggleSelected,
         setHighlighted: this.setHighlighted,
       }}
@@ -189,6 +196,10 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
     const metric = params.get("y");
     if (metric) {
       this.changeMetric(metric as keyof Metrics);
+    }
+    const scale = params.get("yScale");
+    if (scale) {
+      this.changeScale(scale as Scale);
     }
 
     // set the names if they exist

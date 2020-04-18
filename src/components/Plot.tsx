@@ -1,5 +1,6 @@
 import { Chart, ChartColor, ChartDataSets } from "chart.js";
-import { useGlobal } from "context";
+import { Scale, useGlobal } from "context";
+import { trimTrailingFloat } from "helpers";
 import { colors, dates, entries, Metrics } from "parsedData";
 import React, { useEffect, useLayoutEffect, useRef } from "react";
 
@@ -17,6 +18,10 @@ function makeDataset(name: string, metric: keyof Metrics): ChartDataSets {
     label: name,
     pointBackgroundColor: borderColor,
   };
+}
+
+function chartJsScale(scale: Scale) {
+  return scale == "log" ? "logarithmic" : "linear";
 }
 
 const Plot = () => {
@@ -63,10 +68,11 @@ const Plot = () => {
             {
               // scaleLabel: {display: true, labelString: 'Stars'},
               ticks: {
-                callback: (value) => `${value}%`,
+                callback: (value) => `${trimTrailingFloat(value)}%`,
                 fontColor: "white",
                 suggestedMin: 0,
               },
+              type: chartJsScale(global.scale),
             },
           ],
         },
@@ -126,6 +132,12 @@ const Plot = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [global.metric, global.selectedLangs.size]
   );
+
+  // react to changed in the global state
+  useEffect(() => {
+    chart.current!.options.scales!.yAxes![0].type = chartJsScale(global.scale);
+    chart.current!.update();
+  }, [global.scale]);
 
   // update highlighted element
   useEffect(() => {
