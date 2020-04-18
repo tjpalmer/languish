@@ -21,7 +21,7 @@ function makeDataset(name: string, metric: keyof Metrics): ChartDataSets {
 }
 
 function chartJsScale(scale: Scale) {
-  return scale == "log" ? "logarithmic" : "linear";
+  return scale === "log" ? "logarithmic" : "linear";
 }
 
 const Plot = () => {
@@ -72,7 +72,6 @@ const Plot = () => {
                 fontColor: "white",
                 suggestedMin: 0,
               },
-              type: chartJsScale(global.scale),
             },
           ],
         },

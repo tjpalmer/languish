@@ -31,7 +31,7 @@ const Metric = () => {
         >
           <span className="yLabelArrow"></span>{" "}
           <span className="yLabelText">
-            {global.scale == "log" ? "Log " : ""}
+            {global.scale === "log" ? "Log " : ""}
             {items[global.metric]}
           </span>{" "}
           <span className="yLabelArrow"></span>
