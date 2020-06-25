@@ -38,10 +38,10 @@
 "Chapel",,,
 "Clean",,,
 "Click",,,
-"Clojure",,,
+"Clojure","Clojure","Clojure","clojure"
 "CMake",,,
 "COBOL",,,
-"CoffeeScript",,,
+"CoffeeScript","CoffeeScript","coffeescript","coffeescript"
 "ColdFusion",,,
 "Common Lisp",,,
 "Common Workflow Language",,,
@@ -57,16 +57,16 @@
 "Delphi",,,
 "Diff",,,
 "DIGITAL Command Language",,,
-"DM",,,
-"Dockerfile",,,
+"DM","Space_Station_13","BYOND",""
+"Dockerfile","Docker_(software)","docker","docker"
 "DOT",,,
 "DTrace",,,
 "Dylan",,,
 "Eagle",,,
 "Eiffel",,,
-"Elixir",,,
+"Elixir","Elixir_(programming_language)","elixir","elixir"
 "Elm",,,
-"Emacs Lisp",,,
+"Emacs Lisp","Emacs_Lisp","emacs","elisp"
 "EmberScript",,,
 "Erlang",,,
 "F*",,,
@@ -90,10 +90,10 @@
 "Go","Go_(programming_language)","golang","go"
 "Gosu",,,
 "Groff",,,
-"Groovy",,,
+"Groovy","Apache_Groovy","groovy","groovy"
 "Hack",,,
 "Handlebars",,,
-"Haskell",,,
+"Haskell","Haskell_(programming_language)","haskell","haskell"
 "Haxe",,,
 "HCL",,,
 "HLSL",,,
@@ -112,7 +112,7 @@
 "JSONiq",,,
 "Jsonnet",,,
 "Julia",,,
-"Jupyter Notebook",,,
+"Jupyter Notebook","Project_Jupyter","IPython","jupyter"
 "KiCad",,,
 "KiCad Layout",,,
 "Kotlin","Kotlin_(programming_language)","Kotlin","kotlin"
@@ -131,7 +131,7 @@
 "LookML",,,
 "LoomScript",,,
 "LSL",,,
-"Lua",,,
+"Lua","Lua_(programming_language)","lua","lua"
 "M",,,
 "M4",,,
 "Makefile",,,
@@ -160,7 +160,7 @@
 "Nim",,,
 "Nix",,,
 "NSIS",,,
-"Objective-C",,,
+"Objective-C","Objective-C","ObjectiveC","objective-c"
 "Objective-C++",,,
 "Objective-J",,,
 "OCaml",,,
@@ -174,7 +174,7 @@
 "Papyrus",,,
 "Pascal",,,
 "PAWN",,,
-"Perl",,,
+"Perl","Perl","perl","perl"
 "PHP","PHP","PHP","php"
 "PicoLisp",,,
 "PigLatin",,,
@@ -185,7 +185,7 @@
 "PostScript",,,
 "POV-Ray SDL",,,
 "PowerBuilder",,,
-"PowerShell",,,
+"PowerShell","PowerShell","PowerShell","powershell"
 "Processing",,,
 "Prolog",,,
 "Propeller Spin",,,
@@ -198,7 +198,7 @@
 "q",,,
 "QMake",,,
 "QML",,,
-"R",,,
+"R","R_(programming_language)","Rlanguage","r"
 "Racket",,,
 "Ragel in Ruby Host",,,
 "Raku",,,
@@ -237,7 +237,7 @@
 "Squirrel",,,
 "Stan",,,
 "Standard ML",,,
-"Starlark",,,
+"Starlark","Bazel_(software)","bazel","bazel"
 "Stata",,,
 "SuperCollider",,,
 "Swift","Swift_(programming_language)","swift","swift"
@@ -256,11 +256,11 @@
 "VCL",,,
 "Verilog",,,
 "VHDL",,,
-"Vim script",,,
+"Vim script","Vim_(text_editor)","vim","vim"
 "Vim Snippet",,,
 "Visual Basic",,,
 "Visual Basic .NET",,,
-"Vue",,,
+"Vue","Vue.js","vuejs","vue.js"
 "Web Ontology Language",,,
 "WebAssembly",,,
 "wisp",,,
