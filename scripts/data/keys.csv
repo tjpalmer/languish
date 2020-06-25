@@ -68,7 +68,7 @@
 "Elm",,,
 "Emacs Lisp","Emacs_Lisp","emacs","elisp"
 "EmberScript",,,
-"Erlang",,,
+"Erlang","Erlang_(programming_language)","erlang","erlang"
 "F*",,,
 "F#",,,
 "Factor",,,
@@ -134,7 +134,7 @@
 "Lua","Lua_(programming_language)","lua","lua"
 "M",,,
 "M4",,,
-"Makefile",,,
+"Makefile","Make_(software)","","makefile"
 "Mako",,,
 "Markdown",,,
 "Mask",,,
@@ -163,7 +163,7 @@
 "Objective-C","Objective-C","ObjectiveC","objective-c"
 "Objective-C++",,,
 "Objective-J",,,
-"OCaml",,,
+"OCaml","OCaml","ocaml","ocaml"
 "ooc",,,
 "Open Policy Agent",,,
 "OpenEdge ABL",,,
@@ -232,7 +232,7 @@
 "SMT",,,
 "SourcePawn",,,
 "SQF",,,
-"SQL",,,
+"SQL",,,"sql"
 "SQLPL",,,
 "Squirrel",,,
 "Stan",,,
@@ -244,9 +244,9 @@
 "SWIG",,,
 "SystemVerilog",,,
 "Tcl",,,
-"TeX",,,
+"TeX","LaTeX","LaTeX","latex"
 "Thrift",,,
-"TSQL",,,
+"TSQL","Transact-SQL","SQLServer","tsql"
 "TypeScript","TypeScript","typescript","typescript"
 "Uno",,,
 "UnrealScript",,,
