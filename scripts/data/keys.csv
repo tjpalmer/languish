@@ -48,11 +48,11 @@
 "Component Pascal",,,
 "Coq",,,
 "Crystal",,,
-"CSS",,,
+"CSS","Cascading_Style_Sheets","CSS","css"
 "Cucumber",,,
 "Cuda",,,
 "D",,,
-"Dart",,,
+"Dart","Dart_(programming_language)","dartlang","dart"
 "DCPU-16 ASM",,,
 "Delphi",,,
 "Diff",,,
@@ -97,7 +97,7 @@
 "Haxe",,,
 "HCL",,,
 "HLSL",,,
-"HTML",,,
+"HTML","HTML","HTML","html"
 "Hy",,,
 "IDL",,,
 "Idris",,,
@@ -115,7 +115,7 @@
 "Jupyter Notebook",,,
 "KiCad",,,
 "KiCad Layout",,,
-"Kotlin",,,
+"Kotlin","Kotlin_(programming_language)","Kotlin","kotlin"
 "KRL",,,
 "LabVIEW",,,
 "Lasso",,,
@@ -215,15 +215,15 @@
 "Rouge",,,
 "RPC",,,
 "Ruby","Ruby_(programming_language)","ruby","ruby"
-"Rust",,,
+"Rust","Rust_(programming_language)","rust","rust"
 "SaltStack",,,
 "SAS",,,
-"Scala",,,
+"Scala","Scala_(programming_language)","scala","scala"
 "Scheme",,,
 "Scilab",,,
 "sed",,,
 "ShaderLab",,,
-"Shell",,,
+"Shell","Bash_(Unix_shell)","bash","bash"
 "Shen",,,
 "Slash",,,
 "Smali",,,
@@ -240,7 +240,7 @@
 "Starlark",,,
 "Stata",,,
 "SuperCollider",,,
-"Swift",,,
+"Swift","Swift_(programming_language)","swift","swift"
 "SWIG",,,
 "SystemVerilog",,,
 "Tcl",,,

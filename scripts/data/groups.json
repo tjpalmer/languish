@@ -1,0 +1,4 @@
+{
+    "HTML": ["HTML", "HTML5"],
+    "Shell": ["bash", "csh", "fish", "ksh", "sh", "tcsh", "zsh"]
+}
