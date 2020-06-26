@@ -16,7 +16,7 @@
 "Arc",,,
 "Arduino",,,
 "ASP",,,
-"Assembly",,,
+"Assembly","Assembly_language","asm","assembly"
 "ATS",,,
 "Augeas",,,
 "AutoHotkey",,,
@@ -24,7 +24,7 @@
 "Awk",,,
 "Batchfile",,,
 "Bison",,,
-"BitBake",,,
+"BitBake","BitBake","bitbake","bitbake"
 "BlitzBasic",,,
 "Bluespec",,,
 "Brainfuck",,,
@@ -39,14 +39,14 @@
 "Clean",,,
 "Click",,,
 "Clojure","Clojure","Clojure","clojure"
-"CMake",,,
+"CMake","CMake","cmake","cmake"
 "COBOL",,,
 "CoffeeScript","CoffeeScript","coffeescript","coffeescript"
 "ColdFusion",,,
-"Common Lisp",,,
+"Common Lisp","Common_Lisp","Common_Lisp","common-lisp"
 "Common Workflow Language",,,
 "Component Pascal",,,
-"Coq",,,
+"Coq","Coq","Coq","coq"
 "Crystal",,,
 "CSS","Cascading_Style_Sheets","CSS","css"
 "Cucumber",,,
@@ -70,12 +70,12 @@
 "EmberScript",,,
 "Erlang","Erlang_(programming_language)","erlang","erlang"
 "F*",,,
-"F#",,,
+"F#","F_Sharp_(programming_language)","fsharp","f#"
 "Factor",,,
 "Fancy",,,
 "FLUX",,,
 "Forth",,,
-"Fortran",,,
+"Fortran","Fortran","fortran","fortran"
 "FreeMarker",,,
 "Frege",,,
 "Game Maker Language",,,
@@ -95,7 +95,7 @@
 "Handlebars",,,
 "Haskell","Haskell_(programming_language)","haskell","haskell"
 "Haxe",,,
-"HCL",,,
+"HCL","Terraform_(software)","Terraform","Terraform"
 "HLSL",,,
 "HTML","HTML","HTML","html"
 "Hy",,,
@@ -110,8 +110,8 @@
 "Java","Java_(programming_language)","java","java"
 "JavaScript","JavaScript","javascript","javascript"
 "JSONiq",,,
-"Jsonnet",,,
-"Julia",,,
+"Jsonnet","","",""
+"Julia","Julia_(programming_language)","Julia","julia"
 "Jupyter Notebook","Project_Jupyter","IPython","jupyter"
 "KiCad",,,
 "KiCad Layout",,,
@@ -139,7 +139,7 @@
 "Markdown",,,
 "Mask",,,
 "Mathematica",,,
-"MATLAB",,,
+"MATLAB","MATLAB","matlab","matlab"
 "Max",,,
 "MAXScript",,,
 "Mercury",,,
@@ -172,14 +172,14 @@
 "P4",,,
 "Pan",,,
 "Papyrus",,,
-"Pascal",,,
+"Pascal","Pascal_(programming_language)","pascal","pascal"
 "PAWN",,,
 "Perl","Perl","perl","perl"
 "PHP","PHP","PHP","php"
 "PicoLisp",,,
 "PigLatin",,,
 "Pike",,,
-"PLpgSQL",,,
+"PLpgSQL","pgSQL","PostgreSQL","postgresql"
 "PLSQL",,,
 "Pony",,,
 "PostScript",,,
@@ -190,7 +190,7 @@
 "Prolog",,,
 "Propeller Spin",,,
 "Protocol Buffer",,,
-"Puppet",,,
+"Puppet","Puppet_(company)","Puppet","puppet"
 "Pure Data",,,
 "PureBasic",,,
 "PureScript",,,
@@ -219,7 +219,7 @@
 "SaltStack",,,
 "SAS",,,
 "Scala","Scala_(programming_language)","scala","scala"
-"Scheme",,,
+"Scheme","Scheme_(programming_language)","scheme","scheme"
 "Scilab",,,
 "sed",,,
 "ShaderLab",,,
@@ -227,8 +227,8 @@
 "Shen",,,
 "Slash",,,
 "Smali",,,
-"Smalltalk",,,
-"Smarty",,,
+"Smalltalk","Smalltalk","smalltalk","smalltalk"
+"Smarty","Smarty_(template_engine)","","smarty"
 "SMT",,,
 "SourcePawn",,,
 "SQF",,,
@@ -251,15 +251,15 @@
 "Uno",,,
 "UnrealScript",,,
 "UrWeb",,,
-"Vala",,,
+"Vala","Vala_(programming_language)","vala","vala"
 "VBA",,,
 "VCL",,,
 "Verilog",,,
 "VHDL",,,
 "Vim script","Vim_(text_editor)","vim","vim"
 "Vim Snippet",,,
-"Visual Basic",,,
-"Visual Basic .NET",,,
+"Visual Basic",,"visualbasic",
+"Visual Basic .NET","Visual_Basic_.NET","visualbasic","vb.net"
 "Vue","Vue.js","vuejs","vue.js"
 "Web Ontology Language",,,
 "WebAssembly",,,
@@ -272,7 +272,7 @@
 "XProc",,,
 "XQuery",,,
 "XS",,,
-"XSLT",,,
+"XSLT","XSLT","xslt","xslt"
 "Xtend",,,
 "Yacc",,,
 "YARA",,,
