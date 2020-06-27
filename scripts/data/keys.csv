@@ -81,7 +81,7 @@
 "Game Maker Language",,,
 "GAP",,,
 "GCC Machine Description",,,
-"GDScript",,,
+"GDScript","Godot_(game_engine)","godot","godot"
 "Genshi",,,
 "Gettext Catalog",,,
 "Gherkin","Cucumber_(software)","","gherkin"
@@ -187,7 +187,7 @@
 "PowerBuilder",,,
 "PowerShell","PowerShell","PowerShell","powershell"
 "Processing",,,
-"Prolog",,,
+"Prolog","Prolog","prolog","prolog"
 "Propeller Spin",,,
 "Protocol Buffer",,,
 "Puppet","Puppet_(company)","Puppet","puppet"
@@ -216,7 +216,7 @@
 "RPC",,,
 "Ruby","Ruby_(programming_language)","ruby","ruby"
 "Rust","Rust_(programming_language)","rust","rust"
-"SaltStack",,,
+"SaltStack","Salt_(software)","saltstack","salt-stack"
 "SAS",,,
 "Scala","Scala_(programming_language)","scala","scala"
 "Scheme","Scheme_(programming_language)","scheme","scheme"
@@ -241,7 +241,7 @@
 "Stata",,,
 "SuperCollider",,,
 "Swift","Swift_(programming_language)","swift","swift"
-"SWIG",,,
+"SWIG","SWIG","","swig"
 "SystemVerilog",,,
 "Tcl",,,
 "TeX","LaTeX","LaTeX","latex"
@@ -265,7 +265,7 @@
 "WebAssembly","WebAssembly","WebAssembly","webassembly"
 "wisp",,,
 "X10",,,
-"xBase",,,
+"xBase","XBase","","xbase"
 "XC",,,
 "XML",,,
 "Xojo",,,
