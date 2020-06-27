@@ -1,6 +1,6 @@
 "key","wikipedia","reddit","stackoverflow"
 "1C Enterprise",,,
-"ABAP",,,
+"ABAP","ABAP","abap","abap"
 "ActionScript",,,
 "Ada",,,
 "Agda",,,
@@ -19,10 +19,10 @@
 "Assembly","Assembly_language","asm","assembly"
 "ATS",,,
 "Augeas",,,
-"AutoHotkey",,,
+"AutoHotkey","AutoHotkey","AutoHotkey","autohotkey"
 "AutoIt",,,
 "Awk",,,
-"Batchfile",,,
+"Batchfile","Batch_file","Batch","batch-file"
 "Bison",,,
 "BitBake","BitBake","bitbake","bitbake"
 "BlitzBasic",,,
@@ -42,7 +42,7 @@
 "CMake","CMake","cmake","cmake"
 "COBOL",,,
 "CoffeeScript","CoffeeScript","coffeescript","coffeescript"
-"ColdFusion",,,
+"ColdFusion","Adobe_ColdFusion","coldfusion","coldfusion"
 "Common Lisp","Common_Lisp","Common_Lisp","common-lisp"
 "Common Workflow Language",,,
 "Component Pascal",,,
@@ -69,7 +69,7 @@
 "Emacs Lisp","Emacs_Lisp","emacs","elisp"
 "EmberScript",,,
 "Erlang","Erlang_(programming_language)","erlang","erlang"
-"F*",,,
+"F*","F*_(programming_language)","fstar","fstar"
 "F#","F_Sharp_(programming_language)","fsharp","f#"
 "Factor",,,
 "Fancy",,,
@@ -84,8 +84,8 @@
 "GDScript",,,
 "Genshi",,,
 "Gettext Catalog",,,
-"Gherkin",,,
-"GLSL",,,
+"Gherkin","Cucumber_(software)","","gherkin"
+"GLSL","OpenGL_Shading_Language","glsl","glsl"
 "Gnuplot",,,
 "Go","Go_(programming_language)","golang","go"
 "Gosu",,,
@@ -161,7 +161,7 @@
 "Nix","Nix_package_manager","NixOS","nix"
 "NSIS",,,
 "Objective-C","Objective-C","ObjectiveC","objective-c"
-"Objective-C++",,,
+"Objective-C++","","","objective-c++"
 "Objective-J",,,
 "OCaml","OCaml","ocaml","ocaml"
 "ooc",,,
@@ -230,7 +230,7 @@
 "Smalltalk","Smalltalk","smalltalk","smalltalk"
 "Smarty","Smarty_(template_engine)","","smarty"
 "SMT",,,
-"SourcePawn",,,
+"SourcePawn","","",""
 "SQF",,,
 "SQL",,,"sql"
 "SQLPL",,,
@@ -262,7 +262,7 @@
 "Visual Basic .NET","Visual_Basic_.NET","visualbasic","vb.net"
 "Vue","Vue.js","vuejs","vue.js"
 "Web Ontology Language",,,
-"WebAssembly",,,
+"WebAssembly","WebAssembly","WebAssembly","webassembly"
 "wisp",,,
 "X10",,,
 "xBase",,,
