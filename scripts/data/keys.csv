@@ -47,11 +47,11 @@
 "Common Workflow Language",,,
 "Component Pascal",,,
 "Coq","Coq","Coq","coq"
-"Crystal",,,
+"Crystal","Crystal_(programming_language)","crystal_programming","crystal-lang"
 "CSS","Cascading_Style_Sheets","CSS","css"
 "Cucumber",,,
 "Cuda",,,
-"D",,,
+"D","D_(programming_language)","d_language","d"
 "Dart","Dart_(programming_language)","dartlang","dart"
 "DCPU-16 ASM",,,
 "Delphi",,,
@@ -65,7 +65,7 @@
 "Eagle",,,
 "Eiffel",,,
 "Elixir","Elixir_(programming_language)","elixir","elixir"
-"Elm",,,
+"Elm","Elm_(programming_language)","elm","elm"
 "Emacs Lisp","Emacs_Lisp","emacs","elisp"
 "EmberScript",,,
 "Erlang","Erlang_(programming_language)","erlang","erlang"
@@ -94,7 +94,7 @@
 "Hack",,,
 "Handlebars",,,
 "Haskell","Haskell_(programming_language)","haskell","haskell"
-"Haxe",,,
+"Haxe","Haxe","haxe","haxe"
 "HCL","Terraform_(software)","Terraform","Terraform"
 "HLSL",,,
 "HTML","HTML","HTML","html"
@@ -157,8 +157,8 @@
 "NetLogo",,,
 "Nextflow",,,
 "Nginx",,,
-"Nim",,,
-"Nix",,,
+"Nim","Nim_(programming_language)","nim","nim-lang"
+"Nix","Nix_package_manager","NixOS","nix"
 "NSIS",,,
 "Objective-C","Objective-C","ObjectiveC","objective-c"
 "Objective-C++",,,
@@ -180,7 +180,7 @@
 "PigLatin",,,
 "Pike",,,
 "PLpgSQL","pgSQL","PostgreSQL","postgresql"
-"PLSQL",,,
+"PLSQL","PL/SQL","plsql","plsql"
 "Pony",,,
 "PostScript",,,
 "POV-Ray SDL",,,
@@ -197,11 +197,11 @@
 "Python","Python_(programming_language)","Python","python"
 "q",,,
 "QMake",,,
-"QML",,,
+"QML","QML","QtFramework","qml"
 "R","R_(programming_language)","Rlanguage","r"
 "Racket",,,
 "Ragel in Ruby Host",,,
-"Raku",,,
+"Raku","Raku_(programming_language)","rakulang","raku"
 "RAML",,,
 "Rascal",,,
 "Reason",,,
@@ -211,7 +211,7 @@
 "Rich Text Format",,,
 "Ring",,,
 "RobotFramework",,,
-"Roff",,,
+"Roff","groff_(software)","groff","groff"
 "Rouge",,,
 "RPC",,,
 "Ruby","Ruby_(programming_language)","ruby","ruby"
