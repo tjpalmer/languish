@@ -136,7 +136,7 @@
 "M4",,,
 "Makefile","Make_(software)","","makefile"
 "Mako",,,
-"Markdown",,,
+"Markdown","Markdown","Markdown","markdown"
 "Mask",,,
 "Mathematica",,,
 "MATLAB","MATLAB","matlab","matlab"
@@ -210,7 +210,7 @@
 "Ren'Py",,,
 "Rich Text Format",,,
 "Ring",,,
-"RobotFramework",,,
+"RobotFramework","Robot_Framework","robotframework","robotframework"
 "Roff","groff_(software)","groff","groff"
 "Rouge",,,
 "RPC",,,
@@ -242,7 +242,7 @@
 "SuperCollider",,,
 "Swift","Swift_(programming_language)","swift","swift"
 "SWIG","SWIG","","swig"
-"SystemVerilog",,,
+"SystemVerilog","SystemVerilog","systemverilog","system-verilog"
 "Tcl",,,
 "TeX","LaTeX","LaTeX","latex"
 "Thrift",,,
