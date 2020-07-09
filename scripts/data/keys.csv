@@ -193,7 +193,7 @@
 "Puppet","Puppet_(company)","Puppet","puppet"
 "Pure Data",,,
 "PureBasic",,,
-"PureScript",,,
+"PureScript","PureScript","purescript","purescript"
 "Python","Python_(programming_language)","Python","python"
 "q",,,
 "QMake",,,
@@ -204,7 +204,7 @@
 "Raku","Raku_(programming_language)","rakulang","raku"
 "RAML",,,
 "Rascal",,,
-"Reason",,,
+"Reason","Reason_(syntax_extension_for_OCaml)","reasonml","reason"
 "Rebol",,,
 "Red",,,
 "Ren'Py",,,
@@ -254,11 +254,11 @@
 "Vala","Vala_(programming_language)","vala","vala"
 "VBA",,,
 "VCL",,,
-"Verilog",,,
+"Verilog","Verilog","Verilog","verilog"
 "VHDL",,,
 "Vim script","Vim_(text_editor)","vim","vim"
 "Vim Snippet",,,
-"Visual Basic",,"visualbasic",
+"Visual Basic","Visual_Basic","visualbasic","vb"
 "Visual Basic .NET","Visual_Basic_.NET","visualbasic","vb.net"
 "Vue","Vue.js","vuejs","vue.js"
 "Web Ontology Language",,,
