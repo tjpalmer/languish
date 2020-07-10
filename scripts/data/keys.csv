@@ -2,26 +2,26 @@
 "1C Enterprise",,,
 "ABAP","ABAP","abap","abap"
 "ActionScript",,,
-"Ada",,,
+"Ada","Ada_(programming_language)","ada","ada"
 "Agda",,,
 "AGS Script",,,
 "Alloy",,,
 "AMPL",,,
 "ANTLR",,,
 "ApacheConf",,,
-"Apex",,,
+"Apex","Salesforce","salesforce","apex"
 "API Blueprint",,,
 "APL",,,
 "AppleScript",,,
 "Arc",,,
-"Arduino",,,
+"Arduino","Arduino","arduino","arduino"
 "ASP",,,
 "Assembly","Assembly_language","asm","assembly"
 "ATS",,,
 "Augeas",,,
 "AutoHotkey","AutoHotkey","AutoHotkey","autohotkey"
 "AutoIt",,,
-"Awk",,,
+"Awk","AWK","awk","awk"
 "Batchfile","Batch_file","Batch","batch-file"
 "Bison",,,
 "BitBake","BitBake","bitbake","bitbake"
@@ -128,23 +128,24 @@
 "LLVM",,,
 "Logos",,,
 "Logtalk",,,
-"LookML",,,
+"LookML","Looker_(company)","Looker","looker"
 "LoomScript",,,
 "LSL",,,
 "Lua","Lua_(programming_language)","lua","lua"
 "M",,,
-"M4",,,
+"M4","m4_(computer_language)","","m4"
 "Makefile","Make_(software)","","makefile"
 "Mako",,,
 "Markdown","Markdown","Markdown","markdown"
 "Mask",,,
-"Mathematica",,,
+"Mathematica","Wolfram_Mathematica","Mathematica","wolfram-mathematica"
 "MATLAB","MATLAB","matlab","matlab"
 "Max",,,
 "MAXScript",,,
 "Mercury",,,
 "Meson",,,
 "Mirah",,,
+"MLIR","","",""
 "Modelica",,,
 "Modula-2",,,
 "Monkey",,,
@@ -167,7 +168,7 @@
 "ooc",,,
 "Open Policy Agent",,,
 "OpenEdge ABL",,,
-"OpenSCAD",,,
+"OpenSCAD","OpenSCAD","openscad","openscad"
 "Oz",,,
 "P4",,,
 "Pan",,,
@@ -182,7 +183,7 @@
 "PLpgSQL","pgSQL","PostgreSQL","postgresql"
 "PLSQL","PL/SQL","plsql","plsql"
 "Pony",,,
-"PostScript",,,
+"PostScript","PostScript","PostScript","postscript"
 "POV-Ray SDL",,,
 "PowerBuilder",,,
 "PowerShell","PowerShell","PowerShell","powershell"
@@ -195,11 +196,11 @@
 "PureBasic",,,
 "PureScript","PureScript","purescript","purescript"
 "Python","Python_(programming_language)","Python","python"
-"q",,,
+"q","Q_(programming_language_from_Kx_Systems)","kdb","kdb"
 "QMake",,,
 "QML","QML","QtFramework","qml"
 "R","R_(programming_language)","Rlanguage","r"
-"Racket",,,
+"Racket","Racket_(programming_language)","Racket","racket"
 "Ragel in Ruby Host",,,
 "Raku","Raku_(programming_language)","rakulang","raku"
 "RAML",,,
@@ -208,8 +209,8 @@
 "Rebol",,,
 "Red",,,
 "Ren'Py",,,
-"Rich Text Format",,,
-"Ring",,,
+"Rich Text Format","Rich_Text_Format","","rtf"
+"Ring","Ring_(programming_language)","ringlang",""
 "RobotFramework","Robot_Framework","robotframework","robotframework"
 "Roff","groff_(software)","groff","groff"
 "Rouge",,,
@@ -232,7 +233,7 @@
 "SMT",,,
 "SourcePawn","","",""
 "SQF",,,
-"SQL",,,"sql"
+"SQL","SQL","SQL","sql"
 "SQLPL",,,
 "Squirrel",,,
 "Stan",,,
@@ -243,7 +244,7 @@
 "Swift","Swift_(programming_language)","swift","swift"
 "SWIG","SWIG","","swig"
 "SystemVerilog","SystemVerilog","systemverilog","system-verilog"
-"Tcl",,,
+"Tcl","Tcl","Tcl","tcl"
 "TeX","LaTeX","LaTeX","latex"
 "Thrift",,,
 "TSQL","Transact-SQL","SQLServer","tsql"
@@ -255,7 +256,7 @@
 "VBA",,,
 "VCL",,,
 "Verilog","Verilog","Verilog","verilog"
-"VHDL",,,
+"VHDL","VHDL","VHDL","vhdl"
 "Vim script","Vim_(text_editor)","vim","vim"
 "Vim Snippet",,,
 "Visual Basic","Visual_Basic","visualbasic","vb"
@@ -266,7 +267,7 @@
 "wisp",,,
 "X10",,,
 "xBase","XBase","","xbase"
-"XC",,,
+"XC","XC_(programming_language)","","xmos"
 "XML",,,
 "Xojo",,,
 "XProc",,,
