@@ -7,8 +7,13 @@ fn main() -> io::Result<()> {
     println!("Hello, {}", args[1]);
     let file = File::open(&args[1])?;
     let lines = io::BufReader::new(file).lines();
-    for line_result in lines {
+    for line_result in lines.skip(1).take(10000) {
         let line = line_result?;
+        process_line(&line);
     }
     Ok(())
+}
+
+fn process_line(line: &String) {
+    line.split(",");
 }
