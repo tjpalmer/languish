@@ -35,3 +35,14 @@
 ## Additional notes
 
 - [Adding a language to GitHub](https://github.com/github/linguist/blob/master/CONTRIBUTING.md#adding-a-language)
+
+```sql
+select
+  tags,
+  extract(year from creation_date) year,
+  extract(quarter from creation_date) quarter,
+  count(*) count
+from `bigquery-public-data.stackoverflow.posts_questions`
+group by tags, year, quarter
+order by count(*) desc
+```
