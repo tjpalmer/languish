@@ -8,3 +8,8 @@
 /build
 src/data.json
 bq-*.csv
+
+
+# Added by cargo
+
+/target
