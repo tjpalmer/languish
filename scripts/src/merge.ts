@@ -6,6 +6,7 @@ let files = {
   pulls: "gh-pull-request.json",
   pushes: "gh-push-event.json",
   stars: "gh-star-event.json",
+  soQuestions: "so-tags.json",
 };
 
 let canonicalNames = {
@@ -65,6 +66,7 @@ interface Count {
   pulls: number;
   pushes: number;
   stars: number;
+  soQuestions: number;
 }
 
 interface CountString {

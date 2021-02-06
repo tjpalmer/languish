@@ -46,3 +46,5 @@
   group by tags, year, quarter
   order by count(*) desc
   ```
+- https://subredditstats.com/api/subreddit?name=Python
+- https://wikimedia.org/api/rest_v1/

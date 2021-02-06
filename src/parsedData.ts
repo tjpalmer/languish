@@ -7,6 +7,7 @@ interface CoreMetrics {
   pulls: number;
   pushes: number;
   stars: number;
+  soQuestions: number;
 }
 
 export interface Metrics extends CoreMetrics {

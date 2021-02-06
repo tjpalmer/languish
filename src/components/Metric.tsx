@@ -8,11 +8,12 @@ const Metric = () => {
 
   // map of available metrics to human readable strings
   const items: { [k in keyof Metrics]: string } = {
-    issues: "Issues",
     mean: "Mean Score",
-    pulls: "Pull Requests",
-    pushes: "Pushes",
-    stars: "Stars",
+    issues: "GH Issues",
+    pulls: "GH Pull Requests",
+    pushes: "GH Pushes",
+    stars: "GH Stars",
+    soQuestions: "SO Questions",
   };
 
   // map of available metrics to human readable strings
