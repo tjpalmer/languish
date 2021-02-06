@@ -1,6 +1,6 @@
 from contextlib import contextmanager
 from dataclasses import dataclass
-from typing import ContextManager, Iterator, TextIO
+from typing import Iterator, TextIO
 
 
 @dataclass(frozen=True, order=True)
@@ -36,7 +36,7 @@ def main():
 
 
 @contextmanager
-def open_or_stdin(name: str) -> ContextManager[TextIO]:
+def open_or_stdin(name: str) -> Iterator[TextIO]:
     from sys import stdin
 
     if name == "-":
