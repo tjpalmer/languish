@@ -300,6 +300,1704 @@
     "count": 45
   },
   {
+    "name": "AMPL",
+    "year": 2009,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "AMPL",
+    "year": 2010,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "AMPL",
+    "year": 2010,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "AMPL",
+    "year": 2011,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "AMPL",
+    "year": 2011,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "AMPL",
+    "year": 2012,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "AMPL",
+    "year": 2012,
+    "quarter": 2,
+    "count": 5
+  },
+  {
+    "name": "AMPL",
+    "year": 2012,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "AMPL",
+    "year": 2012,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "AMPL",
+    "year": 2013,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "AMPL",
+    "year": 2013,
+    "quarter": 2,
+    "count": 9
+  },
+  {
+    "name": "AMPL",
+    "year": 2013,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "AMPL",
+    "year": 2013,
+    "quarter": 4,
+    "count": 6
+  },
+  {
+    "name": "AMPL",
+    "year": 2014,
+    "quarter": 1,
+    "count": 6
+  },
+  {
+    "name": "AMPL",
+    "year": 2014,
+    "quarter": 2,
+    "count": 6
+  },
+  {
+    "name": "AMPL",
+    "year": 2014,
+    "quarter": 3,
+    "count": 9
+  },
+  {
+    "name": "AMPL",
+    "year": 2014,
+    "quarter": 4,
+    "count": 15
+  },
+  {
+    "name": "AMPL",
+    "year": 2015,
+    "quarter": 1,
+    "count": 11
+  },
+  {
+    "name": "AMPL",
+    "year": 2015,
+    "quarter": 2,
+    "count": 14
+  },
+  {
+    "name": "AMPL",
+    "year": 2015,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "AMPL",
+    "year": 2015,
+    "quarter": 4,
+    "count": 9
+  },
+  {
+    "name": "AMPL",
+    "year": 2016,
+    "quarter": 1,
+    "count": 13
+  },
+  {
+    "name": "AMPL",
+    "year": 2016,
+    "quarter": 2,
+    "count": 12
+  },
+  {
+    "name": "AMPL",
+    "year": 2016,
+    "quarter": 3,
+    "count": 6
+  },
+  {
+    "name": "AMPL",
+    "year": 2016,
+    "quarter": 4,
+    "count": 15
+  },
+  {
+    "name": "AMPL",
+    "year": 2017,
+    "quarter": 1,
+    "count": 13
+  },
+  {
+    "name": "AMPL",
+    "year": 2017,
+    "quarter": 2,
+    "count": 8
+  },
+  {
+    "name": "AMPL",
+    "year": 2017,
+    "quarter": 3,
+    "count": 6
+  },
+  {
+    "name": "AMPL",
+    "year": 2017,
+    "quarter": 4,
+    "count": 6
+  },
+  {
+    "name": "AMPL",
+    "year": 2018,
+    "quarter": 1,
+    "count": 7
+  },
+  {
+    "name": "AMPL",
+    "year": 2018,
+    "quarter": 2,
+    "count": 13
+  },
+  {
+    "name": "AMPL",
+    "year": 2018,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "AMPL",
+    "year": 2018,
+    "quarter": 4,
+    "count": 11
+  },
+  {
+    "name": "AMPL",
+    "year": 2019,
+    "quarter": 1,
+    "count": 13
+  },
+  {
+    "name": "AMPL",
+    "year": 2019,
+    "quarter": 2,
+    "count": 9
+  },
+  {
+    "name": "AMPL",
+    "year": 2019,
+    "quarter": 3,
+    "count": 14
+  },
+  {
+    "name": "AMPL",
+    "year": 2019,
+    "quarter": 4,
+    "count": 12
+  },
+  {
+    "name": "AMPL",
+    "year": 2020,
+    "quarter": 1,
+    "count": 10
+  },
+  {
+    "name": "AMPL",
+    "year": 2020,
+    "quarter": 2,
+    "count": 10
+  },
+  {
+    "name": "AMPL",
+    "year": 2020,
+    "quarter": 3,
+    "count": 6
+  },
+  {
+    "name": "AMPL",
+    "year": 2020,
+    "quarter": 4,
+    "count": 7
+  },
+  {
+    "name": "ANTLR",
+    "year": 2008,
+    "quarter": 3,
+    "count": 5
+  },
+  {
+    "name": "ANTLR",
+    "year": 2008,
+    "quarter": 4,
+    "count": 9
+  },
+  {
+    "name": "ANTLR",
+    "year": 2009,
+    "quarter": 1,
+    "count": 13
+  },
+  {
+    "name": "ANTLR",
+    "year": 2009,
+    "quarter": 2,
+    "count": 14
+  },
+  {
+    "name": "ANTLR",
+    "year": 2009,
+    "quarter": 3,
+    "count": 23
+  },
+  {
+    "name": "ANTLR",
+    "year": 2009,
+    "quarter": 4,
+    "count": 44
+  },
+  {
+    "name": "ANTLR",
+    "year": 2010,
+    "quarter": 1,
+    "count": 60
+  },
+  {
+    "name": "ANTLR",
+    "year": 2010,
+    "quarter": 2,
+    "count": 47
+  },
+  {
+    "name": "ANTLR",
+    "year": 2010,
+    "quarter": 3,
+    "count": 40
+  },
+  {
+    "name": "ANTLR",
+    "year": 2010,
+    "quarter": 4,
+    "count": 43
+  },
+  {
+    "name": "ANTLR",
+    "year": 2011,
+    "quarter": 1,
+    "count": 60
+  },
+  {
+    "name": "ANTLR",
+    "year": 2011,
+    "quarter": 2,
+    "count": 69
+  },
+  {
+    "name": "ANTLR",
+    "year": 2011,
+    "quarter": 3,
+    "count": 86
+  },
+  {
+    "name": "ANTLR",
+    "year": 2011,
+    "quarter": 4,
+    "count": 95
+  },
+  {
+    "name": "ANTLR",
+    "year": 2012,
+    "quarter": 1,
+    "count": 76
+  },
+  {
+    "name": "ANTLR",
+    "year": 2012,
+    "quarter": 2,
+    "count": 95
+  },
+  {
+    "name": "ANTLR",
+    "year": 2012,
+    "quarter": 3,
+    "count": 97
+  },
+  {
+    "name": "ANTLR",
+    "year": 2012,
+    "quarter": 4,
+    "count": 95
+  },
+  {
+    "name": "ANTLR",
+    "year": 2013,
+    "quarter": 1,
+    "count": 137
+  },
+  {
+    "name": "ANTLR",
+    "year": 2013,
+    "quarter": 2,
+    "count": 119
+  },
+  {
+    "name": "ANTLR",
+    "year": 2013,
+    "quarter": 3,
+    "count": 122
+  },
+  {
+    "name": "ANTLR",
+    "year": 2013,
+    "quarter": 4,
+    "count": 113
+  },
+  {
+    "name": "ANTLR",
+    "year": 2014,
+    "quarter": 1,
+    "count": 110
+  },
+  {
+    "name": "ANTLR",
+    "year": 2014,
+    "quarter": 2,
+    "count": 128
+  },
+  {
+    "name": "ANTLR",
+    "year": 2014,
+    "quarter": 3,
+    "count": 100
+  },
+  {
+    "name": "ANTLR",
+    "year": 2014,
+    "quarter": 4,
+    "count": 89
+  },
+  {
+    "name": "ANTLR",
+    "year": 2015,
+    "quarter": 1,
+    "count": 119
+  },
+  {
+    "name": "ANTLR",
+    "year": 2015,
+    "quarter": 2,
+    "count": 123
+  },
+  {
+    "name": "ANTLR",
+    "year": 2015,
+    "quarter": 3,
+    "count": 80
+  },
+  {
+    "name": "ANTLR",
+    "year": 2015,
+    "quarter": 4,
+    "count": 69
+  },
+  {
+    "name": "ANTLR",
+    "year": 2016,
+    "quarter": 1,
+    "count": 118
+  },
+  {
+    "name": "ANTLR",
+    "year": 2016,
+    "quarter": 2,
+    "count": 89
+  },
+  {
+    "name": "ANTLR",
+    "year": 2016,
+    "quarter": 3,
+    "count": 92
+  },
+  {
+    "name": "ANTLR",
+    "year": 2016,
+    "quarter": 4,
+    "count": 86
+  },
+  {
+    "name": "ANTLR",
+    "year": 2017,
+    "quarter": 1,
+    "count": 84
+  },
+  {
+    "name": "ANTLR",
+    "year": 2017,
+    "quarter": 2,
+    "count": 91
+  },
+  {
+    "name": "ANTLR",
+    "year": 2017,
+    "quarter": 3,
+    "count": 92
+  },
+  {
+    "name": "ANTLR",
+    "year": 2017,
+    "quarter": 4,
+    "count": 70
+  },
+  {
+    "name": "ANTLR",
+    "year": 2018,
+    "quarter": 1,
+    "count": 77
+  },
+  {
+    "name": "ANTLR",
+    "year": 2018,
+    "quarter": 2,
+    "count": 73
+  },
+  {
+    "name": "ANTLR",
+    "year": 2018,
+    "quarter": 3,
+    "count": 69
+  },
+  {
+    "name": "ANTLR",
+    "year": 2018,
+    "quarter": 4,
+    "count": 61
+  },
+  {
+    "name": "ANTLR",
+    "year": 2019,
+    "quarter": 1,
+    "count": 69
+  },
+  {
+    "name": "ANTLR",
+    "year": 2019,
+    "quarter": 2,
+    "count": 48
+  },
+  {
+    "name": "ANTLR",
+    "year": 2019,
+    "quarter": 3,
+    "count": 46
+  },
+  {
+    "name": "ANTLR",
+    "year": 2019,
+    "quarter": 4,
+    "count": 55
+  },
+  {
+    "name": "ANTLR",
+    "year": 2020,
+    "quarter": 1,
+    "count": 74
+  },
+  {
+    "name": "ANTLR",
+    "year": 2020,
+    "quarter": 2,
+    "count": 110
+  },
+  {
+    "name": "ANTLR",
+    "year": 2020,
+    "quarter": 3,
+    "count": 76
+  },
+  {
+    "name": "ANTLR",
+    "year": 2020,
+    "quarter": 4,
+    "count": 54
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2013,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2013,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2014,
+    "quarter": 1,
+    "count": 8
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2014,
+    "quarter": 2,
+    "count": 8
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2014,
+    "quarter": 3,
+    "count": 9
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2014,
+    "quarter": 4,
+    "count": 8
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2015,
+    "quarter": 1,
+    "count": 10
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2015,
+    "quarter": 2,
+    "count": 19
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2015,
+    "quarter": 3,
+    "count": 13
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2015,
+    "quarter": 4,
+    "count": 13
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2016,
+    "quarter": 1,
+    "count": 8
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2016,
+    "quarter": 2,
+    "count": 10
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2016,
+    "quarter": 3,
+    "count": 12
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2016,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2017,
+    "quarter": 1,
+    "count": 11
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2017,
+    "quarter": 2,
+    "count": 7
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2017,
+    "quarter": 3,
+    "count": 9
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2017,
+    "quarter": 4,
+    "count": 6
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2018,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2018,
+    "quarter": 2,
+    "count": 7
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2018,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2018,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2019,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2019,
+    "quarter": 2,
+    "count": 4
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2019,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2020,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2020,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2020,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "API Blueprint",
+    "year": 2020,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "APL",
+    "year": 2009,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "APL",
+    "year": 2009,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "APL",
+    "year": 2009,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "APL",
+    "year": 2010,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "APL",
+    "year": 2010,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "APL",
+    "year": 2010,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "APL",
+    "year": 2010,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "APL",
+    "year": 2011,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "APL",
+    "year": 2011,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "APL",
+    "year": 2011,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "APL",
+    "year": 2012,
+    "quarter": 1,
+    "count": 4
+  },
+  {
+    "name": "APL",
+    "year": 2012,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "APL",
+    "year": 2012,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "APL",
+    "year": 2012,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "APL",
+    "year": 2013,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "APL",
+    "year": 2013,
+    "quarter": 2,
+    "count": 8
+  },
+  {
+    "name": "APL",
+    "year": 2013,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "APL",
+    "year": 2013,
+    "quarter": 4,
+    "count": 6
+  },
+  {
+    "name": "APL",
+    "year": 2014,
+    "quarter": 1,
+    "count": 6
+  },
+  {
+    "name": "APL",
+    "year": 2014,
+    "quarter": 2,
+    "count": 9
+  },
+  {
+    "name": "APL",
+    "year": 2014,
+    "quarter": 3,
+    "count": 11
+  },
+  {
+    "name": "APL",
+    "year": 2014,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "APL",
+    "year": 2015,
+    "quarter": 1,
+    "count": 8
+  },
+  {
+    "name": "APL",
+    "year": 2015,
+    "quarter": 2,
+    "count": 5
+  },
+  {
+    "name": "APL",
+    "year": 2015,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "APL",
+    "year": 2015,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "APL",
+    "year": 2016,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "APL",
+    "year": 2016,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "APL",
+    "year": 2016,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "APL",
+    "year": 2016,
+    "quarter": 4,
+    "count": 7
+  },
+  {
+    "name": "APL",
+    "year": 2017,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "APL",
+    "year": 2017,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "APL",
+    "year": 2017,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "APL",
+    "year": 2017,
+    "quarter": 4,
+    "count": 6
+  },
+  {
+    "name": "APL",
+    "year": 2018,
+    "quarter": 1,
+    "count": 10
+  },
+  {
+    "name": "APL",
+    "year": 2018,
+    "quarter": 2,
+    "count": 5
+  },
+  {
+    "name": "APL",
+    "year": 2018,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "APL",
+    "year": 2018,
+    "quarter": 4,
+    "count": 8
+  },
+  {
+    "name": "APL",
+    "year": 2019,
+    "quarter": 1,
+    "count": 4
+  },
+  {
+    "name": "APL",
+    "year": 2019,
+    "quarter": 2,
+    "count": 9
+  },
+  {
+    "name": "APL",
+    "year": 2019,
+    "quarter": 3,
+    "count": 5
+  },
+  {
+    "name": "APL",
+    "year": 2019,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "APL",
+    "year": 2020,
+    "quarter": 1,
+    "count": 11
+  },
+  {
+    "name": "APL",
+    "year": 2020,
+    "quarter": 2,
+    "count": 7
+  },
+  {
+    "name": "APL",
+    "year": 2020,
+    "quarter": 3,
+    "count": 5
+  },
+  {
+    "name": "APL",
+    "year": 2020,
+    "quarter": 4,
+    "count": 5
+  },
+  {
+    "name": "ASP",
+    "year": 2008,
+    "quarter": 3,
+    "count": 835
+  },
+  {
+    "name": "ASP",
+    "year": 2008,
+    "quarter": 4,
+    "count": 2025
+  },
+  {
+    "name": "ASP",
+    "year": 2009,
+    "quarter": 1,
+    "count": 2700
+  },
+  {
+    "name": "ASP",
+    "year": 2009,
+    "quarter": 2,
+    "count": 3287
+  },
+  {
+    "name": "ASP",
+    "year": 2009,
+    "quarter": 3,
+    "count": 3845
+  },
+  {
+    "name": "ASP",
+    "year": 2009,
+    "quarter": 4,
+    "count": 3983
+  },
+  {
+    "name": "ASP",
+    "year": 2010,
+    "quarter": 1,
+    "count": 4668
+  },
+  {
+    "name": "ASP",
+    "year": 2010,
+    "quarter": 2,
+    "count": 4767
+  },
+  {
+    "name": "ASP",
+    "year": 2010,
+    "quarter": 3,
+    "count": 5006
+  },
+  {
+    "name": "ASP",
+    "year": 2010,
+    "quarter": 4,
+    "count": 4928
+  },
+  {
+    "name": "ASP",
+    "year": 2011,
+    "quarter": 1,
+    "count": 6230
+  },
+  {
+    "name": "ASP",
+    "year": 2011,
+    "quarter": 2,
+    "count": 6944
+  },
+  {
+    "name": "ASP",
+    "year": 2011,
+    "quarter": 3,
+    "count": 6725
+  },
+  {
+    "name": "ASP",
+    "year": 2011,
+    "quarter": 4,
+    "count": 6315
+  },
+  {
+    "name": "ASP",
+    "year": 2012,
+    "quarter": 1,
+    "count": 6854
+  },
+  {
+    "name": "ASP",
+    "year": 2012,
+    "quarter": 2,
+    "count": 6975
+  },
+  {
+    "name": "ASP",
+    "year": 2012,
+    "quarter": 3,
+    "count": 7036
+  },
+  {
+    "name": "ASP",
+    "year": 2012,
+    "quarter": 4,
+    "count": 6824
+  },
+  {
+    "name": "ASP",
+    "year": 2013,
+    "quarter": 1,
+    "count": 7332
+  },
+  {
+    "name": "ASP",
+    "year": 2013,
+    "quarter": 2,
+    "count": 7539
+  },
+  {
+    "name": "ASP",
+    "year": 2013,
+    "quarter": 3,
+    "count": 7053
+  },
+  {
+    "name": "ASP",
+    "year": 2013,
+    "quarter": 4,
+    "count": 7273
+  },
+  {
+    "name": "ASP",
+    "year": 2014,
+    "quarter": 1,
+    "count": 7453
+  },
+  {
+    "name": "ASP",
+    "year": 2014,
+    "quarter": 2,
+    "count": 6735
+  },
+  {
+    "name": "ASP",
+    "year": 2014,
+    "quarter": 3,
+    "count": 6022
+  },
+  {
+    "name": "ASP",
+    "year": 2014,
+    "quarter": 4,
+    "count": 5433
+  },
+  {
+    "name": "ASP",
+    "year": 2015,
+    "quarter": 1,
+    "count": 5702
+  },
+  {
+    "name": "ASP",
+    "year": 2015,
+    "quarter": 2,
+    "count": 6012
+  },
+  {
+    "name": "ASP",
+    "year": 2015,
+    "quarter": 3,
+    "count": 5923
+  },
+  {
+    "name": "ASP",
+    "year": 2015,
+    "quarter": 4,
+    "count": 5361
+  },
+  {
+    "name": "ASP",
+    "year": 2016,
+    "quarter": 1,
+    "count": 5796
+  },
+  {
+    "name": "ASP",
+    "year": 2016,
+    "quarter": 2,
+    "count": 5852
+  },
+  {
+    "name": "ASP",
+    "year": 2016,
+    "quarter": 3,
+    "count": 5574
+  },
+  {
+    "name": "ASP",
+    "year": 2016,
+    "quarter": 4,
+    "count": 5194
+  },
+  {
+    "name": "ASP",
+    "year": 2017,
+    "quarter": 1,
+    "count": 5710
+  },
+  {
+    "name": "ASP",
+    "year": 2017,
+    "quarter": 2,
+    "count": 5494
+  },
+  {
+    "name": "ASP",
+    "year": 2017,
+    "quarter": 3,
+    "count": 5396
+  },
+  {
+    "name": "ASP",
+    "year": 2017,
+    "quarter": 4,
+    "count": 4508
+  },
+  {
+    "name": "ASP",
+    "year": 2018,
+    "quarter": 1,
+    "count": 4465
+  },
+  {
+    "name": "ASP",
+    "year": 2018,
+    "quarter": 2,
+    "count": 4369
+  },
+  {
+    "name": "ASP",
+    "year": 2018,
+    "quarter": 3,
+    "count": 4394
+  },
+  {
+    "name": "ASP",
+    "year": 2018,
+    "quarter": 4,
+    "count": 3971
+  },
+  {
+    "name": "ASP",
+    "year": 2019,
+    "quarter": 1,
+    "count": 4216
+  },
+  {
+    "name": "ASP",
+    "year": 2019,
+    "quarter": 2,
+    "count": 4036
+  },
+  {
+    "name": "ASP",
+    "year": 2019,
+    "quarter": 3,
+    "count": 4127
+  },
+  {
+    "name": "ASP",
+    "year": 2019,
+    "quarter": 4,
+    "count": 4502
+  },
+  {
+    "name": "ASP",
+    "year": 2020,
+    "quarter": 1,
+    "count": 5400
+  },
+  {
+    "name": "ASP",
+    "year": 2020,
+    "quarter": 2,
+    "count": 5880
+  },
+  {
+    "name": "ASP",
+    "year": 2020,
+    "quarter": 3,
+    "count": 5148
+  },
+  {
+    "name": "ASP",
+    "year": 2020,
+    "quarter": 4,
+    "count": 3516
+  },
+  {
+    "name": "ATS",
+    "year": 2014,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "ATS",
+    "year": 2016,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "ATS",
+    "year": 2016,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "ATS",
+    "year": 2016,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "ATS",
+    "year": 2017,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "ATS",
+    "year": 2017,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "ATS",
+    "year": 2017,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "ATS",
+    "year": 2017,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "ATS",
+    "year": 2018,
+    "quarter": 1,
+    "count": 5
+  },
+  {
+    "name": "ATS",
+    "year": 2018,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "ATS",
+    "year": 2018,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "ATS",
+    "year": 2018,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "ATS",
+    "year": 2019,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "ATS",
+    "year": 2019,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "ATS",
+    "year": 2019,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "ATS",
+    "year": 2019,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "ATS",
+    "year": 2020,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "ActionScript",
+    "year": 2008,
+    "quarter": 3,
+    "count": 100
+  },
+  {
+    "name": "ActionScript",
+    "year": 2008,
+    "quarter": 4,
+    "count": 223
+  },
+  {
+    "name": "ActionScript",
+    "year": 2009,
+    "quarter": 1,
+    "count": 387
+  },
+  {
+    "name": "ActionScript",
+    "year": 2009,
+    "quarter": 2,
+    "count": 534
+  },
+  {
+    "name": "ActionScript",
+    "year": 2009,
+    "quarter": 3,
+    "count": 684
+  },
+  {
+    "name": "ActionScript",
+    "year": 2009,
+    "quarter": 4,
+    "count": 763
+  },
+  {
+    "name": "ActionScript",
+    "year": 2010,
+    "quarter": 1,
+    "count": 1035
+  },
+  {
+    "name": "ActionScript",
+    "year": 2010,
+    "quarter": 2,
+    "count": 950
+  },
+  {
+    "name": "ActionScript",
+    "year": 2010,
+    "quarter": 3,
+    "count": 936
+  },
+  {
+    "name": "ActionScript",
+    "year": 2010,
+    "quarter": 4,
+    "count": 1034
+  },
+  {
+    "name": "ActionScript",
+    "year": 2011,
+    "quarter": 1,
+    "count": 1414
+  },
+  {
+    "name": "ActionScript",
+    "year": 2011,
+    "quarter": 2,
+    "count": 1522
+  },
+  {
+    "name": "ActionScript",
+    "year": 2011,
+    "quarter": 3,
+    "count": 1424
+  },
+  {
+    "name": "ActionScript",
+    "year": 2011,
+    "quarter": 4,
+    "count": 1432
+  },
+  {
+    "name": "ActionScript",
+    "year": 2012,
+    "quarter": 1,
+    "count": 1491
+  },
+  {
+    "name": "ActionScript",
+    "year": 2012,
+    "quarter": 2,
+    "count": 1282
+  },
+  {
+    "name": "ActionScript",
+    "year": 2012,
+    "quarter": 3,
+    "count": 1294
+  },
+  {
+    "name": "ActionScript",
+    "year": 2012,
+    "quarter": 4,
+    "count": 1220
+  },
+  {
+    "name": "ActionScript",
+    "year": 2013,
+    "quarter": 1,
+    "count": 1325
+  },
+  {
+    "name": "ActionScript",
+    "year": 2013,
+    "quarter": 2,
+    "count": 1347
+  },
+  {
+    "name": "ActionScript",
+    "year": 2013,
+    "quarter": 3,
+    "count": 1127
+  },
+  {
+    "name": "ActionScript",
+    "year": 2013,
+    "quarter": 4,
+    "count": 1047
+  },
+  {
+    "name": "ActionScript",
+    "year": 2014,
+    "quarter": 1,
+    "count": 1236
+  },
+  {
+    "name": "ActionScript",
+    "year": 2014,
+    "quarter": 2,
+    "count": 971
+  },
+  {
+    "name": "ActionScript",
+    "year": 2014,
+    "quarter": 3,
+    "count": 683
+  },
+  {
+    "name": "ActionScript",
+    "year": 2014,
+    "quarter": 4,
+    "count": 634
+  },
+  {
+    "name": "ActionScript",
+    "year": 2015,
+    "quarter": 1,
+    "count": 670
+  },
+  {
+    "name": "ActionScript",
+    "year": 2015,
+    "quarter": 2,
+    "count": 700
+  },
+  {
+    "name": "ActionScript",
+    "year": 2015,
+    "quarter": 3,
+    "count": 532
+  },
+  {
+    "name": "ActionScript",
+    "year": 2015,
+    "quarter": 4,
+    "count": 374
+  },
+  {
+    "name": "ActionScript",
+    "year": 2016,
+    "quarter": 1,
+    "count": 353
+  },
+  {
+    "name": "ActionScript",
+    "year": 2016,
+    "quarter": 2,
+    "count": 308
+  },
+  {
+    "name": "ActionScript",
+    "year": 2016,
+    "quarter": 3,
+    "count": 248
+  },
+  {
+    "name": "ActionScript",
+    "year": 2016,
+    "quarter": 4,
+    "count": 239
+  },
+  {
+    "name": "ActionScript",
+    "year": 2017,
+    "quarter": 1,
+    "count": 229
+  },
+  {
+    "name": "ActionScript",
+    "year": 2017,
+    "quarter": 2,
+    "count": 188
+  },
+  {
+    "name": "ActionScript",
+    "year": 2017,
+    "quarter": 3,
+    "count": 156
+  },
+  {
+    "name": "ActionScript",
+    "year": 2017,
+    "quarter": 4,
+    "count": 125
+  },
+  {
+    "name": "ActionScript",
+    "year": 2018,
+    "quarter": 1,
+    "count": 107
+  },
+  {
+    "name": "ActionScript",
+    "year": 2018,
+    "quarter": 2,
+    "count": 81
+  },
+  {
+    "name": "ActionScript",
+    "year": 2018,
+    "quarter": 3,
+    "count": 72
+  },
+  {
+    "name": "ActionScript",
+    "year": 2018,
+    "quarter": 4,
+    "count": 54
+  },
+  {
+    "name": "ActionScript",
+    "year": 2019,
+    "quarter": 1,
+    "count": 41
+  },
+  {
+    "name": "ActionScript",
+    "year": 2019,
+    "quarter": 2,
+    "count": 43
+  },
+  {
+    "name": "ActionScript",
+    "year": 2019,
+    "quarter": 3,
+    "count": 45
+  },
+  {
+    "name": "ActionScript",
+    "year": 2019,
+    "quarter": 4,
+    "count": 45
+  },
+  {
+    "name": "ActionScript",
+    "year": 2020,
+    "quarter": 1,
+    "count": 53
+  },
+  {
+    "name": "ActionScript",
+    "year": 2020,
+    "quarter": 2,
+    "count": 59
+  },
+  {
+    "name": "ActionScript",
+    "year": 2020,
+    "quarter": 3,
+    "count": 52
+  },
+  {
+    "name": "ActionScript",
+    "year": 2020,
+    "quarter": 4,
+    "count": 30
+  },
+  {
     "name": "Ada",
     "year": 2008,
     "quarter": 3,
@@ -600,6 +2298,798 @@
     "count": 19
   },
   {
+    "name": "Agda",
+    "year": 2009,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Agda",
+    "year": 2010,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "Agda",
+    "year": 2010,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "Agda",
+    "year": 2010,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Agda",
+    "year": 2011,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "Agda",
+    "year": 2012,
+    "quarter": 1,
+    "count": 8
+  },
+  {
+    "name": "Agda",
+    "year": 2012,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "Agda",
+    "year": 2012,
+    "quarter": 3,
+    "count": 7
+  },
+  {
+    "name": "Agda",
+    "year": 2012,
+    "quarter": 4,
+    "count": 6
+  },
+  {
+    "name": "Agda",
+    "year": 2013,
+    "quarter": 1,
+    "count": 4
+  },
+  {
+    "name": "Agda",
+    "year": 2013,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "Agda",
+    "year": 2013,
+    "quarter": 3,
+    "count": 10
+  },
+  {
+    "name": "Agda",
+    "year": 2013,
+    "quarter": 4,
+    "count": 9
+  },
+  {
+    "name": "Agda",
+    "year": 2014,
+    "quarter": 1,
+    "count": 31
+  },
+  {
+    "name": "Agda",
+    "year": 2014,
+    "quarter": 2,
+    "count": 14
+  },
+  {
+    "name": "Agda",
+    "year": 2014,
+    "quarter": 3,
+    "count": 15
+  },
+  {
+    "name": "Agda",
+    "year": 2014,
+    "quarter": 4,
+    "count": 15
+  },
+  {
+    "name": "Agda",
+    "year": 2015,
+    "quarter": 1,
+    "count": 12
+  },
+  {
+    "name": "Agda",
+    "year": 2015,
+    "quarter": 2,
+    "count": 23
+  },
+  {
+    "name": "Agda",
+    "year": 2015,
+    "quarter": 3,
+    "count": 7
+  },
+  {
+    "name": "Agda",
+    "year": 2015,
+    "quarter": 4,
+    "count": 25
+  },
+  {
+    "name": "Agda",
+    "year": 2016,
+    "quarter": 1,
+    "count": 23
+  },
+  {
+    "name": "Agda",
+    "year": 2016,
+    "quarter": 2,
+    "count": 18
+  },
+  {
+    "name": "Agda",
+    "year": 2016,
+    "quarter": 3,
+    "count": 8
+  },
+  {
+    "name": "Agda",
+    "year": 2016,
+    "quarter": 4,
+    "count": 11
+  },
+  {
+    "name": "Agda",
+    "year": 2017,
+    "quarter": 1,
+    "count": 16
+  },
+  {
+    "name": "Agda",
+    "year": 2017,
+    "quarter": 2,
+    "count": 12
+  },
+  {
+    "name": "Agda",
+    "year": 2017,
+    "quarter": 3,
+    "count": 5
+  },
+  {
+    "name": "Agda",
+    "year": 2017,
+    "quarter": 4,
+    "count": 24
+  },
+  {
+    "name": "Agda",
+    "year": 2018,
+    "quarter": 1,
+    "count": 15
+  },
+  {
+    "name": "Agda",
+    "year": 2018,
+    "quarter": 2,
+    "count": 11
+  },
+  {
+    "name": "Agda",
+    "year": 2018,
+    "quarter": 3,
+    "count": 11
+  },
+  {
+    "name": "Agda",
+    "year": 2018,
+    "quarter": 4,
+    "count": 10
+  },
+  {
+    "name": "Agda",
+    "year": 2019,
+    "quarter": 1,
+    "count": 14
+  },
+  {
+    "name": "Agda",
+    "year": 2019,
+    "quarter": 2,
+    "count": 10
+  },
+  {
+    "name": "Agda",
+    "year": 2019,
+    "quarter": 3,
+    "count": 14
+  },
+  {
+    "name": "Agda",
+    "year": 2019,
+    "quarter": 4,
+    "count": 19
+  },
+  {
+    "name": "Agda",
+    "year": 2020,
+    "quarter": 1,
+    "count": 10
+  },
+  {
+    "name": "Agda",
+    "year": 2020,
+    "quarter": 2,
+    "count": 28
+  },
+  {
+    "name": "Agda",
+    "year": 2020,
+    "quarter": 3,
+    "count": 23
+  },
+  {
+    "name": "Agda",
+    "year": 2020,
+    "quarter": 4,
+    "count": 19
+  },
+  {
+    "name": "Alloy",
+    "year": 2010,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Alloy",
+    "year": 2010,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "Alloy",
+    "year": 2011,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "Alloy",
+    "year": 2011,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "Alloy",
+    "year": 2011,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "Alloy",
+    "year": 2012,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Alloy",
+    "year": 2012,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "Alloy",
+    "year": 2012,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "Alloy",
+    "year": 2012,
+    "quarter": 4,
+    "count": 6
+  },
+  {
+    "name": "Alloy",
+    "year": 2013,
+    "quarter": 1,
+    "count": 8
+  },
+  {
+    "name": "Alloy",
+    "year": 2013,
+    "quarter": 2,
+    "count": 6
+  },
+  {
+    "name": "Alloy",
+    "year": 2013,
+    "quarter": 3,
+    "count": 5
+  },
+  {
+    "name": "Alloy",
+    "year": 2013,
+    "quarter": 4,
+    "count": 10
+  },
+  {
+    "name": "Alloy",
+    "year": 2014,
+    "quarter": 1,
+    "count": 9
+  },
+  {
+    "name": "Alloy",
+    "year": 2014,
+    "quarter": 2,
+    "count": 7
+  },
+  {
+    "name": "Alloy",
+    "year": 2014,
+    "quarter": 3,
+    "count": 6
+  },
+  {
+    "name": "Alloy",
+    "year": 2014,
+    "quarter": 4,
+    "count": 7
+  },
+  {
+    "name": "Alloy",
+    "year": 2015,
+    "quarter": 1,
+    "count": 4
+  },
+  {
+    "name": "Alloy",
+    "year": 2015,
+    "quarter": 2,
+    "count": 6
+  },
+  {
+    "name": "Alloy",
+    "year": 2015,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "Alloy",
+    "year": 2015,
+    "quarter": 4,
+    "count": 8
+  },
+  {
+    "name": "Alloy",
+    "year": 2016,
+    "quarter": 1,
+    "count": 7
+  },
+  {
+    "name": "Alloy",
+    "year": 2016,
+    "quarter": 2,
+    "count": 6
+  },
+  {
+    "name": "Alloy",
+    "year": 2016,
+    "quarter": 3,
+    "count": 5
+  },
+  {
+    "name": "Alloy",
+    "year": 2016,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "Alloy",
+    "year": 2017,
+    "quarter": 1,
+    "count": 11
+  },
+  {
+    "name": "Alloy",
+    "year": 2017,
+    "quarter": 2,
+    "count": 9
+  },
+  {
+    "name": "Alloy",
+    "year": 2017,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "Alloy",
+    "year": 2017,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "Alloy",
+    "year": 2018,
+    "quarter": 1,
+    "count": 5
+  },
+  {
+    "name": "Alloy",
+    "year": 2018,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "Alloy",
+    "year": 2018,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "Alloy",
+    "year": 2018,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "Alloy",
+    "year": 2019,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "Alloy",
+    "year": 2019,
+    "quarter": 2,
+    "count": 6
+  },
+  {
+    "name": "Alloy",
+    "year": 2019,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "Alloy",
+    "year": 2019,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "Alloy",
+    "year": 2020,
+    "quarter": 1,
+    "count": 7
+  },
+  {
+    "name": "Alloy",
+    "year": 2020,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "Alloy",
+    "year": 2020,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "Alloy",
+    "year": 2020,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2008,
+    "quarter": 3,
+    "count": 116
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2008,
+    "quarter": 4,
+    "count": 216
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2009,
+    "quarter": 1,
+    "count": 254
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2009,
+    "quarter": 2,
+    "count": 325
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2009,
+    "quarter": 3,
+    "count": 401
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2009,
+    "quarter": 4,
+    "count": 479
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2010,
+    "quarter": 1,
+    "count": 571
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2010,
+    "quarter": 2,
+    "count": 604
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2010,
+    "quarter": 3,
+    "count": 733
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2010,
+    "quarter": 4,
+    "count": 759
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2011,
+    "quarter": 1,
+    "count": 970
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2011,
+    "quarter": 2,
+    "count": 1040
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2011,
+    "quarter": 3,
+    "count": 1078
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2011,
+    "quarter": 4,
+    "count": 1087
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2012,
+    "quarter": 1,
+    "count": 1421
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2012,
+    "quarter": 2,
+    "count": 1475
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2012,
+    "quarter": 3,
+    "count": 1560
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2012,
+    "quarter": 4,
+    "count": 1505
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2013,
+    "quarter": 1,
+    "count": 1578
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2013,
+    "quarter": 2,
+    "count": 1666
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2013,
+    "quarter": 3,
+    "count": 1832
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2013,
+    "quarter": 4,
+    "count": 2021
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2014,
+    "quarter": 1,
+    "count": 2218
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2014,
+    "quarter": 2,
+    "count": 2058
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2014,
+    "quarter": 3,
+    "count": 1943
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2014,
+    "quarter": 4,
+    "count": 1912
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2015,
+    "quarter": 1,
+    "count": 1968
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2015,
+    "quarter": 2,
+    "count": 2054
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2015,
+    "quarter": 3,
+    "count": 1899
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2015,
+    "quarter": 4,
+    "count": 1846
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2016,
+    "quarter": 1,
+    "count": 1995
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2016,
+    "quarter": 2,
+    "count": 1845
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2016,
+    "quarter": 3,
+    "count": 1878
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2016,
+    "quarter": 4,
+    "count": 1661
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2017,
+    "quarter": 1,
+    "count": 1851
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2017,
+    "quarter": 2,
+    "count": 1743
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2017,
+    "quarter": 3,
+    "count": 1632
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2017,
+    "quarter": 4,
+    "count": 1429
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2018,
+    "quarter": 1,
+    "count": 1313
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2018,
+    "quarter": 2,
+    "count": 1178
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2018,
+    "quarter": 3,
+    "count": 1191
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2018,
+    "quarter": 4,
+    "count": 1041
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2019,
+    "quarter": 1,
+    "count": 994
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2019,
+    "quarter": 2,
+    "count": 823
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2019,
+    "quarter": 3,
+    "count": 832
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2019,
+    "quarter": 4,
+    "count": 776
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2020,
+    "quarter": 1,
+    "count": 1044
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2020,
+    "quarter": 2,
+    "count": 1237
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2020,
+    "quarter": 3,
+    "count": 1017
+  },
+  {
+    "name": "ApacheConf",
+    "year": 2020,
+    "quarter": 4,
+    "count": 632
+  },
+  {
     "name": "Apex",
     "year": 2011,
     "quarter": 4,
@@ -802,6 +3292,390 @@
     "year": 2020,
     "quarter": 4,
     "count": 78
+  },
+  {
+    "name": "AppleScript",
+    "year": 2008,
+    "quarter": 3,
+    "count": 11
+  },
+  {
+    "name": "AppleScript",
+    "year": 2008,
+    "quarter": 4,
+    "count": 17
+  },
+  {
+    "name": "AppleScript",
+    "year": 2009,
+    "quarter": 1,
+    "count": 10
+  },
+  {
+    "name": "AppleScript",
+    "year": 2009,
+    "quarter": 2,
+    "count": 22
+  },
+  {
+    "name": "AppleScript",
+    "year": 2009,
+    "quarter": 3,
+    "count": 35
+  },
+  {
+    "name": "AppleScript",
+    "year": 2009,
+    "quarter": 4,
+    "count": 37
+  },
+  {
+    "name": "AppleScript",
+    "year": 2010,
+    "quarter": 1,
+    "count": 45
+  },
+  {
+    "name": "AppleScript",
+    "year": 2010,
+    "quarter": 2,
+    "count": 71
+  },
+  {
+    "name": "AppleScript",
+    "year": 2010,
+    "quarter": 3,
+    "count": 76
+  },
+  {
+    "name": "AppleScript",
+    "year": 2010,
+    "quarter": 4,
+    "count": 77
+  },
+  {
+    "name": "AppleScript",
+    "year": 2011,
+    "quarter": 1,
+    "count": 100
+  },
+  {
+    "name": "AppleScript",
+    "year": 2011,
+    "quarter": 2,
+    "count": 118
+  },
+  {
+    "name": "AppleScript",
+    "year": 2011,
+    "quarter": 3,
+    "count": 133
+  },
+  {
+    "name": "AppleScript",
+    "year": 2011,
+    "quarter": 4,
+    "count": 122
+  },
+  {
+    "name": "AppleScript",
+    "year": 2012,
+    "quarter": 1,
+    "count": 110
+  },
+  {
+    "name": "AppleScript",
+    "year": 2012,
+    "quarter": 2,
+    "count": 117
+  },
+  {
+    "name": "AppleScript",
+    "year": 2012,
+    "quarter": 3,
+    "count": 148
+  },
+  {
+    "name": "AppleScript",
+    "year": 2012,
+    "quarter": 4,
+    "count": 155
+  },
+  {
+    "name": "AppleScript",
+    "year": 2013,
+    "quarter": 1,
+    "count": 177
+  },
+  {
+    "name": "AppleScript",
+    "year": 2013,
+    "quarter": 2,
+    "count": 151
+  },
+  {
+    "name": "AppleScript",
+    "year": 2013,
+    "quarter": 3,
+    "count": 193
+  },
+  {
+    "name": "AppleScript",
+    "year": 2013,
+    "quarter": 4,
+    "count": 164
+  },
+  {
+    "name": "AppleScript",
+    "year": 2014,
+    "quarter": 1,
+    "count": 193
+  },
+  {
+    "name": "AppleScript",
+    "year": 2014,
+    "quarter": 2,
+    "count": 192
+  },
+  {
+    "name": "AppleScript",
+    "year": 2014,
+    "quarter": 3,
+    "count": 156
+  },
+  {
+    "name": "AppleScript",
+    "year": 2014,
+    "quarter": 4,
+    "count": 143
+  },
+  {
+    "name": "AppleScript",
+    "year": 2015,
+    "quarter": 1,
+    "count": 171
+  },
+  {
+    "name": "AppleScript",
+    "year": 2015,
+    "quarter": 2,
+    "count": 165
+  },
+  {
+    "name": "AppleScript",
+    "year": 2015,
+    "quarter": 3,
+    "count": 129
+  },
+  {
+    "name": "AppleScript",
+    "year": 2015,
+    "quarter": 4,
+    "count": 121
+  },
+  {
+    "name": "AppleScript",
+    "year": 2016,
+    "quarter": 1,
+    "count": 150
+  },
+  {
+    "name": "AppleScript",
+    "year": 2016,
+    "quarter": 2,
+    "count": 156
+  },
+  {
+    "name": "AppleScript",
+    "year": 2016,
+    "quarter": 3,
+    "count": 163
+  },
+  {
+    "name": "AppleScript",
+    "year": 2016,
+    "quarter": 4,
+    "count": 108
+  },
+  {
+    "name": "AppleScript",
+    "year": 2017,
+    "quarter": 1,
+    "count": 159
+  },
+  {
+    "name": "AppleScript",
+    "year": 2017,
+    "quarter": 2,
+    "count": 105
+  },
+  {
+    "name": "AppleScript",
+    "year": 2017,
+    "quarter": 3,
+    "count": 96
+  },
+  {
+    "name": "AppleScript",
+    "year": 2017,
+    "quarter": 4,
+    "count": 98
+  },
+  {
+    "name": "AppleScript",
+    "year": 2018,
+    "quarter": 1,
+    "count": 120
+  },
+  {
+    "name": "AppleScript",
+    "year": 2018,
+    "quarter": 2,
+    "count": 96
+  },
+  {
+    "name": "AppleScript",
+    "year": 2018,
+    "quarter": 3,
+    "count": 81
+  },
+  {
+    "name": "AppleScript",
+    "year": 2018,
+    "quarter": 4,
+    "count": 113
+  },
+  {
+    "name": "AppleScript",
+    "year": 2019,
+    "quarter": 1,
+    "count": 78
+  },
+  {
+    "name": "AppleScript",
+    "year": 2019,
+    "quarter": 2,
+    "count": 91
+  },
+  {
+    "name": "AppleScript",
+    "year": 2019,
+    "quarter": 3,
+    "count": 82
+  },
+  {
+    "name": "AppleScript",
+    "year": 2019,
+    "quarter": 4,
+    "count": 91
+  },
+  {
+    "name": "AppleScript",
+    "year": 2020,
+    "quarter": 1,
+    "count": 121
+  },
+  {
+    "name": "AppleScript",
+    "year": 2020,
+    "quarter": 2,
+    "count": 123
+  },
+  {
+    "name": "AppleScript",
+    "year": 2020,
+    "quarter": 3,
+    "count": 87
+  },
+  {
+    "name": "AppleScript",
+    "year": 2020,
+    "quarter": 4,
+    "count": 53
+  },
+  {
+    "name": "Arc",
+    "year": 2009,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Arc",
+    "year": 2009,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "Arc",
+    "year": 2009,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Arc",
+    "year": 2010,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Arc",
+    "year": 2011,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Arc",
+    "year": 2011,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Arc",
+    "year": 2011,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "Arc",
+    "year": 2011,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Arc",
+    "year": 2012,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "Arc",
+    "year": 2014,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Arc",
+    "year": 2014,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Arc",
+    "year": 2015,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Arc",
+    "year": 2018,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Arc",
+    "year": 2020,
+    "quarter": 4,
+    "count": 1
   },
   {
     "name": "Arduino",
@@ -1404,6 +4278,168 @@
     "count": 754
   },
   {
+    "name": "Augeas",
+    "year": 2012,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "Augeas",
+    "year": 2012,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "Augeas",
+    "year": 2012,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Augeas",
+    "year": 2013,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Augeas",
+    "year": 2013,
+    "quarter": 2,
+    "count": 4
+  },
+  {
+    "name": "Augeas",
+    "year": 2013,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "Augeas",
+    "year": 2013,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "Augeas",
+    "year": 2014,
+    "quarter": 1,
+    "count": 5
+  },
+  {
+    "name": "Augeas",
+    "year": 2014,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "Augeas",
+    "year": 2014,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "Augeas",
+    "year": 2014,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "Augeas",
+    "year": 2015,
+    "quarter": 1,
+    "count": 4
+  },
+  {
+    "name": "Augeas",
+    "year": 2015,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "Augeas",
+    "year": 2015,
+    "quarter": 3,
+    "count": 5
+  },
+  {
+    "name": "Augeas",
+    "year": 2015,
+    "quarter": 4,
+    "count": 9
+  },
+  {
+    "name": "Augeas",
+    "year": 2016,
+    "quarter": 1,
+    "count": 5
+  },
+  {
+    "name": "Augeas",
+    "year": 2016,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "Augeas",
+    "year": 2016,
+    "quarter": 3,
+    "count": 5
+  },
+  {
+    "name": "Augeas",
+    "year": 2016,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Augeas",
+    "year": 2017,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Augeas",
+    "year": 2017,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "Augeas",
+    "year": 2018,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "Augeas",
+    "year": 2018,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "Augeas",
+    "year": 2018,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Augeas",
+    "year": 2019,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "Augeas",
+    "year": 2019,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Augeas",
+    "year": 2020,
+    "quarter": 3,
+    "count": 2
+  },
+  {
     "name": "AutoHotkey",
     "year": 2008,
     "quarter": 4,
@@ -1696,6 +4732,294 @@
     "year": 2020,
     "quarter": 4,
     "count": 36
+  },
+  {
+    "name": "AutoIt",
+    "year": 2008,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "AutoIt",
+    "year": 2009,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "AutoIt",
+    "year": 2009,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "AutoIt",
+    "year": 2009,
+    "quarter": 4,
+    "count": 5
+  },
+  {
+    "name": "AutoIt",
+    "year": 2010,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "AutoIt",
+    "year": 2010,
+    "quarter": 2,
+    "count": 7
+  },
+  {
+    "name": "AutoIt",
+    "year": 2010,
+    "quarter": 3,
+    "count": 6
+  },
+  {
+    "name": "AutoIt",
+    "year": 2010,
+    "quarter": 4,
+    "count": 11
+  },
+  {
+    "name": "AutoIt",
+    "year": 2011,
+    "quarter": 1,
+    "count": 15
+  },
+  {
+    "name": "AutoIt",
+    "year": 2011,
+    "quarter": 2,
+    "count": 26
+  },
+  {
+    "name": "AutoIt",
+    "year": 2011,
+    "quarter": 3,
+    "count": 34
+  },
+  {
+    "name": "AutoIt",
+    "year": 2011,
+    "quarter": 4,
+    "count": 15
+  },
+  {
+    "name": "AutoIt",
+    "year": 2012,
+    "quarter": 1,
+    "count": 29
+  },
+  {
+    "name": "AutoIt",
+    "year": 2012,
+    "quarter": 2,
+    "count": 18
+  },
+  {
+    "name": "AutoIt",
+    "year": 2012,
+    "quarter": 3,
+    "count": 14
+  },
+  {
+    "name": "AutoIt",
+    "year": 2012,
+    "quarter": 4,
+    "count": 26
+  },
+  {
+    "name": "AutoIt",
+    "year": 2013,
+    "quarter": 1,
+    "count": 23
+  },
+  {
+    "name": "AutoIt",
+    "year": 2013,
+    "quarter": 2,
+    "count": 30
+  },
+  {
+    "name": "AutoIt",
+    "year": 2013,
+    "quarter": 3,
+    "count": 43
+  },
+  {
+    "name": "AutoIt",
+    "year": 2013,
+    "quarter": 4,
+    "count": 59
+  },
+  {
+    "name": "AutoIt",
+    "year": 2014,
+    "quarter": 1,
+    "count": 42
+  },
+  {
+    "name": "AutoIt",
+    "year": 2014,
+    "quarter": 2,
+    "count": 55
+  },
+  {
+    "name": "AutoIt",
+    "year": 2014,
+    "quarter": 3,
+    "count": 69
+  },
+  {
+    "name": "AutoIt",
+    "year": 2014,
+    "quarter": 4,
+    "count": 40
+  },
+  {
+    "name": "AutoIt",
+    "year": 2015,
+    "quarter": 1,
+    "count": 33
+  },
+  {
+    "name": "AutoIt",
+    "year": 2015,
+    "quarter": 2,
+    "count": 52
+  },
+  {
+    "name": "AutoIt",
+    "year": 2015,
+    "quarter": 3,
+    "count": 40
+  },
+  {
+    "name": "AutoIt",
+    "year": 2015,
+    "quarter": 4,
+    "count": 47
+  },
+  {
+    "name": "AutoIt",
+    "year": 2016,
+    "quarter": 1,
+    "count": 54
+  },
+  {
+    "name": "AutoIt",
+    "year": 2016,
+    "quarter": 2,
+    "count": 53
+  },
+  {
+    "name": "AutoIt",
+    "year": 2016,
+    "quarter": 3,
+    "count": 44
+  },
+  {
+    "name": "AutoIt",
+    "year": 2016,
+    "quarter": 4,
+    "count": 35
+  },
+  {
+    "name": "AutoIt",
+    "year": 2017,
+    "quarter": 1,
+    "count": 38
+  },
+  {
+    "name": "AutoIt",
+    "year": 2017,
+    "quarter": 2,
+    "count": 35
+  },
+  {
+    "name": "AutoIt",
+    "year": 2017,
+    "quarter": 3,
+    "count": 39
+  },
+  {
+    "name": "AutoIt",
+    "year": 2017,
+    "quarter": 4,
+    "count": 38
+  },
+  {
+    "name": "AutoIt",
+    "year": 2018,
+    "quarter": 1,
+    "count": 42
+  },
+  {
+    "name": "AutoIt",
+    "year": 2018,
+    "quarter": 2,
+    "count": 16
+  },
+  {
+    "name": "AutoIt",
+    "year": 2018,
+    "quarter": 3,
+    "count": 21
+  },
+  {
+    "name": "AutoIt",
+    "year": 2018,
+    "quarter": 4,
+    "count": 23
+  },
+  {
+    "name": "AutoIt",
+    "year": 2019,
+    "quarter": 1,
+    "count": 22
+  },
+  {
+    "name": "AutoIt",
+    "year": 2019,
+    "quarter": 2,
+    "count": 7
+  },
+  {
+    "name": "AutoIt",
+    "year": 2019,
+    "quarter": 3,
+    "count": 14
+  },
+  {
+    "name": "AutoIt",
+    "year": 2019,
+    "quarter": 4,
+    "count": 15
+  },
+  {
+    "name": "AutoIt",
+    "year": 2020,
+    "quarter": 1,
+    "count": 16
+  },
+  {
+    "name": "AutoIt",
+    "year": 2020,
+    "quarter": 2,
+    "count": 18
+  },
+  {
+    "name": "AutoIt",
+    "year": 2020,
+    "quarter": 3,
+    "count": 17
+  },
+  {
+    "name": "AutoIt",
+    "year": 2020,
+    "quarter": 4,
+    "count": 10
   },
   {
     "name": "Awk",

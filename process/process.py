@@ -15,14 +15,18 @@ def combos_iter(*, keys_name: str, so_name: str) -> Iterator[ComboKey]:
     with open_or_stdin(so_name) as so_in:
         # Skip header row then read the rest.
         so_in.readline()
+        already: set[str] = set()
         for line in so_in:
             parts = line.strip().split(",")
             tags = parts[0].split("|")
             year, quarter, count = [int(_) for _ in parts[1:]]
             for tag in tags:
                 name = keys.get(tag)
-                if name is not None:
+                if name is not None and name not in already:
+                    # Don't double count tags for the same row.
+                    already.add(name)
                     yield ComboKey(name=name, year=year, quarter=quarter)
+            already.clear()
 
 
 def main():
@@ -52,7 +56,8 @@ def read_keys(keys_name: str) -> dict[str, str]:
     keys = {}
     with open(keys_name) as keys_in:
         for row in DictReader(keys_in):
-            keys[row["stackoverflow"]] = row["key"]
+            for tag in row["stackoverflow"].split("|"):
+                keys[tag] = row["key"]
     return keys
 
 

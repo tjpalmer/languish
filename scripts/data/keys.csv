@@ -1,26 +1,26 @@
 "key","wikipedia","reddit","stackoverflow"
-"1C Enterprise",,,
+"1C Enterprise","1C:Enterprise","",""
 "ABAP","ABAP","abap","abap"
-"ActionScript",,,
+"ActionScript","ActionScript","actionscript","actionscript|actionscript-2|actionscript-3"
 "Ada","Ada_(programming_language)","ada","ada"
-"Agda",,,
-"AGS Script",,,
-"Alloy",,,
-"AMPL",,,
-"ANTLR",,,
-"ApacheConf",,,
+"Agda","Agda_(programming_language)","agda","agda"
+"AGS Script","Adventure_Game_Studio","adventuregamestudio",""
+"Alloy","Alloy_(specification_language)","","alloy"
+"AMPL","AMPL","","ampl"
+"ANTLR","ANTLR","","antlr|antlr3|antlr4"
+"ApacheConf","Apache_HTTP_Server","apache","apache"
 "Apex","Salesforce","salesforce","apex"
-"API Blueprint",,,
-"APL",,,
-"AppleScript",,,
-"Arc",,,
+"API Blueprint","","","apiblueprint"
+"APL","APL_(programming_language)","apljk","apl"
+"AppleScript","AppleScript","applescript","applescript"
+"Arc","Arc_(programming_language)","","arc-lisp"
 "Arduino","Arduino","arduino","arduino"
-"ASP",,,
+"ASP","Active_Server_Pages|ASP.NET","ASPNET","asp-classic|asp.net|asp.net-core"
 "Assembly","Assembly_language","asm","assembly"
-"ATS",,,
-"Augeas",,,
+"ATS","ATS_(programming_language)","ATS","ats"
+"Augeas","Augeas_(software)","","augeas"
 "AutoHotkey","AutoHotkey","AutoHotkey","autohotkey"
-"AutoIt",,,
+"AutoIt","AutoIt","autoit","autoit"
 "Awk","AWK","awk","awk"
 "Batchfile","Batch_file","Batch","batch-file"
 "Bison",,,
