@@ -129,7 +129,7 @@ const Plot = () => {
     },
     // rule is disabled because global.selectedLangs never changes shallowly
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [global.metric, global.selectedLangs.size]
+    [global.metric, ...global.selectedLangs]
   );
 
   // react to changed in the global state
