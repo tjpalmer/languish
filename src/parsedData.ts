@@ -166,6 +166,13 @@ function chooseColor(name: string) {
   return formatColor({ hue, saturation });
 }
 
+function filterDate<Metrics extends DateMetrics>(items: Metrics[]): Metrics[] {
+  // This hard codes to the quarter when our GitHub data starts.
+  // Stack Overflow data starts earlier, but I don't want to rely on that
+  // independently.
+  return items.filter((item) => item.date >= "2012Q2");
+}
+
 function formatColor(color: Color) {
   return `hsl(${color.hue}, ${color.saturation}%, 70%)`;
 }
@@ -173,13 +180,13 @@ function formatColor(color: Color) {
 let sums = keepFirst(
   keyOn({
     key: "date",
-    items: tableToItems(tables.sums as any) as DateMetrics[],
+    items: filterDate(tableToItems(tables.sums as any) as DateMetrics[]),
   })
 );
 let dates = Object.keys(sums).sort();
 let entries = keyOn({
   key: "name",
-  items: tableToItems(tables.items as any) as Entry[],
+  items: filterDate(tableToItems(tables.items as any) as Entry[]),
 });
 let colors = Object.assign(
   {},
