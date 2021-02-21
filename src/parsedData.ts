@@ -22,6 +22,13 @@ interface Entry extends DateMetrics {
   name: string;
 }
 
+export interface Translation {
+  key: string;
+  reddit: string;
+  stackoverflow: string;
+  wikipedia: string;
+}
+
 type Keyed<Item> = {
   [key: string]: Item;
 };
@@ -203,4 +210,11 @@ putMean(data);
 // would be in the preprocessed data -- and not too expensive to compute.
 fillDates(data);
 
-export { colors, dates, entries, sums };
+let translations = keepFirst(
+  keyOn({
+    key: "key",
+    items: tableToItems(tables.translations as any) as Translation[],
+  })
+);
+
+export { colors, dates, entries, sums, translations };

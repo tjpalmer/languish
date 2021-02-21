@@ -180,7 +180,7 @@ function readCsv(name: string) {
   );
   return {
     keys: rows[0],
-    items: rows.slice(1),
+    rows: rows.slice(1),
   };
 }
 

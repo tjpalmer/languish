@@ -1,5 +1,6 @@
 import { clx } from "helpers";
 import React, { memo } from "react";
+import { translations } from "parsedData";
 
 const customNames: { [key: string]: string } = {
   raku: "perl 6",
@@ -33,6 +34,11 @@ const LangItem: React.FC<LangItemProps> = memo(
     const customName = customNames[lowerCaseName] || lowerCaseName;
     const customTopic =
       customTopics[customName] || customName.replace(/ /g, "-");
+    const translation = translations[name];
+    const soTag = translation
+      ? translations[name].stackoverflow.split("|")[0]
+      // TODO Disable link instead of inventing a tag.
+      : name.toLowerCase();
 
     return (
       <tr
@@ -83,9 +89,9 @@ const LangItem: React.FC<LangItemProps> = memo(
             <a
               className="icolink"
               target="__blank"
-              href={`https://www.google.com/search?q=${encodeURIComponent(
-                lowerCaseName
-              )}%20language`}
+              href={`https://stackoverflow.com/questions/tagged/${encodeURIComponent(
+                soTag
+              )}`}
               title="Stack Overflow"
             >
               <span className="icon-stack-overflow"></span>
