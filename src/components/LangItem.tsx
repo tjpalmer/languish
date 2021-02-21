@@ -80,6 +80,16 @@ const LangItem: React.FC<LangItemProps> = memo(
             >
               <span className="icon-trending-up"></span>
             </a>
+            <a
+              className="icolink"
+              target="__blank"
+              href={`https://www.google.com/search?q=${encodeURIComponent(
+                lowerCaseName
+              )}%20language`}
+              title="Stack Overflow"
+            >
+              <span className="icon-stack-overflow"></span>
+            </a>
           </div>
         </td>
         <td className="change" title="Change in rank vs 1 year earlier">

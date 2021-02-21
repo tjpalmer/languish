@@ -55,6 +55,7 @@ function main() {
   let tabled = {
     items: tablify(items),
     sums: tablify(sums),
+    translations: readCsv("./scripts/data/keys.csv"),
   };
   console.log(JSON.stringify(tabled));
 }
@@ -167,6 +168,20 @@ export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
   results.push(prev);
   console.error(`${equals}/${count}`);
   return results;
+}
+
+function readCsv(name: string) {
+  let content = readFileSync(name).toString();
+  let lines = content.split("\n");
+  // TODO Improve csv parsing, or maybe convert this whole script to python.
+  // TODO Or maybe change keys.csv to json.
+  let rows = lines.map((line) =>
+    line.split(",").map((value) => value.replace(/(^")|("$)/g, ""))
+  );
+  return {
+    keys: rows[0],
+    items: rows.slice(1),
+  };
 }
 
 interface GroupOptions<Item, By extends keyof Item, Out extends keyof Item> {
