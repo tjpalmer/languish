@@ -35,9 +35,9 @@ const LangItem: React.FC<LangItemProps> = memo(
     const customTopic =
       customTopics[customName] || customName.replace(/ /g, "-");
     const translation = translations[name];
+    // TODO Disable link instead of inventing a tag.
     const soTag = translation
       ? translations[name].stackoverflow.split("|")[0]
-      // TODO Disable link instead of inventing a tag.
       : name.toLowerCase();
 
     return (

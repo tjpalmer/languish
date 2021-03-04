@@ -17,6 +17,13 @@ const defaultState = {
   >[],
   selectedLangs: new Set<string>(),
   highlighed: undefined as string | undefined,
+  weight: {
+    issues: 1,
+    pulls: 1,
+    pushes: 1,
+    stars: 1,
+    soQuestions: 1,
+  },
 };
 
 // react context isnt very type-friendly, need to declare noops

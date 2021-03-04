@@ -22,6 +22,24 @@ const Metric = () => {
     log: "Log",
   };
 
+  function renderWeight(key: string) {
+    if (key != "mean") {
+      return (
+        <>
+          <label
+            className="weight"
+            title={`${(items as any)[key]} mean weight`}
+          >
+            <input value={(global.weight as any)[key]} />
+          </label>
+          &nbsp;
+        </>
+      );
+    } else {
+      return <span></span>;
+    }
+  }
+
   return (
     <>
       <div className="yAxis">
@@ -43,15 +61,21 @@ const Metric = () => {
           <h3>Metric</h3>
           <ul className="yMetricsList">
             {objectEntries(items).map(([real, display]) => (
-              <li
-                onClick={() => global.changeMetric(real)}
-                className={clx(
-                  "interactive",
-                  real,
-                  global.metric === real && "active"
-                )}
-              >
-                {display}
+              <li>
+                <span className="metricRow">
+                  {renderWeight(real)}
+                  <span
+                    onClick={() => global.changeMetric(real)}
+                    className={clx(
+                      "interactive",
+                      "metric",
+                      real,
+                      global.metric === real && "active"
+                    )}
+                  >
+                    {display}
+                  </span>
+                </span>
               </li>
             ))}
           </ul>
