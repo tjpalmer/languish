@@ -56,7 +56,7 @@ const Plot = () => {
           xAxes: [
             {
               ticks: {
-                callback: (date) => {
+                callback: (date: string) => {
                   return date.includes("Q1") ? date.replace("Q1", "") : "";
                 },
                 fontColor: "white",
@@ -68,7 +68,7 @@ const Plot = () => {
             {
               // scaleLabel: {display: true, labelString: 'Stars'},
               ticks: {
-                callback: (value) => `${trimTrailingFloat(value)}%`,
+                callback: (value: number) => `${trimTrailingFloat(value)}%`,
                 fontColor: "white",
                 suggestedMin: 0,
               },
@@ -129,7 +129,7 @@ const Plot = () => {
     },
     // rule is disabled because global.selectedLangs never changes shallowly
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [global.metric, global.selectedLangs.size]
+    [global.metric, global.selectedLangs.size, ...global.selectedLangs]
   );
 
   // react to changed in the global state
