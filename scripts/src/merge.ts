@@ -55,6 +55,7 @@ function main() {
   let tabled = {
     items: tablify(items),
     sums: tablify(sums),
+    // TODO Remove redundancies and auto-apply later?
     translations: readCsv("./scripts/data/keys.csv"),
   };
   console.log(JSON.stringify(tabled));
