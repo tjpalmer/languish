@@ -23,7 +23,7 @@ const Metric = () => {
   };
 
   function renderWeight(key: string) {
-    if (key != "mean") {
+    if (key !== "mean") {
       return (
         <>
           <label
