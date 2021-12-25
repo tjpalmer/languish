@@ -20,7 +20,7 @@ const defaultState = {
   weight: {
     issues: 1,
     pulls: 1,
-    pushes: 1,
+    pushes: 0,
     stars: 1,
     soQuestions: 1,
   },

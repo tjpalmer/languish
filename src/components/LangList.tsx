@@ -1,6 +1,6 @@
 import { useGlobal } from "context";
 import { clx } from "helpers";
-import React, { useLayoutEffect, useMemo, useRef } from "react";
+import React, { useMemo, useRef } from "react";
 import LangItem from "./LangItem";
 
 const LangList = () => {

@@ -28,7 +28,7 @@ const Metric = () => {
         <>
           <label
             className="weight"
-            title={`${(items as any)[key]} mean weight`}
+            title={`${(items as any)[key]} weight for mean`}
           >
             <input value={(global.weight as any)[key]} />
           </label>
@@ -65,13 +65,16 @@ const Metric = () => {
                 <span className="metricRow">
                   {renderWeight(real)}
                   <span
-                    onClick={() => global.changeMetric(real)}
                     className={clx(
                       "interactive",
                       "metric",
                       real,
                       global.metric === real && "active"
                     )}
+                    onClick={() => global.changeMetric(real)}
+                    title={`${
+                      real == "pushes" ? "Excluded by default because bots" : ""
+                    }`}
                   >
                     {display}
                   </span>
