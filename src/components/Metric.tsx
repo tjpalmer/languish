@@ -27,15 +27,22 @@ const Metric = () => {
     log: "Log",
   };
 
-  function renderWeight(key: string) {
+  function renderWeight(key: keyof Metrics) {
     if (key !== "mean") {
+      const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        let value = parseFloat(event.target.value);
+        if (isNaN(value)) {
+          value = 0;
+        }
+        global.changeWeight(key, value);
+      };
       return (
         <>
           <label
             className="weight"
             title={`${(items as any)[key]} weight for mean`}
           >
-            <input value={(global.weight as any)[key]} />
+            <input onChange={onChange} value={(global.weight as any)[key]} />
           </label>
           &nbsp;
         </>
