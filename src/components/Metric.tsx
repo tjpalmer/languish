@@ -3,17 +3,22 @@ import { clx, objectEntries } from "helpers";
 import { Metrics } from "parsedData";
 import React from "react";
 
+type MetricItem = {
+  info?: string;
+  label: string;
+};
+
 const Metric = () => {
   const global = useGlobal();
 
   // map of available metrics to human readable strings
-  const items: { [k in keyof Metrics]: string } = {
-    mean: "Mean Score",
-    issues: "GH Issues",
-    pulls: "GH Pull Requests",
-    pushes: "GH Pushes",
-    stars: "GH Stars",
-    soQuestions: "SO Questions",
+  const items: { [k in keyof Metrics]: MetricItem } = {
+    mean: { label: "Mean Score" },
+    issues: { label: "GH Issues" },
+    pulls: { label: "GH Pull Requests" },
+    pushes: { label: "GH Pushes", info: "Excluded by default because bots" },
+    stars: { label: "GH Stars" },
+    soQuestions: { label: "SO Questions" },
   };
 
   // map of available metrics to human readable strings
@@ -51,7 +56,7 @@ const Metric = () => {
           <span className="yLabelArrow"></span>{" "}
           <span className="yLabelText">
             {global.scale === "log" ? "Log " : ""}
-            {items[global.metric]}
+            {items[global.metric].label}
           </span>{" "}
           <span className="yLabelArrow"></span>
         </div>
@@ -72,11 +77,9 @@ const Metric = () => {
                       global.metric === real && "active"
                     )}
                     onClick={() => global.changeMetric(real)}
-                    title={`${
-                      real == "pushes" ? "Excluded by default because bots" : ""
-                    }`}
+                    title={display.info}
                   >
-                    {display}
+                    {display.label}
                   </span>
                 </span>
               </li>

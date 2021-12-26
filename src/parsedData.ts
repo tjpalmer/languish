@@ -126,18 +126,27 @@ function normalize({ entries, sums }: Data) {
 }
 
 function putMean({ entries, sums }: Data) {
-  let keys = Object.keys(Object.values(sums)[0]).filter(
+  const weights = {
+    issues: 1,
+    pulls: 1,
+    pushes: 0,
+    soQuestions: 1,
+    stars: 1,
+  } as Metrics;
+  const keys = Object.keys(Object.values(sums)[0]).filter(
     (key) => key !== "date"
-  ) as (keyof DateMetrics)[];
-  for (let points of Object.values(entries)) {
-    for (let point of points) {
-      let sum = (keys.map((key) => point[key]) as number[]).reduce(
-        (x, y) => x + y,
-        0
-      );
-      point.mean = sum / keys.length;
+  ) as (keyof Metrics)[];
+  const weightTotal = sumOf(Object.values(weights));
+  for (const points of Object.values(entries)) {
+    for (const point of points) {
+      const sum = sumOf(keys.map((key) => weights[key] * point[key]));
+      point.mean = sum / weightTotal;
     }
   }
+}
+
+function sumOf(nums: number[]): number {
+  return nums.reduce((x, y) => x + y, 0);
 }
 
 interface Table<Key extends keyof Item, Item> {
