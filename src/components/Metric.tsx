@@ -30,11 +30,7 @@ const Metric = () => {
   function renderWeight(key: keyof Metrics) {
     if (key !== "mean") {
       const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        let value = parseFloat(event.target.value);
-        if (isNaN(value)) {
-          value = 0;
-        }
-        global.changeWeight(key, value);
+        global.changeWeight(key, event.target.value);
       };
       return (
         <>

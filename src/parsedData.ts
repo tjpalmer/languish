@@ -14,6 +14,10 @@ export interface Metrics extends CoreMetrics {
   mean: number;
 }
 
+export type MetricTexts = {
+  [key in keyof Metrics]: string;
+};
+
 interface DateMetrics extends Metrics {
   date: string;
 }
@@ -123,6 +127,18 @@ function normalize({ entries, sums }: Data) {
       }
     }
   }
+}
+
+export function parseWeights(texts: MetricTexts): Metrics {
+  return (Object.fromEntries(
+    Object.entries(texts).map(([key, value]) => {
+      let parsed = parseFloat(value);
+      if (isNaN(parsed)) {
+        parsed = 0;
+      }
+      return [key, parsed];
+    })
+  ) as unknown) as Metrics;
 }
 
 function putMean({ entries, sums }: Data) {

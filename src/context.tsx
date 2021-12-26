@@ -18,11 +18,11 @@ const defaultState = {
   selectedLangs: new Set<string>(),
   highlighed: undefined as string | undefined,
   weight: {
-    issues: 1,
-    pulls: 1,
-    pushes: 0,
-    stars: 1,
-    soQuestions: 1,
+    issues: "1",
+    pulls: "1",
+    pushes: "0",
+    stars: "1",
+    soQuestions: "1",
   },
 };
 
@@ -35,7 +35,7 @@ const noopFuncs = {
   resetList() {},
   changeMetric(metric: keyof Metrics) {},
   changeScale(scale: Scale) {},
-  changeWeight(key: keyof Metrics, value: number) {},
+  changeWeight(key: keyof Metrics, value: string) {},
   toggleSelected(name: string) {},
   setHighlighted(name?: string) {},
 };
@@ -106,7 +106,7 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
 
   changeScale = (scale: Scale) => this.setState({ scale });
 
-  changeWeight = (key: keyof Metrics, value: number) =>
+  changeWeight = (key: keyof Metrics, value: string) =>
     this.setState({ weight: { ...this.state.weight, [key]: value } });
 
   toggleSelected = (name: string) =>
