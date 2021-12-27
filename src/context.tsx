@@ -2,6 +2,7 @@ import { LangItemProps } from "components/LangItem";
 import { objectEntries } from "helpers";
 import {
   colors,
+  CoreMetricTexts,
   defaultWeights,
   entries,
   Metrics,
@@ -110,10 +111,10 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
   changeScale = (scale: Scale) => this.setState({ scale });
 
   changeWeight = (key: keyof Metrics, value: string) =>
-    this.setState({ weights: { ...this.state.weights, [key]: value } }, () => {
-      putMean({ entries, sums, weights: parseWeights(this.state.weights) });
-      this.constructList();
-    });
+    this.setState(
+      { weights: { ...this.state.weights, [key]: value } },
+      this.processChangedWeights
+    );
 
   toggleSelected = (name: string) =>
     this.setState((prevState) => {
@@ -215,6 +216,13 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
     if (metric) {
       this.changeMetric(metric as keyof Metrics);
     }
+    const weightsText = params.get("weights");
+    if (weightsText) {
+      const weights = Object.fromEntries(
+        new URLSearchParams(weightsText)
+      ) as CoreMetricTexts;
+      this.setState({ weights }, this.processChangedWeights);
+    }
     const scale = params.get("yscale");
     if (scale) {
       this.changeScale(scale as Scale);
@@ -236,5 +244,10 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
     window.location.hash = "";
 
     this.setState({ trimmed: true });
+  }
+
+  private processChangedWeights() {
+    putMean({ entries, sums, weights: parseWeights(this.state.weights) });
+    this.constructList();
   }
 }
