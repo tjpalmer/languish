@@ -54,16 +54,16 @@
 "D","D_(programming_language)","d_language","d"
 "Dart","Dart_(programming_language)","dartlang","dart"
 "DCPU-16 ASM",,,
-"Delphi",,,
+"Delphi","Delphi_(software)","delphi","delphi"
 "Diff",,,
 "DIGITAL Command Language",,,
 "DM","Space_Station_13","BYOND",""
 "Dockerfile","Docker_(software)","docker","docker"
 "DOT",,,
 "DTrace",,,
-"Dylan",,,
+"Dylan","Dylan_(programming_language)","","dylan"
 "Eagle",,,
-"Eiffel",,,
+"Eiffel","Eiffel_(programming_language)","","eiffel"
 "Elixir","Elixir_(programming_language)","elixir","elixir"
 "Elm","Elm_(programming_language)","elm","elm"
 "Emacs Lisp","Emacs_Lisp","emacs","elisp"
@@ -71,14 +71,14 @@
 "Erlang","Erlang_(programming_language)","erlang","erlang"
 "F*","F*_(programming_language)","fstar","fstar"
 "F#","F_Sharp_(programming_language)","fsharp","f#"
-"Factor",,,
+"Factor","Factor_(programming_language)","factor","factor-lang"
 "Fancy",,,
 "FLUX",,,
-"Forth",,,
+"Forth","Forth_(programming_language)","Forth","forth"
 "Fortran","Fortran","fortran","fortran"
 "FreeMarker",,,
 "Frege",,,
-"Game Maker Language",,,
+"Game Maker Language","GameMaker","gamemaker","game-maker"
 "GAP",,,
 "GCC Machine Description",,,
 "GDScript","Godot_(game_engine)","godot","godot"
@@ -86,31 +86,31 @@
 "Gettext Catalog",,,
 "Gherkin","Cucumber_(software)","","gherkin"
 "GLSL","OpenGL_Shading_Language","glsl","glsl"
-"Gnuplot",,,
+"Gnuplot","Gnuplot","gnuplot","gnuplot"
 "Go","Go_(programming_language)","golang","go"
 "Gosu",,,
-"Groff",,,
+"Groff","Groff_(software)","groff","groff"
 "Groovy","Apache_Groovy","groovy","groovy"
-"Hack",,,
-"Handlebars",,,
+"Hack","Hack_(programming_language)","hacklang","hacklang"
+"Handlebars","Mustache_(template_system)","","mustache"
 "Haskell","Haskell_(programming_language)","haskell","haskell"
 "Haxe","Haxe","haxe","haxe"
 "HCL","Terraform_(software)","Terraform","Terraform"
-"HLSL",,,
+"HLSL","High-Level_Shading_Language","","hlsl"
 "HTML","HTML","HTML","html"
 "Hy",,,
 "IDL",,,
-"Idris",,,
+"Idris","Idris_(programming_language)","Idris","idris"
 "IGOR Pro",,,
-"Inform 7",,,
+"Inform 7","Inform","Inform7","inform7"
 "Inno Setup",,,
 "Io",,,
 "Isabelle",,,
-"J",,,
+"J","J_(programming_language)","jlang","j"
 "Java","Java_(programming_language)","java","java"
 "JavaScript","JavaScript","javascript","javascript"
 "JSONiq",,,
-"Jsonnet","","",""
+"Jsonnet","","","jsonnet"
 "Julia","Julia_(programming_language)","Julia","julia"
 "Jupyter Notebook","Project_Jupyter","IPython","jupyter"
 "KiCad",,,
@@ -182,7 +182,7 @@
 "Pike",,,
 "PLpgSQL","pgSQL","PostgreSQL","postgresql"
 "PLSQL","PL/SQL","plsql","plsql"
-"Pony",,,
+"Pony","","ponylang","ponylang"
 "PostScript","PostScript","PostScript","postscript"
 "POV-Ray SDL",,,
 "PowerBuilder",,,
