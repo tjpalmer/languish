@@ -2,7 +2,7 @@
 import tables from "data.json";
 import { murmur3 } from "murmurhash-js";
 
-interface CoreMetrics {
+export interface CoreMetrics {
   issues: number;
   pulls: number;
   pushes: number;

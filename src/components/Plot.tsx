@@ -132,6 +132,7 @@ const Plot = () => {
     [
       global.metric,
       global.selectedLangs.size,
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       ...global.selectedLangs,
       global.weights,
     ]
