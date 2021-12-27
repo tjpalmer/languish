@@ -117,11 +117,11 @@
 "KiCad Layout",,,
 "Kotlin","Kotlin_(programming_language)","Kotlin","kotlin"
 "KRL",,,
-"LabVIEW",,,
+"LabVIEW","LabVIEW","LabVIEW","labview"
 "Lasso",,,
-"Lean",,,
+"Lean","Lean_(proof_assistant)","leanprover","lean"
 "Lex",,,
-"LilyPond",,,
+"LilyPond","LilyPond","lilypond","lilypond"
 "Limbo",,,
 "Liquid",,,
 "LiveScript",,,
@@ -142,18 +142,18 @@
 "MATLAB","MATLAB","matlab","matlab"
 "Max",,,
 "MAXScript",,,
-"Mercury",,,
+"Mercury","Mercury_(programming_language)","mercury","mercury"
 "Meson",,,
 "Mirah",,,
 "MLIR","","",""
 "Modelica",,,
-"Modula-2",,,
+"Modula-2","Modula-2","","modula-2"
 "Monkey",,,
 "MoonScript",,,
 "MQL4",,,
 "MQL5",,,
 "NCL",,,
-"Nemerle",,,
+"Nemerle","Nemerle","nemerle","nemerle"
 "nesC",,,
 "NetLogo",,,
 "Nextflow",,,
