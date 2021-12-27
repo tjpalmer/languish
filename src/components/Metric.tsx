@@ -38,7 +38,7 @@ const Metric = () => {
             className="weight"
             title={`${(items as any)[key]} weight for mean`}
           >
-            <input onChange={onChange} value={(global.weight as any)[key]} />
+            <input onChange={onChange} value={(global.weights as any)[key]} />
           </label>
           &nbsp;
         </>

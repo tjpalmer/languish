@@ -1,6 +1,15 @@
 import { LangItemProps } from "components/LangItem";
 import { objectEntries } from "helpers";
-import { colors, entries, Metrics } from "parsedData";
+import {
+  colors,
+  defaultWeights,
+  entries,
+  Metrics,
+  parseWeights,
+  putMean,
+  stringifyWeights,
+  sums,
+} from "parsedData";
 import React, { useContext } from "react";
 
 export type Scale = "linear" | "log";
@@ -16,14 +25,8 @@ const defaultState = {
     "selected" | "onClick" | "onMouseOver" | "onMouseOut"
   >[],
   selectedLangs: new Set<string>(),
-  highlighed: undefined as string | undefined,
-  weight: {
-    issues: "1",
-    pulls: "1",
-    pushes: "0",
-    stars: "1",
-    soQuestions: "1",
-  },
+  highlighted: undefined as string | undefined,
+  weights: stringifyWeights(defaultWeights),
 };
 
 // react context isnt very type-friendly, need to declare noops
@@ -107,7 +110,10 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
   changeScale = (scale: Scale) => this.setState({ scale });
 
   changeWeight = (key: keyof Metrics, value: string) =>
-    this.setState({ weight: { ...this.state.weight, [key]: value } });
+    this.setState({ weights: { ...this.state.weights, [key]: value } }, () => {
+      putMean({ entries, sums, weights: parseWeights(this.state.weights) });
+      this.constructList();
+    });
 
   toggleSelected = (name: string) =>
     this.setState((prevState) => {
@@ -120,7 +126,7 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
     });
 
   // if nothing is passed, remove highlight
-  setHighlighted = (name?: string) => this.setState({ highlighed: name });
+  setHighlighted = (name?: string) => this.setState({ highlighted: name });
 
   render = () => (
     <GlobalContext.Provider
