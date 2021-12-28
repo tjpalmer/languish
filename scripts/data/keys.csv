@@ -79,16 +79,16 @@
 "FreeMarker","FreeMarker","","freemarker"
 "Frege","","","frege"
 "Game Maker Language","GameMaker","gamemaker","game-maker"
-"GAP",,,
-"GCC Machine Description",,,
+"GAP","GAP_(computer_algebra_system)","","gap-system"
+"GCC Machine Description","","",""
 "GDScript","Godot_(game_engine)","godot","godot"
-"Genshi",,,
-"Gettext Catalog",,,
+"Genshi","Genshi_(templating_language)","","genshi"
+"Gettext Catalog","Gettext","","gettext"
 "Gherkin","Cucumber_(software)","","gherkin"
 "GLSL","OpenGL_Shading_Language","glsl","glsl"
 "Gnuplot","Gnuplot","gnuplot","gnuplot"
 "Go","Go_(programming_language)","golang","go"
-"Gosu",,,
+"Gosu","Gosu_(programming_language)","","gosu"
 "Groff","Groff_(software)","groff","groff"
 "Groovy","Apache_Groovy","groovy","groovy"
 "Hack","Hack_(programming_language)","hacklang","hacklang"
@@ -98,25 +98,25 @@
 "HCL","Terraform_(software)","Terraform","Terraform"
 "HLSL","High-Level_Shading_Language","","hlsl"
 "HTML","HTML","HTML","html"
-"Hy",,,
-"IDL",,,
+"Hy","Hy","hylang","hy"
+"IDL","IDL_(programming_language)","IDLhelp","idl-programming-language"
 "Idris","Idris_(programming_language)","Idris","idris"
-"IGOR Pro",,,
+"IGOR Pro","IGOR_Pro","IgorPro","igor"
 "Inform 7","Inform","Inform7","inform7"
-"Inno Setup",,,
-"Io",,,
-"Isabelle",,,
+"Inno Setup","Inno_Setup","","inno-setup"
+"Io","Io_(programming_language)","iolanguage","iolanguage"
+"Isabelle","Isabelle_(proof_assistant)","isabelle","isabelle"
 "J","J_(programming_language)","jlang","j"
 "Java","Java_(programming_language)","java","java"
 "JavaScript","JavaScript","javascript","javascript"
-"JSONiq",,,
+"JSONiq","JSONiq","","jsoniq"
 "Jsonnet","","","jsonnet"
 "Julia","Julia_(programming_language)","Julia","julia"
 "Jupyter Notebook","Project_Jupyter","IPython","jupyter"
-"KiCad",,,
-"KiCad Layout",,,
+"KiCad","KiCad","KiCad","kicad"
+"KiCad Layout","KiCad","KiCad","kicad"
 "Kotlin","Kotlin_(programming_language)","Kotlin","kotlin"
-"KRL",,,
+"KRL","KUKA_Robot_Language","","kuka-krl"
 "LabVIEW","LabVIEW","LabVIEW","labview"
 "Lasso",,,
 "Lean","Lean_(proof_assistant)","leanprover","lean"
