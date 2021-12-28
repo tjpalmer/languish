@@ -23,61 +23,61 @@
 "AutoIt","AutoIt","autoit","autoit"
 "Awk","AWK","awk","awk"
 "Batchfile","Batch_file","Batch","batch-file"
-"Bison",,,
+"Bison","GNU_Bison","","bison"
 "BitBake","BitBake","bitbake","bitbake"
-"BlitzBasic",,,
-"Bluespec",,,
-"Brainfuck",,,
-"Brightscript",,,
-"Bro",,,
+"BlitzBasic","Blitz_BASIC","",""
+"Bluespec","Bluespec","","bluespec"
+"Brainfuck","Brainfuck","brainfuck","brainfuck"
+"Brightscript","","RokuDev","brightscript"
+"Bro","Zeek","","bro|zeek"
 "C","C_(programming_language)","C_Programming","c"
 "C#","C_Sharp_(programming_language)","csharp","c#"
 "C++","C++","cpp","c++"
-"CartoCSS",,,
-"Ceylon",,,
-"Chapel",,,
-"Clean",,,
-"Click",,,
+"CartoCSS","CartoDB","","cartocss"
+"Ceylon","Ceylon_(programming_language)","ceylon","ceylon"
+"Chapel","Chapel_(programming_language)","chapel","chapel"
+"Clean","Clean_(programming_language)","","clean-language"
+"Click","","",""
 "Clojure","Clojure","Clojure","clojure"
 "CMake","CMake","cmake","cmake"
-"COBOL",,,
+"COBOL","COBOL","cobol","cobol"
 "CoffeeScript","CoffeeScript","coffeescript","coffeescript"
 "ColdFusion","Adobe_ColdFusion","coldfusion","coldfusion"
 "Common Lisp","Common_Lisp","Common_Lisp","common-lisp"
-"Common Workflow Language",,,
-"Component Pascal",,,
+"Common Workflow Language","Common_Workflow_Language","",""
+"Component Pascal","Component_Pascal","","component-pascal"
 "Coq","Coq","Coq","coq"
 "Crystal","Crystal_(programming_language)","crystal_programming","crystal-lang"
 "CSS","Cascading_Style_Sheets","CSS","css"
-"Cucumber",,,
-"Cuda",,,
+"Cucumber","Cucumber_(software)","","cucumber|gherkin"
+"Cuda","CUDA","CUDA","cuda"
 "D","D_(programming_language)","d_language","d"
 "Dart","Dart_(programming_language)","dartlang","dart"
-"DCPU-16 ASM",,,
+"DCPU-16 ASM","","dcpu16","dcpu-16"
 "Delphi","Delphi_(software)","delphi","delphi"
-"Diff",,,
-"DIGITAL Command Language",,,
+"Diff","","",""
+"DIGITAL Command Language","DIGITAL_Command_Language","","dcl"
 "DM","Space_Station_13","BYOND",""
 "Dockerfile","Docker_(software)","docker","docker"
-"DOT",,,
-"DTrace",,,
+"DOT","DOT_(graph_description_language)|Graphviz","graphviz","graphviz"
+"DTrace","DTrace","dtrace","dtrace"
 "Dylan","Dylan_(programming_language)","","dylan"
-"Eagle",,,
+"Eagle","EAGLE_(program)","",""
 "Eiffel","Eiffel_(programming_language)","","eiffel"
 "Elixir","Elixir_(programming_language)","elixir","elixir"
 "Elm","Elm_(programming_language)","elm","elm"
 "Emacs Lisp","Emacs_Lisp","emacs","elisp"
-"EmberScript",,,
+"EmberScript","","",""
 "Erlang","Erlang_(programming_language)","erlang","erlang"
 "F*","F*_(programming_language)","fstar","fstar"
 "F#","F_Sharp_(programming_language)","fsharp","f#"
 "Factor","Factor_(programming_language)","factor","factor-lang"
-"Fancy",,,
-"FLUX",,,
+"Fancy","","",""
+"FLUX","","","flux-influxdb"
 "Forth","Forth_(programming_language)","Forth","forth"
 "Fortran","Fortran","fortran","fortran"
-"FreeMarker",,,
-"Frege",,,
+"FreeMarker","FreeMarker","","freemarker"
+"Frege","","","frege"
 "Game Maker Language","GameMaker","gamemaker","game-maker"
 "GAP",,,
 "GCC Machine Description",,,
