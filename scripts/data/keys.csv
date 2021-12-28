@@ -172,21 +172,21 @@
 "OpenEdge ABL","OpenEdge_Advanced_Business_Language","OpenEdge","openedge|progress-4gl"
 "OpenSCAD","OpenSCAD","openscad","openscad"
 "Oz","Oz_(programming_language)","","mozart|oz"
-"P4",,,
-"Pan",,,
-"Papyrus",,,
+"P4","P4_(programming_language)","","p4-lang"
+"Pan","Pan_(programming_language)","",""
+"Papyrus","","skyrimmods",""
 "Pascal","Pascal_(programming_language)","pascal","pascal"
-"PAWN",,,
+"PAWN","","","pawn"
 "Perl","Perl","perl","perl"
 "PHP","PHP","PHP","php"
-"PicoLisp",,,
-"PigLatin",,,
-"Pike",,,
+"PicoLisp","PicoLisp","","picolisp"
+"PigLatin","Apache_Pig","","apache-pig"
+"Pike","","","pike"
 "PLpgSQL","pgSQL","PostgreSQL","postgresql"
 "PLSQL","PL/SQL","plsql","plsql"
 "Pony","","ponylang","ponylang"
 "PostScript","PostScript","PostScript","postscript"
-"POV-Ray SDL",,,
+"POV-Ray SDL","POV-Ray","","povray"
 "PowerBuilder",,,
 "PowerShell","PowerShell","PowerShell","powershell"
 "Processing",,,
