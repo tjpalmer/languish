@@ -236,19 +236,19 @@
 "SourcePawn","","",""
 "SQF","","","sqf"
 "SQL","SQL","SQL","sql"
-"SQLPL",,,
-"Squirrel",,,
-"Stan",,,
+"SQLPL","SQL_PL","DB2","db2"
+"Squirrel","Squirrel_(programming_language)","","squirrel"
+"Stan","Stan_(software)","","stan"
 "Standard ML","Standard_ML","sml","sml"
 "Starlark","Bazel_(software)","bazel","bazel"
-"Stata",,,
-"SuperCollider",,,
+"Stata","Stata","stata","stata"
+"SuperCollider","SuperCollider","supercollider","supercollider"
 "Swift","Swift_(programming_language)","swift","swift"
 "SWIG","SWIG","","swig"
 "SystemVerilog","SystemVerilog","systemverilog","system-verilog"
 "Tcl","Tcl","Tcl","tcl"
 "TeX","LaTeX","LaTeX","latex"
-"Thrift",,,
+"Thrift","Apache_Thrift","","thrift|thrift-protocol"
 "TSQL","Transact-SQL","SQLServer","tsql"
 "TypeScript","TypeScript","typescript","typescript"
 "Uno",,,
