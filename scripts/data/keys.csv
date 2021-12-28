@@ -100,6 +100,7 @@
 "HTML","HTML","HTML","html"
 "Hy","Hy","hylang","hy"
 "IDL","IDL_(programming_language)","IDLhelp","idl-programming-language"
+"Interface Description Language","Interface_description_language","","idl"
 "Idris","Idris_(programming_language)","Idris","idris"
 "IGOR Pro","IGOR_Pro","IgorPro","igor"
 "Inform 7","Inform","Inform7","inform7"
@@ -118,58 +119,59 @@
 "Kotlin","Kotlin_(programming_language)","Kotlin","kotlin"
 "KRL","KUKA_Robot_Language","","kuka-krl"
 "LabVIEW","LabVIEW","LabVIEW","labview"
-"Lasso",,,
+"Lasso","Lasso_(programming_language)","",""
 "Lean","Lean_(proof_assistant)","leanprover","lean"
-"Lex",,,
+"Lex","Lex_(software)","","lex"
 "LilyPond","LilyPond","lilypond","lilypond"
-"Limbo",,,
-"Liquid",,,
-"LiveScript",,,
-"LLVM",,,
-"Logos",,,
-"Logtalk",,,
+"Limbo","Limbo_(programming_language)","",""
+"Liquid","","","liquid"
+"LiveScript","LiveScript","LiveScript","livescript"
+"LLVM","LLVM","LLVM","llvm|llvm-ir"
+"Logos","","",""
+"Logo Language","Logo_(programming_language)","logolang","logo-lang"
+"Logtalk","Logtalk","","logtalk"
 "LookML","Looker_(company)","Looker","looker"
-"LoomScript",,,
-"LSL",,,
+"LoomScript","","",""
+"LSL","","lsl","linden-scripting-language"
 "Lua","Lua_(programming_language)","lua","lua"
-"M",,,
+"M","MUMPS","MLang","mumps"
 "M4","m4_(computer_language)","","m4"
 "Makefile","Make_(software)","","makefile"
-"Mako",,,
+"Mako","","","mako"
 "Markdown","Markdown","Markdown","markdown"
-"Mask",,,
+"Mask","","",""
 "Mathematica","Wolfram_Mathematica","Mathematica","wolfram-mathematica"
 "MATLAB","MATLAB","matlab","matlab"
-"Max",,,
-"MAXScript",,,
+"Max","Max_(software)","MaxMSP","max-msp-jitter"
+"MAXScript","","Maxscript","maxscript"
 "Mercury","Mercury_(programming_language)","mercury","mercury"
-"Meson",,,
-"Mirah",,,
+"Meson","Meson_(software)","meson","meson-build"
+"Mirah","Mirah_(programming_language)","mirah","mirah"
 "MLIR","","",""
-"Modelica",,,
+"Modelica","Modelica","Modelica","modelica"
 "Modula-2","Modula-2","","modula-2"
-"Monkey",,,
-"MoonScript",,,
-"MQL4",,,
-"MQL5",,,
-"NCL",,,
+"Monkey","","",""
+"MoonScript","","moonscript","moonscript"
+"MQL4","","","mql4"
+"MQL5","","","mql5"
+"NCL","","","ncl"
 "Nemerle","Nemerle","nemerle","nemerle"
-"nesC",,,
-"NetLogo",,,
-"Nextflow",,,
-"Nginx",,,
+"nesC","NesC","","nesc"
+"NetLogo","NetLogo","NetLogo","netlogo"
+"Nextflow","","","nextflow"
+"Nginx","Nginx","nginx","nginx"
 "Nim","Nim_(programming_language)","nim","nim-lang"
 "Nix","Nix_package_manager","NixOS","nix"
-"NSIS",,,
+"NSIS","Nullsoft_Scriptable_Install_System","NSIS","nsis"
 "Objective-C","Objective-C","ObjectiveC","objective-c"
 "Objective-C++","","","objective-c++"
-"Objective-J",,,
+"Objective-J","Objective-J","","objective-j"
 "OCaml","OCaml","ocaml","ocaml"
-"ooc",,,
-"Open Policy Agent",,,
-"OpenEdge ABL",,,
+"ooc","","",""
+"Open Policy Agent","","OpenPolicyAgent","open-policy-agent"
+"OpenEdge ABL","OpenEdge_Advanced_Business_Language","OpenEdge","openedge|progress-4gl"
 "OpenSCAD","OpenSCAD","openscad","openscad"
-"Oz",,,
+"Oz","Oz_(programming_language)","","mozart|oz"
 "P4",,,
 "Pan",,,
 "Papyrus",,,
