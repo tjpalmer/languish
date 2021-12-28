@@ -28188,6 +28188,624 @@
     "count": 3
   },
   {
+    "name": "Rebol",
+    "year": 2008,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "Rebol",
+    "year": 2009,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Rebol",
+    "year": 2009,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "Rebol",
+    "year": 2009,
+    "quarter": 3,
+    "count": 8
+  },
+  {
+    "name": "Rebol",
+    "year": 2009,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "Rebol",
+    "year": 2010,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "Rebol",
+    "year": 2010,
+    "quarter": 2,
+    "count": 5
+  },
+  {
+    "name": "Rebol",
+    "year": 2010,
+    "quarter": 3,
+    "count": 10
+  },
+  {
+    "name": "Rebol",
+    "year": 2010,
+    "quarter": 4,
+    "count": 11
+  },
+  {
+    "name": "Rebol",
+    "year": 2011,
+    "quarter": 1,
+    "count": 6
+  },
+  {
+    "name": "Rebol",
+    "year": 2011,
+    "quarter": 2,
+    "count": 9
+  },
+  {
+    "name": "Rebol",
+    "year": 2011,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "Rebol",
+    "year": 2012,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "Rebol",
+    "year": 2012,
+    "quarter": 4,
+    "count": 10
+  },
+  {
+    "name": "Rebol",
+    "year": 2013,
+    "quarter": 1,
+    "count": 34
+  },
+  {
+    "name": "Rebol",
+    "year": 2013,
+    "quarter": 2,
+    "count": 10
+  },
+  {
+    "name": "Rebol",
+    "year": 2013,
+    "quarter": 3,
+    "count": 31
+  },
+  {
+    "name": "Rebol",
+    "year": 2013,
+    "quarter": 4,
+    "count": 12
+  },
+  {
+    "name": "Rebol",
+    "year": 2014,
+    "quarter": 1,
+    "count": 27
+  },
+  {
+    "name": "Rebol",
+    "year": 2014,
+    "quarter": 2,
+    "count": 20
+  },
+  {
+    "name": "Rebol",
+    "year": 2014,
+    "quarter": 3,
+    "count": 16
+  },
+  {
+    "name": "Rebol",
+    "year": 2014,
+    "quarter": 4,
+    "count": 13
+  },
+  {
+    "name": "Rebol",
+    "year": 2015,
+    "quarter": 1,
+    "count": 12
+  },
+  {
+    "name": "Rebol",
+    "year": 2015,
+    "quarter": 2,
+    "count": 11
+  },
+  {
+    "name": "Rebol",
+    "year": 2015,
+    "quarter": 3,
+    "count": 15
+  },
+  {
+    "name": "Rebol",
+    "year": 2015,
+    "quarter": 4,
+    "count": 6
+  },
+  {
+    "name": "Rebol",
+    "year": 2016,
+    "quarter": 1,
+    "count": 7
+  },
+  {
+    "name": "Rebol",
+    "year": 2016,
+    "quarter": 2,
+    "count": 4
+  },
+  {
+    "name": "Rebol",
+    "year": 2016,
+    "quarter": 3,
+    "count": 6
+  },
+  {
+    "name": "Rebol",
+    "year": 2016,
+    "quarter": 4,
+    "count": 10
+  },
+  {
+    "name": "Rebol",
+    "year": 2017,
+    "quarter": 1,
+    "count": 12
+  },
+  {
+    "name": "Rebol",
+    "year": 2017,
+    "quarter": 2,
+    "count": 4
+  },
+  {
+    "name": "Rebol",
+    "year": 2017,
+    "quarter": 3,
+    "count": 29
+  },
+  {
+    "name": "Rebol",
+    "year": 2017,
+    "quarter": 4,
+    "count": 22
+  },
+  {
+    "name": "Rebol",
+    "year": 2018,
+    "quarter": 1,
+    "count": 4
+  },
+  {
+    "name": "Rebol",
+    "year": 2018,
+    "quarter": 2,
+    "count": 4
+  },
+  {
+    "name": "Rebol",
+    "year": 2018,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "Rebol",
+    "year": 2019,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "Rebol",
+    "year": 2019,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Rebol",
+    "year": 2019,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "Rebol",
+    "year": 2019,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "Rebol",
+    "year": 2020,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Rebol",
+    "year": 2020,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "Rebol",
+    "year": 2020,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Rebol",
+    "year": 2021,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "Rebol",
+    "year": 2021,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "Red",
+    "year": 2010,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Red",
+    "year": 2013,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Red",
+    "year": 2013,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "Red",
+    "year": 2013,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "Red",
+    "year": 2013,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "Red",
+    "year": 2014,
+    "quarter": 1,
+    "count": 5
+  },
+  {
+    "name": "Red",
+    "year": 2014,
+    "quarter": 2,
+    "count": 4
+  },
+  {
+    "name": "Red",
+    "year": 2014,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "Red",
+    "year": 2015,
+    "quarter": 1,
+    "count": 5
+  },
+  {
+    "name": "Red",
+    "year": 2015,
+    "quarter": 2,
+    "count": 7
+  },
+  {
+    "name": "Red",
+    "year": 2015,
+    "quarter": 3,
+    "count": 5
+  },
+  {
+    "name": "Red",
+    "year": 2015,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Red",
+    "year": 2016,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "Red",
+    "year": 2016,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "Red",
+    "year": 2016,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "Red",
+    "year": 2016,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "Red",
+    "year": 2017,
+    "quarter": 1,
+    "count": 7
+  },
+  {
+    "name": "Red",
+    "year": 2017,
+    "quarter": 2,
+    "count": 4
+  },
+  {
+    "name": "Red",
+    "year": 2017,
+    "quarter": 3,
+    "count": 26
+  },
+  {
+    "name": "Red",
+    "year": 2017,
+    "quarter": 4,
+    "count": 23
+  },
+  {
+    "name": "Red",
+    "year": 2018,
+    "quarter": 1,
+    "count": 5
+  },
+  {
+    "name": "Red",
+    "year": 2018,
+    "quarter": 2,
+    "count": 4
+  },
+  {
+    "name": "Red",
+    "year": 2018,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "Red",
+    "year": 2019,
+    "quarter": 1,
+    "count": 5
+  },
+  {
+    "name": "Red",
+    "year": 2019,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "Red",
+    "year": 2019,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "Red",
+    "year": 2019,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "Red",
+    "year": 2020,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Red",
+    "year": 2020,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "Red",
+    "year": 2020,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "Red",
+    "year": 2021,
+    "quarter": 1,
+    "count": 4
+  },
+  {
+    "name": "Red",
+    "year": 2021,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2013,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2014,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2014,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2015,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2015,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2015,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2016,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2016,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2016,
+    "quarter": 4,
+    "count": 5
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2017,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2017,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2018,
+    "quarter": 1,
+    "count": 4
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2018,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2018,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2018,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2019,
+    "quarter": 1,
+    "count": 4
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2019,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2019,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2019,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2020,
+    "quarter": 1,
+    "count": 4
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2020,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2020,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2020,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2021,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Ren'Py",
+    "year": 2021,
+    "quarter": 2,
+    "count": 5
+  },
+  {
     "name": "Rich Text Format",
     "year": 2008,
     "quarter": 3,
@@ -29512,6 +30130,324 @@
     "year": 2021,
     "quarter": 3,
     "count": 621
+  },
+  {
+    "name": "SAS",
+    "year": 2008,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "SAS",
+    "year": 2008,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "SAS",
+    "year": 2009,
+    "quarter": 1,
+    "count": 20
+  },
+  {
+    "name": "SAS",
+    "year": 2009,
+    "quarter": 2,
+    "count": 24
+  },
+  {
+    "name": "SAS",
+    "year": 2009,
+    "quarter": 3,
+    "count": 23
+  },
+  {
+    "name": "SAS",
+    "year": 2009,
+    "quarter": 4,
+    "count": 21
+  },
+  {
+    "name": "SAS",
+    "year": 2010,
+    "quarter": 1,
+    "count": 18
+  },
+  {
+    "name": "SAS",
+    "year": 2010,
+    "quarter": 2,
+    "count": 11
+  },
+  {
+    "name": "SAS",
+    "year": 2010,
+    "quarter": 3,
+    "count": 19
+  },
+  {
+    "name": "SAS",
+    "year": 2010,
+    "quarter": 4,
+    "count": 11
+  },
+  {
+    "name": "SAS",
+    "year": 2011,
+    "quarter": 1,
+    "count": 40
+  },
+  {
+    "name": "SAS",
+    "year": 2011,
+    "quarter": 2,
+    "count": 33
+  },
+  {
+    "name": "SAS",
+    "year": 2011,
+    "quarter": 3,
+    "count": 27
+  },
+  {
+    "name": "SAS",
+    "year": 2011,
+    "quarter": 4,
+    "count": 36
+  },
+  {
+    "name": "SAS",
+    "year": 2012,
+    "quarter": 1,
+    "count": 49
+  },
+  {
+    "name": "SAS",
+    "year": 2012,
+    "quarter": 2,
+    "count": 56
+  },
+  {
+    "name": "SAS",
+    "year": 2012,
+    "quarter": 3,
+    "count": 72
+  },
+  {
+    "name": "SAS",
+    "year": 2012,
+    "quarter": 4,
+    "count": 51
+  },
+  {
+    "name": "SAS",
+    "year": 2013,
+    "quarter": 1,
+    "count": 79
+  },
+  {
+    "name": "SAS",
+    "year": 2013,
+    "quarter": 2,
+    "count": 93
+  },
+  {
+    "name": "SAS",
+    "year": 2013,
+    "quarter": 3,
+    "count": 139
+  },
+  {
+    "name": "SAS",
+    "year": 2013,
+    "quarter": 4,
+    "count": 154
+  },
+  {
+    "name": "SAS",
+    "year": 2014,
+    "quarter": 1,
+    "count": 177
+  },
+  {
+    "name": "SAS",
+    "year": 2014,
+    "quarter": 2,
+    "count": 187
+  },
+  {
+    "name": "SAS",
+    "year": 2014,
+    "quarter": 3,
+    "count": 186
+  },
+  {
+    "name": "SAS",
+    "year": 2014,
+    "quarter": 4,
+    "count": 204
+  },
+  {
+    "name": "SAS",
+    "year": 2015,
+    "quarter": 1,
+    "count": 187
+  },
+  {
+    "name": "SAS",
+    "year": 2015,
+    "quarter": 2,
+    "count": 218
+  },
+  {
+    "name": "SAS",
+    "year": 2015,
+    "quarter": 3,
+    "count": 217
+  },
+  {
+    "name": "SAS",
+    "year": 2015,
+    "quarter": 4,
+    "count": 226
+  },
+  {
+    "name": "SAS",
+    "year": 2016,
+    "quarter": 1,
+    "count": 239
+  },
+  {
+    "name": "SAS",
+    "year": 2016,
+    "quarter": 2,
+    "count": 253
+  },
+  {
+    "name": "SAS",
+    "year": 2016,
+    "quarter": 3,
+    "count": 243
+  },
+  {
+    "name": "SAS",
+    "year": 2016,
+    "quarter": 4,
+    "count": 252
+  },
+  {
+    "name": "SAS",
+    "year": 2017,
+    "quarter": 1,
+    "count": 222
+  },
+  {
+    "name": "SAS",
+    "year": 2017,
+    "quarter": 2,
+    "count": 242
+  },
+  {
+    "name": "SAS",
+    "year": 2017,
+    "quarter": 3,
+    "count": 210
+  },
+  {
+    "name": "SAS",
+    "year": 2017,
+    "quarter": 4,
+    "count": 188
+  },
+  {
+    "name": "SAS",
+    "year": 2018,
+    "quarter": 1,
+    "count": 220
+  },
+  {
+    "name": "SAS",
+    "year": 2018,
+    "quarter": 2,
+    "count": 212
+  },
+  {
+    "name": "SAS",
+    "year": 2018,
+    "quarter": 3,
+    "count": 158
+  },
+  {
+    "name": "SAS",
+    "year": 2018,
+    "quarter": 4,
+    "count": 208
+  },
+  {
+    "name": "SAS",
+    "year": 2019,
+    "quarter": 1,
+    "count": 161
+  },
+  {
+    "name": "SAS",
+    "year": 2019,
+    "quarter": 2,
+    "count": 179
+  },
+  {
+    "name": "SAS",
+    "year": 2019,
+    "quarter": 3,
+    "count": 146
+  },
+  {
+    "name": "SAS",
+    "year": 2019,
+    "quarter": 4,
+    "count": 167
+  },
+  {
+    "name": "SAS",
+    "year": 2020,
+    "quarter": 1,
+    "count": 172
+  },
+  {
+    "name": "SAS",
+    "year": 2020,
+    "quarter": 2,
+    "count": 203
+  },
+  {
+    "name": "SAS",
+    "year": 2020,
+    "quarter": 3,
+    "count": 163
+  },
+  {
+    "name": "SAS",
+    "year": 2020,
+    "quarter": 4,
+    "count": 175
+  },
+  {
+    "name": "SAS",
+    "year": 2021,
+    "quarter": 1,
+    "count": 153
+  },
+  {
+    "name": "SAS",
+    "year": 2021,
+    "quarter": 2,
+    "count": 152
+  },
+  {
+    "name": "SAS",
+    "year": 2021,
+    "quarter": 3,
+    "count": 105
   },
   {
     "name": "SQL",
@@ -31956,6 +32892,324 @@
     "count": 18
   },
   {
+    "name": "Standard ML",
+    "year": 2008,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "Standard ML",
+    "year": 2008,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "Standard ML",
+    "year": 2009,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "Standard ML",
+    "year": 2009,
+    "quarter": 2,
+    "count": 8
+  },
+  {
+    "name": "Standard ML",
+    "year": 2009,
+    "quarter": 3,
+    "count": 7
+  },
+  {
+    "name": "Standard ML",
+    "year": 2009,
+    "quarter": 4,
+    "count": 6
+  },
+  {
+    "name": "Standard ML",
+    "year": 2010,
+    "quarter": 1,
+    "count": 10
+  },
+  {
+    "name": "Standard ML",
+    "year": 2010,
+    "quarter": 2,
+    "count": 4
+  },
+  {
+    "name": "Standard ML",
+    "year": 2010,
+    "quarter": 3,
+    "count": 13
+  },
+  {
+    "name": "Standard ML",
+    "year": 2010,
+    "quarter": 4,
+    "count": 18
+  },
+  {
+    "name": "Standard ML",
+    "year": 2011,
+    "quarter": 1,
+    "count": 19
+  },
+  {
+    "name": "Standard ML",
+    "year": 2011,
+    "quarter": 2,
+    "count": 23
+  },
+  {
+    "name": "Standard ML",
+    "year": 2011,
+    "quarter": 3,
+    "count": 9
+  },
+  {
+    "name": "Standard ML",
+    "year": 2011,
+    "quarter": 4,
+    "count": 23
+  },
+  {
+    "name": "Standard ML",
+    "year": 2012,
+    "quarter": 1,
+    "count": 35
+  },
+  {
+    "name": "Standard ML",
+    "year": 2012,
+    "quarter": 2,
+    "count": 12
+  },
+  {
+    "name": "Standard ML",
+    "year": 2012,
+    "quarter": 3,
+    "count": 15
+  },
+  {
+    "name": "Standard ML",
+    "year": 2012,
+    "quarter": 4,
+    "count": 32
+  },
+  {
+    "name": "Standard ML",
+    "year": 2013,
+    "quarter": 1,
+    "count": 81
+  },
+  {
+    "name": "Standard ML",
+    "year": 2013,
+    "quarter": 2,
+    "count": 22
+  },
+  {
+    "name": "Standard ML",
+    "year": 2013,
+    "quarter": 3,
+    "count": 28
+  },
+  {
+    "name": "Standard ML",
+    "year": 2013,
+    "quarter": 4,
+    "count": 61
+  },
+  {
+    "name": "Standard ML",
+    "year": 2014,
+    "quarter": 1,
+    "count": 39
+  },
+  {
+    "name": "Standard ML",
+    "year": 2014,
+    "quarter": 2,
+    "count": 25
+  },
+  {
+    "name": "Standard ML",
+    "year": 2014,
+    "quarter": 3,
+    "count": 21
+  },
+  {
+    "name": "Standard ML",
+    "year": 2014,
+    "quarter": 4,
+    "count": 44
+  },
+  {
+    "name": "Standard ML",
+    "year": 2015,
+    "quarter": 1,
+    "count": 37
+  },
+  {
+    "name": "Standard ML",
+    "year": 2015,
+    "quarter": 2,
+    "count": 41
+  },
+  {
+    "name": "Standard ML",
+    "year": 2015,
+    "quarter": 3,
+    "count": 30
+  },
+  {
+    "name": "Standard ML",
+    "year": 2015,
+    "quarter": 4,
+    "count": 43
+  },
+  {
+    "name": "Standard ML",
+    "year": 2016,
+    "quarter": 1,
+    "count": 34
+  },
+  {
+    "name": "Standard ML",
+    "year": 2016,
+    "quarter": 2,
+    "count": 34
+  },
+  {
+    "name": "Standard ML",
+    "year": 2016,
+    "quarter": 3,
+    "count": 22
+  },
+  {
+    "name": "Standard ML",
+    "year": 2016,
+    "quarter": 4,
+    "count": 32
+  },
+  {
+    "name": "Standard ML",
+    "year": 2017,
+    "quarter": 1,
+    "count": 34
+  },
+  {
+    "name": "Standard ML",
+    "year": 2017,
+    "quarter": 2,
+    "count": 38
+  },
+  {
+    "name": "Standard ML",
+    "year": 2017,
+    "quarter": 3,
+    "count": 12
+  },
+  {
+    "name": "Standard ML",
+    "year": 2017,
+    "quarter": 4,
+    "count": 31
+  },
+  {
+    "name": "Standard ML",
+    "year": 2018,
+    "quarter": 1,
+    "count": 35
+  },
+  {
+    "name": "Standard ML",
+    "year": 2018,
+    "quarter": 2,
+    "count": 23
+  },
+  {
+    "name": "Standard ML",
+    "year": 2018,
+    "quarter": 3,
+    "count": 21
+  },
+  {
+    "name": "Standard ML",
+    "year": 2018,
+    "quarter": 4,
+    "count": 30
+  },
+  {
+    "name": "Standard ML",
+    "year": 2019,
+    "quarter": 1,
+    "count": 19
+  },
+  {
+    "name": "Standard ML",
+    "year": 2019,
+    "quarter": 2,
+    "count": 11
+  },
+  {
+    "name": "Standard ML",
+    "year": 2019,
+    "quarter": 3,
+    "count": 11
+  },
+  {
+    "name": "Standard ML",
+    "year": 2019,
+    "quarter": 4,
+    "count": 17
+  },
+  {
+    "name": "Standard ML",
+    "year": 2020,
+    "quarter": 1,
+    "count": 25
+  },
+  {
+    "name": "Standard ML",
+    "year": 2020,
+    "quarter": 2,
+    "count": 34
+  },
+  {
+    "name": "Standard ML",
+    "year": 2020,
+    "quarter": 3,
+    "count": 17
+  },
+  {
+    "name": "Standard ML",
+    "year": 2020,
+    "quarter": 4,
+    "count": 22
+  },
+  {
+    "name": "Standard ML",
+    "year": 2021,
+    "quarter": 1,
+    "count": 22
+  },
+  {
+    "name": "Standard ML",
+    "year": 2021,
+    "quarter": 2,
+    "count": 12
+  },
+  {
+    "name": "Standard ML",
+    "year": 2021,
+    "quarter": 3,
+    "count": 8
+  },
+  {
     "name": "Starlark",
     "year": 2015,
     "quarter": 1,
@@ -33894,6 +35148,210 @@
     "count": 3947
   },
   {
+    "name": "UnrealScript",
+    "year": 2009,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2009,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2010,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2010,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2011,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2011,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2011,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2011,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2012,
+    "quarter": 1,
+    "count": 5
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2012,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2012,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2012,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2013,
+    "quarter": 1,
+    "count": 7
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2013,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2013,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2013,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2014,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2014,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2014,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2014,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2015,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2015,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2015,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2016,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2016,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2018,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2019,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2019,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2020,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2020,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2020,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2020,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2021,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "UnrealScript",
+    "year": 2021,
+    "quarter": 3,
+    "count": 1
+  },
+  {
     "name": "VHDL",
     "year": 2008,
     "quarter": 4,
@@ -35646,6 +37104,324 @@
     "count": 2350
   },
   {
+    "name": "Web Ontology Language",
+    "year": 2008,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2008,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2009,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2009,
+    "quarter": 2,
+    "count": 10
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2009,
+    "quarter": 3,
+    "count": 5
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2009,
+    "quarter": 4,
+    "count": 8
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2010,
+    "quarter": 1,
+    "count": 6
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2010,
+    "quarter": 2,
+    "count": 17
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2010,
+    "quarter": 3,
+    "count": 13
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2010,
+    "quarter": 4,
+    "count": 9
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2011,
+    "quarter": 1,
+    "count": 13
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2011,
+    "quarter": 2,
+    "count": 16
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2011,
+    "quarter": 3,
+    "count": 6
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2011,
+    "quarter": 4,
+    "count": 13
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2012,
+    "quarter": 1,
+    "count": 20
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2012,
+    "quarter": 2,
+    "count": 25
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2012,
+    "quarter": 3,
+    "count": 25
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2012,
+    "quarter": 4,
+    "count": 51
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2013,
+    "quarter": 1,
+    "count": 35
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2013,
+    "quarter": 2,
+    "count": 60
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2013,
+    "quarter": 3,
+    "count": 38
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2013,
+    "quarter": 4,
+    "count": 66
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2014,
+    "quarter": 1,
+    "count": 70
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2014,
+    "quarter": 2,
+    "count": 62
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2014,
+    "quarter": 3,
+    "count": 57
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2014,
+    "quarter": 4,
+    "count": 58
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2015,
+    "quarter": 1,
+    "count": 71
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2015,
+    "quarter": 2,
+    "count": 79
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2015,
+    "quarter": 3,
+    "count": 59
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2015,
+    "quarter": 4,
+    "count": 47
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2016,
+    "quarter": 1,
+    "count": 68
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2016,
+    "quarter": 2,
+    "count": 88
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2016,
+    "quarter": 3,
+    "count": 69
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2016,
+    "quarter": 4,
+    "count": 35
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2017,
+    "quarter": 1,
+    "count": 42
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2017,
+    "quarter": 2,
+    "count": 79
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2017,
+    "quarter": 3,
+    "count": 48
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2017,
+    "quarter": 4,
+    "count": 61
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2018,
+    "quarter": 1,
+    "count": 46
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2018,
+    "quarter": 2,
+    "count": 61
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2018,
+    "quarter": 3,
+    "count": 63
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2018,
+    "quarter": 4,
+    "count": 37
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2019,
+    "quarter": 1,
+    "count": 33
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2019,
+    "quarter": 2,
+    "count": 28
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2019,
+    "quarter": 3,
+    "count": 32
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2019,
+    "quarter": 4,
+    "count": 45
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2020,
+    "quarter": 1,
+    "count": 35
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2020,
+    "quarter": 2,
+    "count": 43
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2020,
+    "quarter": 3,
+    "count": 41
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2020,
+    "quarter": 4,
+    "count": 41
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2021,
+    "quarter": 1,
+    "count": 32
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2021,
+    "quarter": 2,
+    "count": 42
+  },
+  {
+    "name": "Web Ontology Language",
+    "year": 2021,
+    "quarter": 3,
+    "count": 15
+  },
+  {
     "name": "WebAssembly",
     "year": 2015,
     "quarter": 3,
@@ -35794,6 +37570,642 @@
     "year": 2018,
     "quarter": 2,
     "count": 1
+  },
+  {
+    "name": "XML",
+    "year": 2008,
+    "quarter": 3,
+    "count": 267
+  },
+  {
+    "name": "XML",
+    "year": 2008,
+    "quarter": 4,
+    "count": 525
+  },
+  {
+    "name": "XML",
+    "year": 2009,
+    "quarter": 1,
+    "count": 653
+  },
+  {
+    "name": "XML",
+    "year": 2009,
+    "quarter": 2,
+    "count": 908
+  },
+  {
+    "name": "XML",
+    "year": 2009,
+    "quarter": 3,
+    "count": 1114
+  },
+  {
+    "name": "XML",
+    "year": 2009,
+    "quarter": 4,
+    "count": 1233
+  },
+  {
+    "name": "XML",
+    "year": 2010,
+    "quarter": 1,
+    "count": 1467
+  },
+  {
+    "name": "XML",
+    "year": 2010,
+    "quarter": 2,
+    "count": 1567
+  },
+  {
+    "name": "XML",
+    "year": 2010,
+    "quarter": 3,
+    "count": 1722
+  },
+  {
+    "name": "XML",
+    "year": 2010,
+    "quarter": 4,
+    "count": 1948
+  },
+  {
+    "name": "XML",
+    "year": 2011,
+    "quarter": 1,
+    "count": 2404
+  },
+  {
+    "name": "XML",
+    "year": 2011,
+    "quarter": 2,
+    "count": 2795
+  },
+  {
+    "name": "XML",
+    "year": 2011,
+    "quarter": 3,
+    "count": 2819
+  },
+  {
+    "name": "XML",
+    "year": 2011,
+    "quarter": 4,
+    "count": 2624
+  },
+  {
+    "name": "XML",
+    "year": 2012,
+    "quarter": 1,
+    "count": 3105
+  },
+  {
+    "name": "XML",
+    "year": 2012,
+    "quarter": 2,
+    "count": 3360
+  },
+  {
+    "name": "XML",
+    "year": 2012,
+    "quarter": 3,
+    "count": 3338
+  },
+  {
+    "name": "XML",
+    "year": 2012,
+    "quarter": 4,
+    "count": 3140
+  },
+  {
+    "name": "XML",
+    "year": 2013,
+    "quarter": 1,
+    "count": 3372
+  },
+  {
+    "name": "XML",
+    "year": 2013,
+    "quarter": 2,
+    "count": 3597
+  },
+  {
+    "name": "XML",
+    "year": 2013,
+    "quarter": 3,
+    "count": 3736
+  },
+  {
+    "name": "XML",
+    "year": 2013,
+    "quarter": 4,
+    "count": 3899
+  },
+  {
+    "name": "XML",
+    "year": 2014,
+    "quarter": 1,
+    "count": 4294
+  },
+  {
+    "name": "XML",
+    "year": 2014,
+    "quarter": 2,
+    "count": 4023
+  },
+  {
+    "name": "XML",
+    "year": 2014,
+    "quarter": 3,
+    "count": 3714
+  },
+  {
+    "name": "XML",
+    "year": 2014,
+    "quarter": 4,
+    "count": 3542
+  },
+  {
+    "name": "XML",
+    "year": 2015,
+    "quarter": 1,
+    "count": 3671
+  },
+  {
+    "name": "XML",
+    "year": 2015,
+    "quarter": 2,
+    "count": 3933
+  },
+  {
+    "name": "XML",
+    "year": 2015,
+    "quarter": 3,
+    "count": 3717
+  },
+  {
+    "name": "XML",
+    "year": 2015,
+    "quarter": 4,
+    "count": 3367
+  },
+  {
+    "name": "XML",
+    "year": 2016,
+    "quarter": 1,
+    "count": 3571
+  },
+  {
+    "name": "XML",
+    "year": 2016,
+    "quarter": 2,
+    "count": 3584
+  },
+  {
+    "name": "XML",
+    "year": 2016,
+    "quarter": 3,
+    "count": 3242
+  },
+  {
+    "name": "XML",
+    "year": 2016,
+    "quarter": 4,
+    "count": 3041
+  },
+  {
+    "name": "XML",
+    "year": 2017,
+    "quarter": 1,
+    "count": 3225
+  },
+  {
+    "name": "XML",
+    "year": 2017,
+    "quarter": 2,
+    "count": 3062
+  },
+  {
+    "name": "XML",
+    "year": 2017,
+    "quarter": 3,
+    "count": 2854
+  },
+  {
+    "name": "XML",
+    "year": 2017,
+    "quarter": 4,
+    "count": 2499
+  },
+  {
+    "name": "XML",
+    "year": 2018,
+    "quarter": 1,
+    "count": 2466
+  },
+  {
+    "name": "XML",
+    "year": 2018,
+    "quarter": 2,
+    "count": 2142
+  },
+  {
+    "name": "XML",
+    "year": 2018,
+    "quarter": 3,
+    "count": 2049
+  },
+  {
+    "name": "XML",
+    "year": 2018,
+    "quarter": 4,
+    "count": 1844
+  },
+  {
+    "name": "XML",
+    "year": 2019,
+    "quarter": 1,
+    "count": 1822
+  },
+  {
+    "name": "XML",
+    "year": 2019,
+    "quarter": 2,
+    "count": 1695
+  },
+  {
+    "name": "XML",
+    "year": 2019,
+    "quarter": 3,
+    "count": 1700
+  },
+  {
+    "name": "XML",
+    "year": 2019,
+    "quarter": 4,
+    "count": 1658
+  },
+  {
+    "name": "XML",
+    "year": 2020,
+    "quarter": 1,
+    "count": 1797
+  },
+  {
+    "name": "XML",
+    "year": 2020,
+    "quarter": 2,
+    "count": 2013
+  },
+  {
+    "name": "XML",
+    "year": 2020,
+    "quarter": 3,
+    "count": 1789
+  },
+  {
+    "name": "XML",
+    "year": 2020,
+    "quarter": 4,
+    "count": 1872
+  },
+  {
+    "name": "XML",
+    "year": 2021,
+    "quarter": 1,
+    "count": 1818
+  },
+  {
+    "name": "XML",
+    "year": 2021,
+    "quarter": 2,
+    "count": 1756
+  },
+  {
+    "name": "XML",
+    "year": 2021,
+    "quarter": 3,
+    "count": 1289
+  },
+  {
+    "name": "XQuery",
+    "year": 2008,
+    "quarter": 3,
+    "count": 11
+  },
+  {
+    "name": "XQuery",
+    "year": 2008,
+    "quarter": 4,
+    "count": 7
+  },
+  {
+    "name": "XQuery",
+    "year": 2009,
+    "quarter": 1,
+    "count": 11
+  },
+  {
+    "name": "XQuery",
+    "year": 2009,
+    "quarter": 2,
+    "count": 13
+  },
+  {
+    "name": "XQuery",
+    "year": 2009,
+    "quarter": 3,
+    "count": 12
+  },
+  {
+    "name": "XQuery",
+    "year": 2009,
+    "quarter": 4,
+    "count": 27
+  },
+  {
+    "name": "XQuery",
+    "year": 2010,
+    "quarter": 1,
+    "count": 34
+  },
+  {
+    "name": "XQuery",
+    "year": 2010,
+    "quarter": 2,
+    "count": 34
+  },
+  {
+    "name": "XQuery",
+    "year": 2010,
+    "quarter": 3,
+    "count": 40
+  },
+  {
+    "name": "XQuery",
+    "year": 2010,
+    "quarter": 4,
+    "count": 36
+  },
+  {
+    "name": "XQuery",
+    "year": 2011,
+    "quarter": 1,
+    "count": 43
+  },
+  {
+    "name": "XQuery",
+    "year": 2011,
+    "quarter": 2,
+    "count": 62
+  },
+  {
+    "name": "XQuery",
+    "year": 2011,
+    "quarter": 3,
+    "count": 45
+  },
+  {
+    "name": "XQuery",
+    "year": 2011,
+    "quarter": 4,
+    "count": 57
+  },
+  {
+    "name": "XQuery",
+    "year": 2012,
+    "quarter": 1,
+    "count": 66
+  },
+  {
+    "name": "XQuery",
+    "year": 2012,
+    "quarter": 2,
+    "count": 102
+  },
+  {
+    "name": "XQuery",
+    "year": 2012,
+    "quarter": 3,
+    "count": 117
+  },
+  {
+    "name": "XQuery",
+    "year": 2012,
+    "quarter": 4,
+    "count": 101
+  },
+  {
+    "name": "XQuery",
+    "year": 2013,
+    "quarter": 1,
+    "count": 94
+  },
+  {
+    "name": "XQuery",
+    "year": 2013,
+    "quarter": 2,
+    "count": 82
+  },
+  {
+    "name": "XQuery",
+    "year": 2013,
+    "quarter": 3,
+    "count": 81
+  },
+  {
+    "name": "XQuery",
+    "year": 2013,
+    "quarter": 4,
+    "count": 78
+  },
+  {
+    "name": "XQuery",
+    "year": 2014,
+    "quarter": 1,
+    "count": 100
+  },
+  {
+    "name": "XQuery",
+    "year": 2014,
+    "quarter": 2,
+    "count": 98
+  },
+  {
+    "name": "XQuery",
+    "year": 2014,
+    "quarter": 3,
+    "count": 75
+  },
+  {
+    "name": "XQuery",
+    "year": 2014,
+    "quarter": 4,
+    "count": 81
+  },
+  {
+    "name": "XQuery",
+    "year": 2015,
+    "quarter": 1,
+    "count": 63
+  },
+  {
+    "name": "XQuery",
+    "year": 2015,
+    "quarter": 2,
+    "count": 114
+  },
+  {
+    "name": "XQuery",
+    "year": 2015,
+    "quarter": 3,
+    "count": 74
+  },
+  {
+    "name": "XQuery",
+    "year": 2015,
+    "quarter": 4,
+    "count": 80
+  },
+  {
+    "name": "XQuery",
+    "year": 2016,
+    "quarter": 1,
+    "count": 73
+  },
+  {
+    "name": "XQuery",
+    "year": 2016,
+    "quarter": 2,
+    "count": 99
+  },
+  {
+    "name": "XQuery",
+    "year": 2016,
+    "quarter": 3,
+    "count": 61
+  },
+  {
+    "name": "XQuery",
+    "year": 2016,
+    "quarter": 4,
+    "count": 72
+  },
+  {
+    "name": "XQuery",
+    "year": 2017,
+    "quarter": 1,
+    "count": 76
+  },
+  {
+    "name": "XQuery",
+    "year": 2017,
+    "quarter": 2,
+    "count": 82
+  },
+  {
+    "name": "XQuery",
+    "year": 2017,
+    "quarter": 3,
+    "count": 57
+  },
+  {
+    "name": "XQuery",
+    "year": 2017,
+    "quarter": 4,
+    "count": 56
+  },
+  {
+    "name": "XQuery",
+    "year": 2018,
+    "quarter": 1,
+    "count": 81
+  },
+  {
+    "name": "XQuery",
+    "year": 2018,
+    "quarter": 2,
+    "count": 75
+  },
+  {
+    "name": "XQuery",
+    "year": 2018,
+    "quarter": 3,
+    "count": 63
+  },
+  {
+    "name": "XQuery",
+    "year": 2018,
+    "quarter": 4,
+    "count": 80
+  },
+  {
+    "name": "XQuery",
+    "year": 2019,
+    "quarter": 1,
+    "count": 55
+  },
+  {
+    "name": "XQuery",
+    "year": 2019,
+    "quarter": 2,
+    "count": 60
+  },
+  {
+    "name": "XQuery",
+    "year": 2019,
+    "quarter": 3,
+    "count": 41
+  },
+  {
+    "name": "XQuery",
+    "year": 2019,
+    "quarter": 4,
+    "count": 56
+  },
+  {
+    "name": "XQuery",
+    "year": 2020,
+    "quarter": 1,
+    "count": 69
+  },
+  {
+    "name": "XQuery",
+    "year": 2020,
+    "quarter": 2,
+    "count": 88
+  },
+  {
+    "name": "XQuery",
+    "year": 2020,
+    "quarter": 3,
+    "count": 65
+  },
+  {
+    "name": "XQuery",
+    "year": 2020,
+    "quarter": 4,
+    "count": 69
+  },
+  {
+    "name": "XQuery",
+    "year": 2021,
+    "quarter": 1,
+    "count": 42
+  },
+  {
+    "name": "XQuery",
+    "year": 2021,
+    "quarter": 2,
+    "count": 53
+  },
+  {
+    "name": "XQuery",
+    "year": 2021,
+    "quarter": 3,
+    "count": 40
   },
   {
     "name": "XSLT",

@@ -206,9 +206,9 @@
 "RAML",,,
 "Rascal",,,
 "Reason","Reason_(syntax_extension_for_OCaml)","reasonml","reason"
-"Rebol",,,
-"Red",,,
-"Ren'Py",,,
+"Rebol","Rebol","rebol","rebol"
+"Red","Red_(programming_language)","redlang","red"
+"Ren'Py","Ren'Py","RenPy","renpy"
 "Rich Text Format","Rich_Text_Format","","rtf"
 "Ring","Ring_(programming_language)","ringlang",""
 "RobotFramework","Robot_Framework","robotframework","robotframework"
@@ -218,7 +218,7 @@
 "Ruby","Ruby_(programming_language)","ruby","ruby"
 "Rust","Rust_(programming_language)","rust","rust"
 "SaltStack","Salt_(software)","saltstack","salt-stack"
-"SAS",,,
+"SAS","SAS_language","sas","sas"
 "Scala","Scala_(programming_language)","scala","scala"
 "Scheme","Scheme_(programming_language)","scheme","scheme"
 "Scilab",,,
@@ -237,7 +237,7 @@
 "SQLPL",,,
 "Squirrel",,,
 "Stan",,,
-"Standard ML",,,
+"Standard ML","Standard_ML","sml","sml"
 "Starlark","Bazel_(software)","bazel","bazel"
 "Stata",,,
 "SuperCollider",,,
@@ -250,7 +250,7 @@
 "TSQL","Transact-SQL","SQLServer","tsql"
 "TypeScript","TypeScript","typescript","typescript"
 "Uno",,,
-"UnrealScript",,,
+"UnrealScript","","UnrealScript","unrealscript"
 "UrWeb",,,
 "Vala","Vala_(programming_language)","vala","vala"
 "VBA",,,
@@ -262,16 +262,16 @@
 "Visual Basic","Visual_Basic","visualbasic","vb"
 "Visual Basic .NET","Visual_Basic_.NET","visualbasic","vb.net"
 "Vue","Vue.js","vuejs","vue.js"
-"Web Ontology Language",,,
+"Web Ontology Language","Web_Ontology_Language","semanticweb","owl"
 "WebAssembly","WebAssembly","WebAssembly","webassembly"
 "wisp",,,
 "X10",,,
 "xBase","XBase","","xbase"
 "XC","XC_(programming_language)","","xmos"
-"XML",,,
+"XML","XML","xml","xml"
 "Xojo",,,
 "XProc",,,
-"XQuery",,,
+"XQuery","XQuery","xquery","xquery"
 "XS",,,
 "XSLT","XSLT","xslt","xslt"
 "Xtend",,,
