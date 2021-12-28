@@ -187,26 +187,26 @@
 "Pony","","ponylang","ponylang"
 "PostScript","PostScript","PostScript","postscript"
 "POV-Ray SDL","POV-Ray","","povray"
-"PowerBuilder",,,
+"PowerBuilder","PowerBuilder","PowerBuilder","powerbuilder"
 "PowerShell","PowerShell","PowerShell","powershell"
-"Processing",,,
+"Processing","Processing_(programming_language)","processing","processing"
 "Prolog","Prolog","prolog","prolog"
-"Propeller Spin",,,
-"Protocol Buffer",,,
+"Propeller Spin","Parallax_Propeller","","propeller-tool"
+"Protocol Buffer","Protocol_Buffers","","protocol-buffers"
 "Puppet","Puppet_(company)","Puppet","puppet"
-"Pure Data",,,
-"PureBasic",,,
+"Pure Data","Pure_Data","puredata","puredata"
+"PureBasic","PureBasic","purebasic",""
 "PureScript","PureScript","purescript","purescript"
 "Python","Python_(programming_language)","Python","python"
 "q","Q_(programming_language_from_Kx_Systems)","kdb","kdb"
-"QMake",,,
+"QMake","Qmake","","qmake"
 "QML","QML","QtFramework","qml"
 "R","R_(programming_language)","Rlanguage","r"
 "Racket","Racket_(programming_language)","Racket","racket"
-"Ragel in Ruby Host",,,
+"Ragel in Ruby Host","Ragel","","ragel"
 "Raku","Raku_(programming_language)","rakulang","raku"
-"RAML",,,
-"Rascal",,,
+"RAML","RAML_(software)","","raml"
+"Rascal","RascalMPL","","rascal"
 "Reason","Reason_(syntax_extension_for_OCaml)","reasonml","reason"
 "Rebol","Rebol","rebol","rebol"
 "Red","Red_(programming_language)","redlang","red"
@@ -215,26 +215,26 @@
 "Ring","Ring_(programming_language)","ringlang",""
 "RobotFramework","Robot_Framework","robotframework","robotframework"
 "Roff","groff_(software)","groff","groff"
-"Rouge",,,
-"RPC",,,
+"Rouge","","",""
+"RPC","","",""
 "Ruby","Ruby_(programming_language)","ruby","ruby"
 "Rust","Rust_(programming_language)","rust","rust"
 "SaltStack","Salt_(software)","saltstack","salt-stack"
 "SAS","SAS_language","sas","sas"
 "Scala","Scala_(programming_language)","scala","scala"
 "Scheme","Scheme_(programming_language)","scheme","scheme"
-"Scilab",,,
-"sed",,,
-"ShaderLab",,,
+"Scilab","Scilab","scilab","scilab"
+"sed","Sed","","sed"
+"ShaderLab","","","shaderlab"
 "Shell","Bash_(Unix_shell)","bash","bash"
-"Shen",,,
-"Slash",,,
-"Smali",,,
+"Shen","","Qi_Shen|shenlanguage","shen"
+"Slash","","",""
+"Smali","","","smali"
 "Smalltalk","Smalltalk","smalltalk","smalltalk"
 "Smarty","Smarty_(template_engine)","","smarty"
-"SMT",,,
+"SMT","Satisfiability_modulo_theories","","smt"
 "SourcePawn","","",""
-"SQF",,,
+"SQF","","","sqf"
 "SQL","SQL","SQL","sql"
 "SQLPL",,,
 "Squirrel",,,
