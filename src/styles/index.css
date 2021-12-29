@@ -276,6 +276,11 @@ html {
   color: #333;
 }
 
+.weight input {
+  font-size: 0.7em;
+  margin: -0.2em;
+}
+
 .xAxis {
   display: none;
   padding-bottom: 0.1vh;

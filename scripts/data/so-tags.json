@@ -45660,6 +45660,324 @@
     "count": 4120
   },
   {
+    "name": "SQLPL",
+    "year": 2008,
+    "quarter": 3,
+    "count": 18
+  },
+  {
+    "name": "SQLPL",
+    "year": 2008,
+    "quarter": 4,
+    "count": 25
+  },
+  {
+    "name": "SQLPL",
+    "year": 2009,
+    "quarter": 1,
+    "count": 27
+  },
+  {
+    "name": "SQLPL",
+    "year": 2009,
+    "quarter": 2,
+    "count": 53
+  },
+  {
+    "name": "SQLPL",
+    "year": 2009,
+    "quarter": 3,
+    "count": 57
+  },
+  {
+    "name": "SQLPL",
+    "year": 2009,
+    "quarter": 4,
+    "count": 50
+  },
+  {
+    "name": "SQLPL",
+    "year": 2010,
+    "quarter": 1,
+    "count": 61
+  },
+  {
+    "name": "SQLPL",
+    "year": 2010,
+    "quarter": 2,
+    "count": 70
+  },
+  {
+    "name": "SQLPL",
+    "year": 2010,
+    "quarter": 3,
+    "count": 75
+  },
+  {
+    "name": "SQLPL",
+    "year": 2010,
+    "quarter": 4,
+    "count": 80
+  },
+  {
+    "name": "SQLPL",
+    "year": 2011,
+    "quarter": 1,
+    "count": 105
+  },
+  {
+    "name": "SQLPL",
+    "year": 2011,
+    "quarter": 2,
+    "count": 109
+  },
+  {
+    "name": "SQLPL",
+    "year": 2011,
+    "quarter": 3,
+    "count": 133
+  },
+  {
+    "name": "SQLPL",
+    "year": 2011,
+    "quarter": 4,
+    "count": 134
+  },
+  {
+    "name": "SQLPL",
+    "year": 2012,
+    "quarter": 1,
+    "count": 123
+  },
+  {
+    "name": "SQLPL",
+    "year": 2012,
+    "quarter": 2,
+    "count": 130
+  },
+  {
+    "name": "SQLPL",
+    "year": 2012,
+    "quarter": 3,
+    "count": 165
+  },
+  {
+    "name": "SQLPL",
+    "year": 2012,
+    "quarter": 4,
+    "count": 147
+  },
+  {
+    "name": "SQLPL",
+    "year": 2013,
+    "quarter": 1,
+    "count": 231
+  },
+  {
+    "name": "SQLPL",
+    "year": 2013,
+    "quarter": 2,
+    "count": 207
+  },
+  {
+    "name": "SQLPL",
+    "year": 2013,
+    "quarter": 3,
+    "count": 192
+  },
+  {
+    "name": "SQLPL",
+    "year": 2013,
+    "quarter": 4,
+    "count": 184
+  },
+  {
+    "name": "SQLPL",
+    "year": 2014,
+    "quarter": 1,
+    "count": 193
+  },
+  {
+    "name": "SQLPL",
+    "year": 2014,
+    "quarter": 2,
+    "count": 182
+  },
+  {
+    "name": "SQLPL",
+    "year": 2014,
+    "quarter": 3,
+    "count": 201
+  },
+  {
+    "name": "SQLPL",
+    "year": 2014,
+    "quarter": 4,
+    "count": 197
+  },
+  {
+    "name": "SQLPL",
+    "year": 2015,
+    "quarter": 1,
+    "count": 203
+  },
+  {
+    "name": "SQLPL",
+    "year": 2015,
+    "quarter": 2,
+    "count": 221
+  },
+  {
+    "name": "SQLPL",
+    "year": 2015,
+    "quarter": 3,
+    "count": 218
+  },
+  {
+    "name": "SQLPL",
+    "year": 2015,
+    "quarter": 4,
+    "count": 206
+  },
+  {
+    "name": "SQLPL",
+    "year": 2016,
+    "quarter": 1,
+    "count": 228
+  },
+  {
+    "name": "SQLPL",
+    "year": 2016,
+    "quarter": 2,
+    "count": 203
+  },
+  {
+    "name": "SQLPL",
+    "year": 2016,
+    "quarter": 3,
+    "count": 174
+  },
+  {
+    "name": "SQLPL",
+    "year": 2016,
+    "quarter": 4,
+    "count": 185
+  },
+  {
+    "name": "SQLPL",
+    "year": 2017,
+    "quarter": 1,
+    "count": 185
+  },
+  {
+    "name": "SQLPL",
+    "year": 2017,
+    "quarter": 2,
+    "count": 192
+  },
+  {
+    "name": "SQLPL",
+    "year": 2017,
+    "quarter": 3,
+    "count": 208
+  },
+  {
+    "name": "SQLPL",
+    "year": 2017,
+    "quarter": 4,
+    "count": 184
+  },
+  {
+    "name": "SQLPL",
+    "year": 2018,
+    "quarter": 1,
+    "count": 235
+  },
+  {
+    "name": "SQLPL",
+    "year": 2018,
+    "quarter": 2,
+    "count": 207
+  },
+  {
+    "name": "SQLPL",
+    "year": 2018,
+    "quarter": 3,
+    "count": 203
+  },
+  {
+    "name": "SQLPL",
+    "year": 2018,
+    "quarter": 4,
+    "count": 221
+  },
+  {
+    "name": "SQLPL",
+    "year": 2019,
+    "quarter": 1,
+    "count": 205
+  },
+  {
+    "name": "SQLPL",
+    "year": 2019,
+    "quarter": 2,
+    "count": 178
+  },
+  {
+    "name": "SQLPL",
+    "year": 2019,
+    "quarter": 3,
+    "count": 177
+  },
+  {
+    "name": "SQLPL",
+    "year": 2019,
+    "quarter": 4,
+    "count": 207
+  },
+  {
+    "name": "SQLPL",
+    "year": 2020,
+    "quarter": 1,
+    "count": 195
+  },
+  {
+    "name": "SQLPL",
+    "year": 2020,
+    "quarter": 2,
+    "count": 202
+  },
+  {
+    "name": "SQLPL",
+    "year": 2020,
+    "quarter": 3,
+    "count": 180
+  },
+  {
+    "name": "SQLPL",
+    "year": 2020,
+    "quarter": 4,
+    "count": 175
+  },
+  {
+    "name": "SQLPL",
+    "year": 2021,
+    "quarter": 1,
+    "count": 163
+  },
+  {
+    "name": "SQLPL",
+    "year": 2021,
+    "quarter": 2,
+    "count": 157
+  },
+  {
+    "name": "SQLPL",
+    "year": 2021,
+    "quarter": 3,
+    "count": 124
+  },
+  {
     "name": "SWIG",
     "year": 2008,
     "quarter": 3,
@@ -48474,6 +48792,342 @@
     "count": 18
   },
   {
+    "name": "Squirrel",
+    "year": 2008,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "Squirrel",
+    "year": 2009,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "Squirrel",
+    "year": 2010,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Squirrel",
+    "year": 2013,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "Squirrel",
+    "year": 2014,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Squirrel",
+    "year": 2014,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Squirrel",
+    "year": 2014,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "Squirrel",
+    "year": 2014,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "Squirrel",
+    "year": 2015,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "Squirrel",
+    "year": 2015,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Squirrel",
+    "year": 2016,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Squirrel",
+    "year": 2016,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "Squirrel",
+    "year": 2016,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Squirrel",
+    "year": 2017,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "Squirrel",
+    "year": 2019,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "Squirrel",
+    "year": 2019,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "Squirrel",
+    "year": 2020,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Squirrel",
+    "year": 2020,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Squirrel",
+    "year": 2021,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "Squirrel",
+    "year": 2021,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "Stan",
+    "year": 2012,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "Stan",
+    "year": 2012,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "Stan",
+    "year": 2013,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Stan",
+    "year": 2013,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Stan",
+    "year": 2013,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Stan",
+    "year": 2014,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Stan",
+    "year": 2014,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "Stan",
+    "year": 2014,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "Stan",
+    "year": 2014,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "Stan",
+    "year": 2015,
+    "quarter": 1,
+    "count": 9
+  },
+  {
+    "name": "Stan",
+    "year": 2015,
+    "quarter": 2,
+    "count": 5
+  },
+  {
+    "name": "Stan",
+    "year": 2015,
+    "quarter": 3,
+    "count": 7
+  },
+  {
+    "name": "Stan",
+    "year": 2015,
+    "quarter": 4,
+    "count": 6
+  },
+  {
+    "name": "Stan",
+    "year": 2016,
+    "quarter": 1,
+    "count": 9
+  },
+  {
+    "name": "Stan",
+    "year": 2016,
+    "quarter": 2,
+    "count": 7
+  },
+  {
+    "name": "Stan",
+    "year": 2016,
+    "quarter": 3,
+    "count": 6
+  },
+  {
+    "name": "Stan",
+    "year": 2016,
+    "quarter": 4,
+    "count": 6
+  },
+  {
+    "name": "Stan",
+    "year": 2017,
+    "quarter": 1,
+    "count": 7
+  },
+  {
+    "name": "Stan",
+    "year": 2017,
+    "quarter": 2,
+    "count": 8
+  },
+  {
+    "name": "Stan",
+    "year": 2017,
+    "quarter": 3,
+    "count": 10
+  },
+  {
+    "name": "Stan",
+    "year": 2017,
+    "quarter": 4,
+    "count": 19
+  },
+  {
+    "name": "Stan",
+    "year": 2018,
+    "quarter": 1,
+    "count": 15
+  },
+  {
+    "name": "Stan",
+    "year": 2018,
+    "quarter": 2,
+    "count": 18
+  },
+  {
+    "name": "Stan",
+    "year": 2018,
+    "quarter": 3,
+    "count": 9
+  },
+  {
+    "name": "Stan",
+    "year": 2018,
+    "quarter": 4,
+    "count": 16
+  },
+  {
+    "name": "Stan",
+    "year": 2019,
+    "quarter": 1,
+    "count": 13
+  },
+  {
+    "name": "Stan",
+    "year": 2019,
+    "quarter": 2,
+    "count": 8
+  },
+  {
+    "name": "Stan",
+    "year": 2019,
+    "quarter": 3,
+    "count": 7
+  },
+  {
+    "name": "Stan",
+    "year": 2019,
+    "quarter": 4,
+    "count": 9
+  },
+  {
+    "name": "Stan",
+    "year": 2020,
+    "quarter": 1,
+    "count": 10
+  },
+  {
+    "name": "Stan",
+    "year": 2020,
+    "quarter": 2,
+    "count": 10
+  },
+  {
+    "name": "Stan",
+    "year": 2020,
+    "quarter": 3,
+    "count": 11
+  },
+  {
+    "name": "Stan",
+    "year": 2020,
+    "quarter": 4,
+    "count": 15
+  },
+  {
+    "name": "Stan",
+    "year": 2021,
+    "quarter": 1,
+    "count": 11
+  },
+  {
+    "name": "Stan",
+    "year": 2021,
+    "quarter": 2,
+    "count": 16
+  },
+  {
+    "name": "Stan",
+    "year": 2021,
+    "quarter": 3,
+    "count": 10
+  },
+  {
     "name": "Standard ML",
     "year": 2008,
     "quarter": 3,
@@ -48946,6 +49600,546 @@
     "year": 2021,
     "quarter": 3,
     "count": 69
+  },
+  {
+    "name": "Stata",
+    "year": 2009,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "Stata",
+    "year": 2010,
+    "quarter": 1,
+    "count": 4
+  },
+  {
+    "name": "Stata",
+    "year": 2010,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Stata",
+    "year": 2010,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "Stata",
+    "year": 2010,
+    "quarter": 4,
+    "count": 9
+  },
+  {
+    "name": "Stata",
+    "year": 2011,
+    "quarter": 1,
+    "count": 11
+  },
+  {
+    "name": "Stata",
+    "year": 2011,
+    "quarter": 2,
+    "count": 12
+  },
+  {
+    "name": "Stata",
+    "year": 2011,
+    "quarter": 3,
+    "count": 13
+  },
+  {
+    "name": "Stata",
+    "year": 2011,
+    "quarter": 4,
+    "count": 6
+  },
+  {
+    "name": "Stata",
+    "year": 2012,
+    "quarter": 1,
+    "count": 5
+  },
+  {
+    "name": "Stata",
+    "year": 2012,
+    "quarter": 2,
+    "count": 18
+  },
+  {
+    "name": "Stata",
+    "year": 2012,
+    "quarter": 3,
+    "count": 22
+  },
+  {
+    "name": "Stata",
+    "year": 2012,
+    "quarter": 4,
+    "count": 23
+  },
+  {
+    "name": "Stata",
+    "year": 2013,
+    "quarter": 1,
+    "count": 52
+  },
+  {
+    "name": "Stata",
+    "year": 2013,
+    "quarter": 2,
+    "count": 73
+  },
+  {
+    "name": "Stata",
+    "year": 2013,
+    "quarter": 3,
+    "count": 59
+  },
+  {
+    "name": "Stata",
+    "year": 2013,
+    "quarter": 4,
+    "count": 67
+  },
+  {
+    "name": "Stata",
+    "year": 2014,
+    "quarter": 1,
+    "count": 53
+  },
+  {
+    "name": "Stata",
+    "year": 2014,
+    "quarter": 2,
+    "count": 63
+  },
+  {
+    "name": "Stata",
+    "year": 2014,
+    "quarter": 3,
+    "count": 78
+  },
+  {
+    "name": "Stata",
+    "year": 2014,
+    "quarter": 4,
+    "count": 68
+  },
+  {
+    "name": "Stata",
+    "year": 2015,
+    "quarter": 1,
+    "count": 77
+  },
+  {
+    "name": "Stata",
+    "year": 2015,
+    "quarter": 2,
+    "count": 75
+  },
+  {
+    "name": "Stata",
+    "year": 2015,
+    "quarter": 3,
+    "count": 88
+  },
+  {
+    "name": "Stata",
+    "year": 2015,
+    "quarter": 4,
+    "count": 75
+  },
+  {
+    "name": "Stata",
+    "year": 2016,
+    "quarter": 1,
+    "count": 66
+  },
+  {
+    "name": "Stata",
+    "year": 2016,
+    "quarter": 2,
+    "count": 81
+  },
+  {
+    "name": "Stata",
+    "year": 2016,
+    "quarter": 3,
+    "count": 69
+  },
+  {
+    "name": "Stata",
+    "year": 2016,
+    "quarter": 4,
+    "count": 52
+  },
+  {
+    "name": "Stata",
+    "year": 2017,
+    "quarter": 1,
+    "count": 60
+  },
+  {
+    "name": "Stata",
+    "year": 2017,
+    "quarter": 2,
+    "count": 71
+  },
+  {
+    "name": "Stata",
+    "year": 2017,
+    "quarter": 3,
+    "count": 51
+  },
+  {
+    "name": "Stata",
+    "year": 2017,
+    "quarter": 4,
+    "count": 54
+  },
+  {
+    "name": "Stata",
+    "year": 2018,
+    "quarter": 1,
+    "count": 65
+  },
+  {
+    "name": "Stata",
+    "year": 2018,
+    "quarter": 2,
+    "count": 70
+  },
+  {
+    "name": "Stata",
+    "year": 2018,
+    "quarter": 3,
+    "count": 49
+  },
+  {
+    "name": "Stata",
+    "year": 2018,
+    "quarter": 4,
+    "count": 38
+  },
+  {
+    "name": "Stata",
+    "year": 2019,
+    "quarter": 1,
+    "count": 40
+  },
+  {
+    "name": "Stata",
+    "year": 2019,
+    "quarter": 2,
+    "count": 35
+  },
+  {
+    "name": "Stata",
+    "year": 2019,
+    "quarter": 3,
+    "count": 26
+  },
+  {
+    "name": "Stata",
+    "year": 2019,
+    "quarter": 4,
+    "count": 33
+  },
+  {
+    "name": "Stata",
+    "year": 2020,
+    "quarter": 1,
+    "count": 23
+  },
+  {
+    "name": "Stata",
+    "year": 2020,
+    "quarter": 2,
+    "count": 80
+  },
+  {
+    "name": "Stata",
+    "year": 2020,
+    "quarter": 3,
+    "count": 76
+  },
+  {
+    "name": "Stata",
+    "year": 2020,
+    "quarter": 4,
+    "count": 72
+  },
+  {
+    "name": "Stata",
+    "year": 2021,
+    "quarter": 1,
+    "count": 104
+  },
+  {
+    "name": "Stata",
+    "year": 2021,
+    "quarter": 2,
+    "count": 80
+  },
+  {
+    "name": "Stata",
+    "year": 2021,
+    "quarter": 3,
+    "count": 43
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2010,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2011,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2011,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2011,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2011,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2012,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2012,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2012,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2012,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2013,
+    "quarter": 1,
+    "count": 4
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2013,
+    "quarter": 2,
+    "count": 5
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2013,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2013,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2014,
+    "quarter": 1,
+    "count": 5
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2014,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2014,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2015,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2015,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2015,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2015,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2016,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2016,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2016,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2016,
+    "quarter": 4,
+    "count": 5
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2017,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2017,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2017,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2017,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2018,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2018,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2018,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2018,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2019,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2019,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2019,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2019,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2020,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2020,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2020,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2021,
+    "quarter": 1,
+    "count": 4
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2021,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "SuperCollider",
+    "year": 2021,
+    "quarter": 3,
+    "count": 2
   },
   {
     "name": "Swift",
@@ -50508,6 +51702,324 @@
     "count": 156
   },
   {
+    "name": "Thrift",
+    "year": 2008,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "Thrift",
+    "year": 2008,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "Thrift",
+    "year": 2009,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Thrift",
+    "year": 2009,
+    "quarter": 2,
+    "count": 5
+  },
+  {
+    "name": "Thrift",
+    "year": 2009,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "Thrift",
+    "year": 2009,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "Thrift",
+    "year": 2010,
+    "quarter": 1,
+    "count": 19
+  },
+  {
+    "name": "Thrift",
+    "year": 2010,
+    "quarter": 2,
+    "count": 17
+  },
+  {
+    "name": "Thrift",
+    "year": 2010,
+    "quarter": 3,
+    "count": 13
+  },
+  {
+    "name": "Thrift",
+    "year": 2010,
+    "quarter": 4,
+    "count": 11
+  },
+  {
+    "name": "Thrift",
+    "year": 2011,
+    "quarter": 1,
+    "count": 27
+  },
+  {
+    "name": "Thrift",
+    "year": 2011,
+    "quarter": 2,
+    "count": 43
+  },
+  {
+    "name": "Thrift",
+    "year": 2011,
+    "quarter": 3,
+    "count": 32
+  },
+  {
+    "name": "Thrift",
+    "year": 2011,
+    "quarter": 4,
+    "count": 43
+  },
+  {
+    "name": "Thrift",
+    "year": 2012,
+    "quarter": 1,
+    "count": 35
+  },
+  {
+    "name": "Thrift",
+    "year": 2012,
+    "quarter": 2,
+    "count": 43
+  },
+  {
+    "name": "Thrift",
+    "year": 2012,
+    "quarter": 3,
+    "count": 44
+  },
+  {
+    "name": "Thrift",
+    "year": 2012,
+    "quarter": 4,
+    "count": 57
+  },
+  {
+    "name": "Thrift",
+    "year": 2013,
+    "quarter": 1,
+    "count": 66
+  },
+  {
+    "name": "Thrift",
+    "year": 2013,
+    "quarter": 2,
+    "count": 59
+  },
+  {
+    "name": "Thrift",
+    "year": 2013,
+    "quarter": 3,
+    "count": 68
+  },
+  {
+    "name": "Thrift",
+    "year": 2013,
+    "quarter": 4,
+    "count": 58
+  },
+  {
+    "name": "Thrift",
+    "year": 2014,
+    "quarter": 1,
+    "count": 77
+  },
+  {
+    "name": "Thrift",
+    "year": 2014,
+    "quarter": 2,
+    "count": 55
+  },
+  {
+    "name": "Thrift",
+    "year": 2014,
+    "quarter": 3,
+    "count": 39
+  },
+  {
+    "name": "Thrift",
+    "year": 2014,
+    "quarter": 4,
+    "count": 42
+  },
+  {
+    "name": "Thrift",
+    "year": 2015,
+    "quarter": 1,
+    "count": 50
+  },
+  {
+    "name": "Thrift",
+    "year": 2015,
+    "quarter": 2,
+    "count": 62
+  },
+  {
+    "name": "Thrift",
+    "year": 2015,
+    "quarter": 3,
+    "count": 52
+  },
+  {
+    "name": "Thrift",
+    "year": 2015,
+    "quarter": 4,
+    "count": 58
+  },
+  {
+    "name": "Thrift",
+    "year": 2016,
+    "quarter": 1,
+    "count": 62
+  },
+  {
+    "name": "Thrift",
+    "year": 2016,
+    "quarter": 2,
+    "count": 42
+  },
+  {
+    "name": "Thrift",
+    "year": 2016,
+    "quarter": 3,
+    "count": 52
+  },
+  {
+    "name": "Thrift",
+    "year": 2016,
+    "quarter": 4,
+    "count": 28
+  },
+  {
+    "name": "Thrift",
+    "year": 2017,
+    "quarter": 1,
+    "count": 48
+  },
+  {
+    "name": "Thrift",
+    "year": 2017,
+    "quarter": 2,
+    "count": 41
+  },
+  {
+    "name": "Thrift",
+    "year": 2017,
+    "quarter": 3,
+    "count": 36
+  },
+  {
+    "name": "Thrift",
+    "year": 2017,
+    "quarter": 4,
+    "count": 27
+  },
+  {
+    "name": "Thrift",
+    "year": 2018,
+    "quarter": 1,
+    "count": 27
+  },
+  {
+    "name": "Thrift",
+    "year": 2018,
+    "quarter": 2,
+    "count": 24
+  },
+  {
+    "name": "Thrift",
+    "year": 2018,
+    "quarter": 3,
+    "count": 30
+  },
+  {
+    "name": "Thrift",
+    "year": 2018,
+    "quarter": 4,
+    "count": 24
+  },
+  {
+    "name": "Thrift",
+    "year": 2019,
+    "quarter": 1,
+    "count": 26
+  },
+  {
+    "name": "Thrift",
+    "year": 2019,
+    "quarter": 2,
+    "count": 24
+  },
+  {
+    "name": "Thrift",
+    "year": 2019,
+    "quarter": 3,
+    "count": 19
+  },
+  {
+    "name": "Thrift",
+    "year": 2019,
+    "quarter": 4,
+    "count": 14
+  },
+  {
+    "name": "Thrift",
+    "year": 2020,
+    "quarter": 1,
+    "count": 14
+  },
+  {
+    "name": "Thrift",
+    "year": 2020,
+    "quarter": 2,
+    "count": 17
+  },
+  {
+    "name": "Thrift",
+    "year": 2020,
+    "quarter": 3,
+    "count": 15
+  },
+  {
+    "name": "Thrift",
+    "year": 2020,
+    "quarter": 4,
+    "count": 10
+  },
+  {
+    "name": "Thrift",
+    "year": 2021,
+    "quarter": 1,
+    "count": 10
+  },
+  {
+    "name": "Thrift",
+    "year": 2021,
+    "quarter": 2,
+    "count": 12
+  },
+  {
+    "name": "Thrift",
+    "year": 2021,
+    "quarter": 3,
+    "count": 5
+  },
+  {
     "name": "TypeScript",
     "year": 2011,
     "quarter": 3,
@@ -50932,6 +52444,618 @@
     "year": 2021,
     "quarter": 3,
     "count": 1
+  },
+  {
+    "name": "VBA",
+    "year": 2008,
+    "quarter": 3,
+    "count": 74
+  },
+  {
+    "name": "VBA",
+    "year": 2008,
+    "quarter": 4,
+    "count": 143
+  },
+  {
+    "name": "VBA",
+    "year": 2009,
+    "quarter": 1,
+    "count": 146
+  },
+  {
+    "name": "VBA",
+    "year": 2009,
+    "quarter": 2,
+    "count": 205
+  },
+  {
+    "name": "VBA",
+    "year": 2009,
+    "quarter": 3,
+    "count": 288
+  },
+  {
+    "name": "VBA",
+    "year": 2009,
+    "quarter": 4,
+    "count": 288
+  },
+  {
+    "name": "VBA",
+    "year": 2010,
+    "quarter": 1,
+    "count": 294
+  },
+  {
+    "name": "VBA",
+    "year": 2010,
+    "quarter": 2,
+    "count": 325
+  },
+  {
+    "name": "VBA",
+    "year": 2010,
+    "quarter": 3,
+    "count": 361
+  },
+  {
+    "name": "VBA",
+    "year": 2010,
+    "quarter": 4,
+    "count": 349
+  },
+  {
+    "name": "VBA",
+    "year": 2011,
+    "quarter": 1,
+    "count": 405
+  },
+  {
+    "name": "VBA",
+    "year": 2011,
+    "quarter": 2,
+    "count": 503
+  },
+  {
+    "name": "VBA",
+    "year": 2011,
+    "quarter": 3,
+    "count": 533
+  },
+  {
+    "name": "VBA",
+    "year": 2011,
+    "quarter": 4,
+    "count": 549
+  },
+  {
+    "name": "VBA",
+    "year": 2012,
+    "quarter": 1,
+    "count": 656
+  },
+  {
+    "name": "VBA",
+    "year": 2012,
+    "quarter": 2,
+    "count": 716
+  },
+  {
+    "name": "VBA",
+    "year": 2012,
+    "quarter": 3,
+    "count": 866
+  },
+  {
+    "name": "VBA",
+    "year": 2012,
+    "quarter": 4,
+    "count": 910
+  },
+  {
+    "name": "VBA",
+    "year": 2013,
+    "quarter": 1,
+    "count": 1096
+  },
+  {
+    "name": "VBA",
+    "year": 2013,
+    "quarter": 2,
+    "count": 1390
+  },
+  {
+    "name": "VBA",
+    "year": 2013,
+    "quarter": 3,
+    "count": 1533
+  },
+  {
+    "name": "VBA",
+    "year": 2013,
+    "quarter": 4,
+    "count": 1537
+  },
+  {
+    "name": "VBA",
+    "year": 2014,
+    "quarter": 1,
+    "count": 1737
+  },
+  {
+    "name": "VBA",
+    "year": 2014,
+    "quarter": 2,
+    "count": 1601
+  },
+  {
+    "name": "VBA",
+    "year": 2014,
+    "quarter": 3,
+    "count": 1618
+  },
+  {
+    "name": "VBA",
+    "year": 2014,
+    "quarter": 4,
+    "count": 1602
+  },
+  {
+    "name": "VBA",
+    "year": 2015,
+    "quarter": 1,
+    "count": 1802
+  },
+  {
+    "name": "VBA",
+    "year": 2015,
+    "quarter": 2,
+    "count": 2009
+  },
+  {
+    "name": "VBA",
+    "year": 2015,
+    "quarter": 3,
+    "count": 2167
+  },
+  {
+    "name": "VBA",
+    "year": 2015,
+    "quarter": 4,
+    "count": 1936
+  },
+  {
+    "name": "VBA",
+    "year": 2016,
+    "quarter": 1,
+    "count": 1921
+  },
+  {
+    "name": "VBA",
+    "year": 2016,
+    "quarter": 2,
+    "count": 2118
+  },
+  {
+    "name": "VBA",
+    "year": 2016,
+    "quarter": 3,
+    "count": 2096
+  },
+  {
+    "name": "VBA",
+    "year": 2016,
+    "quarter": 4,
+    "count": 1873
+  },
+  {
+    "name": "VBA",
+    "year": 2017,
+    "quarter": 1,
+    "count": 2039
+  },
+  {
+    "name": "VBA",
+    "year": 2017,
+    "quarter": 2,
+    "count": 2135
+  },
+  {
+    "name": "VBA",
+    "year": 2017,
+    "quarter": 3,
+    "count": 2145
+  },
+  {
+    "name": "VBA",
+    "year": 2017,
+    "quarter": 4,
+    "count": 1876
+  },
+  {
+    "name": "VBA",
+    "year": 2018,
+    "quarter": 1,
+    "count": 2093
+  },
+  {
+    "name": "VBA",
+    "year": 2018,
+    "quarter": 2,
+    "count": 2053
+  },
+  {
+    "name": "VBA",
+    "year": 2018,
+    "quarter": 3,
+    "count": 2013
+  },
+  {
+    "name": "VBA",
+    "year": 2018,
+    "quarter": 4,
+    "count": 1676
+  },
+  {
+    "name": "VBA",
+    "year": 2019,
+    "quarter": 1,
+    "count": 1610
+  },
+  {
+    "name": "VBA",
+    "year": 2019,
+    "quarter": 2,
+    "count": 1512
+  },
+  {
+    "name": "VBA",
+    "year": 2019,
+    "quarter": 3,
+    "count": 1457
+  },
+  {
+    "name": "VBA",
+    "year": 2019,
+    "quarter": 4,
+    "count": 1439
+  },
+  {
+    "name": "VBA",
+    "year": 2020,
+    "quarter": 1,
+    "count": 1574
+  },
+  {
+    "name": "VBA",
+    "year": 2020,
+    "quarter": 2,
+    "count": 1704
+  },
+  {
+    "name": "VBA",
+    "year": 2020,
+    "quarter": 3,
+    "count": 1608
+  },
+  {
+    "name": "VBA",
+    "year": 2020,
+    "quarter": 4,
+    "count": 1415
+  },
+  {
+    "name": "VBA",
+    "year": 2021,
+    "quarter": 1,
+    "count": 1684
+  },
+  {
+    "name": "VBA",
+    "year": 2021,
+    "quarter": 2,
+    "count": 1595
+  },
+  {
+    "name": "VBA",
+    "year": 2021,
+    "quarter": 3,
+    "count": 1215
+  },
+  {
+    "name": "VCL",
+    "year": 2008,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "VCL",
+    "year": 2009,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "VCL",
+    "year": 2010,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "VCL",
+    "year": 2010,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "VCL",
+    "year": 2010,
+    "quarter": 3,
+    "count": 7
+  },
+  {
+    "name": "VCL",
+    "year": 2010,
+    "quarter": 4,
+    "count": 13
+  },
+  {
+    "name": "VCL",
+    "year": 2011,
+    "quarter": 1,
+    "count": 18
+  },
+  {
+    "name": "VCL",
+    "year": 2011,
+    "quarter": 2,
+    "count": 18
+  },
+  {
+    "name": "VCL",
+    "year": 2011,
+    "quarter": 3,
+    "count": 23
+  },
+  {
+    "name": "VCL",
+    "year": 2011,
+    "quarter": 4,
+    "count": 36
+  },
+  {
+    "name": "VCL",
+    "year": 2012,
+    "quarter": 1,
+    "count": 39
+  },
+  {
+    "name": "VCL",
+    "year": 2012,
+    "quarter": 2,
+    "count": 31
+  },
+  {
+    "name": "VCL",
+    "year": 2012,
+    "quarter": 3,
+    "count": 31
+  },
+  {
+    "name": "VCL",
+    "year": 2012,
+    "quarter": 4,
+    "count": 54
+  },
+  {
+    "name": "VCL",
+    "year": 2013,
+    "quarter": 1,
+    "count": 55
+  },
+  {
+    "name": "VCL",
+    "year": 2013,
+    "quarter": 2,
+    "count": 39
+  },
+  {
+    "name": "VCL",
+    "year": 2013,
+    "quarter": 3,
+    "count": 46
+  },
+  {
+    "name": "VCL",
+    "year": 2013,
+    "quarter": 4,
+    "count": 62
+  },
+  {
+    "name": "VCL",
+    "year": 2014,
+    "quarter": 1,
+    "count": 70
+  },
+  {
+    "name": "VCL",
+    "year": 2014,
+    "quarter": 2,
+    "count": 49
+  },
+  {
+    "name": "VCL",
+    "year": 2014,
+    "quarter": 3,
+    "count": 45
+  },
+  {
+    "name": "VCL",
+    "year": 2014,
+    "quarter": 4,
+    "count": 63
+  },
+  {
+    "name": "VCL",
+    "year": 2015,
+    "quarter": 1,
+    "count": 49
+  },
+  {
+    "name": "VCL",
+    "year": 2015,
+    "quarter": 2,
+    "count": 47
+  },
+  {
+    "name": "VCL",
+    "year": 2015,
+    "quarter": 3,
+    "count": 55
+  },
+  {
+    "name": "VCL",
+    "year": 2015,
+    "quarter": 4,
+    "count": 46
+  },
+  {
+    "name": "VCL",
+    "year": 2016,
+    "quarter": 1,
+    "count": 52
+  },
+  {
+    "name": "VCL",
+    "year": 2016,
+    "quarter": 2,
+    "count": 51
+  },
+  {
+    "name": "VCL",
+    "year": 2016,
+    "quarter": 3,
+    "count": 59
+  },
+  {
+    "name": "VCL",
+    "year": 2016,
+    "quarter": 4,
+    "count": 44
+  },
+  {
+    "name": "VCL",
+    "year": 2017,
+    "quarter": 1,
+    "count": 52
+  },
+  {
+    "name": "VCL",
+    "year": 2017,
+    "quarter": 2,
+    "count": 44
+  },
+  {
+    "name": "VCL",
+    "year": 2017,
+    "quarter": 3,
+    "count": 31
+  },
+  {
+    "name": "VCL",
+    "year": 2017,
+    "quarter": 4,
+    "count": 34
+  },
+  {
+    "name": "VCL",
+    "year": 2018,
+    "quarter": 1,
+    "count": 29
+  },
+  {
+    "name": "VCL",
+    "year": 2018,
+    "quarter": 2,
+    "count": 37
+  },
+  {
+    "name": "VCL",
+    "year": 2018,
+    "quarter": 3,
+    "count": 18
+  },
+  {
+    "name": "VCL",
+    "year": 2018,
+    "quarter": 4,
+    "count": 26
+  },
+  {
+    "name": "VCL",
+    "year": 2019,
+    "quarter": 1,
+    "count": 20
+  },
+  {
+    "name": "VCL",
+    "year": 2019,
+    "quarter": 2,
+    "count": 24
+  },
+  {
+    "name": "VCL",
+    "year": 2019,
+    "quarter": 3,
+    "count": 14
+  },
+  {
+    "name": "VCL",
+    "year": 2019,
+    "quarter": 4,
+    "count": 24
+  },
+  {
+    "name": "VCL",
+    "year": 2020,
+    "quarter": 1,
+    "count": 27
+  },
+  {
+    "name": "VCL",
+    "year": 2020,
+    "quarter": 2,
+    "count": 17
+  },
+  {
+    "name": "VCL",
+    "year": 2020,
+    "quarter": 3,
+    "count": 22
+  },
+  {
+    "name": "VCL",
+    "year": 2020,
+    "quarter": 4,
+    "count": 30
+  },
+  {
+    "name": "VCL",
+    "year": 2021,
+    "quarter": 1,
+    "count": 17
+  },
+  {
+    "name": "VCL",
+    "year": 2021,
+    "quarter": 2,
+    "count": 24
+  },
+  {
+    "name": "VCL",
+    "year": 2021,
+    "quarter": 3,
+    "count": 16
   },
   {
     "name": "VHDL",
@@ -53142,6 +55266,90 @@
     "count": 104
   },
   {
+    "name": "X10",
+    "year": 2012,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "X10",
+    "year": 2012,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "X10",
+    "year": 2013,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "X10",
+    "year": 2013,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "X10",
+    "year": 2014,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "X10",
+    "year": 2014,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "X10",
+    "year": 2015,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "X10",
+    "year": 2015,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "X10",
+    "year": 2015,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "X10",
+    "year": 2016,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "X10",
+    "year": 2017,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "X10",
+    "year": 2017,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "X10",
+    "year": 2018,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "X10",
+    "year": 2018,
+    "quarter": 4,
+    "count": 1
+  },
+  {
     "name": "XC",
     "year": 2014,
     "quarter": 1,
@@ -53472,6 +55680,192 @@
     "count": 1289
   },
   {
+    "name": "XProc",
+    "year": 2009,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "XProc",
+    "year": 2010,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "XProc",
+    "year": 2010,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "XProc",
+    "year": 2011,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "XProc",
+    "year": 2012,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "XProc",
+    "year": 2012,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "XProc",
+    "year": 2012,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "XProc",
+    "year": 2013,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "XProc",
+    "year": 2013,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "XProc",
+    "year": 2013,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "XProc",
+    "year": 2013,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "XProc",
+    "year": 2014,
+    "quarter": 1,
+    "count": 4
+  },
+  {
+    "name": "XProc",
+    "year": 2014,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "XProc",
+    "year": 2014,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "XProc",
+    "year": 2014,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "XProc",
+    "year": 2015,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "XProc",
+    "year": 2015,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "XProc",
+    "year": 2015,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "XProc",
+    "year": 2015,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "XProc",
+    "year": 2016,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "XProc",
+    "year": 2016,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "XProc",
+    "year": 2017,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "XProc",
+    "year": 2018,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "XProc",
+    "year": 2018,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "XProc",
+    "year": 2018,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "XProc",
+    "year": 2019,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "XProc",
+    "year": 2019,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "XProc",
+    "year": 2020,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "XProc",
+    "year": 2020,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "XProc",
+    "year": 2020,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "XProc",
+    "year": 2021,
+    "quarter": 1,
+    "count": 1
+  },
+  {
     "name": "XQuery",
     "year": 2008,
     "quarter": 3,
@@ -53790,6 +56184,252 @@
     "count": 40
   },
   {
+    "name": "XS",
+    "year": 2009,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "XS",
+    "year": 2009,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "XS",
+    "year": 2009,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "XS",
+    "year": 2010,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "XS",
+    "year": 2010,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "XS",
+    "year": 2010,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "XS",
+    "year": 2011,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "XS",
+    "year": 2011,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "XS",
+    "year": 2011,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "XS",
+    "year": 2012,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "XS",
+    "year": 2012,
+    "quarter": 3,
+    "count": 5
+  },
+  {
+    "name": "XS",
+    "year": 2012,
+    "quarter": 4,
+    "count": 5
+  },
+  {
+    "name": "XS",
+    "year": 2013,
+    "quarter": 2,
+    "count": 5
+  },
+  {
+    "name": "XS",
+    "year": 2013,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "XS",
+    "year": 2013,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "XS",
+    "year": 2014,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "XS",
+    "year": 2014,
+    "quarter": 2,
+    "count": 4
+  },
+  {
+    "name": "XS",
+    "year": 2014,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "XS",
+    "year": 2014,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "XS",
+    "year": 2015,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "XS",
+    "year": 2015,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "XS",
+    "year": 2015,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "XS",
+    "year": 2015,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "XS",
+    "year": 2016,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "XS",
+    "year": 2016,
+    "quarter": 3,
+    "count": 5
+  },
+  {
+    "name": "XS",
+    "year": 2016,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "XS",
+    "year": 2017,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "XS",
+    "year": 2017,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "XS",
+    "year": 2017,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "XS",
+    "year": 2017,
+    "quarter": 4,
+    "count": 5
+  },
+  {
+    "name": "XS",
+    "year": 2018,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "XS",
+    "year": 2018,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "XS",
+    "year": 2018,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "XS",
+    "year": 2019,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "XS",
+    "year": 2019,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "XS",
+    "year": 2019,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "XS",
+    "year": 2020,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "XS",
+    "year": 2020,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "XS",
+    "year": 2020,
+    "quarter": 3,
+    "count": 6
+  },
+  {
+    "name": "XS",
+    "year": 2021,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "XS",
+    "year": 2021,
+    "quarter": 3,
+    "count": 2
+  },
+  {
     "name": "XSLT",
     "year": 2008,
     "quarter": 3,
@@ -54106,6 +56746,1014 @@
     "year": 2021,
     "quarter": 3,
     "count": 143
+  },
+  {
+    "name": "Xojo",
+    "year": 2009,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "Xojo",
+    "year": 2009,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Xojo",
+    "year": 2010,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Xojo",
+    "year": 2012,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "Xojo",
+    "year": 2013,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Xojo",
+    "year": 2013,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "Xojo",
+    "year": 2013,
+    "quarter": 3,
+    "count": 6
+  },
+  {
+    "name": "Xojo",
+    "year": 2013,
+    "quarter": 4,
+    "count": 8
+  },
+  {
+    "name": "Xojo",
+    "year": 2014,
+    "quarter": 1,
+    "count": 4
+  },
+  {
+    "name": "Xojo",
+    "year": 2014,
+    "quarter": 2,
+    "count": 4
+  },
+  {
+    "name": "Xojo",
+    "year": 2014,
+    "quarter": 3,
+    "count": 6
+  },
+  {
+    "name": "Xojo",
+    "year": 2014,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Xojo",
+    "year": 2015,
+    "quarter": 1,
+    "count": 4
+  },
+  {
+    "name": "Xojo",
+    "year": 2015,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "Xojo",
+    "year": 2015,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "Xojo",
+    "year": 2015,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "Xojo",
+    "year": 2016,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "Xojo",
+    "year": 2016,
+    "quarter": 2,
+    "count": 4
+  },
+  {
+    "name": "Xojo",
+    "year": 2016,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "Xojo",
+    "year": 2016,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "Xojo",
+    "year": 2017,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "Xojo",
+    "year": 2017,
+    "quarter": 2,
+    "count": 3
+  },
+  {
+    "name": "Xojo",
+    "year": 2017,
+    "quarter": 3,
+    "count": 4
+  },
+  {
+    "name": "Xojo",
+    "year": 2017,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "Xojo",
+    "year": 2018,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "Xojo",
+    "year": 2018,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "Xojo",
+    "year": 2018,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "Xojo",
+    "year": 2019,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "Xojo",
+    "year": 2019,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "Xojo",
+    "year": 2019,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "Xojo",
+    "year": 2019,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "Xojo",
+    "year": 2020,
+    "quarter": 1,
+    "count": 4
+  },
+  {
+    "name": "Xojo",
+    "year": 2020,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "Xojo",
+    "year": 2020,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "Xojo",
+    "year": 2021,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Xojo",
+    "year": 2021,
+    "quarter": 2,
+    "count": 4
+  },
+  {
+    "name": "Xojo",
+    "year": 2021,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "Xtend",
+    "year": 2011,
+    "quarter": 4,
+    "count": 5
+  },
+  {
+    "name": "Xtend",
+    "year": 2012,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "Xtend",
+    "year": 2012,
+    "quarter": 2,
+    "count": 5
+  },
+  {
+    "name": "Xtend",
+    "year": 2012,
+    "quarter": 3,
+    "count": 11
+  },
+  {
+    "name": "Xtend",
+    "year": 2012,
+    "quarter": 4,
+    "count": 14
+  },
+  {
+    "name": "Xtend",
+    "year": 2013,
+    "quarter": 1,
+    "count": 16
+  },
+  {
+    "name": "Xtend",
+    "year": 2013,
+    "quarter": 2,
+    "count": 7
+  },
+  {
+    "name": "Xtend",
+    "year": 2013,
+    "quarter": 3,
+    "count": 14
+  },
+  {
+    "name": "Xtend",
+    "year": 2013,
+    "quarter": 4,
+    "count": 8
+  },
+  {
+    "name": "Xtend",
+    "year": 2014,
+    "quarter": 1,
+    "count": 7
+  },
+  {
+    "name": "Xtend",
+    "year": 2014,
+    "quarter": 2,
+    "count": 17
+  },
+  {
+    "name": "Xtend",
+    "year": 2014,
+    "quarter": 3,
+    "count": 9
+  },
+  {
+    "name": "Xtend",
+    "year": 2014,
+    "quarter": 4,
+    "count": 6
+  },
+  {
+    "name": "Xtend",
+    "year": 2015,
+    "quarter": 1,
+    "count": 12
+  },
+  {
+    "name": "Xtend",
+    "year": 2015,
+    "quarter": 2,
+    "count": 16
+  },
+  {
+    "name": "Xtend",
+    "year": 2015,
+    "quarter": 3,
+    "count": 12
+  },
+  {
+    "name": "Xtend",
+    "year": 2015,
+    "quarter": 4,
+    "count": 7
+  },
+  {
+    "name": "Xtend",
+    "year": 2016,
+    "quarter": 1,
+    "count": 15
+  },
+  {
+    "name": "Xtend",
+    "year": 2016,
+    "quarter": 2,
+    "count": 12
+  },
+  {
+    "name": "Xtend",
+    "year": 2016,
+    "quarter": 3,
+    "count": 11
+  },
+  {
+    "name": "Xtend",
+    "year": 2016,
+    "quarter": 4,
+    "count": 14
+  },
+  {
+    "name": "Xtend",
+    "year": 2017,
+    "quarter": 1,
+    "count": 12
+  },
+  {
+    "name": "Xtend",
+    "year": 2017,
+    "quarter": 2,
+    "count": 7
+  },
+  {
+    "name": "Xtend",
+    "year": 2017,
+    "quarter": 3,
+    "count": 8
+  },
+  {
+    "name": "Xtend",
+    "year": 2017,
+    "quarter": 4,
+    "count": 10
+  },
+  {
+    "name": "Xtend",
+    "year": 2018,
+    "quarter": 1,
+    "count": 6
+  },
+  {
+    "name": "Xtend",
+    "year": 2018,
+    "quarter": 2,
+    "count": 12
+  },
+  {
+    "name": "Xtend",
+    "year": 2018,
+    "quarter": 3,
+    "count": 9
+  },
+  {
+    "name": "Xtend",
+    "year": 2018,
+    "quarter": 4,
+    "count": 9
+  },
+  {
+    "name": "Xtend",
+    "year": 2019,
+    "quarter": 1,
+    "count": 7
+  },
+  {
+    "name": "Xtend",
+    "year": 2019,
+    "quarter": 2,
+    "count": 9
+  },
+  {
+    "name": "Xtend",
+    "year": 2019,
+    "quarter": 3,
+    "count": 9
+  },
+  {
+    "name": "Xtend",
+    "year": 2019,
+    "quarter": 4,
+    "count": 6
+  },
+  {
+    "name": "Xtend",
+    "year": 2020,
+    "quarter": 2,
+    "count": 7
+  },
+  {
+    "name": "Xtend",
+    "year": 2020,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "Xtend",
+    "year": 2021,
+    "quarter": 1,
+    "count": 4
+  },
+  {
+    "name": "Xtend",
+    "year": 2021,
+    "quarter": 2,
+    "count": 7
+  },
+  {
+    "name": "Xtend",
+    "year": 2021,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "YARA",
+    "year": 2015,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "YARA",
+    "year": 2016,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "YARA",
+    "year": 2016,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "YARA",
+    "year": 2017,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "YARA",
+    "year": 2017,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "YARA",
+    "year": 2017,
+    "quarter": 3,
+    "count": 5
+  },
+  {
+    "name": "YARA",
+    "year": 2017,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "YARA",
+    "year": 2018,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "YARA",
+    "year": 2018,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "YARA",
+    "year": 2018,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "YARA",
+    "year": 2019,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "YARA",
+    "year": 2019,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "YARA",
+    "year": 2019,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "YARA",
+    "year": 2019,
+    "quarter": 4,
+    "count": 3
+  },
+  {
+    "name": "YARA",
+    "year": 2020,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "YARA",
+    "year": 2020,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "YARA",
+    "year": 2020,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "YARA",
+    "year": 2021,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "YARA",
+    "year": 2021,
+    "quarter": 2,
+    "count": 6
+  },
+  {
+    "name": "YARA",
+    "year": 2021,
+    "quarter": 3,
+    "count": 3
+  },
+  {
+    "name": "Yacc",
+    "year": 2008,
+    "quarter": 3,
+    "count": 5
+  },
+  {
+    "name": "Yacc",
+    "year": 2008,
+    "quarter": 4,
+    "count": 4
+  },
+  {
+    "name": "Yacc",
+    "year": 2009,
+    "quarter": 1,
+    "count": 9
+  },
+  {
+    "name": "Yacc",
+    "year": 2009,
+    "quarter": 2,
+    "count": 13
+  },
+  {
+    "name": "Yacc",
+    "year": 2009,
+    "quarter": 3,
+    "count": 12
+  },
+  {
+    "name": "Yacc",
+    "year": 2009,
+    "quarter": 4,
+    "count": 56
+  },
+  {
+    "name": "Yacc",
+    "year": 2010,
+    "quarter": 1,
+    "count": 24
+  },
+  {
+    "name": "Yacc",
+    "year": 2010,
+    "quarter": 2,
+    "count": 17
+  },
+  {
+    "name": "Yacc",
+    "year": 2010,
+    "quarter": 3,
+    "count": 7
+  },
+  {
+    "name": "Yacc",
+    "year": 2010,
+    "quarter": 4,
+    "count": 17
+  },
+  {
+    "name": "Yacc",
+    "year": 2011,
+    "quarter": 1,
+    "count": 38
+  },
+  {
+    "name": "Yacc",
+    "year": 2011,
+    "quarter": 2,
+    "count": 31
+  },
+  {
+    "name": "Yacc",
+    "year": 2011,
+    "quarter": 3,
+    "count": 28
+  },
+  {
+    "name": "Yacc",
+    "year": 2011,
+    "quarter": 4,
+    "count": 19
+  },
+  {
+    "name": "Yacc",
+    "year": 2012,
+    "quarter": 1,
+    "count": 45
+  },
+  {
+    "name": "Yacc",
+    "year": 2012,
+    "quarter": 2,
+    "count": 39
+  },
+  {
+    "name": "Yacc",
+    "year": 2012,
+    "quarter": 3,
+    "count": 29
+  },
+  {
+    "name": "Yacc",
+    "year": 2012,
+    "quarter": 4,
+    "count": 38
+  },
+  {
+    "name": "Yacc",
+    "year": 2013,
+    "quarter": 1,
+    "count": 32
+  },
+  {
+    "name": "Yacc",
+    "year": 2013,
+    "quarter": 2,
+    "count": 41
+  },
+  {
+    "name": "Yacc",
+    "year": 2013,
+    "quarter": 3,
+    "count": 25
+  },
+  {
+    "name": "Yacc",
+    "year": 2013,
+    "quarter": 4,
+    "count": 34
+  },
+  {
+    "name": "Yacc",
+    "year": 2014,
+    "quarter": 1,
+    "count": 44
+  },
+  {
+    "name": "Yacc",
+    "year": 2014,
+    "quarter": 2,
+    "count": 39
+  },
+  {
+    "name": "Yacc",
+    "year": 2014,
+    "quarter": 3,
+    "count": 15
+  },
+  {
+    "name": "Yacc",
+    "year": 2014,
+    "quarter": 4,
+    "count": 43
+  },
+  {
+    "name": "Yacc",
+    "year": 2015,
+    "quarter": 1,
+    "count": 40
+  },
+  {
+    "name": "Yacc",
+    "year": 2015,
+    "quarter": 2,
+    "count": 32
+  },
+  {
+    "name": "Yacc",
+    "year": 2015,
+    "quarter": 3,
+    "count": 38
+  },
+  {
+    "name": "Yacc",
+    "year": 2015,
+    "quarter": 4,
+    "count": 34
+  },
+  {
+    "name": "Yacc",
+    "year": 2016,
+    "quarter": 1,
+    "count": 39
+  },
+  {
+    "name": "Yacc",
+    "year": 2016,
+    "quarter": 2,
+    "count": 37
+  },
+  {
+    "name": "Yacc",
+    "year": 2016,
+    "quarter": 3,
+    "count": 22
+  },
+  {
+    "name": "Yacc",
+    "year": 2016,
+    "quarter": 4,
+    "count": 37
+  },
+  {
+    "name": "Yacc",
+    "year": 2017,
+    "quarter": 1,
+    "count": 39
+  },
+  {
+    "name": "Yacc",
+    "year": 2017,
+    "quarter": 2,
+    "count": 20
+  },
+  {
+    "name": "Yacc",
+    "year": 2017,
+    "quarter": 3,
+    "count": 18
+  },
+  {
+    "name": "Yacc",
+    "year": 2017,
+    "quarter": 4,
+    "count": 27
+  },
+  {
+    "name": "Yacc",
+    "year": 2018,
+    "quarter": 1,
+    "count": 32
+  },
+  {
+    "name": "Yacc",
+    "year": 2018,
+    "quarter": 2,
+    "count": 32
+  },
+  {
+    "name": "Yacc",
+    "year": 2018,
+    "quarter": 3,
+    "count": 16
+  },
+  {
+    "name": "Yacc",
+    "year": 2018,
+    "quarter": 4,
+    "count": 24
+  },
+  {
+    "name": "Yacc",
+    "year": 2019,
+    "quarter": 1,
+    "count": 21
+  },
+  {
+    "name": "Yacc",
+    "year": 2019,
+    "quarter": 2,
+    "count": 30
+  },
+  {
+    "name": "Yacc",
+    "year": 2019,
+    "quarter": 3,
+    "count": 15
+  },
+  {
+    "name": "Yacc",
+    "year": 2019,
+    "quarter": 4,
+    "count": 28
+  },
+  {
+    "name": "Yacc",
+    "year": 2020,
+    "quarter": 1,
+    "count": 24
+  },
+  {
+    "name": "Yacc",
+    "year": 2020,
+    "quarter": 2,
+    "count": 35
+  },
+  {
+    "name": "Yacc",
+    "year": 2020,
+    "quarter": 3,
+    "count": 19
+  },
+  {
+    "name": "Yacc",
+    "year": 2020,
+    "quarter": 4,
+    "count": 28
+  },
+  {
+    "name": "Yacc",
+    "year": 2021,
+    "quarter": 1,
+    "count": 24
+  },
+  {
+    "name": "Yacc",
+    "year": 2021,
+    "quarter": 2,
+    "count": 32
+  },
+  {
+    "name": "Yacc",
+    "year": 2021,
+    "quarter": 3,
+    "count": 7
+  },
+  {
+    "name": "Zephir",
+    "year": 2013,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "Zephir",
+    "year": 2013,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Zephir",
+    "year": 2014,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "Zephir",
+    "year": 2014,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Zephir",
+    "year": 2014,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "Zephir",
+    "year": 2014,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Zephir",
+    "year": 2015,
+    "quarter": 1,
+    "count": 3
+  },
+  {
+    "name": "Zephir",
+    "year": 2015,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Zephir",
+    "year": 2015,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Zephir",
+    "year": 2016,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Zephir",
+    "year": 2016,
+    "quarter": 2,
+    "count": 2
+  },
+  {
+    "name": "Zephir",
+    "year": 2016,
+    "quarter": 3,
+    "count": 1
+  },
+  {
+    "name": "Zephir",
+    "year": 2016,
+    "quarter": 4,
+    "count": 2
+  },
+  {
+    "name": "Zephir",
+    "year": 2017,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Zephir",
+    "year": 2017,
+    "quarter": 2,
+    "count": 1
+  },
+  {
+    "name": "Zephir",
+    "year": 2018,
+    "quarter": 1,
+    "count": 2
+  },
+  {
+    "name": "Zephir",
+    "year": 2018,
+    "quarter": 3,
+    "count": 2
+  },
+  {
+    "name": "Zephir",
+    "year": 2020,
+    "quarter": 1,
+    "count": 1
+  },
+  {
+    "name": "Zephir",
+    "year": 2020,
+    "quarter": 4,
+    "count": 1
+  },
+  {
+    "name": "Zephir",
+    "year": 2021,
+    "quarter": 1,
+    "count": 1
   },
   {
     "name": "Zig",
