@@ -104,7 +104,7 @@ const Plot = () => {
     if (chart.current?.data.datasets) {
       chart.current.data.datasets = [];
     }
-  }, [global.metric]);
+  }, [global.metric, global.weights]);
 
   // react to changed in the global state
   useEffect(
@@ -129,7 +129,13 @@ const Plot = () => {
     },
     // rule is disabled because global.selectedLangs never changes shallowly
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [global.metric, global.selectedLangs.size, ...global.selectedLangs]
+    [
+      global.metric,
+      global.selectedLangs.size,
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      ...global.selectedLangs,
+      global.weights,
+    ]
   );
 
   // react to changed in the global state
@@ -141,13 +147,11 @@ const Plot = () => {
   // update highlighted element
   useEffect(() => {
     if (!chart.current?.data.datasets) return;
-
     for (const lang of chart.current.data.datasets) {
-      lang.borderWidth = lang.label === global.highlighed ? 9 : 3;
+      lang.borderWidth = lang.label === global.highlighted ? 9 : 3;
     }
-
     chart.current.update();
-  }, [global.highlighed]);
+  }, [global.highlighted]);
 
   return (
     <div className="plot">

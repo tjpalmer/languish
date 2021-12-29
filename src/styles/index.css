@@ -229,14 +229,24 @@ html {
 }
 
 .query input {
+  font-size: inherit;
+  margin: 0 0.5vh;
+  padding: 0.2em;
+  width: 100%;
+}
+
+.query,
+.weight {
+  border: 1px solid white;
+  border-radius: 0.2em;
+}
+
+.query input,
+.weight input {
   background: none;
   border: none;
   color: white;
-  font-size: inherit;
-  margin: 0 0.5vh;
   outline: none;
-  padding: 0.2em;
-  width: 100%;
 }
 
 .queryClear {
@@ -264,6 +274,11 @@ html {
 .trim.checked {
   background: white;
   color: #333;
+}
+
+.weight input {
+  font-size: 0.7em;
+  margin: -0.2em;
 }
 
 .xAxis {
@@ -310,6 +325,19 @@ html {
   content: "\25BC";
 }
 
+.yMetricsList li {
+  margin-bottom: 0.2em;
+}
+
+.yMetricsList .metric {
+  padding: 0.2em;
+}
+
+.yMetricsList .metricRow {
+  align-items: center;
+  display: flex;
+}
+
 .yOptions {
   display: none;
   padding: 1em;
@@ -338,4 +366,13 @@ html {
 
 .yOptionsExpanded .yOptions {
   display: initial;
+}
+
+.weight {
+  padding-bottom: 0.2em;
+}
+
+.weight input {
+  text-align: center;
+  width: 2em;
 }

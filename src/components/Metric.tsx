@@ -13,11 +13,12 @@ const Metric = () => {
 
   // map of available metrics to human readable strings
   const items: { [k in keyof Metrics]: MetricItem } = {
-    issues: { label: "Issues" },
-    mean: { label: "Mean Score", info: "Excludes pushes because bots" },
-    pulls: { label: "Pull Requests" },
-    pushes: { label: "Pushes" },
-    stars: { label: "Stars" },
+    mean: { label: "Mean Score" },
+    issues: { label: "GH Issues" },
+    pulls: { label: "GH Pull Requests" },
+    pushes: { label: "GH Pushes", info: "Excluded by default because bots" },
+    stars: { label: "GH Stars" },
+    soQuestions: { label: "SO Questions" },
   };
 
   // map of available metrics to human readable strings
@@ -25,6 +26,27 @@ const Metric = () => {
     linear: "Linear",
     log: "Log",
   };
+
+  function renderWeight(key: keyof Metrics) {
+    if (key !== "mean") {
+      const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        global.changeWeight(key, event.target.value);
+      };
+      return (
+        <>
+          <label
+            className="weight"
+            title={`${(items as any)[key]} weight for mean`}
+          >
+            <input onChange={onChange} value={(global.weights as any)[key]} />
+          </label>
+          &nbsp;
+        </>
+      );
+    } else {
+      return <span></span>;
+    }
+  }
 
   return (
     <>
@@ -47,16 +69,22 @@ const Metric = () => {
           <h3>Metric</h3>
           <ul className="yMetricsList">
             {objectEntries(items).map(([real, display]) => (
-              <li
-                onClick={() => global.changeMetric(real)}
-                className={clx(
-                  "interactive",
-                  real,
-                  global.metric === real && "active"
-                )}
-                title={display.info}
-              >
-                {display.label}
+              <li>
+                <span className="metricRow">
+                  {renderWeight(real)}
+                  <span
+                    className={clx(
+                      "interactive",
+                      "metric",
+                      real,
+                      global.metric === real && "active"
+                    )}
+                    onClick={() => global.changeMetric(real)}
+                    title={display.info}
+                  >
+                    {display.label}
+                  </span>
+                </span>
               </li>
             ))}
           </ul>

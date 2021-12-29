@@ -23,259 +23,261 @@
 "AutoIt","AutoIt","autoit","autoit"
 "Awk","AWK","awk","awk"
 "Batchfile","Batch_file","Batch","batch-file"
-"Bison",,,
+"Bison","GNU_Bison","","bison"
 "BitBake","BitBake","bitbake","bitbake"
-"BlitzBasic",,,
-"Bluespec",,,
-"Brainfuck",,,
-"Brightscript",,,
-"Bro",,,
+"BlitzBasic","Blitz_BASIC","",""
+"Bluespec","Bluespec","","bluespec"
+"Brainfuck","Brainfuck","brainfuck","brainfuck"
+"Brightscript","","RokuDev","brightscript"
+"Bro","Zeek","","bro|zeek"
 "C","C_(programming_language)","C_Programming","c"
 "C#","C_Sharp_(programming_language)","csharp","c#"
 "C++","C++","cpp","c++"
-"CartoCSS",,,
-"Ceylon",,,
-"Chapel",,,
-"Clean",,,
-"Click",,,
+"CartoCSS","CartoDB","","cartocss"
+"Ceylon","Ceylon_(programming_language)","ceylon","ceylon"
+"Chapel","Chapel_(programming_language)","chapel","chapel"
+"Clean","Clean_(programming_language)","","clean-language"
+"Click","","",""
 "Clojure","Clojure","Clojure","clojure"
 "CMake","CMake","cmake","cmake"
-"COBOL",,,
+"COBOL","COBOL","cobol","cobol"
 "CoffeeScript","CoffeeScript","coffeescript","coffeescript"
 "ColdFusion","Adobe_ColdFusion","coldfusion","coldfusion"
 "Common Lisp","Common_Lisp","Common_Lisp","common-lisp"
-"Common Workflow Language",,,
-"Component Pascal",,,
+"Common Workflow Language","Common_Workflow_Language","",""
+"Component Pascal","Component_Pascal","","component-pascal"
 "Coq","Coq","Coq","coq"
 "Crystal","Crystal_(programming_language)","crystal_programming","crystal-lang"
 "CSS","Cascading_Style_Sheets","CSS","css"
-"Cucumber",,,
-"Cuda",,,
+"Cucumber","Cucumber_(software)","","cucumber|gherkin"
+"Cuda","CUDA","CUDA","cuda"
 "D","D_(programming_language)","d_language","d"
 "Dart","Dart_(programming_language)","dartlang","dart"
-"DCPU-16 ASM",,,
-"Delphi",,,
-"Diff",,,
-"DIGITAL Command Language",,,
+"DCPU-16 ASM","","dcpu16","dcpu-16"
+"Delphi","Delphi_(software)","delphi","delphi"
+"Diff","","",""
+"DIGITAL Command Language","DIGITAL_Command_Language","","dcl"
 "DM","Space_Station_13","BYOND",""
 "Dockerfile","Docker_(software)","docker","docker"
-"DOT",,,
-"DTrace",,,
-"Dylan",,,
-"Eagle",,,
-"Eiffel",,,
+"DOT","DOT_(graph_description_language)|Graphviz","graphviz","graphviz"
+"DTrace","DTrace","dtrace","dtrace"
+"Dylan","Dylan_(programming_language)","","dylan"
+"Eagle","EAGLE_(program)","",""
+"Eiffel","Eiffel_(programming_language)","","eiffel"
 "Elixir","Elixir_(programming_language)","elixir","elixir"
 "Elm","Elm_(programming_language)","elm","elm"
 "Emacs Lisp","Emacs_Lisp","emacs","elisp"
-"EmberScript",,,
+"EmberScript","","",""
 "Erlang","Erlang_(programming_language)","erlang","erlang"
 "F*","F*_(programming_language)","fstar","fstar"
 "F#","F_Sharp_(programming_language)","fsharp","f#"
-"Factor",,,
-"Fancy",,,
-"FLUX",,,
-"Forth",,,
+"Factor","Factor_(programming_language)","factor","factor-lang"
+"Fancy","","",""
+"FLUX","","","flux-influxdb"
+"Forth","Forth_(programming_language)","Forth","forth"
 "Fortran","Fortran","fortran","fortran"
-"FreeMarker",,,
-"Frege",,,
-"Game Maker Language",,,
-"GAP",,,
-"GCC Machine Description",,,
+"FreeMarker","FreeMarker","","freemarker"
+"Frege","","","frege"
+"Game Maker Language","GameMaker","gamemaker","game-maker"
+"GAP","GAP_(computer_algebra_system)","","gap-system"
+"GCC Machine Description","","",""
 "GDScript","Godot_(game_engine)","godot","godot"
-"Genshi",,,
-"Gettext Catalog",,,
+"Genshi","Genshi_(templating_language)","","genshi"
+"Gettext Catalog","Gettext","","gettext"
 "Gherkin","Cucumber_(software)","","gherkin"
 "GLSL","OpenGL_Shading_Language","glsl","glsl"
-"Gnuplot",,,
+"Gnuplot","Gnuplot","gnuplot","gnuplot"
 "Go","Go_(programming_language)","golang","go"
-"Gosu",,,
-"Groff",,,
+"Gosu","Gosu_(programming_language)","","gosu"
+"Groff","Groff_(software)","groff","groff"
 "Groovy","Apache_Groovy","groovy","groovy"
-"Hack",,,
-"Handlebars",,,
+"Hack","Hack_(programming_language)","hacklang","hacklang"
+"Handlebars","Mustache_(template_system)","","mustache"
 "Haskell","Haskell_(programming_language)","haskell","haskell"
 "Haxe","Haxe","haxe","haxe"
 "HCL","Terraform_(software)","Terraform","Terraform"
-"HLSL",,,
+"HLSL","High-Level_Shading_Language","","hlsl"
 "HTML","HTML","HTML","html"
-"Hy",,,
-"IDL",,,
-"Idris",,,
-"IGOR Pro",,,
-"Inform 7",,,
-"Inno Setup",,,
-"Io",,,
-"Isabelle",,,
-"J",,,
+"Hy","Hy","hylang","hy"
+"IDL","IDL_(programming_language)","IDLhelp","idl-programming-language"
+"Interface Description Language","Interface_description_language","","idl"
+"Idris","Idris_(programming_language)","Idris","idris"
+"IGOR Pro","IGOR_Pro","IgorPro","igor"
+"Inform 7","Inform","Inform7","inform7"
+"Inno Setup","Inno_Setup","","inno-setup"
+"Io","Io_(programming_language)","iolanguage","iolanguage"
+"Isabelle","Isabelle_(proof_assistant)","isabelle","isabelle"
+"J","J_(programming_language)","jlang","j"
 "Java","Java_(programming_language)","java","java"
 "JavaScript","JavaScript","javascript","javascript"
-"JSONiq",,,
-"Jsonnet","","",""
+"JSONiq","JSONiq","","jsoniq"
+"Jsonnet","","","jsonnet"
 "Julia","Julia_(programming_language)","Julia","julia"
 "Jupyter Notebook","Project_Jupyter","IPython","jupyter"
-"KiCad",,,
-"KiCad Layout",,,
+"KiCad","KiCad","KiCad","kicad"
+"KiCad Layout","KiCad","KiCad","kicad"
 "Kotlin","Kotlin_(programming_language)","Kotlin","kotlin"
-"KRL",,,
-"LabVIEW",,,
-"Lasso",,,
-"Lean",,,
-"Lex",,,
-"LilyPond",,,
-"Limbo",,,
-"Liquid",,,
-"LiveScript",,,
-"LLVM",,,
-"Logos",,,
-"Logtalk",,,
+"KRL","KUKA_Robot_Language","","kuka-krl"
+"LabVIEW","LabVIEW","LabVIEW","labview"
+"Lasso","Lasso_(programming_language)","",""
+"Lean","Lean_(proof_assistant)","leanprover","lean"
+"Lex","Lex_(software)","","lex"
+"LilyPond","LilyPond","lilypond","lilypond"
+"Limbo","Limbo_(programming_language)","",""
+"Liquid","","","liquid"
+"LiveScript","LiveScript","LiveScript","livescript"
+"LLVM","LLVM","LLVM","llvm|llvm-ir"
+"Logos","","",""
+"Logo Language","Logo_(programming_language)","logolang","logo-lang"
+"Logtalk","Logtalk","","logtalk"
 "LookML","Looker_(company)","Looker","looker"
-"LoomScript",,,
-"LSL",,,
+"LoomScript","","",""
+"LSL","","lsl","linden-scripting-language"
 "Lua","Lua_(programming_language)","lua","lua"
-"M",,,
+"M","MUMPS","MLang","mumps"
 "M4","m4_(computer_language)","","m4"
 "Makefile","Make_(software)","","makefile"
-"Mako",,,
+"Mako","","","mako"
 "Markdown","Markdown","Markdown","markdown"
-"Mask",,,
+"Mask","","",""
 "Mathematica","Wolfram_Mathematica","Mathematica","wolfram-mathematica"
 "MATLAB","MATLAB","matlab","matlab"
-"Max",,,
-"MAXScript",,,
-"Mercury",,,
-"Meson",,,
-"Mirah",,,
+"Max","Max_(software)","MaxMSP","max-msp-jitter"
+"MAXScript","","Maxscript","maxscript"
+"Mercury","Mercury_(programming_language)","mercury","mercury"
+"Meson","Meson_(software)","meson","meson-build"
+"Mirah","Mirah_(programming_language)","mirah","mirah"
 "MLIR","","",""
-"Modelica",,,
-"Modula-2",,,
-"Monkey",,,
-"MoonScript",,,
-"MQL4",,,
-"MQL5",,,
-"NCL",,,
-"Nemerle",,,
-"nesC",,,
-"NetLogo",,,
-"Nextflow",,,
-"Nginx",,,
+"Modelica","Modelica","Modelica","modelica"
+"Modula-2","Modula-2","","modula-2"
+"Monkey","","",""
+"MoonScript","","moonscript","moonscript"
+"MQL4","","","mql4"
+"MQL5","","","mql5"
+"NCL","","","ncl"
+"Nemerle","Nemerle","nemerle","nemerle"
+"nesC","NesC","","nesc"
+"NetLogo","NetLogo","NetLogo","netlogo"
+"Nextflow","","","nextflow"
+"Nginx","Nginx","nginx","nginx"
 "Nim","Nim_(programming_language)","nim","nim-lang"
 "Nix","Nix_package_manager","NixOS","nix"
-"NSIS",,,
+"NSIS","Nullsoft_Scriptable_Install_System","NSIS","nsis"
 "Objective-C","Objective-C","ObjectiveC","objective-c"
 "Objective-C++","","","objective-c++"
-"Objective-J",,,
+"Objective-J","Objective-J","","objective-j"
 "OCaml","OCaml","ocaml","ocaml"
-"ooc",,,
-"Open Policy Agent",,,
-"OpenEdge ABL",,,
+"ooc","","",""
+"Open Policy Agent","","OpenPolicyAgent","open-policy-agent"
+"OpenEdge ABL","OpenEdge_Advanced_Business_Language","OpenEdge","openedge|progress-4gl"
 "OpenSCAD","OpenSCAD","openscad","openscad"
-"Oz",,,
-"P4",,,
-"Pan",,,
-"Papyrus",,,
+"Oz","Oz_(programming_language)","","mozart|oz"
+"P4","P4_(programming_language)","","p4-lang"
+"Pan","Pan_(programming_language)","",""
+"Papyrus","","skyrimmods",""
 "Pascal","Pascal_(programming_language)","pascal","pascal"
-"PAWN",,,
+"PAWN","","","pawn"
 "Perl","Perl","perl","perl"
 "PHP","PHP","PHP","php"
-"PicoLisp",,,
-"PigLatin",,,
-"Pike",,,
+"PicoLisp","PicoLisp","","picolisp"
+"PigLatin","Apache_Pig","","apache-pig"
+"Pike","","","pike"
 "PLpgSQL","pgSQL","PostgreSQL","postgresql"
 "PLSQL","PL/SQL","plsql","plsql"
-"Pony",,,
+"Pony","","ponylang","ponylang"
 "PostScript","PostScript","PostScript","postscript"
-"POV-Ray SDL",,,
-"PowerBuilder",,,
+"POV-Ray SDL","POV-Ray","","povray"
+"PowerBuilder","PowerBuilder","PowerBuilder","powerbuilder"
 "PowerShell","PowerShell","PowerShell","powershell"
-"Processing",,,
+"Processing","Processing_(programming_language)","processing","processing"
 "Prolog","Prolog","prolog","prolog"
-"Propeller Spin",,,
-"Protocol Buffer",,,
+"Propeller Spin","Parallax_Propeller","","propeller-tool"
+"Protocol Buffer","Protocol_Buffers","","protocol-buffers"
 "Puppet","Puppet_(company)","Puppet","puppet"
-"Pure Data",,,
-"PureBasic",,,
+"Pure Data","Pure_Data","puredata","puredata"
+"PureBasic","PureBasic","purebasic",""
 "PureScript","PureScript","purescript","purescript"
 "Python","Python_(programming_language)","Python","python"
 "q","Q_(programming_language_from_Kx_Systems)","kdb","kdb"
-"QMake",,,
+"QMake","Qmake","","qmake"
 "QML","QML","QtFramework","qml"
 "R","R_(programming_language)","Rlanguage","r"
 "Racket","Racket_(programming_language)","Racket","racket"
-"Ragel in Ruby Host",,,
+"Ragel in Ruby Host","Ragel","","ragel"
 "Raku","Raku_(programming_language)","rakulang","raku"
-"RAML",,,
-"Rascal",,,
+"RAML","RAML_(software)","","raml"
+"Rascal","RascalMPL","","rascal"
 "Reason","Reason_(syntax_extension_for_OCaml)","reasonml","reason"
-"Rebol",,,
-"Red",,,
-"Ren'Py",,,
+"Rebol","Rebol","rebol","rebol"
+"Red","Red_(programming_language)","redlang","red"
+"Ren'Py","Ren'Py","RenPy","renpy"
 "Rich Text Format","Rich_Text_Format","","rtf"
 "Ring","Ring_(programming_language)","ringlang",""
 "RobotFramework","Robot_Framework","robotframework","robotframework"
 "Roff","groff_(software)","groff","groff"
-"Rouge",,,
-"RPC",,,
+"Rouge","","",""
+"RPC","","",""
 "Ruby","Ruby_(programming_language)","ruby","ruby"
 "Rust","Rust_(programming_language)","rust","rust"
 "SaltStack","Salt_(software)","saltstack","salt-stack"
-"SAS",,,
+"SAS","SAS_language","sas","sas"
 "Scala","Scala_(programming_language)","scala","scala"
 "Scheme","Scheme_(programming_language)","scheme","scheme"
-"Scilab",,,
-"sed",,,
-"ShaderLab",,,
+"Scilab","Scilab","scilab","scilab"
+"sed","Sed","","sed"
+"ShaderLab","","","shaderlab"
 "Shell","Bash_(Unix_shell)","bash","bash"
-"Shen",,,
-"Slash",,,
-"Smali",,,
+"Shen","","Qi_Shen|shenlanguage","shen"
+"Slash","","",""
+"Smali","","","smali"
 "Smalltalk","Smalltalk","smalltalk","smalltalk"
 "Smarty","Smarty_(template_engine)","","smarty"
-"SMT",,,
+"SMT","Satisfiability_modulo_theories","","smt"
 "SourcePawn","","",""
-"SQF",,,
+"SQF","","","sqf"
 "SQL","SQL","SQL","sql"
-"SQLPL",,,
-"Squirrel",,,
-"Stan",,,
-"Standard ML",,,
+"SQLPL","SQL_PL","DB2","db2"
+"Squirrel","Squirrel_(programming_language)","","squirrel"
+"Stan","Stan_(software)","","stan"
+"Standard ML","Standard_ML","sml","sml"
 "Starlark","Bazel_(software)","bazel","bazel"
-"Stata",,,
-"SuperCollider",,,
+"Stata","Stata","stata","stata"
+"SuperCollider","SuperCollider","supercollider","supercollider"
 "Swift","Swift_(programming_language)","swift","swift"
 "SWIG","SWIG","","swig"
 "SystemVerilog","SystemVerilog","systemverilog","system-verilog"
 "Tcl","Tcl","Tcl","tcl"
 "TeX","LaTeX","LaTeX","latex"
-"Thrift",,,
+"Thrift","Apache_Thrift","","thrift|thrift-protocol"
 "TSQL","Transact-SQL","SQLServer","tsql"
 "TypeScript","TypeScript","typescript","typescript"
-"Uno",,,
-"UnrealScript",,,
-"UrWeb",,,
+"Uno","","",""
+"UnrealScript","","UnrealScript","unrealscript"
+"UrWeb","Ur_(programming_language)","",""
 "Vala","Vala_(programming_language)","vala","vala"
-"VBA",,,
-"VCL",,,
+"VBA","Visual_Basic_for_Applications","vba","vba"
+"VCL","Varnish_(software)","varnish","varnish|varnish-vcl"
 "Verilog","Verilog","Verilog","verilog"
 "VHDL","VHDL","VHDL","vhdl"
 "Vim script","Vim_(text_editor)","vim","vim"
-"Vim Snippet",,,
+"Vim Snippet","","",""
 "Visual Basic","Visual_Basic","visualbasic","vb"
 "Visual Basic .NET","Visual_Basic_.NET","visualbasic","vb.net"
 "Vue","Vue.js","vuejs","vue.js"
-"Web Ontology Language",,,
+"Web Ontology Language","Web_Ontology_Language","semanticweb","owl"
 "WebAssembly","WebAssembly","WebAssembly","webassembly"
-"wisp",,,
-"X10",,,
+"wisp","","",""
+"X10","X10_(programming_language)","","x10-language"
 "xBase","XBase","","xbase"
 "XC","XC_(programming_language)","","xmos"
-"XML",,,
-"Xojo",,,
-"XProc",,,
-"XQuery",,,
-"XS",,,
+"XML","XML","xml","xml"
+"Xojo","Xojo","xojo","xojo"
+"XProc","XProc","","xproc"
+"XQuery","XQuery","xquery","xquery"
+"XS","XS_(Perl)","","xs"
 "XSLT","XSLT","xslt","xslt"
-"Xtend",,,
-"Yacc",,,
-"YARA",,,
-"Zephir",,,
+"Xtend","Xtend","","xtend"
+"Yacc","Yacc","","yacc"
+"YARA","YARA","","yara"
+"Zephir","Zephir","","zephir"
 "Zig","Zig_(programming_language)","Zig","zig"

@@ -46,3 +46,18 @@
   group by tags, year, quarter
   order by count(*) desc
   ```
+- Also: https://data.stackexchange.com/ (except limit 50k rows)
+  ```sql
+  SELECT
+    t.TagName,
+    DatePart(quarter, p.LastActivityDate) AS q,
+    Year(p.LastActivityDate) AS y, 
+    COUNT(p.Id) As NumPosts
+  FROM Posts p
+  JOIN PostTags pt ON p.Id = pt.PostId
+  JOIN Tags t ON t.Id = pt.TagId
+  GROUP BY DatePart(quarter, p.LastActivityDate), Year(p.LastActivityDate), t.TagName
+  ORDER BY y, q, NumPosts DESC
+  ```
+- https://subredditstats.com/api/subreddit?name=Python
+- https://wikimedia.org/api/rest_v1/

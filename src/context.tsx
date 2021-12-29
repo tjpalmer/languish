@@ -1,6 +1,16 @@
 import { LangItemProps } from "components/LangItem";
 import { objectEntries } from "helpers";
-import { colors, entries, Metrics } from "parsedData";
+import {
+  colors,
+  CoreMetricTexts,
+  defaultWeights,
+  entries,
+  Metrics,
+  parseWeights,
+  putMean,
+  stringifyWeights,
+  sums,
+} from "parsedData";
 import React, { useContext } from "react";
 
 export type Scale = "linear" | "log";
@@ -16,7 +26,8 @@ const defaultState = {
     "selected" | "onClick" | "onMouseOver" | "onMouseOut"
   >[],
   selectedLangs: new Set<string>(),
-  highlighed: undefined as string | undefined,
+  highlighted: undefined as string | undefined,
+  weights: stringifyWeights(defaultWeights),
 };
 
 // react context isnt very type-friendly, need to declare noops
@@ -28,6 +39,7 @@ const noopFuncs = {
   resetList() {},
   changeMetric(metric: keyof Metrics) {},
   changeScale(scale: Scale) {},
+  changeWeight(key: keyof Metrics, value: string) {},
   toggleSelected(name: string) {},
   setHighlighted(name?: string) {},
 };
@@ -98,6 +110,12 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
 
   changeScale = (scale: Scale) => this.setState({ scale });
 
+  changeWeight = (key: keyof Metrics, value: string) =>
+    this.setState(
+      { weights: { ...this.state.weights, [key]: value } },
+      this.processChangedWeights
+    );
+
   toggleSelected = (name: string) =>
     this.setState((prevState) => {
       if (prevState.selectedLangs.has(name)) {
@@ -109,7 +127,7 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
     });
 
   // if nothing is passed, remove highlight
-  setHighlighted = (name?: string) => this.setState({ highlighed: name });
+  setHighlighted = (name?: string) => this.setState({ highlighted: name });
 
   render = () => (
     <GlobalContext.Provider
@@ -122,6 +140,7 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
         resetList: this.resetList,
         changeMetric: this.changeMetric,
         changeScale: this.changeScale,
+        changeWeight: this.changeWeight,
         toggleSelected: this.toggleSelected,
         setHighlighted: this.setHighlighted,
       }}
@@ -197,6 +216,13 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
     if (metric) {
       this.changeMetric(metric as keyof Metrics);
     }
+    const weightsText = params.get("weights");
+    if (weightsText) {
+      const weights = Object.fromEntries(
+        new URLSearchParams(weightsText)
+      ) as CoreMetricTexts;
+      this.setState({ weights }, this.processChangedWeights);
+    }
     const scale = params.get("yscale");
     if (scale) {
       this.changeScale(scale as Scale);
@@ -218,5 +244,10 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
     window.location.hash = "";
 
     this.setState({ trimmed: true });
+  }
+
+  private processChangedWeights() {
+    putMean({ entries, sums, weights: parseWeights(this.state.weights) });
+    this.constructList();
   }
 }

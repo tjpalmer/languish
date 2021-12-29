@@ -1,4 +1,5 @@
 import { useGlobal } from "context";
+import { parseWeights } from "parsedData";
 import React, { useState } from "react";
 import "styles/Header.css";
 
@@ -10,6 +11,13 @@ const Header = () => {
     const params = new URLSearchParams();
     const names = [...global.selectedLangs].map((name) => name.toLowerCase());
     params.append("y", global.metric);
+    if (global.metric === "mean") {
+      const customWeights = new URLSearchParams();
+      Object.entries(parseWeights(global.weights)).forEach(([key, value]) => {
+        customWeights.append(key, String(value));
+      });
+      params.append("weights", customWeights.toString());
+    }
     if (global.scale !== "linear") {
       params.append("yscale", global.scale);
     }

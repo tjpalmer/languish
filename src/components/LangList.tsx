@@ -1,6 +1,6 @@
 import { useGlobal } from "context";
 import { clx } from "helpers";
-import React, { useLayoutEffect, useMemo, useRef } from "react";
+import React, { useMemo, useRef } from "react";
 import LangItem from "./LangItem";
 
 const LangList = () => {
@@ -29,39 +29,6 @@ const LangList = () => {
     global.langList,
     global.searchTerm,
   ]);
-
-  // window wide event for query input
-  useLayoutEffect(() => {
-    const handleType = (event: KeyboardEvent) => {
-      // already focused on the input
-      if (event.target === inputRef.current) {
-        if (event.key === "Escape") {
-          global.updateSearchTerm("");
-        }
-      } else {
-        event.preventDefault();
-        event.stopPropagation();
-        switch (event.key) {
-          case "Backspace":
-          case "Delete":
-          case "Escape":
-            global.updateSearchTerm("");
-            break;
-          default:
-            // add the entered character if its alphanumeric, the rest will be handled by the input
-            if (/^[a-z0-9]$/i.test(event.key)) {
-              global.updateSearchTerm(event.key);
-            }
-        }
-
-        inputRef.current?.focus();
-      }
-    };
-
-    window.addEventListener("keydown", handleType);
-
-    return () => window.removeEventListener("keydown", handleType);
-  }, [global]);
 
   return (
     <div className="legend">

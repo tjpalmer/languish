@@ -2,12 +2,25 @@
 import tables from "data.json";
 import { murmur3 } from "murmurhash-js";
 
-interface CoreMetrics {
+export interface CoreMetrics {
   issues: number;
   pulls: number;
   pushes: number;
   stars: number;
+  soQuestions: number;
 }
+
+export const defaultWeights: CoreMetrics = Object.freeze({
+  issues: 1,
+  pulls: 1,
+  pushes: 0,
+  stars: 1,
+  soQuestions: 1,
+});
+
+export type CoreMetricTexts = {
+  [key in keyof CoreMetrics]: string;
+};
 
 export interface Metrics extends CoreMetrics {
   mean: number;
@@ -21,6 +34,13 @@ interface Entry extends DateMetrics {
   name: string;
 }
 
+export interface Translation {
+  key: string;
+  reddit: string;
+  stackoverflow: string;
+  wikipedia: string;
+}
+
 type Keyed<Item> = {
   [key: string]: Item;
 };
@@ -31,6 +51,12 @@ interface Data {
   entries: Keyed<Entry[]>;
   sums: Keyed<DateMetrics>;
 }
+
+export type MeanParams = {
+  entries: Keyed<Entry[]>;
+  sums: Keyed<DateMetrics>;
+  weights: CoreMetrics;
+};
 
 function keepFirst<Item>(keyed: Keyed<Item[]>): Keyed<Item> {
   return Object.assign(
@@ -105,7 +131,7 @@ function fillDates({ dates, entries }: Data) {
 function normalize({ entries, sums }: Data) {
   let keys = Object.keys(Object.values(sums)[0]).filter(
     (key) => key !== "date"
-  ) as (keyof DateMetrics)[];
+  ) as (keyof Metrics)[];
   for (let points of Object.values(entries)) {
     for (let point of points) {
       let sum = sums[point.date];
@@ -117,18 +143,34 @@ function normalize({ entries, sums }: Data) {
   }
 }
 
-function putMean({ entries, sums }: Data) {
-  const weights = { issues: 1, pulls: 1, pushes: 0, stars: 1 } as Metrics;
+export function parseWeights(texts: CoreMetricTexts): CoreMetrics {
+  return (Object.fromEntries(
+    Object.entries(texts).map(([key, value]) => {
+      let parsed = parseFloat(value);
+      if (isNaN(parsed)) {
+        parsed = 0;
+      }
+      return [key, parsed];
+    })
+  ) as unknown) as Metrics;
+}
+
+export function putMean({ entries, sums, weights }: MeanParams) {
+  const keys = Object.keys(weights) as (keyof CoreMetrics)[];
   const weightTotal = sumOf(Object.values(weights));
-  const keys = Object.keys(Object.values(sums)[0]).filter(
-    (key) => key !== "date"
-  ) as (keyof Metrics)[];
   for (const points of Object.values(entries)) {
     for (const point of points) {
+      // TODO Use sums param to unweight missing values?
       const sum = sumOf(keys.map((key) => weights[key] * point[key]));
       point.mean = sum / weightTotal;
     }
   }
+}
+
+export function stringifyWeights(numbers: CoreMetrics): CoreMetricTexts {
+  return (Object.fromEntries(
+    Object.entries(numbers).map(([key, value]) => [key, value.toString()])
+  ) as unknown) as CoreMetricTexts;
 }
 
 function sumOf(nums: number[]): number {
@@ -168,6 +210,13 @@ function chooseColor(name: string) {
   return formatColor({ hue, saturation });
 }
 
+function filterDate<Metrics extends DateMetrics>(items: Metrics[]): Metrics[] {
+  // This hard codes to the quarter when our GitHub data starts.
+  // Stack Overflow data starts earlier, but I don't want to rely on that
+  // independently.
+  return items.filter((item) => item.date >= "2012Q2");
+}
+
 function formatColor(color: Color) {
   return `hsl(${color.hue}, ${color.saturation}%, 70%)`;
 }
@@ -175,13 +224,13 @@ function formatColor(color: Color) {
 let sums = keepFirst(
   keyOn({
     key: "date",
-    items: tableToItems(tables.sums as any) as DateMetrics[],
+    items: filterDate(tableToItems(tables.sums as any) as DateMetrics[]),
   })
 );
 let dates = Object.keys(sums).sort();
 let entries = keyOn({
   key: "name",
-  items: tableToItems(tables.items as any) as Entry[],
+  items: filterDate(tableToItems(tables.items as any) as Entry[]),
 });
 let colors = Object.assign(
   {},
@@ -192,10 +241,17 @@ let colors = Object.assign(
 let data = { colors, dates, entries, sums };
 // Normalize and mean in advance.
 normalize(data);
-putMean(data);
+putMean({ entries: data.entries, sums: data.sums, weights: defaultWeights });
 // Fill in missing data here.
 // The idea is that this code is smaller than the compressed repeated zeros
 // would be in the preprocessed data -- and not too expensive to compute.
 fillDates(data);
 
-export { colors, dates, entries, sums };
+let translations = keepFirst(
+  keyOn({
+    key: "key",
+    items: tableToItems(tables.translations as any) as Translation[],
+  })
+);
+
+export { colors, dates, entries, sums, translations };
