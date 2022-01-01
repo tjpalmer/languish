@@ -25,7 +25,11 @@ queries = {
             extract(year from event.created_at) year,
             extract(quarter from created_at) quarter,
             event.repo.name repo
-        from `githubarchive.month.201801` event
+        from (
+            select * from `githubarchive.month.202110` union all
+            select * from `githubarchive.month.202111` union all
+            select * from `githubarchive.month.202112`
+        ) event
         where event.type in (
             'IssuesEvent', 'PullRequestEvent', 'PushEvent', 'WatchEvent'
         )
