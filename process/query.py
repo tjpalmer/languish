@@ -34,7 +34,7 @@ queries = {
             'IssuesEvent', 'PullRequestEvent', 'PushEvent', 'WatchEvent'
         )
         group by repo, year, quarter, event
-        order by count(*) desc
+        order by year, quarter, count(*) desc
     """,
     "ghNest": """
         select * from `bigquery-public-data.github_repos.languages`
@@ -50,6 +50,7 @@ queries = {
         order by count(*) desc
     """,
 }
+# select * from `githubarchive.year.2020`
 
 
 def main():
