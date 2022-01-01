@@ -20,20 +20,19 @@ queries = {
     """,
     "ghEvents": """
         select
-            count(*) count,
-            event.type event,
             extract(year from event.created_at) year,
             extract(quarter from created_at) quarter,
+            count(*) count,
+            event.type event,
             event.repo.name repo
         from (
-            select * from `githubarchive.month.202110` union all
-            select * from `githubarchive.month.202111` union all
-            select * from `githubarchive.month.202112`
+            select * from `githubarchive.year.2020`
         ) event
         where event.type in (
-            'IssuesEvent', 'PullRequestEvent', 'PushEvent', 'WatchEvent'
+            'IssuesEvent', 'PullRequestEvent', 'WatchEvent'
         )
         group by repo, year, quarter, event
+        having count(*) >= 10
         order by year, quarter, count(*) desc
     """,
     "ghNest": """
@@ -51,6 +50,24 @@ queries = {
     """,
 }
 # select * from `githubarchive.year.2020`
+# select * from `githubarchive.month.202110` union all
+# select * from `githubarchive.month.202111` union all
+# select * from `githubarchive.month.202112`
+# select * from `githubarchive.year.2011` union all
+# select * from `githubarchive.year.2012` union all
+# select * from `githubarchive.year.2013` union all
+# select * from `githubarchive.month.201301` union all
+# select * from `githubarchive.month.201302` union all
+# select * from `githubarchive.month.201303` union all
+# select * from `githubarchive.month.201304` union all
+# select * from `githubarchive.month.201305` union all
+# select * from `githubarchive.month.201306` union all
+# select * from `githubarchive.month.201307` union all
+# select * from `githubarchive.month.201308` union all
+# select * from `githubarchive.month.201309` union all
+# select * from `githubarchive.month.201310` union all
+# select * from `githubarchive.month.201311` union all
+# select * from `githubarchive.month.201312`
 
 
 def main():
