@@ -1,13 +1,10 @@
 import argparse
-import collections
-import csv
-import gql
-import gql.transport.aiohttp
 import json
 import numpy as np
 import os
 import pandas as pd
 import pathlib as pth
+import requests
 import typing as typ
 
 
@@ -27,24 +24,34 @@ class Args(typ.TypedDict):
 def build_query(chunk: pd.DataFrame) -> pd.DataFrame:
     parts = ["query {"]
     for index, repo in enumerate(chunk["repo"]):
-        owner, name = [json.dumps(part) for part in repo.split("/")]
-        start = f'r{index}: repository(owner: {owner}, name: {name})'
+        try:
+            owner, name = [json.dumps(part) for part in repo.split("/")]
+        except ValueError:
+            print(f"bad: {repo}")
+            continue
+        start = f"r{index}: repository(owner: {owner}, name: {name})"
         parts += [f"  {start} {{nameWithOwner isFork primaryLanguage {{name}}}}"]
-    parts += ["  rateLimit(dryRun: true) {cost limit nodeCount remaining resetAt used}"]
+    # parts += ["  rateLimit(dryRun: true) {cost limit nodeCount remaining resetAt used}"]
     parts += ["}"]
     query = "\n".join(parts)
     # print(query)
     return query
 
 
+endpoint = "https://api.github.com/graphql"
+
+
 def init_client():
-    transport = gql.transport.aiohttp.AIOHTTPTransport(
-        headers={"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}"},
-        url="https://api.github.com/graphql",
-    )
+    session = requests.Session()
+    session.headers.update({"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}"})
+    return session
+    # transport = gql.transport.aiohttp.AIOHTTPTransport(
+    #     headers={"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}"},
+    #     url="https://api.github.com/graphql",
+    # )
     # client = gql.Client(fetch_schema_from_transport=True, transport=transport)
-    client = gql.Client(transport=transport)
-    return client
+    # client = gql.Client(transport=transport)
+    # return client
 
 
 def main():
@@ -64,16 +71,19 @@ def run(*, args: Args):
     counts = pd.read_csv(args["events"])
     print(f"events: {len(counts)}")
     counts = sum_counts(counts)
+    print(f"repos: {len(counts)}")
     counts.sort_values(by=["count", "repo"], ascending=[False, True], inplace=True)
     client = init_client()
     outdir.mkdir(parents=True)
-    for index, chunk in enumerate(split_frame(counts, chunk_size=100)):
+    for index, chunk in enumerate(split_frame(counts, chunk_size=2000)):
         query = build_query(chunk)
-        result = client.execute(gql.gql(query))
+        # result = client.execute(gql.gql(query))
+        response = client.post(endpoint, json={"query": query})
         # print(result)
         with open(outdir / f"chunk{index}.json", "w") as output:
-            json.dump(fp=output, obj=result)
-        break
+            json.dump(fp=output, indent=2, obj=response.json())
+            # output.write(response.text)
+        # break
 
 
 def split_frame(frame: pd.DataFrame, *, chunk_size: int) -> typ.Iterable[pd.DataFrame]:
