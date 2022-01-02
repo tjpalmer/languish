@@ -2,6 +2,10 @@ import argparse
 import collections
 import csv
 import gql
+import gql.transport.aiohttp
+import json
+import numpy as np
+import os
 import pandas as pd
 import pathlib as pth
 import typing as typ
@@ -9,59 +13,72 @@ import typing as typ
 
 class Args(typ.TypedDict):
     events: list[str]
-    output: str
+    outdir: str
 
 
-class EventRow(typ.TypedDict):
-    count: str
-    event: str
-    quarter: str
-    repo: str
-    year: str
+# class EventRow(typ.TypedDict):
+#     count: str
+#     event: str
+#     quarter: str
+#     repo: str
+#     year: str
+
+
+def build_query(chunk: pd.DataFrame) -> pd.DataFrame:
+    parts = ["query {"]
+    for index, repo in enumerate(chunk["repo"]):
+        owner, name = [json.dumps(part) for part in repo.split("/")]
+        start = f'r{index}: repository(owner: {owner}, name: {name})'
+        parts += [f"  {start} {{nameWithOwner isFork primaryLanguage {{name}}}}"]
+    parts += ["  rateLimit(dryRun: true) {cost limit nodeCount remaining resetAt used}"]
+    parts += ["}"]
+    query = "\n".join(parts)
+    # print(query)
+    return query
+
+
+def init_client():
+    transport = gql.transport.aiohttp.AIOHTTPTransport(
+        headers={"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}"},
+        url="https://api.github.com/graphql",
+    )
+    # client = gql.Client(fetch_schema_from_transport=True, transport=transport)
+    client = gql.Client(transport=transport)
+    return client
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--events", nargs="+", required=True)
-    parser.add_argument("--output", required=True)
+    parser.add_argument("--events", required=True)
+    parser.add_argument("--outdir", required=True)
     args = parser.parse_args().__dict__
     run(args=args)
 
 
-def load_repo_counts(*, path: str) -> dict[str, int]:
-    repo_counts: dict[str, int] = collections.defaultdict(lambda: 0)
-    with open(path) as input:
-        reader = csv.DictReader(input)
-        row: EventRow
-        for row in reader:
-            repo_counts[row["repo"]] += int(row["count"])
-    print(f"repos: {len(repo_counts)}")
-    return repo_counts
-
-
 def run(*, args: Args):
-    print(args)
-    assert not pth.Path(args["output"]).exists()
+    outdir = pth.Path(args["outdir"])
+    assert not outdir.exists()
     # Count up events by repo.
     # repo_totals = collections.defaultdict(lambda: 0)
     totals = None
-    for events_path in args["events"]:
-        print(events_path)
-        counts = pd.read_csv(events_path)
-        print(f"events: {len(counts)}")
-        counts = sum_counts(counts)
-        print(f"repos: {len(counts)}")
-        if totals is None:
-            totals = counts
-        else:
-            totals = sum_counts(pd.concat([totals, counts]))
-        # print(event_path)
-        # for repo, count in load_repo_counts(path=event_path).items():
-        #     repo_totals[repo] += count
-        print(f"total repos: {len(totals)}")
-    # repo_totals_sorted = sorted(repo_totals.items(), key=lambda pair: -pair[1])
-    totals.sort_values(by="count", ascending=False, inplace=True)
-    totals.to_csv(args["output"], index=False)
+    counts = pd.read_csv(args["events"])
+    print(f"events: {len(counts)}")
+    counts = sum_counts(counts)
+    counts.sort_values(by=["count", "repo"], ascending=[False, True], inplace=True)
+    client = init_client()
+    outdir.mkdir(parents=True)
+    for index, chunk in enumerate(split_frame(counts, chunk_size=100)):
+        query = build_query(chunk)
+        result = client.execute(gql.gql(query))
+        # print(result)
+        with open(outdir / f"chunk{index}.json", "w") as output:
+            json.dump(fp=output, obj=result)
+        break
+
+
+def split_frame(frame: pd.DataFrame, *, chunk_size: int) -> typ.Iterable[pd.DataFrame]:
+    for begin in range(0, len(frame), chunk_size):
+        yield frame.iloc[begin : begin + chunk_size]
 
 
 def sum_counts(counts: pd.DataFrame) -> pd.DataFrame:
