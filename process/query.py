@@ -24,7 +24,11 @@ queries = {
             extract(quarter from event.created_at) quarter,
             count(*) count,
             event.type event,
-            event.repo.name repo
+            regexp_replace(
+              repo.url,
+              r'https:\/\/github\.com\/|https:\/\/api\.github\.com\/repos\/',
+              ''
+            ) as repo
         from (
             select * from `githubarchive.year.2011` union all
             select * from `githubarchive.year.2012` union all
