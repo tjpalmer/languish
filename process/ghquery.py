@@ -1,6 +1,5 @@
 import argparse
 import json
-import numpy as np
 import os
 import pandas as pd
 import pathlib as pth
@@ -9,6 +8,7 @@ import typing as typ
 
 
 class Args(typ.TypedDict):
+    dones: str
     events: list[str]
     outdir: str
 
@@ -27,7 +27,7 @@ def build_query(chunk: pd.DataFrame) -> pd.DataFrame:
         try:
             owner, name = [json.dumps(part) for part in repo.split("/")]
         except ValueError:
-            print(f"bad: {repo}")
+            # print(f"bad: {repo}")
             continue
         start = f"r{index}: repository(owner: {owner}, name: {name})"
         parts += [f"  {start} {{nameWithOwner isFork primaryLanguage {{name}}}}"]
@@ -45,17 +45,11 @@ def init_client():
     session = requests.Session()
     session.headers.update({"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}"})
     return session
-    # transport = gql.transport.aiohttp.AIOHTTPTransport(
-    #     headers={"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}"},
-    #     url="https://api.github.com/graphql",
-    # )
-    # client = gql.Client(fetch_schema_from_transport=True, transport=transport)
-    # client = gql.Client(transport=transport)
-    # return client
 
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--dones", required=True)
     parser.add_argument("--events", required=True)
     parser.add_argument("--outdir", required=True)
     args = parser.parse_args().__dict__
@@ -72,9 +66,16 @@ def run(*, args: Args):
     print(f"events: {len(counts)}")
     counts = sum_counts(counts)
     print(f"repos: {len(counts)}")
+    if args["dones"]:
+        dones = pd.read_csv(args["dones"])
+        counts = counts[~counts["repo"].isin(set(dones["repo"]))]
+        print(f"remaining: {len(counts)}")
+    counts = counts[counts["repo"].str.contains("/")]
+    print(f"goods: {len(counts)}")
     counts.sort_values(by=["count", "repo"], ascending=[False, True], inplace=True)
     client = init_client()
     outdir.mkdir(parents=True)
+    # TODO Skip already queried things
     for index, chunk in enumerate(split_frame(counts, chunk_size=2000)):
         query = build_query(chunk)
         # result = client.execute(gql.gql(query))
