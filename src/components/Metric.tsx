@@ -15,10 +15,15 @@ const Metric = () => {
   const items: { [k in keyof Metrics]: MetricItem } = {
     mean: { label: "Mean Score" },
     issues: { label: "GH Issues" },
-    pulls: { label: "GH Pull Requests" },
-    pushes: { label: "GH Pushes", info: "Excluded by default because bots" },
+    pulls: {
+      label: "GH Pull Requests",
+      info: "Might exclude by default because bots",
+    },
     stars: { label: "GH Stars" },
-    soQuestions: { label: "SO Questions" },
+    soQuestions: {
+      label: "SO Questions",
+      info: "Excluded by default because incomplete",
+    },
   };
 
   // map of available metrics to human readable strings

@@ -182,6 +182,7 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
       return ranks;
     };
 
+    // Offset 1 vs offset 5 quarters is 1 year back.
     const currentRanks = getRanks();
     const oldRanks = getRanks(5);
     const oldRanksMap: { [k: string]: number } = oldRanks.reduce(

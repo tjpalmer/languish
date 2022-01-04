@@ -5,7 +5,6 @@ import { murmur3 } from "murmurhash-js";
 export interface CoreMetrics {
   issues: number;
   pulls: number;
-  pushes: number;
   stars: number;
   soQuestions: number;
 }
@@ -13,9 +12,8 @@ export interface CoreMetrics {
 export const defaultWeights: CoreMetrics = Object.freeze({
   issues: 1,
   pulls: 1,
-  pushes: 0,
   stars: 1,
-  soQuestions: 1,
+  soQuestions: 0,
 });
 
 export type CoreMetricTexts = {
@@ -214,7 +212,7 @@ function filterDate<Metrics extends DateMetrics>(items: Metrics[]): Metrics[] {
   // This hard codes to the quarter when our GitHub data starts.
   // Stack Overflow data starts earlier, but I don't want to rely on that
   // independently.
-  return items.filter((item) => item.date >= "2012Q2");
+  return items.filter((item) => item.date >= "2012Q1");
 }
 
 function formatColor(color: Color) {

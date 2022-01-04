@@ -4,7 +4,6 @@ import { join } from "path";
 let files = {
   issues: "gh-issue-event.json",
   pulls: "gh-pull-request.json",
-  pushes: "gh-push-event.json",
   stars: "gh-star-event.json",
   soQuestions: "so-tags.json",
 };
@@ -40,7 +39,9 @@ function main() {
         } as unknown) as Count)
     );
     if (items.length) {
-      items = merge({ a: items, b: convertedItems, on: mergeKeys });
+      if (convertedItems.length) {
+        items = merge({ a: items, b: convertedItems, on: mergeKeys });
+      }
     } else {
       items = convertedItems;
     }
@@ -66,7 +67,6 @@ interface Count {
   date: string;
   issues: number;
   pulls: number;
-  pushes: number;
   stars: number;
   soQuestions: number;
 }
@@ -176,9 +176,11 @@ function readCsv(name: string) {
   let lines = content.split("\n");
   // TODO Improve csv parsing, or maybe convert this whole script to python.
   // TODO Or maybe change keys.csv to json.
-  let rows = lines.map((line) =>
-    line.split(",").map((value) => value.replace(/(^")|("$)/g, ""))
-  );
+  let rows = lines
+    .filter((line) => line.trim())
+    .map((line) =>
+      line.split(",").map((value) => value.replace(/(^")|("$)/g, ""))
+    );
   return {
     keys: rows[0],
     rows: rows.slice(1),

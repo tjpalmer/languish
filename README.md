@@ -46,7 +46,7 @@
   group by tags, year, quarter
   order by count(*) desc
   ```
-- Also: https://data.stackexchange.com/ (except limit 50k rows)
+- Also: https://data.stackexchange.com/ (with 50k row limit but updates sooner)
   ```sql
   SELECT
     t.TagName,
@@ -56,6 +56,7 @@
   FROM Posts p
   JOIN PostTags pt ON p.Id = pt.PostId
   JOIN Tags t ON t.Id = pt.TagId
+  WHERE Year(p.LastActivityDate) = 2021 AND DatePart(quarter, p.LastActivityDate) = 4
   GROUP BY DatePart(quarter, p.LastActivityDate), Year(p.LastActivityDate), t.TagName
   ORDER BY y, q, NumPosts DESC
   ```
