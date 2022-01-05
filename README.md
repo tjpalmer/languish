@@ -28,7 +28,7 @@
 - Uses icons from [Feather Icons](https://feathericons.com/) and [Font Awesome](https://fontawesome.com/), via [IcoMoon](https://icomoon.io/)
 - Uses dependencies as specified in the package.json file
 - Please see their respective licenses
-- Previously used data from [GitHut 2.0](https://madnight.github.io/githut/), who's data comes from GitHub
+- Previously used data from [GitHut 2.0](https://madnight.github.io/githut/) and still bases some queries and analysis from here
 
 
 ## Additional notes
