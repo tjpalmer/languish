@@ -91,7 +91,7 @@ const LangItem: React.FC<LangItemProps> = memo(
               target="__blank"
               href={`https://stackoverflow.com/questions/tagged/${encodeURIComponent(
                 soTag
-              )}`}
+              )}?tab=Newest`}
               title="Stack Overflow"
             >
               <span className="icon-stack-overflow"></span>
