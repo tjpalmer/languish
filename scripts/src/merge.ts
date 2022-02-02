@@ -9,6 +9,7 @@ let files = {
 };
 
 let canonicalNames = {
+  "AL Code": "AL",
   FORTRAN: "Fortran",
   Matlab: "MATLAB",
   Nimrod: "Nim",
