@@ -25,7 +25,6 @@
 "Batchfile","Batch_file","Batch","batch-file"
 "Bison","GNU_Bison","","bison"
 "BitBake","BitBake","bitbake","bitbake"
-"BlitzBasic","Blitz_BASIC","",""
 "Bluespec","Bluespec","","bluespec"
 "Brainfuck","Brainfuck","brainfuck","brainfuck"
 "Brightscript","","RokuDev","brightscript"
@@ -296,15 +295,15 @@
 "Ballerina","Ballerina_(programming_language)","ballerinalang","ballerina"
 "Beef","","beeflang","beef"
 "Bicep","","AzureBicep","azure-bicep"
-"Blade",,,
-"BlitzMax",,,
-"Boo",,,
-"Boogie",,,
-"CIL",,,
-"CLIPS",,,
-"CSON",,,
-"CSV",,,
-"CUE",,,
+"Blade","Laravel","laravel","laravel-blade"
+"BlitzMax","Blitz_BASIC","","blitzmax"
+"Boo","Boo_(programming_language)","","boo"
+"Boogie","","","boogie"
+"CIL","Common_Intermediate_Language","","cil"
+"CLIPS","CLIPS","","clips"
+"CSON","","","cson"
+"CSV","Comma-separated_values","","csv"
+"CUE","","",""
 "CWeb",,,
 "Cap'n Proto",,,
 "Charity",,,
@@ -319,7 +318,7 @@
 "Csound Score",,,
 "Cycript",,,
 "Cython",,,
-"Dafny",,,
+"Dafny","Dafny","dafny","dafny"
 "DataWeave",,,
 "Dhall",,,
 "Dogescript",,,
