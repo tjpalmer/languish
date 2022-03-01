@@ -303,25 +303,22 @@
 "CLIPS","CLIPS","","clips"
 "CSON","","","cson"
 "CSV","Comma-separated_values","","csv"
-"CUE","","",""
-"CWeb",,,
-"Cap'n Proto",,,
-"Charity",,,
-"ChucK",,,
-"Cirru",,,
-"Clarion",,,
-"Classic ASP",,,
-"CodeQL",,,
-"Cool",,,
-"Csound",,,
-"Csound Document",,,
-"Csound Score",,,
-"Cycript",,,
-"Cython",,,
+"CUE","","","cuelang"
+"CWeb","Web_(programming_system)","",""
+"Cap'n Proto","Cap'n_Proto","","capnproto"
+"Charity","","",""
+"ChucK","ChucK","","chuck"
+"Cirru","","",""
+"Clarion","Clarion_(programming_language)","Clarion","clarion"
+"CodeQL","Semmle","","codeql"
+"Cool","Cool_(programming_language)","",""
+"Csound","Csound","csound","csound"
+"Cycript","","",""
+"Cython","Cython","Cython","cython"
 "Dafny","Dafny","dafny","dafny"
-"DataWeave",,,
-"Dhall",,,
-"Dogescript",,,
+"DataWeave","MuleSoft","MuleSoft","dataweave"
+"Dhall","","dhall","dhall"
+"Dogescript","","",""
 "E",,,
 "ECL",,,
 "EJS",,,

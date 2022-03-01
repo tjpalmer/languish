@@ -11,6 +11,9 @@ let files = {
 let canonicalNames = {
   "AL Code": "AL",
   BlitzBasic: "BlitzMax",
+  "Classic ASP": "ASP",
+  "Csound Document": "Csound",
+  "Csound Score": "Csound",
   FORTRAN: "Fortran",
   Matlab: "MATLAB",
   Nimrod: "Nim",
