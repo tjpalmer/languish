@@ -7,10 +7,12 @@ const customNames: { [key: string]: string } = {
 };
 
 const customTopics: { [key: string]: string } = {
+  "cap'n proto": "capn-proto",
   "c++": "cpp",
   "c#": "csharp",
   "f#": "fsharp",
   "f*": "fstar",
+  "graphviz (dot)": "graphviz-dot",
   "objective-c++": "objective-cpp",
   "perl 6": "perl6",
   "ren'py": "renpy",

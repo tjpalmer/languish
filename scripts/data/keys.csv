@@ -319,26 +319,25 @@
 "DataWeave","MuleSoft","MuleSoft","dataweave"
 "Dhall","","dhall","dhall"
 "Dogescript","","",""
-"E",,,
-"ECL",,,
-"EJS",,,
-"EQ",,,
-"FORTRAN",,,
-"Fantom",,,
-"Faust",,,
-"Fennel",,,
-"Fluent",,,
-"FreeBasic",,,
-"Futhark",,,
-"G-code",,,
-"GAML",,,
-"GAMS",,,
-"GDB",,,
-"Glyph",,,
-"Golo",,,
-"Grace",,,
-"Grammatical Framework",,,
-"Graphviz (DOT)",,,
+"E","E_(programming_language)","",""
+"ECL","ECL_(data-centric_programming_language)","","hpcc-ecl"
+"EJS","","","ejs"
+"EQ","","",""
+"Fantom","Fantom_(programming_language)","Fantom","fantom"
+"Faust","FAUST_(programming_language)","faustdsp",""
+"Fennel","","",""
+"Fluent","","","fluent"
+"FreeBasic","FreeBASIC","","freebasic"
+"Futhark","Futhark_(programming_language)","futhark","futhark"
+"G-code","G-code","gcode","g-code"
+"GAML","GAMA_Platform","",""
+"GAMS","General_Algebraic_Modeling_System","","gams-math"
+"GDB","GNU_Debugger","","gdb"
+"Glyph","","",""
+"Golo","Golo_(programming_language)","",""
+"Grace","","",""
+"Grammatical Framework","Grammatical_Framework","","gf"
+"Graphviz (DOT)","DOT_(graph_description_language)","graphviz","graphviz|dot"
 "Haml",,,
 "Harbour",,,
 "HiveQL",,,
