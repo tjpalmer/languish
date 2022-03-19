@@ -58,7 +58,7 @@
 "DIGITAL Command Language","DIGITAL_Command_Language","","dcl"
 "DM","Space_Station_13","BYOND",""
 "Dockerfile","Docker_(software)","docker","docker"
-"DOT","DOT_(graph_description_language)|Graphviz","graphviz","graphviz"
+"DOT","DOT_(graph_description_language)|Graphviz","graphviz","graphviz|dot"
 "DTrace","DTrace","dtrace","dtrace"
 "Dylan","Dylan_(programming_language)","","dylan"
 "Eagle","EAGLE_(program)","",""
@@ -337,12 +337,11 @@
 "Golo","Golo_(programming_language)","",""
 "Grace","","",""
 "Grammatical Framework","Grammatical_Framework","","gf"
-"Graphviz (DOT)","DOT_(graph_description_language)","graphviz","graphviz|dot"
-"Haml",,,
-"Harbour",,,
-"HiveQL",,,
-"HolyC",,,
-"HyPhy",,,
+"Haml","Haml","","haml"
+"Harbour","Harbour_(programming_language)","",""
+"HiveQL","Apache_Hive","","hiveql|hive"
+"HolyC","TempleOS","TempleOS_Official",""
+"HyPhy","HYPHY_(software)","",""
 "INI",,,
 "ImageJ Macro",,,
 "JSON",,,

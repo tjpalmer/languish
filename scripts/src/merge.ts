@@ -15,6 +15,7 @@ let canonicalNames = {
   "Csound Document": "Csound",
   "Csound Score": "Csound",
   FORTRAN: "Fortran",
+  "Graphviz (DOT)": "DOT",
   Matlab: "MATLAB",
   Nimrod: "Nim",
   Perl6: "Raku",
