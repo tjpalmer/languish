@@ -175,7 +175,7 @@
 "Pan","Pan_(programming_language)","",""
 "Papyrus","","skyrimmods",""
 "Pascal","Pascal_(programming_language)","pascal","pascal"
-"PAWN","","","pawn"
+"Pawn","","","pawn"
 "Perl","Perl","perl","perl"
 "PHP","PHP","PHP","php"
 "PicoLisp","PicoLisp","","picolisp"
@@ -206,7 +206,7 @@
 "Raku","Raku_(programming_language)","rakulang","raku"
 "RAML","RAML_(software)","","raml"
 "Rascal","RascalMPL","","rascal"
-"Reason","Reason_(syntax_extension_for_OCaml)","reasonml","reason"
+"Reason","Reason_(programming_language)|Reason_(syntax_extension_for_OCaml)","reasonml","reason"
 "Rebol","Rebol","rebol","rebol"
 "Red","Red_(programming_language)","redlang","red"
 "Ren'Py","Ren'Py","RenPy","renpy"
@@ -270,7 +270,7 @@
 "xBase","XBase","","xbase"
 "XC","XC_(programming_language)","","xmos"
 "XML","XML","xml","xml"
-"Xojo","Xojo","xojo","xojo"
+"Xojo","Xojo","xojo","xojo|realbasic"
 "XProc","XProc","","xproc"
 "XQuery","XQuery","xquery","xquery"
 "XS","XS_(Perl)","","xs"
@@ -379,38 +379,33 @@
 "OpenQASM","OpenQASM","",""
 "Org","Org-mode","orgmode","org-mode"
 "Ox","Ox_(programming_language)","","ox"
-"PEG.js",,,
-"Parrot",,,
-"Pawn",,,
-"Pep8",,,
-"Perl 6",,,
-"Perl6",,,
-"PogoScript",,,
-"Promela",,,
-"Pug",,,
-"Q#",,,
-"Qt Script",,,
-"REALbasic",,,
-"REXX",,,
-"RMarkdown",,,
-"RUNOFF",,,
-"Ragel",,,
-"ReScript",,,
-"RenderScript",,,
-"Riot",,,
-"SCSS",,,
-"SRecode Template",,,
-"Sage",,,
-"Sass",,,
-"Self",,,
-"Singularity",,,
-"Slice",,,
-"Slim",,,
-"SmPL",,,
+"PEG.js","","","pegjs"
+"Parrot","Parrot_virtual_machine","","parrot"
+"Pep8","","","pep8"
+"PogoScript","","","pogoscript"
+"Promela","Promela","","promela"
+"Pug","","","pug"
+"Q#","Q_Sharp","qsharp","q#"
+"Qt Script","QtScript","","qtscript"
+"REXX","Rexx","","rexx"
+"RMarkdown","","","r-markdown"
+"RUNOFF","TYPSET_and_RUNOFF","",""
+"Ragel","","","ragel"
+"ReScript","","rescript","rescript"
+"RenderScript","RenderScript","","renderscript"
+"Riot","","","riot.js"
+"Sass/SCSS","Sass_(stylesheet_language)","Sass","sass"
+"SRecode Template","","",""
+"Sage","SageMath","sagemath","sage"
+"Self","Self_(programming_language)","","self"
+"Singularity","Singularity_(software)","","singularity-container"
+"Slice","","",""
+"Slim","","","slim"
+"SmPL","Coccinelle_(software)","","coccinelle"
 "Solidity","Solidity","ethdev","solidity"
-"StringTemplate",,,
-"Stylus",,,
-"Svelte",,,
+"StringTemplate","","","stringtemplate"
+"Stylus","Stylus_(stylesheet_language)","","stylus"
+"Svelte","Svelte","sveltejs","svelte"
 "TI Program",,,
 "TLA",,,
 "TXL",,,

@@ -15,6 +15,7 @@ const customTopics: { [key: string]: string } = {
   "graphviz (dot)": "graphviz-dot",
   "objective-c++": "objective-cpp",
   "perl 6": "perl6",
+  "q#": "qsharp",
   "ren'py": "renpy",
   "visual basic .net": "visual-basic-net",
 };

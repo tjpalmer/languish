@@ -18,8 +18,12 @@ let canonicalNames = {
   "Graphviz (DOT)": "DOT",
   Matlab: "MATLAB",
   Nimrod: "Nim",
+  PAWN: "Pawn",
   Perl6: "Raku",
   "Perl 6": "Raku",
+  "REALbasic": "Xojo",
+  Sass: "Sass/SCSS",
+  SCSS: "Sass/SCSS",
   VimL: "Vim script",
 } as { [name: string]: string };
 
