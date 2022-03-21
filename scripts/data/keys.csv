@@ -406,36 +406,35 @@
 "StringTemplate","","","stringtemplate"
 "Stylus","Stylus_(stylesheet_language)","","stylus"
 "Svelte","Svelte","sveltejs","svelte"
-"TI Program",,,
-"TLA",,,
-"TXL",,,
-"Tea",,,
-"Terra",,,
-"Text",,,
-"Turing",,,
-"Turtle",,,
-"Twig",,,
-"V",,,
-"VBScript",,,
-"VimL",,,
-"Volt",,,
-"Wavefront Object",,,
-"WebIDL",,,
-"Wikitext",,,
-"Wollok",,,
-"XPages",,,
-"Xonsh",,,
-"YAML",,,
-"YASnippet",,,
-"ZAP",,,
-"ZIL",,,
-"Zeek",,,
-"ZenScript",,,
-"Zimpl",,,
-"eC",,,
-"jq",,,
-"mIRC Script",,,
-"mcfunction",,,
-"mupad",,,
-"reStructuredText",,,
-"wdl",,,
+"TI Program","TI-BASIC|TI-BASIC_83","TI_Calculators","ti-basic"
+"TLA","TLA+","tlaplus","tla+"
+"TXL","TXL_(programming_language)","",""
+"Tea","","",""
+"Terra","","",""
+"Text","Plain_text","",""
+"Turing","Turing_(programming_language)","",""
+"Turtle","Turtle_(syntax)","","turtle-rdf"
+"Twig","Twig_(template_engine)","","twig"
+"V","","vlang","vlang"
+"VBScript","VBScript","vbscript","vbscript"
+"Volt","","",""
+"Wavefront Object","Wavefront_.obj_file","","wavefront"
+"WebIDL","Web_IDL","","webidl"
+"Wikitext","Help:Wikitext","","wikitext"
+"Wollok","","","wollok"
+"XPages","XPages","","xpages"
+"Xonsh","","xonsh","xonsh"
+"YAML","YAML","yaml","yaml"
+"YASnippet","","","yasnippet"
+"ZAP","","",""
+"ZIL","Z-machine","ZILF","z-machine"
+"Zeek","Zeek","","zeek"
+"ZenScript","","",""
+"Zimpl","","",""
+"eC","EC_(programming_language)","ecere",""
+"jq","","","jq"
+"mIRC Script","MIRC_scripting_language","","mirc"
+"mcfunction","","MinecraftCommands","minecraft"
+"mupad","MuPAD","","mupad"
+"reStructuredText","ReStructuredText","","restructuredtext"
+"wdl","","","wdl"
