@@ -58,6 +58,18 @@ def extract_errors(errors: list[Error]) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def load_projects(dir: str) -> pd.DataFrame:
+    parts = []
+    for path in pth.Path(dir).iterdir():
+        # print(path)
+        with open(path) as input:
+            response = json.load(input)
+        data = extract_data(response.get("data") or {})
+        errors = extract_errors(response.get("errors", []))
+        parts += [data, errors]
+    return pd.concat(parts).drop_duplicates()
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--jsondir", required=True)
@@ -68,15 +80,16 @@ def main():
 
 def run(*, args: Args):
     assert not pth.Path(args["output"]).exists()
-    parts = []
-    for path in pth.Path(args["jsondir"]).iterdir():
-        print(path)
-        with open(path) as input:
-            response = json.load(input)
-        data = extract_data(response.get("data") or {})
-        errors = extract_errors(response.get("errors", []))
-        parts += [data, errors]
-    langs = pd.concat(parts)
+    langs = load_projects(args["jsondir"])
+    # Check for strangeness.
+    dupe_counts = langs.drop_duplicates().groupby("repo")["lang"].count()
+    multis = dupe_counts[dupe_counts > 1].index
+    contras = langs[langs["repo"].isin(multis)].sort_values(by=["repo", "lang"])
+    print("Contradictions")
+    print(contras)
+    # Then arbitrarily move on.
+    # I had 4 repos in this category at the moment.
+    langs = langs.drop_duplicates(subset="repo")
     langs.to_csv(args["output"], index=False)
 
 

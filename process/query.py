@@ -11,6 +11,7 @@ class Args(typ.TypedDict):
 
 
 queries = {
+    # This query will process 194.51 MB when run.
     "gh": """
         select repo_name repo, lang.bytes bytes, lang.name lang
         from
@@ -18,6 +19,7 @@ queries = {
             unnest(repo.language) lang
         order by repo, bytes desc
     """,
+    # This query will process 310.49 GB when run.
     "ghEvents": """
         select
             extract(year from event.created_at) year,
@@ -40,18 +42,10 @@ queries = {
             select * from `githubarchive.year.2018` union all
             select * from `githubarchive.year.2019` union all
             select * from `githubarchive.year.2020` union all
-            select * from `githubarchive.month.202101` union all
-            select * from `githubarchive.month.202102` union all
-            select * from `githubarchive.month.202103` union all
-            select * from `githubarchive.month.202104` union all
-            select * from `githubarchive.month.202105` union all
-            select * from `githubarchive.month.202106` union all
-            select * from `githubarchive.month.202107` union all
-            select * from `githubarchive.month.202108` union all
-            select * from `githubarchive.month.202109` union all
-            select * from `githubarchive.month.202110` union all
-            select * from `githubarchive.month.202111` union all
-            select * from `githubarchive.month.202112`
+            select * from `githubarchive.year.2021` union all
+            select * from `githubarchive.month.202201` union all
+            select * from `githubarchive.month.202202` union all
+            select * from `githubarchive.month.202203`
         ) event
         where event.type in (
             'IssuesEvent', 'PullRequestEvent', 'WatchEvent'
@@ -63,6 +57,7 @@ queries = {
     "ghNest": """
         select * from `bigquery-public-data.github_repos.languages`
     """,
+    # This query will process 754.25 MB when run.
     "so": """
         select
             count(*) count,
@@ -88,7 +83,9 @@ def main():
 
 def run(*, args: Args):
     client = bigquery.Client()
-    assert not pth.Path(args["output"]).exists()
+    output = pth.Path(args["output"])
+    output.parent.mkdir(exist_ok=True, parents=True)
+    assert not output.exists()
     query_job = client.query(queries[args["query"]])
     # Only bother to open output after query started working.
     with open(args["output"], "w") as out_stream:

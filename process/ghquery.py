@@ -1,9 +1,13 @@
 import argparse
+from unicodedata import name
+import ghmerge
 import json
 import os
 import pandas as pd
 import pathlib as pth
+import re
 import requests
+import traceback
 import typing as typ
 
 
@@ -49,7 +53,7 @@ def init_client():
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dones", required=True)
+    parser.add_argument("--dones")
     parser.add_argument("--events", required=True)
     parser.add_argument("--outdir", required=True)
     args = parser.parse_args().__dict__
@@ -58,7 +62,6 @@ def main():
 
 def run(*, args: Args):
     outdir = pth.Path(args["outdir"])
-    assert not outdir.exists()
     # Count up events by repo.
     # repo_totals = collections.defaultdict(lambda: 0)
     totals = None
@@ -68,23 +71,39 @@ def run(*, args: Args):
     print(f"repos: {len(counts)}")
     if args["dones"]:
         dones = pd.read_csv(args["dones"])
-        counts = counts[~counts["repo"].isin(set(dones["repo"]))]
-        print(f"remaining: {len(counts)}")
+        counts = trim_dones(counts = counts, dones = dones)
+    if outdir.exists():
+        dones = ghmerge.load_projects(str(outdir))
+        counts = trim_dones(counts = counts, dones = dones)
+        # Figure out the starting index.
+        start = -1
+        for kid in outdir.iterdir():
+            match = re.match(r"chunk(\d+)\.json", kid.name)
+            if match:
+                start = max(start, int(match.group(1)))
+        start += 1
+        print(f"starting from: {start}")
     counts = counts[counts["repo"].str.contains("/")]
     print(f"goods: {len(counts)}")
     counts.sort_values(by=["count", "repo"], ascending=[False, True], inplace=True)
     client = init_client()
-    outdir.mkdir(parents=True)
-    # TODO Skip already queried things
+    outdir.mkdir(exist_ok=True, parents=True)
     for index, chunk in enumerate(split_frame(counts, chunk_size=2000)):
-        query = build_query(chunk)
-        # result = client.execute(gql.gql(query))
-        response = client.post(endpoint, json={"query": query})
-        # print(result)
-        with open(outdir / f"chunk{index}.json", "w") as output:
-            json.dump(fp=output, indent=2, obj=response.json())
-            # output.write(response.text)
-        # break
+        try:
+            query = build_query(chunk)
+            # result = client.execute(gql.gql(query))
+            response = client.post(endpoint, json={"query": query})
+            # print(result)
+            out = outdir / f"chunk{index + start}.json"
+            if out.exists():
+                raise RuntimeError(f"out exists: {out}")
+            with open(out, "w") as output:
+                json.dump(fp=output, indent=2, obj=response.json())
+                # output.write(response.text)
+            # break
+        except:
+            # Print and continue.
+            traceback.print_exc()
 
 
 def split_frame(frame: pd.DataFrame, *, chunk_size: int) -> typ.Iterable[pd.DataFrame]:
@@ -94,6 +113,12 @@ def split_frame(frame: pd.DataFrame, *, chunk_size: int) -> typ.Iterable[pd.Data
 
 def sum_counts(counts: pd.DataFrame) -> pd.DataFrame:
     return counts.groupby("repo")["count"].sum().to_frame().reset_index()
+
+
+def trim_dones(counts: pd.DateOffset, dones: pd.DataFrame) -> pd.DataFrame:
+    counts = counts[~counts["repo"].isin(set(dones["repo"]))]
+    print(f"remaining: {len(counts)}")
+    return counts
 
 
 if __name__ == "__main__":

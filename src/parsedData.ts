@@ -11,9 +11,9 @@ export interface CoreMetrics {
 
 export const defaultWeights: CoreMetrics = Object.freeze({
   issues: 1,
-  pulls: 1,
+  pulls: 0,
   stars: 1,
-  soQuestions: 0,
+  soQuestions: 1,
 });
 
 export type CoreMetricTexts = {

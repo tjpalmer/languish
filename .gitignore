@@ -8,6 +8,7 @@
 /build
 src/data.json
 bq-*.csv
+*.pyc
 
 
 # Added by cargo

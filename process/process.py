@@ -11,7 +11,7 @@ class ComboKey:
     quarter: int
 
 
-def combos_iter(*, keys_name: str, so_name: str) -> Iterator[ComboKey]:
+def combos_iter(*, keys_name: str, so_name: str) -> Iterator[tuple[ComboKey, int]]:
     keys = read_keys(keys_name)
     with open_or_stdin(so_name) as so_in:
         reader = csv.DictReader(so_in)
