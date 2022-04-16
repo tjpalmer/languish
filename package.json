@@ -4,11 +4,10 @@
   "description": "plot programming language statistics",
   "homepage": "https://tjpalmer.github.io/languish",
   "scripts": {
-    "start": "npm run build-merge && cra-preact start",
-    "build": "npm run build-merge && cra-preact build",
-    "build-merge": "tsc --project scripts && npm run merge",
+    "start": "npm run merge && cra-preact start",
+    "build": "npm run merge && cra-preact build",
     "format": "prettier --write src/ scripts/src/",
-    "merge": "node scripts/bin/merge.js > src/data.json"
+    "merge": "python scripts/src/merge.py"
   },
   "repository": {
     "type": "git",

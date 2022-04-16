@@ -7,6 +7,7 @@ export interface CoreMetrics {
   pulls: number;
   stars: number;
   soQuestions: number;
+  wpViews: number;
 }
 
 export const defaultWeights: CoreMetrics = Object.freeze({
@@ -14,6 +15,7 @@ export const defaultWeights: CoreMetrics = Object.freeze({
   pulls: 0,
   stars: 1,
   soQuestions: 1,
+  wpViews: 1,
 });
 
 export type CoreMetricTexts = {

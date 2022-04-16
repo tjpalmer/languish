@@ -6,6 +6,7 @@ let files = {
   pulls: "gh-pull-request.json",
   stars: "gh-star-event.json",
   soQuestions: "so-tags.json",
+  // wpViews: "wp-views.json",
 };
 
 let canonicalNames = {
@@ -21,7 +22,7 @@ let canonicalNames = {
   PAWN: "Pawn",
   Perl6: "Raku",
   "Perl 6": "Raku",
-  "REALbasic": "Xojo",
+  REALbasic: "Xojo",
   Sass: "Sass/SCSS",
   SCSS: "Sass/SCSS",
   VimL: "Vim script",
@@ -79,6 +80,7 @@ interface Count {
   pulls: number;
   stars: number;
   soQuestions: number;
+  wpViews: number;
 }
 
 interface CountString {

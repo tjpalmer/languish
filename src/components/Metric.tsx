@@ -22,7 +22,11 @@ const Metric = () => {
     stars: { label: "GH Stars" },
     soQuestions: {
       label: "SO Questions",
-      info: "Excluded by default because incomplete",
+      info: "Stack Overflow question tags",
+    },
+    wpViews: {
+      label: "WP Views",
+      info: "Wikipedia page views",
     },
   };
 
