@@ -45,7 +45,10 @@ queries = {
             select * from `githubarchive.year.2021` union all
             select * from `githubarchive.month.202201` union all
             select * from `githubarchive.month.202202` union all
-            select * from `githubarchive.month.202203`
+            select * from `githubarchive.month.202203` union all
+            select * from `githubarchive.month.202204` union all
+            select * from `githubarchive.month.202205` union all
+            select * from `githubarchive.month.202206`
         ) event
         where event.type in (
             'IssuesEvent', 'PullRequestEvent', 'WatchEvent'

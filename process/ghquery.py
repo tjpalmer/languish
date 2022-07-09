@@ -82,7 +82,9 @@ def run(*, args: Args):
             if match:
                 start = max(start, int(match.group(1)))
         start += 1
-        print(f"starting from: {start}")
+    else:
+        start = 0
+    print(f"starting from: {start}")
     counts = counts[counts["repo"].str.contains("/")]
     print(f"goods: {len(counts)}")
     counts.sort_values(by=["count", "repo"], ascending=[False, True], inplace=True)
