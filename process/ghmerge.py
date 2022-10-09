@@ -61,9 +61,12 @@ def extract_errors(errors: list[Error]) -> pd.DataFrame:
 def load_projects(dir: str) -> pd.DataFrame:
     parts = []
     for path in pth.Path(dir).iterdir():
-        # print(path)
         with open(path) as input:
-            response = json.load(input)
+            try:
+                response = json.load(input)
+            except:
+                print(f"Error reading: {path}")
+                raise
         data = extract_data(response.get("data") or {})
         errors = extract_errors(response.get("errors", []))
         parts += [data, errors]
