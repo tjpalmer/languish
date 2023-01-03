@@ -54,7 +54,7 @@ def init_client():
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dones")
-    parser.add_argument("--events", required=True)
+    parser.add_argument("--events", nargs="+", required=True)
     parser.add_argument("--outdir", required=True)
     args = parser.parse_args().__dict__
     run(args=args)
@@ -65,7 +65,7 @@ def run(*, args: Args):
     # Count up events by repo.
     # repo_totals = collections.defaultdict(lambda: 0)
     totals = None
-    counts = pd.read_csv(args["events"])
+    counts = pd.concat([pd.read_csv(name) for name in args["events"]])
     print(f"events: {len(counts)}")
     counts = sum_counts(counts)
     print(f"repos: {len(counts)}")

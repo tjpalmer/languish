@@ -258,6 +258,12 @@
     "count":5
   },
   {
+    "name":"4D",
+    "year":2022,
+    "quarter":4,
+    "count":1
+  },
+  {
     "name":"ABAP",
     "year":2008,
     "quarter":3,
@@ -600,6 +606,12 @@
     "count":113
   },
   {
+    "name":"ABAP",
+    "year":2022,
+    "quarter":4,
+    "count":98
+  },
+  {
     "name":"ABNF",
     "year":2013,
     "quarter":2,
@@ -718,6 +730,12 @@
     "year":2022,
     "quarter":3,
     "count":1
+  },
+  {
+    "name":"ABNF",
+    "year":2022,
+    "quarter":4,
+    "count":3
   },
   {
     "name":"AIDL",
@@ -1032,6 +1050,12 @@
     "count":10
   },
   {
+    "name":"AIDL",
+    "year":2022,
+    "quarter":4,
+    "count":9
+  },
+  {
     "name":"AL",
     "year":2020,
     "quarter":2,
@@ -1089,6 +1113,12 @@
     "name":"AL",
     "year":2022,
     "quarter":3,
+    "count":16
+  },
+  {
+    "name":"AL",
+    "year":2022,
+    "quarter":4,
     "count":16
   },
   {
@@ -1378,6 +1408,12 @@
     "year":2022,
     "quarter":3,
     "count":15
+  },
+  {
+    "name":"AMPL",
+    "year":2022,
+    "quarter":4,
+    "count":13
   },
   {
     "name":"ANTLR",
@@ -1720,6 +1756,12 @@
     "year":2022,
     "quarter":3,
     "count":248
+  },
+  {
+    "name":"ANTLR",
+    "year":2022,
+    "quarter":4,
+    "count":132
   },
   {
     "name":"API Blueprint",
@@ -2247,6 +2289,12 @@
     "name":"APL",
     "year":2022,
     "quarter":3,
+    "count":9
+  },
+  {
+    "name":"APL",
+    "year":2022,
+    "quarter":4,
     "count":9
   },
   {
@@ -2592,6 +2640,12 @@
     "count":76
   },
   {
+    "name":"ASP",
+    "year":2022,
+    "quarter":4,
+    "count":47
+  },
+  {
     "name":"ASP.NET",
     "year":2008,
     "quarter":3,
@@ -2934,6 +2988,12 @@
     "count":7330
   },
   {
+    "name":"ASP.NET",
+    "year":2022,
+    "quarter":4,
+    "count":7042
+  },
+  {
     "name":"ATS",
     "year":2014,
     "quarter":4,
@@ -3039,6 +3099,12 @@
     "name":"ATS",
     "year":2022,
     "quarter":2,
+    "count":1
+  },
+  {
+    "name":"ATS",
+    "year":2022,
+    "quarter":4,
     "count":1
   },
   {
@@ -3384,6 +3450,12 @@
     "count":59
   },
   {
+    "name":"ActionScript",
+    "year":2022,
+    "quarter":4,
+    "count":51
+  },
+  {
     "name":"Ada",
     "year":2008,
     "quarter":3,
@@ -3726,6 +3798,12 @@
     "count":41
   },
   {
+    "name":"Ada",
+    "year":2022,
+    "quarter":4,
+    "count":51
+  },
+  {
     "name":"Agda",
     "year":2009,
     "quarter":2,
@@ -4014,6 +4092,12 @@
     "count":11
   },
   {
+    "name":"Agda",
+    "year":2022,
+    "quarter":4,
+    "count":21
+  },
+  {
     "name":"Alloy",
     "year":2010,
     "quarter":1,
@@ -4299,6 +4383,12 @@
     "name":"Alloy",
     "year":2022,
     "quarter":3,
+    "count":6
+  },
+  {
+    "name":"Alloy",
+    "year":2022,
+    "quarter":4,
     "count":6
   },
   {
@@ -4734,6 +4824,12 @@
     "count":1308
   },
   {
+    "name":"ApacheConf",
+    "year":2022,
+    "quarter":4,
+    "count":1155
+  },
+  {
     "name":"Apex",
     "year":2011,
     "quarter":4,
@@ -4978,6 +5074,12 @@
     "year":2022,
     "quarter":3,
     "count":143
+  },
+  {
+    "name":"Apex",
+    "year":2022,
+    "quarter":4,
+    "count":146
   },
   {
     "name":"AppleScript",
@@ -5320,6 +5422,12 @@
     "year":2022,
     "quarter":3,
     "count":147
+  },
+  {
+    "name":"AppleScript",
+    "year":2022,
+    "quarter":4,
+    "count":170
   },
   {
     "name":"Arc",
@@ -5742,6 +5850,12 @@
     "count":641
   },
   {
+    "name":"Arduino",
+    "year":2022,
+    "quarter":4,
+    "count":585
+  },
+  {
     "name":"AsciiDoc",
     "year":2009,
     "quarter":2,
@@ -6016,6 +6130,12 @@
     "year":2022,
     "quarter":3,
     "count":16
+  },
+  {
+    "name":"AsciiDoc",
+    "year":2022,
+    "quarter":4,
+    "count":23
   },
   {
     "name":"AspectJ",
@@ -6360,6 +6480,12 @@
     "count":47
   },
   {
+    "name":"AspectJ",
+    "year":2022,
+    "quarter":4,
+    "count":55
+  },
+  {
     "name":"Assembly",
     "year":2008,
     "quarter":3,
@@ -6702,6 +6828,12 @@
     "count":906
   },
   {
+    "name":"Assembly",
+    "year":2022,
+    "quarter":4,
+    "count":1186
+  },
+  {
     "name":"Astro",
     "year":2011,
     "quarter":1,
@@ -6772,6 +6904,12 @@
     "year":2022,
     "quarter":3,
     "count":11
+  },
+  {
+    "name":"Astro",
+    "year":2022,
+    "quarter":4,
+    "count":37
   },
   {
     "name":"Asymptote",
@@ -7368,6 +7506,12 @@
     "count":106
   },
   {
+    "name":"AutoHotkey",
+    "year":2022,
+    "quarter":4,
+    "count":99
+  },
+  {
     "name":"AutoIt",
     "year":2008,
     "quarter":4,
@@ -7696,6 +7840,12 @@
     "year":2022,
     "quarter":3,
     "count":20
+  },
+  {
+    "name":"AutoIt",
+    "year":2022,
+    "quarter":4,
+    "count":19
   },
   {
     "name":"Awk",
@@ -8040,6 +8190,12 @@
     "count":589
   },
   {
+    "name":"Awk",
+    "year":2022,
+    "quarter":4,
+    "count":572
+  },
+  {
     "name":"BASIC",
     "year":2008,
     "quarter":3,
@@ -8382,6 +8538,12 @@
     "count":23
   },
   {
+    "name":"BASIC",
+    "year":2022,
+    "quarter":4,
+    "count":18
+  },
+  {
     "name":"Ballerina",
     "year":2017,
     "quarter":1,
@@ -8518,6 +8680,12 @@
     "year":2022,
     "quarter":3,
     "count":21
+  },
+  {
+    "name":"Ballerina",
+    "year":2022,
+    "quarter":4,
+    "count":22
   },
   {
     "name":"Batchfile",
@@ -8862,6 +9030,12 @@
     "count":939
   },
   {
+    "name":"Batchfile",
+    "year":2022,
+    "quarter":4,
+    "count":949
+  },
+  {
     "name":"Beef",
     "year":2020,
     "quarter":1,
@@ -8901,6 +9075,12 @@
     "name":"Beef",
     "year":2022,
     "quarter":3,
+    "count":1
+  },
+  {
+    "name":"Beef",
+    "year":2022,
+    "quarter":4,
     "count":1
   },
   {
@@ -8956,6 +9136,12 @@
     "year":2022,
     "quarter":3,
     "count":110
+  },
+  {
+    "name":"Bicep",
+    "year":2022,
+    "quarter":4,
+    "count":180
   },
   {
     "name":"Bison",
@@ -9300,6 +9486,12 @@
     "count":35
   },
   {
+    "name":"Bison",
+    "year":2022,
+    "quarter":4,
+    "count":24
+  },
+  {
     "name":"BitBake",
     "year":2010,
     "quarter":4,
@@ -9552,6 +9744,12 @@
     "count":59
   },
   {
+    "name":"BitBake",
+    "year":2022,
+    "quarter":4,
+    "count":60
+  },
+  {
     "name":"Blade",
     "year":2012,
     "quarter":4,
@@ -9784,6 +9982,12 @@
     "year":2022,
     "quarter":3,
     "count":273
+  },
+  {
+    "name":"Blade",
+    "year":2022,
+    "quarter":4,
+    "count":226
   },
   {
     "name":"BlitzMax",
@@ -10089,6 +10293,12 @@
     "name":"Boo",
     "year":2022,
     "quarter":2,
+    "count":1
+  },
+  {
+    "name":"Boo",
+    "year":2022,
+    "quarter":4,
     "count":1
   },
   {
@@ -10431,6 +10641,12 @@
     "name":"Brainfuck",
     "year":2022,
     "quarter":3,
+    "count":8
+  },
+  {
+    "name":"Brainfuck",
+    "year":2022,
+    "quarter":4,
     "count":8
   },
   {
@@ -10690,6 +10906,12 @@
     "year":2022,
     "quarter":3,
     "count":6
+  },
+  {
+    "name":"Brightscript",
+    "year":2022,
+    "quarter":4,
+    "count":8
   },
   {
     "name":"Bro",
@@ -11154,6 +11376,12 @@
     "count":6851
   },
   {
+    "name":"C",
+    "year":2022,
+    "quarter":4,
+    "count":8311
+  },
+  {
     "name":"C#",
     "year":2008,
     "quarter":3,
@@ -11494,6 +11722,12 @@
     "year":2022,
     "quarter":3,
     "count":28069
+  },
+  {
+    "name":"C#",
+    "year":2022,
+    "quarter":4,
+    "count":27109
   },
   {
     "name":"C++",
@@ -11838,6 +12072,12 @@
     "count":14915
   },
   {
+    "name":"C++",
+    "year":2022,
+    "quarter":4,
+    "count":13927
+  },
+  {
     "name":"CIL",
     "year":2008,
     "quarter":3,
@@ -12180,6 +12420,12 @@
     "count":19
   },
   {
+    "name":"CIL",
+    "year":2022,
+    "quarter":4,
+    "count":14
+  },
+  {
     "name":"CLIPS",
     "year":2009,
     "quarter":4,
@@ -12490,6 +12736,12 @@
     "year":2022,
     "quarter":3,
     "count":5
+  },
+  {
+    "name":"CLIPS",
+    "year":2022,
+    "quarter":4,
+    "count":18
   },
   {
     "name":"CMake",
@@ -12834,6 +13086,12 @@
     "count":1318
   },
   {
+    "name":"CMake",
+    "year":2022,
+    "quarter":4,
+    "count":1230
+  },
+  {
     "name":"COBOL",
     "year":2008,
     "quarter":3,
@@ -13174,6 +13432,12 @@
     "year":2022,
     "quarter":3,
     "count":24
+  },
+  {
+    "name":"COBOL",
+    "year":2022,
+    "quarter":4,
+    "count":29
   },
   {
     "name":"CSON",
@@ -13602,6 +13866,12 @@
     "count":17392
   },
   {
+    "name":"CSS",
+    "year":2022,
+    "quarter":4,
+    "count":16518
+  },
+  {
     "name":"CSV",
     "year":2008,
     "quarter":3,
@@ -13944,6 +14214,12 @@
     "count":2274
   },
   {
+    "name":"CSV",
+    "year":2022,
+    "quarter":4,
+    "count":2377
+  },
+  {
     "name":"CUE",
     "year":2020,
     "quarter":2,
@@ -13978,6 +14254,12 @@
     "year":2022,
     "quarter":3,
     "count":1
+  },
+  {
+    "name":"CUE",
+    "year":2022,
+    "quarter":4,
+    "count":4
   },
   {
     "name":"Cap'n Proto",
@@ -14146,6 +14428,12 @@
     "year":2022,
     "quarter":3,
     "count":6
+  },
+  {
+    "name":"Cap'n Proto",
+    "year":2022,
+    "quarter":4,
+    "count":4
   },
   {
     "name":"CartoCSS",
@@ -14388,6 +14676,12 @@
     "count":1
   },
   {
+    "name":"Ceylon",
+    "year":2022,
+    "quarter":4,
+    "count":1
+  },
+  {
     "name":"Chapel",
     "year":2011,
     "quarter":3,
@@ -14556,6 +14850,12 @@
     "count":4
   },
   {
+    "name":"Chapel",
+    "year":2022,
+    "quarter":4,
+    "count":5
+  },
+  {
     "name":"ChucK",
     "year":2008,
     "quarter":3,
@@ -14649,6 +14949,12 @@
     "name":"ChucK",
     "year":2020,
     "quarter":2,
+    "count":1
+  },
+  {
+    "name":"ChucK",
+    "year":2022,
+    "quarter":4,
     "count":1
   },
   {
@@ -15264,6 +15570,12 @@
     "count":136
   },
   {
+    "name":"Clojure",
+    "year":2022,
+    "quarter":4,
+    "count":141
+  },
+  {
     "name":"CodeQL",
     "year":2020,
     "quarter":2,
@@ -15321,6 +15633,12 @@
     "name":"CodeQL",
     "year":2022,
     "quarter":3,
+    "count":7
+  },
+  {
+    "name":"CodeQL",
+    "year":2022,
+    "quarter":4,
     "count":7
   },
   {
@@ -15628,6 +15946,12 @@
     "year":2022,
     "quarter":3,
     "count":26
+  },
+  {
+    "name":"CoffeeScript",
+    "year":2022,
+    "quarter":4,
+    "count":20
   },
   {
     "name":"ColdFusion",
@@ -15972,6 +16296,12 @@
     "count":84
   },
   {
+    "name":"ColdFusion",
+    "year":2022,
+    "quarter":4,
+    "count":63
+  },
+  {
     "name":"Common Lisp",
     "year":2008,
     "quarter":3,
@@ -16314,6 +16644,12 @@
     "count":74
   },
   {
+    "name":"Common Lisp",
+    "year":2022,
+    "quarter":4,
+    "count":107
+  },
+  {
     "name":"Component Pascal",
     "year":2013,
     "quarter":4,
@@ -16644,6 +16980,12 @@
     "count":35
   },
   {
+    "name":"Coq",
+    "year":2022,
+    "quarter":4,
+    "count":35
+  },
+  {
     "name":"Crystal",
     "year":2012,
     "quarter":1,
@@ -16828,6 +17170,12 @@
     "year":2022,
     "quarter":3,
     "count":6
+  },
+  {
+    "name":"Crystal",
+    "year":2022,
+    "quarter":4,
+    "count":12
   },
   {
     "name":"Csound",
@@ -17358,6 +17706,12 @@
     "count":341
   },
   {
+    "name":"Cucumber",
+    "year":2022,
+    "quarter":4,
+    "count":327
+  },
+  {
     "name":"Cuda",
     "year":2008,
     "quarter":3,
@@ -17700,6 +18054,12 @@
     "count":282
   },
   {
+    "name":"Cuda",
+    "year":2022,
+    "quarter":4,
+    "count":309
+  },
+  {
     "name":"Cython",
     "year":2008,
     "quarter":4,
@@ -18034,6 +18394,12 @@
     "year":2022,
     "quarter":3,
     "count":149
+  },
+  {
+    "name":"Cython",
+    "year":2022,
+    "quarter":4,
+    "count":126
   },
   {
     "name":"D",
@@ -18378,6 +18744,12 @@
     "count":15
   },
   {
+    "name":"D",
+    "year":2022,
+    "quarter":4,
+    "count":9
+  },
+  {
     "name":"DCPU-16 ASM",
     "year":2012,
     "quarter":2,
@@ -18526,6 +18898,12 @@
     "year":2019,
     "quarter":3,
     "count":1
+  },
+  {
+    "name":"DIGITAL Command Language",
+    "year":2022,
+    "quarter":4,
+    "count":2
   },
   {
     "name":"DOT",
@@ -18864,6 +19242,12 @@
     "count":134
   },
   {
+    "name":"DOT",
+    "year":2022,
+    "quarter":4,
+    "count":159
+  },
+  {
     "name":"DTrace",
     "year":2008,
     "quarter":3,
@@ -19188,6 +19572,12 @@
     "count":6
   },
   {
+    "name":"DTrace",
+    "year":2022,
+    "quarter":4,
+    "count":3
+  },
+  {
     "name":"Dafny",
     "year":2014,
     "quarter":2,
@@ -19384,6 +19774,12 @@
     "year":2022,
     "quarter":3,
     "count":29
+  },
+  {
+    "name":"Dafny",
+    "year":2022,
+    "quarter":4,
+    "count":26
   },
   {
     "name":"Dart",
@@ -19656,6 +20052,12 @@
     "count":8440
   },
   {
+    "name":"Dart",
+    "year":2022,
+    "quarter":4,
+    "count":8317
+  },
+  {
     "name":"DataWeave",
     "year":2015,
     "quarter":3,
@@ -19828,6 +20230,12 @@
     "year":2022,
     "quarter":3,
     "count":117
+  },
+  {
+    "name":"DataWeave",
+    "year":2022,
+    "quarter":4,
+    "count":92
   },
   {
     "name":"Delphi",
@@ -20172,6 +20580,12 @@
     "count":658
   },
   {
+    "name":"Delphi",
+    "year":2022,
+    "quarter":4,
+    "count":637
+  },
+  {
     "name":"Dhall",
     "year":2018,
     "quarter":3,
@@ -20502,6 +20916,12 @@
     "count":8164
   },
   {
+    "name":"Dockerfile",
+    "year":2022,
+    "quarter":4,
+    "count":7789
+  },
+  {
     "name":"Dylan",
     "year":2011,
     "quarter":4,
@@ -20620,6 +21040,12 @@
     "year":2022,
     "quarter":3,
     "count":6
+  },
+  {
+    "name":"ECL",
+    "year":2022,
+    "quarter":4,
+    "count":13
   },
   {
     "name":"EJS",
@@ -20908,6 +21334,12 @@
     "year":2022,
     "quarter":3,
     "count":285
+  },
+  {
+    "name":"EJS",
+    "year":2022,
+    "quarter":4,
+    "count":261
   },
   {
     "name":"Eiffel",
@@ -21204,6 +21636,12 @@
     "count":6
   },
   {
+    "name":"Eiffel",
+    "year":2022,
+    "quarter":4,
+    "count":1
+  },
+  {
     "name":"Elixir",
     "year":2012,
     "quarter":4,
@@ -21444,6 +21882,12 @@
     "count":223
   },
   {
+    "name":"Elixir",
+    "year":2022,
+    "quarter":4,
+    "count":431
+  },
+  {
     "name":"Elm",
     "year":2012,
     "quarter":4,
@@ -21682,6 +22126,12 @@
     "year":2022,
     "quarter":3,
     "count":24
+  },
+  {
+    "name":"Elm",
+    "year":2022,
+    "quarter":4,
+    "count":26
   },
   {
     "name":"Emacs Lisp",
@@ -22026,6 +22476,12 @@
     "count":34
   },
   {
+    "name":"Emacs Lisp",
+    "year":2022,
+    "quarter":4,
+    "count":18
+  },
+  {
     "name":"Erlang",
     "year":2008,
     "quarter":3,
@@ -22366,6 +22822,12 @@
     "year":2022,
     "quarter":3,
     "count":101
+  },
+  {
+    "name":"Erlang",
+    "year":2022,
+    "quarter":4,
+    "count":114
   },
   {
     "name":"F#",
@@ -22710,6 +23172,12 @@
     "count":198
   },
   {
+    "name":"F#",
+    "year":2022,
+    "quarter":4,
+    "count":181
+  },
+  {
     "name":"F*",
     "year":2014,
     "quarter":3,
@@ -22840,6 +23308,12 @@
     "year":2022,
     "quarter":3,
     "count":23
+  },
+  {
+    "name":"FLUX",
+    "year":2022,
+    "quarter":4,
+    "count":14
   },
   {
     "name":"Factor",
@@ -22995,6 +23469,12 @@
     "name":"Factor",
     "year":2022,
     "quarter":2,
+    "count":1
+  },
+  {
+    "name":"Factor",
+    "year":2022,
+    "quarter":4,
     "count":1
   },
   {
@@ -23496,6 +23976,12 @@
     "count":35
   },
   {
+    "name":"Fluent",
+    "year":2022,
+    "quarter":4,
+    "count":22
+  },
+  {
     "name":"Forth",
     "year":2009,
     "quarter":1,
@@ -23800,6 +24286,12 @@
     "year":2022,
     "quarter":3,
     "count":2
+  },
+  {
+    "name":"Forth",
+    "year":2022,
+    "quarter":4,
+    "count":11
   },
   {
     "name":"Fortran",
@@ -24144,6 +24636,12 @@
     "count":216
   },
   {
+    "name":"Fortran",
+    "year":2022,
+    "quarter":4,
+    "count":181
+  },
+  {
     "name":"FreeBasic",
     "year":2010,
     "quarter":2,
@@ -24322,6 +24820,12 @@
     "year":2022,
     "quarter":3,
     "count":4
+  },
+  {
+    "name":"FreeBasic",
+    "year":2022,
+    "quarter":4,
+    "count":1
   },
   {
     "name":"FreeMarker",
@@ -24666,6 +25170,12 @@
     "count":65
   },
   {
+    "name":"FreeMarker",
+    "year":2022,
+    "quarter":4,
+    "count":72
+  },
+  {
     "name":"Frege",
     "year":2011,
     "quarter":3,
@@ -25065,6 +25575,12 @@
     "name":"G-code",
     "year":2022,
     "quarter":3,
+    "count":7
+  },
+  {
+    "name":"G-code",
+    "year":2022,
+    "quarter":4,
     "count":7
   },
   {
@@ -25312,6 +25828,12 @@
     "year":2022,
     "quarter":3,
     "count":14
+  },
+  {
+    "name":"GAMS",
+    "year":2022,
+    "quarter":4,
+    "count":16
   },
   {
     "name":"GAP",
@@ -25818,6 +26340,12 @@
     "count":264
   },
   {
+    "name":"GDB",
+    "year":2022,
+    "quarter":4,
+    "count":275
+  },
+  {
     "name":"GDScript",
     "year":2014,
     "quarter":1,
@@ -25978,6 +26506,12 @@
     "year":2022,
     "quarter":3,
     "count":156
+  },
+  {
+    "name":"GDScript",
+    "year":2022,
+    "quarter":4,
+    "count":194
   },
   {
     "name":"GLSL",
@@ -26322,6 +26856,12 @@
     "count":181
   },
   {
+    "name":"GLSL",
+    "year":2022,
+    "quarter":4,
+    "count":180
+  },
+  {
     "name":"Game Maker Language",
     "year":2009,
     "quarter":4,
@@ -26598,6 +27138,12 @@
     "count":9
   },
   {
+    "name":"Game Maker Language",
+    "year":2022,
+    "quarter":4,
+    "count":7
+  },
+  {
     "name":"Genshi",
     "year":2008,
     "quarter":3,
@@ -26769,6 +27315,12 @@
     "name":"Genshi",
     "year":2022,
     "quarter":1,
+    "count":1
+  },
+  {
+    "name":"Genshi",
+    "year":2022,
+    "quarter":4,
     "count":1
   },
   {
@@ -27108,6 +27660,12 @@
     "count":33
   },
   {
+    "name":"Gettext Catalog",
+    "year":2022,
+    "quarter":4,
+    "count":29
+  },
+  {
     "name":"Gherkin",
     "year":2009,
     "quarter":4,
@@ -27412,6 +27970,12 @@
     "year":2022,
     "quarter":3,
     "count":44
+  },
+  {
+    "name":"Gherkin",
+    "year":2022,
+    "quarter":4,
+    "count":42
   },
   {
     "name":"Gnuplot",
@@ -27756,6 +28320,12 @@
     "count":177
   },
   {
+    "name":"Gnuplot",
+    "year":2022,
+    "quarter":4,
+    "count":121
+  },
+  {
     "name":"Go",
     "year":2009,
     "quarter":4,
@@ -28068,6 +28638,12 @@
     "count":3704
   },
   {
+    "name":"Go",
+    "year":2022,
+    "quarter":4,
+    "count":3209
+  },
+  {
     "name":"Gosu",
     "year":2010,
     "quarter":4,
@@ -28276,6 +28852,12 @@
     "year":2022,
     "quarter":3,
     "count":7
+  },
+  {
+    "name":"Gosu",
+    "year":2022,
+    "quarter":4,
+    "count":12
   },
   {
     "name":"Grammatical Framework",
@@ -28692,6 +29274,12 @@
     "count":628
   },
   {
+    "name":"Groovy",
+    "year":2022,
+    "quarter":4,
+    "count":633
+  },
+  {
     "name":"HLSL",
     "year":2008,
     "quarter":3,
@@ -29032,6 +29620,12 @@
     "year":2022,
     "quarter":3,
     "count":41
+  },
+  {
+    "name":"HLSL",
+    "year":2022,
+    "quarter":4,
+    "count":39
   },
   {
     "name":"HTML",
@@ -29376,6 +29970,12 @@
     "count":25167
   },
   {
+    "name":"HTML",
+    "year":2022,
+    "quarter":4,
+    "count":22785
+  },
+  {
     "name":"Hack",
     "year":2014,
     "quarter":1,
@@ -29554,6 +30154,12 @@
     "year":2022,
     "quarter":3,
     "count":6
+  },
+  {
+    "name":"Hack",
+    "year":2022,
+    "quarter":4,
+    "count":1
   },
   {
     "name":"Haml",
@@ -29898,6 +30504,12 @@
     "count":15
   },
   {
+    "name":"Haml",
+    "year":2022,
+    "quarter":4,
+    "count":22
+  },
+  {
     "name":"Haskell",
     "year":2008,
     "quarter":3,
@@ -30238,6 +30850,12 @@
     "year":2022,
     "quarter":3,
     "count":586
+  },
+  {
+    "name":"Haskell",
+    "year":2022,
+    "quarter":4,
+    "count":755
   },
   {
     "name":"Haxe",
@@ -30582,6 +31200,12 @@
     "count":22
   },
   {
+    "name":"Haxe",
+    "year":2022,
+    "quarter":4,
+    "count":38
+  },
+  {
     "name":"HiveQL",
     "year":2008,
     "quarter":3,
@@ -30912,6 +31536,12 @@
     "count":515
   },
   {
+    "name":"HiveQL",
+    "year":2022,
+    "quarter":4,
+    "count":533
+  },
+  {
     "name":"Hy",
     "year":2013,
     "quarter":3,
@@ -31090,6 +31720,12 @@
     "year":2022,
     "quarter":3,
     "count":10
+  },
+  {
+    "name":"Hy",
+    "year":2022,
+    "quarter":4,
+    "count":4
   },
   {
     "name":"IDL",
@@ -31395,6 +32031,12 @@
     "name":"IDL",
     "year":2022,
     "quarter":3,
+    "count":4
+  },
+  {
+    "name":"IDL",
+    "year":2022,
+    "quarter":4,
     "count":4
   },
   {
@@ -31830,6 +32472,12 @@
     "count":45
   },
   {
+    "name":"INI",
+    "year":2022,
+    "quarter":4,
+    "count":26
+  },
+  {
     "name":"Idris",
     "year":2012,
     "quarter":1,
@@ -32068,6 +32716,12 @@
     "year":2022,
     "quarter":3,
     "count":10
+  },
+  {
+    "name":"Idris",
+    "year":2022,
+    "quarter":4,
+    "count":7
   },
   {
     "name":"ImageJ Macro",
@@ -32380,6 +33034,12 @@
     "year":2022,
     "quarter":3,
     "count":28
+  },
+  {
+    "name":"ImageJ Macro",
+    "year":2022,
+    "quarter":4,
+    "count":22
   },
   {
     "name":"Inform 7",
@@ -32904,6 +33564,12 @@
     "count":124
   },
   {
+    "name":"Inno Setup",
+    "year":2022,
+    "quarter":4,
+    "count":135
+  },
+  {
     "name":"Interface Description Language",
     "year":2008,
     "quarter":3,
@@ -33240,6 +33906,12 @@
     "count":4
   },
   {
+    "name":"Interface Description Language",
+    "year":2022,
+    "quarter":4,
+    "count":8
+  },
+  {
     "name":"Io",
     "year":2009,
     "quarter":2,
@@ -33417,6 +34089,12 @@
     "name":"Io",
     "year":2022,
     "quarter":2,
+    "count":1
+  },
+  {
+    "name":"Io",
+    "year":2022,
+    "quarter":4,
     "count":1
   },
   {
@@ -33670,6 +34348,12 @@
     "year":2022,
     "quarter":3,
     "count":16
+  },
+  {
+    "name":"Isabelle",
+    "year":2022,
+    "quarter":4,
+    "count":30
   },
   {
     "name":"J",
@@ -33988,6 +34672,12 @@
     "year":2022,
     "quarter":3,
     "count":5
+  },
+  {
+    "name":"J",
+    "year":2022,
+    "quarter":4,
+    "count":6
   },
   {
     "name":"JSON",
@@ -34332,6 +35022,12 @@
     "count":8446
   },
   {
+    "name":"JSON",
+    "year":2022,
+    "quarter":4,
+    "count":7985
+  },
+  {
     "name":"JSONiq",
     "year":2013,
     "quarter":1,
@@ -34480,6 +35176,12 @@
     "year":2022,
     "quarter":3,
     "count":2
+  },
+  {
+    "name":"JSONiq",
+    "year":2022,
+    "quarter":4,
+    "count":1
   },
   {
     "name":"Jasmin",
@@ -34672,6 +35374,12 @@
     "year":2022,
     "quarter":3,
     "count":3
+  },
+  {
+    "name":"Jasmin",
+    "year":2022,
+    "quarter":4,
+    "count":4
   },
   {
     "name":"Java",
@@ -35016,6 +35724,12 @@
     "count":31969
   },
   {
+    "name":"Java",
+    "year":2022,
+    "quarter":4,
+    "count":31439
+  },
+  {
     "name":"JavaScript",
     "year":2008,
     "quarter":3,
@@ -35358,6 +36072,12 @@
     "count":71328
   },
   {
+    "name":"JavaScript",
+    "year":2022,
+    "quarter":4,
+    "count":61642
+  },
+  {
     "name":"Jinja",
     "year":2008,
     "quarter":4,
@@ -35688,6 +36408,12 @@
     "count":420
   },
   {
+    "name":"Jinja",
+    "year":2022,
+    "quarter":4,
+    "count":431
+  },
+  {
     "name":"Jolie",
     "year":2015,
     "quarter":3,
@@ -35866,6 +36592,12 @@
     "year":2022,
     "quarter":3,
     "count":12
+  },
+  {
+    "name":"Jsonnet",
+    "year":2022,
+    "quarter":4,
+    "count":15
   },
   {
     "name":"Julia",
@@ -36126,6 +36858,12 @@
     "count":471
   },
   {
+    "name":"Julia",
+    "year":2022,
+    "quarter":4,
+    "count":527
+  },
+  {
     "name":"Jupyter Notebook",
     "year":2012,
     "quarter":1,
@@ -36360,6 +37098,12 @@
     "count":518
   },
   {
+    "name":"Jupyter Notebook",
+    "year":2022,
+    "quarter":4,
+    "count":537
+  },
+  {
     "name":"KRL",
     "year":2014,
     "quarter":1,
@@ -36450,6 +37194,12 @@
     "count":1
   },
   {
+    "name":"KRL",
+    "year":2022,
+    "quarter":4,
+    "count":1
+  },
+  {
     "name":"Kaitai Struct",
     "year":2016,
     "quarter":3,
@@ -36574,6 +37324,12 @@
     "year":2022,
     "quarter":3,
     "count":1
+  },
+  {
+    "name":"Kaitai Struct",
+    "year":2022,
+    "quarter":4,
+    "count":3
   },
   {
     "name":"KakouneScript",
@@ -36753,6 +37509,12 @@
     "name":"KiCad Layout",
     "year":2022,
     "quarter":2,
+    "count":3
+  },
+  {
+    "name":"KiCad Layout",
+    "year":2022,
+    "quarter":4,
     "count":3
   },
   {
@@ -37044,6 +37806,12 @@
     "count":6592
   },
   {
+    "name":"Kotlin",
+    "year":2022,
+    "quarter":4,
+    "count":6284
+  },
+  {
     "name":"Kusto",
     "year":2017,
     "quarter":2,
@@ -37156,6 +37924,12 @@
     "year":2022,
     "quarter":3,
     "count":142
+  },
+  {
+    "name":"Kusto",
+    "year":2022,
+    "quarter":4,
+    "count":120
   },
   {
     "name":"LLVM",
@@ -37494,6 +38268,12 @@
     "count":263
   },
   {
+    "name":"LLVM",
+    "year":2022,
+    "quarter":4,
+    "count":211
+  },
+  {
     "name":"LSL",
     "year":2008,
     "quarter":3,
@@ -37737,6 +38517,12 @@
     "name":"LSL",
     "year":2022,
     "quarter":2,
+    "count":2
+  },
+  {
+    "name":"LSL",
+    "year":2022,
+    "quarter":4,
     "count":2
   },
   {
@@ -38082,6 +38868,12 @@
     "count":24
   },
   {
+    "name":"LabVIEW",
+    "year":2022,
+    "quarter":4,
+    "count":32
+  },
+  {
     "name":"Latte",
     "year":2012,
     "quarter":1,
@@ -38292,6 +39084,12 @@
     "count":2
   },
   {
+    "name":"Latte",
+    "year":2022,
+    "quarter":4,
+    "count":7
+  },
+  {
     "name":"Lean",
     "year":2016,
     "quarter":1,
@@ -38446,6 +39244,12 @@
     "year":2022,
     "quarter":3,
     "count":12
+  },
+  {
+    "name":"Lean",
+    "year":2022,
+    "quarter":4,
+    "count":6
   },
   {
     "name":"Less",
@@ -38764,6 +39568,12 @@
     "year":2022,
     "quarter":3,
     "count":64
+  },
+  {
+    "name":"Less",
+    "year":2022,
+    "quarter":4,
+    "count":70
   },
   {
     "name":"Lex",
@@ -39108,6 +39918,12 @@
     "count":23
   },
   {
+    "name":"Lex",
+    "year":2022,
+    "quarter":4,
+    "count":17
+  },
+  {
     "name":"LilyPond",
     "year":2009,
     "quarter":2,
@@ -39400,6 +40216,12 @@
     "year":2022,
     "quarter":3,
     "count":6
+  },
+  {
+    "name":"LilyPond",
+    "year":2022,
+    "quarter":4,
+    "count":8
   },
   {
     "name":"Liquid",
@@ -39726,6 +40548,12 @@
     "count":212
   },
   {
+    "name":"Liquid",
+    "year":2022,
+    "quarter":4,
+    "count":214
+  },
+  {
     "name":"LiveScript",
     "year":2012,
     "quarter":2,
@@ -39996,6 +40824,12 @@
     "count":1
   },
   {
+    "name":"Logo Language",
+    "year":2022,
+    "quarter":4,
+    "count":1
+  },
+  {
     "name":"Logtalk",
     "year":2011,
     "quarter":1,
@@ -40240,6 +41074,12 @@
     "year":2022,
     "quarter":3,
     "count":33
+  },
+  {
+    "name":"LookML",
+    "year":2022,
+    "quarter":4,
+    "count":36
   },
   {
     "name":"Lua",
@@ -40584,6 +41424,12 @@
     "count":746
   },
   {
+    "name":"Lua",
+    "year":2022,
+    "quarter":4,
+    "count":740
+  },
+  {
     "name":"M",
     "year":2009,
     "quarter":3,
@@ -40816,6 +41662,12 @@
     "year":2022,
     "quarter":2,
     "count":5
+  },
+  {
+    "name":"M",
+    "year":2022,
+    "quarter":4,
+    "count":6
   },
   {
     "name":"M4",
@@ -41134,6 +41986,12 @@
     "year":2022,
     "quarter":3,
     "count":2
+  },
+  {
+    "name":"M4",
+    "year":2022,
+    "quarter":4,
+    "count":6
   },
   {
     "name":"MATLAB",
@@ -41478,6 +42336,12 @@
     "count":931
   },
   {
+    "name":"MATLAB",
+    "year":2022,
+    "quarter":4,
+    "count":994
+  },
+  {
     "name":"MAXScript",
     "year":2008,
     "quarter":4,
@@ -41790,6 +42654,12 @@
     "count":7
   },
   {
+    "name":"MAXScript",
+    "year":2022,
+    "quarter":4,
+    "count":7
+  },
+  {
     "name":"MQL4",
     "year":2010,
     "quarter":1,
@@ -42060,6 +42930,12 @@
     "count":50
   },
   {
+    "name":"MQL4",
+    "year":2022,
+    "quarter":4,
+    "count":36
+  },
+  {
     "name":"MQL5",
     "year":2012,
     "quarter":3,
@@ -42270,6 +43146,12 @@
     "count":38
   },
   {
+    "name":"MQL5",
+    "year":2022,
+    "quarter":4,
+    "count":37
+  },
+  {
     "name":"Macaulay2",
     "year":2016,
     "quarter":1,
@@ -42309,6 +43191,12 @@
     "name":"Macaulay2",
     "year":2021,
     "quarter":3,
+    "count":1
+  },
+  {
+    "name":"Macaulay2",
+    "year":2022,
+    "quarter":4,
     "count":1
   },
   {
@@ -42654,6 +43542,12 @@
     "count":549
   },
   {
+    "name":"Makefile",
+    "year":2022,
+    "quarter":4,
+    "count":586
+  },
+  {
     "name":"Mako",
     "year":2008,
     "quarter":4,
@@ -42970,6 +43864,12 @@
     "year":2022,
     "quarter":3,
     "count":2
+  },
+  {
+    "name":"Mako",
+    "year":2022,
+    "quarter":4,
+    "count":3
   },
   {
     "name":"Markdown",
@@ -43314,6 +44214,12 @@
     "count":454
   },
   {
+    "name":"Markdown",
+    "year":2022,
+    "quarter":4,
+    "count":477
+  },
+  {
     "name":"Marko",
     "year":2014,
     "quarter":3,
@@ -43473,6 +44379,12 @@
     "name":"Marko",
     "year":2022,
     "quarter":3,
+    "count":1
+  },
+  {
+    "name":"Marko",
+    "year":2022,
+    "quarter":4,
     "count":1
   },
   {
@@ -43818,6 +44730,12 @@
     "count":41
   },
   {
+    "name":"Mathematica",
+    "year":2022,
+    "quarter":4,
+    "count":57
+  },
+  {
     "name":"Max",
     "year":2011,
     "quarter":1,
@@ -44062,6 +44980,12 @@
     "year":2022,
     "quarter":3,
     "count":3
+  },
+  {
+    "name":"Max",
+    "year":2022,
+    "quarter":4,
+    "count":1
   },
   {
     "name":"Mercury",
@@ -44382,6 +45306,12 @@
     "count":53
   },
   {
+    "name":"Meson",
+    "year":2022,
+    "quarter":4,
+    "count":32
+  },
+  {
     "name":"Metal",
     "year":2014,
     "quarter":2,
@@ -44584,6 +45514,12 @@
     "year":2022,
     "quarter":3,
     "count":73
+  },
+  {
+    "name":"Metal",
+    "year":2022,
+    "quarter":4,
+    "count":67
   },
   {
     "name":"Mirah",
@@ -44958,6 +45894,12 @@
     "count":27
   },
   {
+    "name":"Modelica",
+    "year":2022,
+    "quarter":4,
+    "count":36
+  },
+  {
     "name":"Modula-2",
     "year":2009,
     "quarter":2,
@@ -45234,6 +46176,12 @@
     "count":1
   },
   {
+    "name":"Moocode",
+    "year":2022,
+    "quarter":4,
+    "count":1
+  },
+  {
     "name":"MoonScript",
     "year":2013,
     "quarter":2,
@@ -45352,6 +46300,12 @@
     "year":2022,
     "quarter":3,
     "count":5
+  },
+  {
+    "name":"Motoko",
+    "year":2022,
+    "quarter":4,
+    "count":7
   },
   {
     "name":"Mustache",
@@ -45648,6 +46602,12 @@
     "count":28
   },
   {
+    "name":"Mustache",
+    "year":2022,
+    "quarter":4,
+    "count":32
+  },
+  {
     "name":"NASL",
     "year":2011,
     "quarter":4,
@@ -45876,6 +46836,12 @@
     "count":5
   },
   {
+    "name":"NASL",
+    "year":2022,
+    "quarter":4,
+    "count":6
+  },
+  {
     "name":"NCL",
     "year":2014,
     "quarter":1,
@@ -45982,6 +46948,12 @@
     "year":2021,
     "quarter":4,
     "count":3
+  },
+  {
+    "name":"NCL",
+    "year":2022,
+    "quarter":4,
+    "count":1
   },
   {
     "name":"NSIS",
@@ -46326,6 +47298,12 @@
     "count":44
   },
   {
+    "name":"NSIS",
+    "year":2022,
+    "quarter":4,
+    "count":22
+  },
+  {
     "name":"Nearley",
     "year":2017,
     "quarter":4,
@@ -46426,6 +47404,12 @@
     "year":2022,
     "quarter":3,
     "count":4
+  },
+  {
+    "name":"Nearley",
+    "year":2022,
+    "quarter":4,
+    "count":5
   },
   {
     "name":"Nemerle",
@@ -46884,6 +47868,12 @@
     "count":57
   },
   {
+    "name":"NetLogo",
+    "year":2022,
+    "quarter":4,
+    "count":77
+  },
+  {
     "name":"NewLisp",
     "year":2010,
     "quarter":1,
@@ -47092,6 +48082,12 @@
     "year":2022,
     "quarter":3,
     "count":21
+  },
+  {
+    "name":"Nextflow",
+    "year":2022,
+    "quarter":4,
+    "count":34
   },
   {
     "name":"Nginx",
@@ -47436,6 +48432,12 @@
     "count":2054
   },
   {
+    "name":"Nginx",
+    "year":2022,
+    "quarter":4,
+    "count":1966
+  },
+  {
     "name":"Nim",
     "year":2013,
     "quarter":2,
@@ -47664,6 +48666,12 @@
     "count":23
   },
   {
+    "name":"Nim",
+    "year":2022,
+    "quarter":4,
+    "count":33
+  },
+  {
     "name":"Nix",
     "year":2014,
     "quarter":4,
@@ -47854,6 +48862,12 @@
     "year":2022,
     "quarter":3,
     "count":45
+  },
+  {
+    "name":"Nix",
+    "year":2022,
+    "quarter":4,
+    "count":57
   },
   {
     "name":"Nunjucks",
@@ -48072,6 +49086,12 @@
     "count":12
   },
   {
+    "name":"Nunjucks",
+    "year":2022,
+    "quarter":4,
+    "count":19
+  },
+  {
     "name":"Nushell",
     "year":2021,
     "quarter":3,
@@ -48088,6 +49108,12 @@
     "year":2022,
     "quarter":3,
     "count":3
+  },
+  {
+    "name":"Nushell",
+    "year":2022,
+    "quarter":4,
+    "count":6
   },
   {
     "name":"OCaml",
@@ -48432,6 +49458,12 @@
     "count":133
   },
   {
+    "name":"OCaml",
+    "year":2022,
+    "quarter":4,
+    "count":173
+  },
+  {
     "name":"ObjectScript",
     "year":2011,
     "quarter":4,
@@ -48627,6 +49659,12 @@
     "name":"ObjectScript",
     "year":2022,
     "quarter":3,
+    "count":1
+  },
+  {
+    "name":"ObjectScript",
+    "year":2022,
+    "quarter":4,
     "count":1
   },
   {
@@ -48972,6 +50010,12 @@
     "count":903
   },
   {
+    "name":"Objective-C",
+    "year":2022,
+    "quarter":4,
+    "count":922
+  },
+  {
     "name":"Objective-C++",
     "year":2009,
     "quarter":1,
@@ -49302,6 +50346,12 @@
     "count":15
   },
   {
+    "name":"Objective-C++",
+    "year":2022,
+    "quarter":4,
+    "count":12
+  },
+  {
     "name":"Objective-J",
     "year":2008,
     "quarter":3,
@@ -49452,6 +50502,12 @@
     "count":1
   },
   {
+    "name":"Objective-J",
+    "year":2022,
+    "quarter":4,
+    "count":2
+  },
+  {
     "name":"Opa",
     "year":2011,
     "quarter":2,
@@ -49596,6 +50652,12 @@
     "count":17
   },
   {
+    "name":"Opa",
+    "year":2022,
+    "quarter":4,
+    "count":11
+  },
+  {
     "name":"Open Policy Agent",
     "year":2017,
     "quarter":4,
@@ -49696,6 +50758,12 @@
     "year":2022,
     "quarter":3,
     "count":16
+  },
+  {
+    "name":"Open Policy Agent",
+    "year":2022,
+    "quarter":4,
+    "count":18
   },
   {
     "name":"OpenEdge ABL",
@@ -50040,6 +51108,12 @@
     "count":48
   },
   {
+    "name":"OpenEdge ABL",
+    "year":2022,
+    "quarter":4,
+    "count":69
+  },
+  {
     "name":"OpenSCAD",
     "year":2013,
     "quarter":2,
@@ -50266,6 +51340,12 @@
     "year":2022,
     "quarter":3,
     "count":7
+  },
+  {
+    "name":"OpenSCAD",
+    "year":2022,
+    "quarter":4,
+    "count":3
   },
   {
     "name":"Org",
@@ -50598,6 +51678,12 @@
     "count":33
   },
   {
+    "name":"Org",
+    "year":2022,
+    "quarter":4,
+    "count":44
+  },
+  {
     "name":"Ox",
     "year":2013,
     "quarter":3,
@@ -50649,6 +51735,12 @@
     "name":"Ox",
     "year":2022,
     "quarter":3,
+    "count":1
+  },
+  {
+    "name":"Ox",
+    "year":2022,
+    "quarter":4,
     "count":1
   },
   {
@@ -50886,6 +51978,12 @@
     "count":2
   },
   {
+    "name":"Oz",
+    "year":2022,
+    "quarter":4,
+    "count":5
+  },
+  {
     "name":"P4",
     "year":2017,
     "quarter":1,
@@ -50920,6 +52018,12 @@
     "year":2022,
     "quarter":2,
     "count":2
+  },
+  {
+    "name":"P4",
+    "year":2022,
+    "quarter":4,
+    "count":3
   },
   {
     "name":"PEG.js",
@@ -51498,6 +52602,12 @@
     "count":19279
   },
   {
+    "name":"PHP",
+    "year":2022,
+    "quarter":4,
+    "count":17172
+  },
+  {
     "name":"PLSQL",
     "year":2008,
     "quarter":3,
@@ -51838,6 +52948,12 @@
     "year":2022,
     "quarter":3,
     "count":497
+  },
+  {
+    "name":"PLSQL",
+    "year":2022,
+    "quarter":4,
+    "count":531
   },
   {
     "name":"PLpgSQL",
@@ -52182,6 +53298,12 @@
     "count":6749
   },
   {
+    "name":"PLpgSQL",
+    "year":2022,
+    "quarter":4,
+    "count":6798
+  },
+  {
     "name":"POV-Ray SDL",
     "year":2008,
     "quarter":4,
@@ -52446,6 +53568,12 @@
     "count":1
   },
   {
+    "name":"POV-Ray SDL",
+    "year":2022,
+    "quarter":4,
+    "count":3
+  },
+  {
     "name":"Parrot",
     "year":2008,
     "quarter":3,
@@ -52629,6 +53757,12 @@
     "name":"Parrot",
     "year":2022,
     "quarter":3,
+    "count":1
+  },
+  {
+    "name":"Parrot",
+    "year":2022,
+    "quarter":4,
     "count":1
   },
   {
@@ -52974,6 +54108,12 @@
     "count":29
   },
   {
+    "name":"Pascal",
+    "year":2022,
+    "quarter":4,
+    "count":70
+  },
+  {
     "name":"Pawn",
     "year":2012,
     "quarter":2,
@@ -53122,6 +54262,12 @@
     "year":2022,
     "quarter":3,
     "count":3
+  },
+  {
+    "name":"Pawn",
+    "year":2022,
+    "quarter":4,
+    "count":1
   },
   {
     "name":"Pep8",
@@ -53458,6 +54604,12 @@
     "year":2022,
     "quarter":3,
     "count":27
+  },
+  {
+    "name":"Pep8",
+    "year":2022,
+    "quarter":4,
+    "count":32
   },
   {
     "name":"Perl",
@@ -53800,6 +54952,12 @@
     "year":2022,
     "quarter":3,
     "count":587
+  },
+  {
+    "name":"Perl",
+    "year":2022,
+    "quarter":4,
+    "count":550
   },
   {
     "name":"PicoLisp",
@@ -54156,6 +55314,12 @@
     "count":14
   },
   {
+    "name":"PigLatin",
+    "year":2022,
+    "quarter":4,
+    "count":21
+  },
+  {
     "name":"Pike",
     "year":2013,
     "quarter":1,
@@ -54654,6 +55818,12 @@
     "count":17
   },
   {
+    "name":"PostScript",
+    "year":2022,
+    "quarter":4,
+    "count":27
+  },
+  {
     "name":"PowerBuilder",
     "year":2008,
     "quarter":3,
@@ -54994,6 +56164,12 @@
     "year":2022,
     "quarter":3,
     "count":16
+  },
+  {
+    "name":"PowerBuilder",
+    "year":2022,
+    "quarter":4,
+    "count":17
   },
   {
     "name":"PowerShell",
@@ -55338,6 +56514,12 @@
     "count":4320
   },
   {
+    "name":"PowerShell",
+    "year":2022,
+    "quarter":4,
+    "count":4630
+  },
+  {
     "name":"Processing",
     "year":2008,
     "quarter":4,
@@ -55672,6 +56854,12 @@
     "year":2022,
     "quarter":3,
     "count":104
+  },
+  {
+    "name":"Processing",
+    "year":2022,
+    "quarter":4,
+    "count":133
   },
   {
     "name":"Prolog",
@@ -56010,6 +57198,12 @@
     "count":476
   },
   {
+    "name":"Prolog",
+    "year":2022,
+    "quarter":4,
+    "count":267
+  },
+  {
     "name":"Promela",
     "year":2013,
     "quarter":1,
@@ -56224,6 +57418,12 @@
     "year":2022,
     "quarter":3,
     "count":1
+  },
+  {
+    "name":"Promela",
+    "year":2022,
+    "quarter":4,
+    "count":3
   },
   {
     "name":"Propeller Spin",
@@ -56574,6 +57774,12 @@
     "count":331
   },
   {
+    "name":"Protocol Buffer",
+    "year":2022,
+    "quarter":4,
+    "count":355
+  },
+  {
     "name":"Pug",
     "year":2010,
     "quarter":3,
@@ -56860,6 +58066,12 @@
     "year":2022,
     "quarter":3,
     "count":83
+  },
+  {
+    "name":"Pug",
+    "year":2022,
+    "quarter":4,
+    "count":88
   },
   {
     "name":"Puppet",
@@ -57154,6 +58366,12 @@
     "year":2022,
     "quarter":3,
     "count":47
+  },
+  {
+    "name":"Puppet",
+    "year":2022,
+    "quarter":4,
+    "count":42
   },
   {
     "name":"Pure Data",
@@ -57612,6 +58830,12 @@
     "count":15
   },
   {
+    "name":"PureScript",
+    "year":2022,
+    "quarter":4,
+    "count":13
+  },
+  {
     "name":"Python",
     "year":2008,
     "quarter":3,
@@ -57954,6 +59178,12 @@
     "count":93974
   },
   {
+    "name":"Python",
+    "year":2022,
+    "quarter":4,
+    "count":90494
+  },
+  {
     "name":"Q#",
     "year":2017,
     "quarter":4,
@@ -58060,6 +59290,12 @@
     "year":2022,
     "quarter":2,
     "count":1
+  },
+  {
+    "name":"Q#",
+    "year":2022,
+    "quarter":4,
+    "count":6
   },
   {
     "name":"QML",
@@ -58360,6 +59596,12 @@
     "year":2022,
     "quarter":3,
     "count":315
+  },
+  {
+    "name":"QML",
+    "year":2022,
+    "quarter":4,
+    "count":300
   },
   {
     "name":"QMake",
@@ -58702,6 +59944,12 @@
     "year":2022,
     "quarter":3,
     "count":39
+  },
+  {
+    "name":"QMake",
+    "year":2022,
+    "quarter":4,
+    "count":34
   },
   {
     "name":"Qt Script",
@@ -59304,6 +60552,12 @@
     "count":15627
   },
   {
+    "name":"R",
+    "year":2022,
+    "quarter":4,
+    "count":15879
+  },
+  {
     "name":"RAML",
     "year":2014,
     "quarter":1,
@@ -59512,6 +60766,12 @@
     "year":2022,
     "quarter":3,
     "count":6
+  },
+  {
+    "name":"RAML",
+    "year":2022,
+    "quarter":4,
+    "count":10
   },
   {
     "name":"REXX",
@@ -59832,6 +61092,12 @@
     "count":3
   },
   {
+    "name":"REXX",
+    "year":2022,
+    "quarter":4,
+    "count":5
+  },
+  {
     "name":"RMarkdown",
     "year":2012,
     "quarter":2,
@@ -60082,6 +61348,12 @@
     "year":2022,
     "quarter":3,
     "count":525
+  },
+  {
+    "name":"RMarkdown",
+    "year":2022,
+    "quarter":4,
+    "count":497
   },
   {
     "name":"Racket",
@@ -60420,6 +61692,12 @@
     "count":79
   },
   {
+    "name":"Racket",
+    "year":2022,
+    "quarter":4,
+    "count":108
+  },
+  {
     "name":"Ragel",
     "year":2008,
     "quarter":4,
@@ -60634,6 +61912,12 @@
     "year":2022,
     "quarter":3,
     "count":1
+  },
+  {
+    "name":"Ragel",
+    "year":2022,
+    "quarter":4,
+    "count":2
   },
   {
     "name":"Raku",
@@ -60978,6 +62262,12 @@
     "count":55
   },
   {
+    "name":"Raku",
+    "year":2022,
+    "quarter":4,
+    "count":41
+  },
+  {
     "name":"Rascal",
     "year":2013,
     "quarter":2,
@@ -61206,6 +62496,12 @@
     "count":2
   },
   {
+    "name":"Rascal",
+    "year":2022,
+    "quarter":4,
+    "count":23
+  },
+  {
     "name":"ReScript",
     "year":2020,
     "quarter":1,
@@ -61263,6 +62559,12 @@
     "name":"ReScript",
     "year":2022,
     "quarter":3,
+    "count":9
+  },
+  {
+    "name":"ReScript",
+    "year":2022,
+    "quarter":4,
     "count":9
   },
   {
@@ -61407,6 +62709,12 @@
     "name":"Reason",
     "year":2022,
     "quarter":3,
+    "count":1
+  },
+  {
+    "name":"Reason",
+    "year":2022,
+    "quarter":4,
     "count":1
   },
   {
@@ -61704,6 +63012,12 @@
     "count":4
   },
   {
+    "name":"Rebol",
+    "year":2022,
+    "quarter":4,
+    "count":2
+  },
+  {
     "name":"Red",
     "year":2010,
     "quarter":4,
@@ -61920,6 +63234,12 @@
     "count":1
   },
   {
+    "name":"Red",
+    "year":2022,
+    "quarter":4,
+    "count":1
+  },
+  {
     "name":"Ren'Py",
     "year":2013,
     "quarter":3,
@@ -62097,6 +63417,12 @@
     "name":"Ren'Py",
     "year":2022,
     "quarter":3,
+    "count":10
+  },
+  {
+    "name":"Ren'Py",
+    "year":2022,
+    "quarter":4,
     "count":10
   },
   {
@@ -62391,6 +63717,12 @@
     "name":"RenderScript",
     "year":2022,
     "quarter":3,
+    "count":5
+  },
+  {
+    "name":"RenderScript",
+    "year":2022,
+    "quarter":4,
     "count":5
   },
   {
@@ -62734,6 +64066,12 @@
     "year":2022,
     "quarter":3,
     "count":38
+  },
+  {
+    "name":"Rich Text Format",
+    "year":2022,
+    "quarter":4,
+    "count":44
   },
   {
     "name":"Riot",
@@ -63228,6 +64566,12 @@
     "count":270
   },
   {
+    "name":"RobotFramework",
+    "year":2022,
+    "quarter":4,
+    "count":279
+  },
+  {
     "name":"Roff",
     "year":2010,
     "quarter":2,
@@ -63430,6 +64774,12 @@
     "year":2022,
     "quarter":3,
     "count":1
+  },
+  {
+    "name":"Roff",
+    "year":2022,
+    "quarter":4,
+    "count":5
   },
   {
     "name":"Ruby",
@@ -63774,6 +65124,12 @@
     "count":2414
   },
   {
+    "name":"Ruby",
+    "year":2022,
+    "quarter":4,
+    "count":2257
+  },
+  {
     "name":"Rust",
     "year":2010,
     "quarter":3,
@@ -64030,6 +65386,12 @@
     "year":2022,
     "quarter":3,
     "count":2972
+  },
+  {
+    "name":"Rust",
+    "year":2022,
+    "quarter":4,
+    "count":3051
   },
   {
     "name":"SAS",
@@ -64374,6 +65736,12 @@
     "count":345
   },
   {
+    "name":"SAS",
+    "year":2022,
+    "quarter":4,
+    "count":362
+  },
+  {
     "name":"SMT",
     "year":2011,
     "quarter":2,
@@ -64650,6 +66018,12 @@
     "count":32
   },
   {
+    "name":"SMT",
+    "year":2022,
+    "quarter":4,
+    "count":12
+  },
+  {
     "name":"SQF",
     "year":2014,
     "quarter":1,
@@ -64683,6 +66057,12 @@
     "name":"SQF",
     "year":2020,
     "quarter":2,
+    "count":1
+  },
+  {
+    "name":"SQF",
+    "year":2022,
+    "quarter":4,
     "count":1
   },
   {
@@ -65028,6 +66408,12 @@
     "count":13312
   },
   {
+    "name":"SQL",
+    "year":2022,
+    "quarter":4,
+    "count":12842
+  },
+  {
     "name":"SQLPL",
     "year":2008,
     "quarter":3,
@@ -65368,6 +66754,12 @@
     "year":2022,
     "quarter":3,
     "count":253
+  },
+  {
+    "name":"SQLPL",
+    "year":2022,
+    "quarter":4,
+    "count":235
   },
   {
     "name":"SWIG",
@@ -65712,6 +67104,12 @@
     "count":40
   },
   {
+    "name":"SWIG",
+    "year":2022,
+    "quarter":4,
+    "count":39
+  },
+  {
     "name":"Sage",
     "year":2009,
     "quarter":1,
@@ -66030,6 +67428,12 @@
     "count":21
   },
   {
+    "name":"Sage",
+    "year":2022,
+    "quarter":4,
+    "count":26
+  },
+  {
     "name":"SaltStack",
     "year":2012,
     "quarter":4,
@@ -66268,6 +67672,12 @@
     "year":2022,
     "quarter":3,
     "count":35
+  },
+  {
+    "name":"SaltStack",
+    "year":2022,
+    "quarter":4,
+    "count":31
   },
   {
     "name":"Sass\/SCSS",
@@ -66604,6 +68014,12 @@
     "year":2022,
     "quarter":3,
     "count":1064
+  },
+  {
+    "name":"Sass\/SCSS",
+    "year":2022,
+    "quarter":4,
+    "count":872
   },
   {
     "name":"Scala",
@@ -66948,6 +68364,12 @@
     "count":1846
   },
   {
+    "name":"Scala",
+    "year":2022,
+    "quarter":4,
+    "count":1458
+  },
+  {
     "name":"Scheme",
     "year":2008,
     "quarter":3,
@@ -67290,6 +68712,12 @@
     "count":92
   },
   {
+    "name":"Scheme",
+    "year":2022,
+    "quarter":4,
+    "count":99
+  },
+  {
     "name":"Scilab",
     "year":2008,
     "quarter":4,
@@ -67606,6 +69034,12 @@
     "year":2022,
     "quarter":3,
     "count":24
+  },
+  {
+    "name":"Scilab",
+    "year":2022,
+    "quarter":4,
+    "count":23
   },
   {
     "name":"Self",
@@ -67944,6 +69378,12 @@
     "count":40
   },
   {
+    "name":"Self",
+    "year":2022,
+    "quarter":4,
+    "count":41
+  },
+  {
     "name":"ShaderLab",
     "year":2015,
     "quarter":2,
@@ -68074,6 +69514,12 @@
     "year":2022,
     "quarter":3,
     "count":4
+  },
+  {
+    "name":"ShaderLab",
+    "year":2022,
+    "quarter":4,
+    "count":3
   },
   {
     "name":"Shell",
@@ -68418,6 +69864,12 @@
     "count":4071
   },
   {
+    "name":"Shell",
+    "year":2022,
+    "quarter":4,
+    "count":4196
+  },
+  {
     "name":"Shen",
     "year":2015,
     "quarter":1,
@@ -68572,6 +70024,12 @@
     "year":2022,
     "quarter":3,
     "count":34
+  },
+  {
+    "name":"Singularity",
+    "year":2022,
+    "quarter":4,
+    "count":26
   },
   {
     "name":"Slim",
@@ -68856,6 +70314,12 @@
     "count":20
   },
   {
+    "name":"Slim",
+    "year":2022,
+    "quarter":4,
+    "count":29
+  },
+  {
     "name":"SmPL",
     "year":2009,
     "quarter":2,
@@ -69208,6 +70672,12 @@
     "year":2022,
     "quarter":3,
     "count":9
+  },
+  {
+    "name":"Smali",
+    "year":2022,
+    "quarter":4,
+    "count":11
   },
   {
     "name":"Smalltalk",
@@ -69550,6 +71020,12 @@
     "year":2022,
     "quarter":3,
     "count":20
+  },
+  {
+    "name":"Smalltalk",
+    "year":2022,
+    "quarter":4,
+    "count":15
   },
   {
     "name":"Smarty",
@@ -69894,6 +71370,12 @@
     "count":51
   },
   {
+    "name":"Smarty",
+    "year":2022,
+    "quarter":4,
+    "count":35
+  },
+  {
     "name":"Solidity",
     "year":2015,
     "quarter":3,
@@ -70068,6 +71550,12 @@
     "count":1127
   },
   {
+    "name":"Solidity",
+    "year":2022,
+    "quarter":4,
+    "count":915
+  },
+  {
     "name":"Squirrel",
     "year":2008,
     "quarter":3,
@@ -70197,6 +71685,12 @@
     "name":"Squirrel",
     "year":2022,
     "quarter":3,
+    "count":2
+  },
+  {
+    "name":"Squirrel",
+    "year":2022,
+    "quarter":4,
     "count":2
   },
   {
@@ -70438,6 +71932,12 @@
     "year":2022,
     "quarter":3,
     "count":21
+  },
+  {
+    "name":"Stan",
+    "year":2022,
+    "quarter":4,
+    "count":22
   },
   {
     "name":"Standard ML",
@@ -70782,6 +72282,12 @@
     "count":23
   },
   {
+    "name":"Standard ML",
+    "year":2022,
+    "quarter":4,
+    "count":24
+  },
+  {
     "name":"Starlark",
     "year":2015,
     "quarter":1,
@@ -70960,6 +72466,12 @@
     "year":2022,
     "quarter":3,
     "count":182
+  },
+  {
+    "name":"Starlark",
+    "year":2022,
+    "quarter":4,
+    "count":178
   },
   {
     "name":"Stata",
@@ -71272,6 +72784,12 @@
     "year":2022,
     "quarter":3,
     "count":128
+  },
+  {
+    "name":"Stata",
+    "year":2022,
+    "quarter":4,
+    "count":112
   },
   {
     "name":"StringTemplate",
@@ -71592,6 +73110,12 @@
     "count":4
   },
   {
+    "name":"StringTemplate",
+    "year":2022,
+    "quarter":4,
+    "count":2
+  },
+  {
     "name":"Stylus",
     "year":2011,
     "quarter":1,
@@ -71874,6 +73398,12 @@
     "count":7
   },
   {
+    "name":"Stylus",
+    "year":2022,
+    "quarter":4,
+    "count":7
+  },
+  {
     "name":"SuperCollider",
     "year":2010,
     "quarter":3,
@@ -72150,6 +73680,12 @@
     "count":1
   },
   {
+    "name":"SuperCollider",
+    "year":2022,
+    "quarter":4,
+    "count":4
+  },
+  {
     "name":"Svelte",
     "year":2017,
     "quarter":1,
@@ -72286,6 +73822,12 @@
     "year":2022,
     "quarter":3,
     "count":642
+  },
+  {
+    "name":"Svelte",
+    "year":2022,
+    "quarter":4,
+    "count":579
   },
   {
     "name":"Swift",
@@ -72618,6 +74160,12 @@
     "count":8576
   },
   {
+    "name":"Swift",
+    "year":2022,
+    "quarter":4,
+    "count":7618
+  },
+  {
     "name":"SystemVerilog",
     "year":2009,
     "quarter":1,
@@ -72942,6 +74490,12 @@
     "count":115
   },
   {
+    "name":"SystemVerilog",
+    "year":2022,
+    "quarter":4,
+    "count":111
+  },
+  {
     "name":"TI Program",
     "year":2009,
     "quarter":4,
@@ -73248,6 +74802,12 @@
     "count":4
   },
   {
+    "name":"TI Program",
+    "year":2022,
+    "quarter":4,
+    "count":5
+  },
+  {
     "name":"TLA",
     "year":2010,
     "quarter":2,
@@ -73395,6 +74955,12 @@
     "name":"TLA",
     "year":2022,
     "quarter":3,
+    "count":6
+  },
+  {
+    "name":"TLA",
+    "year":2022,
+    "quarter":4,
     "count":6
   },
   {
@@ -73740,6 +75306,12 @@
     "count":970
   },
   {
+    "name":"TSQL",
+    "year":2022,
+    "quarter":4,
+    "count":868
+  },
+  {
     "name":"Tcl",
     "year":2008,
     "quarter":3,
@@ -74080,6 +75652,12 @@
     "year":2022,
     "quarter":3,
     "count":147
+  },
+  {
+    "name":"Tcl",
+    "year":2022,
+    "quarter":4,
+    "count":125
   },
   {
     "name":"TeX",
@@ -74424,6 +76002,12 @@
     "count":561
   },
   {
+    "name":"TeX",
+    "year":2022,
+    "quarter":4,
+    "count":452
+  },
+  {
     "name":"Thrift",
     "year":2008,
     "quarter":3,
@@ -74766,6 +76350,12 @@
     "count":13
   },
   {
+    "name":"Thrift",
+    "year":2022,
+    "quarter":4,
+    "count":19
+  },
+  {
     "name":"Turtle",
     "year":2010,
     "quarter":3,
@@ -75022,6 +76612,12 @@
     "year":2022,
     "quarter":3,
     "count":7
+  },
+  {
+    "name":"Turtle",
+    "year":2022,
+    "quarter":4,
+    "count":5
   },
   {
     "name":"Twig",
@@ -75318,6 +76914,12 @@
     "count":167
   },
   {
+    "name":"Twig",
+    "year":2022,
+    "quarter":4,
+    "count":175
+  },
+  {
     "name":"TypeScript",
     "year":2011,
     "quarter":3,
@@ -75564,6 +77166,12 @@
     "count":14342
   },
   {
+    "name":"TypeScript",
+    "year":2022,
+    "quarter":4,
+    "count":13664
+  },
+  {
     "name":"UnrealScript",
     "year":2009,
     "quarter":2,
@@ -75792,6 +77400,12 @@
     "count":4
   },
   {
+    "name":"UnrealScript",
+    "year":2022,
+    "quarter":4,
+    "count":3
+  },
+  {
     "name":"V",
     "year":2019,
     "quarter":2,
@@ -75862,6 +77476,12 @@
     "year":2022,
     "quarter":3,
     "count":2
+  },
+  {
+    "name":"V",
+    "year":2022,
+    "quarter":4,
+    "count":1
   },
   {
     "name":"VBA",
@@ -76206,6 +77826,12 @@
     "count":4942
   },
   {
+    "name":"VBA",
+    "year":2022,
+    "quarter":4,
+    "count":4465
+  },
+  {
     "name":"VBScript",
     "year":2008,
     "quarter":3,
@@ -76548,6 +78174,12 @@
     "count":198
   },
   {
+    "name":"VBScript",
+    "year":2022,
+    "quarter":4,
+    "count":189
+  },
+  {
     "name":"VCL",
     "year":2008,
     "quarter":4,
@@ -76864,6 +78496,12 @@
     "year":2022,
     "quarter":3,
     "count":49
+  },
+  {
+    "name":"VCL",
+    "year":2022,
+    "quarter":4,
+    "count":41
   },
   {
     "name":"VHDL",
@@ -77202,6 +78840,12 @@
     "count":60
   },
   {
+    "name":"VHDL",
+    "year":2022,
+    "quarter":4,
+    "count":86
+  },
+  {
     "name":"Vala",
     "year":2009,
     "quarter":1,
@@ -77524,6 +79168,12 @@
     "year":2022,
     "quarter":3,
     "count":18
+  },
+  {
+    "name":"Vala",
+    "year":2022,
+    "quarter":4,
+    "count":21
   },
   {
     "name":"Verilog",
@@ -77868,6 +79518,12 @@
     "count":155
   },
   {
+    "name":"Verilog",
+    "year":2022,
+    "quarter":4,
+    "count":176
+  },
+  {
     "name":"Vim script",
     "year":2008,
     "quarter":3,
@@ -78208,6 +79864,12 @@
     "year":2022,
     "quarter":3,
     "count":479
+  },
+  {
+    "name":"Vim script",
+    "year":2022,
+    "quarter":4,
+    "count":446
   },
   {
     "name":"Visual Basic .NET",
@@ -78552,6 +80214,12 @@
     "count":1371
   },
   {
+    "name":"Visual Basic .NET",
+    "year":2022,
+    "quarter":4,
+    "count":1302
+  },
+  {
     "name":"Vue",
     "year":2014,
     "quarter":1,
@@ -78760,6 +80428,12 @@
     "year":2022,
     "quarter":3,
     "count":14318
+  },
+  {
+    "name":"Vue",
+    "year":2022,
+    "quarter":4,
+    "count":5407
   },
   {
     "name":"Wavefront Object",
@@ -79065,6 +80739,12 @@
     "name":"Wavefront Object",
     "year":2022,
     "quarter":3,
+    "count":13
+  },
+  {
+    "name":"Wavefront Object",
+    "year":2022,
+    "quarter":4,
     "count":13
   },
   {
@@ -79410,6 +81090,12 @@
     "count":42
   },
   {
+    "name":"Web Ontology Language",
+    "year":2022,
+    "quarter":4,
+    "count":42
+  },
+  {
     "name":"WebAssembly",
     "year":2015,
     "quarter":3,
@@ -79572,6 +81258,12 @@
     "count":214
   },
   {
+    "name":"WebAssembly",
+    "year":2022,
+    "quarter":4,
+    "count":206
+  },
+  {
     "name":"WebIDL",
     "year":2012,
     "quarter":4,
@@ -79666,6 +81358,12 @@
     "year":2022,
     "quarter":3,
     "count":2
+  },
+  {
+    "name":"WebIDL",
+    "year":2022,
+    "quarter":4,
+    "count":1
   },
   {
     "name":"Wikitext",
@@ -79896,6 +81594,12 @@
     "count":2
   },
   {
+    "name":"Wikitext",
+    "year":2022,
+    "quarter":4,
+    "count":3
+  },
+  {
     "name":"Wollok",
     "year":2016,
     "quarter":1,
@@ -80013,6 +81717,12 @@
     "name":"XC",
     "year":2022,
     "quarter":3,
+    "count":1
+  },
+  {
+    "name":"XC",
+    "year":2022,
+    "quarter":4,
     "count":1
   },
   {
@@ -80358,6 +82068,12 @@
     "count":2670
   },
   {
+    "name":"XML",
+    "year":2022,
+    "quarter":4,
+    "count":2683
+  },
+  {
     "name":"XPages",
     "year":2009,
     "quarter":4,
@@ -80658,6 +82374,12 @@
     "count":16
   },
   {
+    "name":"XPages",
+    "year":2022,
+    "quarter":4,
+    "count":11
+  },
+  {
     "name":"XProc",
     "year":2009,
     "quarter":2,
@@ -80865,6 +82587,12 @@
     "name":"XProc",
     "year":2022,
     "quarter":3,
+    "count":1
+  },
+  {
+    "name":"XProc",
+    "year":2022,
+    "quarter":4,
     "count":1
   },
   {
@@ -81208,6 +82936,12 @@
     "year":2022,
     "quarter":3,
     "count":94
+  },
+  {
+    "name":"XQuery",
+    "year":2022,
+    "quarter":4,
+    "count":75
   },
   {
     "name":"XS",
@@ -81816,6 +83550,12 @@
     "count":393
   },
   {
+    "name":"XSLT",
+    "year":2022,
+    "quarter":4,
+    "count":344
+  },
+  {
     "name":"Xojo",
     "year":2008,
     "quarter":3,
@@ -82140,6 +83880,12 @@
     "count":2
   },
   {
+    "name":"Xojo",
+    "year":2022,
+    "quarter":4,
+    "count":2
+  },
+  {
     "name":"Xonsh",
     "year":2016,
     "quarter":2,
@@ -82246,6 +83992,12 @@
     "year":2022,
     "quarter":3,
     "count":1
+  },
+  {
+    "name":"Xonsh",
+    "year":2022,
+    "quarter":4,
+    "count":6
   },
   {
     "name":"Xtend",
@@ -82498,6 +84250,12 @@
     "year":2022,
     "quarter":3,
     "count":5
+  },
+  {
+    "name":"Xtend",
+    "year":2022,
+    "quarter":4,
+    "count":3
   },
   {
     "name":"YAML",
@@ -82842,6 +84600,12 @@
     "count":910
   },
   {
+    "name":"YAML",
+    "year":2022,
+    "quarter":4,
+    "count":888
+  },
+  {
     "name":"YARA",
     "year":2015,
     "quarter":4,
@@ -82978,6 +84742,12 @@
     "year":2022,
     "quarter":3,
     "count":7
+  },
+  {
+    "name":"YARA",
+    "year":2022,
+    "quarter":4,
+    "count":6
   },
   {
     "name":"YASnippet",
@@ -83181,6 +84951,12 @@
     "name":"YASnippet",
     "year":2022,
     "quarter":3,
+    "count":2
+  },
+  {
+    "name":"YASnippet",
+    "year":2022,
+    "quarter":4,
     "count":2
   },
   {
@@ -83526,6 +85302,12 @@
     "count":14
   },
   {
+    "name":"Yacc",
+    "year":2022,
+    "quarter":4,
+    "count":18
+  },
+  {
     "name":"ZIL",
     "year":2009,
     "quarter":1,
@@ -83658,6 +85440,12 @@
     "count":1
   },
   {
+    "name":"Zeek",
+    "year":2022,
+    "quarter":4,
+    "count":4
+  },
+  {
     "name":"Zephir",
     "year":2013,
     "quarter":3,
@@ -83790,6 +85578,12 @@
     "count":2
   },
   {
+    "name":"Zephir",
+    "year":2022,
+    "quarter":4,
+    "count":1
+  },
+  {
     "name":"Zig",
     "year":2018,
     "quarter":2,
@@ -83866,6 +85660,12 @@
     "year":2022,
     "quarter":3,
     "count":15
+  },
+  {
+    "name":"Zig",
+    "year":2022,
+    "quarter":4,
+    "count":23
   },
   {
     "name":"jq",
@@ -84094,6 +85894,12 @@
     "year":2022,
     "quarter":3,
     "count":388
+  },
+  {
+    "name":"jq",
+    "year":2022,
+    "quarter":4,
+    "count":409
   },
   {
     "name":"mIRC Script",
@@ -84334,6 +86140,12 @@
     "year":2022,
     "quarter":3,
     "count":1
+  },
+  {
+    "name":"mIRC Script",
+    "year":2022,
+    "quarter":4,
+    "count":2
   },
   {
     "name":"mcfunction",
@@ -84622,6 +86434,12 @@
     "year":2022,
     "quarter":3,
     "count":176
+  },
+  {
+    "name":"mcfunction",
+    "year":2022,
+    "quarter":4,
+    "count":124
   },
   {
     "name":"mupad",
@@ -85254,6 +87072,12 @@
     "count":36
   },
   {
+    "name":"q",
+    "year":2022,
+    "quarter":4,
+    "count":59
+  },
+  {
     "name":"reStructuredText",
     "year":2008,
     "quarter":3,
@@ -85588,6 +87412,12 @@
     "year":2022,
     "quarter":3,
     "count":51
+  },
+  {
+    "name":"reStructuredText",
+    "year":2022,
+    "quarter":4,
+    "count":43
   },
   {
     "name":"sed",
@@ -85932,6 +87762,12 @@
     "count":569
   },
   {
+    "name":"sed",
+    "year":2022,
+    "quarter":4,
+    "count":550
+  },
+  {
     "name":"wdl",
     "year":2021,
     "quarter":1,
@@ -85953,6 +87789,12 @@
     "name":"wdl",
     "year":2022,
     "quarter":1,
+    "count":1
+  },
+  {
+    "name":"wdl",
+    "year":2022,
+    "quarter":4,
     "count":1
   },
   {
@@ -86218,5 +88060,11 @@
     "year":2022,
     "quarter":2,
     "count":1
+  },
+  {
+    "name":"xBase",
+    "year":2022,
+    "quarter":4,
+    "count":3
   }
 ]

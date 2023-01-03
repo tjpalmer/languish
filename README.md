@@ -55,7 +55,7 @@
   FROM Posts p
   JOIN PostTags pt ON p.Id = pt.PostId
   JOIN Tags t ON t.Id = pt.TagId
-  WHERE Year(p.LastActivityDate) = 2021 AND DatePart(quarter, p.LastActivityDate) = 4
+  WHERE Year(p.LastActivityDate) = 2022 AND DatePart(quarter, p.LastActivityDate) = 4
   GROUP BY DatePart(quarter, p.LastActivityDate), Year(p.LastActivityDate), t.TagName
   ORDER BY y, q, NumPosts DESC
   ```

@@ -12,7 +12,7 @@ class Args(typ.TypedDict):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--events", required=True)
+    parser.add_argument("--events", nargs="+", required=True)
     parser.add_argument("--langs", required=True)
     parser.add_argument("--output", required=True)
     args = parser.parse_args().__dict__
@@ -21,7 +21,7 @@ def main():
 
 def run(*, args: Args):
     assert not pth.Path(args["output"]).exists()
-    events = pd.read_csv(args["events"])
+    events = pd.concat([pd.read_csv(name) for name in args["events"]])
     langs = pd.read_csv(args["langs"])
     events = events.merge(langs[["repo", "lang"]], on="repo")
     group_keys = ["year", "quarter", "event", "lang"]

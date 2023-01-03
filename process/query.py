@@ -32,26 +32,9 @@ queries = {
               ''
             ) as repo
         from (
-            select * from `githubarchive.year.2011` union all
-            select * from `githubarchive.year.2012` union all
-            select * from `githubarchive.year.2013` union all
-            select * from `githubarchive.year.2014` union all
-            select * from `githubarchive.year.2015` union all
-            select * from `githubarchive.year.2016` union all
-            select * from `githubarchive.year.2017` union all
-            select * from `githubarchive.year.2018` union all
-            select * from `githubarchive.year.2019` union all
-            select * from `githubarchive.year.2020` union all
-            select * from `githubarchive.year.2021` union all
-            select * from `githubarchive.month.202201` union all
-            select * from `githubarchive.month.202202` union all
-            select * from `githubarchive.month.202203` union all
-            select * from `githubarchive.month.202204` union all
-            select * from `githubarchive.month.202205` union all
-            select * from `githubarchive.month.202206` union all
-            select * from `githubarchive.month.202207` union all
-            select * from `githubarchive.month.202208` union all
-            select * from `githubarchive.month.202209`
+            select * from `githubarchive.month.202210` union all
+            select * from `githubarchive.month.202211` union all
+            select * from `githubarchive.month.202212`
         ) event
         where event.type in (
             'IssuesEvent', 'PullRequestEvent', 'WatchEvent'
@@ -60,6 +43,26 @@ queries = {
         having count(*) >= 10
         order by year, quarter, count(*) desc
     """,
+    # select * from `githubarchive.year.2011` union all
+    # select * from `githubarchive.year.2012` union all
+    # select * from `githubarchive.year.2013` union all
+    # select * from `githubarchive.year.2014` union all
+    # select * from `githubarchive.year.2015` union all
+    # select * from `githubarchive.year.2016` union all
+    # select * from `githubarchive.year.2017` union all
+    # select * from `githubarchive.year.2018` union all
+    # select * from `githubarchive.year.2019` union all
+    # select * from `githubarchive.year.2020` union all
+    # select * from `githubarchive.year.2021` union all
+    # select * from `githubarchive.month.202201` union all
+    # select * from `githubarchive.month.202202` union all
+    # select * from `githubarchive.month.202203` union all
+    # select * from `githubarchive.month.202204` union all
+    # select * from `githubarchive.month.202205` union all
+    # select * from `githubarchive.month.202206` union all
+    # select * from `githubarchive.month.202207` union all
+    # select * from `githubarchive.month.202208` union all
+    # select * from `githubarchive.month.202209` union all
     "ghNest": """
         select * from `bigquery-public-data.github_repos.languages`
     """,
