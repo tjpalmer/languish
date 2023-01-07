@@ -61,7 +61,12 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
     queueMicrotask(() => {
       this.constructList();
       queueMicrotask(() => {
-        this.resetList();
+        rememberHash = true;
+        try {
+          this.resetList();
+        } finally {
+          rememberHash = false;
+        }
         queueMicrotask(() => this.loadUrlParams());
       });
     });
@@ -84,13 +89,15 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
       metricsAreExpanded: !prevState.metricsAreExpanded,
     }));
 
-  emptyList = () =>
+  emptyList = () => {
     this.setState((prevState) => {
       prevState.selectedLangs.clear();
       return prevState;
     });
+    wipeHash();
+  };
 
-  resetList = () =>
+  resetList = () => {
     this.setState((prevState) => {
       // mark top 10 as selected
       prevState.selectedLangs.clear();
@@ -104,19 +111,28 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
         searchTerm: "",
       };
     });
+    wipeHash();
+  };
 
-  changeMetric = (metric: keyof Metrics) =>
+  changeMetric = (metric: keyof Metrics) => {
     this.setState({ metric }, this.constructList);
+    wipeHash();
+  };
 
-  changeScale = (scale: Scale) => this.setState({ scale });
+  changeScale = (scale: Scale) => {
+    this.setState({ scale });
+    wipeHash();
+  };
 
-  changeWeight = (key: keyof Metrics, value: string) =>
+  changeWeight = (key: keyof Metrics, value: string) => {
     this.setState(
       { weights: { ...this.state.weights, [key]: value } },
       this.processChangedWeights
     );
+    wipeHash();
+  };
 
-  toggleSelected = (name: string) =>
+  toggleSelected = (name: string) => {
     this.setState((prevState) => {
       if (prevState.selectedLangs.has(name)) {
         prevState.selectedLangs.delete(name);
@@ -125,6 +141,8 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
       }
       return { selectedLangs: prevState.selectedLangs };
     });
+    wipeHash();
+  };
 
   // if nothing is passed, remove highlight
   setHighlighted = (name?: string) => this.setState({ highlighted: name });
@@ -209,6 +227,7 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
   private loadUrlParams() {
     // do it only if theres any hash in uri
     if (!window.location.hash) return;
+    rememberHash = true;
 
     const params = new URLSearchParams(window.location.hash.slice(1));
 
@@ -241,8 +260,8 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
       }
     }
 
-    // clean up the hash after done loading
-    window.location.hash = "";
+    // clean up the hash after any changes after done loading
+    setTimeout(() => (rememberHash = false), 0);
 
     this.setState({ trimmed: true });
   }
@@ -250,5 +269,13 @@ export class GlobalProvider extends React.Component<{}, typeof defaultState> {
   private processChangedWeights() {
     putMean({ entries, sums, weights: parseWeights(this.state.weights) });
     this.constructList();
+  }
+}
+
+let rememberHash = false;
+
+function wipeHash() {
+  if (!rememberHash) {
+    window.history.replaceState(null, "", " ");
   }
 }

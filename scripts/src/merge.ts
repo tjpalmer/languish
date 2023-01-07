@@ -21,7 +21,7 @@ let canonicalNames = {
   PAWN: "Pawn",
   Perl6: "Raku",
   "Perl 6": "Raku",
-  "REALbasic": "Xojo",
+  REALbasic: "Xojo",
   Sass: "Sass/SCSS",
   SCSS: "Sass/SCSS",
   VimL: "Vim script",
@@ -42,11 +42,11 @@ function main() {
     ) as CountString[];
     let convertedItems = rawItems.map(
       (item) =>
-        (({
+        ({
           name: canonicalNames[item.name] || item.name,
           date: `${item.year}Q${item.quarter}`,
           [key]: Number(item.count),
-        } as unknown) as Count)
+        } as unknown as Count)
     );
     if (items.length) {
       if (convertedItems.length) {
@@ -102,12 +102,12 @@ export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
     let value = a[0][key];
     if (typeof value == "string") {
       return (x: A | B, y: A | B) =>
-        ((x[key] as unknown) as string).localeCompare(
-          (y[key] as unknown) as string
+        (x[key] as unknown as string).localeCompare(
+          y[key] as unknown as string
         );
     } else {
       return (x: A | B, y: A | B) =>
-        ((x[key] as unknown) as number) - ((y[key] as unknown) as number);
+        (x[key] as unknown as number) - (y[key] as unknown as number);
     }
   });
   let compareKeys = (x: A | B, y: A | B) => {
@@ -165,8 +165,8 @@ export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
           if (typeof prev_value == "number") {
             // Increment existing numbers, because we end up with duplicates,
             // because of different language names in the same quarter.
-            ((prev[key] as unknown) as number) =
-              prev_value + ((value as unknown) as number);
+            (prev[key] as unknown as number) =
+              prev_value + (value as unknown as number);
           } else {
             prev[key] = value;
           }
@@ -214,10 +214,10 @@ function sumGrouped<Item, By extends keyof Item, Out extends keyof Item>(
   for (let item of items) {
     // TODO How to assert at type level that item[by] is string and
     // TODO item[out] is number?
-    let key = (item[by] as unknown) as string;
+    let key = item[by] as unknown as string;
     let keyedSum = keyedSums[key];
     if (!keyedSum) {
-      keyedSum = ({ [by]: key } as unknown) as Sums;
+      keyedSum = { [by]: key } as unknown as Sums;
       for (let out of outs) {
         keyedSum[out as keyof Sums] = 0 as any;
       }
@@ -225,9 +225,9 @@ function sumGrouped<Item, By extends keyof Item, Out extends keyof Item>(
       keyedSums[key] = keyedSum;
     }
     for (let out of outs) {
-      ((keyedSum[out as keyof Sums] as unknown) as number) +=
+      (keyedSum[out as keyof Sums] as unknown as number) +=
         // Treat missing values as 0.
-        (item[out] as unknown) as number;
+        item[out] as unknown as number;
     }
   }
   // Sort array of sums.

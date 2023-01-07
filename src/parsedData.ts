@@ -76,7 +76,7 @@ function keyOn<Key extends keyof Item, Item>(
   let { key, items } = args;
   let result = {} as Keyed<Item[]>;
   for (let item of items) {
-    let keyVal = (item[key] as unknown) as string;
+    let keyVal = item[key] as unknown as string;
     let list = result[keyVal];
     if (!list) {
       result[keyVal] = list = [];
@@ -142,7 +142,7 @@ function normalize({ entries, sums }: Data) {
 }
 
 export function parseWeights(texts: CoreMetricTexts): CoreMetrics {
-  return (Object.fromEntries(
+  return Object.fromEntries(
     Object.entries(texts).map(([key, value]) => {
       let parsed = parseFloat(value);
       if (isNaN(parsed)) {
@@ -150,7 +150,7 @@ export function parseWeights(texts: CoreMetricTexts): CoreMetrics {
       }
       return [key, parsed];
     })
-  ) as unknown) as Metrics;
+  ) as unknown as Metrics;
 }
 
 export function putMean({ entries, sums, weights }: MeanParams) {
@@ -166,9 +166,9 @@ export function putMean({ entries, sums, weights }: MeanParams) {
 }
 
 export function stringifyWeights(numbers: CoreMetrics): CoreMetricTexts {
-  return (Object.fromEntries(
+  return Object.fromEntries(
     Object.entries(numbers).map(([key, value]) => [key, value.toString()])
-  ) as unknown) as CoreMetricTexts;
+  ) as unknown as CoreMetricTexts;
 }
 
 function sumOf(nums: number[]): number {
