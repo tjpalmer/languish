@@ -25,6 +25,7 @@ const Header = () => {
 
     const url = new URL(window.location.href);
     url.hash = String(params);
+    window.location.hash = url.hash;
 
     // using legacy way of copying because safari doesnt implement the new one
     var textarea = document.createElement("textarea");
