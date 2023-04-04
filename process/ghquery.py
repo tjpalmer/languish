@@ -90,7 +90,7 @@ def run(*, args: Args):
     counts.sort_values(by=["count", "repo"], ascending=[False, True], inplace=True)
     client = init_client()
     outdir.mkdir(exist_ok=True, parents=True)
-    for index, chunk in enumerate(split_frame(counts, chunk_size=2000)):
+    for index, chunk in enumerate(split_frame(counts, chunk_size=500)):
         try:
             query = build_query(chunk)
             # result = client.execute(gql.gql(query))
