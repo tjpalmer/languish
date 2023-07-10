@@ -9,6 +9,7 @@ import re
 import requests
 import traceback
 import typing as typ
+import urllib3
 
 
 class Args(typ.TypedDict):
@@ -71,10 +72,10 @@ def run(*, args: Args):
     print(f"repos: {len(counts)}")
     if args["dones"]:
         dones = pd.read_csv(args["dones"])
-        counts = trim_dones(counts = counts, dones = dones)
+        counts = trim_dones(counts=counts, dones=dones)
     if outdir.exists():
         dones = ghmerge.load_projects(str(outdir))
-        counts = trim_dones(counts = counts, dones = dones)
+        counts = trim_dones(counts=counts, dones=dones)
         # Figure out the starting index.
         start = -1
         for kid in outdir.iterdir():
@@ -90,11 +91,26 @@ def run(*, args: Args):
     counts.sort_values(by=["count", "repo"], ascending=[False, True], inplace=True)
     client = init_client()
     outdir.mkdir(exist_ok=True, parents=True)
+    err_count = 0
+    total_count = 0
     for index, chunk in enumerate(split_frame(counts, chunk_size=500)):
+        total_count += 1
         try:
             query = build_query(chunk)
             # result = client.execute(gql.gql(query))
-            response = client.post(endpoint, json={"query": query})
+            try:
+                response = client.post(endpoint, json={"query": query})
+            except (
+                # All these things appear in the nested exceptions.
+                # To be sloppy, just ignore them all.
+                urllib3.exceptions.InvalidChunkLength,
+                urllib3.exceptions.ProtocolError,
+                requests.exceptions.ChunkedEncodingError,
+                ValueError,
+            ):
+                print("*", end="", flush=True)
+                err_count += 1
+                continue
             # print(result)
             out = outdir / f"chunk{index + start}.json"
             if out.exists():
@@ -103,9 +119,12 @@ def run(*, args: Args):
                 json.dump(fp=output, indent=2, obj=response.json())
                 # output.write(response.text)
             # break
+            print(".", end="", flush=True)
         except:
             # Print and continue.
+            err_count += 1
             traceback.print_exc()
+    print(f"\nerrors: {err_count} / {total_count} total")
 
 
 def split_frame(frame: pd.DataFrame, *, chunk_size: int) -> typ.Iterable[pd.DataFrame]:

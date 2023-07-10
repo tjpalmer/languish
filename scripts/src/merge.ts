@@ -94,7 +94,9 @@ export interface MergeOptions<A, B> {
   on: (keyof Partial<A | B>)[];
 }
 
-export function merge<A, B>(options: MergeOptions<A, B>): (A & B)[] {
+export function merge<A extends {}, B extends {}>(
+  options: MergeOptions<A, B>
+): (A & B)[] {
   // Extract data and prep compares.
   let { a, b, on } = options;
   if (!a.length || !b.length) return [];
@@ -197,16 +199,22 @@ function readCsv(name: string) {
   };
 }
 
-interface GroupOptions<Item, By extends keyof Item, Out extends keyof Item> {
+interface GroupOptions<
+  Item extends {},
+  By extends keyof Item,
+  Out extends keyof Item
+> {
   items: Item[];
   by: By;
   outs: Out[];
 }
 
 // TODO Typing here is a disaster. See if there are ways to fix it all.
-function sumGrouped<Item, By extends keyof Item, Out extends keyof Item>(
-  options: GroupOptions<Item, By, Out>
-): { [Key in By | Out]: Item[Key] }[] {
+function sumGrouped<
+  Item extends {},
+  By extends keyof Item,
+  Out extends keyof Item
+>(options: GroupOptions<Item, By, Out>): { [Key in By | Out]: Item[Key] }[] {
   let { items, by, outs } = options;
   type Sums = { [Key in By | Out]: Item[Key] };
   // Sum things up.
@@ -254,7 +262,7 @@ interface Table<Item> {
   rows: Item[keyof Item][][];
 }
 
-function tablify<Item>(items: Item[]): Table<Item> {
+function tablify<Item extends {}>(items: Item[]): Table<Item> {
   let keys = Object.keys(items[0]) as (keyof Item)[];
   let rows = items.map((item) => keys.map((key) => item[key]));
   return { keys, rows };
