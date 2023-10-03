@@ -393,7 +393,7 @@
     "year":2012,
     "quarter":2,
     "name":"Ruby",
-    "count":63811
+    "count":63823
   },
   {
     "year":2012,
@@ -411,7 +411,7 @@
     "year":2012,
     "quarter":2,
     "name":"PHP",
-    "count":31206
+    "count":31216
   },
   {
     "year":2012,
@@ -993,7 +993,7 @@
     "year":2012,
     "quarter":3,
     "name":"Ruby",
-    "count":61485
+    "count":61495
   },
   {
     "year":2012,
@@ -1557,7 +1557,7 @@
     "year":2012,
     "quarter":4,
     "name":"Ruby",
-    "count":67590
+    "count":67656
   },
   {
     "year":2012,
@@ -2199,7 +2199,7 @@
     "year":2013,
     "quarter":1,
     "name":"Ruby",
-    "count":93058
+    "count":93075
   },
   {
     "year":2013,
@@ -2223,7 +2223,7 @@
     "year":2013,
     "quarter":1,
     "name":"PHP",
-    "count":41979
+    "count":41990
   },
   {
     "year":2013,
@@ -2973,7 +2973,7 @@
     "year":2013,
     "quarter":2,
     "name":"Ruby",
-    "count":89379
+    "count":89395
   },
   {
     "year":2013,
@@ -3003,7 +3003,7 @@
     "year":2013,
     "quarter":2,
     "name":"HTML",
-    "count":38575
+    "count":38603
   },
   {
     "year":2013,
@@ -3801,7 +3801,7 @@
     "year":2013,
     "quarter":3,
     "name":"Ruby",
-    "count":91698
+    "count":91716
   },
   {
     "year":2013,
@@ -3831,7 +3831,7 @@
     "year":2013,
     "quarter":3,
     "name":"HTML",
-    "count":39941
+    "count":40150
   },
   {
     "year":2013,
@@ -4665,7 +4665,7 @@
     "year":2013,
     "quarter":4,
     "name":"JavaScript",
-    "count":360051
+    "count":360007
   },
   {
     "year":2013,
@@ -4683,7 +4683,7 @@
     "year":2013,
     "quarter":4,
     "name":"Ruby",
-    "count":85892
+    "count":85908
   },
   {
     "year":2013,
@@ -4695,7 +4695,7 @@
     "year":2013,
     "quarter":4,
     "name":"PHP",
-    "count":54949
+    "count":54961
   },
   {
     "year":2013,
@@ -4713,7 +4713,7 @@
     "year":2013,
     "quarter":4,
     "name":"HTML",
-    "count":39876
+    "count":39934
   },
   {
     "year":2013,
@@ -4767,7 +4767,7 @@
     "year":2013,
     "quarter":4,
     "name":"TypeScript",
-    "count":9468
+    "count":9536
   },
   {
     "year":2013,
@@ -5577,7 +5577,7 @@
     "year":2014,
     "quarter":1,
     "name":"JavaScript",
-    "count":414176
+    "count":414166
   },
   {
     "year":2014,
@@ -5595,7 +5595,7 @@
     "year":2014,
     "quarter":1,
     "name":"Ruby",
-    "count":98218
+    "count":98245
   },
   {
     "year":2014,
@@ -5607,7 +5607,7 @@
     "year":2014,
     "quarter":1,
     "name":"PHP",
-    "count":70262
+    "count":70277
   },
   {
     "year":2014,
@@ -5619,7 +5619,7 @@
     "year":2014,
     "quarter":1,
     "name":"HTML",
-    "count":59069
+    "count":59127
   },
   {
     "year":2014,
@@ -5661,7 +5661,7 @@
     "year":2014,
     "quarter":1,
     "name":"TypeScript",
-    "count":18250
+    "count":18299
   },
   {
     "year":2014,
@@ -6537,7 +6537,7 @@
     "year":2014,
     "quarter":2,
     "name":"JavaScript",
-    "count":470127
+    "count":466164
   },
   {
     "year":2014,
@@ -6561,13 +6561,13 @@
     "year":2014,
     "quarter":2,
     "name":"Ruby",
-    "count":103562
+    "count":103586
   },
   {
     "year":2014,
     "quarter":2,
     "name":"PHP",
-    "count":68190
+    "count":68201
   },
   {
     "year":2014,
@@ -6579,7 +6579,7 @@
     "year":2014,
     "quarter":2,
     "name":"HTML",
-    "count":57508
+    "count":57609
   },
   {
     "year":2014,
@@ -6626,14 +6626,14 @@
   {
     "year":2014,
     "quarter":2,
-    "name":"CoffeeScript",
-    "count":13272
+    "name":"TypeScript",
+    "count":16859
   },
   {
     "year":2014,
     "quarter":2,
-    "name":"TypeScript",
-    "count":12866
+    "name":"CoffeeScript",
+    "count":13272
   },
   {
     "year":2014,
@@ -7527,7 +7527,7 @@
     "year":2014,
     "quarter":3,
     "name":"JavaScript",
-    "count":489808
+    "count":489459
   },
   {
     "year":2014,
@@ -7551,13 +7551,13 @@
     "year":2014,
     "quarter":3,
     "name":"Ruby",
-    "count":115148
+    "count":115213
   },
   {
     "year":2014,
     "quarter":3,
     "name":"PHP",
-    "count":78443
+    "count":78456
   },
   {
     "year":2014,
@@ -7569,7 +7569,7 @@
     "year":2014,
     "quarter":3,
     "name":"HTML",
-    "count":67763
+    "count":68426
   },
   {
     "year":2014,
@@ -7581,7 +7581,7 @@
     "year":2014,
     "quarter":3,
     "name":"C++",
-    "count":54278
+    "count":54293
   },
   {
     "year":2014,
@@ -7611,7 +7611,7 @@
     "year":2014,
     "quarter":3,
     "name":"TypeScript",
-    "count":19044
+    "count":19424
   },
   {
     "year":2014,
@@ -8607,7 +8607,7 @@
     "year":2014,
     "quarter":4,
     "name":"JavaScript",
-    "count":507488
+    "count":506893
   },
   {
     "year":2014,
@@ -8631,7 +8631,7 @@
     "year":2014,
     "quarter":4,
     "name":"Ruby",
-    "count":90888
+    "count":90916
   },
   {
     "year":2014,
@@ -8655,13 +8655,13 @@
     "year":2014,
     "quarter":4,
     "name":"HTML",
-    "count":69124
+    "count":69346
   },
   {
     "year":2014,
     "quarter":4,
     "name":"C++",
-    "count":63376
+    "count":63398
   },
   {
     "year":2014,
@@ -8685,7 +8685,7 @@
     "year":2014,
     "quarter":4,
     "name":"TypeScript",
-    "count":30501
+    "count":31110
   },
   {
     "year":2014,
@@ -8721,7 +8721,7 @@
     "year":2014,
     "quarter":4,
     "name":"Rust",
-    "count":8476
+    "count":8489
   },
   {
     "year":2014,
@@ -9699,13 +9699,13 @@
     "year":2015,
     "quarter":1,
     "name":"JavaScript",
-    "count":626512
+    "count":626075
   },
   {
     "year":2015,
     "quarter":1,
     "name":"Java",
-    "count":235198
+    "count":235397
   },
   {
     "year":2015,
@@ -9729,7 +9729,7 @@
     "year":2015,
     "quarter":1,
     "name":"Ruby",
-    "count":109339
+    "count":109302
   },
   {
     "year":2015,
@@ -9747,13 +9747,13 @@
     "year":2015,
     "quarter":1,
     "name":"C++",
-    "count":80692
+    "count":80725
   },
   {
     "year":2015,
     "quarter":1,
     "name":"HTML",
-    "count":80576
+    "count":80708
   },
   {
     "year":2015,
@@ -9783,7 +9783,7 @@
     "year":2015,
     "quarter":1,
     "name":"TypeScript",
-    "count":33766
+    "count":34223
   },
   {
     "year":2015,
@@ -10881,19 +10881,19 @@
     "year":2015,
     "quarter":2,
     "name":"JavaScript",
-    "count":662812
+    "count":662318
   },
   {
     "year":2015,
     "quarter":2,
     "name":"Java",
-    "count":273770
+    "count":274326
   },
   {
     "year":2015,
     "quarter":2,
     "name":"Python",
-    "count":210148
+    "count":210134
   },
   {
     "year":2015,
@@ -10911,7 +10911,7 @@
     "year":2015,
     "quarter":2,
     "name":"Ruby",
-    "count":107692
+    "count":107180
   },
   {
     "year":2015,
@@ -10923,19 +10923,19 @@
     "year":2015,
     "quarter":2,
     "name":"C",
-    "count":97677
+    "count":97687
   },
   {
     "year":2015,
     "quarter":2,
     "name":"HTML",
-    "count":88962
+    "count":89085
   },
   {
     "year":2015,
     "quarter":2,
     "name":"C++",
-    "count":88579
+    "count":88615
   },
   {
     "year":2015,
@@ -10959,7 +10959,7 @@
     "year":2015,
     "quarter":2,
     "name":"TypeScript",
-    "count":40752
+    "count":41265
   },
   {
     "year":2015,
@@ -11001,7 +11001,7 @@
     "year":2015,
     "quarter":2,
     "name":"Rust",
-    "count":12111
+    "count":12128
   },
   {
     "year":2015,
@@ -11025,7 +11025,7 @@
     "year":2015,
     "quarter":2,
     "name":"Jupyter Notebook",
-    "count":5425
+    "count":5439
   },
   {
     "year":2015,
@@ -12147,19 +12147,19 @@
     "year":2015,
     "quarter":3,
     "name":"JavaScript",
-    "count":687989
+    "count":687440
   },
   {
     "year":2015,
     "quarter":3,
     "name":"Java",
-    "count":336136
+    "count":336528
   },
   {
     "year":2015,
     "quarter":3,
     "name":"Python",
-    "count":247844
+    "count":248579
   },
   {
     "year":2015,
@@ -12195,19 +12195,19 @@
     "year":2015,
     "quarter":3,
     "name":"Ruby",
-    "count":104513
+    "count":104158
   },
   {
     "year":2015,
     "quarter":3,
     "name":"C++",
-    "count":99797
+    "count":99819
   },
   {
     "year":2015,
     "quarter":3,
     "name":"HTML",
-    "count":94940
+    "count":95020
   },
   {
     "year":2015,
@@ -12219,7 +12219,7 @@
     "year":2015,
     "quarter":3,
     "name":"TypeScript",
-    "count":53081
+    "count":53693
   },
   {
     "year":2015,
@@ -12255,13 +12255,13 @@
     "year":2015,
     "quarter":3,
     "name":"CoffeeScript",
-    "count":16444
+    "count":16518
   },
   {
     "year":2015,
     "quarter":3,
     "name":"Rust",
-    "count":15223
+    "count":15236
   },
   {
     "year":2015,
@@ -13425,19 +13425,19 @@
     "year":2015,
     "quarter":4,
     "name":"JavaScript",
-    "count":809085
+    "count":807220
   },
   {
     "year":2015,
     "quarter":4,
     "name":"Java",
-    "count":372818
+    "count":373290
   },
   {
     "year":2015,
     "quarter":4,
     "name":"Python",
-    "count":248731
+    "count":248891
   },
   {
     "year":2015,
@@ -13449,7 +13449,7 @@
     "year":2015,
     "quarter":4,
     "name":"C++",
-    "count":158425
+    "count":158514
   },
   {
     "year":2015,
@@ -13479,25 +13479,25 @@
     "year":2015,
     "quarter":4,
     "name":"Ruby",
-    "count":105677
+    "count":105232
   },
   {
     "year":2015,
     "quarter":4,
     "name":"HTML",
-    "count":94604
+    "count":94694
   },
   {
     "year":2015,
     "quarter":4,
     "name":"Shell",
-    "count":68868
+    "count":68890
   },
   {
     "year":2015,
     "quarter":4,
     "name":"TypeScript",
-    "count":63433
+    "count":65358
   },
   {
     "year":2015,
@@ -13515,7 +13515,7 @@
     "year":2015,
     "quarter":4,
     "name":"CoffeeScript",
-    "count":27471
+    "count":27529
   },
   {
     "year":2015,
@@ -13557,7 +13557,7 @@
     "year":2015,
     "quarter":4,
     "name":"Rust",
-    "count":15037
+    "count":15055
   },
   {
     "year":2015,
@@ -14787,19 +14787,19 @@
     "year":2016,
     "quarter":1,
     "name":"JavaScript",
-    "count":920107
+    "count":919456
   },
   {
     "year":2016,
     "quarter":1,
     "name":"Java",
-    "count":427480
+    "count":427937
   },
   {
     "year":2016,
     "quarter":1,
     "name":"Python",
-    "count":325450
+    "count":325708
   },
   {
     "year":2016,
@@ -14811,7 +14811,7 @@
     "year":2016,
     "quarter":1,
     "name":"Go",
-    "count":172797
+    "count":172087
   },
   {
     "year":2016,
@@ -14823,13 +14823,13 @@
     "year":2016,
     "quarter":1,
     "name":"C++",
-    "count":151903
+    "count":152023
   },
   {
     "year":2016,
     "quarter":1,
     "name":"C",
-    "count":135452
+    "count":135463
   },
   {
     "year":2016,
@@ -14841,13 +14841,13 @@
     "year":2016,
     "quarter":1,
     "name":"Ruby",
-    "count":111947
+    "count":111504
   },
   {
     "year":2016,
     "quarter":1,
     "name":"HTML",
-    "count":102026
+    "count":102115
   },
   {
     "year":2016,
@@ -14865,7 +14865,7 @@
     "year":2016,
     "quarter":1,
     "name":"TypeScript",
-    "count":80141
+    "count":80852
   },
   {
     "year":2016,
@@ -14895,7 +14895,7 @@
     "year":2016,
     "quarter":1,
     "name":"Rust",
-    "count":18697
+    "count":19427
   },
   {
     "year":2016,
@@ -14919,7 +14919,7 @@
     "year":2016,
     "quarter":1,
     "name":"CoffeeScript",
-    "count":17767
+    "count":17829
   },
   {
     "year":2016,
@@ -14955,7 +14955,7 @@
     "year":2016,
     "quarter":1,
     "name":"Makefile",
-    "count":6970
+    "count":6982
   },
   {
     "year":2016,
@@ -16113,19 +16113,19 @@
     "year":2016,
     "quarter":2,
     "name":"JavaScript",
-    "count":895932
+    "count":892782
   },
   {
     "year":2016,
     "quarter":2,
     "name":"Java",
-    "count":469231
+    "count":469698
   },
   {
     "year":2016,
     "quarter":2,
     "name":"Python",
-    "count":329005
+    "count":329147
   },
   {
     "year":2016,
@@ -16143,13 +16143,13 @@
     "year":2016,
     "quarter":2,
     "name":"Go",
-    "count":171822
+    "count":171117
   },
   {
     "year":2016,
     "quarter":2,
     "name":"C++",
-    "count":165179
+    "count":165234
   },
   {
     "year":2016,
@@ -16167,25 +16167,25 @@
     "year":2016,
     "quarter":2,
     "name":"HTML",
-    "count":108738
+    "count":108818
   },
   {
     "year":2016,
     "quarter":2,
     "name":"Ruby",
-    "count":100396
+    "count":99944
   },
   {
     "year":2016,
     "quarter":2,
     "name":"TypeScript",
-    "count":98994
+    "count":99700
   },
   {
     "year":2016,
     "quarter":2,
     "name":"Shell",
-    "count":76673
+    "count":79159
   },
   {
     "year":2016,
@@ -16227,7 +16227,7 @@
     "year":2016,
     "quarter":2,
     "name":"Rust",
-    "count":18590
+    "count":19311
   },
   {
     "year":2016,
@@ -16239,7 +16239,7 @@
     "year":2016,
     "quarter":2,
     "name":"CoffeeScript",
-    "count":16555
+    "count":16599
   },
   {
     "year":2016,
@@ -17481,25 +17481,25 @@
     "year":2016,
     "quarter":3,
     "name":"JavaScript",
-    "count":953313
+    "count":945964
   },
   {
     "year":2016,
     "quarter":3,
     "name":"Java",
-    "count":539495
+    "count":539979
   },
   {
     "year":2016,
     "quarter":3,
     "name":"Python",
-    "count":353810
+    "count":353958
   },
   {
     "year":2016,
     "quarter":3,
     "name":"Go",
-    "count":201463
+    "count":200781
   },
   {
     "year":2016,
@@ -17511,7 +17511,7 @@
     "year":2016,
     "quarter":3,
     "name":"C++",
-    "count":171325
+    "count":171393
   },
   {
     "year":2016,
@@ -17523,7 +17523,7 @@
     "year":2016,
     "quarter":3,
     "name":"C",
-    "count":139912
+    "count":139923
   },
   {
     "year":2016,
@@ -17535,25 +17535,25 @@
     "year":2016,
     "quarter":3,
     "name":"TypeScript",
-    "count":113559
+    "count":117155
   },
   {
     "year":2016,
     "quarter":3,
     "name":"HTML",
-    "count":104257
+    "count":104335
   },
   {
     "year":2016,
     "quarter":3,
     "name":"Ruby",
-    "count":98212
+    "count":97745
   },
   {
     "year":2016,
     "quarter":3,
     "name":"Shell",
-    "count":85679
+    "count":89488
   },
   {
     "year":2016,
@@ -17589,7 +17589,7 @@
     "year":2016,
     "quarter":3,
     "name":"Jupyter Notebook",
-    "count":24952
+    "count":24965
   },
   {
     "year":2016,
@@ -17607,7 +17607,7 @@
     "year":2016,
     "quarter":3,
     "name":"Rust",
-    "count":19906
+    "count":20605
   },
   {
     "year":2016,
@@ -17619,7 +17619,7 @@
     "year":2016,
     "quarter":3,
     "name":"CoffeeScript",
-    "count":14113
+    "count":14163
   },
   {
     "year":2016,
@@ -17846,14 +17846,14 @@
   {
     "year":2016,
     "quarter":3,
-    "name":"Dart",
-    "count":750
+    "name":"Cython",
+    "count":771
   },
   {
     "year":2016,
     "quarter":3,
-    "name":"Cython",
-    "count":749
+    "name":"Dart",
+    "count":750
   },
   {
     "year":2016,
@@ -18843,31 +18843,31 @@
     "year":2016,
     "quarter":4,
     "name":"JavaScript",
-    "count":951057
+    "count":946144
   },
   {
     "year":2016,
     "quarter":4,
     "name":"Java",
-    "count":509999
+    "count":510393
   },
   {
     "year":2016,
     "quarter":4,
     "name":"Python",
-    "count":395176
-  },
-  {
-    "year":2016,
-    "quarter":4,
-    "name":"Go",
-    "count":194443
+    "count":395288
   },
   {
     "year":2016,
     "quarter":4,
     "name":"C++",
-    "count":194072
+    "count":194103
+  },
+  {
+    "year":2016,
+    "quarter":4,
+    "name":"Go",
+    "count":193816
   },
   {
     "year":2016,
@@ -18879,13 +18879,13 @@
     "year":2016,
     "quarter":4,
     "name":"C",
-    "count":153447
+    "count":153462
   },
   {
     "year":2016,
     "quarter":4,
     "name":"TypeScript",
-    "count":151097
+    "count":152531
   },
   {
     "year":2016,
@@ -18903,19 +18903,19 @@
     "year":2016,
     "quarter":4,
     "name":"HTML",
-    "count":106087
+    "count":106202
   },
   {
     "year":2016,
     "quarter":4,
     "name":"Shell",
-    "count":98937
+    "count":102669
   },
   {
     "year":2016,
     "quarter":4,
     "name":"Ruby",
-    "count":90487
+    "count":90118
   },
   {
     "year":2016,
@@ -18927,7 +18927,7 @@
     "year":2016,
     "quarter":4,
     "name":"CSS",
-    "count":70434
+    "count":70372
   },
   {
     "year":2016,
@@ -18951,7 +18951,7 @@
     "year":2016,
     "quarter":4,
     "name":"Scala",
-    "count":24316
+    "count":25574
   },
   {
     "year":2016,
@@ -18963,7 +18963,7 @@
     "year":2016,
     "quarter":4,
     "name":"Rust",
-    "count":21160
+    "count":21805
   },
   {
     "year":2016,
@@ -18981,13 +18981,13 @@
     "year":2016,
     "quarter":4,
     "name":"Elixir",
-    "count":14662
+    "count":13404
   },
   {
     "year":2016,
     "quarter":4,
     "name":"CoffeeScript",
-    "count":11655
+    "count":11694
   },
   {
     "year":2016,
@@ -19023,7 +19023,7 @@
     "year":2016,
     "quarter":4,
     "name":"Makefile",
-    "count":6942
+    "count":6952
   },
   {
     "year":2016,
@@ -19215,7 +19215,7 @@
     "year":2016,
     "quarter":4,
     "name":"Cython",
-    "count":812
+    "count":832
   },
   {
     "year":2016,
@@ -20229,37 +20229,37 @@
     "year":2017,
     "quarter":1,
     "name":"JavaScript",
-    "count":1071650
+    "count":1064737
   },
   {
     "year":2017,
     "quarter":1,
     "name":"Java",
-    "count":567952
+    "count":568404
   },
   {
     "year":2017,
     "quarter":1,
     "name":"Python",
-    "count":516492
+    "count":516642
   },
   {
     "year":2017,
     "quarter":1,
     "name":"Go",
-    "count":258302
-  },
-  {
-    "year":2017,
-    "quarter":1,
-    "name":"C++",
-    "count":225955
+    "count":257490
   },
   {
     "year":2017,
     "quarter":1,
     "name":"TypeScript",
-    "count":225715
+    "count":227159
+  },
+  {
+    "year":2017,
+    "quarter":1,
+    "name":"C++",
+    "count":226012
   },
   {
     "year":2017,
@@ -20271,7 +20271,7 @@
     "year":2017,
     "quarter":1,
     "name":"C",
-    "count":172543
+    "count":172556
   },
   {
     "year":2017,
@@ -20289,19 +20289,19 @@
     "year":2017,
     "quarter":1,
     "name":"Shell",
-    "count":119834
+    "count":125491
   },
   {
     "year":2017,
     "quarter":1,
     "name":"HTML",
-    "count":113789
+    "count":113921
   },
   {
     "year":2017,
     "quarter":1,
     "name":"Ruby",
-    "count":100613
+    "count":100187
   },
   {
     "year":2017,
@@ -20313,13 +20313,13 @@
     "year":2017,
     "quarter":1,
     "name":"CSS",
-    "count":71620
+    "count":71546
   },
   {
     "year":2017,
     "quarter":1,
     "name":"Jupyter Notebook",
-    "count":53249
+    "count":53216
   },
   {
     "year":2017,
@@ -20343,13 +20343,13 @@
     "year":2017,
     "quarter":1,
     "name":"Rust",
-    "count":30505
+    "count":31362
   },
   {
     "year":2017,
     "quarter":1,
     "name":"Scala",
-    "count":24707
+    "count":26575
   },
   {
     "year":2017,
@@ -20367,7 +20367,7 @@
     "year":2017,
     "quarter":1,
     "name":"Elixir",
-    "count":18334
+    "count":16466
   },
   {
     "year":2017,
@@ -20385,7 +20385,7 @@
     "year":2017,
     "quarter":1,
     "name":"CoffeeScript",
-    "count":11912
+    "count":11947
   },
   {
     "year":2017,
@@ -20415,7 +20415,7 @@
     "year":2017,
     "quarter":1,
     "name":"Makefile",
-    "count":8781
+    "count":8792
   },
   {
     "year":2017,
@@ -20625,7 +20625,7 @@
     "year":2017,
     "quarter":1,
     "name":"Cython",
-    "count":751
+    "count":777
   },
   {
     "year":2017,
@@ -21717,43 +21717,43 @@
     "year":2017,
     "quarter":2,
     "name":"JavaScript",
-    "count":1046596
+    "count":1041400
   },
   {
     "year":2017,
     "quarter":2,
     "name":"Java",
-    "count":585498
+    "count":586655
   },
   {
     "year":2017,
     "quarter":2,
     "name":"Python",
-    "count":563078
+    "count":563303
   },
   {
     "year":2017,
     "quarter":2,
     "name":"TypeScript",
-    "count":261072
+    "count":262666
   },
   {
     "year":2017,
     "quarter":2,
     "name":"Go",
-    "count":255815
+    "count":255031
   },
   {
     "year":2017,
     "quarter":2,
     "name":"C++",
-    "count":217680
+    "count":217037
   },
   {
     "year":2017,
     "quarter":2,
     "name":"C",
-    "count":171705
+    "count":171719
   },
   {
     "year":2017,
@@ -21765,7 +21765,7 @@
     "year":2017,
     "quarter":2,
     "name":"PHP",
-    "count":143387
+    "count":143418
   },
   {
     "year":2017,
@@ -21777,13 +21777,13 @@
     "year":2017,
     "quarter":2,
     "name":"HTML",
-    "count":115536
+    "count":115651
   },
   {
     "year":2017,
     "quarter":2,
     "name":"Shell",
-    "count":108818
+    "count":112662
   },
   {
     "year":2017,
@@ -21795,13 +21795,13 @@
     "year":2017,
     "quarter":2,
     "name":"Ruby",
-    "count":90204
+    "count":89756
   },
   {
     "year":2017,
     "quarter":2,
     "name":"CSS",
-    "count":68437
+    "count":68325
   },
   {
     "year":2017,
@@ -21813,7 +21813,7 @@
     "year":2017,
     "quarter":2,
     "name":"Jupyter Notebook",
-    "count":61065
+    "count":61099
   },
   {
     "year":2017,
@@ -21825,7 +21825,7 @@
     "year":2017,
     "quarter":2,
     "name":"Rust",
-    "count":30871
+    "count":31680
   },
   {
     "year":2017,
@@ -21843,7 +21843,7 @@
     "year":2017,
     "quarter":2,
     "name":"Scala",
-    "count":22932
+    "count":23131
   },
   {
     "year":2017,
@@ -21867,7 +21867,7 @@
     "year":2017,
     "quarter":2,
     "name":"Elixir",
-    "count":13346
+    "count":13147
   },
   {
     "year":2017,
@@ -22107,7 +22107,7 @@
     "year":2017,
     "quarter":2,
     "name":"Cython",
-    "count":860
+    "count":887
   },
   {
     "year":2017,
@@ -23205,43 +23205,43 @@
     "year":2017,
     "quarter":3,
     "name":"JavaScript",
-    "count":1116876
+    "count":1112095
   },
   {
     "year":2017,
     "quarter":3,
     "name":"Java",
-    "count":586658
+    "count":587093
   },
   {
     "year":2017,
     "quarter":3,
     "name":"Python",
-    "count":556519
+    "count":556785
   },
   {
     "year":2017,
     "quarter":3,
     "name":"Go",
-    "count":266163
+    "count":265441
   },
   {
     "year":2017,
     "quarter":3,
     "name":"C++",
-    "count":243739
+    "count":243696
   },
   {
     "year":2017,
     "quarter":3,
     "name":"TypeScript",
-    "count":231896
+    "count":233569
   },
   {
     "year":2017,
     "quarter":3,
     "name":"C",
-    "count":176885
+    "count":176899
   },
   {
     "year":2017,
@@ -23253,13 +23253,13 @@
     "year":2017,
     "quarter":3,
     "name":"PHP",
-    "count":153802
+    "count":153823
   },
   {
     "year":2017,
     "quarter":3,
     "name":"HTML",
-    "count":116456
+    "count":116556
   },
   {
     "year":2017,
@@ -23270,32 +23270,32 @@
   {
     "year":2017,
     "quarter":3,
+    "name":"Shell",
+    "count":106727
+  },
+  {
+    "year":2017,
+    "quarter":3,
     "name":"C#",
     "count":103733
   },
   {
     "year":2017,
     "quarter":3,
-    "name":"Shell",
-    "count":103086
-  },
-  {
-    "year":2017,
-    "quarter":3,
     "name":"Ruby",
-    "count":84175
+    "count":83784
   },
   {
     "year":2017,
     "quarter":3,
     "name":"Jupyter Notebook",
-    "count":79244
+    "count":79233
   },
   {
     "year":2017,
     "quarter":3,
     "name":"CSS",
-    "count":69000
+    "count":68693
   },
   {
     "year":2017,
@@ -23313,7 +23313,7 @@
     "year":2017,
     "quarter":3,
     "name":"Rust",
-    "count":30227
+    "count":30980
   },
   {
     "year":2017,
@@ -23325,7 +23325,7 @@
     "year":2017,
     "quarter":3,
     "name":"Scala",
-    "count":21273
+    "count":22195
   },
   {
     "year":2017,
@@ -23349,7 +23349,7 @@
     "year":2017,
     "quarter":3,
     "name":"Elixir",
-    "count":14230
+    "count":13308
   },
   {
     "year":2017,
@@ -23612,14 +23612,14 @@
   {
     "year":2017,
     "quarter":3,
-    "name":"GLSL",
-    "count":788
+    "name":"Cython",
+    "count":793
   },
   {
     "year":2017,
     "quarter":3,
-    "name":"Cython",
-    "count":764
+    "name":"GLSL",
+    "count":788
   },
   {
     "year":2017,
@@ -24675,49 +24675,49 @@
     "year":2017,
     "quarter":4,
     "name":"JavaScript",
-    "count":1186215
+    "count":1180466
   },
   {
     "year":2017,
     "quarter":4,
     "name":"Python",
-    "count":644508
+    "count":646274
   },
   {
     "year":2017,
     "quarter":4,
     "name":"Java",
-    "count":548351
+    "count":548788
   },
   {
     "year":2017,
     "quarter":4,
     "name":"Go",
-    "count":328384
+    "count":327674
   },
   {
     "year":2017,
     "quarter":4,
     "name":"C++",
-    "count":300628
+    "count":300588
   },
   {
     "year":2017,
     "quarter":4,
     "name":"TypeScript",
-    "count":274923
+    "count":276649
   },
   {
     "year":2017,
     "quarter":4,
     "name":"C",
-    "count":210663
+    "count":210674
   },
   {
     "year":2017,
     "quarter":4,
     "name":"PHP",
-    "count":188681
+    "count":188693
   },
   {
     "year":2017,
@@ -24729,19 +24729,19 @@
     "year":2017,
     "quarter":4,
     "name":"HTML",
-    "count":148385
+    "count":148515
+  },
+  {
+    "year":2017,
+    "quarter":4,
+    "name":"Shell",
+    "count":125310
   },
   {
     "year":2017,
     "quarter":4,
     "name":"C#",
     "count":124680
-  },
-  {
-    "year":2017,
-    "quarter":4,
-    "name":"Shell",
-    "count":122280
   },
   {
     "year":2017,
@@ -24753,19 +24753,19 @@
     "year":2017,
     "quarter":4,
     "name":"Jupyter Notebook",
-    "count":95770
+    "count":95799
   },
   {
     "year":2017,
     "quarter":4,
     "name":"Ruby",
-    "count":84907
+    "count":84500
   },
   {
     "year":2017,
     "quarter":4,
     "name":"CSS",
-    "count":73638
+    "count":73424
   },
   {
     "year":2017,
@@ -24783,7 +24783,7 @@
     "year":2017,
     "quarter":4,
     "name":"Rust",
-    "count":41523
+    "count":42271
   },
   {
     "year":2017,
@@ -24795,7 +24795,7 @@
     "year":2017,
     "quarter":4,
     "name":"Scala",
-    "count":23165
+    "count":23539
   },
   {
     "year":2017,
@@ -24831,7 +24831,7 @@
     "year":2017,
     "quarter":4,
     "name":"Elixir",
-    "count":12644
+    "count":12270
   },
   {
     "year":2017,
@@ -25095,7 +25095,7 @@
     "year":2017,
     "quarter":4,
     "name":"Cython",
-    "count":889
+    "count":918
   },
   {
     "year":2017,
@@ -26241,19 +26241,19 @@
     "year":2018,
     "quarter":1,
     "name":"JavaScript",
-    "count":830851
+    "count":827626
   },
   {
     "year":2018,
     "quarter":1,
     "name":"Python",
-    "count":478191
+    "count":480185
   },
   {
     "year":2018,
     "quarter":1,
     "name":"Java",
-    "count":335187
+    "count":335459
   },
   {
     "year":2018,
@@ -26265,19 +26265,19 @@
     "year":2018,
     "quarter":1,
     "name":"Go",
-    "count":237198
+    "count":236644
   },
   {
     "year":2018,
     "quarter":1,
     "name":"TypeScript",
-    "count":212941
+    "count":214797
   },
   {
     "year":2018,
     "quarter":1,
     "name":"C++",
-    "count":191375
+    "count":191321
   },
   {
     "year":2018,
@@ -26295,7 +26295,7 @@
     "year":2018,
     "quarter":1,
     "name":"HTML",
-    "count":89768
+    "count":89868
   },
   {
     "year":2018,
@@ -26307,19 +26307,19 @@
     "year":2018,
     "quarter":1,
     "name":"Shell",
-    "count":83012
+    "count":85531
   },
   {
     "year":2018,
     "quarter":1,
     "name":"CSS",
-    "count":71139
+    "count":68590
   },
   {
     "year":2018,
     "quarter":1,
     "name":"Jupyter Notebook",
-    "count":67767
+    "count":67739
   },
   {
     "year":2018,
@@ -26331,7 +26331,7 @@
     "year":2018,
     "quarter":1,
     "name":"Ruby",
-    "count":58594
+    "count":58377
   },
   {
     "year":2018,
@@ -26349,7 +26349,7 @@
     "year":2018,
     "quarter":1,
     "name":"Rust",
-    "count":31618
+    "count":32194
   },
   {
     "year":2018,
@@ -26373,7 +26373,7 @@
     "year":2018,
     "quarter":1,
     "name":"Scala",
-    "count":15063
+    "count":15336
   },
   {
     "year":2018,
@@ -26397,7 +26397,7 @@
     "year":2018,
     "quarter":1,
     "name":"Makefile",
-    "count":9824
+    "count":9814
   },
   {
     "year":2018,
@@ -26427,7 +26427,7 @@
     "year":2018,
     "quarter":1,
     "name":"Elixir",
-    "count":8049
+    "count":7776
   },
   {
     "year":2018,
@@ -26690,6 +26690,12 @@
   {
     "year":2018,
     "quarter":1,
+    "name":"Cython",
+    "count":591
+  },
+  {
+    "year":2018,
+    "quarter":1,
     "name":"YARA",
     "count":584
   },
@@ -26698,12 +26704,6 @@
     "quarter":1,
     "name":"Mustache",
     "count":583
-  },
-  {
-    "year":2018,
-    "quarter":1,
-    "name":"Cython",
-    "count":570
   },
   {
     "year":2018,
@@ -27681,37 +27681,37 @@
     "year":2018,
     "quarter":2,
     "name":"JavaScript",
-    "count":1190299
+    "count":1183782
   },
   {
     "year":2018,
     "quarter":2,
     "name":"Python",
-    "count":699037
+    "count":700999
   },
   {
     "year":2018,
     "quarter":2,
     "name":"Java",
-    "count":518030
+    "count":518388
   },
   {
     "year":2018,
     "quarter":2,
     "name":"Go",
-    "count":346909
+    "count":346253
   },
   {
     "year":2018,
     "quarter":2,
     "name":"TypeScript",
-    "count":324879
+    "count":327537
   },
   {
     "year":2018,
     "quarter":2,
     "name":"C++",
-    "count":288738
+    "count":288706
   },
   {
     "year":2018,
@@ -27729,13 +27729,13 @@
     "year":2018,
     "quarter":2,
     "name":"HTML",
-    "count":153054
+    "count":153243
   },
   {
     "year":2018,
     "quarter":2,
     "name":"C#",
-    "count":133787
+    "count":133811
   },
   {
     "year":2018,
@@ -27747,7 +27747,7 @@
     "year":2018,
     "quarter":2,
     "name":"Shell",
-    "count":123964
+    "count":126751
   },
   {
     "year":2018,
@@ -27759,19 +27759,19 @@
     "year":2018,
     "quarter":2,
     "name":"Jupyter Notebook",
-    "count":96106
+    "count":96118
   },
   {
     "year":2018,
     "quarter":2,
     "name":"Ruby",
-    "count":82379
+    "count":82072
   },
   {
     "year":2018,
     "quarter":2,
     "name":"CSS",
-    "count":70231
+    "count":69788
   },
   {
     "year":2018,
@@ -27789,7 +27789,7 @@
     "year":2018,
     "quarter":2,
     "name":"Rust",
-    "count":53373
+    "count":54136
   },
   {
     "year":2018,
@@ -27807,7 +27807,7 @@
     "year":2018,
     "quarter":2,
     "name":"Scala",
-    "count":20595
+    "count":20813
   },
   {
     "year":2018,
@@ -27855,7 +27855,7 @@
     "year":2018,
     "quarter":2,
     "name":"Makefile",
-    "count":11154
+    "count":11144
   },
   {
     "year":2018,
@@ -27867,7 +27867,7 @@
     "year":2018,
     "quarter":2,
     "name":"Elixir",
-    "count":10491
+    "count":10273
   },
   {
     "year":2018,
@@ -28130,13 +28130,13 @@
   {
     "year":2018,
     "quarter":2,
-    "name":"AppleScript",
-    "count":848
+    "name":"Cython",
+    "count":874
   },
   {
     "year":2018,
     "quarter":2,
-    "name":"Cython",
+    "name":"AppleScript",
     "count":848
   },
   {
@@ -29277,37 +29277,37 @@
     "year":2018,
     "quarter":3,
     "name":"JavaScript",
-    "count":1110731
+    "count":1104905
   },
   {
     "year":2018,
     "quarter":3,
     "name":"Python",
-    "count":766295
+    "count":767732
   },
   {
     "year":2018,
     "quarter":3,
     "name":"Java",
-    "count":508137
+    "count":513270
   },
   {
     "year":2018,
     "quarter":3,
     "name":"Go",
-    "count":363596
+    "count":362914
   },
   {
     "year":2018,
     "quarter":3,
     "name":"TypeScript",
-    "count":326363
+    "count":328943
   },
   {
     "year":2018,
     "quarter":3,
     "name":"C++",
-    "count":288153
+    "count":283823
   },
   {
     "year":2018,
@@ -29331,25 +29331,25 @@
     "year":2018,
     "quarter":3,
     "name":"HTML",
-    "count":133752
+    "count":133897
   },
   {
     "year":2018,
     "quarter":3,
     "name":"C#",
-    "count":132203
+    "count":132242
   },
   {
     "year":2018,
     "quarter":3,
     "name":"Shell",
-    "count":124037
+    "count":126504
   },
   {
     "year":2018,
     "quarter":3,
     "name":"Jupyter Notebook",
-    "count":104473
+    "count":104489
   },
   {
     "year":2018,
@@ -29361,7 +29361,7 @@
     "year":2018,
     "quarter":3,
     "name":"Ruby",
-    "count":80082
+    "count":79768
   },
   {
     "year":2018,
@@ -29373,13 +29373,13 @@
     "year":2018,
     "quarter":3,
     "name":"Rust",
-    "count":62349
+    "count":63148
   },
   {
     "year":2018,
     "quarter":3,
     "name":"CSS",
-    "count":60473
+    "count":60173
   },
   {
     "year":2018,
@@ -29403,7 +29403,7 @@
     "year":2018,
     "quarter":3,
     "name":"Scala",
-    "count":20855
+    "count":21053
   },
   {
     "year":2018,
@@ -29457,7 +29457,7 @@
     "year":2018,
     "quarter":3,
     "name":"Elixir",
-    "count":11171
+    "count":10973
   },
   {
     "year":2018,
@@ -29732,14 +29732,14 @@
   {
     "year":2018,
     "quarter":3,
-    "name":"Mustache",
-    "count":886
+    "name":"Cython",
+    "count":895
   },
   {
     "year":2018,
     "quarter":3,
-    "name":"Cython",
-    "count":864
+    "name":"Mustache",
+    "count":886
   },
   {
     "year":2018,
@@ -30879,37 +30879,37 @@
     "year":2018,
     "quarter":4,
     "name":"JavaScript",
-    "count":1070545
+    "count":1065356
   },
   {
     "year":2018,
     "quarter":4,
     "name":"Python",
-    "count":802265
+    "count":803348
   },
   {
     "year":2018,
     "quarter":4,
     "name":"Java",
-    "count":510440
+    "count":511613
   },
   {
     "year":2018,
     "quarter":4,
     "name":"Go",
-    "count":391241
+    "count":390596
   },
   {
     "year":2018,
     "quarter":4,
     "name":"TypeScript",
-    "count":314759
+    "count":317113
   },
   {
     "year":2018,
     "quarter":4,
     "name":"C++",
-    "count":296675
+    "count":295877
   },
   {
     "year":2018,
@@ -30921,7 +30921,7 @@
     "year":2018,
     "quarter":4,
     "name":"C",
-    "count":202034
+    "count":202024
   },
   {
     "year":2018,
@@ -30933,13 +30933,13 @@
     "year":2018,
     "quarter":4,
     "name":"HTML",
-    "count":141466
+    "count":141592
   },
   {
     "year":2018,
     "quarter":4,
     "name":"Shell",
-    "count":125554
+    "count":127938
   },
   {
     "year":2018,
@@ -30957,7 +30957,7 @@
     "year":2018,
     "quarter":4,
     "name":"Rust",
-    "count":76510
+    "count":77291
   },
   {
     "year":2018,
@@ -30969,13 +30969,13 @@
     "year":2018,
     "quarter":4,
     "name":"CSS",
-    "count":72797
+    "count":72491
   },
   {
     "year":2018,
     "quarter":4,
     "name":"Ruby",
-    "count":70192
+    "count":69944
   },
   {
     "year":2018,
@@ -31011,7 +31011,7 @@
     "year":2018,
     "quarter":4,
     "name":"Scala",
-    "count":18135
+    "count":18402
   },
   {
     "year":2018,
@@ -31047,7 +31047,7 @@
     "year":2018,
     "quarter":4,
     "name":"Makefile",
-    "count":10987
+    "count":10977
   },
   {
     "year":2018,
@@ -31071,7 +31071,7 @@
     "year":2018,
     "quarter":4,
     "name":"Elixir",
-    "count":9648
+    "count":9381
   },
   {
     "year":2018,
@@ -31376,6 +31376,12 @@
   {
     "year":2018,
     "quarter":4,
+    "name":"Cython",
+    "count":757
+  },
+  {
+    "year":2018,
+    "quarter":4,
     "name":"ActionScript",
     "count":756
   },
@@ -31384,12 +31390,6 @@
     "quarter":4,
     "name":"Haxe",
     "count":740
-  },
-  {
-    "year":2018,
-    "quarter":4,
-    "name":"Cython",
-    "count":734
   },
   {
     "year":2018,
@@ -31772,6 +31772,12 @@
   {
     "year":2018,
     "quarter":4,
+    "name":"MDX",
+    "count":120
+  },
+  {
+    "year":2018,
+    "quarter":4,
     "name":"Prolog",
     "count":109
   },
@@ -31882,12 +31888,6 @@
     "quarter":4,
     "name":"Stata",
     "count":80
-  },
-  {
-    "year":2018,
-    "quarter":4,
-    "name":"MDX",
-    "count":79
   },
   {
     "year":2018,
@@ -32504,12 +32504,6 @@
   {
     "year":2018,
     "quarter":4,
-    "name":"OpenQASM",
-    "count":10
-  },
-  {
-    "year":2018,
-    "quarter":4,
     "name":"Zeek",
     "count":10
   },
@@ -32523,49 +32517,49 @@
     "year":2019,
     "quarter":1,
     "name":"JavaScript",
-    "count":858350
+    "count":854392
   },
   {
     "year":2019,
     "quarter":1,
     "name":"Python",
-    "count":700221
+    "count":701133
   },
   {
     "year":2019,
     "quarter":1,
     "name":"Java",
-    "count":409170
+    "count":409703
   },
   {
     "year":2019,
     "quarter":1,
     "name":"Go",
-    "count":327381
+    "count":326917
   },
   {
     "year":2019,
     "quarter":1,
     "name":"TypeScript",
-    "count":276942
+    "count":278716
   },
   {
     "year":2019,
     "quarter":1,
     "name":"C++",
-    "count":258592
+    "count":258318
   },
   {
     "year":2019,
     "quarter":1,
     "name":"PHP",
-    "count":177630
+    "count":177476
   },
   {
     "year":2019,
     "quarter":1,
     "name":"C",
-    "count":171312
+    "count":171302
   },
   {
     "year":2019,
@@ -32576,20 +32570,20 @@
   {
     "year":2019,
     "quarter":1,
-    "name":"Jupyter Notebook",
-    "count":117855
+    "name":"Shell",
+    "count":119787
   },
   {
     "year":2019,
     "quarter":1,
-    "name":"Shell",
-    "count":117847
+    "name":"Jupyter Notebook",
+    "count":117862
   },
   {
     "year":2019,
     "quarter":1,
     "name":"HTML",
-    "count":111788
+    "count":111888
   },
   {
     "year":2019,
@@ -32601,7 +32595,7 @@
     "year":2019,
     "quarter":1,
     "name":"Rust",
-    "count":75332
+    "count":75877
   },
   {
     "year":2019,
@@ -32613,13 +32607,13 @@
     "year":2019,
     "quarter":1,
     "name":"Dart",
-    "count":55446
+    "count":55489
   },
   {
     "year":2019,
     "quarter":1,
     "name":"Ruby",
-    "count":54077
+    "count":53872
   },
   {
     "year":2019,
@@ -32637,7 +32631,7 @@
     "year":2019,
     "quarter":1,
     "name":"CSS",
-    "count":48694
+    "count":48350
   },
   {
     "year":2019,
@@ -32667,7 +32661,7 @@
     "year":2019,
     "quarter":1,
     "name":"Scala",
-    "count":12698
+    "count":12884
   },
   {
     "year":2019,
@@ -32697,7 +32691,7 @@
     "year":2019,
     "quarter":1,
     "name":"Elixir",
-    "count":9787
+    "count":9601
   },
   {
     "year":2019,
@@ -32799,7 +32793,7 @@
     "year":2019,
     "quarter":1,
     "name":"Jinja",
-    "count":2624
+    "count":2637
   },
   {
     "year":2019,
@@ -33015,7 +33009,7 @@
     "year":2019,
     "quarter":1,
     "name":"Cython",
-    "count":711
+    "count":728
   },
   {
     "year":2019,
@@ -33052,6 +33046,12 @@
     "quarter":1,
     "name":"Coq",
     "count":592
+  },
+  {
+    "year":2019,
+    "quarter":1,
+    "name":"Astro",
+    "count":536
   },
   {
     "year":2019,
@@ -33178,12 +33178,6 @@
     "quarter":1,
     "name":"Classic ASP",
     "count":316
-  },
-  {
-    "year":2019,
-    "quarter":1,
-    "name":"Astro",
-    "count":291
   },
   {
     "year":2019,
@@ -33398,6 +33392,12 @@
   {
     "year":2019,
     "quarter":1,
+    "name":"MDX",
+    "count":128
+  },
+  {
+    "year":2019,
+    "quarter":1,
     "name":"Svelte",
     "count":127
   },
@@ -33436,12 +33436,6 @@
     "quarter":1,
     "name":"Ballerina",
     "count":107
-  },
-  {
-    "year":2019,
-    "quarter":1,
-    "name":"OpenQASM",
-    "count":106
   },
   {
     "year":2019,
@@ -33532,12 +33526,6 @@
     "quarter":1,
     "name":"Fluent",
     "count":72
-  },
-  {
-    "year":2019,
-    "quarter":1,
-    "name":"MDX",
-    "count":70
   },
   {
     "year":2019,
@@ -34125,73 +34113,73 @@
     "year":2019,
     "quarter":2,
     "name":"JavaScript",
-    "count":1270450
+    "count":1263236
   },
   {
     "year":2019,
     "quarter":2,
     "name":"Python",
-    "count":1196745
+    "count":1198118
   },
   {
     "year":2019,
     "quarter":2,
     "name":"Java",
-    "count":662529
+    "count":663659
   },
   {
     "year":2019,
     "quarter":2,
     "name":"Go",
-    "count":501138
+    "count":500378
   },
   {
     "year":2019,
     "quarter":2,
     "name":"TypeScript",
-    "count":442117
+    "count":444789
   },
   {
     "year":2019,
     "quarter":2,
     "name":"C++",
-    "count":423100
+    "count":422420
   },
   {
     "year":2019,
     "quarter":2,
     "name":"C",
-    "count":276427
+    "count":276417
   },
   {
     "year":2019,
     "quarter":2,
     "name":"PHP",
-    "count":244400
+    "count":244135
   },
   {
     "year":2019,
     "quarter":2,
     "name":"C#",
-    "count":215374
+    "count":215448
   },
   {
     "year":2019,
     "quarter":2,
     "name":"Shell",
-    "count":197232
+    "count":199797
   },
   {
     "year":2019,
     "quarter":2,
     "name":"HTML",
-    "count":186925
+    "count":187065
   },
   {
     "year":2019,
     "quarter":2,
     "name":"Jupyter Notebook",
-    "count":183262
+    "count":183249
   },
   {
     "year":2019,
@@ -34203,7 +34191,7 @@
     "year":2019,
     "quarter":2,
     "name":"Rust",
-    "count":118581
+    "count":119500
   },
   {
     "year":2019,
@@ -34215,7 +34203,7 @@
     "year":2019,
     "quarter":2,
     "name":"Ruby",
-    "count":89530
+    "count":89201
   },
   {
     "year":2019,
@@ -34232,14 +34220,14 @@
   {
     "year":2019,
     "quarter":2,
-    "name":"CSS",
-    "count":82448
+    "name":"Objective-C",
+    "count":82218
   },
   {
     "year":2019,
     "quarter":2,
-    "name":"Objective-C",
-    "count":82218
+    "name":"CSS",
+    "count":82132
   },
   {
     "year":2019,
@@ -34256,14 +34244,14 @@
   {
     "year":2019,
     "quarter":2,
-    "name":"Haskell",
-    "count":22300
+    "name":"Scala",
+    "count":22459
   },
   {
     "year":2019,
     "quarter":2,
-    "name":"Scala",
-    "count":22165
+    "name":"Haskell",
+    "count":22275
   },
   {
     "year":2019,
@@ -34293,7 +34281,7 @@
     "year":2019,
     "quarter":2,
     "name":"Makefile",
-    "count":14752
+    "count":14739
   },
   {
     "year":2019,
@@ -34310,14 +34298,14 @@
   {
     "year":2019,
     "quarter":2,
-    "name":"Elixir",
-    "count":13456
+    "name":"Emacs Lisp",
+    "count":13275
   },
   {
     "year":2019,
     "quarter":2,
-    "name":"Emacs Lisp",
-    "count":13275
+    "name":"Elixir",
+    "count":13162
   },
   {
     "year":2019,
@@ -34514,6 +34502,12 @@
   {
     "year":2019,
     "quarter":2,
+    "name":"Astro",
+    "count":2034
+  },
+  {
+    "year":2019,
+    "quarter":2,
     "name":"Elm",
     "count":2005
   },
@@ -34629,7 +34623,7 @@
     "year":2019,
     "quarter":2,
     "name":"Cython",
-    "count":997
+    "count":1021
   },
   {
     "year":2019,
@@ -34792,12 +34786,6 @@
     "quarter":2,
     "name":"EJS",
     "count":520
-  },
-  {
-    "year":2019,
-    "quarter":2,
-    "name":"Astro",
-    "count":491
   },
   {
     "year":2019,
@@ -35066,12 +35054,6 @@
   {
     "year":2019,
     "quarter":2,
-    "name":"OpenQASM",
-    "count":186
-  },
-  {
-    "year":2019,
-    "quarter":2,
     "name":"G-code",
     "count":181
   },
@@ -35098,6 +35080,12 @@
     "quarter":2,
     "name":"Red",
     "count":154
+  },
+  {
+    "year":2019,
+    "quarter":2,
+    "name":"MDX",
+    "count":152
   },
   {
     "year":2019,
@@ -35235,12 +35223,6 @@
     "year":2019,
     "quarter":2,
     "name":"Apex",
-    "count":90
-  },
-  {
-    "year":2019,
-    "quarter":2,
-    "name":"MDX",
     "count":90
   },
   {
@@ -35708,6 +35690,12 @@
   {
     "year":2019,
     "quarter":2,
+    "name":"OpenQASM",
+    "count":16
+  },
+  {
+    "year":2019,
+    "quarter":2,
     "name":"APL",
     "count":15
   },
@@ -35841,73 +35829,73 @@
     "year":2019,
     "quarter":3,
     "name":"Python",
-    "count":1191250
+    "count":1192783
   },
   {
     "year":2019,
     "quarter":3,
     "name":"JavaScript",
-    "count":1160924
+    "count":1150135
   },
   {
     "year":2019,
     "quarter":3,
     "name":"Java",
-    "count":645022
+    "count":645997
   },
   {
     "year":2019,
     "quarter":3,
     "name":"Go",
-    "count":507029
+    "count":506258
   },
   {
     "year":2019,
     "quarter":3,
     "name":"TypeScript",
-    "count":416404
+    "count":419660
   },
   {
     "year":2019,
     "quarter":3,
     "name":"C++",
-    "count":401414
+    "count":400802
   },
   {
     "year":2019,
     "quarter":3,
     "name":"C",
-    "count":296974
+    "count":296956
   },
   {
     "year":2019,
     "quarter":3,
     "name":"HTML",
-    "count":235903
+    "count":236007
   },
   {
     "year":2019,
     "quarter":3,
     "name":"PHP",
-    "count":227163
+    "count":226904
   },
   {
     "year":2019,
     "quarter":3,
     "name":"C#",
-    "count":210167
+    "count":210330
   },
   {
     "year":2019,
     "quarter":3,
     "name":"Jupyter Notebook",
-    "count":186238
+    "count":186260
   },
   {
     "year":2019,
     "quarter":3,
     "name":"Shell",
-    "count":180520
+    "count":183108
   },
   {
     "year":2019,
@@ -35919,13 +35907,13 @@
     "year":2019,
     "quarter":3,
     "name":"Rust",
-    "count":122134
+    "count":123069
   },
   {
     "year":2019,
     "quarter":3,
     "name":"Dart",
-    "count":92886
+    "count":92899
   },
   {
     "year":2019,
@@ -35943,13 +35931,13 @@
     "year":2019,
     "quarter":3,
     "name":"Ruby",
-    "count":73514
+    "count":73202
   },
   {
     "year":2019,
     "quarter":3,
     "name":"CSS",
-    "count":70384
+    "count":70109
   },
   {
     "year":2019,
@@ -35979,7 +35967,7 @@
     "year":2019,
     "quarter":3,
     "name":"Scala",
-    "count":20893
+    "count":21096
   },
   {
     "year":2019,
@@ -36008,6 +35996,12 @@
   {
     "year":2019,
     "quarter":3,
+    "name":"Dockerfile",
+    "count":15060
+  },
+  {
+    "year":2019,
+    "quarter":3,
     "name":"Makefile",
     "count":14768
   },
@@ -36026,12 +36020,6 @@
   {
     "year":2019,
     "quarter":3,
-    "name":"Dockerfile",
-    "count":12965
-  },
-  {
-    "year":2019,
-    "quarter":3,
     "name":"Emacs Lisp",
     "count":12179
   },
@@ -36039,7 +36027,7 @@
     "year":2019,
     "quarter":3,
     "name":"Elixir",
-    "count":10655
+    "count":10452
   },
   {
     "year":2019,
@@ -36086,14 +36074,14 @@
   {
     "year":2019,
     "quarter":3,
-    "name":"Groovy",
-    "count":4225
+    "name":"Jinja",
+    "count":4238
   },
   {
     "year":2019,
     "quarter":3,
-    "name":"Jinja",
-    "count":4224
+    "name":"Groovy",
+    "count":4225
   },
   {
     "year":2019,
@@ -36172,6 +36160,12 @@
     "quarter":3,
     "name":"Vala",
     "count":2611
+  },
+  {
+    "year":2019,
+    "quarter":3,
+    "name":"Astro",
+    "count":2506
   },
   {
     "year":2019,
@@ -36344,14 +36338,20 @@
   {
     "year":2019,
     "quarter":3,
+    "name":"Cython",
+    "count":886
+  },
+  {
+    "year":2019,
+    "quarter":3,
     "name":"Zig",
     "count":870
   },
   {
     "year":2019,
     "quarter":3,
-    "name":"Cython",
-    "count":855
+    "name":"MDX",
+    "count":843
   },
   {
     "year":2019,
@@ -36400,12 +36400,6 @@
     "quarter":3,
     "name":"Classic ASP",
     "count":783
-  },
-  {
-    "year":2019,
-    "quarter":3,
-    "name":"MDX",
-    "count":781
   },
   {
     "year":2019,
@@ -36620,12 +36614,6 @@
   {
     "year":2019,
     "quarter":3,
-    "name":"Astro",
-    "count":316
-  },
-  {
-    "year":2019,
-    "quarter":3,
     "name":"Ballerina",
     "count":314
   },
@@ -36741,12 +36729,6 @@
     "year":2019,
     "quarter":3,
     "name":"DM",
-    "count":188
-  },
-  {
-    "year":2019,
-    "quarter":3,
-    "name":"OpenQASM",
     "count":188
   },
   {
@@ -37358,6 +37340,12 @@
   {
     "year":2019,
     "quarter":3,
+    "name":"OpenQASM",
+    "count":17
+  },
+  {
+    "year":2019,
+    "quarter":3,
     "name":"PEG.js",
     "count":17
   },
@@ -37521,37 +37509,37 @@
     "year":2019,
     "quarter":4,
     "name":"Python",
-    "count":1186725
+    "count":1187948
   },
   {
     "year":2019,
     "quarter":4,
     "name":"JavaScript",
-    "count":1130411
+    "count":1115565
   },
   {
     "year":2019,
     "quarter":4,
     "name":"Java",
-    "count":568502
+    "count":569420
   },
   {
     "year":2019,
     "quarter":4,
     "name":"Go",
-    "count":508932
+    "count":508564
   },
   {
     "year":2019,
     "quarter":4,
     "name":"TypeScript",
-    "count":438647
+    "count":441232
   },
   {
     "year":2019,
     "quarter":4,
     "name":"C++",
-    "count":397898
+    "count":397491
   },
   {
     "year":2019,
@@ -37563,37 +37551,37 @@
     "year":2019,
     "quarter":4,
     "name":"PHP",
-    "count":219429
+    "count":219212
   },
   {
     "year":2019,
     "quarter":4,
     "name":"C#",
-    "count":204721
+    "count":204814
   },
   {
     "year":2019,
     "quarter":4,
     "name":"Jupyter Notebook",
-    "count":199982
+    "count":199992
   },
   {
     "year":2019,
     "quarter":4,
     "name":"Shell",
-    "count":185389
+    "count":187434
   },
   {
     "year":2019,
     "quarter":4,
     "name":"HTML",
-    "count":173570
+    "count":173699
   },
   {
     "year":2019,
     "quarter":4,
     "name":"Rust",
-    "count":127640
+    "count":128373
   },
   {
     "year":2019,
@@ -37611,25 +37599,25 @@
     "year":2019,
     "quarter":4,
     "name":"Dart",
-    "count":80248
+    "count":80345
   },
   {
     "year":2019,
     "quarter":4,
     "name":"CSS",
-    "count":74412
-  },
-  {
-    "year":2019,
-    "quarter":4,
-    "name":"Ruby",
-    "count":73616
+    "count":74171
   },
   {
     "year":2019,
     "quarter":4,
     "name":"Vue",
     "count":73492
+  },
+  {
+    "year":2019,
+    "quarter":4,
+    "name":"Ruby",
+    "count":73226
   },
   {
     "year":2019,
@@ -37652,26 +37640,26 @@
   {
     "year":2019,
     "quarter":4,
+    "name":"Dockerfile",
+    "count":21222
+  },
+  {
+    "year":2019,
+    "quarter":4,
     "name":"Scala",
-    "count":19742
+    "count":20010
   },
   {
     "year":2019,
     "quarter":4,
     "name":"Lua",
-    "count":18977
+    "count":19000
   },
   {
     "year":2019,
     "quarter":4,
     "name":"PowerShell",
     "count":18946
-  },
-  {
-    "year":2019,
-    "quarter":4,
-    "name":"Dockerfile",
-    "count":16918
   },
   {
     "year":2019,
@@ -37683,7 +37671,7 @@
     "year":2019,
     "quarter":4,
     "name":"Makefile",
-    "count":15935
+    "count":15923
   },
   {
     "year":2019,
@@ -37713,7 +37701,7 @@
     "year":2019,
     "quarter":4,
     "name":"Elixir",
-    "count":10150
+    "count":9882
   },
   {
     "year":2019,
@@ -37754,14 +37742,14 @@
   {
     "year":2019,
     "quarter":4,
-    "name":"Standard ML",
+    "name":"Jinja",
     "count":4826
   },
   {
     "year":2019,
     "quarter":4,
-    "name":"Jinja",
-    "count":4816
+    "name":"Standard ML",
+    "count":4826
   },
   {
     "year":2019,
@@ -37904,6 +37892,12 @@
   {
     "year":2019,
     "quarter":4,
+    "name":"Astro",
+    "count":2314
+  },
+  {
+    "year":2019,
+    "quarter":4,
     "name":"Objective-C++",
     "count":2266
   },
@@ -37982,6 +37976,12 @@
   {
     "year":2019,
     "quarter":4,
+    "name":"MDX",
+    "count":1332
+  },
+  {
+    "year":2019,
+    "quarter":4,
     "name":"Mustache",
     "count":1289
   },
@@ -37990,12 +37990,6 @@
     "quarter":4,
     "name":"Haxe",
     "count":1251
-  },
-  {
-    "year":2019,
-    "quarter":4,
-    "name":"MDX",
-    "count":1247
   },
   {
     "year":2019,
@@ -38037,7 +38031,7 @@
     "year":2019,
     "quarter":4,
     "name":"Cython",
-    "count":961
+    "count":985
   },
   {
     "year":2019,
@@ -38258,12 +38252,6 @@
   {
     "year":2019,
     "quarter":4,
-    "name":"Astro",
-    "count":348
-  },
-  {
-    "year":2019,
-    "quarter":4,
     "name":"AutoIt",
     "count":346
   },
@@ -38302,12 +38290,6 @@
     "quarter":4,
     "name":"Prolog",
     "count":288
-  },
-  {
-    "year":2019,
-    "quarter":4,
-    "name":"OpenQASM",
-    "count":287
   },
   {
     "year":2019,
@@ -39158,6 +39140,12 @@
   {
     "year":2019,
     "quarter":4,
+    "name":"OpenQASM",
+    "count":12
+  },
+  {
+    "year":2019,
+    "quarter":4,
     "name":"PicoLisp",
     "count":12
   },
@@ -39249,37 +39237,37 @@
     "year":2020,
     "quarter":1,
     "name":"Python",
-    "count":894399
+    "count":895074
   },
   {
     "year":2020,
     "quarter":1,
     "name":"JavaScript",
-    "count":887126
+    "count":875273
   },
   {
     "year":2020,
     "quarter":1,
     "name":"Go",
-    "count":405594
+    "count":405216
   },
   {
     "year":2020,
     "quarter":1,
     "name":"TypeScript",
-    "count":397812
+    "count":400020
   },
   {
     "year":2020,
     "quarter":1,
     "name":"Java",
-    "count":394809
+    "count":395506
   },
   {
     "year":2020,
     "quarter":1,
     "name":"C++",
-    "count":325901
+    "count":325428
   },
   {
     "year":2020,
@@ -39291,37 +39279,37 @@
     "year":2020,
     "quarter":1,
     "name":"C#",
-    "count":181877
+    "count":181950
   },
   {
     "year":2020,
     "quarter":1,
     "name":"Shell",
-    "count":167381
+    "count":168877
   },
   {
     "year":2020,
     "quarter":1,
     "name":"PHP",
-    "count":161980
+    "count":161752
   },
   {
     "year":2020,
     "quarter":1,
     "name":"Jupyter Notebook",
-    "count":158160
+    "count":158237
   },
   {
     "year":2020,
     "quarter":1,
     "name":"HTML",
-    "count":142075
+    "count":142220
   },
   {
     "year":2020,
     "quarter":1,
     "name":"Rust",
-    "count":125819
+    "count":126451
   },
   {
     "year":2020,
@@ -39339,7 +39327,7 @@
     "year":2020,
     "quarter":1,
     "name":"Dart",
-    "count":67476
+    "count":67544
   },
   {
     "year":2020,
@@ -39351,13 +39339,13 @@
     "year":2020,
     "quarter":1,
     "name":"Ruby",
-    "count":57655
+    "count":57389
   },
   {
     "year":2020,
     "quarter":1,
     "name":"CSS",
-    "count":54810
+    "count":54600
   },
   {
     "year":2020,
@@ -39376,6 +39364,12 @@
     "quarter":1,
     "name":"Markdown",
     "count":19189
+  },
+  {
+    "year":2020,
+    "quarter":1,
+    "name":"Dockerfile",
+    "count":18459
   },
   {
     "year":2020,
@@ -39399,19 +39393,13 @@
     "year":2020,
     "quarter":1,
     "name":"Lua",
-    "count":14219
-  },
-  {
-    "year":2020,
-    "quarter":1,
-    "name":"Dockerfile",
-    "count":14131
+    "count":14240
   },
   {
     "year":2020,
     "quarter":1,
     "name":"Haskell",
-    "count":13210
+    "count":13200
   },
   {
     "year":2020,
@@ -39423,7 +39411,7 @@
     "year":2020,
     "quarter":1,
     "name":"Scala",
-    "count":12723
+    "count":12841
   },
   {
     "year":2020,
@@ -39447,7 +39435,7 @@
     "year":2020,
     "quarter":1,
     "name":"Elixir",
-    "count":9292
+    "count":9174
   },
   {
     "year":2020,
@@ -39495,7 +39483,7 @@
     "year":2020,
     "quarter":1,
     "name":"Jinja",
-    "count":3640
+    "count":3651
   },
   {
     "year":2020,
@@ -39680,6 +39668,12 @@
   {
     "year":2020,
     "quarter":1,
+    "name":"Astro",
+    "count":1461
+  },
+  {
+    "year":2020,
+    "quarter":1,
     "name":"Jsonnet",
     "count":1459
   },
@@ -39694,6 +39688,12 @@
     "quarter":1,
     "name":"Zig",
     "count":1306
+  },
+  {
+    "year":2020,
+    "quarter":1,
+    "name":"MDX",
+    "count":1277
   },
   {
     "year":2020,
@@ -39718,12 +39718,6 @@
     "quarter":1,
     "name":"Elm",
     "count":1205
-  },
-  {
-    "year":2020,
-    "quarter":1,
-    "name":"MDX",
-    "count":1180
   },
   {
     "year":2020,
@@ -39801,7 +39795,7 @@
     "year":2020,
     "quarter":1,
     "name":"Cython",
-    "count":708
+    "count":722
   },
   {
     "year":2020,
@@ -39982,12 +39976,6 @@
     "quarter":1,
     "name":"Tcl",
     "count":308
-  },
-  {
-    "year":2020,
-    "quarter":1,
-    "name":"Astro",
-    "count":274
   },
   {
     "year":2020,
@@ -40191,12 +40179,6 @@
     "year":2020,
     "quarter":1,
     "name":"Lean",
-    "count":135
-  },
-  {
-    "year":2020,
-    "quarter":1,
-    "name":"OpenQASM",
     "count":135
   },
   {
@@ -40778,6 +40760,12 @@
   {
     "year":2020,
     "quarter":1,
+    "name":"OpenQASM",
+    "count":12
+  },
+  {
+    "year":2020,
+    "quarter":1,
     "name":"SAS",
     "count":12
   },
@@ -40887,37 +40875,37 @@
     "year":2020,
     "quarter":2,
     "name":"Python",
-    "count":1360367
+    "count":1362067
   },
   {
     "year":2020,
     "quarter":2,
     "name":"JavaScript",
-    "count":1254823
+    "count":1237892
   },
   {
     "year":2020,
     "quarter":2,
     "name":"TypeScript",
-    "count":614432
-  },
-  {
-    "year":2020,
-    "quarter":2,
-    "name":"Go",
-    "count":578088
+    "count":617794
   },
   {
     "year":2020,
     "quarter":2,
     "name":"Java",
-    "count":576650
+    "count":577761
+  },
+  {
+    "year":2020,
+    "quarter":2,
+    "name":"Go",
+    "count":577537
   },
   {
     "year":2020,
     "quarter":2,
     "name":"C++",
-    "count":513227
+    "count":512196
   },
   {
     "year":2020,
@@ -40929,37 +40917,37 @@
     "year":2020,
     "quarter":2,
     "name":"C#",
-    "count":277786
+    "count":277908
   },
   {
     "year":2020,
     "quarter":2,
     "name":"Shell",
-    "count":259442
+    "count":261507
   },
   {
     "year":2020,
     "quarter":2,
     "name":"Jupyter Notebook",
-    "count":220314
+    "count":220356
   },
   {
     "year":2020,
     "quarter":2,
     "name":"PHP",
-    "count":204213
+    "count":204008
   },
   {
     "year":2020,
     "quarter":2,
     "name":"HTML",
-    "count":202993
+    "count":203090
   },
   {
     "year":2020,
     "quarter":2,
     "name":"Rust",
-    "count":193515
+    "count":194217
   },
   {
     "year":2020,
@@ -40977,25 +40965,25 @@
     "year":2020,
     "quarter":2,
     "name":"Dart",
-    "count":103065
+    "count":103231
   },
   {
     "year":2020,
     "quarter":2,
     "name":"CSS",
-    "count":85538
+    "count":85343
   },
   {
     "year":2020,
     "quarter":2,
     "name":"Vue",
-    "count":82556
+    "count":82546
   },
   {
     "year":2020,
     "quarter":2,
     "name":"Ruby",
-    "count":81201
+    "count":80895
   },
   {
     "year":2020,
@@ -41036,6 +41024,12 @@
   {
     "year":2020,
     "quarter":2,
+    "name":"Dockerfile",
+    "count":22595
+  },
+  {
+    "year":2020,
+    "quarter":2,
     "name":"R",
     "count":22325
   },
@@ -41055,7 +41049,7 @@
     "year":2020,
     "quarter":2,
     "name":"Scala",
-    "count":19010
+    "count":19310
   },
   {
     "year":2020,
@@ -41072,14 +41066,8 @@
   {
     "year":2020,
     "quarter":2,
-    "name":"Dockerfile",
-    "count":17042
-  },
-  {
-    "year":2020,
-    "quarter":2,
     "name":"Elixir",
-    "count":16157
+    "count":15857
   },
   {
     "year":2020,
@@ -41312,6 +41300,12 @@
   {
     "year":2020,
     "quarter":2,
+    "name":"Astro",
+    "count":2072
+  },
+  {
+    "year":2020,
+    "quarter":2,
     "name":"Nix",
     "count":2013
   },
@@ -41402,6 +41396,12 @@
   {
     "year":2020,
     "quarter":2,
+    "name":"MDX",
+    "count":1426
+  },
+  {
+    "year":2020,
+    "quarter":2,
     "name":"Jsonnet",
     "count":1420
   },
@@ -41420,26 +41420,20 @@
   {
     "year":2020,
     "quarter":2,
-    "name":"MDX",
-    "count":1291
-  },
-  {
-    "year":2020,
-    "quarter":2,
     "name":"Visual Basic .NET",
     "count":1204
   },
   {
     "year":2020,
     "quarter":2,
-    "name":"AutoHotkey",
-    "count":1181
+    "name":"Cython",
+    "count":1200
   },
   {
     "year":2020,
     "quarter":2,
-    "name":"Cython",
-    "count":1178
+    "name":"AutoHotkey",
+    "count":1181
   },
   {
     "year":2020,
@@ -41690,12 +41684,6 @@
   {
     "year":2020,
     "quarter":2,
-    "name":"Astro",
-    "count":374
-  },
-  {
-    "year":2020,
-    "quarter":2,
     "name":"Smalltalk",
     "count":369
   },
@@ -41896,12 +41884,6 @@
     "quarter":2,
     "name":"Forth",
     "count":200
-  },
-  {
-    "year":2020,
-    "quarter":2,
-    "name":"OpenQASM",
-    "count":198
   },
   {
     "year":2020,
@@ -42386,6 +42368,12 @@
   {
     "year":2020,
     "quarter":2,
+    "name":"OpenQASM",
+    "count":35
+  },
+  {
+    "year":2020,
+    "quarter":2,
     "name":"AMPL",
     "count":33
   },
@@ -42777,79 +42765,79 @@
     "year":2020,
     "quarter":3,
     "name":"Python",
-    "count":1271949
+    "count":1273286
   },
   {
     "year":2020,
     "quarter":3,
     "name":"JavaScript",
-    "count":1135207
+    "count":1117142
   },
   {
     "year":2020,
     "quarter":3,
     "name":"TypeScript",
-    "count":593593
+    "count":598966
   },
   {
     "year":2020,
     "quarter":3,
     "name":"Go",
-    "count":542406
+    "count":541867
   },
   {
     "year":2020,
     "quarter":3,
     "name":"Java",
-    "count":523380
+    "count":524034
   },
   {
     "year":2020,
     "quarter":3,
     "name":"C++",
-    "count":457943
+    "count":457503
   },
   {
     "year":2020,
     "quarter":3,
     "name":"C",
-    "count":315834
+    "count":315812
   },
   {
     "year":2020,
     "quarter":3,
     "name":"C#",
-    "count":241148
+    "count":241342
   },
   {
     "year":2020,
     "quarter":3,
     "name":"Shell",
-    "count":211584
+    "count":213588
   },
   {
     "year":2020,
     "quarter":3,
     "name":"Jupyter Notebook",
-    "count":201485
+    "count":201508
   },
   {
     "year":2020,
     "quarter":3,
     "name":"PHP",
-    "count":181761
-  },
-  {
-    "year":2020,
-    "quarter":3,
-    "name":"Rust",
-    "count":177774
+    "count":181518
   },
   {
     "year":2020,
     "quarter":3,
     "name":"HTML",
-    "count":175955
+    "count":178799
+  },
+  {
+    "year":2020,
+    "quarter":3,
+    "name":"Rust",
+    "count":178416
   },
   {
     "year":2020,
@@ -42867,25 +42855,25 @@
     "year":2020,
     "quarter":3,
     "name":"Dart",
-    "count":99802
+    "count":100126
   },
   {
     "year":2020,
     "quarter":3,
     "name":"Vue",
-    "count":78518
+    "count":76270
   },
   {
     "year":2020,
     "quarter":3,
     "name":"CSS",
-    "count":75551
+    "count":75361
   },
   {
     "year":2020,
     "quarter":3,
     "name":"Ruby",
-    "count":73877
+    "count":73615
   },
   {
     "year":2020,
@@ -42920,20 +42908,26 @@
   {
     "year":2020,
     "quarter":3,
+    "name":"Dockerfile",
+    "count":18909
+  },
+  {
+    "year":2020,
+    "quarter":3,
     "name":"TeX",
     "count":18400
   },
   {
     "year":2020,
     "quarter":3,
-    "name":"SCSS",
-    "count":17774
+    "name":"Scala",
+    "count":17909
   },
   {
     "year":2020,
     "quarter":3,
-    "name":"Scala",
-    "count":17714
+    "name":"SCSS",
+    "count":17774
   },
   {
     "year":2020,
@@ -42945,7 +42939,7 @@
     "year":2020,
     "quarter":3,
     "name":"Makefile",
-    "count":16055
+    "count":16037
   },
   {
     "year":2020,
@@ -42957,7 +42951,7 @@
     "year":2020,
     "quarter":3,
     "name":"Elixir",
-    "count":15182
+    "count":14987
   },
   {
     "year":2020,
@@ -42970,12 +42964,6 @@
     "quarter":3,
     "name":"Julia",
     "count":13299
-  },
-  {
-    "year":2020,
-    "quarter":3,
-    "name":"Dockerfile",
-    "count":13030
   },
   {
     "year":2020,
@@ -43238,6 +43226,12 @@
   {
     "year":2020,
     "quarter":3,
+    "name":"Astro",
+    "count":1584
+  },
+  {
+    "year":2020,
+    "quarter":3,
     "name":"Visual Basic .NET",
     "count":1534
   },
@@ -43246,6 +43240,12 @@
     "quarter":3,
     "name":"XSLT",
     "count":1517
+  },
+  {
+    "year":2020,
+    "quarter":3,
+    "name":"MDX",
+    "count":1503
   },
   {
     "year":2020,
@@ -43268,20 +43268,14 @@
   {
     "year":2020,
     "quarter":3,
-    "name":"MDX",
-    "count":1389
+    "name":"Cython",
+    "count":1387
   },
   {
     "year":2020,
     "quarter":3,
     "name":"Handlebars",
     "count":1384
-  },
-  {
-    "year":2020,
-    "quarter":3,
-    "name":"Cython",
-    "count":1362
   },
   {
     "year":2020,
@@ -43550,12 +43544,6 @@
   {
     "year":2020,
     "quarter":3,
-    "name":"Astro",
-    "count":331
-  },
-  {
-    "year":2020,
-    "quarter":3,
     "name":"Gnuplot",
     "count":331
   },
@@ -43576,12 +43564,6 @@
     "quarter":3,
     "name":"Awk",
     "count":307
-  },
-  {
-    "year":2020,
-    "quarter":3,
-    "name":"OpenQASM",
-    "count":304
   },
   {
     "year":2020,
@@ -44132,6 +44114,12 @@
   {
     "year":2020,
     "quarter":3,
+    "name":"OpenQASM",
+    "count":43
+  },
+  {
+    "year":2020,
+    "quarter":3,
     "name":"RobotFramework",
     "count":43
   },
@@ -44601,85 +44589,85 @@
     "year":2020,
     "quarter":4,
     "name":"Python",
-    "count":1388694
+    "count":1390601
   },
   {
     "year":2020,
     "quarter":4,
     "name":"JavaScript",
-    "count":1175686
+    "count":1153638
   },
   {
     "year":2020,
     "quarter":4,
     "name":"TypeScript",
-    "count":630669
+    "count":640045
   },
   {
     "year":2020,
     "quarter":4,
     "name":"Go",
-    "count":587043
+    "count":583142
   },
   {
     "year":2020,
     "quarter":4,
     "name":"Java",
-    "count":503037
+    "count":503791
   },
   {
     "year":2020,
     "quarter":4,
     "name":"C++",
-    "count":489573
+    "count":489100
   },
   {
     "year":2020,
     "quarter":4,
     "name":"C",
-    "count":342863
+    "count":342851
   },
   {
     "year":2020,
     "quarter":4,
     "name":"C#",
-    "count":260051
+    "count":260200
   },
   {
     "year":2020,
     "quarter":4,
     "name":"Shell",
-    "count":227275
+    "count":228830
   },
   {
     "year":2020,
     "quarter":4,
     "name":"HTML",
-    "count":202074
-  },
-  {
-    "year":2020,
-    "quarter":4,
-    "name":"Jupyter Notebook",
-    "count":195997
+    "count":208279
   },
   {
     "year":2020,
     "quarter":4,
     "name":"Rust",
-    "count":195832
+    "count":196503
+  },
+  {
+    "year":2020,
+    "quarter":4,
+    "name":"Jupyter Notebook",
+    "count":196054
   },
   {
     "year":2020,
     "quarter":4,
     "name":"PHP",
-    "count":191140
+    "count":190947
   },
   {
     "year":2020,
     "quarter":4,
     "name":"Swift",
-    "count":129727
+    "count":129926
   },
   {
     "year":2020,
@@ -44690,32 +44678,32 @@
   {
     "year":2020,
     "quarter":4,
-    "name":"Vue",
-    "count":81828
+    "name":"Dart",
+    "count":81486
   },
   {
     "year":2020,
     "quarter":4,
-    "name":"Dart",
-    "count":81181
+    "name":"Vue",
+    "count":79090
   },
   {
     "year":2020,
     "quarter":4,
     "name":"Ruby",
-    "count":78219
+    "count":77972
   },
   {
     "year":2020,
     "quarter":4,
     "name":"CSS",
-    "count":78110
+    "count":77953
   },
   {
     "year":2020,
     "quarter":4,
     "name":"Objective-C",
-    "count":52227
+    "count":52028
   },
   {
     "year":2020,
@@ -44733,7 +44721,7 @@
     "year":2020,
     "quarter":4,
     "name":"Lua",
-    "count":27029
+    "count":27051
   },
   {
     "year":2020,
@@ -44746,6 +44734,12 @@
     "quarter":4,
     "name":"TeX",
     "count":22606
+  },
+  {
+    "year":2020,
+    "quarter":4,
+    "name":"Dockerfile",
+    "count":20821
   },
   {
     "year":2020,
@@ -44763,7 +44757,7 @@
     "year":2020,
     "quarter":4,
     "name":"Scala",
-    "count":17015
+    "count":17267
   },
   {
     "year":2020,
@@ -44787,13 +44781,7 @@
     "year":2020,
     "quarter":4,
     "name":"Elixir",
-    "count":15576
-  },
-  {
-    "year":2020,
-    "quarter":4,
-    "name":"Dockerfile",
-    "count":15214
+    "count":15324
   },
   {
     "year":2020,
@@ -45092,6 +45080,12 @@
   {
     "year":2020,
     "quarter":4,
+    "name":"Astro",
+    "count":1537
+  },
+  {
+    "year":2020,
+    "quarter":4,
     "name":"Jsonnet",
     "count":1537
   },
@@ -45116,20 +45110,20 @@
   {
     "year":2020,
     "quarter":4,
-    "name":"SystemVerilog",
-    "count":1196
+    "name":"MDX",
+    "count":1276
   },
   {
     "year":2020,
     "quarter":4,
     "name":"Cython",
-    "count":1162
+    "count":1203
   },
   {
     "year":2020,
     "quarter":4,
-    "name":"MDX",
-    "count":1160
+    "name":"SystemVerilog",
+    "count":1196
   },
   {
     "year":2020,
@@ -45374,12 +45368,6 @@
   {
     "year":2020,
     "quarter":4,
-    "name":"ReScript",
-    "count":416
-  },
-  {
-    "year":2020,
-    "quarter":4,
     "name":"YAML",
     "count":410
   },
@@ -45388,6 +45376,12 @@
     "quarter":4,
     "name":"Gherkin",
     "count":408
+  },
+  {
+    "year":2020,
+    "quarter":4,
+    "name":"ReScript",
+    "count":406
   },
   {
     "year":2020,
@@ -45423,12 +45417,6 @@
     "year":2020,
     "quarter":4,
     "name":"AppleScript",
-    "count":328
-  },
-  {
-    "year":2020,
-    "quarter":4,
-    "name":"OpenQASM",
     "count":328
   },
   {
@@ -45490,12 +45478,6 @@
     "quarter":4,
     "name":"VBScript",
     "count":283
-  },
-  {
-    "year":2020,
-    "quarter":4,
-    "name":"Astro",
-    "count":282
   },
   {
     "year":2020,
@@ -46172,6 +46154,12 @@
   {
     "year":2020,
     "quarter":4,
+    "name":"OpenQASM",
+    "count":22
+  },
+  {
+    "year":2020,
+    "quarter":4,
     "name":"Inform 7",
     "count":21
   },
@@ -46428,124 +46416,130 @@
     "count":10
   },
   {
+    "year":2020,
+    "quarter":4,
+    "name":"Valve Data Format",
+    "count":10
+  },
+  {
     "year":2021,
     "quarter":1,
     "name":"Python",
-    "count":1923854
+    "count":1930770
   },
   {
     "year":2021,
     "quarter":1,
     "name":"JavaScript",
-    "count":1656036
+    "count":1624776
   },
   {
     "year":2021,
     "quarter":1,
     "name":"TypeScript",
-    "count":964397
+    "count":972348
   },
   {
     "year":2021,
     "quarter":1,
     "name":"Go",
-    "count":807377
+    "count":804329
   },
   {
     "year":2021,
     "quarter":1,
     "name":"C++",
-    "count":688427
+    "count":687730
   },
   {
     "year":2021,
     "quarter":1,
     "name":"Java",
-    "count":681479
+    "count":682391
   },
   {
     "year":2021,
     "quarter":1,
     "name":"C",
-    "count":504271
+    "count":504259
   },
   {
     "year":2021,
     "quarter":1,
     "name":"C#",
-    "count":407837
+    "count":408034
   },
   {
     "year":2021,
     "quarter":1,
     "name":"Shell",
-    "count":324597
+    "count":326689
   },
   {
     "year":2021,
     "quarter":1,
     "name":"Rust",
-    "count":313598
+    "count":314893
   },
   {
     "year":2021,
     "quarter":1,
     "name":"PHP",
-    "count":281820
-  },
-  {
-    "year":2021,
-    "quarter":1,
-    "name":"Jupyter Notebook",
-    "count":265789
+    "count":281569
   },
   {
     "year":2021,
     "quarter":1,
     "name":"HTML",
-    "count":265589
+    "count":273908
+  },
+  {
+    "year":2021,
+    "quarter":1,
+    "name":"Jupyter Notebook",
+    "count":265928
   },
   {
     "year":2021,
     "quarter":1,
     "name":"Swift",
-    "count":190737
+    "count":190924
   },
   {
     "year":2021,
     "quarter":1,
     "name":"Kotlin",
-    "count":156392
-  },
-  {
-    "year":2021,
-    "quarter":1,
-    "name":"Vue",
-    "count":113981
+    "count":156376
   },
   {
     "year":2021,
     "quarter":1,
     "name":"Dart",
-    "count":113601
+    "count":114192
+  },
+  {
+    "year":2021,
+    "quarter":1,
+    "name":"Vue",
+    "count":111350
   },
   {
     "year":2021,
     "quarter":1,
     "name":"Ruby",
-    "count":109669
+    "count":109359
   },
   {
     "year":2021,
     "quarter":1,
     "name":"CSS",
-    "count":104335
+    "count":104040
   },
   {
     "year":2021,
     "quarter":1,
     "name":"Objective-C",
-    "count":67621
+    "count":67434
   },
   {
     "year":2021,
@@ -46570,6 +46564,12 @@
     "quarter":1,
     "name":"TeX",
     "count":36591
+  },
+  {
+    "year":2021,
+    "quarter":1,
+    "name":"Dockerfile",
+    "count":30788
   },
   {
     "year":2021,
@@ -46599,25 +46599,19 @@
     "year":2021,
     "quarter":1,
     "name":"Elixir",
-    "count":25206
-  },
-  {
-    "year":2021,
-    "quarter":1,
-    "name":"Dockerfile",
-    "count":24546
+    "count":24933
   },
   {
     "year":2021,
     "quarter":1,
     "name":"Scala",
-    "count":23842
+    "count":24115
   },
   {
     "year":2021,
     "quarter":1,
     "name":"Makefile",
-    "count":22748
+    "count":22725
   },
   {
     "year":2021,
@@ -46964,6 +46958,12 @@
   {
     "year":2021,
     "quarter":1,
+    "name":"Astro",
+    "count":1924
+  },
+  {
+    "year":2021,
+    "quarter":1,
     "name":"XSLT",
     "count":1894
   },
@@ -46972,6 +46972,12 @@
     "quarter":1,
     "name":"OpenSCAD",
     "count":1845
+  },
+  {
+    "year":2021,
+    "quarter":1,
+    "name":"Cython",
+    "count":1809
   },
   {
     "year":2021,
@@ -46988,8 +46994,8 @@
   {
     "year":2021,
     "quarter":1,
-    "name":"Cython",
-    "count":1774
+    "name":"MDX",
+    "count":1682
   },
   {
     "year":2021,
@@ -47014,12 +47020,6 @@
     "quarter":1,
     "name":"EJS",
     "count":1584
-  },
-  {
-    "year":2021,
-    "quarter":1,
-    "name":"MDX",
-    "count":1544
   },
   {
     "year":2021,
@@ -47248,18 +47248,6 @@
     "quarter":1,
     "name":"Idris",
     "count":455
-  },
-  {
-    "year":2021,
-    "quarter":1,
-    "name":"Astro",
-    "count":427
-  },
-  {
-    "year":2021,
-    "quarter":1,
-    "name":"OpenQASM",
-    "count":426
   },
   {
     "year":2021,
@@ -48158,6 +48146,12 @@
   {
     "year":2021,
     "quarter":1,
+    "name":"OpenQASM",
+    "count":23
+  },
+  {
+    "year":2021,
+    "quarter":1,
     "name":"Scilab",
     "count":23
   },
@@ -48405,115 +48399,115 @@
     "year":2021,
     "quarter":2,
     "name":"Python",
-    "count":1310163
+    "count":1313746
   },
   {
     "year":2021,
     "quarter":2,
     "name":"JavaScript",
-    "count":1052612
+    "count":1031027
   },
   {
     "year":2021,
     "quarter":2,
     "name":"TypeScript",
-    "count":746228
+    "count":751208
   },
   {
     "year":2021,
     "quarter":2,
     "name":"Go",
-    "count":571231
+    "count":570307
   },
   {
     "year":2021,
     "quarter":2,
     "name":"C++",
-    "count":481313
+    "count":480948
   },
   {
     "year":2021,
     "quarter":2,
     "name":"Java",
-    "count":465308
+    "count":465764
   },
   {
     "year":2021,
     "quarter":2,
     "name":"C",
-    "count":333385
+    "count":333597
   },
   {
     "year":2021,
     "quarter":2,
     "name":"C#",
-    "count":252440
+    "count":252551
   },
   {
     "year":2021,
     "quarter":2,
     "name":"Rust",
-    "count":236673
+    "count":237230
   },
   {
     "year":2021,
     "quarter":2,
     "name":"Shell",
-    "count":197864
+    "count":199259
   },
   {
     "year":2021,
     "quarter":2,
     "name":"Jupyter Notebook",
-    "count":171297
-  },
-  {
-    "year":2021,
-    "quarter":2,
-    "name":"PHP",
-    "count":158119
+    "count":171336
   },
   {
     "year":2021,
     "quarter":2,
     "name":"HTML",
-    "count":157708
+    "count":163092
+  },
+  {
+    "year":2021,
+    "quarter":2,
+    "name":"PHP",
+    "count":157910
   },
   {
     "year":2021,
     "quarter":2,
     "name":"Swift",
-    "count":116258
+    "count":116327
   },
   {
     "year":2021,
     "quarter":2,
     "name":"Kotlin",
-    "count":105383
+    "count":105419
   },
   {
     "year":2021,
     "quarter":2,
     "name":"Dart",
-    "count":78842
+    "count":79316
   },
   {
     "year":2021,
     "quarter":2,
     "name":"Vue",
-    "count":69213
+    "count":68005
   },
   {
     "year":2021,
     "quarter":2,
     "name":"CSS",
-    "count":63948
+    "count":63814
   },
   {
     "year":2021,
     "quarter":2,
     "name":"Ruby",
-    "count":63888
+    "count":63700
   },
   {
     "year":2021,
@@ -48525,7 +48519,7 @@
     "year":2021,
     "quarter":2,
     "name":"Objective-C",
-    "count":35173
+    "count":35074
   },
   {
     "year":2021,
@@ -48537,13 +48531,19 @@
     "year":2021,
     "quarter":2,
     "name":"PowerShell",
-    "count":26137
+    "count":25910
   },
   {
     "year":2021,
     "quarter":2,
     "name":"TeX",
     "count":21219
+  },
+  {
+    "year":2021,
+    "quarter":2,
+    "name":"Dockerfile",
+    "count":18414
   },
   {
     "year":2021,
@@ -48555,13 +48555,13 @@
     "year":2021,
     "quarter":2,
     "name":"Scala",
-    "count":16159
+    "count":16296
   },
   {
     "year":2021,
     "quarter":2,
     "name":"Elixir",
-    "count":15560
+    "count":15423
   },
   {
     "year":2021,
@@ -48573,7 +48573,7 @@
     "year":2021,
     "quarter":2,
     "name":"Makefile",
-    "count":15013
+    "count":14999
   },
   {
     "year":2021,
@@ -48598,12 +48598,6 @@
     "quarter":2,
     "name":"Assembly",
     "count":13387
-  },
-  {
-    "year":2021,
-    "quarter":2,
-    "name":"Dockerfile",
-    "count":12866
   },
   {
     "year":2021,
@@ -48789,7 +48783,7 @@
     "year":2021,
     "quarter":2,
     "name":"Roff",
-    "count":2305
+    "count":2316
   },
   {
     "year":2021,
@@ -48927,7 +48921,7 @@
     "year":2021,
     "quarter":2,
     "name":"Cython",
-    "count":1161
+    "count":1177
   },
   {
     "year":2021,
@@ -48944,6 +48938,12 @@
   {
     "year":2021,
     "quarter":2,
+    "name":"Astro",
+    "count":1107
+  },
+  {
+    "year":2021,
+    "quarter":2,
     "name":"ReScript",
     "count":1096
   },
@@ -48952,6 +48952,12 @@
     "quarter":2,
     "name":"Fortran",
     "count":1057
+  },
+  {
+    "year":2021,
+    "quarter":2,
+    "name":"MDX",
+    "count":1050
   },
   {
     "year":2021,
@@ -48976,12 +48982,6 @@
     "quarter":2,
     "name":"Mathematica",
     "count":996
-  },
-  {
-    "year":2021,
-    "quarter":2,
-    "name":"MDX",
-    "count":991
   },
   {
     "year":2021,
@@ -49316,12 +49316,6 @@
   {
     "year":2021,
     "quarter":2,
-    "name":"OpenQASM",
-    "count":216
-  },
-  {
-    "year":2021,
-    "quarter":2,
     "name":"Idris",
     "count":211
   },
@@ -49342,12 +49336,6 @@
     "quarter":2,
     "name":"Motoko",
     "count":200
-  },
-  {
-    "year":2021,
-    "quarter":2,
-    "name":"Astro",
-    "count":198
   },
   {
     "year":2021,
@@ -50012,6 +50000,12 @@
   {
     "year":2021,
     "quarter":2,
+    "name":"OpenQASM",
+    "count":19
+  },
+  {
+    "year":2021,
+    "quarter":2,
     "name":"Kaitai Struct",
     "count":17
   },
@@ -50205,127 +50199,127 @@
     "year":2021,
     "quarter":3,
     "name":"Python",
-    "count":1335648
+    "count":1338960
   },
   {
     "year":2021,
     "quarter":3,
     "name":"JavaScript",
-    "count":1051669
+    "count":1033351
   },
   {
     "year":2021,
     "quarter":3,
     "name":"TypeScript",
-    "count":682651
+    "count":688303
   },
   {
     "year":2021,
     "quarter":3,
     "name":"Go",
-    "count":606555
+    "count":605968
   },
   {
     "year":2021,
     "quarter":3,
     "name":"C++",
-    "count":510677
+    "count":510285
   },
   {
     "year":2021,
     "quarter":3,
     "name":"Java",
-    "count":451952
+    "count":452506
   },
   {
     "year":2021,
     "quarter":3,
     "name":"C",
-    "count":354889
+    "count":354937
   },
   {
     "year":2021,
     "quarter":3,
     "name":"C#",
-    "count":258809
+    "count":258943
   },
   {
     "year":2021,
     "quarter":3,
     "name":"Rust",
-    "count":254728
+    "count":255295
   },
   {
     "year":2021,
     "quarter":3,
     "name":"Shell",
-    "count":204285
+    "count":205896
   },
   {
     "year":2021,
     "quarter":3,
     "name":"Jupyter Notebook",
-    "count":195115
+    "count":195111
   },
   {
     "year":2021,
     "quarter":3,
     "name":"HTML",
-    "count":168087
+    "count":171722
   },
   {
     "year":2021,
     "quarter":3,
     "name":"PHP",
-    "count":153571
+    "count":153371
   },
   {
     "year":2021,
     "quarter":3,
     "name":"Kotlin",
-    "count":108001
+    "count":108605
   },
   {
     "year":2021,
     "quarter":3,
     "name":"Swift",
-    "count":106464
+    "count":105940
   },
   {
     "year":2021,
     "quarter":3,
     "name":"Dart",
-    "count":77725
+    "count":77997
   },
   {
     "year":2021,
     "quarter":3,
     "name":"Vue",
-    "count":73161
+    "count":71759
   },
   {
     "year":2021,
     "quarter":3,
     "name":"CSS",
-    "count":68970
+    "count":68786
   },
   {
     "year":2021,
     "quarter":3,
     "name":"Ruby",
-    "count":67534
+    "count":67331
   },
   {
     "year":2021,
     "quarter":3,
     "name":"Lua",
-    "count":53266
+    "count":53323
   },
   {
     "year":2021,
     "quarter":3,
     "name":"Objective-C",
-    "count":32469
+    "count":32405
   },
   {
     "year":2021,
@@ -50337,7 +50331,7 @@
     "year":2021,
     "quarter":3,
     "name":"PowerShell",
-    "count":29638
+    "count":29549
   },
   {
     "year":2021,
@@ -50348,14 +50342,20 @@
   {
     "year":2021,
     "quarter":3,
+    "name":"Dockerfile",
+    "count":17780
+  },
+  {
+    "year":2021,
+    "quarter":3,
     "name":"SCSS",
-    "count":16622
+    "count":16635
   },
   {
     "year":2021,
     "quarter":3,
     "name":"Makefile",
-    "count":16051
+    "count":16036
   },
   {
     "year":2021,
@@ -50379,25 +50379,19 @@
     "year":2021,
     "quarter":3,
     "name":"Scala",
-    "count":14173
-  },
-  {
-    "year":2021,
-    "quarter":3,
-    "name":"Dockerfile",
-    "count":14083
-  },
-  {
-    "year":2021,
-    "quarter":3,
-    "name":"Elixir",
-    "count":13829
+    "count":14304
   },
   {
     "year":2021,
     "quarter":3,
     "name":"R",
     "count":13760
+  },
+  {
+    "year":2021,
+    "quarter":3,
+    "name":"Elixir",
+    "count":13698
   },
   {
     "year":2021,
@@ -50570,14 +50564,14 @@
   {
     "year":2021,
     "quarter":3,
-    "name":"Less",
-    "count":2536
+    "name":"Roff",
+    "count":2529
   },
   {
     "year":2021,
     "quarter":3,
-    "name":"Roff",
-    "count":2512
+    "name":"Less",
+    "count":2523
   },
   {
     "year":2021,
@@ -50744,20 +50738,26 @@
   {
     "year":2021,
     "quarter":3,
+    "name":"MDX",
+    "count":1199
+  },
+  {
+    "year":2021,
+    "quarter":3,
     "name":"YARA",
     "count":1157
   },
   {
     "year":2021,
     "quarter":3,
-    "name":"MDX",
-    "count":1127
+    "name":"Astro",
+    "count":1143
   },
   {
     "year":2021,
     "quarter":3,
     "name":"Cython",
-    "count":1095
+    "count":1111
   },
   {
     "year":2021,
@@ -51020,12 +51020,6 @@
   {
     "year":2021,
     "quarter":3,
-    "name":"Astro",
-    "count":316
-  },
-  {
-    "year":2021,
-    "quarter":3,
     "name":"VBScript",
     "count":305
   },
@@ -51124,12 +51118,6 @@
     "quarter":3,
     "name":"1C Enterprise",
     "count":183
-  },
-  {
-    "year":2021,
-    "quarter":3,
-    "name":"OpenQASM",
-    "count":182
   },
   {
     "year":2021,
@@ -51974,6 +51962,12 @@
   {
     "year":2021,
     "quarter":3,
+    "name":"OpenQASM",
+    "count":11
+  },
+  {
+    "year":2021,
+    "quarter":3,
     "name":"PicoLisp",
     "count":11
   },
@@ -52023,37 +52017,37 @@
     "year":2021,
     "quarter":4,
     "name":"Python",
-    "count":1161465
+    "count":1164722
   },
   {
     "year":2021,
     "quarter":4,
     "name":"JavaScript",
-    "count":862412
+    "count":843598
   },
   {
     "year":2021,
     "quarter":4,
     "name":"TypeScript",
-    "count":648675
+    "count":654515
   },
   {
     "year":2021,
     "quarter":4,
     "name":"Go",
-    "count":540752
+    "count":540720
   },
   {
     "year":2021,
     "quarter":4,
     "name":"C++",
-    "count":426454
+    "count":426171
   },
   {
     "year":2021,
     "quarter":4,
     "name":"Java",
-    "count":377645
+    "count":378102
   },
   {
     "year":2021,
@@ -52065,79 +52059,79 @@
     "year":2021,
     "quarter":4,
     "name":"C#",
-    "count":242587
+    "count":242719
   },
   {
     "year":2021,
     "quarter":4,
     "name":"Rust",
-    "count":236583
+    "count":237060
   },
   {
     "year":2021,
     "quarter":4,
     "name":"Shell",
-    "count":189488
+    "count":190569
   },
   {
     "year":2021,
     "quarter":4,
     "name":"PHP",
-    "count":166039
+    "count":165888
   },
   {
     "year":2021,
     "quarter":4,
     "name":"Jupyter Notebook",
-    "count":160360
+    "count":160327
   },
   {
     "year":2021,
     "quarter":4,
     "name":"HTML",
-    "count":150941
+    "count":154977
   },
   {
     "year":2021,
     "quarter":4,
     "name":"Swift",
-    "count":96864
+    "count":96762
   },
   {
     "year":2021,
     "quarter":4,
     "name":"Kotlin",
-    "count":91541
-  },
-  {
-    "year":2021,
-    "quarter":4,
-    "name":"Vue",
-    "count":63088
+    "count":91732
   },
   {
     "year":2021,
     "quarter":4,
     "name":"Dart",
-    "count":60730
+    "count":60892
+  },
+  {
+    "year":2021,
+    "quarter":4,
+    "name":"Vue",
+    "count":60455
   },
   {
     "year":2021,
     "quarter":4,
     "name":"CSS",
-    "count":56671
+    "count":56536
   },
   {
     "year":2021,
     "quarter":4,
     "name":"Ruby",
-    "count":55356
+    "count":55132
   },
   {
     "year":2021,
     "quarter":4,
     "name":"Lua",
-    "count":49393
+    "count":49410
   },
   {
     "year":2021,
@@ -52149,13 +52143,7 @@
     "year":2021,
     "quarter":4,
     "name":"Objective-C",
-    "count":23904
-  },
-  {
-    "year":2021,
-    "quarter":4,
-    "name":"PowerShell",
-    "count":23393
+    "count":23826
   },
   {
     "year":2021,
@@ -52166,14 +52154,26 @@
   {
     "year":2021,
     "quarter":4,
+    "name":"PowerShell",
+    "count":23306
+  },
+  {
+    "year":2021,
+    "quarter":4,
     "name":"SCSS",
-    "count":18464
+    "count":18665
   },
   {
     "year":2021,
     "quarter":4,
     "name":"Clojure",
     "count":15607
+  },
+  {
+    "year":2021,
+    "quarter":4,
+    "name":"Dockerfile",
+    "count":14416
   },
   {
     "year":2021,
@@ -52185,7 +52185,7 @@
     "year":2021,
     "quarter":4,
     "name":"Scala",
-    "count":13063
+    "count":13262
   },
   {
     "year":2021,
@@ -52196,20 +52196,8 @@
   {
     "year":2021,
     "quarter":4,
-    "name":"Dockerfile",
-    "count":12247
-  },
-  {
-    "year":2021,
-    "quarter":4,
     "name":"R",
     "count":11814
-  },
-  {
-    "year":2021,
-    "quarter":4,
-    "name":"Elixir",
-    "count":11009
   },
   {
     "year":2021,
@@ -52228,6 +52216,12 @@
     "quarter":4,
     "name":"Batchfile",
     "count":10814
+  },
+  {
+    "year":2021,
+    "quarter":4,
+    "name":"Elixir",
+    "count":10810
   },
   {
     "year":2021,
@@ -52508,6 +52502,12 @@
   {
     "year":2021,
     "quarter":4,
+    "name":"MDX",
+    "count":1279
+  },
+  {
+    "year":2021,
+    "quarter":4,
     "name":"CodeQL",
     "count":1255
   },
@@ -52526,12 +52526,6 @@
   {
     "year":2021,
     "quarter":4,
-    "name":"MDX",
-    "count":1214
-  },
-  {
-    "year":2021,
-    "quarter":4,
     "name":"TSQL",
     "count":1174
   },
@@ -52545,7 +52539,7 @@
     "year":2021,
     "quarter":4,
     "name":"Cython",
-    "count":1113
+    "count":1124
   },
   {
     "year":2021,
@@ -52570,6 +52564,12 @@
     "quarter":4,
     "name":"VHDL",
     "count":1045
+  },
+  {
+    "year":2021,
+    "quarter":4,
+    "name":"Astro",
+    "count":998
   },
   {
     "year":2021,
@@ -52646,12 +52646,6 @@
   {
     "year":2021,
     "quarter":4,
-    "name":"ReScript",
-    "count":727
-  },
-  {
-    "year":2021,
-    "quarter":4,
     "name":"NSIS",
     "count":725
   },
@@ -52660,6 +52654,12 @@
     "quarter":4,
     "name":"Adblock Filter List",
     "count":718
+  },
+  {
+    "year":2021,
+    "quarter":4,
+    "name":"ReScript",
+    "count":714
   },
   {
     "year":2021,
@@ -52750,12 +52750,6 @@
     "quarter":4,
     "name":"Classic ASP",
     "count":384
-  },
-  {
-    "year":2021,
-    "quarter":4,
-    "name":"Astro",
-    "count":379
   },
   {
     "year":2021,
@@ -52912,12 +52906,6 @@
     "quarter":4,
     "name":"Slash",
     "count":210
-  },
-  {
-    "year":2021,
-    "quarter":4,
-    "name":"OpenQASM",
-    "count":197
   },
   {
     "year":2021,
@@ -53516,6 +53504,12 @@
   {
     "year":2021,
     "quarter":4,
+    "name":"OpenQASM",
+    "count":27
+  },
+  {
+    "year":2021,
+    "quarter":4,
     "name":"UnrealScript",
     "count":27
   },
@@ -53732,6 +53726,12 @@
   {
     "year":2021,
     "quarter":4,
+    "name":"Valve Data Format",
+    "count":13
+  },
+  {
+    "year":2021,
+    "quarter":4,
     "name":"APL",
     "count":12
   },
@@ -53835,127 +53835,127 @@
     "year":2022,
     "quarter":1,
     "name":"Python",
-    "count":1485464
+    "count":1492990
   },
   {
     "year":2022,
     "quarter":1,
     "name":"JavaScript",
-    "count":1120924
+    "count":1094999
   },
   {
     "year":2022,
     "quarter":1,
     "name":"TypeScript",
-    "count":865942
+    "count":878008
   },
   {
     "year":2022,
     "quarter":1,
     "name":"Go",
-    "count":683941
+    "count":682941
   },
   {
     "year":2022,
     "quarter":1,
     "name":"C++",
-    "count":526164
+    "count":525693
   },
   {
     "year":2022,
     "quarter":1,
     "name":"Java",
-    "count":456726
+    "count":457415
   },
   {
     "year":2022,
     "quarter":1,
     "name":"C",
-    "count":385848
+    "count":385899
   },
   {
     "year":2022,
     "quarter":1,
     "name":"Rust",
-    "count":355752
+    "count":356477
   },
   {
     "year":2022,
     "quarter":1,
     "name":"C#",
-    "count":322307
+    "count":322407
   },
   {
     "year":2022,
     "quarter":1,
     "name":"Shell",
-    "count":284062
+    "count":285462
   },
   {
     "year":2022,
     "quarter":1,
     "name":"PHP",
-    "count":219494
+    "count":219324
   },
   {
     "year":2022,
     "quarter":1,
     "name":"HTML",
-    "count":206335
+    "count":210451
   },
   {
     "year":2022,
     "quarter":1,
     "name":"Jupyter Notebook",
-    "count":190306
+    "count":190124
   },
   {
     "year":2022,
     "quarter":1,
     "name":"Swift",
-    "count":133895
+    "count":133473
   },
   {
     "year":2022,
     "quarter":1,
     "name":"Kotlin",
-    "count":125283
-  },
-  {
-    "year":2022,
-    "quarter":1,
-    "name":"Vue",
-    "count":87751
+    "count":125803
   },
   {
     "year":2022,
     "quarter":1,
     "name":"Dart",
-    "count":82778
+    "count":83035
+  },
+  {
+    "year":2022,
+    "quarter":1,
+    "name":"Vue",
+    "count":81063
   },
   {
     "year":2022,
     "quarter":1,
     "name":"CSS",
-    "count":71358
+    "count":71160
   },
   {
     "year":2022,
     "quarter":1,
     "name":"Ruby",
-    "count":69811
+    "count":69591
   },
   {
     "year":2022,
     "quarter":1,
     "name":"Lua",
-    "count":61750
+    "count":61768
   },
   {
     "year":2022,
     "quarter":1,
     "name":"PowerShell",
-    "count":34880
+    "count":34752
   },
   {
     "year":2022,
@@ -53967,7 +53967,7 @@
     "year":2022,
     "quarter":1,
     "name":"Objective-C",
-    "count":27748
+    "count":27665
   },
   {
     "year":2022,
@@ -53979,7 +53979,7 @@
     "year":2022,
     "quarter":1,
     "name":"SCSS",
-    "count":25806
+    "count":26589
   },
   {
     "year":2022,
@@ -53996,6 +53996,12 @@
   {
     "year":2022,
     "quarter":1,
+    "name":"Dockerfile",
+    "count":19042
+  },
+  {
+    "year":2022,
+    "quarter":1,
     "name":"R",
     "count":17274
   },
@@ -54003,25 +54009,19 @@
     "year":2022,
     "quarter":1,
     "name":"Scala",
-    "count":17147
+    "count":17257
   },
   {
     "year":2022,
     "quarter":1,
     "name":"Makefile",
-    "count":16776
-  },
-  {
-    "year":2022,
-    "quarter":1,
-    "name":"Dockerfile",
-    "count":15783
+    "count":16748
   },
   {
     "year":2022,
     "quarter":1,
     "name":"Elixir",
-    "count":15001
+    "count":14891
   },
   {
     "year":2022,
@@ -54189,7 +54189,7 @@
     "year":2022,
     "quarter":1,
     "name":"Less",
-    "count":2773
+    "count":2763
   },
   {
     "year":2022,
@@ -54243,7 +54243,7 @@
     "year":2022,
     "quarter":1,
     "name":"MDX",
-    "count":2289
+    "count":2379
   },
   {
     "year":2022,
@@ -54267,7 +54267,7 @@
     "year":2022,
     "quarter":1,
     "name":"HLSL",
-    "count":2047
+    "count":2072
   },
   {
     "year":2022,
@@ -54339,7 +54339,7 @@
     "year":2022,
     "quarter":1,
     "name":"Cython",
-    "count":1406
+    "count":1434
   },
   {
     "year":2022,
@@ -54422,8 +54422,14 @@
   {
     "year":2022,
     "quarter":1,
+    "name":"Astro",
+    "count":1071
+  },
+  {
+    "year":2022,
+    "quarter":1,
     "name":"ReScript",
-    "count":1079
+    "count":1065
   },
   {
     "year":2022,
@@ -54686,12 +54692,6 @@
   {
     "year":2022,
     "quarter":1,
-    "name":"Astro",
-    "count":319
-  },
-  {
-    "year":2022,
-    "quarter":1,
     "name":"G-code",
     "count":318
   },
@@ -54909,12 +54909,6 @@
     "year":2022,
     "quarter":1,
     "name":"COBOL",
-    "count":159
-  },
-  {
-    "year":2022,
-    "quarter":1,
-    "name":"OpenQASM",
     "count":159
   },
   {
@@ -55520,6 +55514,12 @@
   {
     "year":2022,
     "quarter":1,
+    "name":"OpenQASM",
+    "count":18
+  },
+  {
+    "year":2022,
+    "quarter":1,
     "name":"ApacheConf",
     "count":17
   },
@@ -55605,6 +55605,12 @@
     "year":2022,
     "quarter":1,
     "name":"Turing",
+    "count":14
+  },
+  {
+    "year":2022,
+    "quarter":1,
+    "name":"Valve Data Format",
     "count":14
   },
   {
@@ -55761,127 +55767,127 @@
     "year":2022,
     "quarter":2,
     "name":"Python",
-    "count":1506797
+    "count":1511663
   },
   {
     "year":2022,
     "quarter":2,
     "name":"JavaScript",
-    "count":1020827
+    "count":996353
   },
   {
     "year":2022,
     "quarter":2,
     "name":"TypeScript",
-    "count":869223
+    "count":878466
   },
   {
     "year":2022,
     "quarter":2,
     "name":"Go",
-    "count":703813
+    "count":702604
   },
   {
     "year":2022,
     "quarter":2,
     "name":"C++",
-    "count":529126
+    "count":528814
   },
   {
     "year":2022,
     "quarter":2,
     "name":"Java",
-    "count":446149
+    "count":446588
   },
   {
     "year":2022,
     "quarter":2,
     "name":"PHP",
-    "count":377826
+    "count":377705
   },
   {
     "year":2022,
     "quarter":2,
     "name":"C",
-    "count":375623
+    "count":375567
   },
   {
     "year":2022,
     "quarter":2,
     "name":"Rust",
-    "count":360489
+    "count":361071
   },
   {
     "year":2022,
     "quarter":2,
     "name":"C#",
-    "count":301288
+    "count":301413
   },
   {
     "year":2022,
     "quarter":2,
     "name":"Shell",
-    "count":254692
+    "count":255457
   },
   {
     "year":2022,
     "quarter":2,
     "name":"Jupyter Notebook",
-    "count":207025
+    "count":206952
   },
   {
     "year":2022,
     "quarter":2,
     "name":"HTML",
-    "count":186052
+    "count":190077
   },
   {
     "year":2022,
     "quarter":2,
     "name":"Kotlin",
-    "count":127923
+    "count":128285
   },
   {
     "year":2022,
     "quarter":2,
     "name":"Swift",
-    "count":121935
+    "count":121656
   },
   {
     "year":2022,
     "quarter":2,
     "name":"Vue",
-    "count":94995
+    "count":91740
   },
   {
     "year":2022,
     "quarter":2,
     "name":"Dart",
-    "count":81395
+    "count":81444
   },
   {
     "year":2022,
     "quarter":2,
     "name":"CSS",
-    "count":74023
+    "count":73792
   },
   {
     "year":2022,
     "quarter":2,
     "name":"Lua",
-    "count":66605
+    "count":66648
   },
   {
     "year":2022,
     "quarter":2,
     "name":"Ruby",
-    "count":61938
+    "count":61738
   },
   {
     "year":2022,
     "quarter":2,
     "name":"PowerShell",
-    "count":31265
+    "count":31199
   },
   {
     "year":2022,
@@ -55893,7 +55899,7 @@
     "year":2022,
     "quarter":2,
     "name":"Objective-C",
-    "count":26010
+    "count":25944
   },
   {
     "year":2022,
@@ -55911,13 +55917,13 @@
     "year":2022,
     "quarter":2,
     "name":"SCSS",
-    "count":20458
+    "count":21213
   },
   {
     "year":2022,
     "quarter":2,
     "name":"Dockerfile",
-    "count":16723
+    "count":19785
   },
   {
     "year":2022,
@@ -55929,19 +55935,19 @@
     "year":2022,
     "quarter":2,
     "name":"Makefile",
-    "count":15323
-  },
-  {
-    "year":2022,
-    "quarter":2,
-    "name":"Elixir",
-    "count":14112
+    "count":15297
   },
   {
     "year":2022,
     "quarter":2,
     "name":"Scala",
-    "count":13948
+    "count":14048
+  },
+  {
+    "year":2022,
+    "quarter":2,
+    "name":"Elixir",
+    "count":13998
   },
   {
     "year":2022,
@@ -55965,7 +55971,7 @@
     "year":2022,
     "quarter":2,
     "name":"R",
-    "count":12914
+    "count":12902
   },
   {
     "year":2022,
@@ -56151,7 +56157,7 @@
     "year":2022,
     "quarter":2,
     "name":"Less",
-    "count":2570
+    "count":2558
   },
   {
     "year":2022,
@@ -56211,7 +56217,7 @@
     "year":2022,
     "quarter":2,
     "name":"HLSL",
-    "count":2200
+    "count":2214
   },
   {
     "year":2022,
@@ -56223,7 +56229,7 @@
     "year":2022,
     "quarter":2,
     "name":"MDX",
-    "count":2054
+    "count":2096
   },
   {
     "year":2022,
@@ -56325,7 +56331,7 @@
     "year":2022,
     "quarter":2,
     "name":"Cython",
-    "count":1126
+    "count":1141
   },
   {
     "year":2022,
@@ -56348,14 +56354,20 @@
   {
     "year":2022,
     "quarter":2,
-    "name":"ReScript",
-    "count":944
+    "name":"Astro",
+    "count":960
   },
   {
     "year":2022,
     "quarter":2,
     "name":"Adblock Filter List",
     "count":936
+  },
+  {
+    "year":2022,
+    "quarter":2,
+    "name":"ReScript",
+    "count":930
   },
   {
     "year":2022,
@@ -56386,6 +56398,12 @@
     "quarter":2,
     "name":"Sass",
     "count":871
+  },
+  {
+    "year":2022,
+    "quarter":2,
+    "name":"Brainfuck",
+    "count":841
   },
   {
     "year":2022,
@@ -56492,12 +56510,6 @@
   {
     "year":2022,
     "quarter":2,
-    "name":"Brainfuck",
-    "count":505
-  },
-  {
-    "year":2022,
-    "quarter":2,
     "name":"Processing",
     "count":492
   },
@@ -56548,12 +56560,6 @@
     "quarter":2,
     "name":"LLVM",
     "count":428
-  },
-  {
-    "year":2022,
-    "quarter":2,
-    "name":"Astro",
-    "count":404
   },
   {
     "year":2022,
@@ -56781,12 +56787,6 @@
     "year":2022,
     "quarter":2,
     "name":"G-code",
-    "count":181
-  },
-  {
-    "year":2022,
-    "quarter":2,
-    "name":"OpenQASM",
     "count":181
   },
   {
@@ -57200,6 +57200,12 @@
   {
     "year":2022,
     "quarter":2,
+    "name":"OpenQASM",
+    "count":41
+  },
+  {
+    "year":2022,
+    "quarter":2,
     "name":"RouterOS Script",
     "count":41
   },
@@ -57488,6 +57494,12 @@
   {
     "year":2022,
     "quarter":2,
+    "name":"Valve Data Format",
+    "count":14
+  },
+  {
+    "year":2022,
+    "quarter":2,
     "name":"eC",
     "count":14
   },
@@ -57657,139 +57669,139 @@
     "year":2022,
     "quarter":3,
     "name":"Python",
-    "count":1493331
+    "count":1497499
   },
   {
     "year":2022,
     "quarter":3,
     "name":"JavaScript",
-    "count":1017807
+    "count":987269
   },
   {
     "year":2022,
     "quarter":3,
     "name":"TypeScript",
-    "count":943809
+    "count":960167
   },
   {
     "year":2022,
     "quarter":3,
     "name":"Go",
-    "count":735767
+    "count":735375
   },
   {
     "year":2022,
     "quarter":3,
     "name":"C++",
-    "count":584243
+    "count":583548
   },
   {
     "year":2022,
     "quarter":3,
     "name":"Java",
-    "count":450379
+    "count":450855
   },
   {
     "year":2022,
     "quarter":3,
     "name":"Rust",
-    "count":386742
+    "count":387464
   },
   {
     "year":2022,
     "quarter":3,
     "name":"C",
-    "count":380769
+    "count":379037
   },
   {
     "year":2022,
     "quarter":3,
     "name":"C#",
-    "count":310579
+    "count":310673
   },
   {
     "year":2022,
     "quarter":3,
     "name":"PHP",
-    "count":300205
+    "count":299983
   },
   {
     "year":2022,
     "quarter":3,
     "name":"Jupyter Notebook",
-    "count":259334
+    "count":258771
   },
   {
     "year":2022,
     "quarter":3,
     "name":"Shell",
-    "count":240969
+    "count":241204
   },
   {
     "year":2022,
     "quarter":3,
     "name":"HTML",
-    "count":216959
+    "count":220396
   },
   {
     "year":2022,
     "quarter":3,
     "name":"Kotlin",
-    "count":136787
+    "count":137188
   },
   {
     "year":2022,
     "quarter":3,
     "name":"Swift",
-    "count":122471
+    "count":122157
   },
   {
     "year":2022,
     "quarter":3,
     "name":"Vue",
-    "count":96005
+    "count":93228
   },
   {
     "year":2022,
     "quarter":3,
     "name":"Dart",
-    "count":90757
+    "count":87869
   },
   {
     "year":2022,
     "quarter":3,
     "name":"Lua",
-    "count":84293
+    "count":84306
   },
   {
     "year":2022,
     "quarter":3,
     "name":"CSS",
-    "count":76391
+    "count":76216
   },
   {
     "year":2022,
     "quarter":3,
     "name":"Ruby",
-    "count":57746
-  },
-  {
-    "year":2022,
-    "quarter":3,
-    "name":"PowerShell",
-    "count":36192
+    "count":57561
   },
   {
     "year":2022,
     "quarter":3,
     "name":"Dockerfile",
-    "count":32826
+    "count":36128
+  },
+  {
+    "year":2022,
+    "quarter":3,
+    "name":"PowerShell",
+    "count":36112
   },
   {
     "year":2022,
     "quarter":3,
     "name":"Objective-C",
-    "count":31118
+    "count":31051
   },
   {
     "year":2022,
@@ -57818,38 +57830,38 @@
   {
     "year":2022,
     "quarter":3,
+    "name":"SCSS",
+    "count":20662
+  },
+  {
+    "year":2022,
+    "quarter":3,
     "name":"Clojure",
     "count":20026
   },
   {
     "year":2022,
     "quarter":3,
-    "name":"SCSS",
-    "count":19798
-  },
-  {
-    "year":2022,
-    "quarter":3,
     "name":"Makefile",
-    "count":16652
+    "count":16636
   },
   {
     "year":2022,
     "quarter":3,
     "name":"Scala",
-    "count":16323
-  },
-  {
-    "year":2022,
-    "quarter":3,
-    "name":"Elixir",
-    "count":15108
+    "count":16508
   },
   {
     "year":2022,
     "quarter":3,
     "name":"Markdown",
     "count":15042
+  },
+  {
+    "year":2022,
+    "quarter":3,
+    "name":"Elixir",
+    "count":14925
   },
   {
     "year":2022,
@@ -58052,6 +58064,12 @@
   {
     "year":2022,
     "quarter":3,
+    "name":"Astro",
+    "count":2263
+  },
+  {
+    "year":2022,
+    "quarter":3,
     "name":"Vala",
     "count":2263
   },
@@ -58070,6 +58088,12 @@
   {
     "year":2022,
     "quarter":3,
+    "name":"MDX",
+    "count":2132
+  },
+  {
+    "year":2022,
+    "quarter":3,
     "name":"Smarty",
     "count":2096
   },
@@ -58077,19 +58101,13 @@
     "year":2022,
     "quarter":3,
     "name":"Less",
-    "count":2083
+    "count":2070
   },
   {
     "year":2022,
     "quarter":3,
     "name":"HLSL",
     "count":1967
-  },
-  {
-    "year":2022,
-    "quarter":3,
-    "name":"MDX",
-    "count":1945
   },
   {
     "year":2022,
@@ -58108,12 +58126,6 @@
     "quarter":3,
     "name":"Scheme",
     "count":1768
-  },
-  {
-    "year":2022,
-    "quarter":3,
-    "name":"Astro",
-    "count":1717
   },
   {
     "year":2022,
@@ -58197,7 +58209,7 @@
     "year":2022,
     "quarter":3,
     "name":"Cython",
-    "count":1303
+    "count":1325
   },
   {
     "year":2022,
@@ -58232,14 +58244,14 @@
   {
     "year":2022,
     "quarter":3,
-    "name":"ReScript",
-    "count":1060
+    "name":"Mathematica",
+    "count":1039
   },
   {
     "year":2022,
     "quarter":3,
-    "name":"Mathematica",
-    "count":1039
+    "name":"ReScript",
+    "count":1035
   },
   {
     "year":2022,
@@ -58288,6 +58300,12 @@
     "quarter":3,
     "name":"Fennel",
     "count":940
+  },
+  {
+    "year":2022,
+    "quarter":3,
+    "name":"Brainfuck",
+    "count":918
   },
   {
     "year":2022,
@@ -58658,6 +58676,12 @@
   {
     "year":2022,
     "quarter":3,
+    "name":"G-code",
+    "count":180
+  },
+  {
+    "year":2022,
+    "quarter":3,
     "name":"Stata",
     "count":174
   },
@@ -58676,12 +58700,6 @@
   {
     "year":2022,
     "quarter":3,
-    "name":"G-code",
-    "count":166
-  },
-  {
-    "year":2022,
-    "quarter":3,
     "name":"Forth",
     "count":165
   },
@@ -58696,12 +58714,6 @@
     "quarter":3,
     "name":"PureBasic",
     "count":157
-  },
-  {
-    "year":2022,
-    "quarter":3,
-    "name":"OpenQASM",
-    "count":155
   },
   {
     "year":2022,
@@ -59006,12 +59018,6 @@
   {
     "year":2022,
     "quarter":3,
-    "name":"Brainfuck",
-    "count":54
-  },
-  {
-    "year":2022,
-    "quarter":3,
     "name":"Portugol",
     "count":54
   },
@@ -59246,6 +59252,12 @@
   {
     "year":2022,
     "quarter":3,
+    "name":"Valve Data Format",
+    "count":25
+  },
+  {
+    "year":2022,
+    "quarter":3,
     "name":"DTrace",
     "count":24
   },
@@ -59331,6 +59343,12 @@
     "year":2022,
     "quarter":3,
     "name":"APL",
+    "count":16
+  },
+  {
+    "year":2022,
+    "quarter":3,
+    "name":"OpenQASM",
     "count":16
   },
   {
@@ -59541,127 +59559,127 @@
     "year":2022,
     "quarter":4,
     "name":"Python",
-    "count":1522579
+    "count":1528795
   },
   {
     "year":2022,
     "quarter":4,
     "name":"JavaScript",
-    "count":949006
+    "count":926428
   },
   {
     "year":2022,
     "quarter":4,
     "name":"TypeScript",
-    "count":910231
+    "count":925980
   },
   {
     "year":2022,
     "quarter":4,
     "name":"Go",
-    "count":696094
+    "count":695226
   },
   {
     "year":2022,
     "quarter":4,
     "name":"C++",
-    "count":519349
+    "count":519170
   },
   {
     "year":2022,
     "quarter":4,
     "name":"Rust",
-    "count":422570
+    "count":423734
   },
   {
     "year":2022,
     "quarter":4,
     "name":"Java",
-    "count":398863
+    "count":399228
   },
   {
     "year":2022,
     "quarter":4,
     "name":"C",
-    "count":358615
+    "count":357212
   },
   {
     "year":2022,
     "quarter":4,
     "name":"C#",
-    "count":303813
+    "count":303907
   },
   {
     "year":2022,
     "quarter":4,
     "name":"PHP",
-    "count":255294
-  },
-  {
-    "year":2022,
-    "quarter":4,
-    "name":"Jupyter Notebook",
-    "count":241725
+    "count":255078
   },
   {
     "year":2022,
     "quarter":4,
     "name":"Shell",
-    "count":239344
+    "count":239480
+  },
+  {
+    "year":2022,
+    "quarter":4,
+    "name":"Jupyter Notebook",
+    "count":233611
   },
   {
     "year":2022,
     "quarter":4,
     "name":"HTML",
-    "count":216595
+    "count":219425
   },
   {
     "year":2022,
     "quarter":4,
     "name":"Kotlin",
-    "count":128484
+    "count":128851
   },
   {
     "year":2022,
     "quarter":4,
     "name":"Swift",
-    "count":109358
+    "count":109092
   },
   {
     "year":2022,
     "quarter":4,
     "name":"Lua",
-    "count":88250
+    "count":88262
   },
   {
     "year":2022,
     "quarter":4,
     "name":"Vue",
-    "count":81264
+    "count":79104
   },
   {
     "year":2022,
     "quarter":4,
     "name":"CSS",
-    "count":77680
+    "count":77524
   },
   {
     "year":2022,
     "quarter":4,
     "name":"Dart",
-    "count":77119
+    "count":75784
   },
   {
     "year":2022,
     "quarter":4,
     "name":"Ruby",
-    "count":61241
+    "count":61090
   },
   {
     "year":2022,
     "quarter":4,
     "name":"PowerShell",
-    "count":34354
+    "count":34313
   },
   {
     "year":2022,
@@ -59673,7 +59691,13 @@
     "year":2022,
     "quarter":4,
     "name":"Objective-C",
-    "count":24679
+    "count":24578
+  },
+  {
+    "year":2022,
+    "quarter":4,
+    "name":"SCSS",
+    "count":24067
   },
   {
     "year":2022,
@@ -59684,20 +59708,14 @@
   {
     "year":2022,
     "quarter":4,
-    "name":"SCSS",
-    "count":23546
+    "name":"Dockerfile",
+    "count":22751
   },
   {
     "year":2022,
     "quarter":4,
     "name":"Solidity",
     "count":21607
-  },
-  {
-    "year":2022,
-    "quarter":4,
-    "name":"Dockerfile",
-    "count":19825
   },
   {
     "year":2022,
@@ -59715,7 +59733,7 @@
     "year":2022,
     "quarter":4,
     "name":"Makefile",
-    "count":15766
+    "count":15748
   },
   {
     "year":2022,
@@ -59733,7 +59751,7 @@
     "year":2022,
     "quarter":4,
     "name":"Elixir",
-    "count":13634
+    "count":13464
   },
   {
     "year":2022,
@@ -59745,7 +59763,7 @@
     "year":2022,
     "quarter":4,
     "name":"Scala",
-    "count":12835
+    "count":13005
   },
   {
     "year":2022,
@@ -59757,7 +59775,7 @@
     "year":2022,
     "quarter":4,
     "name":"R",
-    "count":11543
+    "count":11524
   },
   {
     "year":2022,
@@ -59906,6 +59924,12 @@
   {
     "year":2022,
     "quarter":4,
+    "name":"Astro",
+    "count":2456
+  },
+  {
+    "year":2022,
+    "quarter":4,
     "name":"PLpgSQL",
     "count":2388
   },
@@ -59954,14 +59978,14 @@
   {
     "year":2022,
     "quarter":4,
-    "name":"Astro",
-    "count":1972
+    "name":"Blade",
+    "count":1961
   },
   {
     "year":2022,
     "quarter":4,
-    "name":"Blade",
-    "count":1961
+    "name":"MDX",
+    "count":1954
   },
   {
     "year":2022,
@@ -59980,12 +60004,6 @@
     "quarter":4,
     "name":"AutoHotkey",
     "count":1836
-  },
-  {
-    "year":2022,
-    "quarter":4,
-    "name":"MDX",
-    "count":1829
   },
   {
     "year":2022,
@@ -60087,7 +60105,7 @@
     "year":2022,
     "quarter":4,
     "name":"Cython",
-    "count":1256
+    "count":1271
   },
   {
     "year":2022,
@@ -60111,7 +60129,7 @@
     "year":2022,
     "quarter":4,
     "name":"ReScript",
-    "count":1198
+    "count":1188
   },
   {
     "year":2022,
@@ -60188,6 +60206,12 @@
   {
     "year":2022,
     "quarter":4,
+    "name":"Tcl",
+    "count":794
+  },
+  {
+    "year":2022,
+    "quarter":4,
     "name":"Smali",
     "count":785
   },
@@ -60200,8 +60224,8 @@
   {
     "year":2022,
     "quarter":4,
-    "name":"Tcl",
-    "count":743
+    "name":"Brainfuck",
+    "count":711
   },
   {
     "year":2022,
@@ -60242,14 +60266,14 @@
   {
     "year":2022,
     "quarter":4,
-    "name":"GAP",
-    "count":561
+    "name":"G-code",
+    "count":563
   },
   {
     "year":2022,
     "quarter":4,
-    "name":"G-code",
-    "count":548
+    "name":"GAP",
+    "count":561
   },
   {
     "year":2022,
@@ -60602,12 +60626,6 @@
   {
     "year":2022,
     "quarter":4,
-    "name":"OpenQASM",
-    "count":141
-  },
-  {
-    "year":2022,
-    "quarter":4,
     "name":"AGS Script",
     "count":138
   },
@@ -60782,6 +60800,12 @@
   {
     "year":2022,
     "quarter":4,
+    "name":"RMarkdown",
+    "count":85
+  },
+  {
+    "year":2022,
+    "quarter":4,
     "name":"Motoko",
     "count":82
   },
@@ -60832,12 +60856,6 @@
     "quarter":4,
     "name":"Rascal",
     "count":67
-  },
-  {
-    "year":2022,
-    "quarter":4,
-    "name":"RMarkdown",
-    "count":66
   },
   {
     "year":2022,
@@ -61094,12 +61112,6 @@
   {
     "year":2022,
     "quarter":4,
-    "name":"Brainfuck",
-    "count":29
-  },
-  {
-    "year":2022,
-    "quarter":4,
     "name":"Asymptote",
     "count":27
   },
@@ -61292,6 +61304,12 @@
   {
     "year":2022,
     "quarter":4,
+    "name":"OpenQASM",
+    "count":13
+  },
+  {
+    "year":2022,
+    "quarter":4,
     "name":"Perl 6",
     "count":13
   },
@@ -61412,6 +61430,12 @@
   {
     "year":2022,
     "quarter":4,
+    "name":"Valve Data Format",
+    "count":10
+  },
+  {
+    "year":2022,
+    "quarter":4,
     "name":"ZIL",
     "count":10
   },
@@ -61419,145 +61443,145 @@
     "year":2023,
     "quarter":1,
     "name":"Python",
-    "count":2148334
+    "count":2169296
   },
   {
     "year":2023,
     "quarter":1,
     "name":"TypeScript",
-    "count":1186770
+    "count":1201839
   },
   {
     "year":2023,
     "quarter":1,
     "name":"JavaScript",
-    "count":1096507
+    "count":1068043
   },
   {
     "year":2023,
     "quarter":1,
     "name":"Go",
-    "count":714837
+    "count":714527
   },
   {
     "year":2023,
     "quarter":1,
     "name":"C++",
-    "count":579525
+    "count":579117
   },
   {
     "year":2023,
     "quarter":1,
     "name":"Rust",
-    "count":523138
+    "count":524096
   },
   {
     "year":2023,
     "quarter":1,
     "name":"Java",
-    "count":428622
+    "count":429086
   },
   {
     "year":2023,
     "quarter":1,
     "name":"C",
-    "count":424429
+    "count":423747
   },
   {
     "year":2023,
     "quarter":1,
     "name":"C#",
-    "count":344727
-  },
-  {
-    "year":2023,
-    "quarter":1,
-    "name":"Jupyter Notebook",
-    "count":301453
+    "count":344844
   },
   {
     "year":2023,
     "quarter":1,
     "name":"Shell",
-    "count":292199
+    "count":292521
+  },
+  {
+    "year":2023,
+    "quarter":1,
+    "name":"Jupyter Notebook",
+    "count":280953
   },
   {
     "year":2023,
     "quarter":1,
     "name":"HTML",
-    "count":249165
+    "count":253625
   },
   {
     "year":2023,
     "quarter":1,
     "name":"PHP",
-    "count":187444
+    "count":187222
   },
   {
     "year":2023,
     "quarter":1,
     "name":"Kotlin",
-    "count":175761
+    "count":176129
   },
   {
     "year":2023,
     "quarter":1,
     "name":"Swift",
-    "count":131298
+    "count":131002
   },
   {
     "year":2023,
     "quarter":1,
     "name":"Vue",
-    "count":116556
+    "count":114688
   },
   {
     "year":2023,
     "quarter":1,
     "name":"Lua",
-    "count":99321
+    "count":99347
   },
   {
     "year":2023,
     "quarter":1,
     "name":"Dart",
-    "count":97700
+    "count":94850
   },
   {
     "year":2023,
     "quarter":1,
     "name":"CSS",
-    "count":94448
+    "count":94246
   },
   {
     "year":2023,
     "quarter":1,
     "name":"Ruby",
-    "count":72491
+    "count":72291
   },
   {
     "year":2023,
     "quarter":1,
     "name":"PowerShell",
-    "count":39201
-  },
-  {
-    "year":2023,
-    "quarter":1,
-    "name":"Objective-C",
-    "count":28527
+    "count":39171
   },
   {
     "year":2023,
     "quarter":1,
     "name":"Dockerfile",
-    "count":27890
+    "count":31099
+  },
+  {
+    "year":2023,
+    "quarter":1,
+    "name":"Objective-C",
+    "count":28469
   },
   {
     "year":2023,
     "quarter":1,
     "name":"TeX",
-    "count":25496
+    "count":25509
   },
   {
     "year":2023,
@@ -61568,14 +61592,14 @@
   {
     "year":2023,
     "quarter":1,
-    "name":"Batchfile",
-    "count":23607
+    "name":"SCSS",
+    "count":23643
   },
   {
     "year":2023,
     "quarter":1,
-    "name":"SCSS",
-    "count":23179
+    "name":"Batchfile",
+    "count":23607
   },
   {
     "year":2023,
@@ -61587,7 +61611,7 @@
     "year":2023,
     "quarter":1,
     "name":"Svelte",
-    "count":18228
+    "count":18241
   },
   {
     "year":2023,
@@ -61617,13 +61641,13 @@
     "year":2023,
     "quarter":1,
     "name":"Elixir",
-    "count":14009
+    "count":13883
   },
   {
     "year":2023,
     "quarter":1,
     "name":"Scala",
-    "count":13562
+    "count":13688
   },
   {
     "year":2023,
@@ -61635,7 +61659,7 @@
     "year":2023,
     "quarter":1,
     "name":"R",
-    "count":12591
+    "count":12572
   },
   {
     "year":2023,
@@ -61659,7 +61683,7 @@
     "year":2023,
     "quarter":1,
     "name":"Julia",
-    "count":9165
+    "count":9178
   },
   {
     "year":2023,
@@ -61695,7 +61719,7 @@
     "year":2023,
     "quarter":1,
     "name":"Jinja",
-    "count":5537
+    "count":5555
   },
   {
     "year":2023,
@@ -61737,7 +61761,7 @@
     "year":2023,
     "quarter":1,
     "name":"Astro",
-    "count":3372
+    "count":3941
   },
   {
     "year":2023,
@@ -61755,7 +61779,7 @@
     "year":2023,
     "quarter":1,
     "name":"Tcl",
-    "count":3097
+    "count":3134
   },
   {
     "year":2023,
@@ -61856,20 +61880,20 @@
   {
     "year":2023,
     "quarter":1,
+    "name":"Rich Text Format",
+    "count":1946
+  },
+  {
+    "year":2023,
+    "quarter":1,
     "name":"Less",
     "count":1934
   },
   {
     "year":2023,
     "quarter":1,
-    "name":"Rich Text Format",
-    "count":1934
-  },
-  {
-    "year":2023,
-    "quarter":1,
     "name":"Scheme",
-    "count":1928
+    "count":1918
   },
   {
     "year":2023,
@@ -61904,8 +61928,14 @@
   {
     "year":2023,
     "quarter":1,
+    "name":"MDX",
+    "count":1692
+  },
+  {
+    "year":2023,
+    "quarter":1,
     "name":"Haxe",
-    "count":1592
+    "count":1608
   },
   {
     "year":2023,
@@ -61918,12 +61948,6 @@
     "quarter":1,
     "name":"OpenSCAD",
     "count":1529
-  },
-  {
-    "year":2023,
-    "quarter":1,
-    "name":"MDX",
-    "count":1519
   },
   {
     "year":2023,
@@ -61977,7 +62001,7 @@
     "year":2023,
     "quarter":1,
     "name":"Cython",
-    "count":1195
+    "count":1208
   },
   {
     "year":2023,
@@ -62049,7 +62073,7 @@
     "year":2023,
     "quarter":1,
     "name":"Sass",
-    "count":973
+    "count":998
   },
   {
     "year":2023,
@@ -62098,6 +62122,12 @@
     "quarter":1,
     "name":"AsciiDoc",
     "count":703
+  },
+  {
+    "year":2023,
+    "quarter":1,
+    "name":"Brainfuck",
+    "count":684
   },
   {
     "year":2023,
@@ -62288,6 +62318,12 @@
   {
     "year":2023,
     "quarter":1,
+    "name":"G-code",
+    "count":297
+  },
+  {
+    "year":2023,
+    "quarter":1,
     "name":"COBOL",
     "count":296
   },
@@ -62296,12 +62332,6 @@
     "quarter":1,
     "name":"ABAP",
     "count":287
-  },
-  {
-    "year":2023,
-    "quarter":1,
-    "name":"G-code",
-    "count":284
   },
   {
     "year":2023,
@@ -62378,14 +62408,14 @@
   {
     "year":2023,
     "quarter":1,
-    "name":"PLSQL",
-    "count":229
+    "name":"PureScript",
+    "count":230
   },
   {
     "year":2023,
     "quarter":1,
-    "name":"PureScript",
-    "count":220
+    "name":"PLSQL",
+    "count":229
   },
   {
     "year":2023,
@@ -62493,12 +62523,6 @@
     "year":2023,
     "quarter":1,
     "name":"ASP",
-    "count":152
-  },
-  {
-    "year":2023,
-    "quarter":1,
-    "name":"OpenQASM",
     "count":152
   },
   {
@@ -62708,6 +62732,12 @@
   {
     "year":2023,
     "quarter":1,
+    "name":"RMarkdown",
+    "count":76
+  },
+  {
+    "year":2023,
+    "quarter":1,
     "name":"Sage",
     "count":76
   },
@@ -62728,12 +62758,6 @@
     "quarter":1,
     "name":"AMPL",
     "count":60
-  },
-  {
-    "year":2023,
-    "quarter":1,
-    "name":"RMarkdown",
-    "count":57
   },
   {
     "year":2023,
@@ -62948,6 +62972,12 @@
   {
     "year":2023,
     "quarter":1,
+    "name":"OpenQASM",
+    "count":33
+  },
+  {
+    "year":2023,
+    "quarter":1,
     "name":"Ragel",
     "count":33
   },
@@ -62985,12 +63015,6 @@
     "year":2023,
     "quarter":1,
     "name":"Boogie",
-    "count":28
-  },
-  {
-    "year":2023,
-    "quarter":1,
-    "name":"Brainfuck",
     "count":28
   },
   {
@@ -63345,193 +63369,193 @@
     "year":2023,
     "quarter":2,
     "name":"Python",
-    "count":2936143
+    "count":3068508
   },
   {
     "year":2023,
     "quarter":2,
     "name":"TypeScript",
-    "count":1241176
+    "count":1293565
   },
   {
     "year":2023,
     "quarter":2,
     "name":"JavaScript",
-    "count":1068804
+    "count":1061063
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Go",
-    "count":671156
+    "count":680613
   },
   {
     "year":2023,
     "quarter":2,
     "name":"C++",
-    "count":572330
+    "count":578813
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Rust",
-    "count":468140
-  },
-  {
-    "year":2023,
-    "quarter":2,
-    "name":"Jupyter Notebook",
-    "count":450834
+    "count":476166
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Java",
-    "count":440120
+    "count":449669
+  },
+  {
+    "year":2023,
+    "quarter":2,
+    "name":"Jupyter Notebook",
+    "count":448849
   },
   {
     "year":2023,
     "quarter":2,
     "name":"C",
-    "count":413231
+    "count":416611
   },
   {
     "year":2023,
     "quarter":2,
     "name":"C#",
-    "count":333572
+    "count":337157
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Shell",
-    "count":285842
+    "count":287757
   },
   {
     "year":2023,
     "quarter":2,
     "name":"HTML",
-    "count":230894
+    "count":240971
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Kotlin",
-    "count":183426
+    "count":184896
   },
   {
     "year":2023,
     "quarter":2,
     "name":"PHP",
-    "count":183251
+    "count":183815
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Swift",
-    "count":125890
+    "count":130988
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Vue",
-    "count":125037
-  },
-  {
-    "year":2023,
-    "quarter":2,
-    "name":"Dart",
-    "count":86768
+    "count":124954
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Lua",
-    "count":84083
+    "count":85416
+  },
+  {
+    "year":2023,
+    "quarter":2,
+    "name":"Dart",
+    "count":84062
   },
   {
     "year":2023,
     "quarter":2,
     "name":"CSS",
-    "count":82891
+    "count":82806
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Ruby",
-    "count":59898
+    "count":61910
   },
   {
     "year":2023,
     "quarter":2,
     "name":"PowerShell",
-    "count":37766
+    "count":37835
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Objective-C",
-    "count":29496
+    "count":30229
   },
   {
     "year":2023,
     "quarter":2,
     "name":"TeX",
-    "count":27962
+    "count":27999
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Batchfile",
-    "count":24100
+    "count":24111
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Vim Script",
-    "count":22212
+    "count":22231
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Svelte",
-    "count":21243
-  },
-  {
-    "year":2023,
-    "quarter":2,
-    "name":"Solidity",
-    "count":19193
+    "count":21827
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Dockerfile",
-    "count":19125
+    "count":21772
+  },
+  {
+    "year":2023,
+    "quarter":2,
+    "name":"Solidity",
+    "count":20865
   },
   {
     "year":2023,
     "quarter":2,
     "name":"SCSS",
-    "count":18615
+    "count":19442
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Makefile",
-    "count":16936
+    "count":16990
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Elixir",
-    "count":15077
+    "count":14958
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Scala",
-    "count":12857
+    "count":13006
   },
   {
     "year":2023,
@@ -63543,13 +63567,13 @@
     "year":2023,
     "quarter":2,
     "name":"Emacs Lisp",
-    "count":12181
+    "count":12200
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Zig",
-    "count":11498
+    "count":11510
   },
   {
     "year":2023,
@@ -63567,19 +63591,19 @@
     "year":2023,
     "quarter":2,
     "name":"Assembly",
-    "count":10401
+    "count":10429
   },
   {
     "year":2023,
     "quarter":2,
     "name":"GDScript",
-    "count":9490
+    "count":9669
   },
   {
     "year":2023,
     "quarter":2,
     "name":"HCL",
-    "count":9325
+    "count":9344
   },
   {
     "year":2023,
@@ -63590,14 +63614,14 @@
   {
     "year":2023,
     "quarter":2,
-    "name":"Nix",
-    "count":8763
+    "name":"Julia",
+    "count":9107
   },
   {
     "year":2023,
     "quarter":2,
-    "name":"Julia",
-    "count":8489
+    "name":"Nix",
+    "count":8891
   },
   {
     "year":2023,
@@ -63609,7 +63633,13 @@
     "year":2023,
     "quarter":2,
     "name":"MATLAB",
-    "count":6891
+    "count":6904
+  },
+  {
+    "year":2023,
+    "quarter":2,
+    "name":"CMake",
+    "count":6237
   },
   {
     "year":2023,
@@ -63626,26 +63656,20 @@
   {
     "year":2023,
     "quarter":2,
-    "name":"CMake",
-    "count":5892
-  },
-  {
-    "year":2023,
-    "quarter":2,
     "name":"MDX",
-    "count":5708
+    "count":5825
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Cuda",
-    "count":5335
+    "count":5602
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Jinja",
-    "count":4924
+    "count":4937
   },
   {
     "year":2023,
@@ -63663,13 +63687,13 @@
     "year":2023,
     "quarter":2,
     "name":"Nim",
-    "count":4332
+    "count":4576
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Astro",
-    "count":3997
+    "count":4527
   },
   {
     "year":2023,
@@ -63687,19 +63711,19 @@
     "year":2023,
     "quarter":2,
     "name":"Common Lisp",
-    "count":3638
+    "count":3649
   },
   {
     "year":2023,
     "quarter":2,
     "name":"ShaderLab",
-    "count":3382
+    "count":3393
   },
   {
     "year":2023,
     "quarter":2,
     "name":"Crystal",
-    "count":3273
+    "count":3283
   },
   {
     "year":2023,
@@ -63735,7 +63759,13 @@
     "year":2023,
     "quarter":2,
     "name":"PLpgSQL",
-    "count":2244
+    "count":2256
+  },
+  {
+    "year":2023,
+    "quarter":2,
+    "name":"HLSL",
+    "count":2238
   },
   {
     "year":2023,
@@ -63746,14 +63776,8 @@
   {
     "year":2023,
     "quarter":2,
-    "name":"HLSL",
-    "count":2227
-  },
-  {
-    "year":2023,
-    "quarter":2,
     "name":"EJS",
-    "count":2068
+    "count":2078
   },
   {
     "year":2023,
@@ -63867,13 +63891,19 @@
     "year":2023,
     "quarter":2,
     "name":"Bicep",
-    "count":1394
+    "count":1470
   },
   {
     "year":2023,
     "quarter":2,
     "name":"OpenSCAD",
-    "count":1370
+    "count":1385
+  },
+  {
+    "year":2023,
+    "quarter":2,
+    "name":"Fortran",
+    "count":1363
   },
   {
     "year":2023,
@@ -63884,14 +63914,14 @@
   {
     "year":2023,
     "quarter":2,
-    "name":"Fortran",
-    "count":1348
+    "name":"VHDL",
+    "count":1347
   },
   {
     "year":2023,
     "quarter":2,
-    "name":"VHDL",
-    "count":1335
+    "name":"Hack",
+    "count":1301
   },
   {
     "year":2023,
@@ -63902,14 +63932,8 @@
   {
     "year":2023,
     "quarter":2,
-    "name":"Hack",
-    "count":1211
-  },
-  {
-    "year":2023,
-    "quarter":2,
     "name":"Cython",
-    "count":1201
+    "count":1212
   },
   {
     "year":2023,
@@ -63962,26 +63986,26 @@
   {
     "year":2023,
     "quarter":2,
+    "name":"Tcl",
+    "count":978
+  },
+  {
+    "year":2023,
+    "quarter":2,
     "name":"Adblock Filter List",
     "count":942
   },
   {
     "year":2023,
     "quarter":2,
-    "name":"Tcl",
-    "count":931
+    "name":"XSLT",
+    "count":926
   },
   {
     "year":2023,
     "quarter":2,
     "name":"SVG",
     "count":911
-  },
-  {
-    "year":2023,
-    "quarter":2,
-    "name":"XSLT",
-    "count":899
   },
   {
     "year":2023,
@@ -63998,6 +64022,12 @@
   {
     "year":2023,
     "quarter":2,
+    "name":"Cairo",
+    "count":751
+  },
+  {
+    "year":2023,
+    "quarter":2,
     "name":"Elm",
     "count":732
   },
@@ -64005,19 +64035,19 @@
     "year":2023,
     "quarter":2,
     "name":"Lean",
-    "count":719
+    "count":731
   },
   {
     "year":2023,
     "quarter":2,
-    "name":"Cairo",
-    "count":716
+    "name":"Brainfuck",
+    "count":717
   },
   {
     "year":2023,
     "quarter":2,
     "name":"ReScript",
-    "count":704
+    "count":714
   },
   {
     "year":2023,
@@ -64030,6 +64060,12 @@
     "quarter":2,
     "name":"VBA",
     "count":674
+  },
+  {
+    "year":2023,
+    "quarter":2,
+    "name":"Gherkin",
+    "count":655
   },
   {
     "year":2023,
@@ -64053,7 +64089,13 @@
     "year":2023,
     "quarter":2,
     "name":"Sass",
-    "count":556
+    "count":572
+  },
+  {
+    "year":2023,
+    "quarter":2,
+    "name":"OpenEdge ABL",
+    "count":566
   },
   {
     "year":2023,
@@ -64118,12 +64160,6 @@
   {
     "year":2023,
     "quarter":2,
-    "name":"Gherkin",
-    "count":413
-  },
-  {
-    "year":2023,
-    "quarter":2,
     "name":"ANTLR",
     "count":400
   },
@@ -64132,6 +64168,18 @@
     "quarter":2,
     "name":"Visual Basic",
     "count":397
+  },
+  {
+    "year":2023,
+    "quarter":2,
+    "name":"YAML",
+    "count":386
+  },
+  {
+    "year":2023,
+    "quarter":2,
+    "name":"SourcePawn",
+    "count":385
   },
   {
     "year":2023,
@@ -64148,12 +64196,6 @@
   {
     "year":2023,
     "quarter":2,
-    "name":"SourcePawn",
-    "count":373
-  },
-  {
-    "year":2023,
-    "quarter":2,
     "name":"Racket",
     "count":372
   },
@@ -64162,12 +64204,6 @@
     "quarter":2,
     "name":"PostScript",
     "count":367
-  },
-  {
-    "year":2023,
-    "quarter":2,
-    "name":"YAML",
-    "count":361
   },
   {
     "year":2023,
@@ -64268,6 +64304,12 @@
   {
     "year":2023,
     "quarter":2,
+    "name":"MLIR",
+    "count":210
+  },
+  {
+    "year":2023,
+    "quarter":2,
     "name":"FreeMarker",
     "count":209
   },
@@ -64352,12 +64394,6 @@
   {
     "year":2023,
     "quarter":2,
-    "name":"MLIR",
-    "count":175
-  },
-  {
-    "year":2023,
-    "quarter":2,
     "name":"BlitzBasic",
     "count":172
   },
@@ -64372,12 +64408,6 @@
     "quarter":2,
     "name":"Mercury",
     "count":170
-  },
-  {
-    "year":2023,
-    "quarter":2,
-    "name":"OpenEdge ABL",
-    "count":168
   },
   {
     "year":2023,
@@ -64610,6 +64640,12 @@
   {
     "year":2023,
     "quarter":2,
+    "name":"hoon",
+    "count":92
+  },
+  {
+    "year":2023,
+    "quarter":2,
     "name":"mcfunction",
     "count":91
   },
@@ -64647,12 +64683,6 @@
     "year":2023,
     "quarter":2,
     "name":"BASIC",
-    "count":73
-  },
-  {
-    "year":2023,
-    "quarter":2,
-    "name":"hoon",
     "count":73
   },
   {
@@ -64850,12 +64880,6 @@
   {
     "year":2023,
     "quarter":2,
-    "name":"Brainfuck",
-    "count":37
-  },
-  {
-    "year":2023,
-    "quarter":2,
     "name":"Dafny",
     "count":35
   },
@@ -65043,6 +65067,12 @@
     "year":2023,
     "quarter":2,
     "name":"Pony",
+    "count":18
+  },
+  {
+    "year":2023,
+    "quarter":2,
+    "name":"WGSL",
     "count":18
   },
   {
@@ -65259,6 +65289,1896 @@
     "year":2023,
     "quarter":2,
     "name":"xBase",
+    "count":10
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Python",
+    "count":2395153
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"TypeScript",
+    "count":1182319
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"JavaScript",
+    "count":939589
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Go",
+    "count":670312
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"C++",
+    "count":572670
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Rust",
+    "count":499552
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Java",
+    "count":434098
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"C",
+    "count":395559
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"C#",
+    "count":344641
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Jupyter Notebook",
+    "count":311632
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Shell",
+    "count":246582
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"HTML",
+    "count":218873
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"PHP",
+    "count":205776
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Kotlin",
+    "count":163320
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Swift",
+    "count":116704
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Vue",
+    "count":97729
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Dart",
+    "count":93069
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Lua",
+    "count":81664
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"CSS",
+    "count":73819
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Ruby",
+    "count":61763
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"PowerShell",
+    "count":35515
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Zig",
+    "count":29813
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"TeX",
+    "count":29066
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Batchfile",
+    "count":24504
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Vim Script",
+    "count":22003
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Objective-C",
+    "count":21975
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Svelte",
+    "count":20682
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Dockerfile",
+    "count":19666
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"SCSS",
+    "count":18665
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Elixir",
+    "count":15821
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Solidity",
+    "count":15790
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Makefile",
+    "count":15518
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"GDScript",
+    "count":14029
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Clojure",
+    "count":13011
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Scala",
+    "count":11533
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Nix",
+    "count":10857
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Assembly",
+    "count":10708
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Haskell",
+    "count":10665
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"R",
+    "count":10341
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Markdown",
+    "count":10105
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Emacs Lisp",
+    "count":9930
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"HCL",
+    "count":8783
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Perl",
+    "count":8183
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Julia",
+    "count":7658
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"MATLAB",
+    "count":6063
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Pascal",
+    "count":5803
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Astro",
+    "count":5708
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"OCaml",
+    "count":5601
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Cuda",
+    "count":5489
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"CMake",
+    "count":5362
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Nim",
+    "count":5003
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Jinja",
+    "count":4693
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Verilog",
+    "count":4445
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Blade",
+    "count":4389
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Roff",
+    "count":3722
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"GLSL",
+    "count":3641
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"QML",
+    "count":2926
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"AutoHotkey",
+    "count":2705
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"MDX",
+    "count":2645
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"ShaderLab",
+    "count":2594
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Ballerina",
+    "count":2551
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"PostScript",
+    "count":2533
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Erlang",
+    "count":2532
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Visual Basic .NET",
+    "count":2479
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Groovy",
+    "count":2432
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"HLSL",
+    "count":2410
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"CoffeeScript",
+    "count":2405
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Tcl",
+    "count":2358
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"PLpgSQL",
+    "count":2355
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Starlark",
+    "count":2316
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Common Lisp",
+    "count":2238
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Crystal",
+    "count":2201
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Less",
+    "count":2172
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Mustache",
+    "count":2077
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"AutoIt",
+    "count":2050
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"F#",
+    "count":2038
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Smarty",
+    "count":1965
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"VBScript",
+    "count":1831
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Logos",
+    "count":1820
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Scheme",
+    "count":1770
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"EJS",
+    "count":1758
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Nunjucks",
+    "count":1724
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Haxe",
+    "count":1692
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"V",
+    "count":1658
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"YARA",
+    "count":1604
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Hack",
+    "count":1597
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"SystemVerilog",
+    "count":1579
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Stylus",
+    "count":1569
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Vala",
+    "count":1556
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Fortran",
+    "count":1427
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Rich Text Format",
+    "count":1383
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Jsonnet",
+    "count":1313
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Smali",
+    "count":1258
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Objective-C++",
+    "count":1240
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Cython",
+    "count":1182
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"D",
+    "count":1176
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"XSLT",
+    "count":1176
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"OpenSCAD",
+    "count":1141
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"LLVM",
+    "count":1127
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"TSQL",
+    "count":1113
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Mathematica",
+    "count":1083
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Handlebars",
+    "count":1053
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Bicep",
+    "count":1010
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"WebAssembly",
+    "count":1009
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Lean",
+    "count":989
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"VHDL",
+    "count":968
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Open Policy Agent",
+    "count":966
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"SVG",
+    "count":934
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Adblock Filter List",
+    "count":914
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Cairo",
+    "count":905
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Fennel",
+    "count":854
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"ASL",
+    "count":726
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Elm",
+    "count":713
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Pug",
+    "count":673
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"CUE",
+    "count":651
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"VBA",
+    "count":642
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"ReScript",
+    "count":633
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Gnuplot",
+    "count":607
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"reStructuredText",
+    "count":561
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Brainfuck",
+    "count":526
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Sass",
+    "count":523
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Bikeshed",
+    "count":510
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"AsciiDoc",
+    "count":490
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Max",
+    "count":486
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Apex",
+    "count":475
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"SWIG",
+    "count":470
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Awk",
+    "count":453
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"YAML",
+    "count":451
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Odin",
+    "count":438
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"CodeQL",
+    "count":436
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Standard ML",
+    "count":423
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Gherkin",
+    "count":415
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Inno Setup",
+    "count":405
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"AngelScript",
+    "count":396
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Visual Basic",
+    "count":392
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"ANTLR",
+    "count":379
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Classic ASP",
+    "count":377
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Coq",
+    "count":376
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Liquid",
+    "count":361
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Ren'Py",
+    "count":356
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"ABAP",
+    "count":354
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Reason",
+    "count":348
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"sed",
+    "count":345
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"M",
+    "count":340
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"HolyC",
+    "count":313
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Wikitext",
+    "count":276
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"NSIS",
+    "count":260
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"ActionScript",
+    "count":249
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Prolog",
+    "count":243
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"AGS Script",
+    "count":236
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"GAP",
+    "count":236
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"AppleScript",
+    "count":231
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"MQL5",
+    "count":230
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Vim Snippet",
+    "count":228
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Circom",
+    "count":224
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"OpenEdge ABL",
+    "count":208
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Processing",
+    "count":208
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Squirrel",
+    "count":201
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Nextflow",
+    "count":199
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Smalltalk",
+    "count":194
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Racket",
+    "count":192
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"ASP.NET",
+    "count":190
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"G-code",
+    "count":184
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"SQL",
+    "count":182
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Typst",
+    "count":182
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Stata",
+    "count":177
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"FreeMarker",
+    "count":171
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"JSON",
+    "count":171
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Mako",
+    "count":162
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Gleam",
+    "count":161
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Red",
+    "count":161
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Papyrus",
+    "count":155
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Yacc",
+    "count":154
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"BASIC",
+    "count":152
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"MLIR",
+    "count":149
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Game Maker Language",
+    "count":148
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"1C Enterprise",
+    "count":147
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"DIGITAL Command Language",
+    "count":147
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"BlitzBasic",
+    "count":146
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Forth",
+    "count":143
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Mercury",
+    "count":143
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"SourcePawn",
+    "count":143
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"COBOL",
+    "count":142
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"ZenScript",
+    "count":142
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Agda",
+    "count":138
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"PureBasic",
+    "count":138
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"PureScript",
+    "count":136
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"PLSQL",
+    "count":132
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Ada",
+    "count":131
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Text",
+    "count":128
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"DM",
+    "count":126
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Yul",
+    "count":126
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"nesC",
+    "count":123
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"ASP",
+    "count":122
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Riot",
+    "count":122
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Wren",
+    "count":122
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Twig",
+    "count":120
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"SMT",
+    "count":117
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Metal",
+    "count":111
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"AL",
+    "count":107
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Idris",
+    "count":102
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Nu",
+    "count":102
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"TLA",
+    "count":99
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"BitBake",
+    "count":98
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Dhall",
+    "count":98
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"OpenQASM",
+    "count":98
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Vyper",
+    "count":98
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"SAS",
+    "count":97
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Move",
+    "count":93
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Just",
+    "count":90
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"KiCad Layout",
+    "count":90
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Raku",
+    "count":87
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Io",
+    "count":86
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Modelica",
+    "count":86
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"PDDL",
+    "count":85
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Mermaid",
+    "count":79
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"MoonScript",
+    "count":79
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"P4",
+    "count":75
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Haml",
+    "count":74
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Hy",
+    "count":74
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"F*",
+    "count":72
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Fluent",
+    "count":72
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Valve Data Format",
+    "count":72
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Bluespec",
+    "count":71
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Sage",
+    "count":70
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"KakouneScript",
+    "count":68
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"NASL",
+    "count":63
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"GSC",
+    "count":60
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Factor",
+    "count":59
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Motoko",
+    "count":58
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"REXX",
+    "count":58
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Turing",
+    "count":58
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"MQL4",
+    "count":54
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"mcfunction",
+    "count":52
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"CartoCSS",
+    "count":49
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"LiveScript",
+    "count":49
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"RouterOS Script",
+    "count":46
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Lex",
+    "count":45
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Monkey C",
+    "count":45
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Puppet",
+    "count":45
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Scilab",
+    "count":45
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Chapel",
+    "count":43
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"BrighterScript",
+    "count":42
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"PEG.js",
+    "count":41
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Ragel",
+    "count":39
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"SuperCollider",
+    "count":39
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"hoon",
+    "count":39
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Brightscript",
+    "count":37
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"FreeBasic",
+    "count":37
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"LabVIEW",
+    "count":37
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"APL",
+    "count":35
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"NetLogo",
+    "count":33
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Portugol",
+    "count":33
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Pawn",
+    "count":32
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"RMarkdown",
+    "count":32
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"AMPL",
+    "count":30
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Boo",
+    "count":30
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"SQF",
+    "count":29
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"YASnippet",
+    "count":29
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"AIDL",
+    "count":28
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Cap'n Proto",
+    "count":28
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"WGSL",
+    "count":28
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Zeek",
+    "count":28
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"jq",
+    "count":27
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Eiffel",
+    "count":26
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Arc",
+    "count":25
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"CAP CDS",
+    "count":25
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Meson",
+    "count":25
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Propeller Spin",
+    "count":25
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"GCC Machine Description",
+    "count":24
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"ZIL",
+    "count":24
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"JSONiq",
+    "count":22
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Org",
+    "count":22
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Q#",
+    "count":22
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"q",
+    "count":22
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"xBase",
+    "count":22
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"JetBrains MPS",
+    "count":20
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Kaitai Struct",
+    "count":20
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Frege",
+    "count":19
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Objective-J",
+    "count":19
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Futhark",
+    "count":18
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Janet",
+    "count":18
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"ApacheConf",
+    "count":17
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"POV-Ray SDL",
+    "count":17
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Visual Basic 6.0",
+    "count":17
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"M4",
+    "count":16
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"QMake",
+    "count":16
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Cypher",
+    "count":14
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"D2",
+    "count":14
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Nushell",
+    "count":14
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Dafny",
+    "count":13
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"E",
+    "count":13
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"INI",
+    "count":13
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Isabelle",
+    "count":13
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"LFE",
+    "count":13
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"NWScript",
+    "count":13
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"RPC",
+    "count":13
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Thrift",
+    "count":13
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Common Workflow Language",
+    "count":12
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"DTrace",
+    "count":12
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Lasso",
+    "count":12
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Macaulay2",
+    "count":12
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Shen",
+    "count":12
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Boogie",
+    "count":11
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Cool",
+    "count":11
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"MAXScript",
+    "count":11
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Oz",
+    "count":11
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"RobotFramework",
+    "count":11
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Slash",
+    "count":11
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Xojo",
+    "count":11
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Xtend",
+    "count":11
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"ChucK",
+    "count":10
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Fantom",
+    "count":10
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Gosu",
+    "count":10
+  },
+  {
+    "year":2023,
+    "quarter":3,
+    "name":"Latte",
     "count":10
   }
 ]
