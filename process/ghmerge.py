@@ -32,7 +32,7 @@ class Row(typ.TypedDict):
     repo: str
 
 
-def extract_data(data: dict[str, Repo | None]) -> pd.DataFrame:
+def extract_data(data: dict[str, Repo | None], path: pth.Path) -> pd.DataFrame:
     rows = []
     for obj in data.values():
         if obj is not None:
@@ -42,6 +42,7 @@ def extract_data(data: dict[str, Repo | None]) -> pd.DataFrame:
                 "found": True,
                 "lang": lang["name"] if lang else "",
                 "repo": obj["nameWithOwner"],
+                "path": path,
             }
             rows.append(row)
     return pd.DataFrame(rows)
@@ -60,6 +61,7 @@ def extract_errors(errors: list[Error]) -> pd.DataFrame:
 
 def load_projects(dir: str) -> pd.DataFrame:
     parts = []
+    cwd = pth.Path.cwd()
     for path in pth.Path(dir).iterdir():
         with open(path) as input:
             try:
@@ -67,13 +69,16 @@ def load_projects(dir: str) -> pd.DataFrame:
             except:
                 print(f"Error reading: {path}")
                 raise
-        data = extract_data(response.get("data") or {})
-        errors = extract_errors(response.get("errors", []))
-        parts += [data, errors]
-    return pd.concat(parts).drop_duplicates()
+        path = path.resolve().relative_to(cwd)
+        data = extract_data(response.get("data") or {}, path=path)
+        # errors = extract_errors(response.get("errors", []))
+        # parts += [data, errors]
+        parts.append(data)
+    return pd.concat(parts).drop_duplicates(subset=["found", "lang", "repo"])
 
 
 def main():
+    pd.set_option("display.max_columns", None)
     parser = argparse.ArgumentParser()
     parser.add_argument("--jsondir", required=True)
     parser.add_argument("--output", required=True)
@@ -91,7 +96,8 @@ def run(*, args: Args):
     print("Contradictions")
     print(contras)
     # Then arbitrarily move on.
-    # I had 4 repos in this category at the moment.
+    # I had 4 repos in this category early on. Now many.
+    contras.to_csv(pth.Path(args["output"]).parent / "contras.csv", index=False)
     langs = langs.drop_duplicates(subset="repo")
     langs.to_csv(args["output"], index=False)
 

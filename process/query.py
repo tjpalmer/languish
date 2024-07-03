@@ -32,9 +32,9 @@ queries = {
               ''
             ) as repo
         from (
-            select * from `githubarchive.month.202401` union all
-            select * from `githubarchive.month.202402` union all
-            select * from `githubarchive.month.202403`
+            select * from `githubarchive.month.202404` union all
+            select * from `githubarchive.month.202405` union all
+            select * from `githubarchive.month.202406`
         ) event
         where event.type in (
             'IssuesEvent', 'PullRequestEvent', 'WatchEvent'

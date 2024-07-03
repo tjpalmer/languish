@@ -26,6 +26,7 @@
 "Bison","GNU_Bison","","bison"
 "BitBake","BitBake","bitbake","bitbake"
 "Bluespec","Bluespec","","bluespec"
+"BQN","","","bqn-lang"
 "Brainfuck","Brainfuck","brainfuck","brainfuck"
 "Brightscript","","RokuDev","brightscript"
 "Bro","Zeek","","bro|zeek"
