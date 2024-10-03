@@ -7,6 +7,7 @@ import pandas as pd
 import pathlib as pth
 import re
 import requests
+import time
 import traceback
 import typing as typ
 import urllib3
@@ -124,6 +125,7 @@ def run(*, args: Args):
             # Print and continue.
             err_count += 1
             traceback.print_exc()
+        time.sleep(10)
     print(f"\nerrors: {err_count} / {total_count} total")
 
 
