@@ -9,9 +9,10 @@ export interface CoreMetrics {
   soQuestions: number;
 }
 
+// TODO Weed out bots somehow.
 export const defaultWeights: CoreMetrics = Object.freeze({
-  issues: 1,
-  pulls: 0,
+  issues: 0, // bogus repos maybe on bots seem to be affecting this
+  pulls: 0, // bots affect some langauges more than others
   stars: 1,
   soQuestions: 1,
 });
