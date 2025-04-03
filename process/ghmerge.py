@@ -40,7 +40,7 @@ def extract_data(data: dict[str, Repo | None], path: pth.Path) -> pd.DataFrame:
             row: Row = {
                 "fork": obj["isFork"],
                 "found": True,
-                "lang": lang["name"] if lang else "",
+                "lang": normalize_name(lang["name"]) if lang else "",
                 "repo": obj["nameWithOwner"],
                 "path": path,
             }
@@ -84,6 +84,13 @@ def main():
     parser.add_argument("--output", required=True)
     args = parser.parse_args().__dict__
     run(args=args)
+
+
+def normalize_name(name: str) -> str:
+    if name == "Vim script":
+        # GitHub changed this later, so normalize it.
+        return "Vim Script"
+    return name
 
 
 def run(*, args: Args):

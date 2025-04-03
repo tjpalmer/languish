@@ -9,7 +9,7 @@ export interface CoreMetrics {
   soQuestions: number;
 }
 
-// TODO Weed out bots somehow.
+// TODO Weed out bots somehow. Maybe look for users with most GH events???
 export const defaultWeights: CoreMetrics = Object.freeze({
   issues: 0, // bogus repos maybe on bots seem to be affecting this
   pulls: 0, // bots affect some langauges more than others
