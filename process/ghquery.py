@@ -94,7 +94,7 @@ def run(*, args: Args):
     outdir.mkdir(exist_ok=True, parents=True)
     err_count = 0
     total_count = 0
-    for index, chunk in enumerate(split_frame(counts, chunk_size=500)):
+    for index, chunk in enumerate(split_frame(counts, chunk_size=100)):
         total_count += 1
         try:
             query = build_query(chunk)
